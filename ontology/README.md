@@ -1,6 +1,6 @@
 # CPSV-AP-NO
 
-cpsvno-turtle.ttl: Norwegian Application Profile of CPSV-AP, with controlled vocabulary (predefined instances). 
+cpsvno-turtle.ttl: Ontology for CPSV-AP-NO (Norwegian Application Profile of CPSV-AP), with controlled vocabulary (predefined instances). 
 
 
 
