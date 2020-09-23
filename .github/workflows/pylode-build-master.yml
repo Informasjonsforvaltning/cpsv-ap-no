@@ -1,0 +1,34 @@
+name: build pylode
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  pylode_build:
+    runs-on: ubuntu-18.04
+    name: pylode build
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        pip install pylode
+
+    - name: Build html
+      run: pylode -i ontology/cpsvno.ttl -o build/cpsvno.html -p ontdoc
+
+    - name: copy cpsvno.ttl
+      uses: canastro/copy-file-action@master
+      with:
+        source: "ontology/cpsvno.ttl"
+        target: "build/cpsvno.ttl"
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: html
+        publish_dir: ./build
