@@ -23,6 +23,10 @@ jobs:
       run: |
         pip install pylode
 
+    - name: check for changes
+      run: |
+        mkdir build
+
     - name: Build html
       run: pylode -i ontology/cpsvno.ttl -o build/cpsvno.html -p ontdoc
 
