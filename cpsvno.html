@@ -213,49 +213,48 @@
     <span style="font-size:smaller;">2.8.3</span>
   </div>
   <h1>CPSV-AP-NO</h1>
-<section id="metadata">
-    <h2 style="display:none;">Metadata</h2>
-    <dl>
-        <dt>URI</dt>
-        <dd><code>https://data.norge.no/vocabulary/cpsvno#</code></dd>
-        <dt>Version Information</dt>
-        <dd>V0.2:
+<h3><em>A taxonomy</em></h3>
+  <section id="conceptscheme">
+      <h2 style="display:none;">Concept Scheme</h2>
+      <dl>
+          <dt>URI</dt>
+          <dd><code>https://data.norge.no/vocabulary/cpsvno#</code></dd>
+          <dt>Version Information</dt>
+          <dd>V0.2:
 - Still incomplete, only as a controlled vocabulary.
 - Added more text in the definitions.</dd>
-        <dt>Version URI</dt>
-        <dd><a href="cpsvno:v.0.2">cpsvno:v.0.2</a></dd>
-        <dt>Ontology RDF</dt>
-        <dd><a href="cpsvno.ttl">RDF (turtle)</a></dd>
-    </dl>
-    <h2>Description</h2>
-    <div id="description">
-        <p>Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP</p>
-    </div>
-</section>
-<section id="toc">
-    <h2>Table of Contents</h2>
-    <ol>
-        <li><a href="#classes">Classes</a></li>
-        <li><a href="#annotationproperties">Annotation Properties</a></li>
-        <li><a href="#namedindividuals">Named Individuals</a></li>
-        <li><a href="#namespaces">Namespaces</a></li>
-        <li><a href="#legend">Legend</a></li>
-    </ol>
-</section>
-<section id="overview">
-    <h2>Overview</h2>
-    <div class="figure">
-        <div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>
-        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
-    </div>
-</section>
-  <section id="classes">
-    <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#Concept">Concept</a></li>
-    </ul>
-    <div class="entity class" id="Concept">
-        <h3>Concept<sup title="class" class="sup-c">c</sup></h3>
+          <dt>Version URI</dt>
+          <dd><a href="cpsvno:v.0.2">cpsvno:v.0.2</a></dd>
+          <dt>Ontology RDF</dt>
+          <dd><a href="cpsvno.ttl">RDF (turtle)</a></dd>
+      </dl>
+      <h2>Description</h2>
+      <div id="description">
+          <p>Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP</p>
+      </div>
+  </section>
+  <section id="toc">
+      <h2>Table of Contents</h2>
+      <ol>
+          <li><a href="#concepts">Concepts</a></li>
+          <li><a href="#namespaces">Namespaces</a></li>
+          <li><a href="#legend">Legend</a></li>
+      </ol>
+  </section>
+  <section id="overview">
+      <h2>Overview</h2>
+      <div class="figure">
+          <div style="width:500px; height:500px; background-color: black;">&nbsp;</div>
+          <div class="caption"><strong>Figure 1:</strong> Taxonomy overview</div>
+      </div>
+  </section>
+  <section id="concepts">
+    <h2>Concepts <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hierarchy">
+<li><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></li><li><a href="https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure">cpsvno:ruleForDisclosure</a></li><li><a href="https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure">cpsvno:ruleForNonDisclosure</a></li>
+</ul>
+    <div class="entity concept" id="Concept">
+        <h3>Concept<sup title="Concept" class="sup-cp">cp</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -263,90 +262,52 @@
             </tr>
         </table>
     </div>
-</section>
-<section id="annotationproperties">
-    <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#definition">definition</a></li>
-        <li><a href="#prefLabel">prefLabel</a></li>
-    </ul>
-    <div class="entity property" id="definition">
-        <h3>definition<sup title="annotation property" class="sup-ap">ap</sup></h3>
+    <div class="entity concept" id="rulefordisclosure">
+        <h3>rule for disclosure<sup title="Concept" class="sup-cp">cp</sup></h3>
+            <h4>
+              rule for disclosure (en)
+              , 
+              utleveringsregel (nb)
+              
+            </h4>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.w3.org/2004/02/skos/core#definition</code></td>
+                <td><code>https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    regel som regulerer utlevering av en ressurs (f.eks. et datasett)<br/>
+                    rule that regulates disclosure of a resource (e.g. a dataset)<br/>
+                </td>
             </tr>
         </table>
     </div>
-    <div class="entity property" id="prefLabel">
-        <h3>prefLabel<sup title="annotation property" class="sup-ap">ap</sup></h3>
+    <div class="entity concept" id="rulefornon-disclosure">
+        <h3>rule for non-disclosure<sup title="Concept" class="sup-cp">cp</sup></h3>
+            <h4>
+              skjermingsregel (nb)
+              , 
+              rule for non-disclosure (en)
+              
+            </h4>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.w3.org/2004/02/skos/core#prefLabel</code></td>
+                <td><code>https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    rule that regulates non-disclosure of a resource (e.g. a dataset)<br/>
+                    regel som regulerer skjerming av en ressurs (f.eks. et datasett)<br/>
+                </td>
             </tr>
         </table>
     </div>
 </section>
 
-  
-  <section id="namedindividuals">
-    <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#ruleForDisclosure">ruleForDisclosure</a></li>
-        <li><a href="#ruleForNonDisclosure">ruleForNonDisclosure</a></li>
-    </ul>
-    <div class="entity named_individual" id="ruleForDisclosure">
-        <h3>ruleForDisclosure<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a><br/>
-            </dd>
-            <tr>
-                <th>Is Defined By</th>
-                <td>
-                    Digitaliseringsdirektoratet
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity named_individual" id="ruleForNonDisclosure">
-        <h3>ruleForNonDisclosure<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a><br/>
-            </dd>
-            <tr>
-                <th>Is Defined By</th>
-                <td>
-                    Digitaliseringsdirektoratet
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-  
   <section id="namespaces">
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
@@ -354,8 +315,6 @@
         <dd><code>https://data.norge.no/vocabulary/cpsvno#</code></dd>
         <dt>owl</dt>
         <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
-        <dt>prov</dt>
-        <dd><code>http://www.w3.org/ns/prov#</code></dd>
         <dt>rdf</dt>
         <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
         <dt>rdfs</dt>
@@ -368,17 +327,13 @@
         <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
     </dl>
 </section>
+
   <section id="legend">
-      <h2>Legend</h2>
-      <table class="entity">
-          <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
-          <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
-          <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
-          <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
-          <tr><td><sup class="sup-ap" title="Annotation Properties">dp</sup></td><td>Annotation Properties</td></tr>
-          <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
-          <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
-      </table>
+    <h2>Legend</h2>
+    <table class="entity">
+      <tr><td><sup class="sup-cl" title="Collections">cl</sup></td><td>Collections</td></tr>
+      <tr><td><sup class="sup-cp" title="Concepts">cp</sup></td><td>Concepts</td></tr>
+    </table>
   </section>
 </body>
 </html>
