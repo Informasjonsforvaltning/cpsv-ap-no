@@ -6,13 +6,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cpsvno: <https://data.norge.no/vocabulary/cpsvno#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @base <https://data.norge.no/vocabulary/cpsvno#> .
 
 ### About this ontology:
 
 <https://data.norge.no/vocabulary/cpsvno#> rdf:type owl:Ontology ;
                                             owl:versionIRI <cpsvno:v.0.3> ;
-                                            dct:modified "2021-04-09"^xsd:date ;
+                                            dct:modified "2021-04-09"^^xsd:date ;
                                             rdfs:comment "Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP."@nb ,
                                                          "Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP"@en ;
                                             rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
