@@ -8,20 +8,23 @@
 @prefix cpsvno: <https://data.norge.no/vocabulary/cpsvno#> .
 @base <https://data.norge.no/vocabulary/cpsvno#> .
 
+### About this ontology:
+
 <https://data.norge.no/vocabulary/cpsvno#> rdf:type owl:Ontology ;
-                                            owl:versionIRI <cpsvno:v.0.2> ;
+                                            owl:versionIRI <cpsvno:v.0.3> ;
+                                            dct:modified "2021-04-09"^xsd:date ;
                                             rdfs:comment "Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP."@nb ,
                                                          "Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP"@en ;
                                             rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
                                                              "Norwegian Digitalisation Agency"@en ;
                                             rdfs:label "CPSV-AP-NO"@en ,
                                                        "CPSV-AP-NO"@nb ;
-                                            owl:versionInfo """V.02:
+                                            owl:versionInfo """V.0.3:
 - Fremdeles ikke komplett, bare som et kontrollert vokabular.
-- Føyet til mer tekst i definisjonene."""@nb ,
-                                                            """V0.2:
+- Føyet til cpsvno:ruleForDataProcessing."""@nb ,
+                                                            """V.0.3:
 - Still incomplete, only as a controlled vocabulary.
-- Added more text in the definitions."""@en .
+- Added cpsvno:ruleForDataProcessing."""@en .
 
 #################################################################
 #    Annotation properties
@@ -68,6 +71,13 @@ cpsvno:ruleForNonDisclosure rdf:type owl:NamedIndividual ,
                             skos:prefLabel "rule for non-disclosure"@en ,
                                            "skjermingsregel"@nb .
 
+###  https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing
+cpsvno:ruleForDataProcessing rdf:type owl:NamedIndividual , skos:Concept ;
+    rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
+    skos:definition "regel som regulerer behandling av data, spesielt personopplysninger"@nb ,
+                                           "rule that regulates processing of data, especially personal data"@en ;
+     skos:prefLabel "rule for data processing"@en ,
+                                          "behandlingsgrunnlag"@nb .
 
 #################################################################
 #    General axioms
