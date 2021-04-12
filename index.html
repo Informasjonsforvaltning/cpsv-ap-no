@@ -195,7 +195,7 @@
     ],
     "https://schema.org/description": [
       {
-        "@value": "<p>Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP</p>"
+        "@value": "<p>Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP.</p>"
       }
     ],
     "https://schema.org/name": [
@@ -210,7 +210,7 @@
 <body>
   <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
     <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
-    <span style="font-size:smaller;">2.8.3</span>
+    <span style="font-size:smaller;">2.8.6</span>
   </div>
   <h1>CPSV-AP-NO</h1>
 <h3><em>A taxonomy</em></h3>
@@ -219,18 +219,20 @@
       <dl>
           <dt>URI</dt>
           <dd><code>https://data.norge.no/vocabulary/cpsvno#</code></dd>
+          <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/modified">Modified</a></dt>
+          <dd>2021-04-09</dd>
           <dt>Version Information</dt>
-          <dd>V0.2:
-- Still incomplete, only as a controlled vocabulary.
-- Added more text in the definitions.</dd>
+          <dd>V.0.3:
+- Fremdeles ikke komplett, bare som et kontrollert vokabular.
+- Føyet til cpsvno:ruleForDataProcessing.</dd>
           <dt>Version URI</dt>
-          <dd><a href="cpsvno:v.0.2">cpsvno:v.0.2</a></dd>
+          <dd><a href="cpsvno:v.0.3">cpsvno:v.0.3</a></dd>
           <dt>Ontology RDF</dt>
           <dd><a href="cpsvno.ttl">RDF (turtle)</a></dd>
       </dl>
       <h2>Description</h2>
       <div id="description">
-          <p>Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP</p>
+          <p>Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP.</p>
       </div>
   </section>
   <section id="toc">
@@ -251,7 +253,7 @@
   <section id="concepts">
     <h2>Concepts <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hierarchy">
-<li><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></li><li><a href="https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure">cpsvno:ruleForDisclosure</a></li><li><a href="https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure">cpsvno:ruleForNonDisclosure</a></li>
+<li><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></li><li><a href="https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing">cpsvno:ruleForDataProcessing</a></li><li><a href="https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure">cpsvno:ruleForDisclosure</a></li><li><a href="https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure">cpsvno:ruleForNonDisclosure</a></li>
 </ul>
     <div class="entity concept" id="Concept">
         <h3>Concept<sup title="Concept" class="sup-cp">cp</sup></h3>
@@ -262,12 +264,34 @@
             </tr>
         </table>
     </div>
+    <div class="entity concept" id="rulefordataprocessing">
+        <h3>rule for data processing<sup title="Concept" class="sup-cp">cp</sup></h3>
+            <h4>
+              behandlingsgrunnlag (nb)
+              , 
+              rule for data processing (en)
+              
+            </h4>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    rule that regulates processing of data, especially personal data<br/>
+                    regel som regulerer behandling av data, spesielt personopplysninger<br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity concept" id="rulefordisclosure">
         <h3>rule for disclosure<sup title="Concept" class="sup-cp">cp</sup></h3>
             <h4>
-              utleveringsregel (nb)
-              , 
               rule for disclosure (en)
+              , 
+              utleveringsregel (nb)
               
             </h4>
         <table>
@@ -278,8 +302,8 @@
             <tr>
                 <th>Definition</th>
                 <td>
-                    regel som regulerer utlevering av en ressurs (f.eks. et datasett)<br/>
                     rule that regulates disclosure of a resource (e.g. a dataset)<br/>
+                    regel som regulerer utlevering av en ressurs (f.eks. et datasett)<br/>
                 </td>
             </tr>
         </table>
@@ -313,6 +337,8 @@
     <dl>
         <dt>cpsvno</dt>
         <dd><code>https://data.norge.no/vocabulary/cpsvno#</code></dd>
+        <dt>dct</dt>
+        <dd><code>http://purl.org/dc/terms/</code></dd>
         <dt>owl</dt>
         <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
         <dt>rdf</dt>
