@@ -1,0 +1,3 @@
+= Klassen Livshendelse (cv:LifeEvent) [[Livshendelse]]
+
+<tekst kommer>

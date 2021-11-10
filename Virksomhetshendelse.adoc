@@ -1,0 +1,3 @@
+= Klassen Virksomhetshendelse (cv:BusinessEvent) [[Virksomhetshendelse]]
+
+<tekst kommer>

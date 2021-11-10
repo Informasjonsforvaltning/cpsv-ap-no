@@ -1,0 +1,3 @@
+= Klassen Åpningstid (schema:OpeningHoursSpecification) [[Åpningstid]]
+
+<tekst kommer>

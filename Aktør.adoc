@@ -1,0 +1,3 @@
+= Klassen Aktør (foaf:Agent) [[Aktør]]
+
+<tekst kommer> 
