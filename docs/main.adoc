@@ -1,0 +1,84 @@
+include::locale/attributes.adoc[]
+= Spesifikasjon for hendelses- og tjenestebeskrivelser (CPSV-AP-NO)
+:doctype: book
+:docinfo:
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toc-title: Innholdsfortegnelse
+:toclevels: 4
+:sectlinks:
+:table-stripes: even
+:leveloffset: +1
+:title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
+
+image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
+
+include::shared/download.adoc[]
+
+NOTE: *Innmelding av feil og mangler:* +
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+
+
+*Status*: Under utvikling +
+*Versjon*: Under utvikling +
+*Publisert*: <ikke publisert ennå> +
+*Oppdatert*: <ikke publisert ennå> +
+*Gjeldende versjon*: <ingen> +
+*Forrige versjon*: <ingen> +
+*Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
+*Veileder*: <ingen> +
+*Valideringsverktøy*: https://data.norge.no/validator (ikke tilpasset ennå)
+
+include::Om_denne_versjonen.adoc[]
+
+toc::[]
+
+include::Om_denne_spesifikasjonen.adoc[]
+
+include::Innledning.adoc[]
+
+include::Forenklet_modell.adoc[]
+
+include::Aktør.adoc[]
+
+include::BeskrivendeDatasett.adoc[]
+
+include::Deltagelse.adoc[]
+
+include::Dokumentasjon.adoc[]
+
+include::Dokumentasjonsreferanse.adoc[]
+
+include::Gebyr.adoc[]
+
+include::Hendelse.adoc[]
+
+include::Katalog.adoc[]
+
+include::Kontaktpunkt.adoc[]
+
+include::Livshendelse.adoc[]
+
+include::OffentligOrganisasjon.adoc[]
+
+include::OffentligTjeneste.adoc[]
+
+include::Regel.adoc[]
+
+include::RegulativRessurs.adoc[]
+
+include::Tjeneste.adoc[]
+
+include::Tjenestekanal.adoc[]
+
+include::Tjenesteresultat[]
+
+include::Vilkår.adoc[]
+
+include::Virksomhetshendelse.adoc[]
+
+include::Åpningstid.adoc[]
+
+
+include::shared/stats.adoc[]

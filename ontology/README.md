@@ -1,7 +1,7 @@
 # CPSV-AP-NO
 
-cpsvno.ttl: Ontology for CPSV-AP-NO (Norwegian Application Profile of CPSV-AP), with controlled vocabulary (predefined instances). 
+cpsvno.ttl: Ontology for CPSV-AP-NO (Norwegian Application Profile of CPSV-AP), with controlled vocabulary (predefined instances).
 
 
 
-\- _Norwegian Digitalisation Agency / Digitaliseringsdirektoratet_ (https://digdir.no)
+\ [_Digitaliseringsdirektoratet / Norwegian Digitalisation Agency_](https://digdir.no)
