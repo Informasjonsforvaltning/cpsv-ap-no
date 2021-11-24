@@ -9,7 +9,6 @@ ifdef::backend-pdf[:toc: macro]
 :toclevels: 4
 :sectlinks:
 :table-stripes: even
-:leveloffset: +1
 :title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
 
 image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
@@ -28,7 +27,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
 *Veileder*: <ingen> +
-*Valideringsverktøy*: https://data.norge.no/validator ([yellow-background]##ikke tilpasset ennå#)
+*Valideringsverktøy*: https://data.norge.no/validator ([yellow-background]#ikke tilpasset ennå#)
 
 include::Om_denne_versjonen.adoc[]
 

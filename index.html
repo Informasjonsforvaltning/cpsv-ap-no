@@ -445,7 +445,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
 <li><a href="#Om_denne_versjonen">Om denne versjonen</a></li>
-<li><a href="#Om_denne_spesifikasjonen">Om denne spesifikasjonen</a></li>
+<li><a href="#Om_denne_spesifikasjonen">Om spesifikasjonen</a></li>
 <li><a href="#Innledning">Innledning</a></li>
 <li><a href="#Forenklet_modell">Forenklet modell for CPSV-AP-NO</a></li>
 <li><a href="#Aktør">Klassen Aktør (foaf:Agent)</a></li>
@@ -466,7 +466,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tjenestekanal">Klassen Tjenestekanal (cv:Channel)</a></li>
 <li><a href="#Vilkår">Klassen Vilkår (cv:CriterionRequirement)</a></li>
 <li><a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a></li>
-<li><a href="#Åpningstid">Klassen Åpningstid (schema:OpeningHoursSpecification)</a></li>
+<li><a href="#Åpningstid">Klassen Åpningstid (schema:OpeningHoursSpecification)</a>
+<ul class="sectlevel2">
+<li><a href="#Åpningstid-valgfrie-egenskaper">Valgfrie egenskaper for Klassen Åpningstid</a>
+<ul class="sectlevel3">
+<li><a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a></li>
+<li><a href="#Åpningstid-gyldigFraOgMed">Åpningstid – gyldig fra og med (schema:validFrom)</a></li>
+<li><a href="#Åpningstid-gyldigTilOgMed">Åpningstid – gyldig til og med (schema:validThrough)</a></li>
+<li><a href="#Åpningstid-stenger">Åpningstid – stenger (schema:closes)</a></li>
+<li><a href="#Åpningstid-åpner">Åpningstid – åpner (schema:opens)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -512,7 +524,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
 <strong>Veileder</strong>: &lt;ingen&gt;<br>
-<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (<span class="yellow-background">#ikke tilpasset ennå</span>)</p>
+<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (<span class="yellow-background">ikke tilpasset ennå</span>)</p>
 </div>
 </div>
 </div>
@@ -526,7 +538,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Om_denne_spesifikasjonen"><a class="link" href="#Om_denne_spesifikasjonen">Om denne spesifikasjonen</a></h2>
+<h2 id="Om_denne_spesifikasjonen"><a class="link" href="#Om_denne_spesifikasjonen">Om spesifikasjonen</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>&lt;tekst kommer&gt;</p>
@@ -699,8 +711,317 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="sect1">
 <h2 id="Åpningstid"><a class="link" href="#Åpningstid">Klassen Åpningstid (schema:OpeningHoursSpecification)</a></h2>
 <div class="sectionbody">
+<div id="img-KlassenÅpningstid" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenÅpningstid.png"><img src="images/KlassenÅpningstid.png" alt="KlassenÅpningstid"></a>
+</div>
+<div class="title">Figur 1. Klassen Åpningstid (schema:OpeningHoursSpecificatinon).</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opening Hours Specification</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å beskrive detaljer i åpningstid på en strukturert måte.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A structured value providing information about the opening hours.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:OpeningHoursSpecification</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="Åpningstid-valgfrie-egenskaper"><a class="link" href="#Åpningstid-valgfrie-egenskaper">Valgfrie egenskaper for Klassen Åpningstid</a></h3>
+<div class="sect3">
+<h4 id="Åpningstid-dagerIUka"><a class="link" href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">day of week</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:dayOfWeek</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:DayOfWeek</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dag i uke som åpningsspesifikasjonen gjelder for.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The day of the week for which these opening hours are valid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandag til Fredag.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;åpningsTid&gt; a schema:OpeningHoursSpecification ;
+   schema:dayOfWeek schema:Monday , schema:Tuesday , schema:Wednesday , schema:Tursday , schema:Friday ;
+   schema:opens "08:00"^^xsd:time ;
+   schema:closes "16:00"^^xsd:time ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Åpningstid-gyldigFraOgMed"><a class="link" href="#Åpningstid-gyldigFraOgMed">Åpningstid – gyldig fra og med (schema:validFrom)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">valid from inclusive</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:validFrom</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:date or xsd:dateTime</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi fra og med når den aktuelle åpningstid gjelder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date when the open hours specification becomes valid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gyldighet til julestengning.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>ex:ChristmasClosed a schema:OpeningHoursSpecification;
+   schema:validFrom "2016-12-24T012:00Z"^^xsd:dateTime ;
+   schema:validThrough "2017-01-02T09:00Z"^^xsd:dateTime .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Åpningstid-gyldigTilOgMed"><a class="link" href="#Åpningstid-gyldigTilOgMed">Åpningstid – gyldig til og med (schema:validThrough)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">valid through inclusive</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:validThrough</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:date or xsd:dateTime</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi til og med når den aktuelle åpningstiden gjelder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date after which when the open hours specification is not valid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Åpningstid-gyldigFraOgMed">Åpningstid – gyldig fra og med (schema:validFrom)</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid-gyldigFraOgMed">Åpningstid – gyldig fra og med (schema:validFrom)</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Åpningstid-stenger"><a class="link" href="#Åpningstid-stenger">Åpningstid – stenger (schema:closes)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">closes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:closes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:time</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgis stengningstidspunkt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The closing hour.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Åpningstid-åpner"><a class="link" href="#Åpningstid-åpner">Åpningstid – åpner (schema:opens)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">opens</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:opens</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:time</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi åpningstidspunkt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The opening hour.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I henhold til shttps://schema.org/OpeningHoursSpecification[chema.org], at denne egenskapen brukes betyr «åpent» og «lukket» ellers.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">According to <a href="https://schema.org/OpeningHoursSpecification">schema.org</a>, “The place is <strong>open</strong> if the <a href="https://schema.org/opens">opens</a> property is specified, and <strong>closed</strong> otherwise.”</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a>.</p>
 </div>
 <!-- Google Analytics -->
 <script>
@@ -716,9 +1037,11 @@ ga('send', 'pageview');
 </div>
 </div>
 </div>
+</div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-16 13:06:17 UTC
+Sist oppdatert 2021-11-24 12:22:31 UTC
 </div>
 </div>
 </body>

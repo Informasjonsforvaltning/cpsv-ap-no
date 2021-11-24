@@ -1,3 +1,3 @@
-= Forenklet modell for CPSV-AP-NO [[Forenklet_modell]]
+== Forenklet modell for CPSV-AP-NO [[Forenklet_modell]]
 
 <tekst kommer>
