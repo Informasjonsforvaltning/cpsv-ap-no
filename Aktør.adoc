@@ -130,7 +130,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Eksempel|Se under <<KnytteDeltagendeAktørerTilTjeneste>>.
+|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
-Eksempel i RDF Turtle: Se under <<KnytteDeltagendeAktørerTilTjeneste>>.
+Eksempel i RDF Turtle: Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
