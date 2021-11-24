@@ -39,9 +39,11 @@ Eksempel i RDF Turtle:
 |Eksempel|Det fulle navnet til vår exAktør er «Den beste restauranten AS»
 |===
 
-Eksempel i RDF Turtle:  +
+Eksempel i RDF Turtle:
+----
 <exAktør> a foaf:Agent ;
    foaf:name "Den beste restauranten AS"@nb ; .
+----
 
 === Anbefalte egenskaper for klassen _Aktør_ [[Aktør-anbefalte-egenskaper]]
 
@@ -85,7 +87,6 @@ Eksempel I RDF Turtle:
 |===
 
 Eksempel i RDF Turtle:
-
 -----
 <exAktør> a foaf:Agent ;
    foaf:name "Den beste restauranten AS"@nb ;
@@ -108,7 +109,6 @@ Eksempel i RDF Turtle:
 |Merknad|Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen cv:hasAddress og range locn:Address. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI locn:address med range locn:Address. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen locn:address.
 |Eksempel|Restaurantgata 1, Gourmetby, Matland
 |===
-
 
 Eksempel i RDF Turtle:
 ----
