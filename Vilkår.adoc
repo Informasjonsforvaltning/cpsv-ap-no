@@ -211,6 +211,7 @@ Forslag til et kontrollert vokabular for typer vilkår:
 Forslag til et kontrollert vokabular for typer oversettelse:
 
 * autorisert oversettelse
+* [yellow-background]#<kom med innspill>#
 
 ==== Vilkår – type kopieringskvalitet (cccev:typeOfCopyQuality) [[Vilkår-typeKopieringskvalitet]]
 
