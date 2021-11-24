@@ -1,6 +1,6 @@
 == Klassen Virksomhetshendelse (cv:BusinessEvent) [[Virksomhetshendelse]]
 
-[[img-KlassenÅpningstid]]
+[[img-KlassenVirksomhetshendelse]]
 .Klassen Virksomhetshendelse (cv:BusinessEvent).
 [link=images/KlassenVirksomhetshendelse.png]
 image::images/KlassenVirksomhetshendelse.png[]
