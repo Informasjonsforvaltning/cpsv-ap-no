@@ -23,7 +23,7 @@ Eksempel i RDF Turtle:
 <starteOgDriveRestaurant> a cv:BusinessEvent ; .
 -----
 
-=== Obligatoriske egenskaper for klassen Virksomhetshendelse [[Virksomhetshendelse-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Virksomhetshendelse_ [[Virksomhetshendelse-obligatoriske-egenskaper]]
 
 ==== Virksomhetshendelse – identifikator (dct:identifier) [[Virksomhetshendelse-identifikator]]
 
@@ -63,7 +63,7 @@ Eksempel i RDF Turtle:
    dct:title "Å starte og drive en restaurant"@nb ; .
 ----
 
-=== Anbefalte egenskaper for klassen Virksomhetshendelse [[Virksomhetshendelse-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Virksomhetshendelse_ [[Virksomhetshendelse-anbefalte-egenskaper]]
 
 ==== Virksomhetshendelse – beskrivelse (dct:description) [[Virksomhetshendelse-beskrivelse]]
 
@@ -112,7 +112,7 @@ Eksempel i RDF Turtle:
 <søknadOmSkjenkebevilling> a cv:PublicService ; .
 -----
 
-=== Valgfrie egenskaper for klassen Virksomhetshendelse [[Virksomhetshendelse-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Virksomhetshendelse_ [[Virksomhetshendelse-valgfrie-egenskaper]]
 
 ==== Virksomhetshendelse – begrep (dct:subject) [[Virksomhetshendelse-begrep]]
 

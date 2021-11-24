@@ -16,7 +16,7 @@ image::images/KlassenGebyr.png[]
 |Eksempel|Se under <<OffentligTjeneste-gebyr>>.
 |===
 
-=== Obligatoriske egenskaper for klassen Gebyr [[Gebyr-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Gebyr_ [[Gebyr-obligatoriske-egenskaper]]
 
 ==== Gebyr – identifikator (dct:identifier) [[Gebyr-identifikator]]
 
@@ -34,7 +34,7 @@ image::images/KlassenGebyr.png[]
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]|Eksempel|
 |===
 
-=== Anbefalte egenskaper for klassen Gebyr [[Gebyr-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Gebyr_ [[Gebyr-anbefalte-egenskaper]]
 
 ==== Gebyr – beløp (cv:value) [[Gebyr-beløp]]
 
@@ -88,7 +88,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 
 Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 
-=== Valgfrie egenskaper for klassen Gebyr [[Gebyr-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Gebyr_ [[Gebyr-valgfrie-egenskaper]]
 
 ==== Gebyr – er bestemt av (cv:isDefinedBy) [[Gebyr-erBestemtAv]]
 

@@ -16,7 +16,7 @@ image::images/KlassenVilkår.png[]
 |Eksempel|«Over 20 år»
 |===
 
-=== Obligatoriske egenskaper for klassen Vilkår [[Vilkår-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Vilkår_ [[Vilkår-obligatoriske-egenskaper]]
 
 ==== Vilkår – forventet datatype (cccev:expectedDataType) [[Vilkår-forventetDatatype]]
 
@@ -77,7 +77,7 @@ Eksempel i RDF Turtle:
    dct:title "Over 20 år"@nb ; .
 -----
 
-=== Valgfrie egenskaper for klassen Vilkår [[Vilkår-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Vilkår [[Vilkår-valgfrie-egenskaper]]
 
 ==== Vilkår – anvendbarhetsperiode (cccev:applicableinPeriodOfTime) [[Vilkår-anvendbarhetsperiode]]
 
