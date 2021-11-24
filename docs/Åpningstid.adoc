@@ -1,6 +1,5 @@
 == Klassen Åpningstid (schema:OpeningHoursSpecification) [[Åpningstid]]
 
-
 [[img-KlassenÅpningstid]]
 .Klassen Åpningstid (schema:OpeningHoursSpecificatinon).
 [link=images/KlassenÅpningstid.png]

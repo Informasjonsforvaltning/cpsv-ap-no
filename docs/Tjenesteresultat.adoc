@@ -78,7 +78,7 @@ Eksempel i RDF Turtle:
    dct:tilte "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
 -----
 
-=== Valgfrie egenskaper for klassen Tjenesteresultat [[Tjenesteresultat-Valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen Tjenesteresultat [[Tjenesteresultat-valgfrie-egenskaper]]
 
 ==== Tjenesteresultat – kan skape (xkos:causes) [[Tjenesteresultat-kanSkape]]
 
