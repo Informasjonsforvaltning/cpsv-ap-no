@@ -1,3 +1,3 @@
-= Klassen Offentlig organisasjon (cv:PublicOrganisation) [[OffentligOrganisasjon]]
+== Klassen Offentlig organisasjon (cv:PublicOrganisation) [[OffentligOrganisasjon]]
 
 <tekst kommer>
