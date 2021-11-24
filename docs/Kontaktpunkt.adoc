@@ -16,7 +16,7 @@ image::images/KlassenKontaktpunkt.png[]
 |Eksempel|
 |===
 
-=== Valgfrie egenskaper for klassen Kontaktpunkt [[Kontaktpunkt-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Kontaktpunkt_ [[Kontaktpunkt-valgfrie-egenskaper]]
 
 ==== Kontaktpunkt – åpningstid strukturert (schema:hoursAvailable) [[Kontaktpunkt-åpningstidStrukturert]]
 
