@@ -17,7 +17,7 @@ image::images/KlassenTjenesteresultat.png[]
 |Eksempel|Resultater fra tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).
 |===
 
-=== Obligatoriske egenskaper for klassen Tjenesteresultat [[Tjenesteresultat-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-obligatoriske-egenskaper]]
 
 ==== Tjenesteresultat – identifikator (dct:identifier) [[Tjenesteresultat-identifikator]]
 
@@ -55,7 +55,7 @@ Eksempel i RDF Turtle:
    dct:tilte "Skjenkebevilling til «Den beste restauranten AS»"@nb ; .
 -----
 
-=== Anbefalte egenskaper for klassen Tjenesteresultat [[Tjenesteresultat-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-anbefalte-egenskaper]]
 
 ==== Tjenesteresultat – beskrivelse (dct:description) [[Tjenesteresultat-beskrivelse]]
 
@@ -78,7 +78,7 @@ Eksempel i RDF Turtle:
    dct:tilte "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
 -----
 
-=== Valgfrie egenskaper for klassen Tjenesteresultat [[Tjenesteresultat-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-valgfrie-egenskaper]]
 
 ==== Tjenesteresultat – kan skape (xkos:causes) [[Tjenesteresultat-kanSkape]]
 

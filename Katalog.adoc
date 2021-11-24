@@ -21,7 +21,7 @@ Eksempel i RDF Turtle:
 <https://data.norge.no/public-services> a dcat:Catalog ; .
 ----
 
-=== Obligatoriske egenskaper for klassen Katalog [[Katalog-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Katalog_ [[Katalog-obligatoriske-egenskaper]]
 
 ==== Katalog – beskrivelse (dct:description) [[Katalog-beskrivelse]]
 
@@ -103,7 +103,7 @@ Eksempel i RDF Turtle:
    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; .
 -----
 
-=== Anbefalte egenskaper for klassen Katalog [[Katalog-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Katalog_ [[Katalog-anbefalte-egenskaper]]
 
 ==== Katalog – dekningsområde (dct:spatial) [[Katalog-dekningsområde]]
 
@@ -263,7 +263,7 @@ Eksempel i RDF Turtle:
 |Eksempel|
 |===
 
-=== Valgfrie egenskaper for klassen Katalog [[Katalog-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
 
 ==== Katalog – er del av (dct:isPartOf) [[Katalog-erDelAv]]
 

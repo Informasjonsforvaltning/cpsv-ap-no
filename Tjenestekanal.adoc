@@ -16,7 +16,7 @@ image::images/KlassenTjenestekanal.png[]
 |Eksempel|
 |===
 
-=== Obligatoriske egenskaper for klassen Tjenestekanal [[Tjenestekanal-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Tjenestekanal_ [[Tjenestekanal-obligatoriske-egenskaper]]
 
 ==== Tjenestekanal – identifikator (dct:identifier) [[Tjenestekanal-identifikator]]
 
@@ -35,7 +35,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel|
 |===
 
-=== Valgfrie egenskaper for klassen Tjenestekanal [[Tjenestekanal-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Tjenestekanal_ [[Tjenestekanal-valgfrie-egenskaper]]
 
 ==== Tjenestekanal – datatjeneste (cpsvno:dataSeivice) [[Tjenestekanal-datatjeneste]]
 

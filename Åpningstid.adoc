@@ -16,7 +16,7 @@ image::images/KlassenÅpningstid.png[]
 |Eksempel|
 |===
 
-=== Valgfrie egenskaper for Klassen Åpningstid [[Åpningstid-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for Klassen _Åpningstid_ [[Åpningstid-valgfrie-egenskaper]]
 
 ==== Åpningstid – dager i uka (schema:dayOfWeek) [[Åpningstid-dagerIUka]]
 
