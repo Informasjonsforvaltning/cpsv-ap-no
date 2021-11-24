@@ -1,3 +1,358 @@
 == Klassen Katalog (dcat:Catalog) [[Katalog]]
 
-<tekst kommer>
+[[img-KlassenKatalog]]
+.Klassen Katalog (dcat:Catalog).
+[link=images/KlassenKatalog.png]
+image::images/KlassenKatalog.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Catalog
+|Beskrivelse|Brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over hendelser og (offentlige) tjenester.
+|Usage note|To represent a catalog, in context of this specification a catalog of events and (public) services.
+|URI|dcat:Catalog
+|Kravsnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: EUs CPSV-AP dekker ikke katalogbeskrivelse. Denne klassen fra DCAT-AP-NO tas med her for å kunne denne norsk behov for å beskrive «hendelses-/tjenestekataloger».
+|Eksempel|https://data.norge.no/public-services[https://data.norge.no/public-services] er en katalog over tjenester og hendelser.
+|===
+
+Eksempel i RDF Turtle:
+----
+<https://data.norge.no/public-services> a dcat:Catalog ; .
+----
+
+=== Obligatoriske egenskaper for klassen Katalog [[Katalog-obligatoriske-egenskaper]]
+
+==== Katalog – beskrivelse (dct:description) [[Katalog-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|description
+|URI|dct:description
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi fritekst-beskrivelse av innholdet i katalogen. Gjentas når beskrivelsen finnes i flere ulike språk.
+|Usage note|For textual description of the content in the catalog.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|
+|Eksempel|«Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser»
+|===
+
+Eksempel i RDF Turtle:
+----
+<https://data.norge.no/public-services> a dcat:Catalog ;
+   dct:description "Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser"@nb ; .
+----
+
+==== Katalog – identifikator (dct:identifier) [[Katalog-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi identifikatoren til katalogen.
+|Usage note|For the identifier of the catalog.
+|Multiplisitet|1..1
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]|Eksempel|
+|Eksempel|
+|===
+
+==== Katalog – tittel (dct:title) [[Katalog-tittel]]
+
+[cols="30s,70d"]
+|===
+|English name|title
+|URI|dct:title
+|Range|rdfs:Literal
+|Beskrivelse|For å oppgi navnet på katalogen. Gjentas når navnet finnes i flere ulike språk.
+|Usage note|For the title of the catalog.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|
+|Eksempel|Hendelses- og tjenestekatalog
+|===
+
+Eksempel i RDF Turtle:
+----
+<https://data.norge.no/public-services> a dcat:Catalog ;
+   dct:title "Hendelses- og tjenestekatalog"@nb ; .
+----
+
+==== Katalog – utgiver (dct:publisher) [[Katalog-utgiver]]
+
+[cols="30s,70d"]
+|===
+|English name|publisher
+|URI|dct:publisher
+|Range|foaf:Agent
+|Beskrivelse|Refererer til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
+|Usage note|To refer to the Agent responsible for making the catalog available.
+|Multiplisitet|1..1
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|
+|Eksempel|Digdir er utgiver av «Hendelses- og tjenestekatalog» i Felles datakatalog.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<https://data.norge.no/public-services> a dcat:Catalog ;
+   dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; .
+-----
+
+=== Anbefalte egenskaper for klassen Katalog [[Katalog-anbefalte-egenskaper]]
+
+==== Katalog – dekningsområde (dct:spatial) [[Katalog-dekningsområde]]
+
+[cols="30s,70d"]
+|===
+|English name|spatial coverage
+|URI|dct:spatial
+|Range|dct:Location
+|Beskrivelse|Brukes til å oppgi geografisk område som er dekket av katalogen.
+|Usage note|For the spatial coverage of the catalog.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+|Eksempel|«Hendelses- og tjenestekatalog» i Felles datakatalog har Norge som sitt dekningsområde.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<https://data.norge.no/public-services> a dcat:Catalog ;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ; .
+-----
+
+==== Katalog – endringsdato (dct:modified) [[Katalog-endringsdato]]
+
+[cols="30s,70d"]
+|===
+|English name|modified (last update)
+|URI|dct:modified
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse|For å oppgi dato for siste oppdatering/endring av katalogen.
+|Usage note|For the date of the last update of the catalog.
+|Multiplisitet|0..1
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|
+|Eksempel|
+|===
+
+==== Katalog – frekvens (dct:accrualPeriodicity) [[Katalog-frekvens]]
+
+[cols="30s,70d"]
+|===
+|English name|accrual periodicity
+|URI|dct:accrualPeriodicity
+|Range|dct:Frequency
+|Beskrivelse|For å oppgi oppdateringsfrekvensen for katalogen.
+|Usage note|For the accrual periodicity of the catalog.
+|Multiplisitet|0..1
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Verdien skal velges fra EUs kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency[Frequency].
+|Remarks|EU’s controlled vocabulary over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency[Frequency] shall be used.
+|Eksempel|
+|===
+
+==== Katalog – hjemmeside (foaf:homepage) [[Katalog-hjemmeside]]
+
+[cols="30s,70d"]
+|===
+|English name|homepage
+|URI|foaf:homepage
+|Range|foaf:Document
+|Beskrivelse|Brukes til å referere til nettside som fungerer som hovedside for katalogen.
+|Usage note|To refer to the homepage of the catalog.
+|Multiplisitet|0..1
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|
+|Eksempel|
+|===
+
+==== Katalog – lisens (dct:license) [[Katalog-lisens]]
+
+[cols="30s,70d"]
+|===
+|English name|licence
+|URI|dct:license
+|Range|dct:LicenseDocument
+|Beskrivelse|Brukes til å vise til lisens for katalogen som beskriver hvordan den kan viderebrukes.
+|Usage note|Refer to the licence of the catalog.
+|Multiplisitet|0..1
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Verdien skal velges fra EUs liste over https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], når lisensen som brukes finnes på listen.
+|Eksempel|«Hendelses- og tjenestekatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<https://data.norge.no/public-services> a dcat:Catalog ;
+   dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ; .
+-----
+
+==== Katalog – opphav (dct:provenance) [[Katalog-opphav]]
+
+[cols="30s,70d"]
+|===
+|English name|provenance (authenticity)
+|URI|dct:provenance
+|Range|dct:ProvenanceStatement
+|Beskrivelse|Brukes til å referere til beskrivelse av autentisitet og integritet til innholdet i katalogen.
+|Usage note|This property indicates a statement of the authenticity and the integrity of the the content in a catalog.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|
+|Eksempel|
+|===
+
+==== Katalog – språk (dct:language) [[Katalog-språk]]
+
+[cols="30s,70d"]
+|===
+|English name|language
+|URI|dct:language
+|Range|dct:LinguisticSystem
+|Beskrivelse|Brukes til å oppgi språk som brukes i tekstlige metadata som beskriver innholdet i katalogen. Gjentas hvis metadata er gitt i flere språk.
+|Usage note|To specify the languages used in a catalog.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Eksempel|«Hendelses- og tjenestekatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<https://data.norge.no/public-services> a dcat:Catalog ;
+   dct:language 
+      <https://publications.europa.eu/resource/authority/language/NOB>, # bokmål  
+      <https://publications.europa.eu/resource/authority/language/NNN>, # nynorsk
+      <https://publications.europa.eu/resource/authority/language/ENG>; # engelsk 
+  .
+-----
+
+==== Katalog – temaer (dcat:themeTaxonomy) [[Katalog-temaer]]
+
+[cols="30s,70d"]
+|===
+|English name|theme taxonomy
+|URI|dcat:themeTaxonomy
+|Range|skos:ConceptScheme
+|Beskrivelse|Brukes til å referere til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere de katalogiserte ressursene i katalogen.
+|Usage note|This property refers to a knowledge organisation system (i.e., thesaurus, taxonomy) used to classify the resources in a catalog.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc[EuroVoc]. https://psi.norge.no/los/[Los - felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
+|Eksempel|
+|===
+
+==== Katalog – utgivelsesdato (dct:issued) [[Katalog-utgivelsesdato]]
+
+[cols="30s,70d"]
+|===
+|English name|issued (release date)
+|URI|dct:issued
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse|Dato for formell utgivelse (publisering) av katalogen.
+|Usage note|This property contains the date of first publication of a Catalogue. This property should be typed as xsd:date or xsd:dateTime.
+|Multiplisitet|0..1
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|
+|Eksempel|
+|===
+
+=== Valgfrie egenskaper for klassen Katalog [[Katalog-valgfrie-egenskaper]]
+
+==== Katalog – er del av (dct:isPartOf) [[Katalog-erDelAv]]
+
+[cols="30s,70d"]
+|===
+|English name|is part of
+|URI|dct:isPartOf
+|Range|dcat:Catalog
+|Beskrivelse|Brukes til å referere til en beslektet katalog som denne katalogen fysisk eller logisk er inkludert i.
+|Usage note|This property refers to a related Catalogue in which the described Catalogue is physically or logically included.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+==== Katalog – har del (dct:hasPart) [[Katalog-harDel]]
+
+[cols="30s,70d"]
+|===
+|English name|has part
+|URI|dct:hasPart
+|Range|dcat:Catalog
+|Beskrivelse|Brukes til å referere til en beslektet katalog som er en del av den beskrevne katalogen.
+|Usage note|This property refers to a related Catalogue that is part of the described Catalogue.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+==== Katalog – hendelsesbeskrivelse (dcatno:event) [[Katalog-hendelsesbeskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|event
+|URI|dcatno:event
+|Range|cv:Event
+|Beskrivelse|Brukes til å referere til hendelsesbeskrivelse som er katalogisert i katalogen.
+|Usage note|To refer to the events that are listed in the catalogue.
+|Subegenskap av|dct:hasPart
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: klassen utvides med denne egendefinerte egenskap, for å kunne knytte hendelsesbeskrivelser til en katalog.
+|Eksempel|
+|===
+
+==== Katalog – produsent (dct:creator) [[Katalog-produsent]]
+
+[cols="30s,70d"]
+|===
+|English name|creator
+|URI|dct:creator
+|Range|foaf:Agent
+|Beskrivelse|Brukes til å referere til aktøren som er hovedansvarlig for å produsere katalogen.
+|Usage note|This property contains the entity responsible for producing the catalogue.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+==== Katalog – rettigheter (brukervilkår) (dct:rights) [[Katalog-rettigheter]]
+
+[cols="30s,70d"]
+|===
+|English name|rights (use terms)
+|URI|dct:rights
+|Range|dct:RightsStatement
+|Beskrivelse|Brukes til å referere til uttalelse som spesifiserer brukervilkår knyttet til katalogen.
+|Usage note|This property includes a statement that specifies usage rights of the Catalogue.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+==== Katalog – tjenestebeskrivelse (dcatno:service) [[Katalog-tjenestebeskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|service
+|URI|dcatno:service
+|Range|cpsvno:Service
+|Beskrivelse|Brukes til å referere til tjenestebeskrivelse som er katalogisert i katalogen.
+|Usage note|To refer to the services that are included in the catalogue.
+|Subegenskap av|dct:hasPart
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: klassen utvides med denne egendefinerte egenskap, for å kunne knytte tjenestebeskrivelser til en katalog.
+|Eksempel|
+|===
