@@ -1,7 +1,7 @@
 == Klassen Tjenesteresultat (cv:Output) [[Tjenesteresultat]]
 
 [[img-KlassenTjenesteresultat]]
-.Klassen Tjenesteresultat (cv:Output).
+.Klassen Tjenesteresultat (cv:Output)
 [link=images/KlassenTjenesteresultat.png]
 image::images/KlassenTjenesteresultat.png[]
 
