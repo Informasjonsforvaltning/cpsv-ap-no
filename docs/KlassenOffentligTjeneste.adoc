@@ -129,7 +129,7 @@ Eksempel i RDF Turtle:
    dct:title "Søknad om skjenkebevilling"@nb ; .
 -----
 
-=== Anbefalte egenskaper for klassen _Offentlig tjeneste_ [[Offentlig tjeneste]]
+=== Anbefalte egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-anbefalte-egenskaper]]
 
 ==== Offentlig tjeneste – dekningsområde (dct:spatial) [[OffentligTjeneste-dekningsområde]]
 
@@ -169,7 +169,7 @@ Eksempel i RDF Turtle:
 |Usage note|This property indicates a related Registry Service in which is included. This property is the inverse of `dct:hasPart`.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Denne er den inverse av egenskapen <<OffentligTjenest-harDel>>.
+|Merknad 1|Denne er den inverse av egenskapen <<OffentligTjeneste-harDel>>.
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men tatt med i DCAT-AP-NO som er basert på EUs BRegDCAT-AP.
 |Eksempel|
 |===
@@ -185,7 +185,7 @@ Eksempel i RDF Turtle:
 |Usage note|This property indicates a related Registry Service that is included either physically or logically in the described resource.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Dette er den inverse av egenskapen <<ffentligTjeneste-erDelAv>>.
+|Merknad 1|Dette er den inverse av egenskapen <<OffentligTjeneste-erDelAv>>.
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men tatt med i DCAT-AP-NO som er basert på EUs BRegDCAT-AP.
 |Eksempel|
 |===
@@ -211,7 +211,7 @@ Eksempel i RDF Turtle:
    foaf:homepage <https://kommune24-7.no/1813> ; .
 -----
 
-==== Offentlig tjeneste – produserer (cpsv:produces) [[OffentligTtjenest-produserer]]
+==== Offentlig tjeneste – produserer (cpsv:produces) [[OffentligTjeneste-produserer]]
 
 [cols="30s,70d"]
 |===
