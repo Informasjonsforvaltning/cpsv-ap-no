@@ -1,0 +1,76 @@
+== Klassen Deltagelse (cv:Participation) [[Deltagelse]]
+
+[[img-KlassenDeltagelse]]
+.Klassen Deltagelse (cv:Participation)
+[link=images/KlassenDeltagelse.png]
+image::images/KlassenDeltagelse.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Participation
+|Beskrivelse|Brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn https://digdir.sharepoint.com/sites/Informasjonsforvaltning-rammeverkS.T.4.1/Delte%20dokumenter/Felles%20tjenestekatalog/CPSV-AP-NO/CPSV-AP-NO%20utkast%20v07.docx#_Offentlig_tjeneste_-[det kompetente organet], som er involvert i en tjeneste.
+|Usage note|The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider.
+|URI|cv:Participation
+|Kravsnivå|Valgfri/Optional
+|Merknad|Se også Å knytte deltagende aktører til en tjeneste.
+|Eksempel|Se under Å knytte deltagende aktører til en tjeneste.
+|===
+
+=== Obligatoriske egenskaper for klassen _Deltagelse_ [[Deltagelse-obligatoriske-egenskaper]]
+
+==== Deltagelse – beskrivelse (dct:description) [[Deltagelse-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|description
+|URI|dct:description
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av deltagelsen. Gjentas når beskrivelsen finnes i flere ulike språk.
+|Usage note|A free text description of the Participation.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n for å støtte flerspråklighet.
+|Eksempel|Se under Å knytte deltagende aktører til en tjeneste.
+|===
+
+==== Deltagelse – identifikator (dct:identifier) [[Deltagelse-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal typed as URI
+|Beskrivelse|Brukes til å oppgi identifikatoren til deltagelsen.
+|Usage note|This property represents an Identifier for the Participation.
+|Multiplisitet|1..1
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|Eksempel|
+|===
+
+==== Deltagelse – rolle (cv:role) [[Deltagelse-rolle]]
+
+[cols="30s,70d"]
+|===
+|English name|role
+|URI|cv:role
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til et begrep som beskriver en rolle i deltagelsen.
+|Usage note|Provides the role played.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Verdien skal velges fra en felles kontrollert liste over roller når den finnes på listen. Se forslag til et kontrollert vokabular for rolletyper under denne tabellen.
+|Remarks|This should be provided using a controlled vocabulary. Since this is an extension mechanism for the CSPV-AP, the controlled vocabulary should be decided to suit local implementations.
+|Eksempel|Se under Å knytte deltagende aktører til en tjeneste.
+|===
+
+Forslag til et kontrollert vokabular med følgende rolletyper:
+
+* Tjenesteprodusent (f.eks. Sem og Stenersen for kommunene)
+* Tjenestetilbyder (f.eks. Altinn, Evry (kommunene))
+* Sluttbruker (hvem er tjenesten for)
+* Datakonsument (bruker av dataene)
+* Dataleverandør (bidrar med data)
+* [yellow-background]#<kom med innspill>#

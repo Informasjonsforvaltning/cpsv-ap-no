@@ -1,0 +1,36 @@
+== Klassen Kontaktpunkt (vcard:Kind) [[Kontaktpunkt]]
+
+[[img-KlassenKontaktpunkt]]
+.Klassen Kontaktpunkt (vard:Kind).
+[link=images/KlassenKontaktpunkt.png]
+image::images/KlassenKontaktpunkt.png[]
+
+[cols="30s,70d"]
+|===
+|English name|contact point
+|Beskrivelse|Brukes til å representere kontakt informasjon for en tjeneste, en tjenestekanal, en offentlig organisasjon osv.
+|Usage note|This class represents the contact information for a Public Service, Channel, Public Organization, etc.
+|URI|vcard:Kind
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Norsk utvidelse: vcard:Kind som URI istedenfor schema:ContactPoint i CPSV-AP, for å samkjøre med DCAT-AP-NO.
+|Eksempel|
+|===
+
+=== Valgfrie egenskaper for klassen _Kontaktpunkt_ [[Kontaktpunkt-valgfrie-egenskaper]]
+
+==== Kontaktpunkt – åpningstid strukturert (schema:hoursAvailable) [[Kontaktpunkt-åpningstidStrukturert]]
+
+[cols="30s,70d"]
+|===
+|English name|hours available
+|URI|schema:hoursAvailable
+|Range|schema:OpeningHoursSpecification
+|Beskrivelse|Brukes til å referere til en strukturert beskrivelse av åpningstid.
+|Usage note|This property links a contact point to information about when the contact point is available.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|EU har brukt denne egenskapen til å uttrykke når noe _ikke_ er tilgjengelig, noe vi mener ikke er korrekt bruk av denne egenskapen, til tross for at schema:OpeningHoursSpecification blir per default oppfattet som «lukket» hvis ikke egenskapen schema:opens brukes.
+|Eksempel|Se eksempler under <<Åpningstid>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Åpningstid>>.

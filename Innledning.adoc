@@ -1,7 +1,7 @@
 == Innledning – hendelser, tjenester og data [[Innledning]]
 
 [[img-HendelseTjenesteData]]
-.Sammenheng mellom hendelse, tjeneste og data (Kilde: Digitaliseringsbloggen https://www.digdir.no/sammenhengende-tjenester/vi-ma-snakke-det-samme-spraket-i-sammenhengende-tjenester/2614[Vi må snakke det samme språket i sammenhengende tjenester!]).
+.Sammenheng mellom hendelse, tjeneste og data (Kilde: Digitaliseringsbloggen https://www.digdir.no/sammenhengende-tjenester/vi-ma-snakke-det-samme-spraket-i-sammenhengende-tjenester/2614[Vi må snakke det samme språket i sammenhengende tjenester!])
 [link=images/FigurHendelseTjenesteData.png]
 image::images/FigurHendelseTjenesteData.png[]
 

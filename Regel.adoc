@@ -1,3 +1,0 @@
-== Klassen Regel (cpsv:Rule) [[Regel]]
-
-<tekst kommer>

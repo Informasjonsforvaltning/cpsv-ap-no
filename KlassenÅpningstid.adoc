@@ -1,0 +1,116 @@
+== Klassen Åpningstid (schema:OpeningHoursSpecification) [[Åpningstid]]
+
+[[img-KlassenÅpningstid]]
+.Klassen Åpningstid (schema:OpeningHoursSpecificatinon).
+[link=images/KlassenÅpningstid.png]
+image::images/KlassenÅpningstid.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Opening Hours Specification
+|Beskrivelse|Brukes til å beskrive detaljer i åpningstid på en strukturert måte.
+|Usage note|A structured value providing information about the opening hours.
+|URI|schema:OpeningHoursSpecification
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+=== Valgfrie egenskaper for Klassen _Åpningstid_ [[Åpningstid-valgfrie-egenskaper]]
+
+==== Åpningstid – dager i uka (schema:dayOfWeek) [[Åpningstid-dagerIUka]]
+
+[cols="30s,70d"]
+|===
+|English name|day of week
+|URI|schema:dayOfWeek
+|Range|schema:DayOfWeek
+|Beskrivelse|Dag i uke som åpningsspesifikasjonen gjelder for.
+|Usage note|The day of the week for which these opening hours are valid
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|Mandag til Fredag.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<åpningsTid> a schema:OpeningHoursSpecification ;
+   schema:dayOfWeek schema:Monday , schema:Tuesday , schema:Wednesday , schema:Tursday , schema:Friday ;
+   schema:opens "08:00"^^xsd:time ;
+   schema:closes "16:00"^^xsd:time ; .
+-----
+
+==== Åpningstid – gyldig fra og med (schema:validFrom) [[Åpningstid-gyldigFraOgMed]]
+
+[cols="30s,70d"]
+|===
+|English name|valid from inclusive
+|URI|schema:validFrom
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse|Brukes til å oppgi fra og med når den aktuelle åpningstid gjelder.
+|Usage note|The date when the open hours specification becomes valid.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|Gyldighet til julestengning.
+|===
+
+Eksempel i RDF Turtle:
+-----
+ex:ChristmasClosed a schema:OpeningHoursSpecification;
+   schema:validFrom "2016-12-24T012:00Z"^^xsd:dateTime ;
+   schema:validThrough "2017-01-02T09:00Z"^^xsd:dateTime .
+-----
+
+==== Åpningstid – gyldig til og med (schema:validThrough) [[Åpningstid-gyldigTilOgMed]]
+
+[cols="30s,70d"]
+|===
+|English name|valid through inclusive
+|URI|schema:validThrough
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse|Brukes til å oppgi til og med når den aktuelle åpningstiden gjelder.
+|Usage note|The date after which when the open hours specification is not valid.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|Se under <<Åpningstid-gyldigFraOgMed>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Åpningstid-gyldigFraOgMed>>.
+
+==== Åpningstid – stenger (schema:closes) [[Åpningstid-stenger]]
+
+[cols="30s,70d"]
+|===
+|English name|closes
+|URI|schema:closes
+|Range|rdfs:Literal typed as xsd:time
+|Beskrivelse|Brukes til å oppgis stengningstidspunkt.
+|Usage note|The closing hour.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|Se under <<Åpningstid-dagerIUka>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Åpningstid-dagerIUka>>.
+
+==== Åpningstid – åpner (schema:opens) [[Åpningstid-åpner]]
+
+[cols="30s,70d"]
+|===
+|English name|opens
+|URI|schema:opens
+|Range|rdfs:Literal typed as xsd:time
+|Beskrivelse|Brukes til å oppgi åpningstidspunkt.
+|Usage note|The opening hour.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad|I henhold til shttps://schema.org/OpeningHoursSpecification[chema.org], at denne egenskapen brukes betyr «åpent» og «lukket» ellers.
+|Remarks|According to https://schema.org/OpeningHoursSpecification[schema.org], “The place is *open* if the https://schema.org/opens[opens] property is specified, and *closed* otherwise.”
+|Eksempel|Se under <<Åpningstid-dagerIUka>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Åpningstid-dagerIUka>>.

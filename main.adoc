@@ -39,45 +39,49 @@ include::Innledning.adoc[]
 
 include::Forenklet_modell.adoc[]
 
-include::Aktør.adoc[]
+include::KlasseOversikt.adoc[]
 
-include::BeskrivendeDatasett.adoc[]
+include::KlassenAktør.adoc[]
 
-include::Deltagelse.adoc[]
+include::KlassenBeskrivendeDatasett.adoc[]
 
-include::Dokumentasjon.adoc[]
+include::KlassenDeltagelse.adoc[]
 
-include::Dokumentasjonsreferanse.adoc[]
+include::KlassenDokumentasjon.adoc[]
 
-include::Gebyr.adoc[]
+include::KlassenDokumentreferanse.adoc[]
 
-include::Hendelse.adoc[]
+include::KlassenGebyr.adoc[]
 
-include::Katalog.adoc[]
+include::KlassenHendelse.adoc[]
 
-include::Kontaktpunkt.adoc[]
+include::KlassenKatalog.adoc[]
 
-include::Livshendelse.adoc[]
+include::KlassenKontaktpunkt.adoc[]
 
-include::OffentligOrganisasjon.adoc[]
+include::KlassenLivshendelse.adoc[]
 
-include::OffentligTjeneste.adoc[]
+include::KlassenOffentligOrganisasjon.adoc[]
 
-include::Regel.adoc[]
+include::KlassenOffentligTjeneste.adoc[]
 
-include::RegulativRessurs.adoc[]
+include::KlassenRegel.adoc[]
 
-include::Tjeneste.adoc[]
+include::KlassenRegulativRessurs.adoc[]
 
-include::Tjenestekanal.adoc[]
+include::KlassenTidsrom.adoc[]
 
-include::Tjenesteresultat.adoc[]
+include::KlassenTjeneste.adoc[]
 
-include::Vilkår.adoc[]
+include::KlassenTjenestekanal.adoc[]
 
-include::Virksomhetshendelse.adoc[]
+include::KlassenTjenesteresultat.adoc[]
 
-include::Åpningstid.adoc[]
+include::KlassenVilkår.adoc[]
+
+include::KlassenVirksomhetshendelse.adoc[]
+
+include::KlassenÅpningstid.adoc[]
 
 
 include::shared/stats.adoc[]

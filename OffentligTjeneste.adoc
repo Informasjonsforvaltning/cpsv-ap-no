@@ -1,7 +1,0 @@
-== Klassen Offentlig tjeneste (cpsv:PublicService) [[OffentligTjeneste]]
-
-<tekst kommer>
-
-=== Offentlig tjeneste - gebyr [[OffentligTjeneste-gebyr]]
-
-<tekst kommer>

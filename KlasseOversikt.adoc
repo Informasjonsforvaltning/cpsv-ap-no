@@ -1,0 +1,40 @@
+== Oversikt over klasser i spesifikasjonen [[OversiktOverKlassene]]
+
+Ved ev. avvik mellom oversikten her og klassebeskrivelsene som følger, gjelder kravsnivåene som er satt i klassebeskrivelsene.
+
+Følgende klasser er obligatoriske:
+
+* ingen
+
+Følgende klasser er anbefalte:
+
+* <<Hendelse>>
+* <<Kontaktpunkt>>
+* <<OffentligOrganisasjon>>
+* <<OffentligTjeneste>>
+* <<Tjeneste>>
+
+Følgende klasser er valgfrie:
+
+* <<Aktør>>
+* <<BeskrivendeDatasett>>
+* <<Deltagelse>>
+* <<Dokumentasjon>>
+* <<Dokumentreferanse>>
+* <<Gebyr>>
+* <<Katalog>>
+* <<Livshendelse>>
+* <<Regel>>
+* <<RegulativRessurs>>
+* <<Tidsrom>>
+* <<Tjenestekanal>>
+* <<Tjenesteresultat>>
+* <<Vilkår>>
+* <<Virksomhetshendelse>>
+* <<Åpningstid>>
+
+Følgende klasser som også er vist i den forenklede modellen, er ikke spesifisert i spesifikasjonen:
+
+* Datasett (`dcat:Dataset`), Datatjeneste (`dcat:DataService`) og Distribusjon (`dcat:Distribution`): se https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO].
+
+I resten av spesifikasjonen er klassene sortert alfabetisk etter norske navn, med beskrivelse av klassen og deretter egenskapene som skal/bør/kan brukes. Egenskapene er gruppert inn i obligatoriske (skal), anbefalte (bør) og valgfrie (kan) egenskaper og der etter sortert alfabetisk etter norske navn.

@@ -1,3 +1,0 @@
-== Klassen Hendelse (cv:Event) [[Hendelse]]
-
-<tekst kommer>

@@ -1,0 +1,3 @@
+== Klassen Regulativ ressurs (eli:LegalResource) [[RegulativRessurs]]
+
+<tekst kommer>

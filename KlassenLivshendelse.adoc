@@ -1,0 +1,189 @@
+== Klassen Livshendelse (cv:LifeEvent) [[Livshendelse]]
+
+[[img-KlassenLivshendelse]]
+.Klassen Livshendelse (cv:LifeEvent)
+[link=images/KlassenLivshendelse.png]
+image::images/KlassenLivshendelse.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Life Event
+|Beskrivelse|Brukes til å representere en viktig https://data.norge.no/concepts/9b19d5ce-87b3-4584-a875-e7cff3ad6740[livshendelse]+++<u>+++ hos en innbygger+++</u>+++ som kan utløse behov for offentlig tjeneste.
+|Usage note|The Life Event class represents an important event or situations in a citizen's life where public services may be required.
+|URI|cv:LifeEvent
+|Subklasse av / Subclass of|cv:Event
+|Kravsnivå|Valgfri/Optional
+|Merknad|For hendelser i en virksomhet skal Klassen Virksomhetshendelse (cv:BusinessEvent) brukes.
+|Remarks|An individual will encounter any number of 'events' in the general sense of the word. In the context of the CPSV-AP, the Life Event class only represents an event for which a Public Service is related. For example, a couple becoming engaged is not a CPSV-AP Life Event, getting married is, since only the latter has any relevance to public services.
+|Eksempel|«Å få barn» er en livshendelse hos en innbygger.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<åFåBarn> a cv:LifeEvent ; .
+-----
+
+=== Obligatoriske egenskaper for klassen _Livshendelse_ [[Livshendelse-obligatoriske-egenskaper]]
+
+==== Livshendelse – identifikator (dct:identifier) [[Livshendelse-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal typed as xsd:anyURI
+|Beskrivelse|Brukes til å oppgi identifikatoren til en hendelse.
+|Usage note|This property represents an Identifier for the Event.
+|Multiplisitet|1..1
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]|Eksempel|
+|Eksempel|
+|===
+
+==== Livshendelse – navn (dct:title) [[Livshendelse-navn]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|dct:title
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi tittel til en hendelse. Gjentas når tittelen finnes i flere språk.
+|Usage note|This property represents the Name (or title) of the Event.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
+|Eksempel|«Å få barn»
+|===
+
+Eksempel i RDF Turtle:
+-----
+<åFåBarn> a cv:LifeEvent ;
+   dct:title "Å få barn"@nb .
+-----
+
+=== Anbefalte egenskaper for klassen _Livshendelse_ [[Livshendelse-anbefalte-egenskaper]]
+
+==== Livshendelse – beskrivelse (dct:description) [[Livshendelse-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|description
+|URI|dct:description
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av hendelsen. Gjentas når beskrivelsen finnes i flere språk.
+|Usage note|This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Public Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad1|Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt
+|Merknad2|Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n, for å støtte flerspråklighet.
+|Eksempel|«Å få barn omfatter både en rekke generelle behov som treffer de fleste som skal ha barn, og spesielle behov som kan oppstå i valgt periode. Mange deler av offentlig sektor er involvert.»
+|===
+
+Eksempel i RDF Turtle:
+-----
+<åFåBarn> a cv:LifeEvent ;
+   dct:title "Å få barn"@nb ;
+   dct:description "Å få barn omfatter både en rekke generelle behov som treffer de fleste som skal ha barn, og spesielle behov som kan oppstå i valgt periode. Mange deler av offentlig sektor er involvert."@nb ; .
+-----
+
+==== Livshendelse – utløser behov for (cpsvno:triggersNeedFor) [[Livshendelse-utløserBehovFor]]
+
+[cols="30s,70d"]
+|===
+|English name|related service
+|URI|cpsvno:triggersNeedFor
+|Range|cpsv:PublicService
+|Beskrivelse|Brukes til å referere til tjenester som den aktuelle hendelsen utløser behov for.
+|Usage note|This property links an event directly to a service that is related to it.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn dct:relation som er i CPSV-AP. Inntil vi finner en passende URI i eksisterende vokabularer, bruker vi denne egendefinerte URI.
+|Eksempel|«Familieytelser» (NAV), «Hjelpemidler for barn og familier» (NAV), «Bekymringsmelding» (Barnevern)
+|===
+
+Eksempel i RDF Turtle:
+----
+<åFåBarn> a cv:LifeEvent ;
+   dct:title "Å få barn"@nb ;
+   cpsvno:triggersNeedFor <familieytelse> , <hjelpemidlerBarnOgFamilier>, <Bekymringsmelding> ; .
+
+<familieytelse> a cpsv:PublicService ; .
+
+<hjelpemidlerBarnOgFamilier> a cpsv:PublicService ; .
+
+<bekymringsmelding> a cpsv:PublicService ; .
+----
+
+=== Valgfrie egenskaper for klassen _Livshendelse_ [[Livshendelse-valgfrie-egenskaper]]
+
+==== Livshendelse – begrep (dct:subject) [[Livshendelse-begrep]]
+
+[cols="30s,70d"]
+|===
+|English name|subject
+|URI|dct:subject
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til begrep som er viktig for å forstå hendelsen.
+|Usage note|To refer to concept that is important for the understanding of the event.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå hendelsen.
+|Eksempel|
+|===
+
+==== Livshendelse – distribusjon (dcat:distribution) [[Livshendelse-distribusjon]]
+
+[cols="30s,70d"]
+|===
+|English name|distribution
+|URI|dcat:distribution
+|Range|dcat:Distribution
+|Beskrivelse|Brukes til å referere til distribusjon av hendelse som f.eks. kan abonneres på.
+|Usage note|To refer to Distribution of the Event.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm som kan abonneres på.
+|Eksempel|
+|===
+
+==== Livshendelse – type (dct:type) [[Livshendelse-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Beskrivelse|Brukes til å oppgi type hendelse.
+|Usage note|The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Verdien skal velges fra en felles kontrollert liste over hendelsestyper når den finnes på listen. Se forslag under til et kontrollert vokabular med typer livshendelser.
+|Eksempel|Å få barn
+|===
+
+Eksempel i RDF Turtle:
+-----
+<åFåBarn> a cv:LifeEvent ;
+   dct:type <havingChild> ; .
+-----
+
+Forslag til et kontrollert vokabular med følgende typer livshendelser (hentet fra kap. 4 av CPSV-AP):
+
+* Having a child
+* Becoming a (social) caretaker
+* Starting education
+* Looking for a new job
+* Losing/quitting a job
+* Looking for a place to live
+* Changing relationship status
+* Driving a vehicle
+* Travelling abroad
+* Moving to/from the country
+* Going into military service
+* Facing an emergency / health problem
+* Facing a crime
+* Retirement
+* Death of a relative
+* [yellow-background]#<kom med innspill>#

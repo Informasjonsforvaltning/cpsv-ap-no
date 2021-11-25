@@ -1,0 +1,132 @@
+== Klassen Tjenesteresultat (cv:Output) [[Tjenesteresultat]]
+
+[[img-KlassenTjenesteresultat]]
+.Klassen Tjenesteresultat (cv:Output).
+[link=images/KlassenTjenesteresultat.png]
+image::images/KlassenTjenesteresultat.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Output
+|Beskrivelse|Brukes til å representere resultat fra en tjeneste.
+|Usage note|Outputs can be any resource - document, artefact – anything produced by the Public Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.
+|URI|cv:Output
+|Kravsnivå|Anbefalt/Recommended
+|Merknad 1|I samsvar med https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[DCAT-AP-NO], kan datasett (dcat:Dataset) være en type cv:Output. På denne måten kan tjenesteresultatet være et datasett som kan deles, f.eks. selve «bevillingen» som et datasett
+|Merknad 2|Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.
+|Eksempel|Resultater fra tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).
+|===
+
+=== Obligatoriske egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-obligatoriske-egenskaper]]
+
+==== Tjenesteresultat – identifikator (dct:identifier) [[Tjenesteresultat-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi identifikatoren til tjenesteresultatet.
+|Usage note|This property represents an Identifier for the Output.
+|Multiplisitet|1..1
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|Eksempel|
+|===
+
+==== Tjenesteresultat – tittel (dct:title) [[Tjenesteresultat-tittel]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|dct:title
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi tittel/navn til tjenesteresultatet.
+|Usage note|This property represents the official Name of the Output.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
+|Eksempel|«Skjenkebevilling til «Den beste restauranten AS»»
+|===
+
+Eksempel i RDF Turtle:
+-----
+<bevilling1001> a cv:Output , a dcat:Dataset ;
+   dct:tilte "Skjenkebevilling til «Den beste restauranten AS»"@nb ; .
+-----
+
+=== Anbefalte egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-anbefalte-egenskaper]]
+
+==== Tjenesteresultat – beskrivelse (dct:description) [[Tjenesteresultat-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|description
+|URI|dct:description
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av tjenesteresultatet.
+|Usage note|This property represents a free text Description of the Output.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n for å støtte flerspråklighet.
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+-----
+<bevilling1001> a cv:Output , a dcat:Dataset ;
+   dct:tilte "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
+-----
+
+=== Valgfrie egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-valgfrie-egenskaper]]
+
+==== Tjenesteresultat – kan skape (xkos:causes) [[Tjenesteresultat-kanSkape]]
+
+[cols="30s,70d"]
+|===
+|English name |may cause
+|URI |xkos:causes
+|Range |cv:Event
+|Beskrivelse |Brukes til å uttrykke relasjon mellom et tjenesteresultat og en eller flere hendelser, f.eks. endring av data (som et tjenesteresultat) skaper en eller flere hendelser.
+|Usage note |To express the relation between an Output and one or more Events, for instance the cases where change of data (as an Output) causes one of more Events.
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | Norsk utvidelse: Finnes ikke i CPSV-AP. Det er behov for å tydeliggjøre kopling mellom et tjenesteresultat (f.eks. endring i et datasett) og hendelsen(e) som skapes av endringen.
+|Eksempel | 
+|===
+ 
+==== Tjenesteresultat – type (dct:type) [[Tjenesteresultat-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til begrep som representerer type(r) tjenesteresultat tilhører.
+|Usage note|This property represents the type of Output as defined in a controlled vocabulary.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Verdien skal velges fra en felles kontrollert liste over resultattyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Eksempel|<kommer>
+|===
+
+Eksempel i RDF Turtle:
+-----
+<bevilling1001> a cv:Output , a dcat:Dataset ;
+   dct:tilte "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
+   dct:type <tillatelse> ; .
+-----
+
+Forslag til et kontrollert vokabular for typer tjenesteresultat:
+
+* Anerkjennelse
+* Erklæring (ev. deklarasjon)
+* Fysisk objekt
+* Identifikator/aksesskode
+* Tillatelse
+* Rettighet
+* Økonomisk fordel
+* Økonomisk forpliktelse
+* [yellow-background]#<kom med innspill>#
