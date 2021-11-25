@@ -179,7 +179,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-+<viaSkjemaportalen> a cv:Channel ;
+<viaSkjemaportalen> a cv:Channel ;
    vcard:hasURL "https://kommune24-7.no/1813" ;
    dct:type <online> ; .
 -----
