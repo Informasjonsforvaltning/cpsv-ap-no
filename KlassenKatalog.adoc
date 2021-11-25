@@ -116,7 +116,11 @@ Eksempel i RDF Turtle:
 |Usage note|For the spatial coverage of the catalog.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+|Merknad a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+
+* Minst en verdi skal være fra en av følgende kontrollerte lister: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
+
+* For å angi dekningsområde i Norge, bør Kartverkets liste over https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
 |Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog har Norge som sitt dekningsområde.
 |===
 

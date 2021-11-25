@@ -110,7 +110,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Usage note |A Service is likely to be available only within a given area. 
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
-|Merknad a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+|Merknad a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
 * Minst en verdi skal være fra en av følgende kontrollerte lister: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
 
