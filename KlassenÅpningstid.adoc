@@ -108,7 +108,7 @@ Eksempel i RDF Turtle: Se under <<Åpningstid-dagerIUka>>.
 |Usage note|The opening hour.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
-|Merknad|I henhold til shttps://schema.org/OpeningHoursSpecification[chema.org], at denne egenskapen brukes betyr «åpent» og «lukket» ellers.
+|Merknad|I henhold til https://schema.org/OpeningHoursSpecification[schema.org], at denne egenskapen brukes betyr «åpent» og «lukket» ellers.
 |Remarks|According to https://schema.org/OpeningHoursSpecification[schema.org], “The place is *open* if the https://schema.org/opens[opens] property is specified, and *closed* otherwise.”
 |Eksempel|Se under <<Åpningstid-dagerIUka>>.
 |===
