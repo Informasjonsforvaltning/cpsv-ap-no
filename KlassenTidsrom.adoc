@@ -1,3 +1,52 @@
 == Klassen Tidsrom (dct:PeriodOfTime) [[Tidsrom]]
 
-<tekst kommer> 
+[[img-KlassenTidsrom]]
+.Klassen Tidsrom (dct:PeriodOfTime)
+[link=images/KlassenTidsrom.png]
+image::images/KlassenTidsrom.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Period of time
+|Beskrivelse|Brukes til å beskrive et tidsrom.
+|Usage note|To represent a Period of time.
+|URI|dct:PeriodOfTime
+|Kravsnivå|Valgfri/Optional
+|Merknad 1|Norsk utvidelse: URIen endret fra `cv:PeriodOfTime` til `dct:PeriodOfTime`, for å samkjøre med bl.a. DCAT-AP-NO.
+|Remarks|Norwegian extension: Range changed from `cv:PeriodOfTime` to `dct:PeriodOfTime` in order to align with e.g. DCAT-AP-NO.
+|Eksempel|
+|===
+
+=== Anbefalte egenskaper for klassen _Tidsrom_ [[Tidsrom-anbefalte-egenskaper]]
+
+IMPORTANT: Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ingen obligatoriske, skal en av de to være til stede for hver forekomst av klassen dct:PeriodOfTime (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato).
+
+==== Tidsrom – sluttdato/-tid (dcat:endDate) [[Tidsrom-sluttdato-tid]]
+
+[cols="30s,70d"]
+|===
+|English name|end date
+|URI|dcat:endDate
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse|Brukes til å oppgi slutten på et tidsrom.
+|Usage note|To specify the end of a period of time.
+|Multiplisitet|0..1
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|
+|Eksempel|
+|===
+
+==== Tidsrom – startdato/-tid (dcat:startDate) [[Tidsrom-startdato-tid]]
+
+[cols="30s,70d"]
+|===
+|English name|start date
+|URI|dcat:startDate
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse|Brukes til å oppgi starten på et tidsrom.
+|Usage note|To specify the start of a period of time.
+|Multiplisitet|0..1
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|
+|Eksempel|
+|===
