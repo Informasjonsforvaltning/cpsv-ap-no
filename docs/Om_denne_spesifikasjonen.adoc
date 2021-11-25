@@ -18,7 +18,7 @@ Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF] (se «Introd
 
 === Målgrupper [[Målgrupper]]
 
-<tekst kommer>
+[yellow-background]#<tekst kommer>#
 
 === Forvaltningsregime [[Forvaltningsregime]]
 
@@ -34,4 +34,21 @@ Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri
 
 Navnerom for dette vokabularet er: https://data.norge.no/vocabulary/cpsvno#
 
-<tabellen over prefix kommer>
+[cols="10s,45d,45d"]
+|===
+|Prefiks |*Navnerom* |*Forklaring/navn*
+|adms|http://www.w3.org/ns/adms[http://www.w3.org/ns/adms#] |https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema]
+|cccev|http://data.europa.eu/m8g/cccev/|https://semiceu.github.io/CCCEV/releases/2.00/[Core Criterion and Core Evidence Vocabulary]
+|cpsvno|https://data.norge.no/vocabulary/cpsvno[https://data.norge.no/vocabulary/cpsvno#]|Norsk applikasjonsprofil av CPSV-AP, denne spesifikasjonen
+|dcatno|https://data.norge.no/vacabulary/dcatno#|https://data.norge.no/specification/dcat-ap-no/[Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)]
+|dct|http://purl.org/dc/terms/[http://purl.org/dc/terms/] |https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
+|dqv|https://www.w3.org/TR/vocab-dqv/#dqv[https://www.w3.org/TR/vocab-dqv/#dqv]|https://www.w3.org/TR/vocab-dqv/#dqv[Data on the Web Best Practices: Data Quality Vocabulary]
+|eli|http://data.europa.eu/eli/ontology#|https://eur-lex.europa.eu/eli-register/about.html[European Legislation Identifier]
+|org|http://www.w3.org/ns/org#|https://www.w3.org/TR/vocab-org/[The Organization Ontology]
+|rdf|http://www.w3.org/1999/02/22-rdf-syntax-ns[http://www.w3.org/1999/02/22-rdf-syntax-ns#] |https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
+|rdfs|http://www.w3.org/2000/01/rdf-schema[http://www.w3.org/2000/01/rdf-schema#]|https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
+|schema|http://schema.org/[http://schema.org/] |https://schema.org/[Schema.org]
+|skos|http://www.w3.org/2004/02/skos/core[http://www.w3.org/2004/02/skos/core#]|https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
+|time|http://www.w3.org/2006/time[http://www.w3.org/2006/time#] |https://www.w3.org/TR/owl-time/[Time Ontology in OWL]
+|xsd|http://www.w3.org/2001/XMLSchema[http://www.w3.org/2001/XMLSchema#] |https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition]
+|===
