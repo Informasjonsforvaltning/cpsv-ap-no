@@ -726,7 +726,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Regel">Klassen Regel (cpsv:Rule)</a></li>
+<li><a href="#Regel">Klassen Regel (cpsv:Rule)</a>
+<ul class="sectlevel2">
+<li><a href="#Regel-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Regel</em></a>
+<ul class="sectlevel3">
+<li><a href="#Regel-beskrivelse">Regel – beskrivelse (dct:description)</a></li>
+<li><a href="#Regel-identifikator">Regel – identifikator (dct:identifier)</a></li>
+<li><a href="#Regel-tittel">Regel – tittel (dct:title)</a></li>
+</ul>
+</li>
+<li><a href="#Regel-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Regel</em></a>
+<ul class="sectlevel3">
+<li><a href="#Regel-implementerer">Regel – implementerer (cpsv:implements)</a></li>
+<li><a href="#Regel-språk">Regel – språk (dct:language)</a></li>
+</ul>
+</li>
+<li><a href="#Regel-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Regel</em></a>
+<ul class="sectlevel3">
+<li><a href="#Regel-type">Regel – type (dct:type)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#RegulativRessurs">Klassen Regulativ ressurs (eli:LegalResource)</a></li>
 <li><a href="#Tidsrom">Klassen Tidsrom (dct:PeriodOfTime)</a></li>
 <li><a href="#Tjeneste">Klassen Tjeneste (cpsvno:Service)</a></li>
@@ -5791,7 +5812,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenOffentligTjeneste.png"><img src="images/KlassenOffentligTjeneste.png" alt="KlassenOffentligTjeneste"></a>
 </div>
-<div class="title">Figur 18. lassen Offentlig tjeneste (cpsv:PublicService)</div>
+<div class="title">Figur 18. Klassen Offentlig tjeneste (cpsv:PublicService)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7530,8 +7551,368 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="sect1">
 <h2 id="Regel"><a class="link" href="#Regel">Klassen Regel (cpsv:Rule)</a></h2>
 <div class="sectionbody">
+<div id="img-KlassenRegel" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenRegel.png"><img src="images/KlassenRegel.png" alt="KlassenRegel"></a>
+</div>
+<div class="title">Figur 19. Klassen Regel (cv:Rule)</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rule</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en offentlig tjeneste.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Rule class represents a document that sets out the specific rules, guidelines or procedures that the Public Service follows. It includes the terms of service, licence, and authentication requirements of the Public Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelverk">Å knytte til regelverk</a> for eksempler på bruk av denne klassen.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="Regel-obligatoriske-egenskaper"><a class="link" href="#Regel-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Regel</em></a></h3>
+<div class="sect3">
+<h4 id="Regel-beskrivelse"><a class="link" href="#Regel-beskrivelse">Regel – beskrivelse (dct:description)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en tekstlig beskrivelse av regelen. Denne egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property contains descriptive textual information about the Rule. This property should be repeated in case there are various versions of the text in different languages.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Regel-identifikator"><a class="link" href="#Regel-identifikator">Regel – identifikator (dct:identifier)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifie</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi identifikatoren til regelen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property contains an identifier for the rule.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.</p>
+<p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte, se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator">Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Regel-tittel"><a class="link" href="#Regel-tittel">Regel – tittel (dct:title)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en beskrivende tittel eller navn for regelen. Gjentas når tittelen finnes i flere ulike språk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the descriptive title or name of a Resource. This property should be repeated in case there are various versions of the text in different languages.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Regel-anbefalte-egenskaper"><a class="link" href="#Regel-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Regel</em></a></h3>
+<div class="sect3">
+<h4 id="Regel-implementerer"><a class="link" href="#Regel-implementerer">Regel – implementerer (cpsv:implements)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">implements</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:implements</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en regulativ ressurs som regelen er definert inn under.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property links a Rule to relevant legislation or policy documents, such as the Legal Resource under which the Rules are defined.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelver">[KnytteTilRegelver]</a>.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#KnytteTilRegelver">[KnytteTilRegelver]</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Regel-språk"><a class="link" href="#Regel-språk">Regel – språk (dct:language)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">language</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:language</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:LinguisticSystem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til språk/målform som regelen er tilgjengelig i.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the language(s) in which the Rule is available. This could be one or multiple languages, for instance in countries with more than one official language.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EU sin kontrollerte liste over <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Regel-valgfrie-egenskaper"><a class="link" href="#Regel-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Regel</em></a></h3>
+<div class="sect3">
+<h4 id="Regel-type"><a class="link" href="#Regel-type">Regel – type (dct:type)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å spesifisere type regel. Denne egenskapen skal bruke et kontrollert vokabular.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the type of a Rule. It must use a controlled vocabulary.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien velges fra en felles kontrollert liste over regeltyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Forslag til et kontrollert vokabular for regeltyper:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Regler vedrørende data:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>behandlingsgrunnlag (<a href="https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing">https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing</a>)</p>
+</li>
+<li>
+<p>utleveringsregel (<a href="https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure">https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure</a>)</p>
+</li>
+<li>
+<p>skjermingsregel (<a href="https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure">https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure</a>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="yellow-backgrond">&lt;kom med innspill&gt;</span></p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -7566,7 +7947,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenTjenestekanal.png"><img src="images/KlassenTjenestekanal.png" alt="KlassenTjenestekanal"></a>
 </div>
-<div class="title">Figur 19. Klassen Tjenestekanal (cv:Channel).</div>
+<div class="title">Figur 20. Klassen Tjenestekanal (cv:Channel).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8243,7 +8624,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenTjenesteresultat.png"><img src="images/KlassenTjenesteresultat.png" alt="KlassenTjenesteresultat"></a>
 </div>
-<div class="title">Figur 20. Klassen Tjenesteresultat (cv:Output).</div>
+<div class="title">Figur 21. Klassen Tjenesteresultat (cv:Output).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8602,7 +8983,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenVilkår.png"><img src="images/KlassenVilkår.png" alt="KlassenVilkår"></a>
 </div>
-<div class="title">Figur 21. Klassen Vilkår (cv:CriterionRequirement).</div>
+<div class="title">Figur 22. Klassen Vilkår (cv:CriterionRequirement).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -9324,7 +9705,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenVirksomhetshendelse.png"><img src="images/KlassenVirksomhetshendelse.png" alt="KlassenVirksomhetshendelse"></a>
 </div>
-<div class="title">Figur 22. Klassen Virksomhetshendelse (cv:BusinessEvent).</div>
+<div class="title">Figur 23. Klassen Virksomhetshendelse (cv:BusinessEvent).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -9771,7 +10152,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenÅpningstid.png"><img src="images/KlassenÅpningstid.png" alt="KlassenÅpningstid"></a>
 </div>
-<div class="title">Figur 23. Klassen Åpningstid (schema:OpeningHoursSpecificatinon).</div>
+<div class="title">Figur 24. Klassen Åpningstid (schema:OpeningHoursSpecificatinon).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -10097,7 +10478,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-25 20:16:09 UTC
+Sist oppdatert 2021-11-25 20:27:54 UTC
 </div>
 </div>
 </body>
