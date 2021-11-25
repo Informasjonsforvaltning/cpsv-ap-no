@@ -122,4 +122,4 @@ Forslag til et kontrollert vokabular for regeltyper:
 ** behandlingsgrunnlag (https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing[https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing])
 ** utleveringsregel (https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure[https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure])
 ** skjermingsregel (https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure[https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure])
-* [yellow-backgrond]#<kom med innspill>#
+* [yellow-background]#<kom med innspill>#
