@@ -1,7 +1,7 @@
 == Klassen Tjenestekanal (cv:Channel) [[Tjenestekanal]]
 
 [[img-KlassenTjenestekanal]]
-.Klassen Tjenestekanal (cv:Channel).
+.Klassen Tjenestekanal (cv:Channel)
 [link=images/KlassenTjenestekanal.png]
 image::images/KlassenTjenestekanal.png[]
 
