@@ -69,9 +69,11 @@ include::KlassenRegel.adoc[]
 
 include::KlassenRegulativRessurs.adoc[]
 
+include::KlassenTidsrom.adoc[]
+
 include::KlassenTjeneste.adoc[]
 
-include::Tjenestekanal.adoc[]
+include::KlassenTjenestekanal.adoc[]
 
 include::KlassenTjenesteresultat.adoc[]
 
