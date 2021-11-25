@@ -189,7 +189,7 @@ Eksempel i RDF Turtle:
 
 === Valgfrie egenskaper for klassen _Offentlig organisasjon_ [[OffentligOrganisasjon-valgfrie-egenskaper]]
 
-==== Offentlig organisasjon – har rolle i (cv:playsRole) [[OffentligOrganisasjon-harRolleI]]
+==== Offentlig organisasjon – har rolle i (cv:playsRole) [[OffentligOrganisasjon-harRolle]]
 
 [cols="30s,70d"]
 |===
