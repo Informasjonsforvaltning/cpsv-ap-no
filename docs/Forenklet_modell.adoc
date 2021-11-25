@@ -30,3 +30,111 @@
 === Å knytte deltagende aktører til en tjeneste [[KnytteDeltagendeAktørerTilEnTjeneste]]
 
 <tekst kommer>
+
+== Forenklet modell for hendelses- og tjenestebeskrivelser
+
+
+_Figur 2: Forenklet modell for hendelses- og tjenestebeskrivelser.
+(__NB! under utvikling, kan avvike fra teksten___)__ +
+Figur 2 viser en forenklet modell av hendelses- og tjenestebeskrivelser. Forenklet fordi den ikke viser alle klasser, heller ikke alle relasjoner og egenskaper. Modellen er ikke ment som en formell representasjon av spesifikasjonen, men kun for å gi en visuell oversikt over klasser og relasjoner mellom dem. Før eventuell uoverensstemmelse mellom figuren og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen forrang. Samme forrang gjelder også når det gjelder eventuelle overensstemmelser mellom tekstlige beskrivelser og diagrammer i resten av spesifikasjonen.
+
+=== Å beskrive en hendelses-/tjenestekatalog
+
+
+_Figur 3: Klassen Katalog (dcat:Catalog)._ +
+EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en «hendelses-/tjenestekatalog», og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (dcat:Catalog) fra https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO]. Spesifikasjonen utvider også CPSV-AP med egendefinerte egenskapene «hendelsesbeskrivelse» (cpsvno:event) og «tjenestebeskrivelse» (cpsvno:service), som brukes til å inkludere hendelsesbeskrivelser og tjenestebeskrivelser i katalogen.
+
+=== Å knytte til et datasett og derfra til API, begrep eller informasjonsmodell
+
+
+_Figur 4: Klassen Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat_ +
+Som illustrert i Figur 1Figur 4, kan et Tjenesteresultat (cv:Output) produsert av en Tjeneste (cpsvno:Service inkl. subklassen Offentlig tjeneste (cv:PublicService)) være et Datasett (dcat:Dataset), f.eks.  «Skjenkebevillingen» som et resultat fra tjenesten «Søknad om skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (cv:Evidence) kan også bekreftes ved en dokumentreferanse (cccev:DocumentReference) som kan være et datasett (dcat:Dataset), f.eks. «Politiattest».   +
+Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng[Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i ]https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng[_Veileder for beskrivelse av datasett]_, for hvordan datasett (som f.eks. «Skjenkebevillingen» og «Politiattest») kan videre knyttes til distribusjon, datatjeneste (også kalt API), begrep og informasjonsmodell.
+
+=== Å knytte begrep til en tjeneste eller en hendelse
+
+Spesifikasjonen utvider CPSV-AP med egenskapen «begrep» (dct:subject) i Klassen Hendelse (cv:Event), Klassen Livshendelse (cv:LifeEvent), Klassen Virksomhetshendelse (cv:BusinessEvent), Klassen Tjeneste (cpsvno:Service) og Klassen Offentlig tjeneste (cpsv:PublicService). Egenskapen brukes til å referere til et eller flere begreper som er relatert til hendelsen/tjenesten og som er viktig for å forstå hendelsen/tjenesten. Det anbefales å referere til begreper som er publisert i f.eks. https://data.norge.no/concepts[begrepsdelen av Felles datakatalog]. Eksempel: begrepet ‘daglig leder’ er viktig for tjenesten «Søknad om skjenkebevilling».  +
+Se ellers også https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser]_, samt SKOS-AP-NO-begrep for hvordan begrepsbeskrivelser utformet i henhold til F_orvaltningsstandard for begrepsbeskrivelser_ tilgjengeliggjøres i RDF.
+
+=== Å knytte en datatjeneste (også kalt API) til en tjenestekanal
+
+Spesifikasjonen utvider CPSV-AP med en egendefinert egenskap «datatjeneste» (cpsvno:dataService), som kan brukes til å knytte en datatjeneste/API (dcat:DataService) til en tjenestekanal (cv:Channel). Det anbefales å referere til datatjenestebeskrivelser som er publisert i f.eks. https://data.norge.no/dataservices[API-delen av Felles datakatalog].
+
+=== Å publisere hendelsesstrøm
+
+
+
+_Figur 5: Hendelse og Distribusjon_ +
+Som illustrert i Figur 5 har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (dcat:distribution) i Klassen Hendelse (cv:Event), Klassen Livshendelse (cv:LifeEvent) og Klassen Virksomhetshendelse (cv:BusinessEvent), og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Denne egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm som f.eks. kan abonneres på.  +
+Se ellers https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng[Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i ]https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng[_Veileder for beskrivelse av datasett]_, for hvordan et datasett (som i dette tilfellet er en hendelsesbeskrivelse) kan knyttes til distribusjon og datatjeneste (også kalt API).
+
+=== Å knytte til regelverk
+
+Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#beskrivelse-av-juss[Beskrivelse av juridiske rammer i ]https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#beskrivelse-av-juss[_Veileder for beskrivelse av datasett]_, for hvordan regelverk knyttes til et datasett (som f.eks. dokumentasjonskrav til eller tjenesteresultat fra en (offentlig) tjeneste). På helt tilsvarende måte kan regelverk også knyttes til en (offentlig) tjeneste, ved å bruke egenskapen cpsv:follows, som illustrert i Figur 6.
+
+
+_Figur 6: (Offentlig) Tjeneste og regelverk_ +
+Eksempel: Tjenesten «Søknad om skjenkebevilling» er hjemlet i «Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)».  +
+Eksempel i RDF Turtle:  +
++<søknadOmSkjenkebevilling> a cv:PublicService ;
+   cpsv:follows [ a cpsv:Rule ;
+      cpsv:implements [ a eli:LegalResource ;
+         rdfs:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> ; ] ;
+     ] ; .
+      +
+
+=== Å knytte deltagende aktører til en tjeneste
+
+
+_Figur 7: Klassen Deltagelse_ +
+Som illustrert i Figur 7 brukes egenskapen Tjeneste – eies av (cv:ownedBy) til å uttrykke relasjonen mellom en Tjeneste og dens eier (en Aktør, foaf:Agent), og egenskapen Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority) til å uttrykke relasjonen mellom en Offentlig tjeneste og dens kompetente organ.  +
+For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes Klassen Deltagelse (cv:Participation). En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, ved bruk av Tjeneste – deltagende (cv:hasParticipation) (eller Offentlig tjeneste – deltagende (cv:hasParticipation)). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, ved bruk av egenskapen Aktør – har rolle i (cv:playsRole) (eller Offentlig organisasjon – har rolle i (cv:playsRole)).    +
+Den obligatoriske egenskapen Deltagelse – rolle (cv:role) skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument» når ikke alle deltagende aktører har begge roller.  +
+Eksempel: Politidirektoratet (med datasett «Politiattest») deltar som dataleverandør til tjenesten «Søknad om skjenkebevilling».  +
+Eksempel i RDF Turtle:  +
+----
+<søknadOmSkjenkebevilling> a cv:PublicService ;
+   cv:hasParticipation <deltagendeDataleverandør> ; .
+<deltagendeDataleverandør> a cv:Participation ;
+   dct:description "deltagende dataleverandører til tjenesten Søknad om skjenkebevilling"@nb ; .
+   cv:role <dataleverandør> ; .
+
+<Politidirektoratet> a cv:PublicOrganisation ;
+   cv:playsRole <deltagendeDataleverandør> ; .
+----
+== Oversikt over klasser i spesifikasjonen
+
+Listen oppdateres etter hvert som klassenes kravsnivå fastsettes. Ved ev. avvik mellom oversikten her og klassebeskrivelsene som følger, gjelder kravsnivåene som er satt i klassebeskrivelsene.  +
+Følgende klasser er obligatoriske:
+
+* ingen
+Følgende klasser er anbefalte:
+
+* Klassen Hendelse (cv:Event)
+* Klassen Kontaktpunkt (vcard:Kind)
+* Klassen Offentlig organisasjon (cv:PublicOrganisation)
+* Klassen Offentlig tjeneste (cpsv:PublicService)
+* Klassen Tjeneste (cpsvno:Service)
+Følgende klasser er valgfrie:
+
+* Klassen Aktør (foaf:Agent)
+* Klassen Beskrivende datasett (dcat:Dataset)
+* Klassen Deltagelse (cv:Participation)
+* Klassen Dokumentasjon (cv:Evidence)
+* Klassen Dokumentreferanse (cccev:DocumentReference)
+* Klassen Gebyr (cv:Cost)
+* Klassen Katalog (dcat:Catalog)
+* Klassen Livshendelse (cv:LifeEvent)
+* Klassen Regel (cpsv:Rule)
+* Klassen Regulativ ressurs (eli:LegalResource)
+* Klassen Tidsrom (dct:PeriodOfTime)
+* Klassen Tjenestekanal (cv:Channel)
+* Klassen Tjenesteresultat (cv:Output)
+* Klassen Vilkår (cv:CriterionRequirement)
+* Klassen Virksomhetshendelse (cv:BusinessEvent)
+* Klassen Åpningstid (schema:OpeningHoursSpecification)
+Følgende klasser som også er vist i den forenklede modellen, er ikke spesifisert i spesifikasjonen:
+
+* Datasett (dcat:Dataset), Datatjeneste (dcat:DataService) og Distribusjon (dcat:Distribution): se https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO].
+
+I resten av spesifikasjonen er klassene sortert alfabetisk etter norske navn, med beskrivelse av klassen og deretter egenskapene som skal/bør/kan brukes. Egenskapene er gruppert inn i obligatoriske (skal), anbefalte (bør) og valgfrie (kan) egenskaper og der etter sortert alfabetisk etter norske navn.
