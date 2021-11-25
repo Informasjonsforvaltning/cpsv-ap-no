@@ -118,7 +118,7 @@ Eksempel i RDF Turtle:
          locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ] ; .
 ----
 
-==== Aktør – har rolle i (cv:playsRole) [[Aktør-harRolleI]]
+==== Aktør – har rolle i (cv:playsRole) [[Aktør-harRolle]]
 
 [cols="30s,70d"]
 |===

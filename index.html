@@ -484,7 +484,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Aktør-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Aktør</em></a>
 <ul class="sectlevel3">
 <li><a href="#Aktør-adresse">Aktør – adresse (locn:address)</a></li>
-<li><a href="#Aktør-harRolleI">Aktør – har rolle i (cv:playsRole)</a></li>
+<li><a href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a></li>
 </ul>
 </li>
 </ul>
@@ -1438,7 +1438,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <p>Som illustrert i figur <a href="#img-FigurTjenesteOgDeltagelse">Tjeneste og Deltagelse</a> brukes egenskapen Tjeneste – eies av (<code>cv:ownedBy</code>) til å uttrykke relasjonen mellom en Tjeneste og dens eier (en Aktør, <code>foaf:Agent</code>), og egenskapen Offentlig tjeneste – har kompetent organ (<code>cv:hasCompetentAuthority</code>) til å uttrykke relasjonen mellom en Offentlig tjeneste og dens kompetente organ.</p>
 </div>
 <div class="paragraph">
-<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes Klassen Deltagelse (<code>cv:Participation</code>). En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, ved bruk av egenskapen <a href="#Tjeneste-deltagende">Tjeneste – deltagende (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, ved bruk av egenskapen <a href="#Aktør-harRolle">[Aktør-harRolle]</a> (eller <a href="#OffentligOrganisasjon-harRolle">[OffentligOrganisasjon-harRolle]</a>).</p>
+<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes Klassen Deltagelse (<code>cv:Participation</code>). En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, ved bruk av egenskapen <a href="#Tjeneste-deltagende">Tjeneste – deltagende (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, ved bruk av egenskapen <a href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a> (eller <a href="#OffentligOrganisasjon-harRolle">[OffentligOrganisasjon-harRolle]</a>).</p>
 </div>
 <div class="paragraph">
 <p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument» når ikke alle deltagende aktører har begge roller.</p>
@@ -1867,7 +1867,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 </div>
 <div class="sect3">
-<h4 id="Aktør-harRolleI"><a class="link" href="#Aktør-harRolleI">Aktør – har rolle i (cv:playsRole)</a></h4>
+<h4 id="Aktør-harRolle"><a class="link" href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -12506,7 +12506,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-25 21:45:05 UTC
+Sist oppdatert 2021-11-25 21:49:22 UTC
 </div>
 </div>
 </body>
