@@ -16,7 +16,7 @@ image::images/KlassenDeltagelse.png[]
 |Eksempel|Se under Å knytte deltagende aktører til en tjeneste.
 |===
 
-=== Obligatoriske egenskaper for klassen Deltagelse [[Deltagelse-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Deltagelse_ [[Deltagelse-obligatoriske-egenskaper]]
 
 ==== Deltagelse – beskrivelse (dct:description) [[Deltagelse-beskrivelse]]
 
