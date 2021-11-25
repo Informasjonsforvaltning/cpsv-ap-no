@@ -3,12 +3,12 @@
 [cols="30s,70d"]
 |===
 |English name|Public Service Dataset
-|Beskrivelse|Klassen brukes til å inneholde metadata om en offentlig tjeneste. 
+|Beskrivelse|Klassen brukes til å inneholde metadata om en offentlig tjeneste.
 |Usage note|The class describes the metadata of where the dataset is being described, for instance on a regional public service portal and/or a national eGovernment portal.
 |URI|dcat:Dataset
 |Kravsnivå|Valgfri/Optional
 |Merknad1|Norsk avvik inntil EU også endrer tilsvarende: Range er endret fra cv:PublicServiceDataset til dcat:Dataset (EU har sagt at dette skal endres i neste release av CPSV-AP)
-|Merknad2|Dette er ikke datasett som en tjeneste bruker (Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)) eller datasett som tjenesten produsere +++<u>+++Offentlig tjeneste +++</u>+++–+++<u>+++ produserer (cpsv:produces)+++</u>+++).
+|Merknad2|Dette er ikke datasett som en tjeneste bruker (<<Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)>>) eller datasett som tjenesten produsere <<Offentlig tjeneste - produserer (cpsv:produces)>>).
 |Eksempel|
 |===
 

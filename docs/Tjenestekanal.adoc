@@ -241,7 +241,7 @@ Forslag til et kontrollert vokabular for typer tjenestekanal (hentet fra CPSV �
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
 |Merknad|EU har brukt denne egenskapen til å uttrykke når noe _ikke_ er tilgjengelig, noe vi mener ikke er korrekt bruk av denne egenskapen, til tross for at schema:OpeningHoursSpecification blir per default oppfattet som «lukket» hvis ikke egenskapen schema:opens brukes.
-|Eksempel|Se eksempler under Klassen Åpningstid (schema:OpeningHoursSpecification).
+|Eksempel|Se eksempler under <<Åpningstid>>.
 |===
 
 Eksempel i RDF Turtle: Se under <<Åpningstid>>.
