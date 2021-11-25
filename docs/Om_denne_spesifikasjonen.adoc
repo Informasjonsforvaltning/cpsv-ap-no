@@ -32,7 +32,7 @@ Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri
 
 === Navnerom som er brukt i spesifikasjonen [[Navnerom]]
 
-Navnerom for dette vokabularet er: https://data.norge.no/vocabulary/cpsvno#
+Navnerom for dette vokabularet er: `\https://data.norge.no/vocabulary/cpsvno#`
 
 [cols="10s,45d,45d"]
 |===
