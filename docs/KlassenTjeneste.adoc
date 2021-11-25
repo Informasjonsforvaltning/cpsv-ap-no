@@ -236,7 +236,9 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 
 
 
-==== Tjeneste – type (dct:type) [[Tjeneste-type]]
+
+
+==== Tjeneste - type (dct:type) [[Tjeneste-type]]
 
 [cols="30s,70d"]
 |===
