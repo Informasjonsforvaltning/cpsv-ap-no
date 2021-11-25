@@ -85,7 +85,7 @@ Eksempel i RDF Turtle:
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
-For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn
+For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: `\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`
 |Eksempel|
 |Eksempel|
 |===
@@ -107,7 +107,7 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents the name of the public organisation.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
-|Merknad 1|Både navn (denne egenskapen) og foretrukket +++<u>+++Offentlig organisasjon +++</u>+++–+++<u>+++ foretrukket navn (skos:prefLabel)+++</u>+++ er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Egenskapen +++<u>+++Offentlig organisasjon +++</u>+++–+++<u>+++ foretrukket navn (skos:prefLabel)+++</u>+++ anbefalt brukes primært. Når det ikke finnes flere navn enn det foretrukne navnet, har disse to egenskapene samme verdi.
+|Merknad 1|Både navn (denne egenskapen) og <<OffentligOrganisasjon-foretrukketNavn>> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Egenskapen <<OffentligOrganisasjon-foretrukketNavn>> anbefalt brukes primært. Når det ikke finnes flere navn enn det foretrukne navnet, har disse to egenskapene samme verdi.
 |Eksempel|Brønnøy kommune
 |===
 
