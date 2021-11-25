@@ -1,7 +1,7 @@
 == Klassen Kontaktpunkt (vcard:Kind) [[Kontaktpunkt]]
 
 [[img-KlassenKontaktpunkt]]
-.Klassen Kontaktpunkt (vard:Kind).
+.Klassen Kontaktpunkt (vard:Kind)
 [link=images/KlassenKontaktpunkt.png]
 image::images/KlassenKontaktpunkt.png[]
 
