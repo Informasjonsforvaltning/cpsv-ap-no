@@ -132,7 +132,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Merknad | Denne er den inverse av egenskapen <<Tjeneste-harDel>>.
 |Eksempel | 
 |===
- 
+
 ==== Tjeneste – er gruppert ved (cv:isGroupedBy) [[Tjeneste-erGruppertVed]]
 
 [cols="30s,70d"]
@@ -162,7 +162,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Merknad|Dette er den inverse av egenskapen <<Tjeneste-harDel>>. 
 |Eksempel | 
 |===
- 
+
 ==== Tjeneste – hjemmeside (foaf:homepage)  [[Tjeneste-hjemmeside]]
 
 [cols="30s,70d"]
@@ -177,7 +177,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Merknad | 
 |Eksempel | 
 |===
- 
+
 ==== Tjeneste – produserer (cpsv:produces) [[Tjeneste-produserer]]
 
 [cols="30s,70d"]
@@ -192,7 +192,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Merknad|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output`. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.  
 |Eksempel |
 |===
- 
+
 ==== Tjeneste – status (adms:status) [[Tjeneste-status]]
 
 [cols="30s,70d"]
@@ -222,7 +222,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Merknad |Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc[EuroVoc]. https://psi.norge.no/los/[Los - felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
 |Eksempel | 
 |===
- 
+
 ==== Tjeneste – type (dct:type) [[Tjeneste-type]]
 
 [cols="30s,70d"]
@@ -259,7 +259,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Remarks |The actual information is provided using the ISO8601 syntax for durations. 
 |Eksempel |
 |===
- 
+
 ==== Tjeneste – begrep (dct:subject) [[Tjeneste-begrep]]
 
 [cols="30s,70d"]
@@ -305,7 +305,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad |   
 |Eksempel |
 |===
- 
+
 ==== Tjeneste – dokumentasjonskrav (cv:hasInput) [[Tjeneste-dokumentasjonskrav]]
 
 [cols="30s,70d"]
@@ -321,7 +321,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Remarks |A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel. 
 |Eksempel |
 |===
- 
+
 ==== Tjeneste – er klassifisert under (cv:isClassifiedBy) [[Tjeneste-erKlassifisertUnder]]
 
 [cols="30s,70d"]
@@ -367,7 +367,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad | 
 |Eksempel |Se også <<KnytteTilRegelverk>>. 
 |===
- 
+
 ==== Tjeneste – gebyr (cv:hasCost) [[Tjeneste-gebyr]]
 
 [cols="30s,70d"]
@@ -383,7 +383,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Remarks |Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship. 
 |Eksempel |
 |===
- 
+
 ==== Tjeneste – har regulativ ressurs (cv:hasLegalResource) [[Tjeneste-harRegulativRessurs]]
 
 [cols="30s,70d"]
@@ -398,7 +398,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad | 
 |Eksempel | 
 |===
- 
+
 ==== Tjeneste – krever (dct:requires) [[Tjeneste-krever]]
 
 [cols="30s,70d"]
@@ -413,7 +413,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad | 
 |Eksempel | 
 |===
- 
+
 ==== Tjeneste – næringsgruppering (cv:sector) [[Tjeneste-næringsgruppering]]
 
 [cols="30s,70d"]
@@ -430,7 +430,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |Example |
 |===
- 
+
 ==== Tjeneste – nøkkelord (dcat:keyword) [[Tjeneste-nøkkelord]]
 
 [cols="30s,70d"]
@@ -444,7 +444,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad | 
 |Eksempel |
 |===
-  
+
 ==== Tjeneste – relatert tjeneste (dct:relation) [[Tjeneste-relatertTjeneste]]
 
 [cols="30s,70d"]
@@ -459,7 +459,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad |Bruk heller egenskapen <<Tjeneste-krever>> der det er avhengighet mellom tjenestene. 
 |Eksempel | 
 |===
- 
+
 ==== Tjeneste – språk (dct:language) [[Tjeneste-språk]]
 
 [cols="30s,70d"]
@@ -474,7 +474,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad |Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Eksempel |
 |===
- 
+
 ==== Tjeneste – vilkår (cv:hasCriterion) [[Tjeneste-vilkår]]
 
 [cols="30s,70d"]
