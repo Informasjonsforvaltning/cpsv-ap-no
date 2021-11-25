@@ -1,3 +1,137 @@
 == Klassen Hendelse (cv:Event) [[Hendelse]]
 
-<tekst kommer>
+[[img-KlassenHendelse]]
+.Klassen Hendelse (cv:Event)
+[link=images/KlassenHendelse.png]
+image::images/KlassenHendelse.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Event
+|Beskrivelse|Brukes til å representere en https://data.norge.no/concepts/db48fa77-3f47-4d58-b4a3-41569f149c1a[hendelse].
+|Usage note|This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a Public Service. It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses.
+|URI|cv:Event
+|Subklasse av / Subclass of|dcat:Dataset
+|Kravsnivå|Anbefalt/Recommended
+|Merknad 1|Bruk den semantisk sett mer presise Klassen Livshendelse (cv:LifeEvent) eller Klassen Virksomhetshendelse (cv:BusinessEvent), istedenfor denne generiske klassen.
+|Merknad 2|Norsk utvidelse: I CPSV-AP er ikke Hendelse (cv:Event) en subklasse av Datasett (dcat:Dataset). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte Hendelse som Datasett.
+|Eksempel|Se tilsvarende eksempler i Klassen Livshendelse (cv:LifeEvent) eller Klassen Virksomhetshendelse (cv:BusinessEvent).
+|===
+
+=== Obligatoriske egenskaper for klassen _Hendelse_ [[Hendelse-obligatoriske-egenskaper]]
+
+==== Hendelse – identifikator (dct:identifier) [[Hendelse-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal typed as URI
+|Beskrivelse|Brukes til å oppgi identifikatoren til en hendelse.
+|Usage note|This property represents an Identifier for the Event.
+|Multiplisitet|1..1
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|Eksempel|
+|===
+
+==== Hendelse – navn (dct:title) [[Hendelse-navn]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|dct:title
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi tittel til en hendelse. Gjentas når tittelen finnes i flere språk.
+|Usage note|This property represents the Name (or title) of the Event.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
+|Eksempel|
+|===
+
+=== Anbefalte egenskaper for klassen _Hendelse_ [[Hendelse-anbefalte-egenskaper]]
+
+==== Hendelse – beskrivelse (dct:description) [[Hendels-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|description
+|URI|dct:description
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av hendelsen. Gjentas når beskrivelsen finnes i flere språk.
+|Usage note|This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Public Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad1|Norsk utvidelse: valgfri -> anbefalt
+|Merknad2|Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n, for å støtte flerspråklighet.
+|Eksempel|
+|===
+
+==== Hendelse – kan sette i gang (cpsvno:mayInitiate) [[Hendelse-kanSetteIGang]]
+
+[cols="30s,70d"]
+|===
+|English name|related service
+|URI|cpsvno:mayInitiate
+|Range|cpsv:PublicService
+|Beskrivelse|Brukes til å referere til tjenester som kan settes i gang av den aktuelle hendelsen.
+|Usage note|This property links an event directly to a service that is related to it.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn dct:relation som er i CPSV-AP. Inntil vi finner en passende URI i eksisterende vokabularer, bruker vi denne egendefinerte URI.
+|Eksempel|
+|===
+
+=== Valgfrie egenskaper for klassen _Hendelse_ [[Hendelse-valgfrie-egenskaper]]
+
+==== Hendelse – begrep (dct:subject) [[Hendelse-begrep]]
+
+[cols="30s,70d"]
+|===
+|English name|subject
+|URI|dct:subject
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til begrep som er viktig for å forstå hendelsen.
+|Usage note|To refer to concept that is important for the understanding of the event.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå hendelsen.
+|Eksempel|
+|===
+
+==== Hendelse – distribusjon (dcat:distribution) [[Hendelse-distribusjon]]
+
+[cols="30s,70d"]
+|===
+|English name|distribution
+|URI|dcat:distribution
+|Range|dcat:Distribution
+|Beskrivelse|Brukes til å referere til distribusjon av hendelse som f.eks. kan abonneres på.
+|Usage note|To refer to Distribution of the Event.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm som kan abonneres på.
+|Eksempel|
+|===
+
+==== Hendelse – type (dct:type) [[Hendelse-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Beskrivelse|Brukes til å oppgi type hendelse.
+|Usage note|The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Verdien skal velges fra en felles kontrollert liste over hendelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Eksempel|
+|===
+
+Forslag til et kontrollert vokabular for hendelsestyper (som ikke er «livshendelser» eller «virksomhetshendelser»):
+
+* [yellow-background]#Gi innspill#
