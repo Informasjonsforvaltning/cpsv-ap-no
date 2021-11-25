@@ -84,10 +84,10 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men i DCAT-AP-NO.
-|Eksempel|Se under <<KnytteTilRegelver>>.
+|Eksempel|Se under <<KnytteTilRegelverk>>.
 |===
 
-Eksempel i RDF: Se under <<KnytteTilRegelver>>.
+Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 
 === Valgfrie egenskaper for klassen _Regulativ ressurs_ [[RegulativRessurs-valgfrie-egenskaper]]
 
