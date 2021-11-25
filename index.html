@@ -682,7 +682,48 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#OffentligTjeneste">Klassen Offentlig tjeneste (cpsv:PublicService)</a>
 <ul class="sectlevel2">
-<li><a href="#OffentligTjeneste-gebyr">Offentlig tjeneste - gebyr</a></li>
+<li><a href="#OffentligTjeneste-onligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Offentlig tjeneste</em></a>
+<ul class="sectlevel3">
+<li><a href="#OffentligTjenest-beskrivelse">Offentlig tjeneste – beskrivelse (dct:description)</a></li>
+<li><a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a></li>
+<li><a href="#OffentligTjeneste-identifikator">Offentlig tjeneste – identifikator (dct:identifier)</a></li>
+<li><a href="#OffentligTjeneste-kontaktpunkt">Offentlig tjeneste – kontaktpunkt (dcat:contactPoint)</a></li>
+<li><a href="#OffentligTjeneste-navn">Offentlig tjeneste – navn (dct:title)</a></li>
+</ul>
+</li>
+<li><a href="#_anbefalte_egenskaper_for_klassen_offentlig_tjeneste_offentlig_tjeneste">Anbefalte egenskaper for klassen <em>Offentlig tjeneste</em> [[Offentlig tjeneste]]</a>
+<ul class="sectlevel3">
+<li><a href="#OffentligTjeneste-dekningsområde">Offentlig tjeneste – dekningsområde (dct:spatial)</a></li>
+<li><a href="#OffentligTjeneste-erDelAv">Offentlig tjeneste – er del av (dct:isPartOf)</a></li>
+<li><a href="#OffentligTjeneste-harDel">Offentlig tjeneste – har del (dct:hasPart)</a></li>
+<li><a href="#OffentligTjeneste-hjemmeside">Offentlig tjeneste – hjemmeside (foaf:homepage)</a></li>
+<li><a href="#OffentligTtjenest-produserer">Offentlig tjeneste – produserer (cpsv:produces)</a></li>
+<li><a href="#OffentligTjeneste-status">Offentlig tjeneste – status (adms:status)</a></li>
+<li><a href="#OffentligTjeneste-temaområde">Offentlig tjeneste – temaområde (cv:thematicArea)</a></li>
+<li><a href="#OffentligTjeneste--type">Offentlig tjeneste – type (dct:type)</a></li>
+</ul>
+</li>
+<li><a href="#OffentligTjeneste-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Offentlig tjeneste</em></a>
+<ul class="sectlevel3">
+<li><a href="#OffentligTjeneste-behandlingstid">Offentlig tjeneste – behandlingstid (cv:processingTime)</a></li>
+<li><a href="#OffentligTjeneste-begrep">Offentlig tjeneste – begrep (dct:subject)</a></li>
+<li><a href="#OffentligTjeneste-beskrivendeDatasett">Offentlig tjeneste – beskrivende datasett (cv:isDescribedAt)</a></li>
+<li><a href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a></li>
+<li><a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)</a></li>
+<li><a href="#OffentligTjeneste-erGruppertVed">Offentlig tjeneste – er gruppert ved (cv:isGroupedBy)</a></li>
+<li><a href="#OffentligTjeneste-erKlassifisertUnder">Offentlig tjeneste – er klassifisert under (cv:isClassifiedBy)</a></li>
+<li><a href="#OffentligTeneste-erTilgjengeligVia">Offentlig tjeneste – er tilgjengelig via (cv:hasChannel)</a></li>
+<li><a href="#OffentligTjeneste-følgerRegel">Offentlig tjeneste – følger regel (cpsv:follows)</a></li>
+<li><a href="#OffentligTjeneste-gebyr">Offentlig tjeneste – gebyr (cv:hasCost)</a></li>
+<li><a href="#OffentligTjeneste-harRegulativRessurs">Offentlig tjeneste – har regulativ ressurs (cv:hasLegalResource)</a></li>
+<li><a href="#OffentligTjeneste-krever">Offentlig tjeneste – krever (dct:requires)</a></li>
+<li><a href="#OffentligTjeneste-næringsgruppering">Offentlig tjeneste – næringsgruppering (cv:sector)</a></li>
+<li><a href="#OffentligTjeneste-nøkkelord">Offentlig tjeneste – nøkkelord (dcat:keyword)</a></li>
+<li><a href="#OffentligTjeneste-relatertTjeneste">Offentlig tjeneste – relatert tjeneste (dct:relation)</a></li>
+<li><a href="#OffentligTjeneste-språk">Offentlig tjeneste – språk (dct:language)</a></li>
+<li><a href="#OffentligTjeneste-vilkår">Offentlig tjeneste – vilkår (cv:hasCriterion)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#Regel">Klassen Regel (cpsv:Rule)</a></li>
@@ -1302,7 +1343,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <p>Som illustrert i figur <a href="#img-FigurTjenesteOgDeltagelse">Tjeneste og Deltagelse</a> brukes egenskapen Tjeneste – eies av (<code>cv:ownedBy</code>) til å uttrykke relasjonen mellom en Tjeneste og dens eier (en Aktør, <code>foaf:Agent</code>), og egenskapen Offentlig tjeneste – har kompetent organ (<code>cv:hasCompetentAuthority</code>) til å uttrykke relasjonen mellom en Offentlig tjeneste og dens kompetente organ.</p>
 </div>
 <div class="paragraph">
-<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes Klassen Deltagelse (<code>cv:Participation</code>). En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, ved bruk av egenskapen <a href="#Tjeneste-deltagende">[Tjeneste-deltagende]</a> (eller egenskapen <a href="#OffentligTjeneste-deltagende">[OffentligTjeneste-deltagende]</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, ved bruk av egenskapen <a href="#Aktør-harRoll">[Aktør-harRoll]</a> (eller <a href="#OffentligOrganisasjon-har Rolle">[OffentligOrganisasjon-har Rolle]</a>).</p>
+<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes Klassen Deltagelse (<code>cv:Participation</code>). En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, ved bruk av egenskapen <a href="#Tjeneste-deltagende">[Tjeneste-deltagende]</a> (eller egenskapen <a href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, ved bruk av egenskapen <a href="#Aktør-harRoll">[Aktør-harRoll]</a> (eller <a href="#OffentligOrganisasjon-har Rolle">[OffentligOrganisasjon-har Rolle]</a>).</p>
 </div>
 <div class="paragraph">
 <p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument» når ikke alle deltagende aktører har begge roller.</p>
@@ -1818,7 +1859,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette er ikke datasett som en tjeneste bruker (<a href="#Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)">[Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)]</a>) eller datasett som tjenesten produsere <a href="#Offentlig tjeneste - produserer (cpsv:produces)">[Offentlig tjeneste - produserer (cpsv:produces)]</a>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette er ikke datasett som en tjeneste bruker (<a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)</a>) eller datasett som tjenesten produsere <a href="#Offentlig tjeneste - produserer (cpsv:produces)">[Offentlig tjeneste - produserer (cpsv:produces)]</a>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -2845,7 +2886,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste - gebyr</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste – gebyr (cv:hasCost)</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2944,12 +2985,12 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste - gebyr</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste – gebyr (cv:hasCost)</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste - gebyr</a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste – gebyr (cv:hasCost)</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -2994,12 +3035,12 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste - gebyr</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste – gebyr (cv:hasCost)</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste - gebyr</a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste – gebyr (cv:hasCost)</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3048,12 +3089,12 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste - gebyr</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste – gebyr (cv:hasCost)</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste - gebyr</a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#OffentligTjeneste-gebyr">Offentlig tjeneste – gebyr (cv:hasCost)</a>.</p>
 </div>
 </div>
 </div>
@@ -5746,13 +5787,1742 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="sect1">
 <h2 id="OffentligTjeneste"><a class="link" href="#OffentligTjeneste">Klassen Offentlig tjeneste (cpsv:PublicService)</a></h2>
 <div class="sectionbody">
+<div id="img-KlassenOffentligTjeneste" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenOffentligTjeneste.png"><img src="images/KlassenOffentligTjeneste.png" alt="KlassenOffentligTjeneste"></a>
+</div>
+<div class="title">Figur 18. lassen Offentlig tjeneste (cpsv:PublicService)</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Public Service</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en <a href="https://data.norge.no/concepts?q=offentlig%20tjeneste">Offentlig tjeneste</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To represent a Public Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / Subclass of</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En offentlig tjeneste kan bestå av et obligatorisk eller skjønnsmessig sett av aktiviteter som utføres, eller som kan utføres, av eller på vegne av en offentlig organisasjon, er offentlig finansiert og som kommer fra offentlig politikk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, dette fordi spesifikasjonen skal kunne brukes til f.eks. å beskrive hendelser uten å måtte beskrive offentlig tjeneste samtidig.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A Public Service is a mandatory or discretionary set of activities performed, or able to be performed, by or on behalf of a public organisation, publicly funded and arise from public policy.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Søknad om skjenkebevilling»</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ; .</pre>
+</div>
 </div>
 <div class="sect2">
-<h3 id="OffentligTjeneste-gebyr"><a class="link" href="#OffentligTjeneste-gebyr">Offentlig tjeneste - gebyr</a></h3>
+<h3 id="OffentligTjeneste-onligatoriske-egenskaper"><a class="link" href="#OffentligTjeneste-onligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Offentlig tjeneste</em></a></h3>
+<div class="sect3">
+<h4 id="OffentligTjenest-beskrivelse"><a class="link" href="#OffentligTjenest-beskrivelse">Offentlig tjeneste – beskrivelse (dct:description)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en tekstlig beskrivelse av tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere språk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a free text Description of the Public Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Søknad om skjenkebevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   dct:description "Søknad om skjenkebevilling for skjenking av alkoholholdig drikk, enten som alminnelig bevilling eller som bevilling for lukket selskap."@nb ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-harKompetentOrgan"><a class="link" href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has competent authority</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCompetentAuthority</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganisation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til den offentlige organisasjonen som har ansvaret for tjenesten, uansett om tjenesten tilbys direkte av den aktuelle offentlige organisasjonen eller er satt bort til andre.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property links a Public Service to a Public Organization, which is the responsible Agent for the delivery of the Public Service. Whether the particular Public Organization provides the public service directly or outsources it is not relevant. The Public Organization that is the Competent Authority of the service is the one that is ultimately responsible for managing and providing the public service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrepet ‘competent authority’ er definert i Services Directive (2006/123/EC) som: “any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof”.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brønnøy kommune er det kompetente organet for tjenesten «Søknad om skjenkebevilling i Brønnøy kommune»</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   cv:hasCompetentAuthority &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291&gt; ; . # Brønnøy kommune</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-identifikator"><a class="link" href="#OffentligTjeneste-identifikator">Offentlig tjeneste – identifikator (dct:identifier)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en formell identifikasjon til tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a formally-issued Identifier for the Public Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.</p>
+<p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte, se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator">Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-kontaktpunkt"><a class="link" href="#OffentligTjeneste-kontaktpunkt">Offentlig tjeneste – kontaktpunkt (dcat:contactPoint)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">contact point</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:Kind</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi kontaktpunkt(er) for tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To specify contact points for the service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse:</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt for «Søknad om skjenkebevilling (i Brønnøy kommune)»</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   dcat:contactPoint [ a  vcard:Organization ; # kontaktpunkt
+     vcard:hasTelephone "tel:+4775012000" ;
+    ] ;</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-navn"><a class="link" href="#OffentligTjeneste-navn">Offentlig tjeneste – navn (dct:title)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi det offisielle navnet på tjenesten. Denne egenskapen kan gjentas når navnet finnes i flere språk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the official Name of the Public Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Søknad om skjenkebevilling»</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   dct:title "Søknad om skjenkebevilling"@nb ; .</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_anbefalte_egenskaper_for_klassen_offentlig_tjeneste_offentlig_tjeneste"><a class="link" href="#_anbefalte_egenskaper_for_klassen_offentlig_tjeneste_offentlig_tjeneste">Anbefalte egenskaper for klassen <em>Offentlig tjeneste</em> [[Offentlig tjeneste]]</a></h3>
+<div class="sect3">
+<h4 id="OffentligTjeneste-dekningsområde"><a class="link" href="#OffentligTjeneste-dekningsområde">Offentlig tjeneste – dekningsområde (dct:spatial)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spatial coverage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:spatial</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Location</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til et geografisk eller administrativt område som dekkes av tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A Public Service is likely to be available only within a given area, typically the area covered by a particular public authority.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Følgende krav til bruk av kontrollerte vokabularer gjelder:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Minst en verdi skal være fra en av følgende kontrollerte lister: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+</li>
+<li>
+<p>For å angi dekningsområde i Norge, bør Kartverkets liste over <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Søknad om skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   dct:spatial &lt;http://publications.europa.eu/resource/authority/country/NOR&gt; , # Norge
+      &lt;https://data.geonorge.no/administrativeEnheter/kommune/id/172833&gt; ; # Brønnøy kommune
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-erDelAv"><a class="link" href="#OffentligTjeneste-erDelAv">Offentlig tjeneste – er del av (dct:isPartOf)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is part of</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isPartOf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en annen tjeneste som denne tjenesten er en del av.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property indicates a related Registry Service in which is included. This property is the inverse of <code>dct:hasPart</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne er den inverse av egenskapen <a href="#OffentligTjenest-harDel">[OffentligTjenest-harDel]</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men tatt med i DCAT-AP-NO som er basert på EUs BRegDCAT-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-harDel"><a class="link" href="#OffentligTjeneste-harDel">Offentlig tjeneste – har del (dct:hasPart)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has part</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:hasPart</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property indicates a related Registry Service that is included either physically or logically in the described resource.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette er den inverse av egenskapen <a href="#ffentligTjeneste-erDelAv">[ffentligTjeneste-erDelAv]</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men tatt med i DCAT-AP-NO som er basert på EUs BRegDCAT-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-hjemmeside"><a class="link" href="#OffentligTjeneste-hjemmeside">Offentlig tjeneste – hjemmeside (foaf:homepage)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">homepage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:homepage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en hjemmeside til tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to a homepage of the Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://kommune24-7.no/1813">https://kommune24-7.no/1813</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   foaf:homepage &lt;https://kommune24-7.no/1813&gt; ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTtjenest-produserer"><a class="link" href="#OffentligTtjenest-produserer">Offentlig tjeneste – produserer (cpsv:produces)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">produces</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:produces</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Output</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere instanser av tjenesteresultat (<code>cv:Output</code>) som beskriver resultatet av tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Links a Public Service to one or more instances of the Output class escribing the actual result of executing a given Public Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: kravsnivået endret fra valgfri til anbefalt, dette for å samkjøre med DCAT-AP-NO.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se tilsvarende <a href="https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer">beskrivelse i DCAT-AP-NO</a>, der bl.a. Datasett (dcat:Dataset) er en subklasse av cv:Output. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selve «bevillingen» er et tjenesteresultat av tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling&gt; a cv:Output , dcat:Dataset ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-status"><a class="link" href="#OffentligTjeneste-status">Offentlig tjeneste – status (adms:status)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til status til tjenesten (f.eks. aktiv, inaktiv, under utvikling osv.) i henhold til et predefinert kontrollert vokabular.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates whether a Public Service is active, inactive, under development etc. according to a controlled vocabulary.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien skal velges fra <a href="http://purl.org/adms/status/">ADMS Status Vocabulary (i RDF)</a> (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ferdig utviklet</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+  adms:status &lt;http://purl.org/adms/status/Completed&gt; ; # tjenesten er ferdig utviklet
+     .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-temaområde"><a class="link" href="#OffentligTjeneste-temaområde">Offentlig tjeneste – temaområde (cv:thematicArea)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">thematic area</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:thematicArea</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til primært temaområde som dekkes av tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the Thematic Area of a Public Service as described in a controlled vocabulary.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minst en verdi skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc">EuroVoc</a>. <a href="https://psi.norge.no/los/">Los - felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser</a> kan brukes i tillegg.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste--type"><a class="link" href="#OffentligTjeneste--type">Offentlig tjeneste – type (dct:type)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å indikere type tjeneste i henhold til et kontrollert vokabular.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the Type of a Public Service as described in a controlled vocabulary.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over typer offentlig tjeneste når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Forslag til et kontrollert vokabular for typer offentlig tjeneste:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="yellow-background">&lt;kom med innspill&gt;</span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="OffentligTjeneste-valgfrie-egenskaper"><a class="link" href="#OffentligTjeneste-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Offentlig tjeneste</em></a></h3>
+<div class="sect3">
+<h4 id="OffentligTjeneste-behandlingstid"><a class="link" href="#OffentligTjeneste-behandlingstid">Offentlig tjeneste – behandlingstid (cv:processingTime)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">processing time</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:processingTime</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:duration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi den estimerte behandlingstiden.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of this property is the (estimated) time needed for executing a Public Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The actual information is provided using the ISO8601 syntax for durations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det tar 1 dag for å behandle «Søknad om skjenkebevilling (i Brønnøy kommune)».</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   cv:processingTime "P1D"^^xsd:duration ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-begrep"><a class="link" href="#OffentligTjeneste-begrep">Offentlig tjeneste – begrep (dct:subject)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subject</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:subject</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til begrep som er viktig for å forstå tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to concept that is important for the understanding of the service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-beskrivendeDatasett"><a class="link" href="#OffentligTjeneste-beskrivendeDatasett">Offentlig tjeneste – beskrivende datasett (cv:isDescribedAt)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is described at</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDescribedAt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til datasett som beskriver tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Is Described At property links a Public Service to the Public Service Dataset(s) in which it is being described.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk egenskapen <a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)</a> for å kytte til datasett som tjenesten bruker, eller egenskapen <a href="#OffentligTjeneste-produserer">[OffentligTjeneste-produserer]</a> for datasett som tjenesten produserer.`</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: endret range til <code>dcat:Dataset</code> fra `cv:PublicServiceDataset. EU kommer også til å endre dette i neste release av CPSV-AP, slik at dette over tid ikke er norsk utvidelse.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-deltagende"><a class="link" href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has participation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasParticipation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Participation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å knytte til andre aktører som er deltagende i å levere tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The CPSV-AP defines the two basic roles of Competent Authority and Service Provider, but this simple model can be extended if required using the Has Participation property that links to the Participation class.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Andre aktører vil si andre enn det kompetente organ (<code>cv:hasCompetentAuthority</code>) og tjenesteeieren (<code>cv:ownedBy</code>).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se tilsvarende eksempel under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se tilsvarende eksempel under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-dokumentasjonskrav"><a class="link" href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has input</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:hasInput</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Evidence</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (cv:Evidence), som kreves av tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Has Input property links a Public Service to one or more instances of the Evidence class.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A specific Public Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et av dokumentasjonskravene til «Søknad om skjenkebevilling» er bestått «Kunnskapsprøve».</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   cpsv:hasInput &lt;beståttKunnskapsrøve&gt; ; .
+&lt;beståttKunnskapsrøve&gt; a cv:Evidence .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-erGruppertVed"><a class="link" href="#OffentligTjeneste-erGruppertVed">Offentlig tjeneste – er gruppert ved (cv:isGroupedBy)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is grouped by</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isGroupedBy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property links the Public Service to the triggering Event class.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flere offentlige tjenester kan være knyttet til en bestemt hendelse, og likedan kan den samme offentlige tjenesten være knyttet til flere forskjellige hendelser.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Several Public Services may be associated with a particular Event and, likewise, the same Public Service may be associated with several different Events.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenesten «Søknad om skjenkebevilling» grupperes under hendelsen «Å starte og drive en restaurant»</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   cv:isGroupedBy &lt;starteOgDriveRestaurant&gt; .
+
+&lt;starteOgDriveRestaurant&gt; a cv:Event .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-erKlassifisertUnder"><a class="link" href="#OffentligTjeneste-erKlassifisertUnder">Offentlig tjeneste – er klassifisert under (cv:isClassifiedBy)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is classified by</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isClassifiedBy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som <em>ikke</em> er eller <em>ikke</em> kan være inkludert i andre egenskaper som <a href="#OffentligTjeneste-temaområde">Offentlig tjeneste – temaområde (cv:thematicArea)</a>, <a href="#OffentligTjeneste-næringsgruppering">Offentlig tjeneste – næringsgruppering (cv:sector)</a> osv.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Is Classified By property allows to classify the Public Service with any Concept, other than those already foreseen and defined explicitely in the CPSV-AP (<a href="#OffentligTjeneste-temaområde">Offentlig tjeneste – temaområde (cv:thematicArea)</a>, <a href="#OffentligTjeneste-næringsgruppering">Offentlig tjeneste – næringsgruppering (cv:sector)</a> etc.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation, type of audience …</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTeneste-erTilgjengeligVia"><a class="link" href="#OffentligTeneste-erTilgjengeligVia">Offentlig tjeneste – er tilgjengelig via (cv:hasChannel)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has channel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasChannel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Channel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service, such as an online service, phone number or office.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» tilbys online på kommunens <a href="https://kommune24-7.no/1813/">skjemaportal</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   cv:hasChannel &lt;https://kommune24-7.no/1813/&gt; ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-følgerRegel"><a class="link" href="#OffentligTjeneste-følgerRegel">Offentlig tjeneste – følger regel (cpsv:follows)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">follows</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:follows</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til regelen under hvilken tjenesten opererer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property links a Service to the Rule(s) under which it operates.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se også <a href="#KnytteTilRegelverk">Å knytte til regelverk</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-gebyr"><a class="link" href="#OffentligTjeneste-gebyr">Offentlig tjeneste – gebyr (cv:hasCost)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has cost</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCost</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Cost</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere instanser av klassen Gebyr (<code>cv:Cost</code>), for å oppgi ev. gebyr for tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Has Cost property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Public Service for the citizen or business related to the execution of the particular Public Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the <a href="#Gebyr-hvisTilbysGjennom">Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)</a> relationship.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ifm. «Søknad om skjenkebevilling (i Brønnøy kommune)» er gebyret «Pr. vareliter for alkoholdhold drikke i gruppe 1: 0.49 NOK».</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   cv:hasCost [ a cv:Cost ;
+      cv:value "0.49"^^xsd:decimal ; # beløp
+      cv:currency &lt;http://publications.europa.eu/resource/authority/currency/NOK&gt; ; # valuta
+      dct:description "Pr. vareliter for alkoholdhold drikke i gruppe 1"@nb ;
+   ] ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-harRegulativRessurs"><a class="link" href="#OffentligTjeneste-harRegulativRessurs">Offentlig tjeneste – har regulativ ressurs (cv:hasLegalResource)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has legal resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasLegalResource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en regulativ ressurs som tjenesten er relatert til eller har som sin juridiske ramme.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-krever"><a class="link" href="#OffentligTjeneste-krever">Offentlig tjeneste – krever (dct:requires)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">requires</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:requires</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicService</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere andre tjenester som denne tjenesten krever utført først, eller som denne tjenesten på en eller annen måte bruker resultat fra.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One Public Service may require, or in some way make use of, the output of one or several other Public Services. In this case, for a Public Service to be executed, another Public Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne søke om skjenkebevilling kreves det at «Kunnskapsprøve» er tatt.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   dct:requires &lt;kunnskapsprøve&gt; .
+
+&lt;kunnskapsprøve&gt; a cv:PublicService ;
+   dct:title "Kunnskapsprøve for styrere og stedfortredere – Alkoholloven og serveringsloven"@nb .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-næringsgruppering"><a class="link" href="#OffentligTjeneste-næringsgruppering">Offentlig tjeneste – næringsgruppering (cv:sector)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sector</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:sector</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til industri/sektor som den aktuelle offentlige tjenesten er relatert til, eller er ment for. En tjeneste kan relateres til flere industrier/sektorer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the industry or sector a Public Service relates to, or is intended for. Note that a single Public Service may relate to multiple sectors.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De mulige verdiene for denne egenskapen velges fra <a href="https://www.ssb.no/klass/klassifikasjoner/6/">Standard for næringsgruppering</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The possible values for this property are provided as a controlled vocabulary, <a href="https://www.ssb.no/en/klass/klassifikasjoner/6/">Standard Industrial Classification</a> (based on NACE Rev.2).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Næringsgruppe «56.1 – Restaurantvirksomhet»</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Example</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NACE Group “56.1 - Restaurants and mobile food service activities”</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   cv:sector &lt;https://www.ssb.no/klass/klassifikasjoner/6/koder/56.1&gt; ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-nøkkelord"><a class="link" href="#OffentligTjeneste-nøkkelord">Offentlig tjeneste – nøkkelord (dcat:keyword)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">keyword</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:keyword</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi nøkkelord som beskriver den aktuelle offentlige tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a keyword, term or phrase to describe the Public Service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eksempler i forbindelse med tjenesten «Søknad om skjenkebevilling»:</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Example</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples in connection with the service «Application for a liquor license»:</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   dcat:keyword "alkoholservering"@nb , "skjenkebevilling"@nb , "bar"@nb , "nattklubb"@nb ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-relatertTjeneste"><a class="link" href="#OffentligTjeneste-relatertTjeneste">Offentlig tjeneste – relatert tjeneste (dct:relation)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">related</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:relation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere andre relaterte tjenester.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a Public Service related to the particular instance of the Public Service class.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vurder å bruke egenskapen <a href="#OffentligTjeneste-krever">Offentlig tjeneste – krever (dct:requires)</a> der det er avhengighet mellom tjenestene.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-språk"><a class="link" href="#OffentligTjeneste-språk">Offentlig tjeneste – språk (dct:language)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">language</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:language</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:LinguisticSystem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi hvilke språk tjenesten er tilgjengelig på. Dette kan være ett språk eller flere språk, for eksempel i land med mer enn ett offisielt språk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EU sin kontrollerte liste over <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For eksempel: Norsk, Norsk Bokmål, Norsk Nynorsk, Nordsamisk, Engelsk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Example</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For example: Norwegian, Norwegian Bokmål, Norwegian Nynorsk, Northern Sami, English.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   dct:language &lt;https://publications.europa.eu/resource/authority/language/NOB&gt; . # norsk bokmål</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OffentligTjeneste-vilkår"><a class="link" href="#OffentligTjeneste-vilkår">Offentlig tjeneste – vilkår (cv:hasCriterion)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has criterion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCriterion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:CriterionRequirement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til vilkår knyttet til behov for eller bruk av tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Links a Public Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Criterion class is defined in the <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-criterion-and-core-evidence-vocabulary">Core Criterion and Core Evidence Vocabulary</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et av vilkårene for å søke om skjenkevilling er at søkeren skal være over 20 år.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   cv:hasCriterion [ a cv:CriterionRequirement ;
+   dct:title "Over 20 år"@nb ;
+   dct:description "Søkeren må være over 20 år"@nb ;
+   cccev:expectedDataType xsd:boolean ] ; .</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -5796,7 +7566,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenTjenestekanal.png"><img src="images/KlassenTjenestekanal.png" alt="KlassenTjenestekanal"></a>
 </div>
-<div class="title">Figur 18. Klassen Tjenestekanal (cv:Channel).</div>
+<div class="title">Figur 19. Klassen Tjenestekanal (cv:Channel).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6473,7 +8243,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenTjenesteresultat.png"><img src="images/KlassenTjenesteresultat.png" alt="KlassenTjenesteresultat"></a>
 </div>
-<div class="title">Figur 19. Klassen Tjenesteresultat (cv:Output).</div>
+<div class="title">Figur 20. Klassen Tjenesteresultat (cv:Output).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6832,7 +8602,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenVilkår.png"><img src="images/KlassenVilkår.png" alt="KlassenVilkår"></a>
 </div>
-<div class="title">Figur 20. Klassen Vilkår (cv:CriterionRequirement).</div>
+<div class="title">Figur 21. Klassen Vilkår (cv:CriterionRequirement).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7554,7 +9324,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenVirksomhetshendelse.png"><img src="images/KlassenVirksomhetshendelse.png" alt="KlassenVirksomhetshendelse"></a>
 </div>
-<div class="title">Figur 21. Klassen Virksomhetshendelse (cv:BusinessEvent).</div>
+<div class="title">Figur 22. Klassen Virksomhetshendelse (cv:BusinessEvent).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8001,7 +9771,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenÅpningstid.png"><img src="images/KlassenÅpningstid.png" alt="KlassenÅpningstid"></a>
 </div>
-<div class="title">Figur 22. Klassen Åpningstid (schema:OpeningHoursSpecificatinon).</div>
+<div class="title">Figur 23. Klassen Åpningstid (schema:OpeningHoursSpecificatinon).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8327,7 +10097,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-25 19:04:12 UTC
+Sist oppdatert 2021-11-25 20:16:09 UTC
 </div>
 </div>
 </body>
