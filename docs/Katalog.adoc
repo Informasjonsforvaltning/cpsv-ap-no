@@ -8,7 +8,7 @@ image::images/KlassenKatalog.png[]
 [cols="30s,70d"]
 |===
 |English name|Catalog
-|Beskrivelse|Brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over hendelser og (offentlige) tjenester.
+|Beskrivelse|Brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over tjenester og hendelser.
 |Usage note|To represent a catalog, in context of this specification a catalog of events and (public) services.
 |URI|dcat:Catalog
 |Kravsnivå|Valgfri/Optional
@@ -73,13 +73,13 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|
-|Eksempel|Hendelses- og tjenestekatalog
+|Eksempel|Tjeneste- og hendelseskatalog
 |===
 
 Eksempel i RDF Turtle:
 ----
 <https://data.norge.no/public-services> a dcat:Catalog ;
-   dct:title "Hendelses- og tjenestekatalog"@nb ; .
+   dct:title "Tjeneste- og hendelseskatalog"@nb ; .
 ----
 
 ==== Katalog – utgiver (dct:publisher) [[Katalog-utgiver]]
@@ -94,7 +94,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|
-|Eksempel|Digdir er utgiver av «Hendelses- og tjenestekatalog» i Felles datakatalog.
+|Eksempel|Digdir er utgiver av «Tjeneste- og hendelseskatalog» i Felles datakatalog.
 |===
 
 Eksempel i RDF Turtle:
@@ -117,7 +117,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|Følgende krav til bruk av kontrollerte vokabularer gjelder:
-|Eksempel|«Hendelses- og tjenestekatalog» i Felles datakatalog har Norge som sitt dekningsområde.
+|Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog har Norge som sitt dekningsområde.
 |===
 
 Eksempel i RDF Turtle:
@@ -184,7 +184,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|Verdien skal velges fra EUs liste over https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], når lisensen som brukes finnes på listen.
-|Eksempel|«Hendelses- og tjenestekatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.
+|Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.
 |===
 
 Eksempel i RDF Turtle:
@@ -220,7 +220,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
-|Eksempel|«Hendelses- og tjenestekatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.
+|Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.
 |===
 
 Eksempel i RDF Turtle:
