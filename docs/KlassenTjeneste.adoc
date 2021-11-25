@@ -148,7 +148,10 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel|
 |===
 
-==== Tjeneste – har del (dct:hasPart) [[Tjeneste-harDel]]
+
+
+
+==== Tjeneste - har del (dct:hasPart) [[Tjeneste-harDel]]
 
 [cols="30s,70d"]
 |===
@@ -181,7 +184,9 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 
 
-==== Tjeneste – produserer (cpsv:produces) [[Tjeneste-produserer]]
+
+
+==== Tjeneste - produserer (cpsv:produces) [[Tjeneste-produserer]]
 
 [cols="30s,70d"]
 |===
@@ -212,7 +217,9 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel | 
 |===
 
-==== Tjeneste – temaområde (cv:thematicArea) [[Tjeneste-temaområde]]
+
+
+==== Tjeneste - temaområde (cv:thematicArea) [[Tjeneste-temaområde]]
 
 [cols="30s,70d"]
 |===
@@ -314,7 +321,9 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 
-==== Tjeneste – dokumentasjonskrav (cv:hasInput) [[Tjeneste-dokumentasjonskrav]]
+
+
+==== Tjeneste - dokumentasjonskrav (cv:hasInput) [[Tjeneste-dokumentasjonskrav]]
 
 [cols="30s,70d"]
 |===
@@ -412,7 +421,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 
 
 
-==== Tjeneste – krever (dct:requires) [[Tjeneste-krever]]
+==== Tjeneste - krever (dct:requires) [[Tjeneste-krever]]
 
 [cols="30s,70d"]
 |===
@@ -428,7 +437,9 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 
-==== Tjeneste – næringsgruppering (cv:sector) [[Tjeneste-næringsgruppering]]
+
+
+==== Tjeneste - næringsgruppering (cv:sector) [[Tjeneste-næringsgruppering]]
 
 [cols="30s,70d"]
 |===
