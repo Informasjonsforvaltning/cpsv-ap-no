@@ -1,3 +1,16 @@
-== Innledning [[Innledning]]
+== Innledning – hendelser, tjenester og data [[Innledning]]
 
-<tekst kommer>
+[[img-HendelseTjenesteData]]
+.Sammenheng mellom hendelse, tjeneste og data (Kilde: Digitaliseringsbloggen https://www.digdir.no/sammenhengende-tjenester/vi-ma-snakke-det-samme-spraket-i-sammenhengende-tjenester/2614[Vi må snakke det samme språket i sammenhengende tjenester!]).
+[link=images/FigurHendelseTjenesteData.png]
+image::images/FigurHendelseTjenesteData.png[]
+
+En hendelse kan utløse behov for en eller flere offentlige tjenester. En offentlig tjeneste bruker data og kan resultere i endringer i data. Endring i data kan føre til en eller flere nye hendelser som igjen kan utløse behov for en eller flere offentlige tjenester.
+
+Eksempel:
+
+* Hendelse: Å starte og drive en restaurant
+* Tjeneste: Søknad om skjenkebevilling (i den aktuelle kommunen)
+* Data
+** som tjenesten bruker (dokumentasjonskrav): bl.a. Politiattest fra Politidirektoratet,
+** som tjenesten produserer (tjenesteresultat): skjenkebevillingen (eller avslag på søknaden).
