@@ -148,7 +148,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel|
 |===
 
-==== Tjeneste – har del (dct:hasPart)  [[Tjeneste-harDel]]
+==== Tjeneste – har del (dct:hasPart) [[Tjeneste-harDel]]
 
 [cols="30s,70d"]
 |===
@@ -165,7 +165,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 
 
 
-==== Tjeneste – hjemmeside (foaf:homepage)  [[Tjeneste-hjemmeside]]
+==== Tjeneste – hjemmeside (foaf:homepage) [[Tjeneste-hjemmeside]]
 
 [cols="30s,70d"]
 |===
@@ -212,7 +212,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel | 
 |===
 
-==== Tjeneste – temaområde (cv:thematicArea)  [[Tjeneste-temaområde]]
+==== Tjeneste – temaområde (cv:thematicArea) [[Tjeneste-temaområde]]
 
 [cols="30s,70d"]
 |===
