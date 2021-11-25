@@ -1,7 +1,7 @@
 == Klassen Offentlig tjeneste (cpsv:PublicService) [[OffentligTjeneste]]
 
 [[img-KlassenOffentligTjeneste]]
-.lassen Offentlig tjeneste (cpsv:PublicService)
+.Klassen Offentlig tjeneste (cpsv:PublicService)
 [link=images/KlassenOffentligTjeneste.png]
 image::images/KlassenOffentligTjeneste.png[]
 

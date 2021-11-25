@@ -1,3 +1,125 @@
 == Klassen Regel (cpsv:Rule) [[Regel]]
 
-<tekst kommer>
+[[img-KlassenRegel]]
+.Klassen Regel (cv:Rule)
+[link=images/KlassenRegel.png]
+image::images/KlassenRegel.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Rule
+|Beskrivelse|Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en offentlig tjeneste.
+|Usage note|The Rule class represents a document that sets out the specific rules, guidelines or procedures that the Public Service follows. It includes the terms of service, licence, and authentication requirements of the Public Service.
+|URI|cpsv:Rule
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|Se under <<KnytteTilRegelverk>> for eksempler på bruk av denne klassen.
+|===
+
+=== Obligatoriske egenskaper for klassen _Regel_ [[Regel-obligatoriske-egenskaper]]
+
+==== Regel – beskrivelse (dct:description) [[Regel-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|description
+|URI|dct:description
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av regelen. Denne egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
+|Usage note|This property contains descriptive textual information about the Rule. This property should be repeated in case there are various versions of the text in different languages.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|
+|Eksempel|
+|===
+
+==== Regel – identifikator (dct:identifier) [[Regel-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifie
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi identifikatoren til regelen.
+|Usage note|This property contains an identifier for the rule.
+|Multiplisitet|1..1
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|Eksempel|
+|===
+
+==== Regel – tittel (dct:title) [[Regel-tittel]]
+
+[cols="30s,70d"]
+|===
+|English name|title
+|URI|dct:title
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi en beskrivende tittel eller navn for regelen. Gjentas når tittelen finnes i flere ulike språk.
+|Usage note|This property refers to the descriptive title or name of a Resource. This property should be repeated in case there are various versions of the text in different languages.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|
+|Eksempel|
+|===
+
+=== Anbefalte egenskaper for klassen _Regel_ [[Regel-anbefalte-egenskaper]]
+
+==== Regel – implementerer (cpsv:implements) [[Regel-implementerer]]
+
+[cols="30s,70d"]
+|===
+|English name|implements
+|URI|cpsv:implements
+|Range|eli:LegalResource
+|Beskrivelse|Brukes til å referere til en regulativ ressurs som regelen er definert inn under.
+|Usage note|This property links a Rule to relevant legislation or policy documents, such as the Legal Resource under which the Rules are defined.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|
+|Eksempel|Se under <<KnytteTilRegelver>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<KnytteTilRegelver>>.
+
+==== Regel – språk (dct:language) [[Regel-språk]]
+
+[cols="30s,70d"]
+|===
+|English name|language
+|URI|dct:language
+|Range|dct:LinguisticSystem
+|Beskrivelse|Brukes til å referere til språk/målform som regelen er tilgjengelig i.
+|Usage note|This property represents the language(s) in which the Rule is available. This could be one or multiple languages, for instance in countries with more than one official language.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Eksempel|
+|===
+
+=== Valgfrie egenskaper for klassen _Regel_ [[Regel-valgfrie-egenskaper]]
+
+==== Regel – type (dct:type) [[Regel-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Beskrivelse|Brukes til å spesifisere type regel. Denne egenskapen skal bruke et kontrollert vokabular.
+|Usage note|This property refers to the type of a Rule. It must use a controlled vocabulary.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Verdien velges fra en felles kontrollert liste over regeltyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Eksempel|
+|===
+
+Forslag til et kontrollert vokabular for regeltyper:
+
+* Regler vedrørende data:
+** behandlingsgrunnlag (https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing[https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing])
+** utleveringsregel (https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure[https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure])
+** skjermingsregel (https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure[https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure])
+* [yellow-backgrond]#<kom med innspill>#
