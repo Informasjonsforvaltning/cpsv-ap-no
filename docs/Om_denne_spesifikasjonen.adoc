@@ -1,4 +1,4 @@
-== Om spesifikasjonen [[Om_denne_spesifikasjonen]]
+== Om spesifikasjonen [[OmSpesifikasjonen]]
 
 === Formål [[Formål]]
 
