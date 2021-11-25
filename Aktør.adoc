@@ -60,7 +60,7 @@ Eksempel i RDF Turtle:
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
-For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn
 |Eksempel|exAktør har organisasjonsnummer nnnnnnnnn
 |===
 
@@ -68,7 +68,7 @@ Eksempel I RDF Turtle:
 -----
 <exAktør> a foaf:Agent ;
    foaf:name "Den beste restauranten AS"@nb ;
-   dct:identifier " https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn" ;  .
+   dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn"^^xsd:anyURI ;  .
 -----
 
 ==== Aktør – type (dct:type) [[Aktør-type]]

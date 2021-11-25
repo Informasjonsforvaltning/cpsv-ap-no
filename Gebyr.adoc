@@ -105,8 +105,6 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |Eksempel|
 |===
 
-Eksempel i RDF Turtle:
-
 ==== Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough) [[Gebyr-hvisTilbysGjennom]]
 
 [cols="30s,70d"]

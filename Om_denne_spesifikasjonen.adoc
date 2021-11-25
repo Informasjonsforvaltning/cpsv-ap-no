@@ -1,3 +1,37 @@
 == Om spesifikasjonen [[Om_denne_spesifikasjonen]]
 
+=== Formål [[Formål]]
+
+Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive tjenester og hendelser og en felles måte å utveksle beskrivelsene. Spesifikasjonen skal bidra til å sikre interoperabilitet av kataloger/beskrivelser av hendelser og tjenester, på tvers av sektorer. Spesifikasjonen muliggjør også maskinell tilgang til beskrivelser av hendelser og tjenester.
+
+Spesifikasjonen inngår i https://www.digdir.no/informasjonsforvaltning/rammeverk-informasjonsforvaltning/2118[Rammeverk for informasjonsforvaltning].
+
+=== Omfang og avgrensing [[Omfang-og-avgrensing]]
+
+Spesifikasjonen er anbefalt brukt til å beskrive hendelser og tjenester. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere offentlige tjenester, dvs. ikke en hvilken som helst hendelse. Spesifikasjonen dekker også behovet for å beskrive private tjenester som f.eks. er involvert i sammenhengende tjenester fra det offentlige.
+
+Spesifikasjonen er basert EUs https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en[CPSV-AP] (_Core Public Service Vocabulary Application Profile_).
+
+Spesifikasjonen inneholder også engelske navn (English name) og beskrivelser (Usage note). Det gjøres oppmerksom på at engelske navn eller beskrivelser ikke alle er ordrett sitat fra EUs originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
+
+Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF] (se «Introduksjon til RDF» som er [yellow-background]#under utarbeidelse#), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinlesbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
+
+=== Målgrupper [[Målgrupper]]
+
 <tekst kommer>
+
+=== Forvaltningsregime [[Forvaltningsregime]]
+
+Spesifikasjonen forvaltes av Digitaliseringsdirektoratet (Digdir).
+
+Utarbeidelse av nye versjoner av spesifikasjonen initieres av Digdir. Mindre endringer håndteres av Digdir med ev. konsultasjon med enkelte ressurspersoner utenfor Digdir. Ved behov for større endringer vil Digdir vurdere å sette sammen arbeidsgruppe med representanter fra relevante virksomheter, for utarbeidelse av forslag til den reviderte versjonen som ev. sendes ut til bred kommentering før fastsetting.
+
+=== Om kravene i spesifikasjonen [[Om-kravene]]
+
+Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
+
+=== Navnerom som er brukt i spesifikasjonen [[Navnerom]]
+
+Navnerom for dette vokabularet er: https://data.norge.no/vocabulary/cpsvno#
+
+<tabellen over prefix kommer>

@@ -71,7 +71,7 @@ include::Tjeneste.adoc[]
 
 include::Tjenestekanal.adoc[]
 
-include::Tjenesteresultat.adoc[]
+include::Tjenesteresultat[]
 
 include::Vilkår.adoc[]
 
