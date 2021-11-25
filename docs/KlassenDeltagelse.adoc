@@ -8,7 +8,7 @@ image::images/KlassenDeltagelse.png[]
 [cols="30s,70d"]
 |===
 |English name|Participation
-|Beskrivelse|Brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn https://digdir.sharepoint.com/sites/Informasjonsforvaltning-rammeverkS.T.4.1/Delte%20dokumenter/Felles%20tjenestekatalog/CPSV-AP-NO/CPSV-AP-NO%20utkast%20v07.docx#_Offentlig_tjeneste_-[det kompetente organet], som er involvert i en tjeneste.
+|Beskrivelse|Brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <<OffentligTjeneste-harKompetentOrgan>>) eller tjenesteeieren (jf. <<Tjeneste-eiesAv>>), som er involvert i en tjeneste.
 |Usage note|The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider.
 |URI|cv:Participation
 |Kravsnivå|Valgfri/Optional
