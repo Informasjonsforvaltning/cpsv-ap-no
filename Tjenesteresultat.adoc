@@ -94,7 +94,7 @@ Eksempel i RDF Turtle:
 |Merknad | Norsk utvidelse: Finnes ikke i CPSV-AP. Det er behov for å tydeliggjøre kopling mellom et tjenesteresultat (f.eks. endring i et datasett) og hendelsen(e) som skapes av endringen.
 |Eksempel | 
 |===
- 
+
 ==== Tjenesteresultat – type (dct:type) [[Tjenesteresultat-type]]
 
 [cols="30s,70d"]
