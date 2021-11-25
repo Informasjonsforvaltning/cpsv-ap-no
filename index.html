@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.16">
-<title>Spesifikasjon for hendelses- og tjenestebeskrivelser (CPSV-AP-NO)</title>
+<title>Spesifikasjon for tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -440,12 +440,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>Spesifikasjon for hendelses- og tjenestebeskrivelser (CPSV-AP-NO)</h1>
+<h1>Spesifikasjon for tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO)</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
 <li><a href="#Om_denne_versjonen">Om denne versjonen</a></li>
-<li><a href="#Om_denne_spesifikasjonen">Om spesifikasjonen</a>
+<li><a href="#OmSpesifikasjonen">Om spesifikasjonen</a>
 <ul class="sectlevel2">
 <li><a href="#Formål">Formål</a></li>
 <li><a href="#Omfang-og-avgrensing">Omfang og avgrensing</a></li>
@@ -455,7 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a></li>
 </ul>
 </li>
-<li><a href="#Innledning">Innledning</a></li>
+<li><a href="#Innledning">Innledning – hendelser, tjenester og data</a></li>
 <li><a href="#Forenklet_modell">Forenklet modell for CPSV-AP-NO</a>
 <ul class="sectlevel2">
 <li><a href="#BeskriveEnKatalog">Å beskrive en hendelses-/tjenestekatalog</a></li>
@@ -592,6 +592,26 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#Tjenesteresultat">Klassen Tjenesteresultat (cv:Output)</a>
+<ul class="sectlevel2">
+<li><a href="#Tjenesteresultat-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Tjenesteresultat</em></a>
+<ul class="sectlevel3">
+<li><a href="#Tjenesteresultat-identifikator">Tjenesteresultat – identifikator (dct:identifier)</a></li>
+<li><a href="#Tjenesteresultat-tittel">Tjenesteresultat – tittel (dct:title)</a></li>
+</ul>
+</li>
+<li><a href="#Tjenesteresultat-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tjenesteresultat</em></a>
+<ul class="sectlevel3">
+<li><a href="#Tjenesteresultat-beskrivelse">Tjenesteresultat – beskrivelse (dct:description)</a></li>
+</ul>
+</li>
+<li><a href="#Tjenesteresultat-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tjenesteresultat</em></a>
+<ul class="sectlevel3">
+<li><a href="#_tjenesteresultat_kan_skape_xkoscauses">Tjenesteresultat – kan skape (xkos:causes) </a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#Vilkår">Klassen Vilkår (cv:CriterionRequirement)</a>
 <ul class="sectlevel2">
 <li><a href="#Vilkår-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Vilkår</em></a>
@@ -705,13 +725,177 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <h2 id="Om_denne_versjonen"><a class="link" href="#Om_denne_versjonen">Om denne versjonen</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>Denne versjonen (v.0.8) er til bred og uformell kommentering, med <strong>kommenteringsfrist 15. januar 2022</strong>. Hvem som helst kan kommentere og du trenger ikke å få dine innspill forankret i din organisasjon.</p>
+</div>
+<div class="paragraph">
+<p>Kjernegruppen som har utarbeidet dette utkastet ønsker innspill på følgende:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Innledende kapitler <a href="#OmSpesifikasjonen">Om spesifikasjonen</a> og <a href="#Innledning">Innledning – hendelser, tjenester og data</a>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Generelt, gi oss tilbakemelding på om vi treffer de aktuelle målgruppene med disse innledende kapitlene, med konkrete forbedringsforslag hvis ikke.</p>
+</li>
+<li>
+<p>Spesielt om «Målgrupper»: Savner du flere/andre målgrupper som spesifikasjonen også kan være nyttig for, i så fall hvem, hvorfor og hvordan?</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Omfang:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Er det noen behov som ikke er dekket av spesifikasjonen?</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva du mener mangler, med konkrete eksempler på behov, samt forslag til kravsnivå (obligatorisk/anbefalt/valgfri) og norske navn og beskrivelser.</p>
+</li>
+<li>
+<p>Spesielt, ser du behov for å kunne beskrive at «en hendelse kan bestå av en eller flere andre hendelser»? Hvis ja, gi oss konkrete eksempler på behovet.</p>
+<div class="olist upperalpha">
+<ol class="upperalpha" type="A">
+<li>
+<p>Denne versjonen tar ikke høyde for at en hendelse kan bestå av andre hendelser. Dette også basert på bl.a. EUs forklaring på en Virksomhetshendelse (Business event): "Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business <mark>at this specific point in time</mark>” (vår egen utheving), altså en hendelse er noe som skjer på et gitt tidspunkt. Kjernegruppen har derfor valgt å betrakte en hendelse som en ikke-delbar enhet.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Er noen av kravene (obligatoriske/anbefalte/valgfrie) for strenge eller for svake?</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva du mener er for strengt eller for svakt og hvorfor, og forslag til det du mener er riktig kravsnivå.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Spesielt om kontrollerte vokabularer: Det er i spesifikasjonen stilt krav til bruk av kontrollerte vokabularer for egenskaper som skal ha «kodede verdier», f.eks. «type» (<code>dct:type</code>). Flere av kontrollerte vokabularer er ikke endelig fastsatt og gjort tilgjengelig av EUs Publications Office ennå og det er uvisst når dette blir gjort fra EU. Vi har derfor i denne versjonen av spesifikasjonen startet med forslag til kontrollerte vokabularer som mangler. Forslagene er tatt med rett under beskrivelsen av de aktuelle egenskapene.</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Gi oss tilbakemelding på forslagene dekker behov som du ser, med konkrete endringsforslag (hva som ev. mangler, er feil, osv.).</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Forståelighet:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Norske navn klasse- og egenskapsnavn. Selv om i utvekslingen/tilgjengeliggjøringen er det URIene (f.eks. <code>cv:BusinessEvent</code>) som skal tas med og ikke de norske klasse- og egenskapsnavnene, er det viktig at norske navn (f.eks. «Virksomhetshendelse» for <code>cv:BusinessEvent</code>) er forståelige og meningsfulle for målgruppene av spesifikasjonen.</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva du mener kan forbedres, med konkrete forbedringsforslag samt kort begrunnelse.</p>
+</li>
+<li>
+<p>Spesielt, om det norske navnet «Livshendelse» for Klassen Livshendelse (<code>cv:LifeEvent</code>).
+Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «Innbyggerhendelse», som semantisk gjenspeiler direkte intensjonen med denne klassen (dvs. hendelse hos en innbygger), og som dessuten er et direkte «motsvar» til navnet for Klassen Virksomhetshendelse (<code>cv:BusinessEvent</code>) (hendelse hos en virksomhet). Dessuten, i EU sin forklaring på Virksomhetshendelse (<code>cv:BusinessEvent</code>) står det også at “a Business Event is a specific situation or event <mark>in the lifecycle</mark> of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time” (vår egen utheving), dvs. en Virksomhetshendelse er egentlig en også livshendelse men hos en virksomhet. Digdir sin side om <a href="https://www.digdir.no/sammenhengende-tjenester/arbeidet-med-de-sju-livshendelsene/1170">Arbeidet med de sju livshendelsene</a>, tar også med seg virksomhetshendelsene «Starte og drive en bedrift» (nr. 5 på listen) og «Starte og drive en frivillig organisasjon» (nr. 7 på listen) under samlebetegnelsen «livshendelse». <br></p>
+<div class="paragraph">
+<p>Pga. at «livshendelse» er et ord som er politisk forankret både i Norge og EU (life event), har kjernegruppen i denne versjonen valgt å bruke «Livshendelse» som klassenavn for hendelse hos innbygger. <br></p>
+</div>
+<div class="paragraph">
+<p><span class="yellow-background"><strong>Spørsmål</strong></span>: Syns du klassen heller bør hete «Innbyggerhendelse» (et mer semantisk presist navn) enn nåværende «Livshendelse» (et mer «politisk» gjenkjennbart navn)?</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Struktur:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt: gi oss tilbakemelding på hva du konkret mener bør kunne forbedres strukturmessig, f.eks. rekkefølgen av (under)kapitlene, «mal» for tabellene som nå er brukt til å beskrive klasser og egenskaper, osv.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Beskrivelser av klasser og egenskaper:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva (beskrivelsen av hvilken klasse eller egenskap) du konkret mener bør kunne forbedres, med forslag til alternativ formulering.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Eksempler:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva (hvilket eksempel til hvilken klasse/egenskap) du mener er feil eller uklare, eller mangler etc., med konkrete forbedringsforslag og ev. (alternative) eksempler.</p>
+<div class="olist upperalpha">
+<ol class="upperalpha" type="A">
+<li>
+<p>Når det gjelder eksempler har kjernegruppen brukt følgende prioriteringsrekkefølge: obligatoriske – anbefalte – valgfrie egenskaper, og prosatekst (i tabellene) – eksempel i RDF Turtle (etter tabellene), og derfor ikke alt er eller vil være eksemplifisert.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>RDF-tekniske innspill:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Under utarbeidelse av denne versjonen av spesifikasjonen, ble det identifisert behov som ikke er dekket av CPSV-AP. Vi har derfor utvidet CPSV-AP med å tilføye klasser og egenskaper, enten ved å gjenbruke klasser og egenskaper fra eksisterende RDF-vokabularer eller å bruke våre egendefinerte klasser og egenskaper (med navnerom cpsvno) der vi ikke fant egnede tilsvar i eksisterende RDF-vokabularer.</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt: Si fra hvis vi har valgt feil klasser/egenskaper fra eksisterende RDF-vokabularer, med forslag til hva vi burde ha valgt.</p>
+</li>
+<li>
+<p>Spesielt: Til våre egendefinerte klasser/egenskaper (med navnerom cpsvno), si fra hvis du vet om noen eksisterende klasser/egenskaper som dekker de samme behovene.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Hvordan gir du tilbakemeldinger?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vi ber deg fortrinnsvis legge dine tilbakemeldinger inn som <a href="https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues">Github Issues</a>. Dersom du ikke allerede har bruker på Github kan du opprette en bruker gratis.</p>
+</li>
+<li>
+<p>Du kan alternativt sende oss dine tilbakemeldinger på e-post, til adressen <a href="mailto:informasjonsforvaltning@digdir.no?subject=CPSV-AP-NOv08">informasjonsforvaltning(at)digdir.no</a>.</p>
+</li>
+</ul>
 </div>
 <!-- toc disabled -->
 </div>
 </div>
 <div class="sect1">
-<h2 id="Om_denne_spesifikasjonen"><a class="link" href="#Om_denne_spesifikasjonen">Om spesifikasjonen</a></h2>
+<h2 id="OmSpesifikasjonen"><a class="link" href="#OmSpesifikasjonen">Om spesifikasjonen</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="Formål"><a class="link" href="#Formål">Formål</a></h3>
@@ -740,7 +924,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="sect2">
 <h3 id="Målgrupper"><a class="link" href="#Målgrupper">Målgrupper</a></h3>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p><span class="yellow-background">&lt;tekst kommer&gt;</span></p>
 </div>
 </div>
 <div class="sect2">
@@ -763,17 +947,130 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="paragraph">
 <p>Navnerom for dette vokabularet er: <a href="https://data.norge.no/vocabulary/cpsvno#" class="bare">https://data.norge.no/vocabulary/cpsvno#</a></p>
 </div>
-<div class="paragraph">
-<p>&lt;tabellen over prefix kommer&gt;</p>
-</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 45%;">
+<col style="width: 45%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Prefiks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navnerom</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring/navn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>adms</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/adms">http://www.w3.org/ns/adms#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-adms/">Asset Description Metadata Schema</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cccev</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/m8g/cccev/" class="bare">http://data.europa.eu/m8g/cccev/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://semiceu.github.io/CCCEV/releases/2.00/">Core Criterion and Core Evidence Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cpsvno</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vocabulary/cpsvno">https://data.norge.no/vocabulary/cpsvno#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk applikasjonsprofil av CPSV-AP, denne spesifikasjonen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcatno</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vacabulary/dcatno#" class="bare">https://data.norge.no/vacabulary/dcatno#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/specification/dcat-ap-no/">Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dct</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DCMI Metadata Terms</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dqv</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dqv/#dqv">https://www.w3.org/TR/vocab-dqv/#dqv</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dqv/#dqv">Data on the Web Best Practices: Data Quality Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eli</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/eli/ontology#" class="bare">http://data.europa.eu/eli/ontology#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://eur-lex.europa.eu/eli-register/about.html">European Legislation Identifier</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>org</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/org#" class="bare">http://www.w3.org/ns/org#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-org/">The Organization Ontology</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdf</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-syntax-grammar/">RDF 1.1 XML Syntax</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdfs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2000/01/rdf-schema">http://www.w3.org/2000/01/rdf-schema#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-schema/">RDF Schema 1.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>schema</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://schema.org/">http://schema.org/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://schema.org/">Schema.org</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>skos</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2004/02/skos/core">http://www.w3.org/2004/02/skos/core#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/">SKOS Simple Knowledge Organization System</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>time</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2006/time">http://www.w3.org/2006/time#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/owl-time/">Time Ontology in OWL</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xsd</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/xmlschema-2/">XML Schema Part 2: Datatypes Second Edition</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Innledning"><a class="link" href="#Innledning">Innledning</a></h2>
+<h2 id="Innledning"><a class="link" href="#Innledning">Innledning – hendelser, tjenester og data</a></h2>
 <div class="sectionbody">
+<div id="img-HendelseTjenesteData" class="imageblock">
+<div class="content">
+<a class="image" href="images/FigurHendelseTjenesteData.png"><img src="images/FigurHendelseTjenesteData.png" alt="FigurHendelseTjenesteData"></a>
+</div>
+<div class="title">Figur 1. Sammenheng mellom hendelse, tjeneste og data (Kilde: Digitaliseringsbloggen <a href="https://www.digdir.no/sammenhengende-tjenester/vi-ma-snakke-det-samme-spraket-i-sammenhengende-tjenester/2614">Vi må snakke det samme språket i sammenhengende tjenester!</a>).</div>
+</div>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>En hendelse kan utløse behov for en eller flere offentlige tjenester. En offentlig tjeneste bruker data og kan resultere i endringer i data. Endring i data kan føre til en eller flere nye hendelser som igjen kan utløse behov for en eller flere offentlige tjenester.</p>
+</div>
+<div class="paragraph">
+<p>Eksempel:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hendelse: Å starte og drive en restaurant</p>
+</li>
+<li>
+<p>Tjeneste: Søknad om skjenkebevilling (i den aktuelle kommunen)</p>
+</li>
+<li>
+<p>Data</p>
+<div class="ulist">
+<ul>
+<li>
+<p>som tjenesten bruker (dokumentasjonskrav): bl.a. Politiattest fra Politidirektoratet,</p>
+</li>
+<li>
+<p>som tjenesten produserer (tjenesteresultat): skjenkebevillingen (eller avslag på søknaden).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -834,7 +1131,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <a class="image" href="images/KlassenAktør.png"><img src="images/KlassenAktør.png" alt="KlassenAktør"></a>
 </div>
-<div class="title">Figur 1. Klassen Aktør (foaf:Agent).</div>
+<div class="title">Figur 2. Klassen Aktør (foaf:Agent).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1253,7 +1550,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <a class="image" href="images/KlassenGebyr.png"><img src="images/KlassenGebyr.png" alt="KlassenGebyr"></a>
 </div>
-<div class="title">Figur 2. Klassen Gebyr (cv:Cost).</div>
+<div class="title">Figur 3. Klassen Gebyr (cv:Cost).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1613,7 +1910,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <a class="image" href="images/KlassenKatalog.png"><img src="images/KlassenKatalog.png" alt="KlassenKatalog"></a>
 </div>
-<div class="title">Figur 3. Klassen Katalog (dcat:Catalog).</div>
+<div class="title">Figur 4. Klassen Katalog (dcat:Catalog).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1627,7 +1924,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over hendelser og (offentlige) tjenester.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over tjenester og hendelser.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -1811,7 +2108,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hendelses- og tjenestekatalog</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste- og hendelseskatalog</p></td>
 </tr>
 </tbody>
 </table>
@@ -1821,7 +2118,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="listingblock">
 <div class="content">
 <pre>&lt;https://data.norge.no/public-services&gt; a dcat:Catalog ;
-   dct:title "Hendelses- og tjenestekatalog"@nb ; .</pre>
+   dct:title "Tjeneste- og hendelseskatalog"@nb ; .</pre>
 </div>
 </div>
 </div>
@@ -1867,7 +2164,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Digdir er utgiver av «Hendelses- og tjenestekatalog» i Felles datakatalog.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Digdir er utgiver av «Tjeneste- og hendelseskatalog» i Felles datakatalog.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1926,7 +2223,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Hendelses- og tjenestekatalog» i Felles datakatalog har Norge som sitt dekningsområde.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Tjeneste- og hendelseskatalog» i Felles datakatalog har Norge som sitt dekningsområde.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2127,7 +2424,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Hendelses- og tjenestekatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Tjeneste- og hendelseskatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2230,7 +2527,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Hendelses- og tjenestekatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Tjeneste- og hendelseskatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2645,7 +2942,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <a class="image" href="images/KlassenKontaktpunkt.png"><img src="images/KlassenKontaktpunkt.png" alt="KlassenKontaktpunkt"></a>
 </div>
-<div class="title">Figur 4. Klassen Kontaktpunkt (vard:Kind).</div>
+<div class="title">Figur 5. Klassen Kontaktpunkt (vard:Kind).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2799,7 +3096,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <a class="image" href="images/KlassenTjenestekanal.png"><img src="images/KlassenTjenestekanal.png" alt="KlassenTjenestekanal"></a>
 </div>
-<div class="title">Figur 5. Klassen Tjenestekanal (cv:Channel).</div>
+<div class="title">Figur 6. Klassen Tjenestekanal (cv:Channel).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3465,8 +3762,364 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="paragraph">
 <p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid">Klassen Åpningstid (schema:OpeningHoursSpecification)</a>.</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Tjenesteresultat"><a class="link" href="#Tjenesteresultat">Klassen Tjenesteresultat (cv:Output)</a></h2>
+<div class="sectionbody">
+<div id="img-KlassenTjenesteresultat" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenTjenesteresultat.png"><img src="images/KlassenTjenesteresultat.png" alt="KlassenTjenesteresultat"></a>
+</div>
+<div class="title">Figur 7. Klassen Tjenesteresultat (cv:Output).</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere resultat fra en tjeneste.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Outputs can be any resource - document, artefact – anything produced by the Public Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Output</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I samsvar med <a href="https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer">DCAT-AP-NO</a>, kan datasett (dcat:Dataset) være en type cv:Output. På denne måten kan tjenesteresultatet være et datasett som kan deles, f.eks. selve «bevillingen» som et datasett</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resultater fra tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="Tjenesteresultat-obligatoriske-egenskaper"><a class="link" href="#Tjenesteresultat-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Tjenesteresultat</em></a></h3>
+<div class="sect3">
+<h4 id="Tjenesteresultat-identifikator"><a class="link" href="#Tjenesteresultat-identifikator">Tjenesteresultat – identifikator (dct:identifier)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi identifikatoren til tjenesteresultatet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents an Identifier for the Output.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.</p>
+<p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte, se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator">Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Tjenesteresultat-tittel"><a class="link" href="#Tjenesteresultat-tittel">Tjenesteresultat – tittel (dct:title)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi tittel/navn til tjenesteresultatet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the official Name of the Output.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Skjenkebevilling til «Den beste restauranten AS»»</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>Unresolved directive in main.adoc - include::Tjenesteresultat[]</p>
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling1001&gt; a cv:Output , a dcat:Dataset ;
+   dct:tilte "Skjenkebevilling til «Den beste restauranten AS»"@nb ; .</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Tjenesteresultat-anbefalte-egenskaper"><a class="link" href="#Tjenesteresultat-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tjenesteresultat</em></a></h3>
+<div class="sect3">
+<h4 id="Tjenesteresultat-beskrivelse"><a class="link" href="#Tjenesteresultat-beskrivelse">Tjenesteresultat – beskrivelse (dct:description)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en tekstlig beskrivelse av tjenesteresultatet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a free text Description of the Output.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n for å støtte flerspråklighet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling1001&gt; a cv:Output , a dcat:Dataset ;
+   dct:tilte "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Tjenesteresultat-valgfrie-egenskaper"><a class="link" href="#Tjenesteresultat-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tjenesteresultat</em></a></h3>
+<div class="sect3">
+<h4 id="_tjenesteresultat_kan_skape_xkoscauses"><a class="link" href="#_tjenesteresultat_kan_skape_xkoscauses">Tjenesteresultat – kan skape (xkos:causes) <a id="Tjenesteresultat-kanSkape"></a></a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">may cause</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:causes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å uttrykke relasjon mellom et tjenesteresultat og en eller flere hendelser, f.eks. endring av data (som et tjenesteresultat) skaper en eller flere hendelser.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To express the relation between an Output and one or more Events, for instance the cases where change of data (as an Output) causes one of more Events.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> Norsk utvidelse: Finnes ikke i CPSV-AP. Det er behov for å tydeliggjøre kopling mellom et tjenesteresultat (f.eks. endring i et datasett) og hendelsen(e) som skapes av endringen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> 
+==== Tjenesteresultat – type (dct:type) <a id="Tjenesteresultat-type"></a></p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til begrep som representerer type(r) tjenesteresultat tilhører.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the type of Output as defined in a controlled vocabulary.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over resultattyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;kommer&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling1001&gt; a cv:Output , a dcat:Dataset ;
+   dct:tilte "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
+   dct:type &lt;tillatelse&gt; ; .</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Forslag til et kontrollert vokabular for typer tjenesteresultat:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Anerkjennelse</p>
+</li>
+<li>
+<p>Erklæring (ev. deklarasjon)</p>
+</li>
+<li>
+<p>Fysisk objekt</p>
+</li>
+<li>
+<p>Identifikator/aksesskode</p>
+</li>
+<li>
+<p>Tillatelse</p>
+</li>
+<li>
+<p>Rettighet</p>
+</li>
+<li>
+<p>Økonomisk fordel</p>
+</li>
+<li>
+<p>Økonomisk forpliktelse</p>
+</li>
+<li>
+<p><span class="yellow-background">&lt;kom med innspill&gt;</span></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -3479,7 +4132,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <a class="image" href="images/KlassenVilkår.png"><img src="images/KlassenVilkår.png" alt="KlassenVilkår"></a>
 </div>
-<div class="title">Figur 6. Klassen Vilkår (cv:CriterionRequirement).</div>
+<div class="title">Figur 8. Klassen Vilkår (cv:CriterionRequirement).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4201,7 +4854,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <a class="image" href="images/KlassenVirksomhetshendelse.png"><img src="images/KlassenVirksomhetshendelse.png" alt="KlassenVirksomhetshendelse"></a>
 </div>
-<div class="title">Figur 7. Klassen Virksomhetshendelse (cv:BusinessEvent).</div>
+<div class="title">Figur 9. Klassen Virksomhetshendelse (cv:BusinessEvent).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4648,7 +5301,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <a class="image" href="images/KlassenÅpningstid.png"><img src="images/KlassenÅpningstid.png" alt="KlassenÅpningstid"></a>
 </div>
-<div class="title">Figur 8. Klassen Åpningstid (schema:OpeningHoursSpecificatinon).</div>
+<div class="title">Figur 10. Klassen Åpningstid (schema:OpeningHoursSpecificatinon).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4974,7 +5627,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-25 10:55:15 UTC
+Sist oppdatert 2021-11-25 13:09:58 UTC
 </div>
 </div>
 </body>

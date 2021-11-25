@@ -1,5 +1,5 @@
 include::locale/attributes.adoc[]
-= Spesifikasjon for hendelses- og tjenestebeskrivelser (CPSV-AP-NO)
+= Spesifikasjon for tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO)
 :doctype: book
 :docinfo:
 :icons: font
@@ -71,7 +71,7 @@ include::Tjeneste.adoc[]
 
 include::Tjenestekanal.adoc[]
 
-include::Tjenesteresultat[]
+include::Tjenesteresultat.adoc[]
 
 include::Vilkår.adoc[]
 
