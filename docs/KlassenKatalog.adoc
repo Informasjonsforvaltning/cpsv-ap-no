@@ -1,7 +1,7 @@
 == Klassen Katalog (dcat:Catalog) [[Katalog]]
 
 [[img-KlassenKatalog]]
-.Klassen Katalog (dcat:Catalog).
+.Klassen Katalog (dcat:Catalog)
 [link=images/KlassenKatalog.png]
 image::images/KlassenKatalog.png[]
 

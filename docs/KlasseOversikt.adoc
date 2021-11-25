@@ -1,0 +1,36 @@
+== Oversikt over klasser i spesifikasjonen [[OversiktOverKlassene]]
+
+Listen oppdateres etter hvert som klassenes kravsnivå fastsettes. Ved ev. avvik mellom oversikten her og klassebeskrivelsene som følger, gjelder kravsnivåene som er satt i klassebeskrivelsene.  +
+Følgende klasser er obligatoriske:
+
+* ingen
+Følgende klasser er anbefalte:
+
+* Klassen Hendelse (cv:Event)
+* Klassen Kontaktpunkt (vcard:Kind)
+* Klassen Offentlig organisasjon (cv:PublicOrganisation)
+* Klassen Offentlig tjeneste (cpsv:PublicService)
+* Klassen Tjeneste (cpsvno:Service)
+Følgende klasser er valgfrie:
+
+* Klassen Aktør (foaf:Agent)
+* Klassen Beskrivende datasett (dcat:Dataset)
+* Klassen Deltagelse (cv:Participation)
+* Klassen Dokumentasjon (cv:Evidence)
+* Klassen Dokumentreferanse (cccev:DocumentReference)
+* Klassen Gebyr (cv:Cost)
+* Klassen Katalog (dcat:Catalog)
+* Klassen Livshendelse (cv:LifeEvent)
+* Klassen Regel (cpsv:Rule)
+* Klassen Regulativ ressurs (eli:LegalResource)
+* Klassen Tidsrom (dct:PeriodOfTime)
+* Klassen Tjenestekanal (cv:Channel)
+* Klassen Tjenesteresultat (cv:Output)
+* Klassen Vilkår (cv:CriterionRequirement)
+* Klassen Virksomhetshendelse (cv:BusinessEvent)
+* Klassen Åpningstid (schema:OpeningHoursSpecification)
+Følgende klasser som også er vist i den forenklede modellen, er ikke spesifisert i spesifikasjonen:
+
+* Datasett (dcat:Dataset), Datatjeneste (dcat:DataService) og Distribusjon (dcat:Distribution): se https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO].
+
+I resten av spesifikasjonen er klassene sortert alfabetisk etter norske navn, med beskrivelse av klassen og deretter egenskapene som skal/bør/kan brukes. Egenskapene er gruppert inn i obligatoriske (skal), anbefalte (bør) og valgfrie (kan) egenskaper og der etter sortert alfabetisk etter norske navn.

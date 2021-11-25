@@ -1,7 +1,7 @@
 == Klassen Gebyr (cv:Cost) [[Gebyr]]
 
 [[img-KlassenGebyr]]
-.Klassen Gebyr (cv:Cost).
+.Klassen Gebyr (cv:Cost)
 [link=images/KlassenGebyr.png]
 image::images/KlassenGebyr.png[]
 

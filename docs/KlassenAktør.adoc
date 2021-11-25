@@ -1,7 +1,7 @@
 == Klassen Aktør (foaf:Agent) [[Aktør]]
 
 [[img-KlassenAktør]]
-.Klassen Aktør (foaf:Agent).
+.Klassen Aktør (foaf:Agent)
 [link=images/KlassenAktør.png]
 image::images/KlassenAktør.png[]
 
