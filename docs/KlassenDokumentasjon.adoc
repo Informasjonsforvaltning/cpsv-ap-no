@@ -158,7 +158,7 @@ Eksempel i RDF Turtle:
    foaf:page <https://kommune24-7.no/1813/702431> ; .
 -----
 
-==== Dokumentasjon – type (dct:type) [[Dokumentasjon-type]
+==== Dokumentasjon – type (dct:type) [[Dokumentasjon-type]]
 
 [cols="30s,70d"]
 |===
