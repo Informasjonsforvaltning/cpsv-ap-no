@@ -1,7 +1,7 @@
 == Klassen Vilkår (cv:CriterionRequirement) [[Vilkår]]
 
 [[img-KlassenVilkår]]
-.Klassen Vilkår (cv:CriterionRequirement).
+.Klassen Vilkår (cv:CriterionRequirement)
 [link=images/KlassenVilkår.png]
 image::images/KlassenVilkår.png[]
 
