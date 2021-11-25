@@ -13,9 +13,9 @@ image::images/KlassenHendelse.png[]
 |URI|cv:Event
 |Subklasse av / Subclass of|dcat:Dataset
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Bruk den semantisk sett mer presise Klassen Livshendelse (cv:LifeEvent) eller Klassen Virksomhetshendelse (cv:BusinessEvent), istedenfor denne generiske klassen.
-|Merknad 2|Norsk utvidelse: I CPSV-AP er ikke Hendelse (cv:Event) en subklasse av Datasett (dcat:Dataset). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte Hendelse som Datasett.
-|Eksempel|Se tilsvarende eksempler i Klassen Livshendelse (cv:LifeEvent) eller Klassen Virksomhetshendelse (cv:BusinessEvent).
+|Merknad 1|Bruk den semantisk sett mer presise <<Livshendelse>> eller <<Virksomhetshendelse>>, istedenfor denne generiske klassen.
+|Merknad 2|Norsk utvidelse: I CPSV-AP er ikke Hendelse (`cv:Event`) en subklasse av Datasett (`dcat:Dataset`). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte Hendelse som Datasett.
+|Eksempel|Se tilsvarende eksempler i <<Livshendelse>> eller <<Virksomhetshendelse>>.
 |===
 
 === Obligatoriske egenskaper for klassen _Hendelse_ [[Hendelse-obligatoriske-egenskaper]]
