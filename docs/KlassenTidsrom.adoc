@@ -19,7 +19,7 @@ image::images/KlassenTidsrom.png[]
 
 === Anbefalte egenskaper for klassen _Tidsrom_ [[Tidsrom-anbefalte-egenskaper]]
 
-IMPORTANT: Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ingen obligatoriske, skal en av de to være til stede for hver forekomst av klassen dct:PeriodOfTime (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato).
+IMPORTANT: Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ingen obligatoriske, skal en av de to være til stede for hver forekomst av klassen `dct:PeriodOfTime` (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato).
 
 ==== Tidsrom – sluttdato/-tid (dcat:endDate) [[Tidsrom-sluttdato-tid]]
 
