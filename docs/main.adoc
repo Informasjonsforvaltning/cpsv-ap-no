@@ -49,7 +49,7 @@ include::KlassenDeltagelse.adoc[]
 
 include::KlassenDokumentasjon.adoc[]
 
-include::KlassenDokumentasjonsreferanse.adoc[]
+include::KlassenDokumentreferanse.adoc[]
 
 include::KlassenGebyr.adoc[]
 
