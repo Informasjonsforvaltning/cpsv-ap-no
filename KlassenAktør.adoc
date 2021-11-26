@@ -13,7 +13,7 @@ image::images/KlassenAktør.png[]
 |URI|foaf:Agent
 |Kravsnivå|Valgfri/Optional
 |Merknad 1|For aktører som er offentlig organisasjon, bruk Klassen Offentlig organisasjon (cv:PublicOrganisation) isteden.
-|Merknad 2|Norsk utvidelse: range endret fra dct:Agent til foaf:Agent (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette over tid vil ikke være en norsk utvidelse).
+|Merknad 2|Norsk utvidelse: range endret fra dct:Agent til foaf:Agent (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).
 |Eksempel|Vi bruker en fiktiv exAktør (Den beste restauranten AS) som eksempel i dette kapittelet.
 |===
 
