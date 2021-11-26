@@ -339,7 +339,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|Bruk egenskapen <<OffentligTjeneste-dokumentasjonskrav>> for å kytte til datasett som tjenesten bruker, eller egenskapen <<OffentligTjeneste-produserer>> for datasett som tjenesten produserer.`
-|Merknad|Norsk utvidelse: endret range til `dcat:Dataset` fra `cv:PublicServiceDataset. EU kommer også til å endre dette i neste release av CPSV-AP, slik at dette over tid ikke er norsk utvidelse.
+|Merknad|Norsk utvidelse: endret range til `dcat:Dataset` fra `cv:PublicServiceDataset. EU kommer også til å endre dette i neste release av CPSV-AP, slik at dette etter hvert ikke vil være norsk utvidelse.
 |Eksempel|
 |===
 
