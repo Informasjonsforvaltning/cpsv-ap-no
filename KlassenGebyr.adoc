@@ -97,12 +97,12 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |===
 |English name|is defined by
 |URI|cv:isDefinedBy
-|Range|cpsv:PublicOrganisation
+|Range|foaf:Agent
 |Beskrivelse|Brukes til å referere til en eller flere offentlige organisasjoner som bestemmer gebyr for en tjeneste.
 |Usage note|This property links the Cost class with one or more instances of the Public Organization class (cv:PublicOrganisation). This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|
+|Merknad| Norsk utvidelse: Range er endret fra `cv:PublicOrganisation` til `foaf:Agent`, som en følge av den norsk utvidelse av å tilføye klassen Tjeneste (`cpsvno:Service`) som kan tilbys av en privat aktør (foaf:Agent).
 |Eksempel|
 |===
 
