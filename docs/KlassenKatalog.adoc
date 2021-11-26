@@ -12,7 +12,7 @@ image::images/KlassenKatalog.png[]
 |Usage note|To represent a catalog, in context of this specification a catalog of events and (public) services.
 |URI|dcat:Catalog
 |Kravsnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: EUs CPSV-AP dekker ikke katalogbeskrivelse. Denne klassen fra DCAT-AP-NO tas med her for å kunne denne norsk behov for å beskrive «hendelses-/tjenestekataloger».
+|Merknad|Norsk utvidelse: EUs CPSV-AP dekker ikke katalogbeskrivelse. Denne klassen fra DCAT-AP-NO tas med her for å kunne denne norsk behov for å beskrive «tjeneste-/hendelseskataloger».
 |Eksempel|https://data.norge.no/public-services[https://data.norge.no/public-services] er en katalog over tjenester og hendelser.
 |===
 
