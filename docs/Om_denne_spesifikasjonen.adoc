@@ -18,7 +18,16 @@ Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF] (se «Introd
 
 === Målgrupper [[Målgrupper]]
 
-[yellow-background]#<tekst kommer>#
+Spesifikasjonen har ikke sluttbrukere av (offentlige) tjenester som sin målgruppe, men
+
+* deg som skal beskrive
+** din virksomhets tjenester overfor innbyggere, næringsliv og sivilsamfunnet ellers,
+** hendelser som kan utløse behov for din eller andre virksomheters tjenester,
+** sammenhengende tjenester (kjeder av tjenester som eies av flere virksomheter),
+** hendelser (f.eks. livshendelser) som kan utløse behov for tjenester fra flere virksomheter,
+* deg som søker etter og ønsker å gjenbruke / sette sammen tjenester fra andre virksomheter,
+* deg som skal utvikle/tilpasse verktøystøtte for ovennevnte beskrivelser og/eller for tilgjengeliggjøring/utveksling av beskrivelsene.
+
 
 === Forvaltningsregime [[Forvaltningsregime]]
 
