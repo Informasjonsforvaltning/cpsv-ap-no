@@ -286,7 +286,7 @@ Eksempel i RDF Turtle:
 
 Forslag til et kontrollert vokabular for typer offentlig tjeneste:
 
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#
 
 === Valgfrie egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-valgfrie-egenskaper]]
 

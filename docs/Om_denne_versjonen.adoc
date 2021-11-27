@@ -24,7 +24,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 +
 Pga. at «livshendelse» er et ord som er politisk forankret både i Norge og EU (life event), har kjernegruppen i denne versjonen valgt å bruke «Livshendelse» som klassenavn for hendelse hos innbygger.  +
 +
-[yellow-background]#*Spørsmål*#: Syns du klassen heller bør hete «Innbyggerhendelse» (et mer semantisk presist navn) enn nåværende «Livshendelse» (et mer «politisk» gjenkjennbart navn)? Eller har du forslag til andre navn?
+#*Spørsmål*#: Syns du klassen heller bør hete «Innbyggerhendelse» (et mer semantisk presist navn) enn nåværende «Livshendelse» (et mer «politisk» gjenkjennbart navn)? Eller har du forslag til andre navn?
 
 .. Struktur:
 ... Generelt: gi oss tilbakemelding på hva du konkret mener bør kunne forbedres strukturmessig, f.eks. rekkefølgen av (under)kapitlene, «mal» for tabellene som nå er brukt til å beskrive klasser og egenskaper, osv.

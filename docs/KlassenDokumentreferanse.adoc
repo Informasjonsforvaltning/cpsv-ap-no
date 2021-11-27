@@ -97,4 +97,4 @@ Eksempel i RDF Turtle:
 
 Forslag til et kontrollert vokabular for typer dokumentreferanse:
 
-* Kjernegruppen har ikke klart å forstå hvordan man skal tolke det engelske «usage note». [yellow-background]#Gi innspill# på hvordan man kan kategorisere attestasjoner, protokoller osv.
+* Kjernegruppen har ikke klart å forstå hvordan man skal tolke det engelske «usage note». #Gi innspill# på hvordan man kan kategorisere attestasjoner, protokoller osv.

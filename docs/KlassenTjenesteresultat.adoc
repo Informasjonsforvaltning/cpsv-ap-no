@@ -129,4 +129,4 @@ Forslag til et kontrollert vokabular for typer tjenesteresultat:
 * Rettighet
 * Økonomisk fordel
 * Økonomisk forpliktelse
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#

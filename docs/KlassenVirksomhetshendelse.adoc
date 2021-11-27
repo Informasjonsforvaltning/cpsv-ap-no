@@ -161,4 +161,4 @@ Eksempel i RDF Turtle:
 
 Forslag til et kontrollert vokabular for typer virksomhetshendelse:
 
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#

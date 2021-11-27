@@ -186,4 +186,4 @@ Forslag til et kontrollert vokabular med følgende typer livshendelser (hentet f
 * Facing a crime
 * Retirement
 * Death of a relative
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#

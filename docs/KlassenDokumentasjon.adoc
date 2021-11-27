@@ -186,4 +186,4 @@ Forslag til et kontrollert vokabular for dokumentasjonstyper:
 * Erklæring
 * Protokoll
 * Sertifikat
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#
