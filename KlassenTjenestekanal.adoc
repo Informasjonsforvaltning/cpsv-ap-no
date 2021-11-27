@@ -197,7 +197,7 @@ Forslag til et kontrollert vokabular for typer tjenestekanal (hentet fra CPSV â€
 * Mail
 * Service Bureau
 * Client's Location
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#
 
 ==== Tjenestekanal â€“ dokumentasjonskrav (cpsv:hasInput) [[Tjenestekanal-dokumentasjonskrav]]
 

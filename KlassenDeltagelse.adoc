@@ -73,4 +73,4 @@ Forslag til et kontrollert vokabular med følgende rolletyper:
 * Sluttbruker (hvem er tjenesten for)
 * Datakonsument (bruker av dataene)
 * Dataleverandør (bidrar med data)
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#

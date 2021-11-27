@@ -255,7 +255,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
  
 Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig tjeneste):
 
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#
 
 === Valgfrie egenskaper for klassen _Tjeneste_ [[Tjeneste-valgfrie-egenskaper]]
 

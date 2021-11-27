@@ -152,13 +152,13 @@ Eksempel i RDF Turtle:
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
 |Merknad|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
-|Eksempel|[yellow-background]#Lovregulert#
+|Eksempel|#Lovregulert#
 |===
 
 Forslag til et kontrollert vokabular for sertifiseringsnivåer:
 
 * Lovregulert (legeislation)
-* [yellow-background]#<kom med innspill>#
+* [#<kom med innspill>#
 
 ==== Vilkår – type (dct:type) [[Vilkår-type]]
 
@@ -191,7 +191,7 @@ Forslag til et kontrollert vokabular for typer vilkår:
 * Kompetanse
 * Helse
 * Økonomi
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#
 
 ==== Vilkår – type oversettelse (cccev:typeOfTranslation) [[Vilkår-typeOversettelse]]
 
@@ -211,7 +211,7 @@ Forslag til et kontrollert vokabular for typer vilkår:
 Forslag til et kontrollert vokabular for typer oversettelse:
 
 * autorisert oversettelse
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#
 
 ==== Vilkår – type kopieringskvalitet (cccev:typeOfCopyQuality) [[Vilkår-typeKopieringskvalitet]]
 
@@ -231,7 +231,7 @@ Forslag til et kontrollert vokabular for typer oversettelse:
 Forslag til et kontrollert vokabular for typer kopieringskvalitet:
 
 * attestert kopi
-* [yellow-background]#<kom med innspill>#
+* #<kom med innspill>#
 
 ==== Vilkår – øvre verdigrense (cccev:maximumValue) [[Vilkår-øvreVerdigrense]]
 
