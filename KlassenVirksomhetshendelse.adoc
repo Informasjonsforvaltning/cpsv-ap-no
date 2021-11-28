@@ -76,8 +76,8 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Public Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad1|Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt, dette fordi enhver hendelse bør beskrives med mindre navnet er selvforklarende.
-|Merknad2|Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n, for å støtte flerspråklighet.
+|Merknad 1|Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt, dette fordi enhver hendelse bør beskrives med mindre navnet er selvforklarende.
+|Merknad 2|Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n, for å støtte flerspråklighet.
 |Eksempel|Elektronisk prosess for etablering og oppstart av en restaurant.
 |===
 
