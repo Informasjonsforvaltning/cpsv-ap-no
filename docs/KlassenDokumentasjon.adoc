@@ -124,16 +124,16 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: Denne er ikke eksplisitt med i CPSV-AP, men trengs for f.eks. å knytte et datasett (en eller annen «attest») til dokumentasjonen.
-|Eksempel|«Krav om vandel» kan bekreftes ved «Politiattest».
+|Eksempel|«Krav om vandel» kan bekreftes ved «Vandelsattest».
 |===
 
 Eksempel i RDF Turtle:
 -----
 <kravOmVandel> a cv:Evidence ;
    dct:title "Krav om vandel"@nb ;
-   cccev:isSupportedBy <politiattest> ; .
+   cccev:isSupportedBy <vandelsattest> ; .
 
-<politiattest> a cccev:DocumentReference ; .
+<vandelsattest> a cccev:DocumentReference ; .
 -----
 
 ==== Dokumentasjon – relatert informasjon (foaf:page) [[Dokumentasjon-relatertInformasjon]]

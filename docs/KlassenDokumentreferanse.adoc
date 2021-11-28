@@ -13,12 +13,12 @@ image::images/KlassenDokumentreferanse.png[]
 |URI|cccev:DocumentReference
 |Kravsnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men trengs for f.eks. å knytte et datasett (en «attest») som dokumentasjon.
-|Eksempel|«Politiattest», som bekreftelse på at «Krav om vandel» er oppfylt.
+|Eksempel|«Vandelsattest», som bekreftelse på at «Krav om vandel» er oppfylt.
 |===
 
 Eksempel i RDF Turtle:
 -----
-<politiattest> a cccev:DocumentReference ; .
+<vandelsattest> a cccev:DocumentReference ; .
 -----
 
 === Obligatoriske egenskaper for klassen _Dokumentreferanse_ [[Dokumentreferanse-obligatoriske-egenskaper]]
