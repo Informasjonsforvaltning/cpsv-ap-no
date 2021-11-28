@@ -8,8 +8,8 @@ image::images/KlassenRegel.png[]
 [cols="30s,70d"]
 |===
 |English name|Rule
-|Beskrivelse|Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en offentlig tjeneste.
-|Usage note|The Rule class represents a document that sets out the specific rules, guidelines or procedures that the Public Service follows. It includes the terms of service, licence, and authentication requirements of the Public Service.
+|Beskrivelse|Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en (offentlig) tjeneste.
+|Usage note|The Rule class represents a document that sets out the specific rules, guidelines or procedures that the Public Service follows. It includes the terms of service, licence, and authentication requirements of the (Public) Service.
 |URI|cpsv:Rule
 |Kravsnivå|Valgfri/Optional
 |Merknad|
@@ -29,7 +29,7 @@ image::images/KlassenRegel.png[]
 |Usage note|This property contains descriptive textual information about the Rule. This property should be repeated in case there are various versions of the text in different languages.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
-|Merknad|
+|Merknad| Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
 |Eksempel|
 |===
 
@@ -37,7 +37,7 @@ image::images/KlassenRegel.png[]
 
 [cols="30s,70d"]
 |===
-|English name|identifie
+|English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi identifikatoren til regelen.
@@ -61,7 +61,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Usage note|This property refers to the descriptive title or name of a Resource. This property should be repeated in case there are various versions of the text in different languages.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
-|Merknad|
+|Merknad| Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
 |Eksempel|
 |===
 
