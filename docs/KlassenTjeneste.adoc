@@ -35,7 +35,8 @@ image::images/KlassenTjeneste.png[]
 |Eksempel | 
 |===
 
-==== Tjeneste – eies av (cv:ownedBy) [[Tjeneste-eiesAv]]
+
+==== Tjeneste - eies av (cv:ownedBy) [[Tjeneste-eiesAv]]
 
 [cols="30s,70d"]
 |===

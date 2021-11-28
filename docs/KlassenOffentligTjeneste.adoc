@@ -47,7 +47,7 @@ Eksempel i RDF Turtle:
    dct:description "Søknad om skjenkebevilling for skjenking av alkoholholdig drikk, enten som alminnelig bevilling eller som bevilling for lukket selskap."@nb ; .
 -----
 
-==== Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority) [[OffentligTjeneste-harKompetentOrgan]]
+==== Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority) [[OffentligTjeneste-harKompetentOrgan]]
 
 [cols="30s,70d"]
 |===
