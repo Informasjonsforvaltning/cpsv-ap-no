@@ -1,6 +1,6 @@
 == Oversikt over klasser i spesifikasjonen [[OversiktOverKlassene]]
 
-Ved ev. avvik mellom oversikten her og klassebeskrivelsene som følger, gjelder kravsnivåene som er satt i klassebeskrivelsene.
+Før ev. uoverensstemmelse mellom oversikten her og klassebeskrivelsene som følger er rettet opp, gjelder kravsnivåene som er satt i klassebeskrivelsene.
 
 Følgende klasser er obligatoriske:
 
