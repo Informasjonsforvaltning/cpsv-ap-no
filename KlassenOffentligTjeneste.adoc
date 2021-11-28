@@ -243,7 +243,7 @@ Eksempel i RDF Turtle:
 |Usage note|Indicates whether a Public Service is active, inactive, under development etc. according to a controlled vocabulary.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Norsk utvidelse: Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (i RDF)] (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).
+|Merknad|Norsk utvidelse: Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (i RDF)] (#NB! Lenken virker ikke (per 2021-11-28)#) (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).
 |Eksempel|Ferdig utviklet
 |===
 
