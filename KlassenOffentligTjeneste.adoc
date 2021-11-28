@@ -14,7 +14,7 @@ image::images/KlassenOffentligTjeneste.png[]
 |Subklasse av / Subclass of|cpsvno:Service
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1|En offentlig tjeneste kan bestå av et obligatorisk eller skjønnsmessig sett av aktiviteter som utføres, eller som kan utføres, av eller på vegne av en offentlig organisasjon, er offentlig finansiert og som kommer fra offentlig politikk.
-|Merknad 2|Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, dette fordi spesifikasjonen skal kunne brukes til f.eks. å beskrive hendelser uten å måtte beskrive offentlig tjeneste samtidig.
+|Merknad 2|Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til f.eks. å beskrive tjenester levert av private aktører.
 |Remarks|A Public Service is a mandatory or discretionary set of activities performed, or able to be performed, by or on behalf of a public organisation, publicly funded and arise from public policy.
 |Eksempel|«Søknad om skjenkebevilling»
 |===
@@ -96,7 +96,11 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Usage note|To specify contact points for the service.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
-|Merknad|Norsk utvidelse:
+|Merknad a|Norsk utvidelse:
+
+* Kravsnivået endret fra valgfri til obligatorisk – enhver offentlig tjeneste skal ha minst ett kontaktpunkt oppgitt.
+* URI endret fra `cv:hasContactPoint` til `dcat:contactPoint`, dette for å samkjøre med bl.a. DCAT-AP-NO.
+*	Range endret fra `schema:ContactPoint` til `vcard:Kind`, dette for å samkjøre med bl.a. DCAT-AP-NO.
 |Eksempel|Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt for «Søknad om skjenkebevilling (i Brønnøy kommune)»
 |===
 
@@ -222,8 +226,8 @@ Eksempel i RDF Turtle:
 |Usage note|Links a Public Service to one or more instances of the Output class escribing the actual result of executing a given Public Service.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad1|Norsk utvidelse: kravsnivået endret fra valgfri til anbefalt, dette for å samkjøre med DCAT-AP-NO.
-|Merknad2|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (dcat:Dataset) er en subklasse av cv:Output. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.
+|Merknad 1|Norsk utvidelse: kravsnivået endret fra valgfri til anbefalt, dette for å samkjøre med DCAT-AP-NO.
+|Merknad 2|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output.` På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.
 |Eksempel|Selve «bevillingen» er et tjenesteresultat av tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.
 |===
 
@@ -339,7 +343,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|Bruk egenskapen <<OffentligTjeneste-dokumentasjonskrav>> for å kytte til datasett som tjenesten bruker, eller egenskapen <<OffentligTjeneste-produserer>> for datasett som tjenesten produserer.`
-|Merknad|Norsk utvidelse: endret range til `dcat:Dataset` fra `cv:PublicServiceDataset. EU kommer også til å endre dette i neste release av CPSV-AP, slik at dette etter hvert ikke vil være norsk utvidelse.
+|Merknad|Norsk utvidelse: Range endret fra `cv:PublicServiceDataset` til `dcat:Dataset`. EU kommer også til å endre dette i neste release av CPSV-AP, slik at dette etter hvert ikke vil være norsk utvidelse.
 |Eksempel|
 |===
 
@@ -367,7 +371,7 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerT
 |English name|has input
 |URI|cpsv:hasInput
 |Range|cv:Evidence
-|Beskrivelse|Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (cv:Evidence), som kreves av tjenesten.
+|Beskrivelse|Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.
 |Usage note|The Has Input property links a Public Service to one or more instances of the Evidence class.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -419,7 +423,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Remarks|It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation, type of audience …
+|Remarks|It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation, type of audience etc.
 |Eksempel|
 |===
 
@@ -470,7 +474,7 @@ Eksempel i RDF Turtle:
 |Usage note|The Has Cost property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Public Service for the citizen or business related to the execution of the particular Public Service.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|
+|Merknad|Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, skal egenskapen <<Gebyr-hvisTilbysGjennom>> brukes.
 |Remarks|Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship.
 |Eksempel|Ifm. «Søknad om skjenkebevilling (i Brønnøy kommune)» er gebyret «Pr. vareliter for alkoholdhold drikke i gruppe 1: 0.49 NOK».
 |===
@@ -541,10 +545,11 @@ Eksempel i RDF Turtle:
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi nøkkelord som beskriver den aktuelle offentlige tjenesten.
 |Usage note|This property represents a keyword, term or phrase to describe the Public Service.
+|Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Eksempel|Eksempler i forbindelse med tjenesten «Søknad om skjenkebevilling»:
-|Example|Examples in connection with the service «Application for a liquor license»:
+|Eksempel|Eksempler i forbindelse med tjenesten «Søknad om skjenkebevilling»: alkoholservering, skjenkebevilling, bar, nattklubb.
+|Example|Examples in connection with the service «Application for a liquor license»: Alcohol serving, Liquor license, Bar, Nightclub.
 |===
 
 Eksempel i RDF Turtle:
@@ -560,7 +565,7 @@ Eksempel i RDF Turtle:
 |English name|has legal resource
 |URI|cv:hasLegalResource
 |Range|eli:LegalResource
-|Beskrivelse|Brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har sin juridiske ramme, eller på andre måter er relatert til.
+|Beskrivelse|Brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til.
 |Usage note|The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -572,14 +577,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|related
+|English name|related service
 |URI|dct:relation
-|Range|cpsv:PublicService
+|Range|cpsvno:Service
 |Beskrivelse|Brukes til å referere til en eller flere andre relaterte tjenester.
 |Usage note|This property represents a Public Service related to the particular instance of the Public Service class.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|Vurder å bruke egenskapen <<OffentligTjeneste-krever>> der det er avhengighet mellom tjenestene.
+|Merknad 1| Vurder å bruke egenskapen <<OffentligTjeneste-krever>> der det er avhengighet mellom tjenestene.
+|Merknad 2| Norsk utvidelse: Range endret fra `cpsv:PublicService` til `cpsvno:Service`, som en følge av den norsk utvidelse av å tilføye <<Tjeneste>> som kan tilbys av en privat aktør.
 |Eksempel|
 |===
 
@@ -617,7 +623,6 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Remarks|The Criterion class is defined in the https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-criterion-and-core-evidence-vocabulary[Core Criterion and Core Evidence Vocabulary].
 |Eksempel|Et av vilkårene for å søke om skjenkevilling er at søkeren skal være over 20 år.
 |===
 

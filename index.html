@@ -5969,7 +5969,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, dette fordi spesifikasjonen skal kunne brukes til f.eks. å beskrive hendelser uten å måtte beskrive offentlig tjeneste samtidig.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til f.eks. å beskrive tjenester levert av private aktører.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
@@ -6189,7 +6189,22 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse:</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Norsk utvidelse:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kravsnivået endret fra valgfri til obligatorisk – enhver offentlig tjeneste skal ha minst ett kontaktpunkt oppgitt.</p>
+</li>
+<li>
+<p>URI endret fra <code>cv:hasContactPoint</code> til <code>dcat:contactPoint</code>, dette for å samkjøre med bl.a. DCAT-AP-NO.</p>
+</li>
+<li>
+<p>Range endret fra <code>schema:ContactPoint</code> til <code>vcard:Kind</code>, dette for å samkjøre med bl.a. DCAT-AP-NO.</p>
+</li>
+</ul>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -6533,12 +6548,12 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: kravsnivået endret fra valgfri til anbefalt, dette for å samkjøre med DCAT-AP-NO.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se tilsvarende <a href="https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer">beskrivelse i DCAT-AP-NO</a>, der bl.a. Datasett (dcat:Dataset) er en subklasse av cv:Output. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se tilsvarende <a href="https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer">beskrivelse i DCAT-AP-NO</a>, der bl.a. Datasett (<code>dcat:Dataset</code>) er en subklasse av <code>cv:Output.</code> På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -6868,7 +6883,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: endret range til <code>dcat:Dataset</code> fra `cv:PublicServiceDataset. EU kommer også til å endre dette i neste release av CPSV-AP, slik at dette etter hvert ikke vil være norsk utvidelse.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range endret fra <code>cv:PublicServiceDataset</code> til <code>dcat:Dataset</code>. EU kommer også til å endre dette i neste release av CPSV-AP, slik at dette etter hvert ikke vil være norsk utvidelse.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -6949,7 +6964,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (cv:Evidence), som kreves av tjenesten.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (<code>cv:Evidence</code>), som kreves av tjenesten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -7092,7 +7107,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation, type of audience …</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation, type of audience etc.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -7242,7 +7257,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, skal egenskapen <a href="#Gebyr-hvisTilbysGjennom">Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)</a> brukes.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
@@ -7420,6 +7435,10 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a keyword, term or phrase to describe the Public Service.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
@@ -7429,11 +7448,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Eksempler i forbindelse med tjenesten «Søknad om skjenkebevilling»:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eksempler i forbindelse med tjenesten «Søknad om skjenkebevilling»: alkoholservering, skjenkebevilling, bar, nattklubb.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Example</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Examples in connection with the service «Application for a liquor license»:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples in connection with the service «Application for a liquor license»: Alcohol serving, Liquor license, Bar, Nightclub.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7469,7 +7488,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har sin juridiske ramme, eller på andre måter er relatert til.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -7504,7 +7523,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">related</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">related service</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -7512,7 +7531,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
@@ -7531,8 +7550,12 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Vurder å bruke egenskapen <a href="#OffentligTjeneste-krever">Offentlig tjeneste – krever (dct:requires)</a> der det er avhengighet mellom tjenestene.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range endret fra <code>cpsv:PublicService</code> til <code>cpsvno:Service</code>, som en følge av den norsk utvidelse av å tilføye <a href="#Tjeneste">Klassen Tjeneste (cpsvno:Service)</a> som kan tilbys av en privat aktør.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -7640,10 +7663,6 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
 <td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The Criterion class is defined in the <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-criterion-and-core-evidence-vocabulary">Core Criterion and Core Evidence Vocabulary</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -12560,7 +12579,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-28 17:07:55 UTC
+Sist oppdatert 2021-11-28 17:33:18 UTC
 </div>
 </div>
 </body>
