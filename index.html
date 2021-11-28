@@ -5427,7 +5427,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravsnivå er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til beskrivelse av hendelser som ennå er knyttet til noen tjenester levert av offentlig organisasjon.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravsnivå er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til beskrivelse av f.eks. tjenester levert av private aktører.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -5684,8 +5684,8 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="listingblock">
 <div class="content">
 <pre>&lt;BrønnøyKommune&gt; a cv:PublicOrganisation ;
-   skos:prefLabel "Brønnøy kommune"@nb ;
-   dct:title "Brønnøy kommune"@nb .</pre>
+   skos:prefLabel "Brønnøy kommune"@nb ; # foretrukket navn
+   dct:title "Brønnøy kommune"@nb . # navn</pre>
 </div>
 </div>
 </div>
@@ -5730,7 +5730,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen cv:hasAddress og range locn:Address. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI locn:address med range locn:Address. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen locn:address.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen <code>cv:hasAddress</code> og range <code>locn:Address</code>. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI <code>locn:address</code> med range <code>locn:Address</code>. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen <code>locn:address</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -5746,7 +5746,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <pre>&lt;BrønnøyKommune&gt; a cv:PublicOrganisation ;
    skos:prefLabel "Brønnøy kommune"@nb ;
    locn:address [ a locn:Address ;
-       locn:fullAddress " Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ] ; .</pre>
+       locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ] ; .</pre>
 </div>
 </div>
 </div>
@@ -5845,7 +5845,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra <a href="http://purl.org/adms/publishertype/">ADMS Publisher Type Vocabulary (i RDF)</a> (<mark>NB! Lenken virker ikke (per 2021-11-28)</mark>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -5860,7 +5860,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <pre>&lt;BrønnøyKommune&gt; a cv:PublicOrganisation ;
    skos:prefLabel "Brønnøy kommune"@nb ;
-   foaf:homepage adms:LocalAuthority ;  .</pre>
+   org:classification adms:LocalAuthority ;  .</pre>
 </div>
 </div>
 </div>
@@ -12560,7 +12560,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-28 16:52:31 UTC
+Sist oppdatert 2021-11-28 17:07:55 UTC
 </div>
 </div>
 </body>
