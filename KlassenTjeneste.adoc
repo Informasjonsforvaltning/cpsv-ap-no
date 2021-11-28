@@ -405,24 +405,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-
-==== Tjeneste – har regulativ ressurs (cv:hasLegalResource) [[Tjeneste-harRegulativRessurs]]
-
-[cols="30s,70d"]
-|===
-|English name |has legal resource 
-|URI |cv:hasLegalResource 
-|Range |eli:LegalResource 
-|Beskrivelse |Brukes til å referere til en regulativ ressurs som tjenesten er relatert til eller har som sin juridiske ramme. 
-|Usage note |The Has Legal Resource property links a Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Service relates, operates or has its legal basis. 
-|Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
-|Merknad | 
-|Eksempel | 
-|===
-
-
-
 ==== Tjeneste - krever (dct:requires) [[Tjeneste-krever]]
 
 [cols="30s,70d"]
@@ -437,9 +419,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad | 
 |Eksempel | 
 |===
-
-
-
 
 ==== Tjeneste - næringsgruppering (cv:sector) [[Tjeneste-næringsgruppering]]
 
@@ -458,7 +437,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Example |
 |===
 
-
 ==== Tjeneste – nøkkelord (dcat:keyword) [[Tjeneste-nøkkelord]]
 
 [cols="30s,70d"]
@@ -471,6 +449,21 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Kravsnivå |Valgfri/Optional 
 |Merknad | 
 |Eksempel |
+|===
+
+==== Tjeneste – relatert regelverk (cv:hasLegalResource) [[Tjeneste-harRegulativRessurs]]
+
+[cols="30s,70d"]
+|===
+|English name |has legal resource 
+|URI |cv:hasLegalResource 
+|Range |eli:LegalResource 
+|Beskrivelse |Brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har sin juridiske ramme, eller på andre måter er relatert til. 
+|Usage note |The Has Legal Resource property links a Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Service relates, operates or has its legal basis. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | 
+|Eksempel | 
 |===
 
 ==== Tjeneste – relatert tjeneste (dct:relation) [[Tjeneste-relatertTjeneste]]
