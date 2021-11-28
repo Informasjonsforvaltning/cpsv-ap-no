@@ -402,7 +402,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Usage note |The Has Cost property links a Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Service for the citizen or business related to the execution of the particular Service. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
-|Merknad | 
+|Merknad | Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, skal egenskapen <<Gebyr-hvisTilbysGjennom>> brukes.
 |Remarks |Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship. 
 |Eksempel |
 |===
@@ -473,7 +473,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 
 [cols="30s,70d"]
 |===
-|English name |related 
+|English name |related service
 |URI |dct:relation 
 |Range |cpsvno:Service 
 |Beskrivelse |Brukes til å referere til en eller flere andre relaterte tjenester.  
