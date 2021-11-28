@@ -451,7 +451,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-==== Tjeneste – relatert regelverk (cv:hasLegalResource) [[Tjeneste-harRegulativRessurs]]
+==== Tjeneste – relatert regelverk (cv:hasLegalResource) [[Tjeneste-relatertRegelverk]]
 
 [cols="30s,70d"]
 |===
