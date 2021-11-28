@@ -51,8 +51,8 @@ Navnerom for dette vokabularet er: `\https://data.norge.no/vocabulary/cpsvno#`
 |cpsvno|https://data.norge.no/vocabulary/cpsvno[https://data.norge.no/vocabulary/cpsvno#]|Norsk applikasjonsprofil av CPSV-AP, denne spesifikasjonen
 |dcatno| \https://data.norge.no/vacabulary/dcatno#|https://data.norge.no/specification/dcat-ap-no/[Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)]
 |dct|http://purl.org/dc/terms/[http://purl.org/dc/terms/] |https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
-|dqv|https://www.w3.org/TR/vocab-dqv/#dqv[https://www.w3.org/TR/vocab-dqv/#dqv]|https://www.w3.org/TR/vocab-dqv/#dqv[Data on the Web Best Practices: Data Quality Vocabulary]
-|eli|http://data.europa.eu/eli/ontology#|https://eur-lex.europa.eu/eli-register/about.html[European Legislation Identifier]
+|dqv|http://www.w3.org/ns/dqv# | https://www.w3.org/TR/vocab-dqv/#dqv[Data on the Web Best Practices: Data Quality Vocabulary]
+|eli | \http://data.europa.eu/eli/ontology#|https://eur-lex.europa.eu/eli-register/about.html[European Legislation Identifier]
 |org|http://www.w3.org/ns/org#|https://www.w3.org/TR/vocab-org/[The Organization Ontology]
 |rdf|http://www.w3.org/1999/02/22-rdf-syntax-ns[http://www.w3.org/1999/02/22-rdf-syntax-ns#] |https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
 |rdfs|http://www.w3.org/2000/01/rdf-schema[http://www.w3.org/2000/01/rdf-schema#]|https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
