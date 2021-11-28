@@ -6,7 +6,7 @@ Kjernegruppen som har utarbeidet dette utkastet har bestått av ressurspersoner 
 
 . Innledende kapitler <<OmSpesifikasjonen>> og <<Innledning>>:
 .. Generelt, gi oss tilbakemelding på om vi treffer de aktuelle målgruppene med disse innledende kapitlene, med konkrete forbedringsforslag hvis ikke.
-.. Spesielt om «Målgrupper»: Savner du flere/andre målgrupper som spesifikasjonen også kan være nyttig for, i så fall hvem, hvorfor og hvordan?
+.. Spesielt om <<Målgrupper>>: Savner du flere/andre målgrupper som spesifikasjonen også kan være nyttig for, i så fall hvem, hvorfor og hvordan?
 . Omfang:
 .. Er det noen behov som ikke er dekket av spesifikasjonen?
 ... Generelt, gi oss tilbakemelding på hva du mener mangler, med konkrete eksempler på behov, samt forslag til kravsnivå (obligatorisk/anbefalt/valgfri) og norske navn og beskrivelser.
