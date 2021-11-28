@@ -373,7 +373,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-==== Tjeneste – følger regel (cpsv:follows) [[Tjeneste-følgerRegel]]
+
+==== Tjeneste - følger regel (cpsv:follows) [[Tjeneste-følgerRegel]]
 
 [cols="30s,70d"]
 |===
@@ -451,7 +452,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-==== Tjeneste – relatert regelverk (cv:hasLegalResource) [[Tjeneste-relatertRegelverk]]
+
+==== Tjeneste - relatert regelverk (cv:hasLegalResource) [[Tjeneste-relatertRegelverk]]
 
 [cols="30s,70d"]
 |===
