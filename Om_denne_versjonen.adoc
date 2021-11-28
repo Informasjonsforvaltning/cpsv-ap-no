@@ -2,7 +2,7 @@
 
 Denne versjonen (v.0.8) er til bred og uformell kommentering, med *kommenteringsfrist 15. januar 2022*. Hvem som helst kan kommentere og du trenger ikke å få dine innspill forankret i din organisasjon.
 
-Kjernegruppen som har utarbeidet dette utkastet ønsker innspill på følgende:
+Kjernegruppen som har utarbeidet dette utkastet har bestått av ressurspersoner fra Digitaliseringsdirektoratet (Digdir). Kjernegruppen ønsker innspill på bl.a. følgende:
 
 . Innledende kapitler <<OmSpesifikasjonen>> og <<Innledning>>:
 .. Generelt, gi oss tilbakemelding på om vi treffer de aktuelle målgruppene med disse innledende kapitlene, med konkrete forbedringsforslag hvis ikke.
