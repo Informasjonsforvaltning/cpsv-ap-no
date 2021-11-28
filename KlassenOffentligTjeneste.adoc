@@ -553,7 +553,7 @@ Eksempel i RDF Turtle:
    dcat:keyword "alkoholservering"@nb , "skjenkebevilling"@nb , "bar"@nb , "nattklubb"@nb ; .
 -----
 
-==== Offentlig tjeneste – relatert regelverk (cv:hasLegalResource) [[OffentligTjeneste-harRegulativRessurs]]
+==== Offentlig tjeneste – relatert regelverk (cv:hasLegalResource) [[OffentligTjeneste-relatertRegelverk]]
 
 [cols="30s,70d"]
 |===
