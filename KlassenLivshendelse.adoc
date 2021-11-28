@@ -8,13 +8,13 @@ image::images/KlassenLivshendelse.png[]
 [cols="30s,70d"]
 |===
 |English name|Life Event
-|Beskrivelse|Brukes til å representere en viktig https://data.norge.no/concepts/9b19d5ce-87b3-4584-a875-e7cff3ad6740[livshendelse] hos en innbygger som kan utløse behov for offentlig tjeneste.
-|Usage note|The Life Event class represents an important event or situations in a citizen's life where public services may be required.
+|Beskrivelse|Brukes til å representere en viktig https://data.norge.no/concepts/9b19d5ce-87b3-4584-a875-e7cff3ad6740[livshendelse] hos en innbygger som kan utløse behov for (offentlig) tjeneste.
+|Usage note|The Life Event class represents an important event or situations in a citizen's life where (public) services may be required.
 |URI|cv:LifeEvent
 |Subklasse av / Subclass of|cv:Event
 |Kravsnivå|Valgfri/Optional
-|Merknad|For hendelser i en virksomhet skal Klassen Virksomhetshendelse (cv:BusinessEvent) brukes.
-|Remarks|An individual will encounter any number of 'events' in the general sense of the word. In the context of the CPSV-AP, the Life Event class only represents an event for which a Public Service is related. For example, a couple becoming engaged is not a CPSV-AP Life Event, getting married is, since only the latter has any relevance to public services.
+|Merknad|For hendelser i en virksomhet skal <<Virksomhetshendelse>> brukes.
+|Remarks|An individual will encounter any number of 'events' in the general sense of the word. In the context of the CPSV-AP, the Life Event class only represents an event for which a (Public) Service is related. For example, a couple becoming engaged is not a CPSV-AP Life Event, getting married is, since only the latter has any relevance to public services.
 |Eksempel|«Å få barn» er en livshendelse hos en innbygger.
 |===
 
@@ -99,7 +99,7 @@ Eksempel i RDF Turtle:
 |Usage note|This property links an event directly to a service that is related to it.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn dct:relation som er i CPSV-AP. Inntil vi finner en passende URI i eksisterende vokabularer, bruker vi denne egendefinerte URI.
+|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn `dct:relation` som er i CPSV-AP. Inntil vi finner en passende URI i eksisterende vokabularer, bruker vi denne egendefinerte URI.
 |Eksempel|«Familieytelser» (NAV), «Hjelpemidler for barn og familier» (NAV), «Bekymringsmelding» (Barnevern)
 |===
 
