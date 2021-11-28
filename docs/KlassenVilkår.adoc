@@ -158,7 +158,7 @@ Eksempel i RDF Turtle:
 Forslag til et kontrollert vokabular for sertifiseringsnivåer:
 
 * Lovregulert (legeislation)
-* [#<kom med innspill>#
+* #<kom med innspill>#
 
 ==== Vilkår – type (dct:type) [[Vilkår-type]]
 
