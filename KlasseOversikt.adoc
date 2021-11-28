@@ -1,6 +1,6 @@
 == Oversikt over klasser i spesifikasjonen [[OversiktOverKlassene]]
 
-Ved ev. avvik mellom oversikten her og klassebeskrivelsene som følger, gjelder kravsnivåene som er satt i klassebeskrivelsene.
+Før ev. uoverensstemmelse mellom oversikten her og klassebeskrivelsene som følger er rettet opp, gjelder kravsnivåene som er satt i klassebeskrivelsene.
 
 Følgende klasser er obligatoriske:
 
@@ -33,8 +33,10 @@ Følgende klasser er valgfrie:
 * <<Virksomhetshendelse>>
 * <<Åpningstid>>
 
-Følgende klasser som også er vist i den forenklede modellen, er ikke spesifisert i spesifikasjonen:
+Følgende klasser som også er vist i den forenklede modellen ovenfor eller i diagrammene som følger, er ikke spesifisert i spesifikasjonen:
 
 * Datasett (`dcat:Dataset`), Datatjeneste (`dcat:DataService`) og Distribusjon (`dcat:Distribution`): se https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO].
+* Begrep (`skos:Concept`): Se https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_] for krav til begrepsbeskrivelser, og https://data.norge.no/specification/skos-ap-no-begrep/[SKOS-AP-NO-begrep] for hvordan begrepsbeskrivelser utformet i henhold til _Forvaltningsstandard for begrepsbeskrivelser_ tilgjengeliggjøres i RDF.
+
 
 I resten av spesifikasjonen er klassene sortert alfabetisk etter norske navn, med beskrivelse av klassen og deretter egenskapene som skal/bør/kan brukes. Egenskapene er gruppert inn i obligatoriske (skal), anbefalte (bør) og valgfrie (kan) egenskaper og der etter sortert alfabetisk etter norske navn.

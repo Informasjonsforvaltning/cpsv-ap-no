@@ -459,11 +459,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Forenklet_modell">Forenklet modell for CPSV-AP-NO</a>
 <ul class="sectlevel2">
 <li><a href="#BeskriveEnKatalog">Å beskrive en tjeneste-/hendelseskatalog</a></li>
-<li><a href="#KnytteTilDatasett">Å knytte til et datasett og derfra til API, begrep eller informasjonsmodell</a></li>
-<li><a href="#KnytteTilBegrep">Å knytte begrep til en tjeneste eller en hendelse</a></li>
-<li><a href="#KnytteTilDatatjeneste">Å knytte en datatjeneste (også kalt API) til en tjenestekanal</a></li>
+<li><a href="#KnytteTilDatasett">Å knytte en (offentlig) tjeneste til et datasett og derfra til API, begrep og informasjonsmodell</a></li>
+<li><a href="#KnytteTilBegrep">Å knytte en tjeneste eller hendelse til begrep</a></li>
+<li><a href="#KnytteTilDatatjeneste">Å knytte en tjenestekanal til en datatjeneste (også kalt API)</a></li>
 <li><a href="#Hendelsesstrøm">Å publisere hendelsesstrøm</a></li>
-<li><a href="#KnytteTilRegelverk">Å knytte til regelverk</a></li>
+<li><a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a></li>
 <li><a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a></li>
 </ul>
 </li>
@@ -477,7 +477,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Aktør-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Aktør</em></a>
 <ul class="sectlevel3">
-<li><a href="#Aktør-organisasjonsidentifikator">Aktør – organisasjonsidentifikator (dct:identifier)</a></li>
+<li><a href="#Aktør-identifikator">Aktør – identifikator (dct:identifier)</a></li>
 <li><a href="#Aktør-type">Aktør – type (dct:type)</a></li>
 </ul>
 </li>
@@ -685,7 +685,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#OffentligTjeneste-onligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Offentlig tjeneste</em></a>
 <ul class="sectlevel3">
 <li><a href="#OffentligTjenest-beskrivelse">Offentlig tjeneste – beskrivelse (dct:description)</a></li>
-<li><a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a></li>
+<li><a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority)</a></li>
 <li><a href="#OffentligTjeneste-identifikator">Offentlig tjeneste – identifikator (dct:identifier)</a></li>
 <li><a href="#OffentligTjeneste-kontaktpunkt">Offentlig tjeneste – kontaktpunkt (dcat:contactPoint)</a></li>
 <li><a href="#OffentligTjeneste-navn">Offentlig tjeneste – navn (dct:title)</a></li>
@@ -784,7 +784,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_obligatoriske_egenskaper_for_klassentjeneste">Obligatoriske egenskaper for klassen <em>Tjeneste</em>  </a>
 <ul class="sectlevel3">
 <li><a href="#_tjenestebeskrivelse_dctdescription">Tjeneste – beskrivelse (dct:description) </a></li>
-<li><a href="#Tjeneste-eiesAv">Tjeneste – eies av (cv:ownedBy)</a></li>
+<li><a href="#Tjeneste-eiesAv">Tjeneste - eies av (cv:ownedBy)</a></li>
 <li><a href="#_tjeneste_identifikator_dctidentifier">Tjeneste – identifikator (dct:identifier) </a></li>
 <li><a href="#_tjeneste_kontaktpunkt_dcatcontactpoint">Tjeneste – kontaktpunkt (dcat:contactPoint) </a></li>
 <li><a href="#_tjeneste_navn_dcttitle">Tjeneste – navn (dct:title) </a></li>
@@ -812,12 +812,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tjeneste-dokumentasjonskrav">Tjeneste - dokumentasjonskrav (cv:hasInput)</a></li>
 <li><a href="#_tjeneste_er_klassifisert_undercvisclassifiedby">Tjeneste – er klassifisert under (cv:isClassifiedBy) </a></li>
 <li><a href="#_tjeneste_er_tilgjengelig_via_cvhaschannel">Tjeneste – er tilgjengelig via (cv:hasChannel) </a></li>
-<li><a href="#_tjenestefølgerregelcpsvfollows">Tjeneste – følger regel (cpsv:follows) </a></li>
+<li><a href="#Tjeneste-følgerRegel">Tjeneste - følger regel (cpsv:follows)</a></li>
 <li><a href="#_tjeneste_gebyr_cvhascost">Tjeneste – gebyr (cv:hasCost) </a></li>
 <li><a href="#Tjeneste-krever">Tjeneste - krever (dct:requires)</a></li>
 <li><a href="#Tjeneste-næringsgruppering">Tjeneste - næringsgruppering (cv:sector)</a></li>
 <li><a href="#_tjeneste_nøkkelord_dcatkeyword">Tjeneste – nøkkelord (dcat:keyword) </a></li>
-<li><a href="#_tjenesterelatert_regelverk_cvhaslegalresource">Tjeneste – relatert regelverk (cv:hasLegalResource) </a></li>
+<li><a href="#Tjeneste-relatertRegelverk">Tjeneste - relatert regelverk (cv:hasLegalResource)</a></li>
 <li><a href="#_tjeneste_relaterttjenestedctrelation">Tjeneste – relatert tjeneste (dct:relation) </a></li>
 <li><a href="#_tjeneste_språk_dctlanguage">Tjeneste – språk (dct:language) </a></li>
 <li><a href="#_tjeneste_vilkår_cvhascriterion">Tjeneste – vilkår (cv:hasCriterion) </a></li>
@@ -997,7 +997,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Generelt, gi oss tilbakemelding på om vi treffer de aktuelle målgruppene med disse innledende kapitlene, med konkrete forbedringsforslag hvis ikke.</p>
 </li>
 <li>
-<p>Spesielt om «Målgrupper»: Savner du flere/andre målgrupper som spesifikasjonen også kan være nyttig for, i så fall hvem, hvorfor og hvordan?</p>
+<p>Spesielt om <a href="#Målgrupper">Målgrupper</a>: Savner du flere/andre målgrupper som spesifikasjonen også kan være nyttig for, i så fall hvem, hvorfor og hvordan?</p>
 </li>
 </ol>
 </div>
@@ -1037,7 +1037,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </li>
 <li>
-<p>Spesielt om kontrollerte vokabularer: Det er i spesifikasjonen stilt krav til bruk av kontrollerte vokabularer for egenskaper som skal ha «kodede verdier», f.eks. «type» (<code>dct:type</code>). Flere av kontrollerte vokabularer er ikke endelig fastsatt og gjort tilgjengelig av EUs Publications Office ennå og det er uvisst når dette blir gjort fra EU. Vi har derfor i denne versjonen av spesifikasjonen startet med forslag til kontrollerte vokabularer som mangler. Forslagene er tatt med rett under beskrivelsen av de aktuelle egenskapene.</p>
+<p>Spesielt om kontrollerte vokabularer: Det er i spesifikasjonen stilt krav til bruk av kontrollerte vokabularer for egenskaper som skal ha «kodede verdier», f.eks. «type» (<code>dct:type</code>). Flere av kontrollerte vokabularer er ennå ikke endelig fastsatt og tilgjengeliggjort av EUs Publications Office og det er uvisst når dette blir gjort fra EU. Vi har derfor i denne versjonen av spesifikasjonen startet med forslag til kontrollerte vokabularer som mangler. Forslagene er tatt med rett under beskrivelsen av de aktuelle egenskapene.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
@@ -1054,15 +1054,15 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Norske navn klasse- og egenskapsnavn. Selv om i utvekslingen/tilgjengeliggjøringen er det URIene (f.eks. <code>cv:BusinessEvent</code>) som skal tas med og ikke de norske klasse- og egenskapsnavnene, er det viktig at norske navn (f.eks. «Virksomhetshendelse» for <code>cv:BusinessEvent</code>) er forståelige og meningsfulle for målgruppene av spesifikasjonen.</p>
+<p>Norske klasse- og egenskapsnavn. Selv om i utvekslingen/tilgjengeliggjøringen er det URIene (f.eks. <code>cv:BusinessEvent</code>) som skal tas med og ikke de norske klasse- og egenskapsnavnene, er det viktig at norske navn (f.eks. «Virksomhetshendelse» for <code>cv:BusinessEvent</code>) er forståelige og meningsfulle for målgruppene av spesifikasjonen.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
 <p>Generelt, gi oss tilbakemelding på hva du mener kan forbedres, med konkrete forbedringsforslag samt kort begrunnelse.</p>
 </li>
 <li>
-<p>Spesielt, om det norske navnet «Livshendelse» for Klassen Livshendelse (<code>cv:LifeEvent</code>).
-Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «Innbyggerhendelse», som semantisk gjenspeiler direkte intensjonen med denne klassen (dvs. hendelse hos en innbygger), og som dessuten er et direkte «motsvar» til navnet for Klassen Virksomhetshendelse (<code>cv:BusinessEvent</code>) (hendelse hos en virksomhet). Dessuten, i EU sin forklaring på Virksomhetshendelse (<code>cv:BusinessEvent</code>) står det også at “a Business Event is a specific situation or event <mark>in the lifecycle</mark> of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time” (vår egen utheving), dvs. en Virksomhetshendelse er egentlig en også livshendelse men hos en virksomhet. Digdir sin side om <a href="https://www.digdir.no/sammenhengende-tjenester/arbeidet-med-de-sju-livshendelsene/1170">Arbeidet med de sju livshendelsene</a>, tar også med seg virksomhetshendelsene «Starte og drive en bedrift» (nr. 5 på listen) og «Starte og drive en frivillig organisasjon» (nr. 7 på listen) under samlebetegnelsen «livshendelse». <br></p>
+<p>Spesielt, om det norske navnet «Livshendelse» for <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a>.
+Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «Innbyggerhendelse», som semantisk gjenspeiler direkte intensjonen med denne klassen (dvs. å beskrive hendelse hos en innbygger), og som dessuten er et direkte «motsvar» til navnet for <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a> (å beskrive hendelse hos en virksomhet). Dessuten, i EU sin forklaring for <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a> står det også at “a Business Event is a specific situation or event <mark>in the lifecycle</mark> of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time” (vår egen utheving), dvs. en Virksomhetshendelse er egentlig en også livshendelse men hos en virksomhet. Digdir sin side om <a href="https://www.digdir.no/sammenhengende-tjenester/arbeidet-med-de-sju-livshendelsene/1170">Arbeidet med de sju livshendelsene</a>, tar også med seg virksomhetshendelsene «Starte og drive en bedrift» (nr. 5 på listen) og «Starte og drive en frivillig organisasjon» (nr. 7 på listen) under samlebetegnelsen «livshendelse». <br></p>
 <div class="paragraph">
 <p>Pga. at «livshendelse» er et ord som er politisk forankret både i Norge og EU (life event), har kjernegruppen i denne versjonen valgt å bruke «Livshendelse» som klassenavn for hendelse hos innbygger. <br></p>
 </div>
@@ -1118,14 +1118,14 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Under utarbeidelse av denne versjonen av spesifikasjonen, ble det identifisert behov som ikke er dekket av CPSV-AP. Vi har derfor utvidet CPSV-AP med å tilføye klasser og egenskaper, enten ved å gjenbruke klasser og egenskaper fra eksisterende RDF-vokabularer eller å bruke våre egendefinerte klasser og egenskaper (med navnerom cpsvno) der vi ikke fant egnede tilsvar i eksisterende RDF-vokabularer.</p>
+<p>Under utarbeidelse av denne versjonen av spesifikasjonen, ble det identifisert behov som ikke er dekket av CPSV-AP. Vi har derfor utvidet CPSV-AP med å tilføye klasser og egenskaper, enten ved å gjenbruke klasser og egenskaper fra eksisterende RDF-vokabularer eller å bruke våre egendefinerte klasser og egenskaper (med navnerom <code>cpsvno</code>) der vi ikke fant egnede tilsvar i eksisterende RDF-vokabularer.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
 <p>Generelt: Si fra hvis vi har valgt feil klasser/egenskaper fra eksisterende RDF-vokabularer, med forslag til hva vi burde ha valgt.</p>
 </li>
 <li>
-<p>Spesielt: Til våre egendefinerte klasser/egenskaper (med navnerom cpsvno), si fra hvis du vet om noen eksisterende klasser/egenskaper som dekker de samme behovene.</p>
+<p>Spesielt: Til våre egendefinerte klasser/egenskaper (med navnerom <code>cpsvno</code>), si fra hvis du vet om noen eksisterende klasser/egenskaper som dekker de samme behovene og som vi burde brukt istedenfor å lage våre egendefinerte klasser/egenskaper.</p>
 </li>
 </ol>
 </div>
@@ -1166,7 +1166,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="sect2">
 <h3 id="Omfang-og-avgrensing"><a class="link" href="#Omfang-og-avgrensing">Omfang og avgrensing</a></h3>
 <div class="paragraph">
-<p>Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere offentlige tjenester, dvs. ikke en hvilken som helst hendelse. Spesifikasjonen dekker også behovet for å beskrive private tjenester som f.eks. er involvert i sammenhengende tjenester fra det offentlige.</p>
+<p>Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser samt å utveksle/tilgjengeliggjøre beskrivelsene. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere offentlige tjenester, dvs. ikke en hvilken som helst hendelse. Spesifikasjonen dekker også behovet for å beskrive private tjenester som f.eks. er involvert i sammenhengende tjenester fra det offentlige.</p>
 </div>
 <div class="paragraph">
 <p>Spesifikasjonen er basert EUs <a href="https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en">CPSV-AP</a> (<em>Core Public Service Vocabulary Application Profile</em>).</p>
@@ -1175,7 +1175,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <p>Spesifikasjonen inneholder også engelske navn (English name) og beskrivelser (Usage note). Det gjøres oppmerksom på at engelske navn eller beskrivelser ikke alle er ordrett sitat fra EUs originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).</p>
 </div>
 <div class="paragraph">
-<p>Ettersom spesifikasjonen er basert på <a href="https://www.w3.org/RDF/">RDF</a> (se «Introduksjon til RDF» som er <mark>under utarbeidelse</mark>), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinlesbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.</p>
+<p>Ettersom spesifikasjonen er basert på <a href="https://www.w3.org/RDF/">RDF</a> (se «Introduksjon til RDF» som er <mark>under utarbeidelse</mark>), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1216,7 +1216,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="sect2">
 <h3 id="Forvaltningsregime"><a class="link" href="#Forvaltningsregime">Forvaltningsregime</a></h3>
 <div class="paragraph">
-<p>Spesifikasjonen forvaltes av Digitaliseringsdirektoratet (Digdir).</p>
+<p>Spesifikasjonen forvaltes av <a href="https://digdir.no">Digitaliseringsdirektoratet (Digdir)</a>.</p>
 </div>
 <div class="paragraph">
 <p>Utarbeidelse av nye versjoner av spesifikasjonen initieres av Digdir. Mindre endringer håndteres av Digdir med ev. konsultasjon med enkelte ressurspersoner utenfor Digdir. Ved behov for større endringer vil Digdir vurdere å sette sammen arbeidsgruppe med representanter fra relevante virksomheter, for utarbeidelse av forslag til den reviderte versjonen som ev. sendes ut til bred kommentering før fastsetting.</p>
@@ -1341,14 +1341,14 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <p>Hendelse: Å starte og drive en restaurant</p>
 </li>
 <li>
-<p>Tjeneste: Søknad om skjenkebevilling (i den aktuelle kommunen)</p>
+<p>Tjeneste: bl.a. Søknad om skjenkebevilling (i den aktuelle kommunen)</p>
 </li>
 <li>
 <p>Data</p>
 <div class="ulist">
 <ul>
 <li>
-<p>som tjenesten bruker (dokumentasjonskrav): bl.a. Politiattest fra Politidirektoratet,</p>
+<p>som tjenesten bruker (dokumentasjonskrav): bl.a. Vandelsattest fra Politidirektoratet,</p>
 </li>
 <li>
 <p>som tjenesten produserer (tjenesteresultat): skjenkebevillingen (eller avslag på søknaden).</p>
@@ -1363,14 +1363,14 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="sect1">
 <h2 id="Forenklet_modell"><a class="link" href="#Forenklet_modell">Forenklet modell for CPSV-AP-NO</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Figur <a href="#img-ForenkletModell">Forenklet modell for tjeneste- og hendelsesbeskrivelser</a> viser en forenklet modell av tjeneste- og hendelsesbeskrivelser. Forenklet fordi den ikke viser alle klasser, heller ikke alle relasjoner og egenskaper. Modellen er ikke ment som en formell representasjon av spesifikasjonen, men kun for å gi en visuell oversikt over klasser og relasjoner mellom dem. Før eventuell uoverensstemmelse mellom figuren og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen forrang. Samme forrang gjelder også når det gjelder eventuelle overensstemmelser mellom tekstlige beskrivelser og diagrammer i resten av spesifikasjonen.</p>
+</div>
 <div id="img-ForenkletModell" class="imageblock">
 <div class="content">
 <a class="image" href="images/ForenkletModell-CPSV-AP-NO.png"><img src="images/ForenkletModell-CPSV-AP-NO.png" alt="ForenkletModell CPSV AP NO"></a>
 </div>
 <div class="title">Figur 2. Forenklet modell for tjeneste- og hendelsesbeskrivelser</div>
-</div>
-<div class="paragraph">
-<p>Figur <a href="#img-ForenkletModell">Forenklet modell for tjeneste- og hendelsesbeskrivelser</a> viser en forenklet modell av tjeneste- og hendelsesbeskrivelser. Forenklet fordi den ikke viser alle klasser, heller ikke alle relasjoner og egenskaper. Modellen er ikke ment som en formell representasjon av spesifikasjonen, men kun for å gi en visuell oversikt over klasser og relasjoner mellom dem. Før eventuell uoverensstemmelse mellom figuren og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen forrang. Samme forrang gjelder også når det gjelder eventuelle overensstemmelser mellom tekstlige beskrivelser og diagrammer i resten av spesifikasjonen.</p>
 </div>
 <div class="sect2">
 <h3 id="BeskriveEnKatalog"><a class="link" href="#BeskriveEnKatalog">Å beskrive en tjeneste-/hendelseskatalog</a></h3>
@@ -1385,7 +1385,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 </div>
 <div class="sect2">
-<h3 id="KnytteTilDatasett"><a class="link" href="#KnytteTilDatasett">Å knytte til et datasett og derfra til API, begrep eller informasjonsmodell</a></h3>
+<h3 id="KnytteTilDatasett"><a class="link" href="#KnytteTilDatasett">Å knytte en (offentlig) tjeneste til et datasett og derfra til API, begrep og informasjonsmodell</a></h3>
 <div id="img-TjenesteOgData" class="imageblock">
 <div class="content">
 <a class="image" href="images/FigurTjenesteMedDataInnOgUt.png"><img src="images/FigurTjenesteMedDataInnOgUt.png" alt="FigurTjenesteMedDataInnOgUt"></a>
@@ -1393,25 +1393,25 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="title">Figur 4. Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i figur <a href="#img-TjenesteOgData">Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</a>, kan et Tjenesteresultat (<code>cv:Output</code>) produsert av en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cv:PublicService</code>)) være et Datasett (<code>dcat:Dataset</code>), f.eks.  «Skjenkebevillingen» som et resultat fra tjenesten «Søknad om skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (<code>cv:Evidence</code>) kan også bekreftes ved en dokumentreferanse (<code>cccev:DocumentReference</code>) som kan være et datasett (<code>dcat:Dataset</code>), f.eks. «Politiattest».</p>
+<p>Som illustrert i figur <a href="#img-TjenesteOgData">Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</a>, kan et Tjenesteresultat (<code>cv:Output</code>) produsert av en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cv:PublicService</code>)) være et Datasett (<code>dcat:Dataset</code>), f.eks.  «Skjenkebevillingen» som et resultat fra tjenesten «Søknad om skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (<code>cv:Evidence</code>) kan også bekreftes ved en dokumentreferanse (<code>cccev:DocumentReference</code>) som kan være et datasett (<code>dcat:Dataset</code>), f.eks. «Vandelsattest».</p>
 </div>
 <div class="paragraph">
-<p>Se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng">Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i <em>Veileder for beskrivelse av datasett osv.</em></a>, for hvordan datasett (som f.eks. «Skjenkebevillingen» og «Politiattest») kan videre knyttes til distribusjon, datatjeneste (også kalt API), begrep og informasjonsmodell.</p>
+<p>Se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng">Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i <em>Veileder for beskrivelse av datasett osv.</em></a>, for hvordan datasett (som f.eks. «Skjenkebevillingen» og «Vandelsattest») kan videre knyttes til distribusjon, datatjeneste (også kalt API), begrep og informasjonsmodell.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="KnytteTilBegrep"><a class="link" href="#KnytteTilBegrep">Å knytte begrep til en tjeneste eller en hendelse</a></h3>
+<h3 id="KnytteTilBegrep"><a class="link" href="#KnytteTilBegrep">Å knytte en tjeneste eller hendelse til begrep</a></h3>
 <div class="paragraph">
-<p>Spesifikasjonen utvider CPSV-AP med egenskapen «begrep» (<code>dct:subject</code>) i Klassen Hendelse (<code>cv:Event</code>), Klassen Livshendelse (<code>cv:LifeEvent</code>), Klassen Virksomhetshendelse (<code>cv:BusinessEvent</code>), Klassen Tjeneste (<code>cpsvno:Service</code>) og Klassen Offentlig tjeneste (<code>cpsv:PublicService</code>). Egenskapen brukes til å referere til et eller flere begreper som er relatert til hendelsen/tjenesten og som er viktig for å forstå hendelsen/tjenesten. Det anbefales å referere til begreper som er publisert i f.eks. <a href="https://data.norge.no/concepts">begrepsdelen av Felles datakatalog</a>. Eksempel: begrepet ‘daglig leder’ er viktig for tjenesten «Søknad om skjenkebevilling».</p>
+<p>Spesifikasjonen utvider CPSV-AP med egenskapen «begrep» (<code>dct:subject</code>) i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a>, <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a>, <a href="#Tjeneste">Klassen Tjeneste (cpsvno:Service)</a> og <a href="#OffentligTjeneste">Klassen Offentlig tjeneste (cpsv:PublicService)</a>. Egenskapen brukes til å referere til et eller flere begreper som er relatert til hendelsen/tjenesten og som er viktig for å forstå hendelsen/tjenesten. Det anbefales å referere til begreper som er publisert i f.eks. <a href="https://data.norge.no/concepts">begrepsdelen av Felles datakatalog</a>. Eksempel: begrepet ‘daglig leder’ er viktig for tjenesten «Søknad om skjenkebevilling».</p>
 </div>
 <div class="paragraph">
-<p>Se ellers også <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a>, samt <a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-begrep</a> for hvordan begrepsbeskrivelser utformet i henhold til <em>Forvaltningsstandard for begrepsbeskrivelser</em> tilgjengeliggjøres i RDF.</p>
+<p>Se ellers også <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a> for krav til begrepsbeskrivelser, og <a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-begrep</a> for hvordan begrepsbeskrivelser utformet i henhold til <em>Forvaltningsstandard for begrepsbeskrivelser</em> tilgjengeliggjøres i RDF.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="KnytteTilDatatjeneste"><a class="link" href="#KnytteTilDatatjeneste">Å knytte en datatjeneste (også kalt API) til en tjenestekanal</a></h3>
+<h3 id="KnytteTilDatatjeneste"><a class="link" href="#KnytteTilDatatjeneste">Å knytte en tjenestekanal til en datatjeneste (også kalt API)</a></h3>
 <div class="paragraph">
-<p>Spesifikasjonen utvider CPSV-AP med en egendefinert egenskap «datatjeneste» (<code>cpsvno:dataService</code>), som kan brukes til å knytte en datatjeneste/API (<code>dcat:DataService</code>) til en tjenestekanal (<code>cv:Channel</code>). Det anbefales å referere til datatjenestebeskrivelser som er publisert i f.eks. <a href="https://data.norge.no/dataservices">API-delen av Felles datakatalog</a>.</p>
+<p>Spesifikasjonen utvider CPSV-AP med en egendefinert egenskap «datatjeneste» (<code>cpsvno:dataService</code>), som kan brukes til å knytte en tjenestekanal (<code>cv:Channel</code>) til en datatjeneste/API (<code>dcat:DataService</code>). Det anbefales å referere til datatjenestebeskrivelser som er publisert i f.eks. <a href="https://data.norge.no/dataservices">API-delen av Felles datakatalog</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1423,16 +1423,19 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="title">Figur 5. Hendelse og Distribusjon</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i figur <a href="#img-HendelseOgDistribusjon">Hendelse og Distribusjon</a> har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (<code>dcat:distribution</code>) i Klassen Hendelse (<code>cv:Event</code>), Klassen Livshendelse (<code>cv:LifeEvent</code>) og Klassen Virksomhetshendelse (<code>cv:BusinessEvent</code>), og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Denne egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm som f.eks. kan abonneres på.</p>
+<p>Som illustrert i figur <a href="#img-HendelseOgDistribusjon">Hendelse og Distribusjon</a> har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (<code>dcat:distribution</code>) i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a> og <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a>, og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Denne egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm som f.eks. kan abonneres på.</p>
 </div>
 <div class="paragraph">
 <p>Se ellers <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng">Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i Veileder for beskrivelse av datasett osv.</a>, for hvordan et datasett (som i dette tilfellet er en hendelsesbeskrivelse) kan knyttes til distribusjon og datatjeneste (også kalt API).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="KnytteTilRegelverk"><a class="link" href="#KnytteTilRegelverk">Å knytte til regelverk</a></h3>
+<h3 id="KnytteTilRegelverk"><a class="link" href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a></h3>
 <div class="paragraph">
-<p>Se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#beskrivelse-av-juss">Beskrivelse av juridiske rammer i <em>Veileder for beskrivelse av datasett osv.</em></a>, for hvordan regelverk knyttes til et datasett (som f.eks. dokumentasjonskrav til eller tjenesteresultat fra en (offentlig) tjeneste). På helt tilsvarende måte kan regelverk også knyttes til en (offentlig) tjeneste, ved å bruke egenskapen <code>cpsv:follows</code>, som illustrert i figur <a href="#img-TjenesteOgRegelverk">(Offentlig) Tjeneste og regelverk</a>.</p>
+<p>Se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#beskrivelse-av-juss">Beskrivelse av juridiske rammer i <em>Veileder for beskrivelse av datasett osv.</em></a>, for hvordan regelverk knyttes til et datasett (som f.eks. dokumentasjonskrav til eller tjenesteresultat fra en (offentlig) tjeneste).</p>
+</div>
+<div class="paragraph">
+<p>På helt tilsvarende måte og som illustrert i figur <a href="#img-TjenesteOgRegelverk">(Offentlig) Tjeneste og regelverk</a>, kan regelverk knyttes til en (offentlig) tjeneste ved å bruke egenskapen <a href="#Tjeneste-følgerRegel">Tjeneste - følger regel (cpsv:follows)</a>, <a href="#OffentligTjeneste-følgerRegel">Offentlig tjeneste – følger regel (cpsv:follows)</a>, <a href="#Tjeneste-relatertRegelverk">Tjeneste - relatert regelverk (cv:hasLegalResource)</a> eller <a href="#OffentligTjeneste-relatertRegelverk">Offentlig tjeneste – relatert regelverk (cv:hasLegalResource)</a>.</p>
 </div>
 <div id="img-TjenesteOgRegelverk" class="imageblock">
 <div class="content">
@@ -1465,16 +1468,16 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="title">Figur 7. Tjeneste og Deltagelse</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i figur <a href="#img-FigurTjenesteOgDeltagelse">Tjeneste og Deltagelse</a> brukes egenskapen Tjeneste – eies av (<code>cv:ownedBy</code>) til å uttrykke relasjonen mellom en Tjeneste og dens eier (en Aktør, <code>foaf:Agent</code>), og egenskapen Offentlig tjeneste – har kompetent organ (<code>cv:hasCompetentAuthority</code>) til å uttrykke relasjonen mellom en Offentlig tjeneste og dens kompetente organ.</p>
+<p>Som illustrert i figur <a href="#img-FigurTjenesteOgDeltagelse">Tjeneste og Deltagelse</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste - eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste og dens eier (en Aktør, <code>foaf:Agent</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste og dens kompetente organ.</p>
 </div>
 <div class="paragraph">
-<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes Klassen Deltagelse (<code>cv:Participation</code>). En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, ved bruk av egenskapen <a href="#Tjeneste-deltagende">Tjeneste – deltagende (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, ved bruk av egenskapen <a href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a> (eller <a href="#OffentligOrganisasjon-harRolle">Offentlig organisasjon – har rolle i (cv:playsRole)</a>).</p>
+<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse">Klassen Deltagelse (cv:Participation)</a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-deltagende">Tjeneste – deltagende (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a> (eller <a href="#OffentligOrganisasjon-harRolle">Offentlig organisasjon – har rolle i (cv:playsRole)</a>).</p>
 </div>
 <div class="paragraph">
 <p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument» når ikke alle deltagende aktører har begge roller.</p>
 </div>
 <div class="paragraph">
-<p>Eksempel: Politidirektoratet (med datasett «Politiattest») deltar som dataleverandør til tjenesten «Søknad om skjenkebevilling».</p>
+<p>Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Søknad om skjenkebevilling».</p>
 </div>
 <div class="paragraph">
 <p>Eksempel i RDF Turtle:</p>
@@ -1483,8 +1486,9 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <pre>&lt;søknadOmSkjenkebevilling&gt; a cv:PublicService ;
    cv:hasParticipation &lt;deltagendeDataleverandør&gt; ; .
+
 &lt;deltagendeDataleverandør&gt; a cv:Participation ;
-   dct:description "deltagende dataleverandører til tjenesten Søknad om skjenkebevilling"@nb ; .
+   dct:description "deltagende dataleverandører til tjenesten Søknad om skjenkebevilling"@nb ;
    cv:role &lt;dataleverandør&gt; ; .
 
 &lt;Politidirektoratet&gt; a cv:PublicOrganisation ;
@@ -1498,7 +1502,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <h2 id="OversiktOverKlassene"><a class="link" href="#OversiktOverKlassene">Oversikt over klasser i spesifikasjonen</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Ved ev. avvik mellom oversikten her og klassebeskrivelsene som følger, gjelder kravsnivåene som er satt i klassebeskrivelsene.</p>
+<p>Før ev. uoverensstemmelse mellom oversikten her og klassebeskrivelsene som følger er rettet opp, gjelder kravsnivåene som er satt i klassebeskrivelsene.</p>
 </div>
 <div class="paragraph">
 <p>Følgende klasser er obligatoriske:</p>
@@ -1588,12 +1592,15 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </ul>
 </div>
 <div class="paragraph">
-<p>Følgende klasser som også er vist i den forenklede modellen, er ikke spesifisert i spesifikasjonen:</p>
+<p>Følgende klasser som også er vist i den forenklede modellen ovenfor eller i diagrammene som følger, er ikke spesifisert i spesifikasjonen:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p>Datasett (<code>dcat:Dataset</code>), Datatjeneste (<code>dcat:DataService</code>) og Distribusjon (<code>dcat:Distribution</code>): se <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a>.</p>
+</li>
+<li>
+<p>Begrep (<code>skos:Concept</code>): Se <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a> for krav til begrepsbeskrivelser, og <a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-begrep</a> for hvordan begrepsbeskrivelser utformet i henhold til <em>Forvaltningsstandard for begrepsbeskrivelser</em> tilgjengeliggjøres i RDF.</p>
 </li>
 </ul>
 </div>
@@ -1639,11 +1646,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For aktører som er offentlig organisasjon, bruk Klassen Offentlig organisasjon (cv:PublicOrganisation) isteden.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For aktør som er en offentlig organisasjon, bruk <a href="#OffentligOrganisasjon">Klassen Offentlig organisasjon (cv:PublicOrganisation)</a> isteden.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: range endret fra dct:Agent til foaf:Agent (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: range endret fra <code>dct:Agent</code> til <code>foaf:Agent</code> (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -1721,7 +1728,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="sect2">
 <h3 id="Aktør-anbefalte-egenskaper"><a class="link" href="#Aktør-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Aktør</em></a></h3>
 <div class="sect3">
-<h4 id="Aktør-organisasjonsidentifikator"><a class="link" href="#Aktør-organisasjonsidentifikator">Aktør – organisasjonsidentifikator (dct:identifier)</a></h4>
+<h4 id="Aktør-identifikator"><a class="link" href="#Aktør-identifikator">Aktør – identifikator (dct:identifier)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1742,7 +1749,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap som angir aktørens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -1860,7 +1867,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en adresse til organisasjonen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en adresse til aktøren.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -1876,7 +1883,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen cv:hasAddress og range locn:Address. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI locn:address med range locn:Address. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen locn:address.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen <code>cv:hasAddress</code> og range <code>locn:Address</code>. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI <code>locn:address</code> med range <code>locn:Address</code>. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen <code>locn:address</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -1918,11 +1925,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å knytte en deltagelse (cv:Participation) til en aktør.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å knytte en deltagelse (<code>cv:Participation</code>) til en aktør.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property links an Agent to the Participation class. The Participation class (cv:Participation) facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial constraints on that participation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property links an Agent to the Participation class. The Participation class (<code>cv:Participation</code>) facilitates the detailed description of how an Agent participates in or interacts with a (Public) Service and may include temporal and spatial constraints on that participation.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -1960,15 +1967,15 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Public Service Dataset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Public) Service Dataset</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å inneholde metadata om en offentlig tjeneste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å inneholde metadata om en (offentlig) tjeneste.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The class describes the metadata of where the dataset is being described, for instance on a regional public service portal and/or a national eGovernment portal.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The class describes the metadata of where the dataset is being described, for instance on a regional (public) service portal and/or a national eGovernment portal.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -1980,7 +1987,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk avvik inntil EU også endrer tilsvarende: Range er endret fra cv:PublicServiceDataset til dcat:Dataset (EU har sagt at dette skal endres i neste release av CPSV-AP)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk avvik inntil EU også endrer tilsvarende: Range er endret fra <code>cv:PublicServiceDataset</code> til <code>dcat:Dataset</code> (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad2</strong></p></td>
@@ -2018,7 +2025,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a>) eller tjenesteeieren (jf. <a href="#Tjeneste-eiesAv">Tjeneste – eies av (cv:ownedBy)</a>), som er involvert i en tjeneste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority)</a>) eller tjenesteeieren (jf. <a href="#Tjeneste-eiesAv">Tjeneste - eies av (cv:ownedBy)</a>), som er involvert i en tjeneste.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -2034,11 +2041,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se også Å knytte deltagende aktører til en tjeneste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se også <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under Å knytte deltagende aktører til en tjeneste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2086,7 +2093,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under Å knytte deltagende aktører til en tjeneste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2185,7 +2192,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under Å knytte deltagende aktører til en tjeneste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2542,7 +2549,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Krav om vandel» kan bekreftes ved «Politiattest».</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Krav om vandel» kan bekreftes ved «Vandelsattest».</p></td>
 </tr>
 </tbody>
 </table>
@@ -2553,9 +2560,9 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <pre>&lt;kravOmVandel&gt; a cv:Evidence ;
    dct:title "Krav om vandel"@nb ;
-   cccev:isSupportedBy &lt;politiattest&gt; ; .
+   cccev:isSupportedBy &lt;vandelsattest&gt; ; .
 
-&lt;politiattest&gt; a cccev:DocumentReference ; .</pre>
+&lt;vandelsattest&gt; a cccev:DocumentReference ; .</pre>
 </div>
 </div>
 </div>
@@ -2739,7 +2746,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Politiattest», som bekreftelse på at «Krav om vandel» er oppfylt.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Vandelsattest», som bekreftelse på at «Krav om vandel» er oppfylt.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2748,7 +2755,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;politiattest&gt; a cccev:DocumentReference ; .</pre>
+<pre>&lt;vandelsattest&gt; a cccev:DocumentReference ; .</pre>
 </div>
 </div>
 <div class="sect2">
@@ -3247,11 +3254,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere offentlige organisasjoner som bestemmer gebyr for en tjeneste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere aktører (inkl. offentlige organisasjon) som bestemmer gebyr for en tjeneste.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property links the Cost class with one or more instances of the Public Organization class (cv:PublicOrganisation). This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property links the Cost class with one or more instances of the Agent class (foaf:Agent). This property refers to the agent(s) defining the costs associated with the delivery of a particular Service.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -3263,7 +3270,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range er endret fra <code>cv:PublicOrganisation</code> til <code>foaf:Agent</code>, som en følge av den norsk utvidelse av å tilføye klassen Tjeneste (<code>cpsvno:Service</code>) som kan tilbys av en privat aktør (foaf:Agent).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range er endret fra <code>cv:PublicOrganisation</code> til <code>foaf:Agent</code>, som en følge av den norsk utvidelse av å tilføye <a href="#Tjeneste">Klassen Tjeneste (cpsvno:Service)</a> som kan tilbys av en privat aktør (<code>foaf:Agent</code>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -3513,7 +3520,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: valgfri &#8594; anbefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravsnivået endret fra valgfri  til anbefalt, fordi en hendelse bør beskrives med mindre den har et selvforklarende navn.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad2</strong></p></td>
@@ -3564,7 +3571,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn dct:relation som er i CPSV-AP. Inntil vi finner en passende URI i eksisterende vokabularer, bruker vi denne egendefinerte URI.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn <code>dct:relation</code> som er i CPSV-AP. Inntil vi finner en passende URI i eksisterende vokabularer, bruker vi denne egendefinerte URI.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -6041,7 +6048,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 </div>
 <div class="sect3">
-<h4 id="OffentligTjeneste-harKompetentOrgan"><a class="link" href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a></h4>
+<h4 id="OffentligTjeneste-harKompetentOrgan"><a class="link" href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7192,7 +7199,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se også <a href="#KnytteTilRegelverk">Å knytte til regelverk</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se også <a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7701,7 +7708,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelverk">Å knytte til regelverk</a> for eksempler på bruk av denne klassen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a> for eksempler på bruk av denne klassen.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7894,12 +7901,12 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelverk">Å knytte til regelverk</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#KnytteTilRegelverk">Å knytte til regelverk</a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -8069,12 +8076,12 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelverk">Å knytte til regelverk</a> for eksempel på bruk av denne klassen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a> for eksempel på bruk av denne klassen.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#KnytteTilRegelverk">Å knytte til regelverk</a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a>.</p>
 </div>
 <div class="sect2">
 <h3 id="RegulativRessurs-obligatoriske-egenskaper"><a class="link" href="#RegulativRessurs-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Regulativ ressurs</em></a></h3>
@@ -8269,12 +8276,12 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelverk">Å knytte til regelverk</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF: Se under <a href="#KnytteTilRegelverk">Å knytte til regelverk</a>.</p>
+<p>Eksempel i RDF: Se under <a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a>.</p>
 </div>
 </div>
 </div>
@@ -8593,7 +8600,7 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 </table>
 </div>
 <div class="sect3">
-<h4 id="Tjeneste-eiesAv"><a class="link" href="#Tjeneste-eiesAv">Tjeneste – eies av (cv:ownedBy)</a></h4>
+<h4 id="Tjeneste-eiesAv"><a class="link" href="#Tjeneste-eiesAv">Tjeneste - eies av (cv:ownedBy)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9579,7 +9586,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </table>
 </div>
 <div class="sect3">
-<h4 id="_tjenestefølgerregelcpsvfollows"><a class="link" href="#_tjenestefølgerregelcpsvfollows">Tjeneste – følger regel (cpsv:follows) <a id="Tjeneste-følgerRegel"></a></a></h4>
+<h4 id="Tjeneste-følgerRegel"><a class="link" href="#Tjeneste-følgerRegel">Tjeneste - følger regel (cpsv:follows)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9620,7 +9627,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se også <a href="#KnytteTilRegelverk">Å knytte til regelverk</a>. </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se også <a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a>. </p></td>
 </tr>
 </tbody>
 </table>
@@ -9822,7 +9829,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </table>
 </div>
 <div class="sect3">
-<h4 id="_tjenesterelatert_regelverk_cvhaslegalresource"><a class="link" href="#_tjenesterelatert_regelverk_cvhaslegalresource">Tjeneste – relatert regelverk (cv:hasLegalResource) <a id="Tjeneste-relatertRegelverk"></a></a></h4>
+<h4 id="Tjeneste-relatertRegelverk"><a class="link" href="#Tjeneste-relatertRegelverk">Tjeneste - relatert regelverk (cv:hasLegalResource)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -11508,7 +11515,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <p>Lovregulert (legeislation)</p>
 </li>
 <li>
-<p>[<mark>&lt;kom med innspill&gt;</mark></p>
+<p><mark>&lt;kom med innspill&gt;</mark></p>
 </li>
 </ul>
 </div>
@@ -12553,7 +12560,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-28 12:01:12 UTC
+Sist oppdatert 2021-11-28 16:42:33 UTC
 </div>
 </div>
 </body>

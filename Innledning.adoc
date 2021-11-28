@@ -10,7 +10,7 @@ En hendelse kan utløse behov for en eller flere offentlige tjenester. En offent
 Eksempel:
 
 * Hendelse: Å starte og drive en restaurant
-* Tjeneste: Søknad om skjenkebevilling (i den aktuelle kommunen)
+* Tjeneste: bl.a. Søknad om skjenkebevilling (i den aktuelle kommunen)
 * Data
-** som tjenesten bruker (dokumentasjonskrav): bl.a. Politiattest fra Politidirektoratet,
+** som tjenesten bruker (dokumentasjonskrav): bl.a. Vandelsattest fra Politidirektoratet,
 ** som tjenesten produserer (tjenesteresultat): skjenkebevillingen (eller avslag på søknaden).

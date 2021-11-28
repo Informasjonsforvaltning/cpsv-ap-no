@@ -12,8 +12,8 @@ image::images/KlassenDeltagelse.png[]
 |Usage note|The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider.
 |URI|cv:Participation
 |Kravsnivå|Valgfri/Optional
-|Merknad|Se også Å knytte deltagende aktører til en tjeneste.
-|Eksempel|Se under Å knytte deltagende aktører til en tjeneste.
+|Merknad|Se også <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
 === Obligatoriske egenskaper for klassen _Deltagelse_ [[Deltagelse-obligatoriske-egenskaper]]
@@ -30,7 +30,7 @@ image::images/KlassenDeltagelse.png[]
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n for å støtte flerspråklighet.
-|Eksempel|Se under Å knytte deltagende aktører til en tjeneste.
+|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
 ==== Deltagelse – identifikator (dct:identifier) [[Deltagelse-identifikator]]
@@ -63,7 +63,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|Verdien skal velges fra en felles kontrollert liste over roller når den finnes på listen. Se forslag til et kontrollert vokabular for rolletyper under denne tabellen.
 |Remarks|This should be provided using a controlled vocabulary. Since this is an extension mechanism for the CSPV-AP, the controlled vocabulary should be decided to suit local implementations.
-|Eksempel|Se under Å knytte deltagende aktører til en tjeneste.
+|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
 Forslag til et kontrollert vokabular med følgende rolletyper:

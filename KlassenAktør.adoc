@@ -12,8 +12,8 @@ image::images/KlassenAktør.png[]
 |Usage note|The Agent class is any resource that acts or has the power to act. This includes people, organizsations and groups. The Public Organization class, defined in the Core Public Organisation Vocabulary, is a notable sub class of Agent.
 |URI|foaf:Agent
 |Kravsnivå|Valgfri/Optional
-|Merknad 1|For aktører som er offentlig organisasjon, bruk Klassen Offentlig organisasjon (cv:PublicOrganisation) isteden.
-|Merknad 2|Norsk utvidelse: range endret fra dct:Agent til foaf:Agent (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).
+|Merknad 1|For aktør som er en offentlig organisasjon, bruk <<OffentligOrganisasjon>> isteden.
+|Merknad 2|Norsk utvidelse: range endret fra `dct:Agent` til `foaf:Agent` (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).
 |Eksempel|Vi bruker en fiktiv exAktør (Den beste restauranten AS) som eksempel i dette kapittelet.
 |===
 
@@ -47,14 +47,14 @@ Eksempel i RDF Turtle:
 
 === Anbefalte egenskaper for klassen _Aktør_ [[Aktør-anbefalte-egenskaper]]
 
-==== Aktør – organisasjonsidentifikator (dct:identifier) [[Aktør-organisasjonsidentifikator]]
+==== Aktør – identifikator (dct:identifier) [[Aktør-identifikator]]
 
 [cols="30s,70d"]
 |===
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Beskrivelse|Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
+|Beskrivelse|Egenskap som angir aktørens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
 |Usage note|This property contains an identifier for the Agent.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
@@ -102,11 +102,11 @@ Eksempel i RDF Turtle:
 |English name|address
 |URI|locn:address
 |Range|locn:Address
-|Beskrivelse|Brukes til å oppgi en adresse til organisasjonen.
+|Beskrivelse|Brukes til å oppgi en adresse til aktøren.
 |Usage note|This property represents an Address related to an Agent.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen cv:hasAddress og range locn:Address. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI locn:address med range locn:Address. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen locn:address.
+|Merknad|Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen `cv:hasAddress` og range `locn:Address`. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI `locn:address` med range `locn:Address`. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen `locn:address`.
 |Eksempel|Restaurantgata 1, Gourmetby, Matland
 |===
 
@@ -125,8 +125,8 @@ Eksempel i RDF Turtle:
 |English name|plays role
 |URI|cv:playsRole
 |Range|cv:Participation
-|Beskrivelse|Brukes til å knytte en deltagelse (cv:Participation) til en aktør.
-|Usage note|This property links an Agent to the Participation class. The Participation class (cv:Participation) facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial constraints on that participation.
+|Beskrivelse|Brukes til å knytte en deltagelse (`cv:Participation`) til en aktør.
+|Usage note|This property links an Agent to the Participation class. The Participation class (`cv:Participation`) facilitates the detailed description of how an Agent participates in or interacts with a (Public) Service and may include temporal and spatial constraints on that participation.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
