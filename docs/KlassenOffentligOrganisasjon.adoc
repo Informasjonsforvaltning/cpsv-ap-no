@@ -13,7 +13,7 @@ image::images/KlassenOffentligOrganisasjon.png[]
 |URI|cv:PublicOrganisation
 |Subklasse av / Subclass of|foaf:Agent
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Norsk utvidelse: Kravsnivå er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til beskrivelse av hendelser som ennå er knyttet til noen tjenester levert av offentlig organisasjon.
+|Merknad|Norsk utvidelse: Kravsnivå er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til beskrivelse av f.eks. tjenester levert av private aktører.
 |Eksempel|Brønnøy kommune er en offentlig organisasjon.
 |===
 
@@ -114,8 +114,8 @@ Eksempel i RDF Turtle:
 Eksempel i RDF Turtle:
 -----
 <BrønnøyKommune> a cv:PublicOrganisation ;
-   skos:prefLabel "Brønnøy kommune"@nb ;
-   dct:title "Brønnøy kommune"@nb .
+   skos:prefLabel "Brønnøy kommune"@nb ; # foretrukket navn
+   dct:title "Brønnøy kommune"@nb . # navn
 -----
 
 === Anbefalte egenskaper for klassen _Offentlig organisasjon_ [[OffentligOrganisasjon-anbefalte-egenskaper]]
@@ -131,7 +131,7 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents the address.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen cv:hasAddress og range locn:Address. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI locn:address med range locn:Address. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen locn:address.
+|Merknad|Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen `cv:hasAddress` og range `locn:Address`. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI `locn:address` med range `locn:Address`. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen `locn:address`.
 |Eksempel|
 |===
 
@@ -140,7 +140,7 @@ Eksempel i RDF Turtle:
 <BrønnøyKommune> a cv:PublicOrganisation ;
    skos:prefLabel "Brønnøy kommune"@nb ;
    locn:address [ a locn:Address ;
-       locn:fullAddress " Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ] ; .
+       locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ] ; .
 -----
 
 ==== Offentlig organisasjon – hjemmeside (foaf:homepage) [[OffentligOrganisasjon-hjemmeside]]
@@ -176,7 +176,7 @@ Eksempel i RDF Turtle:
 |Usage note|This property Indicates a classification for a Public Organisation within some classification scheme.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|
+|Merknad| Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (i RDF)] (#NB! Lenken virker ikke (per 2021-11-28)#).
 |Eksempel|Brønnøy kommune er av type _Local Authority_.
 |===
 
@@ -184,7 +184,7 @@ Eksempel i RDF Turtle:
 -----
 <BrønnøyKommune> a cv:PublicOrganisation ;
    skos:prefLabel "Brønnøy kommune"@nb ;
-   foaf:homepage adms:LocalAuthority ;  .
+   org:classification adms:LocalAuthority ;  .
 -----
 
 === Valgfrie egenskaper for klassen _Offentlig organisasjon_ [[OffentligOrganisasjon-valgfrie-egenskaper]]
