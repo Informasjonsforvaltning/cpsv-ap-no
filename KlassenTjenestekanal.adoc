@@ -63,7 +63,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Usage note|This property links the Channel class with one or more instances of the Agent class. This property indicates the owner of a specific Channel through which a Public Service is being delivered. Note that Public Organization is a sub class of Agent so that if the owner is the Public Organization, the ownedBy property can link to it.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad|Norsk utvidelse: range endret fra cv:PublicOrganisation til foaf:Agent. Dette både fordi usage note i CPSV-AP sier at det skal peke til «one or more instances of the Agent Class», og at det dermed også åpner mulighet for at en privat aktør kan, bl.a. på vegne av en offentlig organisasjon, være eieren av en tjenestekanal.
+|Merknad|Norsk utvidelse: range endret fra `cv:PublicOrganisation` til `foaf:Agent`. Dette både fordi usage note i CPSV-AP sier at det skal peke til «one or more instances of the Agent Class», og at det dermed også åpner mulighet for at en privat aktør kan, bl.a. på vegne av en offentlig organisasjon, være eieren av en tjenestekanal.
 |Eksempel|Tjenestekanaler for tjenesten «Søknad om skjenkebevilling i Brønnøy kommune» eies av Brønnøy kommune.
 |===
 
@@ -225,11 +225,12 @@ Forslag til et kontrollert vokabular for typer tjenestekanal (hentet fra CPSV �
 |Usage note|This property represents the normal opening hours of a channel. The value should follow the flexible format defined for schema.org's opening hours property28. Following that structure, days of the week are represented by two letter codes (Mo, Tu, We, Th, Fr, Sa, Su). Lists should be comma separated (for example: Mo, We, Fr) and periods separated by a hyphen (for example: Mo-Fr).
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|Denne egenskapen brukes til å oppgi åpningstid i fritekst. Bruk heller egenskapen Tjenestekanal – åpningstid strukturert (schema:hoursAvailable) for å oppgi åpningstid som strukturerte data.
+|Merknad|Denne egenskapen brukes til å oppgi åpningstid i fritekst. Bruk heller egenskapen <<Tjenestekanal-åpningstidStrukturert>> for å oppgi åpningstid som strukturerte data.
 |Eksempel|Tidsrom når telefon er betjent.
 |===
 
-==== Tjenestekanal – åpningstid strukturert (schema:hoursAvailable) [[Tjenestekanal-åpningstidStrukturert]]
+
+==== Tjenestekanal - åpningstid strukturert (schema:hoursAvailable) [[Tjenestekanal-åpningstidStrukturert]]
 
 [cols="30s,70d"]
 |===
