@@ -8,13 +8,13 @@ Spesifikasjonen inngår i https://www.digdir.no/informasjonsforvaltning/rammever
 
 === Omfang og avgrensing [[Omfang-og-avgrensing]]
 
-Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere offentlige tjenester, dvs. ikke en hvilken som helst hendelse. Spesifikasjonen dekker også behovet for å beskrive private tjenester som f.eks. er involvert i sammenhengende tjenester fra det offentlige.
+Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser samt å utveksle/tilgjengeliggjøre beskrivelsene. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere offentlige tjenester, dvs. ikke en hvilken som helst hendelse. Spesifikasjonen dekker også behovet for å beskrive private tjenester som f.eks. er involvert i sammenhengende tjenester fra det offentlige.
 
 Spesifikasjonen er basert EUs https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en[CPSV-AP] (_Core Public Service Vocabulary Application Profile_).
 
 Spesifikasjonen inneholder også engelske navn (English name) og beskrivelser (Usage note). Det gjøres oppmerksom på at engelske navn eller beskrivelser ikke alle er ordrett sitat fra EUs originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
 
-Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF] (se «Introduksjon til RDF» som er #under utarbeidelse#), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinlesbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
+Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF] (se «Introduksjon til RDF» som er #under utarbeidelse#), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
 
 === Målgrupper [[Målgrupper]]
 
@@ -31,7 +31,7 @@ Spesifikasjonen har ikke sluttbrukere av (offentlige) tjenester som sin målgrup
 
 === Forvaltningsregime [[Forvaltningsregime]]
 
-Spesifikasjonen forvaltes av Digitaliseringsdirektoratet (Digdir).
+Spesifikasjonen forvaltes av https://digdir.no[Digitaliseringsdirektoratet (Digdir)].
 
 Utarbeidelse av nye versjoner av spesifikasjonen initieres av Digdir. Mindre endringer håndteres av Digdir med ev. konsultasjon med enkelte ressurspersoner utenfor Digdir. Ved behov for større endringer vil Digdir vurdere å sette sammen arbeidsgruppe med representanter fra relevante virksomheter, for utarbeidelse av forslag til den reviderte versjonen som ev. sendes ut til bred kommentering før fastsetting.
 
