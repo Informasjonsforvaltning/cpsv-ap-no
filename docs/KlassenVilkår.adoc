@@ -91,7 +91,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
 |Merknad 1|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
-|Merknad 2|Norsk utvidelse: Range endret fra cv:PeriodOfTime i CCCEV, til dct:PeriodOfTime for å samkjøre med bl.a. DCAT-AP-NO.
+|Merknad 2|Norsk utvidelse: Range endret fra `cv:PeriodOfTime` i CCCEV, til `dct:PeriodOfTime` for å samkjøre med bl.a. DCAT-AP-NO.
 |Eksempel|
 |===
 
@@ -185,11 +185,11 @@ Forslag til et kontrollert vokabular for typer vilkår:
 
 * Alder
 * Attest
+* Helse
+* Kompetanse
 * Sertifisering
 * Stilling
 * Utdanning
-* Kompetanse
-* Helse
 * Økonomi
 * #<kom med innspill>#
 
