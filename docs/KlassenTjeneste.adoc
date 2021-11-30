@@ -382,7 +382,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |follows 
 |URI |cpsv:follows 
 |Range |cpsv:Rule 
-|Beskrivelse |Brukes til å referere til regelen som tjenesten opererer under. 
+|Beskrivelse |Brukes til å referere til regelen som gjelder for tjenesten. 
 |Usage note |This property links a Service to the Rule(s) under which it operates. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 

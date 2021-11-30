@@ -462,7 +462,7 @@ Eksempel i RDF Turtle:
 |English name|follows
 |URI|cpsv:follows
 |Range|cpsv:Rule
-|Beskrivelse|Brukes til å referere til regelen under hvilken tjenesten opererer.
+|Beskrivelse|Brukes til å referere til regelen som gjelder for tjenesten.
 |Usage note|This property links a Service to the Rule(s) under which it operates.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
