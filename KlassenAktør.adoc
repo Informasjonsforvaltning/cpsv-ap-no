@@ -9,7 +9,7 @@ image::images/KlassenAktør.png[]
 |===
 |English name|Agent
 |Beskrivelse|Brukes til å representere en aktør.
-|Usage note|The Agent class is any resource that acts or has the power to act. This includes people, organizsations and groups. The Public Organization class, defined in the Core Public Organisation Vocabulary, is a notable sub class of Agent.
+|Usage note|The Agent class is any resource that acts or has the power to act. This includes people, organisations and groups. The Public Organization class, defined in the Core Public Organisation Vocabulary, is a notable sub class of Agent.
 |URI|foaf:Agent
 |Kravsnivå|Valgfri/Optional
 |Merknad 1|For aktør som er en offentlig organisasjon, bruk <<OffentligOrganisasjon>> isteden.
