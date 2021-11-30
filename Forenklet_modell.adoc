@@ -26,7 +26,7 @@ EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse a
 image::images/FigurTjenesteMedDataInnOgUt.png[]
 
 
-Som illustrert i figur <<img-TjenesteOgData>>, kan et Tjenesteresultat (`cv:Output`) produsert av en Tjeneste (`cpsvno:Service` inkl. subklassen Offentlig tjeneste (`cv:PublicService`)) være et Datasett (`dcat:Dataset`), f.eks.  «Skjenkebevillingen» som et resultat fra tjenesten «Søknad om skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (`cv:Evidence`) kan også bekreftes ved en dokumentreferanse (`cccev:DocumentReference`) som kan være et datasett (`dcat:Dataset`), f.eks. «Vandelsattest».
+Som illustrert i figur <<img-TjenesteOgData>>, kan et Tjenesteresultat (`cv:Output`) produsert av en Tjeneste (`cpsvno:Service` inkl. subklassen Offentlig tjeneste (`cpsv:PublicService`)) være et Datasett (`dcat:Dataset`), f.eks.  «Skjenkebevillingen» som et resultat fra tjenesten «Søknad om skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (`cv:Evidence`) kan også bekreftes ved en dokumentreferanse (`cccev:DocumentReference`) som kan være et datasett (`dcat:Dataset`), f.eks. «Vandelsattest».
 
 Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng[Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i _Veileder for beskrivelse av datasett osv._], for hvordan datasett (som f.eks. «Skjenkebevillingen» og «Vandelsattest») kan videre knyttes til distribusjon, datatjeneste (også kalt API), begrep og informasjonsmodell.
 
@@ -68,7 +68,7 @@ Eksempel: Tjenesten «Søknad om skjenkebevilling» er hjemlet i «Lov om omsetn
 
 Eksempel i RDF Turtle:
 -----
-<søknadOmSkjenkebevilling> a cv:PublicService ;
+<søknadOmSkjenkebevilling> a cpsv:PublicService ;
    cv:hasLegalResource [ a eli:LegalResource ;
       dct:type [ a eli:ResourceType ; skos:prefLabel "lov" ; ] ;
       rdfs:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> ; ] ;
@@ -93,11 +93,11 @@ Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som datalev
 
 Eksempel i RDF Turtle:
 ----
-<søknadOmSkjenkebevilling> a cv:PublicService ;
+<søknadOmSkjenkebevilling> a cpsv:PublicService ;
    cv:hasParticipation <deltagendeDataleverandør> ; .
 
 <deltagendeDataleverandør> a cv:Participation ;
-   dct:description "deltagende dataleverandører til tjenesten Søknad om skjenkebevilling"@nb ; 
+   dct:description "deltagende dataleverandører til tjenesten Søknad om skjenkebevilling"@nb ;
    cv:role <dataleverandør> ; .
 
 <Politidirektoratet> a cv:PublicOrganisation ;

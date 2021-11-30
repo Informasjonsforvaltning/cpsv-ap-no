@@ -1393,7 +1393,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="title">Figur 4. Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i figur <a href="#img-TjenesteOgData">Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</a>, kan et Tjenesteresultat (<code>cv:Output</code>) produsert av en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cv:PublicService</code>)) være et Datasett (<code>dcat:Dataset</code>), f.eks.  «Skjenkebevillingen» som et resultat fra tjenesten «Søknad om skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (<code>cv:Evidence</code>) kan også bekreftes ved en dokumentreferanse (<code>cccev:DocumentReference</code>) som kan være et datasett (<code>dcat:Dataset</code>), f.eks. «Vandelsattest».</p>
+<p>Som illustrert i figur <a href="#img-TjenesteOgData">Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</a>, kan et Tjenesteresultat (<code>cv:Output</code>) produsert av en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cpsv:PublicService</code>)) være et Datasett (<code>dcat:Dataset</code>), f.eks.  «Skjenkebevillingen» som et resultat fra tjenesten «Søknad om skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (<code>cv:Evidence</code>) kan også bekreftes ved en dokumentreferanse (<code>cccev:DocumentReference</code>) som kan være et datasett (<code>dcat:Dataset</code>), f.eks. «Vandelsattest».</p>
 </div>
 <div class="paragraph">
 <p>Se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng">Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i <em>Veileder for beskrivelse av datasett osv.</em></a>, for hvordan datasett (som f.eks. «Skjenkebevillingen» og «Vandelsattest») kan videre knyttes til distribusjon, datatjeneste (også kalt API), begrep og informasjonsmodell.</p>
@@ -1451,7 +1451,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadOmSkjenkebevilling&gt; a cv:PublicService ;
+<pre>&lt;søknadOmSkjenkebevilling&gt; a cpsv:PublicService ;
    cv:hasLegalResource [ a eli:LegalResource ;
       dct:type [ a eli:ResourceType ; skos:prefLabel "lov" ; ] ;
       rdfs:seeAlso &lt;https://lovdata.no/eli/lov/1989/06/02/27/nor/html&gt; ; ] ;
@@ -1484,7 +1484,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadOmSkjenkebevilling&gt; a cv:PublicService ;
+<pre>&lt;søknadOmSkjenkebevilling&gt; a cpsv:PublicService ;
    cv:hasParticipation &lt;deltagendeDataleverandør&gt; ; .
 
 &lt;deltagendeDataleverandør&gt; a cv:Participation ;
@@ -7320,7 +7320,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicService</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
@@ -7340,7 +7340,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range endret fra <code>cpsv:PublicService</code> til <code>cpsvno:Service</code>, som en følge av den norsk utvidelse av å tilføye <a href="#Tjeneste">Klassen Tjeneste (cpsvno:Service)</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -7356,7 +7356,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    dct:requires &lt;kunnskapsprøve&gt; .
 
-&lt;kunnskapsprøve&gt; a cv:PublicService ;
+&lt;kunnskapsprøve&gt; a cpsv:PublicService ;
    dct:title "Kunnskapsprøve for styrere og stedfortredere – Alkoholloven og serveringsloven"@nb .</pre>
 </div>
 </div>
@@ -12104,7 +12104,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
    dct:title "Å starte og drive en restaurant"@nb ;
    cpsvno:triggersNeedFor &lt;søknadOmSkjenkebevilling&gt; ; .
 
-&lt;søknadOmSkjenkebevilling&gt; a cv:PublicService ; .</pre>
+&lt;søknadOmSkjenkebevilling&gt; a cpsv:PublicService ; .</pre>
 </div>
 </div>
 </div>
@@ -12598,7 +12598,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-30 07:26:30 UTC
+Sist oppdatert 2021-11-30 08:54:33 UTC
 </div>
 </div>
 </body>
