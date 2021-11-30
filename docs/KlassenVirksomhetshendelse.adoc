@@ -109,7 +109,7 @@ Eksempel i RDF Turtle:
    dct:title "Å starte og drive en restaurant"@nb ;
    cpsvno:triggersNeedFor <søknadOmSkjenkebevilling> ; .
 
-<søknadOmSkjenkebevilling> a cv:PublicService ; .
+<søknadOmSkjenkebevilling> a cpsv:PublicService ; .
 -----
 
 === Valgfrie egenskaper for klassen _Virksomhetshendelse_ [[Virksomhetshendelse-valgfrie-egenskaper]]
