@@ -82,6 +82,22 @@ Eksempel i RDF Turtle:
    dct:title "Tjeneste- og hendelseskatalog"@nb ; .
 ----
 
+==== Katalog – tjenestebeskrivelse (dcatno:service) [[Katalog-tjenestebeskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|service
+|URI|dcatno:service
+|Range|cpsvno:Service
+|Beskrivelse|Brukes til å referere til tjenestebeskrivelse som er katalogisert i katalogen.
+|Usage note|To refer to the services that are included in the catalogue.
+|Subegenskap av|dct:hasPart
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Norsk utvidelse: klassen utvides med denne egendefinerte egenskap, for å kunne knytte tjenestebeskrivelser til en katalog.
+|Eksempel|
+|===
+
 ==== Katalog – utgiver (dct:publisher) [[Katalog-utgiver]]
 
 [cols="30s,70d"]
@@ -342,21 +358,5 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Eksempel|
-|===
-
-==== Katalog – tjenestebeskrivelse (dcatno:service) [[Katalog-tjenestebeskrivelse]]
-
-[cols="30s,70d"]
-|===
-|English name|service
-|URI|dcatno:service
-|Range|cpsvno:Service
-|Beskrivelse|Brukes til å referere til tjenestebeskrivelse som er katalogisert i katalogen.
-|Usage note|To refer to the services that are included in the catalogue.
-|Subegenskap av|dct:hasPart
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: klassen utvides med denne egendefinerte egenskap, for å kunne knytte tjenestebeskrivelser til en katalog.
 |Eksempel|
 |===

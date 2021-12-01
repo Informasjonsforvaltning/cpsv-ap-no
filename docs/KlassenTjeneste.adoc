@@ -98,6 +98,23 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel |
 |===
 
+==== Tjeneste - produserer (cpsv:produces) [[Tjeneste-produserer]]
+
+[cols="30s,70d"]
+|===
+|English name |produces 
+|URI |cpsv:produces 
+|Range |cv:Output 
+|Beskrivelse |Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.  
+|Usage note |Links a Service to one or more instances of the Output class escribing the actual result of executing a given Service. 
+|Multiplisitet |1..n 
+|Kravsnivå |Obligatorisk/Mandatory 
+|Merknad 1|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output`. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.  
+|Merknad 2| Norsk utvidelse: kravsnivået endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe. 
+|Eksempel |
+|===
+
+
 === Anbefalte egenskaper for klassen _Tjeneste_ [[Tjeneste-anbefalte-egenskaper]] 
 
 ==== Tjeneste – dekningsområde (dct:spatial) [[Tjeneste-dekningsområde]]
@@ -185,22 +202,6 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 
 
-
-
-==== Tjeneste - produserer (cpsv:produces) [[Tjeneste-produserer]]
-
-[cols="30s,70d"]
-|===
-|English name |produces 
-|URI |cpsv:produces 
-|Range |cv:Output 
-|Beskrivelse |Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.  
-|Usage note |Links a Service to one or more instances of the Output class escribing the actual result of executing a given Service. 
-|Multiplisitet |0..n 
-|Kravsnivå |Anbefalt/Recommended 
-|Merknad|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output`. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.  
-|Eksempel |
-|===
 
 
 ==== Tjeneste – status (adms:status) [[Tjeneste-status]]
