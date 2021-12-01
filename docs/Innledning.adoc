@@ -9,7 +9,7 @@ Sammenheng mellom hendelse, tjeneste og data illustrert i figur <<img-HendelseTj
 
 [[img-SyktBarn]]
 .Eksempel på sammenheng mellom hendelse, tjeneste og data
-[link=images/FigurSyktBarnpng]
+[link=images/FigurSyktBarn.png]
 image::images/FigurSyktBarn.png[]
 
 Eksempel, illustrert i figur <<img-SyktBarn>>: En av enkelthendelsene i livshendelsen https://alvorligsyktbarn.no/[Alvorlig sykt barn] er at "barnet er blitt syk" som utløser behov for "legetjeneste". Et resultat fra "legetjeneste" er at det forskrives legemidler (datasett "e-resept") som skaper en ny hendelse "e-resept sendt". Denne nye hendelse utløser behov for "apotektjeneste" som bruker datasettet "e-resept".

@@ -134,4 +134,6 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 
 Forslag til et kontrollert vokabular for hendelsestyper (som ikke er «livshendelser» eller «virksomhetshendelser»):
 
-* #Gi innspill#
+* vedtak fattet
+* data endret
+* #<kom med innspill>#
