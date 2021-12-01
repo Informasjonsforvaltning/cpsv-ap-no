@@ -1,0 +1,12 @@
+=== Å beskrive et hendelsesforløp [[Hendelsesforløp]]
+
+Spesifikasjonen har lagt til grunn at en hendelse er en ikke-delbar enhet, basert på bl.a. EUs forklaring på en Virksomhetshendelse (Business event): "Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business #at this specific point in time#” (vår egen utheving), dvs. en hendelse er noe som skjer på et gitt tidspunkt. Spesifikasjonen følger derfor CPSV-AP som ikke har støtte for å uttrykke at en hendelse kan bestå av andre hendelser.
+
+Det er på den annen side mulig å beskrive et hendelsesforløp, dvs. en rekke av enkelthendelser, som vist i figur <<img-Hendelsesforløp>>.
+
+[[img-Hendelsesforløp]]
+.Hendelsesforløp
+[link=images/FigurHendelsesforløp.png]
+image::images/FigurHendelsesforløp.png[]
+
+<#kanskje et konkret eksempel på et lite hendelsesforløp, beskrevet med CPSV-AP-NO#>

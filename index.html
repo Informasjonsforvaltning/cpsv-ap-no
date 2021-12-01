@@ -458,13 +458,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Innledning">Innledning – hendelser, tjenester og data</a></li>
 <li><a href="#Forenklet_modell">Forenklet modell for CPSV-AP-NO</a>
 <ul class="sectlevel2">
-<li><a href="#BeskriveEnKatalog">Å beskrive en tjeneste-/hendelseskatalog</a></li>
+<li><a href="#Hendelsesforløp">Å beskrive et hendelsesforløp</a></li>
+<li><a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a></li>
 <li><a href="#KnytteTilDatasett">Å knytte en (offentlig) tjeneste til et datasett og derfra til API, begrep og informasjonsmodell</a></li>
 <li><a href="#KnytteTilBegrep">Å knytte en tjeneste eller hendelse til begrep</a></li>
+<li><a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a></li>
 <li><a href="#KnytteTilDatatjeneste">Å knytte en tjenestekanal til en datatjeneste (også kalt API)</a></li>
 <li><a href="#Hendelsesstrøm">Å publisere hendelsesstrøm</a></li>
-<li><a href="#KnytteTilRegelverk">Å knytte en (offentlig) tjeneste til regelverk</a></li>
-<li><a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a></li>
+<li><a href="#BeskriveEnKatalog">Å beskrive en tjeneste-/hendelseskatalog</a></li>
 </ul>
 </li>
 <li><a href="#OversiktOverKlassene">Oversikt over klasser i spesifikasjonen</a></li>
@@ -1013,16 +1014,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <li>
 <p>Generelt, gi oss tilbakemelding på hva du mener mangler, med konkrete eksempler på behov, samt forslag til kravsnivå (obligatorisk/anbefalt/valgfri) og norske navn og beskrivelser.</p>
 </li>
-<li>
-<p>Spesielt, ser du behov for å kunne beskrive at «en hendelse kan bestå av en eller flere andre hendelser»? Hvis ja, gi oss konkrete eksempler på behovet.</p>
-<div class="olist upperalpha">
-<ol class="upperalpha" type="A">
-<li>
-<p>Denne versjonen tar ikke høyde for at en hendelse kan bestå av andre hendelser. Dette også basert på bl.a. EUs forklaring på en Virksomhetshendelse (Business event): "Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business <mark>at this specific point in time</mark>” (vår egen utheving), altså en hendelse er noe som skjer på et gitt tidspunkt. Kjernegruppen har derfor valgt å betrakte en hendelse som en ikke-delbar enhet, og følge CPSV-AP som ikke har støtte for hierarkisk oppbygging av hendelser.</p>
-</li>
-</ol>
-</div>
-</li>
 </ol>
 </div>
 </li>
@@ -1373,15 +1364,58 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="title">Figur 2. Forenklet modell for tjeneste- og hendelsesbeskrivelser</div>
 </div>
 <div class="sect2">
-<h3 id="BeskriveEnKatalog"><a class="link" href="#BeskriveEnKatalog">Å beskrive en tjeneste-/hendelseskatalog</a></h3>
-<div id="img-Katalogbeskrivelse" class="imageblock">
-<div class="content">
-<a class="image" href="images/FigurKatalog.png"><img src="images/FigurKatalog.png" alt="FigurKatalog"></a>
-</div>
-<div class="title">Figur 3. Katalogbeskrivelse</div>
+<h3 id="Hendelsesforløp"><a class="link" href="#Hendelsesforløp">Å beskrive et hendelsesforløp</a></h3>
+<div class="paragraph">
+<p>Spesifikasjonen har lagt til grunn at en hendelse er en ikke-delbar enhet, basert på bl.a. EUs forklaring på en Virksomhetshendelse (Business event): "Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business <mark>at this specific point in time</mark>” (vår egen utheving), dvs. en hendelse er noe som skjer på et gitt tidspunkt. Spesifikasjonen følger derfor CPSV-AP som ikke har støtte for å uttrykke at en hendelse kan bestå av andre hendelser.</p>
 </div>
 <div class="paragraph">
-<p>EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (<code>dcat:Catalog</code>) fra <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a>. Spesifikasjonen utvider også klassen Katalog med egendefinerte egenskapene «tjenestebeskrivelse» (<code>cpsvno:service</code>) og «hendelsesbeskrivelse» (<code>cpsvno:event</code>), som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.</p>
+<p>Det er på den annen side mulig å beskrive et hendelsesforløp, dvs. en rekke av enkelthendelser, som vist i figur <a href="#img-Hendelsesforløp">Hendelsesforløp</a>.</p>
+</div>
+<div id="img-Hendelsesforløp" class="imageblock">
+<div class="content">
+<a class="image" href="images/FigurHendelsesforløp.png"><img src="images/FigurHendelsesforløp.png" alt="FigurHendelsesforløp"></a>
+</div>
+<div class="title">Figur 3. Hendelsesforløp</div>
+</div>
+<div class="paragraph">
+<p>&lt;#kanskje et konkret eksempel på et lite hendelsesforløp, beskrevet med CPSV-AP-NO#&gt;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="KnytteDeltagendeAktørerTilEnTjeneste"><a class="link" href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a></h3>
+<div id="img-FigurTjenesteOgDeltagelse" class="imageblock">
+<div class="content">
+<a class="image" href="images/FigurTjenesteOgDeltagelse.png"><img src="images/FigurTjenesteOgDeltagelse.png" alt="FigurTjenesteOgDeltagelse"></a>
+</div>
+<div class="title">Figur 4. Tjeneste og Deltagelse</div>
+</div>
+<div class="paragraph">
+<p>Som illustrert i figur <a href="#img-FigurTjenesteOgDeltagelse">Tjeneste og Deltagelse</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste - eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste og dens eier (en Aktør, <code>foaf:Agent</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste og dens kompetente organ.</p>
+</div>
+<div class="paragraph">
+<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse">Klassen Deltagelse (cv:Participation)</a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-deltagende">Tjeneste – deltagende (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a> (eller <a href="#OffentligOrganisasjon-harRolle">Offentlig organisasjon – har rolle i (cv:playsRole)</a>).</p>
+</div>
+<div class="paragraph">
+<p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument» når ikke alle deltagende aktører har begge roller.</p>
+</div>
+<div class="paragraph">
+<p>Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Søknad om skjenkebevilling».</p>
+</div>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;søknadOmSkjenkebevilling&gt; a cpsv:PublicService ;
+   cv:hasParticipation &lt;deltagendeDataleverandør&gt; ; .
+
+&lt;deltagendeDataleverandør&gt; a cv:Participation ;
+   dct:description "deltagende dataleverandører til tjenesten Søknad om skjenkebevilling"@nb ;
+   cv:role &lt;dataleverandør&gt; ; .
+
+&lt;Politidirektoratet&gt; a cv:PublicOrganisation ;
+   cv:playsRole &lt;deltagendeDataleverandør&gt; ; .</pre>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1390,7 +1424,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/FigurTjenesteMedDataInnOgUt.png"><img src="images/FigurTjenesteMedDataInnOgUt.png" alt="FigurTjenesteMedDataInnOgUt"></a>
 </div>
-<div class="title">Figur 4. Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</div>
+<div class="title">Figur 5. Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</div>
 </div>
 <div class="paragraph">
 <p>Som illustrert i figur <a href="#img-TjenesteOgData">Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</a>, kan et Tjenesteresultat (<code>cv:Output</code>) produsert av en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cpsv:PublicService</code>)) være et Datasett (<code>dcat:Dataset</code>), f.eks.  «Skjenkebevillingen» som et resultat fra tjenesten «Søknad om skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (<code>cv:Evidence</code>) kan også bekreftes ved en dokumentreferanse (<code>cccev:DocumentReference</code>) som kan være et datasett (<code>dcat:Dataset</code>), f.eks. «Vandelsattest».</p>
@@ -1406,27 +1440,6 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="paragraph">
 <p>Se ellers også <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a> for krav til begrepsbeskrivelser, og <a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-begrep</a> for hvordan begrepsbeskrivelser utformet i henhold til <em>Forvaltningsstandard for begrepsbeskrivelser</em> tilgjengeliggjøres i RDF.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="KnytteTilDatatjeneste"><a class="link" href="#KnytteTilDatatjeneste">Å knytte en tjenestekanal til en datatjeneste (også kalt API)</a></h3>
-<div class="paragraph">
-<p>Spesifikasjonen utvider CPSV-AP med en egendefinert egenskap «datatjeneste» (<code>cpsvno:dataService</code>), som kan brukes til å knytte en tjenestekanal (<code>cv:Channel</code>) til en datatjeneste/API (<code>dcat:DataService</code>). Det anbefales å referere til datatjenestebeskrivelser som er publisert i f.eks. <a href="https://data.norge.no/dataservices">API-delen av Felles datakatalog</a>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="Hendelsesstrøm"><a class="link" href="#Hendelsesstrøm">Å publisere hendelsesstrøm</a></h3>
-<div id="img-HendelseOgDistribusjon" class="imageblock">
-<div class="content">
-<a class="image" href="images/FigurHendelseOgDistribusjon.png"><img src="images/FigurHendelseOgDistribusjon.png" alt="FigurHendelseOgDistribusjon"></a>
-</div>
-<div class="title">Figur 5. Hendelse og Distribusjon</div>
-</div>
-<div class="paragraph">
-<p>Som illustrert i figur <a href="#img-HendelseOgDistribusjon">Hendelse og Distribusjon</a> har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (<code>dcat:distribution</code>) i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a> og <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a>, og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Denne egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm som f.eks. kan abonneres på.</p>
-</div>
-<div class="paragraph">
-<p>Se ellers <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng">Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i Veileder for beskrivelse av datasett osv.</a>, for hvordan et datasett (som i dette tilfellet er en hendelsesbeskrivelse) kan knyttes til distribusjon og datatjeneste (også kalt API).</p>
 </div>
 </div>
 <div class="sect2">
@@ -1460,40 +1473,36 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 </div>
 <div class="sect2">
-<h3 id="KnytteDeltagendeAktørerTilEnTjeneste"><a class="link" href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a></h3>
-<div id="img-FigurTjenesteOgDeltagelse" class="imageblock">
+<h3 id="KnytteTilDatatjeneste"><a class="link" href="#KnytteTilDatatjeneste">Å knytte en tjenestekanal til en datatjeneste (også kalt API)</a></h3>
+<div class="paragraph">
+<p>Spesifikasjonen utvider CPSV-AP med en egendefinert egenskap «datatjeneste» (<code>cpsvno:dataService</code>), som kan brukes til å knytte en tjenestekanal (<code>cv:Channel</code>) til en datatjeneste/API (<code>dcat:DataService</code>). Det anbefales å referere til datatjenestebeskrivelser som er publisert i f.eks. <a href="https://data.norge.no/dataservices">API-delen av Felles datakatalog</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Hendelsesstrøm"><a class="link" href="#Hendelsesstrøm">Å publisere hendelsesstrøm</a></h3>
+<div id="img-HendelseOgDistribusjon" class="imageblock">
 <div class="content">
-<a class="image" href="images/FigurTjenesteOgDeltagelse.png"><img src="images/FigurTjenesteOgDeltagelse.png" alt="FigurTjenesteOgDeltagelse"></a>
+<a class="image" href="images/FigurHendelseOgDistribusjon.png"><img src="images/FigurHendelseOgDistribusjon.png" alt="FigurHendelseOgDistribusjon"></a>
 </div>
-<div class="title">Figur 7. Tjeneste og Deltagelse</div>
-</div>
-<div class="paragraph">
-<p>Som illustrert i figur <a href="#img-FigurTjenesteOgDeltagelse">Tjeneste og Deltagelse</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste - eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste og dens eier (en Aktør, <code>foaf:Agent</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste og dens kompetente organ.</p>
+<div class="title">Figur 7. Hendelse og Distribusjon</div>
 </div>
 <div class="paragraph">
-<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse">Klassen Deltagelse (cv:Participation)</a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-deltagende">Tjeneste – deltagende (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a> (eller <a href="#OffentligOrganisasjon-harRolle">Offentlig organisasjon – har rolle i (cv:playsRole)</a>).</p>
+<p>Som illustrert i figur <a href="#img-HendelseOgDistribusjon">Hendelse og Distribusjon</a> har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (<code>dcat:distribution</code>) i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a> og <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a>, og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Denne egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm som f.eks. kan abonneres på.</p>
 </div>
 <div class="paragraph">
-<p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument» når ikke alle deltagende aktører har begge roller.</p>
+<p>Se ellers <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng">Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i Veileder for beskrivelse av datasett osv.</a>, for hvordan et datasett (som i dette tilfellet er en hendelsesbeskrivelse) kan knyttes til distribusjon og datatjeneste (også kalt API).</p>
 </div>
-<div class="paragraph">
-<p>Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Søknad om skjenkebevilling».</p>
 </div>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
+<div class="sect2">
+<h3 id="BeskriveEnKatalog"><a class="link" href="#BeskriveEnKatalog">Å beskrive en tjeneste-/hendelseskatalog</a></h3>
+<div id="img-Katalogbeskrivelse" class="imageblock">
 <div class="content">
-<pre>&lt;søknadOmSkjenkebevilling&gt; a cpsv:PublicService ;
-   cv:hasParticipation &lt;deltagendeDataleverandør&gt; ; .
-
-&lt;deltagendeDataleverandør&gt; a cv:Participation ;
-   dct:description "deltagende dataleverandører til tjenesten Søknad om skjenkebevilling"@nb ;
-   cv:role &lt;dataleverandør&gt; ; .
-
-&lt;Politidirektoratet&gt; a cv:PublicOrganisation ;
-   cv:playsRole &lt;deltagendeDataleverandør&gt; ; .</pre>
+<a class="image" href="images/FigurKatalog.png"><img src="images/FigurKatalog.png" alt="FigurKatalog"></a>
 </div>
+<div class="title">Figur 8. Katalogbeskrivelse</div>
+</div>
+<div class="paragraph">
+<p>EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (<code>dcat:Catalog</code>) fra <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a>. Spesifikasjonen utvider også klassen Katalog med egendefinerte egenskapene «tjenestebeskrivelse» (<code>cpsvno:service</code>) og «hendelsesbeskrivelse» (<code>cpsvno:event</code>), som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.</p>
 </div>
 </div>
 </div>
@@ -1616,7 +1625,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenAktør.png"><img src="images/KlassenAktør.png" alt="KlassenAktør"></a>
 </div>
-<div class="title">Figur 8. Klassen Aktør (foaf:Agent)</div>
+<div class="title">Figur 9. Klassen Aktør (foaf:Agent)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2011,7 +2020,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenDeltagelse.png"><img src="images/KlassenDeltagelse.png" alt="KlassenDeltagelse"></a>
 </div>
-<div class="title">Figur 9. Klassen Deltagelse (cv:Participation)</div>
+<div class="title">Figur 10. Klassen Deltagelse (cv:Participation)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2232,7 +2241,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenDokumentasjon.png"><img src="images/KlassenDokumentasjon.png" alt="KlassenDokumentasjon"></a>
 </div>
-<div class="title">Figur 10. Klassen Dokumentasjon (cv:Evidence)</div>
+<div class="title">Figur 11. Klassen Dokumentasjon (cv:Evidence)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2712,7 +2721,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenDokumentreferanse.png"><img src="images/KlassenDokumentreferanse.png" alt="KlassenDokumentreferanse"></a>
 </div>
-<div class="title">Figur 11. Klassen Dokumentreferanse (cccev:DocumentReference)</div>
+<div class="title">Figur 12. Klassen Dokumentreferanse (cccev:DocumentReference)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2984,7 +2993,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenGebyr.png"><img src="images/KlassenGebyr.png" alt="KlassenGebyr"></a>
 </div>
-<div class="title">Figur 12. Klassen Gebyr (cv:Cost)</div>
+<div class="title">Figur 13. Klassen Gebyr (cv:Cost)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3336,7 +3345,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenHendelse.png"><img src="images/KlassenHendelse.png" alt="KlassenHendelse"></a>
 </div>
-<div class="title">Figur 13. Klassen Hendelse (cv:Event)</div>
+<div class="title">Figur 14. Klassen Hendelse (cv:Event)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3744,7 +3753,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenKatalog.png"><img src="images/KlassenKatalog.png" alt="KlassenKatalog"></a>
 </div>
-<div class="title">Figur 14. Klassen Katalog (dcat:Catalog)</div>
+<div class="title">Figur 15. Klassen Katalog (dcat:Catalog)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4784,7 +4793,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenKontaktpunkt.png"><img src="images/KlassenKontaktpunkt.png" alt="KlassenKontaktpunkt"></a>
 </div>
-<div class="title">Figur 15. Klassen Kontaktpunkt (vard:Kind)</div>
+<div class="title">Figur 16. Klassen Kontaktpunkt (vard:Kind)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4884,7 +4893,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenLivshendelse.png"><img src="images/KlassenLivshendelse.png" alt="KlassenLivshendelse"></a>
 </div>
-<div class="title">Figur 16. Klassen Livshendelse (cv:LifeEvent)</div>
+<div class="title">Figur 17. Klassen Livshendelse (cv:LifeEvent)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5393,7 +5402,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenOffentligOrganisasjon.png"><img src="images/KlassenOffentligOrganisasjon.png" alt="KlassenOffentligOrganisasjon"></a>
 </div>
-<div class="title">Figur 17. Klassen Offentlig organisasjon (cv:PublicOrganisation)</div>
+<div class="title">Figur 18. Klassen Offentlig organisasjon (cv:PublicOrganisation)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5931,7 +5940,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenOffentligTjeneste.png"><img src="images/KlassenOffentligTjeneste.png" alt="KlassenOffentligTjeneste"></a>
 </div>
-<div class="title">Figur 18. Klassen Offentlig tjeneste (cpsv:PublicService)</div>
+<div class="title">Figur 19. Klassen Offentlig tjeneste (cpsv:PublicService)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7712,7 +7721,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenRegel.png"><img src="images/KlassenRegel.png" alt="KlassenRegel"></a>
 </div>
-<div class="title">Figur 19. Klassen Regel (cv:Rule)</div>
+<div class="title">Figur 20. Klassen Regel (cv:Rule)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8080,7 +8089,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenRegulativRessurs.png"><img src="images/KlassenRegulativRessurs.png" alt="KlassenRegulativRessurs"></a>
 </div>
-<div class="title">Figur 20. Klassen Regulativ ressurs (eli:LegealResource)</div>
+<div class="title">Figur 21. Klassen Regulativ ressurs (eli:LegealResource)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8382,7 +8391,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="content">
 <a class="image" href="images/KlassenTidsrom.png"><img src="images/KlassenTidsrom.png" alt="KlassenTidsrom"></a>
 </div>
-<div class="title">Figur 21. Klassen Tidsrom (dct:PeriodOfTime)</div>
+<div class="title">Figur 22. Klassen Tidsrom (dct:PeriodOfTime)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8542,7 +8551,7 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 <div class="content">
 <a class="image" href="images/KlassenTjeneste.png"><img src="images/KlassenTjeneste.png" alt="KlassenTjeneste"></a>
 </div>
-<div class="title">Figur 22. Klassen Tjeneste (cpsvno:Service)</div>
+<div class="title">Figur 23. Klassen Tjeneste (cpsvno:Service)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -10072,7 +10081,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="content">
 <a class="image" href="images/KlassenTjenestekanal.png"><img src="images/KlassenTjenestekanal.png" alt="KlassenTjenestekanal"></a>
 </div>
-<div class="title">Figur 23. Klassen Tjenestekanal (cv:Channel)</div>
+<div class="title">Figur 24. Klassen Tjenestekanal (cv:Channel)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -10749,7 +10758,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="content">
 <a class="image" href="images/KlassenTjenesteresultat.png"><img src="images/KlassenTjenesteresultat.png" alt="KlassenTjenesteresultat"></a>
 </div>
-<div class="title">Figur 24. Klassen Tjenesteresultat (cv:Output)</div>
+<div class="title">Figur 25. Klassen Tjenesteresultat (cv:Output)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -11107,7 +11116,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="content">
 <a class="image" href="images/KlassenVilkår.png"><img src="images/KlassenVilkår.png" alt="KlassenVilkår"></a>
 </div>
-<div class="title">Figur 25. Klassen Vilkår (cv:CriterionRequirement)</div>
+<div class="title">Figur 26. Klassen Vilkår (cv:CriterionRequirement)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -11829,7 +11838,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="content">
 <a class="image" href="images/KlassenVirksomhetshendelse.png"><img src="images/KlassenVirksomhetshendelse.png" alt="KlassenVirksomhetshendelse"></a>
 </div>
-<div class="title">Figur 26. Klassen Virksomhetshendelse (cv:BusinessEvent)</div>
+<div class="title">Figur 27. Klassen Virksomhetshendelse (cv:BusinessEvent)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -12276,7 +12285,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="content">
 <a class="image" href="images/KlassenÅpningstid.png"><img src="images/KlassenÅpningstid.png" alt="KlassenÅpningstid"></a>
 </div>
-<div class="title">Figur 27. Klassen Åpningstid (schema:OpeningHoursSpecificatinon)</div>
+<div class="title">Figur 28. Klassen Åpningstid (schema:OpeningHoursSpecificatinon)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -12602,7 +12611,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-12-01 06:56:22 UTC
+Sist oppdatert 2021-12-01 07:47:17 UTC
 </div>
 </div>
 </body>

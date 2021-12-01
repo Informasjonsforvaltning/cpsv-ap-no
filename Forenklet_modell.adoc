@@ -7,16 +7,18 @@ Figur <<img-ForenkletModell>> viser en forenklet modell av tjeneste- og hendelse
 [link=images/ForenkletModell-CPSV-AP-NO.png]
 image::images/ForenkletModell-CPSV-AP-NO.png[]
 
-include::TemaBeskriveEnKatalog.adoc[]
+include::TemaHendelsesforløp.adoc[]
+
+include::TemaKnytteDeltagendeAktørerTilEnTjeneste.adoc[]
 
 include::TemaKnytteTilDatasett.adoc[]
 
 include::TemaKnytteTilBegrep.adoc[]
 
+include::TemaKnytteTilRegelverk.adoc[]
+
 include::TemaKnytteTilDatatjeneste.adoc[]
 
 include::TemaHendelsesstrøm.adoc[]
 
-include::TemaKnytteTilRegelverk.adoc[]
-
-include::TemaKnytteDeltagendeAktørerTilEnTjeneste.adoc[]
+include::TemaBeskriveEnKatalog.adoc[]
