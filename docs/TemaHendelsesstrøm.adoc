@@ -1,0 +1,10 @@
+=== Å publisere hendelsesstrøm [[Hendelsesstrøm]]
+
+[[img-HendelseOgDistribusjon]]
+.Hendelse og Distribusjon
+[link=images/FigurHendelseOgDistribusjon.png]
+image::images/FigurHendelseOgDistribusjon.png[]
+
+Som illustrert i figur <<img-HendelseOgDistribusjon>> har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (`dcat:distribution`) i <<Hendelse>>, <<Livshendelse>> og <<Virksomhetshendelse>>, og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Denne egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm som f.eks. kan abonneres på.
+
+Se ellers https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng[Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i Veileder for beskrivelse av datasett osv.], for hvordan et datasett (som i dette tilfellet er en hendelsesbeskrivelse) kan knyttes til distribusjon og datatjeneste (også kalt API).
