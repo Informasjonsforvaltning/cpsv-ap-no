@@ -5,8 +5,8 @@ Spesifikasjonen har lagt til grunn at en hendelse er en ikke-delbar enhet, baser
 Det er på den annen side mulig å beskrive et hendelsesforløp, dvs. en rekke av enkelthendelser, som vist i figur <<img-Hendelsesforløp>>.
 
 [[img-Hendelsesforløp]]
-.Hendelsesforløp
+.Klasser og egenskaper for beskrivelse av hendelsesforløp
 [link=images/FigurHendelsesforløp.png]
 image::images/FigurHendelsesforløp.png[]
 
-<#kanskje et konkret eksempel på et lite hendelsesforløp, beskrevet med CPSV-AP-NO#>
+#<et konkret eksempel på et lite hendelsesforløp, beskrevet med CPSV-AP-NO, kommer>#
