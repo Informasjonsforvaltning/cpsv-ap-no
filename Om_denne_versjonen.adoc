@@ -34,9 +34,9 @@ Pga. at «livshendelse» er et ord som er politisk forankret både i Norge og EU
 ... Generelt, gi oss tilbakemelding på hva (hvilket eksempel til hvilken klasse/egenskap) du mener er feil eller uklare, eller mangler etc., med konkrete forbedringsforslag og ev. (alternative) eksempler.
 .... Når det gjelder å utarbeide eksempler har kjernegruppen brukt følgende prioriteringsrekkefølge: obligatoriske egenskaper - anbefalte egenskaper - valgfrie egenskaper, og prosatekst eksempler (i tabellene markert med eksempel) – eksempler i RDF Turtle (etter tabellene). Kjernegruppen har ikke hatt som mål å ha eksempler på alle egenskaper.
 . RDF-tekniske innspill:
-.. Under utarbeidelse av denne versjonen av spesifikasjonen, ble det identifisert behov som ikke er dekket av CPSV-AP. Vi har derfor utvidet CPSV-AP med å tilføye klasser og egenskaper, enten ved å gjenbruke klasser og egenskaper fra eksisterende RDF-vokabularer eller å bruke våre egendefinerte klasser og egenskaper (med navnerom `cpsvno`) der vi ikke fant egnede tilsvar i eksisterende RDF-vokabularer.
+.. Under utarbeidelse av denne versjonen av spesifikasjonen, ble det identifisert behov som ikke er dekket av CPSV-AP. Vi har derfor utvidet CPSV-AP med å tilføye klasser og egenskaper, enten ved å gjenbruke klasser og egenskaper fra eksisterende RDF-vokabularer eller å bruke våre egendefinerte klasser og egenskaper (med navnerom `cpsvno` eller `dcatno`) der vi ikke fant egnede tilsvar i eksisterende RDF-vokabularer.
 ... Generelt: Si fra hvis vi har valgt feil klasser/egenskaper fra eksisterende RDF-vokabularer, med forslag til hva vi burde ha valgt.
-... Spesielt: Til våre egendefinerte klasser/egenskaper (med navnerom `cpsvno`), si fra hvis du vet om noen eksisterende klasser/egenskaper som dekker de samme behovene og som vi burde brukt istedenfor å lage våre egendefinerte klasser/egenskaper.
+... Spesielt: Til våre egendefinerte klasser/egenskaper (med navnerom `cpsvno` og `dcatno`), si fra hvis du vet om noen eksisterende klasser/egenskaper som dekker de samme behovene og som vi burde brukt istedenfor å lage våre egendefinerte klasser/egenskaper.
 
 
 Hvordan gir du tilbakemeldinger?

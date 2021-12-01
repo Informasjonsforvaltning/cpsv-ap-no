@@ -133,6 +133,27 @@ Eksempel i RDF Turtle:
    dct:title "Søknad om skjenkebevilling"@nb ; .
 -----
 
+==== Offentlig tjeneste – produserer (cpsv:produces) [[OffentligTjeneste-produserer]]
+
+[cols="30s,70d"]
+|===
+|English name|produces
+|URI|cpsv:produces
+|Range|cv:Output
+|Beskrivelse|Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.
+|Usage note|Links a Public Service to one or more instances of the Output class escribing the actual result of executing a given Public Service.
+|Multiplisitet|1..n
+|Kravsnivå |Obligatorisk/Mandatory
+|Merknad 1|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output.` På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.
+|Merknad 2| Norsk utvidelse: kravsnivået endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe. 
+|Eksempel|Selve «bevillingen» er et tjenesteresultat av tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<bevilling> a cv:Output , dcat:Dataset ; .
+-----
+
 === Anbefalte egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-anbefalte-egenskaper]]
 
 ==== Offentlig tjeneste – dekningsområde (dct:spatial) [[OffentligTjeneste-dekningsområde]]
@@ -213,27 +234,6 @@ Eksempel i RDF Turtle:
 -----
 <søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
    foaf:homepage <https://kommune24-7.no/1813> ; .
------
-
-==== Offentlig tjeneste – produserer (cpsv:produces) [[OffentligTjeneste-produserer]]
-
-[cols="30s,70d"]
-|===
-|English name|produces
-|URI|cpsv:produces
-|Range|cv:Output
-|Beskrivelse|Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.
-|Usage note|Links a Public Service to one or more instances of the Output class escribing the actual result of executing a given Public Service.
-|Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Norsk utvidelse: kravsnivået endret fra valgfri til anbefalt, dette for å samkjøre med DCAT-AP-NO.
-|Merknad 2|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output.` På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.
-|Eksempel|Selve «bevillingen» er et tjenesteresultat av tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.
-|===
-
-Eksempel i RDF Turtle:
------
-<bevilling> a cv:Output , dcat:Dataset ; .
 -----
 
 ==== Offentlig tjeneste – status (adms:status) [[OffentligTjeneste-status]]
