@@ -1157,7 +1157,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="sect2">
 <h3 id="Omfang-og-avgrensing"><a class="link" href="#Omfang-og-avgrensing">Omfang og avgrensing</a></h3>
 <div class="paragraph">
-<p>Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser samt å utveksle/tilgjengeliggjøre beskrivelsene. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere offentlige tjenester, dvs. ikke en hvilken som helst hendelse. Spesifikasjonen dekker også behovet for å beskrive private tjenester som f.eks. er involvert i sammenhengende tjenester fra det offentlige.</p>
+<p>Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser samt å utveksle/tilgjengeliggjøre beskrivelsene. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere (offentlige) tjenester, dvs. ikke en hvilken som helst hendelse. Spesifikasjonen dekker også behovet for å beskrive private tjenester som f.eks. er involvert i sammenhengende tjenester fra det offentlige.</p>
 </div>
 <div class="paragraph">
 <p>Spesifikasjonen er basert EUs <a href="https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en">CPSV-AP</a> (<em>Core Public Service Vocabulary Application Profile</em>).</p>
@@ -1487,7 +1487,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="title">Figur 7. Hendelse og Distribusjon</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i figur <a href="#img-HendelseOgDistribusjon">Hendelse og Distribusjon</a> har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (<code>dcat:distribution</code>) i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a> og <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a>, og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Denne egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm som f.eks. kan abonneres på.</p>
+<p>Som illustrert i figur <a href="#img-HendelseOgDistribusjon">Hendelse og Distribusjon</a> har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (<code>dcat:distribution</code>) i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a> og <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a>, og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Denne egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm.</p>
 </div>
 <div class="paragraph">
 <p>Se ellers <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng">Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i Veileder for beskrivelse av datasett osv.</a>, for hvordan et datasett (som i dette tilfellet er en hendelsesbeskrivelse) kan knyttes til distribusjon og datatjeneste (også kalt API).</p>
@@ -3383,7 +3383,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: I CPSV-AP er ikke Hendelse (<code>cv:Event</code>) en subklasse av Datasett (<code>dcat:Dataset</code>). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte Hendelse som Datasett.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: I CPSV-AP er ikke Hendelse (<code>cv:Event</code>) en subklasse av Datasett (<code>dcat:Dataset</code>). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte beskrivelse av Hendelse som Datasett.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -3661,11 +3661,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til distribusjon av hendelse som f.eks. kan abonneres på.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til beskrivelsen av distribusjon av hendelsen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to Distribution of the Event.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to the description of Distribution of the Event.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -3677,7 +3677,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm som kan abonneres på.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -12611,7 +12611,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-12-01 07:47:17 UTC
+Sist oppdatert 2021-12-01 08:35:38 UTC
 </div>
 </div>
 </body>
