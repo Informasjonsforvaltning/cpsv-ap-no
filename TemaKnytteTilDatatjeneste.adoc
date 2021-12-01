@@ -1,0 +1,3 @@
+=== Å knytte en tjenestekanal til en datatjeneste (også kalt API) [[KnytteTilDatatjeneste]]
+
+Spesifikasjonen utvider CPSV-AP med en egendefinert egenskap «datatjeneste» (`cpsvno:dataService`), som kan brukes til å knytte en tjenestekanal (`cv:Channel`) til en datatjeneste/API (`dcat:DataService`). Det anbefales å referere til datatjenestebeskrivelser som er publisert i f.eks. https://data.norge.no/dataservices[API-delen av Felles datakatalog].
