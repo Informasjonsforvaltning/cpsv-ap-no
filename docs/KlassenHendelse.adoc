@@ -14,7 +14,7 @@ image::images/KlassenHendelse.png[]
 |Subklasse av / Subclass of|dcat:Dataset
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1|Bruk den semantisk sett mer presise <<Livshendelse>> eller <<Virksomhetshendelse>>, istedenfor denne generiske klassen.
-|Merknad 2|Norsk utvidelse: I CPSV-AP er ikke Hendelse (`cv:Event`) en subklasse av Datasett (`dcat:Dataset`). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte Hendelse som Datasett.
+|Merknad 2|Norsk utvidelse: I CPSV-AP er ikke Hendelse (`cv:Event`) en subklasse av Datasett (`dcat:Dataset`). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte beskrivelse av Hendelse som Datasett.
 |Eksempel|Se tilsvarende eksempler i <<Livshendelse>> eller <<Virksomhetshendelse>>.
 |===
 
@@ -109,11 +109,11 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|distribution
 |URI|dcat:distribution
 |Range|dcat:Distribution
-|Beskrivelse|Brukes til å referere til distribusjon av hendelse som f.eks. kan abonneres på.
-|Usage note|To refer to Distribution of the Event.
+|Beskrivelse|Brukes til å referere til beskrivelsen av distribusjon av hendelsen.
+|Usage note|To refer to the description of Distribution of the Event.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm som kan abonneres på.
+|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm.
 |Eksempel|
 |===
 
