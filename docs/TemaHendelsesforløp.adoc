@@ -9,4 +9,26 @@ Det er på den annen side mulig å beskrive et hendelsesforløp, dvs. en rekke a
 [link=images/FigurHendelsesforløp.png]
 image::images/FigurHendelsesforløp.png[]
 
-#<et konkret eksempel på et lite hendelsesforløp, beskrevet med CPSV-AP-NO, kommer>#
+Figur <<img-FigurSyktBarnBeskrevetMedCPSVNO>> illustrerer hvordan deler av livshendelsen Alvorlig sykt barn illustrert i figur <<img-SyktBarn>>, beskrives med CPSP-AP-NO.
+
+[[img-FigurSyktBarnBeskrevetMedCPSVNO]]
+.Eksempel på bruk av CPSV-AP-NO til å beskrive deler av livshendelsen "Alvorlig sykt barn"
+[link=images/FigurSyktBarnBeskrevetMedCPSVNO.png]
+image::images/FigurSyktBarnBeskrevetMedCPSVNO.png[]
+
+Eksempel i RDF Turtle:
+-----
+<barnetErBlittSyk> a cv:LifeEvent ;
+  cpsvno:triggersNeedFor <legetjeneste> .
+
+<legetjeneste> a cpsv:PublicService ;
+  cpsv:produces <e-resept> .
+
+<e-resept> a cv:Output, dcat:Dataset ;
+  skos:causes <e-reseptSendt> .
+
+<e-reseptSendt> a cv:Event ;
+  cpsvno:tiggersNeedFor <apotektjeneste> .
+
+<apotektjeneste> a cpsvno:Service. 
+-----
