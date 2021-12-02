@@ -1413,18 +1413,18 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument» når ikke alle deltagende aktører har begge roller.</p>
 </div>
 <div class="paragraph">
-<p>Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Søknad om skjenkebevilling».</p>
+<p>Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Skjenkebevilling».</p>
 </div>
 <div class="paragraph">
 <p>Eksempel i RDF Turtle:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadOmSkjenkebevilling&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevilling&gt; a cpsv:PublicService ;
    cv:hasParticipation &lt;deltagendeDataleverandør&gt; ; .
 
 &lt;deltagendeDataleverandør&gt; a cv:Participation ;
-   dct:description "deltagende dataleverandører til tjenesten Søknad om skjenkebevilling"@nb ;
+   dct:description "deltagende dataleverandører til tjenesten Skjenkebevilling"@nb ;
    cv:role &lt;dataleverandør&gt; ; .
 
 &lt;Politidirektoratet&gt; a cv:PublicOrganisation ;
@@ -1441,7 +1441,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="title">Figur 7. Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i figur <a href="#img-TjenesteOgData">Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</a>, kan et Tjenesteresultat (<code>cv:Output</code>) produsert av en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cpsv:PublicService</code>)) være et Datasett (<code>dcat:Dataset</code>), f.eks.  «Skjenkebevillingen» som et resultat fra tjenesten «Søknad om skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (<code>cv:Evidence</code>) kan også bekreftes ved en dokumentreferanse (<code>cccev:DocumentReference</code>) som kan være et datasett (<code>dcat:Dataset</code>), f.eks. «Vandelsattest».</p>
+<p>Som illustrert i figur <a href="#img-TjenesteOgData">Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat</a>, kan et Tjenesteresultat (<code>cv:Output</code>) produsert av en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cpsv:PublicService</code>)) være et Datasett (<code>dcat:Dataset</code>), f.eks. selve  «bevilling» som et resultat fra tjenesten «Skjenkebevilling» kan deles som et datasett. Et dokumentasjonskrav (<code>cv:Evidence</code>) kan også bekreftes ved en dokumentreferanse (<code>cccev:DocumentReference</code>) som kan være et datasett (<code>dcat:Dataset</code>), f.eks. «Vandelsattest».</p>
 </div>
 <div class="paragraph">
 <p>Se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng">Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i <em>Veileder for beskrivelse av datasett osv.</em></a>, for hvordan datasett (som f.eks. «Skjenkebevillingen» og «Vandelsattest») kan videre knyttes til distribusjon, datatjeneste (også kalt API), begrep og informasjonsmodell.</p>
@@ -1450,7 +1450,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="sect2">
 <h3 id="KnytteTilBegrep"><a class="link" href="#KnytteTilBegrep">Å knytte en tjeneste eller hendelse til begrep</a></h3>
 <div class="paragraph">
-<p>Spesifikasjonen utvider CPSV-AP med egenskapen «begrep» (<code>dct:subject</code>) i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a>, <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a>, <a href="#Tjeneste">Klassen Tjeneste (cpsvno:Service)</a> og <a href="#OffentligTjeneste">Klassen Offentlig tjeneste (cpsv:PublicService)</a>. Egenskapen brukes til å referere til et eller flere begreper som er relatert til hendelsen/tjenesten og som er viktig for å forstå hendelsen/tjenesten. Det anbefales å referere til begreper som er publisert i f.eks. <a href="https://data.norge.no/concepts">begrepsdelen av Felles datakatalog</a>. Eksempel: begrepet ‘daglig leder’ er viktig for tjenesten «Søknad om skjenkebevilling».</p>
+<p>Spesifikasjonen utvider CPSV-AP med egenskapen «begrep» (<code>dct:subject</code>) i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a>, <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a>, <a href="#Tjeneste">Klassen Tjeneste (cpsvno:Service)</a> og <a href="#OffentligTjeneste">Klassen Offentlig tjeneste (cpsv:PublicService)</a>. Egenskapen brukes til å referere til et eller flere begreper som er relatert til hendelsen/tjenesten og som er viktig for å forstå hendelsen/tjenesten. Det anbefales å referere til begreper som er publisert i f.eks. <a href="https://data.norge.no/concepts">begrepsdelen av Felles datakatalog</a>. Eksempel: begrepet ‘daglig leder’ er viktig for tjenesten «Skjenkebevilling».</p>
 </div>
 <div class="paragraph">
 <p>Se ellers også <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a> for krav til begrepsbeskrivelser, og <a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-begrep</a> for hvordan begrepsbeskrivelser utformet i henhold til <em>Forvaltningsstandard for begrepsbeskrivelser</em> tilgjengeliggjøres i RDF.</p>
@@ -6006,7 +6006,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Søknad om skjenkebevilling»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skjenkebevilling</p></td>
 </tr>
 </tbody>
 </table>
@@ -6015,7 +6015,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ; .</pre>
+<pre>&lt;skjenkebevilling&gt; a cpsv:PublicService ; .</pre>
 </div>
 </div>
 <div class="sect2">
@@ -6062,7 +6062,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Søknad om skjenkebevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.</p></td>
 </tr>
 </tbody>
 </table>
@@ -6071,8 +6071,8 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
-   dct:description "Søknad om skjenkebevilling for skjenking av alkoholholdig drikk, enten som alminnelig bevilling eller som bevilling for lukket selskap."@nb ; .</pre>
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   dct:description "Bevilling for skjenking av alkoholholdig drikk, enten som alminnelig bevilling eller som bevilling for lukket selskap."@nb ; .</pre>
 </div>
 </div>
 </div>
@@ -6118,7 +6118,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brønnøy kommune er det kompetente organet for tjenesten «Søknad om skjenkebevilling i Brønnøy kommune»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brønnøy kommune er det kompetente organet for tjenesten «Skjenkebevilling i Brønnøy kommune»</p></td>
 </tr>
 </tbody>
 </table>
@@ -6127,7 +6127,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cv:hasCompetentAuthority &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291&gt; ; . # Brønnøy kommune</pre>
 </div>
 </div>
@@ -6237,7 +6237,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt for «Søknad om skjenkebevilling (i Brønnøy kommune)»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt for «Skjenkebevilling (i Brønnøy kommune)»</p></td>
 </tr>
 </tbody>
 </table>
@@ -6246,7 +6246,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    dcat:contactPoint [ a  vcard:Organization ; # kontaktpunkt
      vcard:hasTelephone "tel:+4775012000" ;
     ] ;</pre>
@@ -6295,7 +6295,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Søknad om skjenkebevilling»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Sskjenkebevilling»</p></td>
 </tr>
 </tbody>
 </table>
@@ -6304,8 +6304,8 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
-   dct:title "Søknad om skjenkebevilling"@nb ; .</pre>
+<pre>&lt;skjenkebevilling&gt; a cpsv:PublicService ;
+   dct:title "Skjenkebevilling"@nb ; .</pre>
 </div>
 </div>
 </div>
@@ -6355,7 +6355,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Selve «bevillingen» er et tjenesteresultat av tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selve «bevillingen» er et tjenesteresultat av tjenesten «Skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.</p></td>
 </tr>
 </tbody>
 </table>
@@ -6425,7 +6425,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Søknad om skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.</p></td>
 </tr>
 </tbody>
 </table>
@@ -6434,7 +6434,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    dct:spatial &lt;http://publications.europa.eu/resource/authority/country/NOR&gt; , # Norge
       &lt;https://data.geonorge.no/administrativeEnheter/kommune/id/172833&gt; ; # Brønnøy kommune
    .</pre>
@@ -6594,7 +6594,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    foaf:homepage &lt;https://kommune24-7.no/1813&gt; ; .</pre>
 </div>
 </div>
@@ -6650,7 +6650,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
   adms:status &lt;http://purl.org/adms/status/Completed&gt; ; # tjenesten er ferdig utviklet
      .</pre>
 </div>
@@ -6828,7 +6828,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Det tar 1 dag for å behandle «Søknad om skjenkebevilling (i Brønnøy kommune)».</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det tar 1 dag for å behandle en søknad om skjenkebevilling (i Brønnøy kommune).</p></td>
 </tr>
 </tbody>
 </table>
@@ -6837,7 +6837,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cv:processingTime "P1D"^^xsd:duration ; .</pre>
 </div>
 </div>
@@ -7036,7 +7036,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Et av dokumentasjonskravene til «Søknad om skjenkebevilling» er bestått «Kunnskapsprøve».</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et av dokumentasjonskravene til å søke om skjenkebevilling er bestått «Kunnskapsprøve».</p></td>
 </tr>
 </tbody>
 </table>
@@ -7045,8 +7045,9 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cpsv:hasInput &lt;beståttKunnskapsrøve&gt; ; .
+
 &lt;beståttKunnskapsrøve&gt; a cv:Evidence .</pre>
 </div>
 </div>
@@ -7097,7 +7098,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenesten «Søknad om skjenkebevilling» grupperes under hendelsen «Å starte og drive en restaurant»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenesten «Skjenkebevilling» grupperes under hendelsen «Starte og drive en restaurant»</p></td>
 </tr>
 </tbody>
 </table>
@@ -7106,7 +7107,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cv:isGroupedBy &lt;starteOgDriveRestaurant&gt; .
 
 &lt;starteOgDriveRestaurant&gt; a cv:Event .</pre>
@@ -7206,7 +7207,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» tilbys online på kommunens <a href="https://kommune24-7.no/1813/">skjemaportal</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenesten «Skjenkebevilling (i Brønnøy kommune)» tilbys online på kommunens <a href="https://kommune24-7.no/1813/">skjemaportal</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -7215,7 +7216,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cv:hasChannel &lt;https://kommune24-7.no/1813/&gt; ; .</pre>
 </div>
 </div>
@@ -7313,7 +7314,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ifm. «Søknad om skjenkebevilling (i Brønnøy kommune)» er gebyret «Pr. vareliter for alkoholdhold drikke i gruppe 1: 0.49 NOK».</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ifm. «Skjenkebevilling (i Brønnøy kommune)» er gebyret «Pr. vareliter for alkoholdhold drikke i gruppe 1: 0.49 NOK».</p></td>
 </tr>
 </tbody>
 </table>
@@ -7322,7 +7323,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cv:hasCost [ a cv:Cost ;
       cv:value "0.49"^^xsd:decimal ; # beløp
       cv:currency &lt;http://publications.europa.eu/resource/authority/currency/NOK&gt; ; # valuta
@@ -7382,7 +7383,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    dct:requires &lt;kunnskapsprøve&gt; .
 
 &lt;kunnskapsprøve&gt; a cpsv:PublicService ;
@@ -7449,7 +7450,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cv:sector &lt;https://www.ssb.no/klass/klassifikasjoner/6/koder/56.1&gt; ; .</pre>
 </div>
 </div>
@@ -7496,11 +7497,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Eksempler i forbindelse med tjenesten «Søknad om skjenkebevilling»: alkoholservering, skjenkebevilling, bar, nattklubb.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eksempler i forbindelse med tjenesten «Skjenkebevilling»: alkoholservering, skjenkebevilling, bar, nattklubb.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Example</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Examples in connection with the service «Application for a liquor license»: Alcohol serving, Liquor license, Bar, Nightclub.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples in connection with the service «Liquor license»: Alcohol serving, Liquor license, Bar, Nightclub.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7509,7 +7510,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;søkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    dcat:keyword "alkoholservering"@nb , "skjenkebevilling"@nb , "bar"@nb , "nattklubb"@nb ; .</pre>
 </div>
 </div>
@@ -7667,7 +7668,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    dct:language &lt;https://publications.europa.eu/resource/authority/language/NOB&gt; . # norsk bokmål</pre>
 </div>
 </div>
@@ -7714,7 +7715,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Et av vilkårene for å søke om skjenkevilling er at søkeren skal være over 20 år.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et av vilkårene for å søke om skjenkebevilling er at søkeren skal være over 20 år.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7723,7 +7724,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;søknadSkjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cv:hasCriterion [ a cv:CriterionRequirement ;
    dct:title "Over 20 år"@nb ;
    dct:description "Søkeren må være over 20 år"@nb ;
@@ -10281,7 +10282,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenestekanaler for tjenesten «Søknad om skjenkebevilling i Brønnøy kommune» eies av Brønnøy kommune.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenestekanaler for tjenesten «Skjenkebevilling i Brønnøy kommune» eies av Brønnøy kommune.</p></td>
 </tr>
 </tbody>
 </table>
@@ -10510,7 +10511,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Nettadressen til skjemaportalen der «Søknad om skjenkebevilling i Brønnøy kommune» kan direkte fylles ut.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nettadressen til skjemaportalen der søknad om skjenkebevilling i Brønnøy kommune kan direkte fylles ut.</p></td>
 </tr>
 </tbody>
 </table>
@@ -10816,7 +10817,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Resultater fra tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resultater fra tjenesten «Skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).</p></td>
 </tr>
 </tbody>
 </table>
@@ -12124,7 +12125,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hendelsen «Å starte og drive en restaurant» utløser behov for tjenesten «Søknad om skjenkebevilling».</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hendelsen «Starte og drive en restaurant» utløser behov for tjenesten «Skjenkebevilling».</p></td>
 </tr>
 </tbody>
 </table>
@@ -12135,9 +12136,9 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="content">
 <pre>&lt;starteOgDriveRestaurant&gt; a cv:BusinessEvent ;
    dct:title "Å starte og drive en restaurant"@nb ;
-   cpsvno:triggersNeedFor &lt;søknadOmSkjenkebevilling&gt; ; .
+   cpsvno:triggersNeedFor &lt;skjenkebevilling&gt; ; .
 
-&lt;søknadOmSkjenkebevilling&gt; a cpsv:PublicService ; .</pre>
+&lt;skjenkebevilling&gt; a cpsv:PublicService ; .</pre>
 </div>
 </div>
 </div>
@@ -12631,7 +12632,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-12-02 12:38:18 UTC
+Sist oppdatert 2021-12-02 13:03:39 UTC
 </div>
 </div>
 </body>

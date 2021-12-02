@@ -16,12 +16,12 @@ image::images/KlassenOffentligTjeneste.png[]
 |Merknad 1|En offentlig tjeneste kan bestå av et obligatorisk eller skjønnsmessig sett av aktiviteter som utføres, eller som kan utføres, av eller på vegne av en offentlig organisasjon, er offentlig finansiert og som kommer fra offentlig politikk.
 |Merknad 2|Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til f.eks. å beskrive tjenester levert av private aktører.
 |Remarks|A Public Service is a mandatory or discretionary set of activities performed, or able to be performed, by or on behalf of a public organisation, publicly funded and arise from public policy.
-|Eksempel|«Søknad om skjenkebevilling»
+|Eksempel|Skjenkebevilling
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ; .
+<skjenkebevilling> a cpsv:PublicService ; .
 -----
 
 === Obligatoriske egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-onligatoriske-egenskaper]]
@@ -38,13 +38,13 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk
 |Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
-|Eksempel|Søknad om skjenkebevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.
+|Eksempel|Bevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
-   dct:description "Søknad om skjenkebevilling for skjenking av alkoholholdig drikk, enten som alminnelig bevilling eller som bevilling for lukket selskap."@nb ; .
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
+   dct:description "Bevilling for skjenking av alkoholholdig drikk, enten som alminnelig bevilling eller som bevilling for lukket selskap."@nb ; .
 -----
 
 ==== Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority) [[OffentligTjeneste-harKompetentOrgan]]
@@ -59,12 +59,12 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk
 |Merknad|Begrepet ‘competent authority’ er definert i Services Directive (2006/123/EC) som: “any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof”.
-|Eksempel|Brønnøy kommune er det kompetente organet for tjenesten «Søknad om skjenkebevilling i Brønnøy kommune»
+|Eksempel|Brønnøy kommune er det kompetente organet for tjenesten «Skjenkebevilling i Brønnøy kommune»
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ; . # Brønnøy kommune
 -----
 
@@ -101,12 +101,12 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 * Kravsnivået endret fra valgfri til obligatorisk – enhver offentlig tjeneste skal ha minst ett kontaktpunkt oppgitt.
 * URI endret fra `cv:hasContactPoint` til `dcat:contactPoint`, dette for å samkjøre med bl.a. DCAT-AP-NO.
 *	Range endret fra `schema:ContactPoint` til `vcard:Kind`, dette for å samkjøre med bl.a. DCAT-AP-NO.
-|Eksempel|Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt for «Søknad om skjenkebevilling (i Brønnøy kommune)»
+|Eksempel|Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt for «Skjenkebevilling (i Brønnøy kommune)»
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    dcat:contactPoint [ a  vcard:Organization ; # kontaktpunkt
      vcard:hasTelephone "tel:+4775012000" ;
     ] ;
@@ -124,13 +124,13 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
-|Eksempel|«Søknad om skjenkebevilling»
+|Eksempel|«Sskjenkebevilling»
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
-   dct:title "Søknad om skjenkebevilling"@nb ; .
+<skjenkebevilling> a cpsv:PublicService ;
+   dct:title "Skjenkebevilling"@nb ; .
 -----
 
 ==== Offentlig tjeneste – produserer (cpsv:produces) [[OffentligTjeneste-produserer]]
@@ -145,8 +145,8 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..n
 |Kravsnivå |Obligatorisk/Mandatory
 |Merknad 1|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output.` På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.
-|Merknad 2| Norsk utvidelse: kravsnivået endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe. 
-|Eksempel|Selve «bevillingen» er et tjenesteresultat av tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.
+|Merknad 2| Norsk utvidelse: kravsnivået endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe.
+|Eksempel|Selve «bevillingen» er et tjenesteresultat av tjenesten «Skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.
 |===
 
 Eksempel i RDF Turtle:
@@ -172,12 +172,12 @@ Eksempel i RDF Turtle:
 * Minst en verdi skal være fra en av følgende kontrollerte lister: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
 
 * For å angi dekningsområde i Norge, bør Kartverkets liste over https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
-|Eksempel|«Søknad om skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.
+|Eksempel|«Skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.
 |===
 
 Eksempel i RDF Turtle:
 ----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> , # Norge
       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ; # Brønnøy kommune
    .
@@ -232,7 +232,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    foaf:homepage <https://kommune24-7.no/1813> ; .
 -----
 
@@ -253,7 +253,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
   adms:status <http://purl.org/adms/status/Completed> ; # tjenesten er ferdig utviklet
      .
 -----
@@ -314,12 +314,12 @@ Forslag til et kontrollert vokabular for typer offentlig tjeneste:
 |Kravsnivå|Valgfri/Optional
 |Merknad|
 |Remarks|The actual information is provided using the ISO8601 syntax for durations.
-|Eksempel|Det tar 1 dag for å behandle «Søknad om skjenkebevilling (i Brønnøy kommune)».
+|Eksempel|Det tar 1 dag for å behandle en søknad om skjenkebevilling (i Brønnøy kommune).
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cv:processingTime "P1D"^^xsd:duration ; .
 -----
 
@@ -384,13 +384,14 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerT
 |Kravsnivå|Valgfri/Optional
 |Merknad|
 |Remarks|A specific Public Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.
-|Eksempel|Et av dokumentasjonskravene til «Søknad om skjenkebevilling» er bestått «Kunnskapsprøve».
+|Eksempel|Et av dokumentasjonskravene til å søke om skjenkebevilling er bestått «Kunnskapsprøve».
 |===
 
 Eksempel i RDF Turtle:
 ----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cpsv:hasInput <beståttKunnskapsrøve> ; .
+
 <beståttKunnskapsrøve> a cv:Evidence .
 ----
 
@@ -407,12 +408,12 @@ Eksempel i RDF Turtle:
 |Kravsnivå|Valgfri/Optional
 |Merknad|Flere offentlige tjenester kan være knyttet til en bestemt hendelse, og likedan kan den samme offentlige tjenesten være knyttet til flere forskjellige hendelser.
 |Remarks|Several Public Services may be associated with a particular Event and, likewise, the same Public Service may be associated with several different Events.
-|Eksempel|Tjenesten «Søknad om skjenkebevilling» grupperes under hendelsen «Å starte og drive en restaurant»
+|Eksempel|Tjenesten «Skjenkebevilling» grupperes under hendelsen «Starte og drive en restaurant»
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cv:isGroupedBy <starteOgDriveRestaurant> .
 
 <starteOgDriveRestaurant> a cv:Event .
@@ -446,12 +447,12 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Eksempel|Tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» tilbys online på kommunens https://kommune24-7.no/1813/[skjemaportal]
+|Eksempel|Tjenesten «Skjenkebevilling (i Brønnøy kommune)» tilbys online på kommunens https://kommune24-7.no/1813/[skjemaportal]
 |===
 
 Eksempel i RDF Turtle:
 ----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cv:hasChannel <https://kommune24-7.no/1813/> ; .
 ----
 
@@ -483,12 +484,12 @@ Eksempel i RDF Turtle:
 |Kravsnivå|Valgfri/Optional
 |Merknad|Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, skal egenskapen <<Gebyr-hvisTilbysGjennom>> brukes.
 |Remarks|Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship.
-|Eksempel|Ifm. «Søknad om skjenkebevilling (i Brønnøy kommune)» er gebyret «Pr. vareliter for alkoholdhold drikke i gruppe 1: 0.49 NOK».
+|Eksempel|Ifm. «Skjenkebevilling (i Brønnøy kommune)» er gebyret «Pr. vareliter for alkoholdhold drikke i gruppe 1: 0.49 NOK».
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cv:hasCost [ a cv:Cost ;
       cv:value "0.49"^^xsd:decimal ; # beløp
       cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ; # valuta
@@ -513,7 +514,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    dct:requires <kunnskapsprøve> .
 
 <kunnskapsprøve> a cpsv:PublicService ;
@@ -539,7 +540,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cv:sector <https://www.ssb.no/klass/klassifikasjoner/6/koder/56.1> ; .
 -----
 
@@ -555,13 +556,13 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Eksempel|Eksempler i forbindelse med tjenesten «Søknad om skjenkebevilling»: alkoholservering, skjenkebevilling, bar, nattklubb.
-|Example|Examples in connection with the service «Application for a liquor license»: Alcohol serving, Liquor license, Bar, Nightclub.
+|Eksempel|Eksempler i forbindelse med tjenesten «Skjenkebevilling»: alkoholservering, skjenkebevilling, bar, nattklubb.
+|Example|Examples in connection with the service «Liquor license»: Alcohol serving, Liquor license, Bar, Nightclub.
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<søkjenkebevillingBrønnøy> a cpsv:PublicService ;
    dcat:keyword "alkoholservering"@nb , "skjenkebevilling"@nb , "bar"@nb , "nattklubb"@nb ; .
 -----
 
@@ -614,7 +615,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    dct:language <https://publications.europa.eu/resource/authority/language/NOB> . # norsk bokmål
 -----
 
@@ -630,12 +631,12 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Eksempel|Et av vilkårene for å søke om skjenkevilling er at søkeren skal være over 20 år.
+|Eksempel|Et av vilkårene for å søke om skjenkebevilling er at søkeren skal være over 20 år.
 |===
 
 Eksempel i RDF Turtle:
 -----
-<søknadSkjenkebevillingBrønnøy> a cpsv:PublicService ;
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cv:hasCriterion [ a cv:CriterionRequirement ;
    dct:title "Over 20 år"@nb ;
    dct:description "Søkeren må være over 20 år"@nb ;
