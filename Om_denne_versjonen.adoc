@@ -1,6 +1,6 @@
 == Om denne versjonen [[Om_denne_versjonen]]
 
-Denne versjonen (v.0.8) er til bred og uformell kommentering, med *kommenteringsfrist 15. januar 2022*. Hvem som helst kan kommentere og du trenger ikke å få dine innspill forankret i din organisasjon.
+Denne versjonen (v.0.8) er til åpen og uformell kommentering, med *kommenteringsfrist 15. januar 2022*. Hvem som helst kan kommentere og du trenger ikke å få dine innspill forankret i din organisasjon.
 
 Kjernegruppen som har utarbeidet dette utkastet har bestått av ressurspersoner fra Digitaliseringsdirektoratet (Digdir). Kjernegruppen ønsker innspill på bl.a. følgende:
 
