@@ -82,7 +82,8 @@ Eksempel i RDF Turtle:
 
 === Valgfrie egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-valgfrie-egenskaper]]
 
-==== Tjenesteresultat – kan skape (xkos:causes) [[Tjenesteresultat-kanSkape]]
+[[Tjenesteresultat-kanSkape]]
+==== Tjenesteresultat – kan skape (xkos:causes) 
 
 [cols="30s,70d"]
 |===
