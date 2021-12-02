@@ -18,9 +18,11 @@ image::images/KlassenTjeneste.png[]
 |Eksempel|Se under <<OffentligTjeneste>> for eksempler på bruk av denne klassen og de tilsvarende egenskapene.
 |===
 
-=== Obligatoriske egenskaper for klassen _Tjeneste_ [[Tjeneste-obligatoriske-egenskaper]] 
+[[Tjeneste-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Tjeneste_  
 
-==== Tjeneste – beskrivelse (dct:description) [[Tjeneste-beskrivelse]]
+[[Tjeneste-beskrivelse]]
+==== Tjeneste – beskrivelse (dct:description) 
 
 [cols="30s,70d"]
 |===
@@ -35,8 +37,8 @@ image::images/KlassenTjeneste.png[]
 |Eksempel | 
 |===
 
-
-==== Tjeneste - eies av (cv:ownedBy) [[Tjeneste-eiesAv]]
+[[Tjeneste-eiesAv]]
+==== Tjeneste - eies av (cv:ownedBy)
 
 [cols="30s,70d"]
 |===
@@ -51,7 +53,8 @@ image::images/KlassenTjeneste.png[]
 |Eksempel | 
 |===
 
-==== Tjeneste – identifikator (dct:identifier) [[Tjeneste-identifikator]]
+[[Tjeneste-identifikator]]
+==== Tjeneste – identifikator (dct:identifier) 
 
 [cols="30s,70d"]
 |===
@@ -68,7 +71,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel | 
 |===
 
-==== Tjeneste – kontaktpunkt (dcat:contactPoint) [[Tjeneste-kontaktpunkt]]
+[[Tjeneste-kontaktpunkt]]
+==== Tjeneste – kontaktpunkt (dcat:contactPoint) 
 
 [cols="30s,70d"]
 |===
@@ -83,7 +87,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel |
 |===
 
-==== Tjeneste – navn (dct:title) [[Tjeneste-navn]]
+[[Tjeneste-navn]]
+==== Tjeneste – navn (dct:title) 
 
 [cols="30s,70d"]
 |===
@@ -98,7 +103,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel |
 |===
 
-==== Tjeneste - produserer (cpsv:produces) [[Tjeneste-produserer]]
+[[Tjeneste-produserer]]
+==== Tjeneste - produserer (cpsv:produces)
 
 [cols="30s,70d"]
 |===
@@ -110,14 +116,15 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet |1..n 
 |Kravsnivå |Obligatorisk/Mandatory 
 |Merknad 1|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output`. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.  
-|Merknad 2| Norsk utvidelse: kravsnivået endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe. 
+|Merknad 2| Norsk utvidelse: kravsnivået endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe.
 |Eksempel |
 |===
 
+[[Tjeneste-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Tjeneste_  
 
-=== Anbefalte egenskaper for klassen _Tjeneste_ [[Tjeneste-anbefalte-egenskaper]] 
-
-==== Tjeneste – dekningsområde (dct:spatial) [[Tjeneste-dekningsområde]]
+[[Tjeneste-dekningsområde]]
+==== Tjeneste – dekningsområde (dct:spatial) 
 
 [cols="30s,70d"]
 |===
@@ -136,7 +143,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel |
 |===
 
-==== Tjeneste – er del av (dct:isPartOf) [[Tjeneste-erDelAv]]
+[[Tjeneste-erDelAv]]
+==== Tjeneste – er del av (dct:isPartOf)
 
 [cols="30s,70d"]
 |===
@@ -151,7 +159,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel | 
 |===
 
-==== Tjeneste – er gruppert ved (cv:isGroupedBy) [[Tjeneste-erGruppertVed]]
+[[Tjeneste-erGruppertVed]]
+==== Tjeneste – er gruppert ved (cv:isGroupedBy)
 
 [cols="30s,70d"]
 |===
@@ -166,10 +175,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel|
 |===
 
-
-
-
-==== Tjeneste - har del (dct:hasPart) [[Tjeneste-harDel]]
+[[Tjeneste-harDel]]
+==== Tjeneste - har del (dct:hasPart)
 
 [cols="30s,70d"]
 |===
@@ -184,9 +191,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel | 
 |===
 
-
-
-==== Tjeneste – hjemmeside (foaf:homepage) [[Tjeneste-hjemmeside]]
+[[Tjeneste-hjemmeside]]
+==== Tjeneste – hjemmeside (foaf:homepage) 
 
 [cols="30s,70d"]
 |===
@@ -201,10 +207,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel | 
 |===
 
-
-
-
-==== Tjeneste – status (adms:status) [[Tjeneste-status]]
+[[Tjeneste-status]]
+==== Tjeneste – status (adms:status) 
 
 [cols="30s,70d"]
 |===
@@ -219,9 +223,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel | 
 |===
 
-
-
-==== Tjeneste - temaområde (cv:thematicArea) [[Tjeneste-temaområde]]
+[[Tjeneste-temaområde]]
+==== Tjeneste - temaområde (cv:thematicArea)
 
 [cols="30s,70d"]
 |===
@@ -236,11 +239,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel | 
 |===
 
-
-
-
-
-==== Tjeneste - type (dct:type) [[Tjeneste-type]]
+[[Tjeneste-type]]
+==== Tjeneste - type (dct:type)
 
 [cols="30s,70d"]
 |===
@@ -259,9 +259,11 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 
 * #<kom med innspill>#
 
-=== Valgfrie egenskaper for klassen _Tjeneste_ [[Tjeneste-valgfrie-egenskaper]]
+[[Tjeneste-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Tjeneste_
 
-==== Tjeneste – behandlingstid (cv:processingTime) [[Tjeneste-behandlingstid]]
+[[Tjeneste-behandlingstid]]
+==== Tjeneste – behandlingstid (cv:processingTime) 
 
 [cols="30s,70d"]
 |===
@@ -277,8 +279,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-
-==== Tjeneste – begrep (dct:subject) [[Tjeneste-begrep]]
+[[Tjeneste-begrep]]
+==== Tjeneste – begrep (dct:subject)
 
 [cols="30s,70d"]
 |===
@@ -293,7 +295,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel|
 |===
 
-==== Tjeneste – beskrivende datasett (cv:isDescribedAt) [[Tjeneste-beskrivendeDatasett]]
+[[Tjeneste-beskrivendeDatasett]]
+==== Tjeneste – beskrivende datasett (cv:isDescribedAt) 
 
 [cols="30s,70d"]
 |===
@@ -309,7 +312,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel | 
 |===
 
-==== Tjeneste – deltagende (cv:hasParticipation) [[Tjeneste-deltagende]]
+[[Tjeneste-deltagende]]
+==== Tjeneste – deltagende (cv:hasParticipation)
 
 [cols="30s,70d"]
 |===
@@ -324,10 +328,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-
-
-
-==== Tjeneste - dokumentasjonskrav (cv:hasInput) [[Tjeneste-dokumentasjonskrav]]
+[[Tjeneste-dokumentasjonskrav]]
+==== Tjeneste - dokumentasjonskrav (cv:hasInput)
 
 [cols="30s,70d"]
 |===
@@ -343,8 +345,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-
-==== Tjeneste – er klassifisert under (cv:isClassifiedBy) [[Tjeneste-erKlassifisertUnder]]
+[[Tjeneste-erKlassifisertUnder]]
+==== Tjeneste – er klassifisert under (cv:isClassifiedBy) 
 
 [cols="30s,70d"]
 |===
@@ -360,7 +362,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel | 
 |===
 
-==== Tjeneste – er tilgjengelig via (cv:hasChannel) [[Tjeneste-erTilgjengeligVia]]
+[[Tjeneste-erTilgjengeligVia]]
+==== Tjeneste – er tilgjengelig via (cv:hasChannel) 
 
 [cols="30s,70d"]
 |===
@@ -375,8 +378,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-
-==== Tjeneste - følger regel (cpsv:follows) [[Tjeneste-følgerRegel]]
+[[Tjeneste-følgerRegel]]
+==== Tjeneste - følger regel (cpsv:follows)
 
 [cols="30s,70d"]
 |===
@@ -391,8 +394,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |Se også <<KnytteTilRegelverk>>. 
 |===
 
-
-==== Tjeneste – gebyr (cv:hasCost) [[Tjeneste-gebyr]]
+[[Tjeneste-gebyr]]
+==== Tjeneste – gebyr (cv:hasCost) 
 
 [cols="30s,70d"]
 |===
@@ -408,7 +411,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-==== Tjeneste - krever (dct:requires) [[Tjeneste-krever]]
+[[Tjeneste-krever]]
+==== Tjeneste - krever (dct:requires)
 
 [cols="30s,70d"]
 |===
@@ -423,7 +427,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel | 
 |===
 
-==== Tjeneste - næringsgruppering (cv:sector) [[Tjeneste-næringsgruppering]]
+[[Tjeneste-næringsgruppering]]
+==== Tjeneste - næringsgruppering (cv:sector)
 
 [cols="30s,70d"]
 |===
@@ -440,7 +445,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Example |
 |===
 
-==== Tjeneste – nøkkelord (dcat:keyword) [[Tjeneste-nøkkelord]]
+[[Tjeneste-nøkkelord]]
+==== Tjeneste – nøkkelord (dcat:keyword) 
 
 [cols="30s,70d"]
 |===
@@ -454,8 +460,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-
-==== Tjeneste - relatert regelverk (cv:hasLegalResource) [[Tjeneste-relatertRegelverk]]
+[[Tjeneste-relatertRegelverk]]
+==== Tjeneste - relatert regelverk (cv:hasLegalResource)
 
 [cols="30s,70d"]
 |===
@@ -470,7 +476,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel | 
 |===
 
-==== Tjeneste – relatert tjeneste (dct:relation) [[Tjeneste-relatertTjeneste]]
+[[Tjeneste-relatertTjeneste]]
+==== Tjeneste – relatert tjeneste (dct:relation) 
 
 [cols="30s,70d"]
 |===
@@ -485,7 +492,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel | 
 |===
 
-==== Tjeneste – språk (dct:language) [[Tjeneste-språk]]
+[[Tjeneste-språk]]
+==== Tjeneste – språk (dct:language) 
 
 [cols="30s,70d"]
 |===
@@ -500,7 +508,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-==== Tjeneste – vilkår (cv:hasCriterion) [[Tjeneste-vilkår]]
+[[Tjeneste-vilkår]]
+==== Tjeneste – vilkår (cv:hasCriterion) 
 
 [cols="30s,70d"]
 |===
