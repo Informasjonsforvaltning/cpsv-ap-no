@@ -100,16 +100,16 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn dct:relation som er i CPSV-AP. Inntil vi finner en passende URI i eksisterende vokabularer, bruker vi denne egendefinerte URI.
-|Eksempel|Hendelsen «Å starte og drive en restaurant» utløser behov for tjenesten «Søknad om skjenkebevilling».
+|Eksempel|Hendelsen «Starte og drive en restaurant» utløser behov for tjenesten «Skjenkebevilling».
 |===
 
 Eksempel i RDF Turtle:
 -----
 <starteOgDriveRestaurant> a cv:BusinessEvent ;
    dct:title "Å starte og drive en restaurant"@nb ;
-   cpsvno:triggersNeedFor <søknadOmSkjenkebevilling> ; .
+   cpsvno:triggersNeedFor <skjenkebevilling> ; .
 
-<søknadOmSkjenkebevilling> a cpsv:PublicService ; .
+<skjenkebevilling> a cpsv:PublicService ; .
 -----
 
 === Valgfrie egenskaper for klassen _Virksomhetshendelse_ [[Virksomhetshendelse-valgfrie-egenskaper]]

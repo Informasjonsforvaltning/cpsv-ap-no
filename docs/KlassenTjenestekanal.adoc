@@ -64,7 +64,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
 |Merknad|Norsk utvidelse: range endret fra `cv:PublicOrganisation` til `foaf:Agent`. Dette både fordi usage note i CPSV-AP sier at det skal peke til «one or more instances of the Agent Class», og at det dermed også åpner mulighet for at en privat aktør kan, bl.a. på vegne av en offentlig organisasjon, være eieren av en tjenestekanal.
-|Eksempel|Tjenestekanaler for tjenesten «Søknad om skjenkebevilling i Brønnøy kommune» eies av Brønnøy kommune.
+|Eksempel|Tjenestekanaler for tjenesten «Skjenkebevilling i Brønnøy kommune» eies av Brønnøy kommune.
 |===
 
 Eksempel i RDF Turtle:
@@ -153,7 +153,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
 |Merknad|Norsk utvidelse: Finnes ikke eksplisitt i CPSV-AP. Det er behov for å oppgi nettadresse (URL) når tjenestekanalen er nettkanal.
-|Eksempel|Nettadressen til skjemaportalen der «Søknad om skjenkebevilling i Brønnøy kommune» kan direkte fylles ut.
+|Eksempel|Nettadressen til skjemaportalen der søknad om skjenkebevilling i Brønnøy kommune kan direkte fylles ut.
 |===
 
 Eksempel i RDF Turtle:

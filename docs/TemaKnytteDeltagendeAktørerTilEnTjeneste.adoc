@@ -11,15 +11,15 @@ For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasj
 
 Den obligatoriske egenskapen <<Deltagelse-rolle>> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument» når ikke alle deltagende aktører har begge roller.
 
-Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Søknad om skjenkebevilling».
+Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Skjenkebevilling».
 
 Eksempel i RDF Turtle:
 ----
-<søknadOmSkjenkebevilling> a cpsv:PublicService ;
+<skjenkebevilling> a cpsv:PublicService ;
    cv:hasParticipation <deltagendeDataleverandør> ; .
 
 <deltagendeDataleverandør> a cv:Participation ;
-   dct:description "deltagende dataleverandører til tjenesten Søknad om skjenkebevilling"@nb ;
+   dct:description "deltagende dataleverandører til tjenesten Skjenkebevilling"@nb ;
    cv:role <dataleverandør> ; .
 
 <Politidirektoratet> a cv:PublicOrganisation ;

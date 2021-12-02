@@ -14,7 +14,7 @@ image::images/KlassenTjenesteresultat.png[]
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1|I samsvar med https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[DCAT-AP-NO], kan datasett (`dcat:Dataset`) være en type `cv:Output`. På denne måten kan tjenesteresultatet være et datasett som kan deles, f.eks. selve «bevillingen» som et datasett
 |Merknad 2|Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.
-|Eksempel|Resultater fra tjenesten «Søknad om skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).
+|Eksempel|Resultater fra tjenesten «Skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).
 |===
 
 === Obligatoriske egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-obligatoriske-egenskaper]]
