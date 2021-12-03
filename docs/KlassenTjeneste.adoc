@@ -296,22 +296,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel | 
 |===
 
-[[Tjeneste-erGruppertVed]]
-==== Tjeneste – er gruppert ved (cv:isGroupedBy)
-
-[cols="30s,70d"]
-|===
-|English name|is grouped by
-|URI|cv:isGroupedBy
-|Range|cv:Event
-|Beskrivelse|Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
-|Usage note|This property links the Public Service to the triggering Event class.
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|
-|===
-
 [[Tjeneste-deltagende]]
 ==== Tjeneste – deltagende (cv:hasParticipation)
 
@@ -343,6 +327,22 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad | 
 |Remarks |A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel. 
 |Eksempel |
+|===
+
+[[Tjeneste-erGruppertVed]]
+==== Tjeneste – er gruppert ved (cv:isGroupedBy)
+
+[cols="30s,70d"]
+|===
+|English name|is grouped by
+|URI|cv:isGroupedBy
+|Range|cv:Event
+|Beskrivelse|Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
+|Usage note|This property links the Public Service to the triggering Event class.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
 |===
 
 [[Tjeneste-erKlassifisertUnder]]
