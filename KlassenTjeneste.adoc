@@ -159,22 +159,6 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel | 
 |===
 
-[[Tjeneste-erGruppertVed]]
-==== Tjeneste – er gruppert ved (cv:isGroupedBy)
-
-[cols="30s,70d"]
-|===
-|English name|is grouped by
-|URI|cv:isGroupedBy
-|Range|cv:Event
-|Beskrivelse|Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
-|Usage note|This property links the Public Service to the triggering Event class.
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|
-|===
-
 [[Tjeneste-harDel]]
 ==== Tjeneste - har del (dct:hasPart)
 
@@ -310,6 +294,22 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Merknad |Bruk egenskapen <<Tjeneste-dokumentasjonskrav>> for å kytte til datasett som tjenesten bruker, eller egenskapen <<Tjeneste-produserer>> for datasett som tjenesten produserer.  
 |Merknad |
 |Eksempel | 
+|===
+
+[[Tjeneste-erGruppertVed]]
+==== Tjeneste – er gruppert ved (cv:isGroupedBy)
+
+[cols="30s,70d"]
+|===
+|English name|is grouped by
+|URI|cv:isGroupedBy
+|Range|cv:Event
+|Beskrivelse|Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
+|Usage note|This property links the Public Service to the triggering Event class.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
 |===
 
 [[Tjeneste-deltagende]]
