@@ -94,7 +94,7 @@ Eksempel i RDF Turtle:
 |Usage note |To express the relation between an Output and one or more Events, for instance the cases where change of data (as an Output) causes one of more Events.
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
-|Merknad | Norsk utvidelse: Finnes ikke i CPSV-AP. Det er behov for å tydeliggjøre kopling mellom et tjenesteresultat (f.eks. endring i et datasett) og hendelsen(e) som skapes av endringen.
+|Merknad |Norsk utvidelse: Finnes ikke i CPSV-AP. Det er behov for å tydeliggjøre kopling mellom et tjenesteresultat (f.eks. endring i et datasett) og hendelsen(e) som skapes av endringen.
 |Eksempel | 
 |===
 
