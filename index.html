@@ -808,9 +808,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tjeneste-behandlingstid">Tjeneste – behandlingstid (cv:processingTime) </a></li>
 <li><a href="#Tjeneste-begrep">Tjeneste – begrep (dct:subject)</a></li>
 <li><a href="#Tjeneste-beskrivendeDatasett">Tjeneste – beskrivende datasett (cv:isDescribedAt) </a></li>
-<li><a href="#Tjeneste-erGruppertVed">Tjeneste – er gruppert ved (cv:isGroupedBy)</a></li>
 <li><a href="#Tjeneste-deltagende">Tjeneste – deltagende (cv:hasParticipation)</a></li>
 <li><a href="#Tjeneste-dokumentasjonskrav">Tjeneste - dokumentasjonskrav (cv:hasInput)</a></li>
+<li><a href="#Tjeneste-erGruppertVed">Tjeneste – er gruppert ved (cv:isGroupedBy)</a></li>
 <li><a href="#Tjeneste-erKlassifisertUnder">Tjeneste – er klassifisert under (cv:isClassifiedBy) </a></li>
 <li><a href="#Tjeneste-erTilgjengeligVia">Tjeneste – er tilgjengelig via (cv:hasChannel) </a></li>
 <li><a href="#Tjeneste-følgerRegel">Tjeneste - følger regel (cpsv:follows)</a></li>
@@ -9423,53 +9423,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </table>
 </div>
 <div class="sect3">
-<h4 id="Tjeneste-erGruppertVed"><a class="link" href="#Tjeneste-erGruppertVed">Tjeneste – er gruppert ved (cv:isGroupedBy)</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">is grouped by</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isGroupedBy</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property links the Public Service to the triggering Event class.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
 <h4 id="Tjeneste-deltagende"><a class="link" href="#Tjeneste-deltagende">Tjeneste – deltagende (cv:hasParticipation)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -9562,6 +9515,53 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel </strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Tjeneste-erGruppertVed"><a class="link" href="#Tjeneste-erGruppertVed">Tjeneste – er gruppert ved (cv:isGroupedBy)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is grouped by</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isGroupedBy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property links the Public Service to the triggering Event class.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -12644,7 +12644,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-12-03 08:13:09 UTC
+Sist oppdatert 2021-12-03 08:15:04 UTC
 </div>
 </div>
 </body>
