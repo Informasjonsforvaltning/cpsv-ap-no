@@ -151,7 +151,8 @@ Eksempel i RDF Turtle:
 |Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall belong to a specific level of certification, for instance, legalisation.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 1|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
 |Eksempel|#Lovregulert#
 |===
 
@@ -171,8 +172,9 @@ Forslag til et kontrollert vokabular for sertifiseringsnivåer:
 |Usage note|This property represents the type of Criterion Requirement as described in a controlled vocabulary.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad|Verdien skal velges fra en felles kontrollert liste over vilkårstyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
-|Eksempel|Vlkåret at søkeren skal være over 20 år, er av type ‘alder’
+|Merknad 1|Verdien skal velges fra en felles kontrollert liste over vilkårstyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Eksempel|Vilkåret at søkeren skal være over 20 år, er av type ‘alder’
 |===
 
 Eksempel i RDF Turtle:
@@ -193,26 +195,6 @@ Forslag til et kontrollert vokabular for typer vilkår:
 * Økonomi
 * #<kom med innspill>#
 
-==== Vilkår – type oversettelse (cccev:typeOfTranslation) [[Vilkår-typeOversettelse]]
-
-[cols="30s,70d"]
-|===
-|English name|type of translation
-|URI|cccev:typeOfTranslation
-|Range|skos:Concept
-|Beskrivelse|Brukes til å oppgi hvilken type oversettelse som kreves av dokumentasjonsbevis.
-|Usage note|A Criterion requirement may specify whether the evidence proving that this Criterion requirement shall be translated and what type of translation shall apply, for instance, certified translation.
-|Multiplisitet|Valgfri/Optional
-|Kravsnivå|0..n
-|Merknad|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
-|Eksempel|Autorisert oversettelse
-|===
-
-Forslag til et kontrollert vokabular for typer oversettelse:
-
-* autorisert oversettelse
-* #<kom med innspill>#
-
 ==== Vilkår – type kopieringskvalitet (cccev:typeOfCopyQuality) [[Vilkår-typeKopieringskvalitet]]
 
 [cols="30s,70d"]
@@ -224,13 +206,35 @@ Forslag til et kontrollert vokabular for typer oversettelse:
 |Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall be of a specific type of copy, for instance, certified copy.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 1|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
 |Eksempel|Attestert kopi
 |===
 
 Forslag til et kontrollert vokabular for typer kopieringskvalitet:
 
 * attestert kopi
+* #<kom med innspill>#
+
+==== Vilkår – type oversettelse (cccev:typeOfTranslation) [[Vilkår-typeOversettelse]]
+
+[cols="30s,70d"]
+|===
+|English name|type of translation
+|URI|cccev:typeOfTranslation
+|Range|skos:Concept
+|Beskrivelse|Brukes til å oppgi hvilken type oversettelse som kreves av dokumentasjonsbevis.
+|Usage note|A Criterion requirement may specify whether the evidence proving that this Criterion requirement shall be translated and what type of translation shall apply, for instance, certified translation.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad 1|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Eksempel|Autorisert oversettelse
+|===
+
+Forslag til et kontrollert vokabular for typer oversettelse:
+
+* autorisert oversettelse
 * #<kom med innspill>#
 
 ==== Vilkår – øvre verdigrense (cccev:maximumValue) [[Vilkår-øvreVerdigrense]]
