@@ -9,7 +9,7 @@ image::images/KlassenTjenestekanal.png[]
 |===
 |English name|Channel
 |Beskrivelse|Brukes til å representere kanal/medium som tjenesten er tilgjengelig gjennom.
-|Usage note|The Channel class represents the medium through which an Agent provides, uses or interacts in another way with a Public Service. Typical examples include online services, phone, walk-in centres etc.
+|Usage note|The Channel class represents the medium through which an Agent provides, uses or interacts in another way with a (Public) Service. Typical examples include online services, phone, walk-in centres etc.
 |URI|cv:Channel
 |Kravsnivå|Valgfri/Optional
 |Merknad|
@@ -60,10 +60,10 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |URI|cv:ownedBy
 |Range|foaf:Agent
 |Beskrivelse|Brukes til å referere til aktøren som eier tjenestekanalen.
-|Usage note|This property links the Channel class with one or more instances of the Agent class. This property indicates the owner of a specific Channel through which a Public Service is being delivered. Note that Public Organization is a sub class of Agent so that if the owner is the Public Organization, the ownedBy property can link to it.
+|Usage note|This property links the Channel class with one or more instances of the Agent class. This property indicates the owner of a specific Channel through which a (Public) Service is being delivered. Note that Public Organization is a sub class of Agent so that if the owner is the Public Organization, the ownedBy property can link to it.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad|Norsk utvidelse: range endret fra `cv:PublicOrganisation` til `foaf:Agent`. Dette både fordi usage note i CPSV-AP sier at det skal peke til «one or more instances of the Agent Class», og at det dermed også åpner mulighet for at en privat aktør kan, bl.a. på vegne av en offentlig organisasjon, være eieren av en tjenestekanal.
+|Merknad|Norsk utvidelse: range endret fra `cv:PublicOrganisation` til `foaf:Agent`. Dette både fordi usage note i CPSV-AP sier at den kan referere til «one or more instances of the Agent Class», og at spesifikasjonen åpner mulighet for å kunne beskrive private tjenester (som ikke eiers av offentlig organisasjon).
 |Eksempel|Tjenestekanaler for tjenesten «Skjenkebevilling i Brønnøy kommune» eies av Brønnøy kommune.
 |===
 
@@ -207,7 +207,7 @@ Forslag til et kontrollert vokabular for typer tjenestekanal (hentet fra CPSV �
 |URI|cpsv:hasInput
 |Range|cv:Evidence
 |Beskrivelse|Brukes til å referere til dokumentasjonskrav som er spesifikk den aktuelle tjenestekanalen.
-|Usage note|In the majority of cases, the evidence required to use a Public Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Public Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Public Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision.
+|Usage note|In the majority of cases, the evidence required to use a (Public) Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a (Public) Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the (Public) Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|Vanligvis skal dokumentasjonskrav være uavhengig av tjenestekanal, og dokumentasjonskrav bør knyttes til (offentlig) tjeneste.

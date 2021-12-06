@@ -9,7 +9,7 @@ image::images/KlassenRegel.png[]
 |===
 |English name|Rule
 |Beskrivelse|Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en (offentlig) tjeneste.
-|Usage note|The Rule class represents a document that sets out the specific rules, guidelines or procedures that the Public Service follows. It includes the terms of service, licence, and authentication requirements of the (Public) Service.
+|Usage note|The Rule class represents a document that sets out the specific rules, guidelines or procedures that a (Public) Service follows. It includes the terms of service, licence, and authentication requirements of the (Public) Service.
 |URI|cpsv:Rule
 |Kravsnivå|Valgfri/Optional
 |Merknad|

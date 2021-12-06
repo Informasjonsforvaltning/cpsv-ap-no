@@ -9,7 +9,7 @@ image::images/KlassenKontaktpunkt.png[]
 |===
 |English name|contact point
 |Beskrivelse|Brukes til å representere kontakt informasjon for en tjeneste, en tjenestekanal, en offentlig organisasjon osv.
-|Usage note|This class represents the contact information for a Public Service, Channel, Public Organization, etc.
+|Usage note|This class represents the contact information for a (Public) Service, Channel, Public Organization, etc.
 |URI|vcard:Kind
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|Norsk utvidelse: URI endret fra `schema:ContactPoint` til `vcard:Kind`, for å samkjøre med DCAT-AP-NO.

@@ -9,7 +9,7 @@ image::images/KlassenTjenesteresultat.png[]
 |===
 |English name|Output
 |Beskrivelse|Brukes til å representere resultat fra en tjeneste.
-|Usage note|Outputs can be any resource - document, artefact – anything produced by the Public Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.
+|Usage note|Outputs can be any resource - document, artefact – anything produced by the (Public) Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.
 |URI|cv:Output
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1|I samsvar med https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[DCAT-AP-NO], kan datasett (`dcat:Dataset`) være en type `cv:Output`. På denne måten kan tjenesteresultatet være et datasett som kan deles, f.eks. selve «bevillingen» som et datasett

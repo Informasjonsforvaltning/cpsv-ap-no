@@ -9,7 +9,7 @@ image::images/KlassenVilkår.png[]
 |===
 |English name|Criterion Requirement
 |Beskrivelse|Brukes til å representere vilkår knyttet til bruk av en tjeneste.
-|Usage note|Not all public services are needed or usable by everyone. For example, the visa service operated by European countries is not needed by European citizens but is needed by some citizens from elsewhere, or public services offering unemployment benefits and grants are targeting specific societal groups.
+|Usage note|Not all (public) services are needed or usable by everyone. For example, the visa service operated by European countries is not needed by European citizens but is needed by some citizens from elsewhere, or public services offering unemployment benefits and grants are targeting specific societal groups.
 |URI|cv:CriterionRequirement
 |Kravsnivå|Valgfri/Optional
 |Merknad|
