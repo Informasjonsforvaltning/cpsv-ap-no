@@ -14,7 +14,7 @@ image::images/KlassenVirksomhetshendelse.png[]
 |Subklasse av / Subclass of|cv:Event
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Remarks|A Business Event requires a set of public services to be delivered and consumed in order for the associated business need(s) or obligation(s) to be fulfilled. Business Events are defined within the context of a particular Member State.
+|Remarks|A Business Event requires a set of (public) services to be delivered and consumed in order for the associated business need(s) or obligation(s) to be fulfilled. Business Events are defined within the context of a particular Member State.
 |Eksempel|«Å starte og drive en restaurant» er en virksomhetshendelse.
 |===
 
@@ -73,7 +73,7 @@ Eksempel i RDF Turtle:
 |URI|dct:description
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av hendelsen. Gjentas når beskrivelsen finnes i flere språk.
-|Usage note|This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Public Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description.
+|Usage note|This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant (Public) Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1|Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt, dette fordi enhver hendelse bør beskrives med mindre navnet er selvforklarende.

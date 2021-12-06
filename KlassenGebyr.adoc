@@ -9,7 +9,7 @@ image::images/KlassenGebyr.png[]
 |===
 |English name|Cost
 |Beskrivelse|Brukes til å representere gebyr.
-|Usage note|The Cost class represents any costs related to the execution of a Public Service that the Agent consuming it needs to pay.
+|Usage note|The Cost class represents any costs related to the execution of a (Public) Service that the Agent consuming it needs to pay.
 |URI|cv:Cost
 |Kravsnivå|Valgfri/Optional
 |Merknad|

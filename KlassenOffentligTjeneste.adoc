@@ -141,7 +141,7 @@ Eksempel i RDF Turtle:
 |URI|cpsv:produces
 |Range|cv:Output
 |Beskrivelse|Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.
-|Usage note|Links a Public Service to one or more instances of the Output class escribing the actual result of executing a given Public Service.
+|Usage note|Links a Public Service to one or more instances of the Output class describing the actual result of executing a given Public Service.
 |Multiplisitet|1..n
 |Kravsnivå |Obligatorisk/Mandatory
 |Merknad 1|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output.` På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.
@@ -346,7 +346,7 @@ Eksempel i RDF Turtle:
 |URI|cv:isDescribedAt
 |Range|dcat:Dataset
 |Beskrivelse|Brukes til å referere til datasett som beskriver tjenesten.
-|Usage note|The Is Described At property links a Public Service to the Public Service Dataset(s) in which it is being described.
+|Usage note|The Is Described At property links a Public Service to the Dataset(s) in which it is being described.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|Bruk egenskapen <<OffentligTjeneste-dokumentasjonskrav>> for å kytte til datasett som tjenesten bruker, eller egenskapen <<OffentligTjeneste-produserer>> for datasett som tjenesten produserer.`
@@ -431,7 +431,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Remarks|It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation, type of audience etc.
+|Remarks|It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according to level of digitisation, type of audience etc.
 |Eksempel|
 |===
 

@@ -30,7 +30,7 @@ image::images/KlassenTjeneste.png[]
 |URI |dct:description 
 |Range |rdfs:Literal 
 |Beskrivelse |Brukes til å oppgi en tekstlig beskrivelse av tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere språk. 
-|Usage note |This property represents a free text Description of the Public Service. 
+|Usage note |This property represents a free text Description of the Service. 
 |Multiplisitet |1..n 
 |Kravsnivå |Obligatorisk 
 |Merknad |
@@ -112,7 +112,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |URI |cpsv:produces 
 |Range |cv:Output 
 |Beskrivelse |Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.  
-|Usage note |Links a Service to one or more instances of the Output class escribing the actual result of executing a given Service. 
+|Usage note |Links a Service to one or more instances of the Output class describing the actual result of executing a given Service. 
 |Multiplisitet |1..n 
 |Kravsnivå |Obligatorisk/Mandatory 
 |Merknad 1|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output`. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.  
@@ -338,7 +338,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |URI|cv:isGroupedBy
 |Range|cv:Event
 |Beskrivelse|Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
-|Usage note|This property links the Public Service to the triggering Event class.
+|Usage note|This property links the Service to the triggering Event class.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
@@ -358,7 +358,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
 |Merknad | 
-|Remarks |It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation, type of audience …  
+|Remarks |It is a generic property which can be further specialised to make the classification explicit, for instance for classifying services according to level of digitisation, type of audience …  
 |Eksempel | 
 |===
 
