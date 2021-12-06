@@ -52,6 +52,21 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel|
 |===
 
+==== Tjenestekanal – dokumentasjonskrav (cpsv:hasInput) [[Tjenestekanal-dokumentasjonskrav]]
+
+[cols="30s,70d"]
+|===
+|English name|has input
+|URI|cpsv:hasInput
+|Range|cv:Evidence
+|Beskrivelse|Brukes til å referere til dokumentasjonskrav som er spesifikk den aktuelle tjenestekanalen.
+|Usage note|In the majority of cases, the evidence required to use a (Public) Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a (Public) Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the (Public) Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Vanligvis skal dokumentasjonskrav være uavhengig av tjenestekanal, og dokumentasjonskrav bør knyttes til (offentlig) tjeneste.
+|Eksempel|
+|===
+
 ==== Tjenestekanal – eies av (cv:ownedBy) [[Tjenestekanal-eiesAv]]
 
 [cols="30s,70d"]
@@ -198,21 +213,6 @@ Forslag til et kontrollert vokabular for typer tjenestekanal (hentet fra CPSV �
 * Service Bureau
 * Client's Location
 * #<kom med innspill>#
-
-==== Tjenestekanal – dokumentasjonskrav (cpsv:hasInput) [[Tjenestekanal-dokumentasjonskrav]]
-
-[cols="30s,70d"]
-|===
-|English name|has input
-|URI|cpsv:hasInput
-|Range|cv:Evidence
-|Beskrivelse|Brukes til å referere til dokumentasjonskrav som er spesifikk den aktuelle tjenestekanalen.
-|Usage note|In the majority of cases, the evidence required to use a (Public) Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a (Public) Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the (Public) Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision.
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|Vanligvis skal dokumentasjonskrav være uavhengig av tjenestekanal, og dokumentasjonskrav bør knyttes til (offentlig) tjeneste.
-|Eksempel|
-|===
 
 ==== Tjenestekanal – åpningstid fritekst (schema:openingHours) [[Tjenestekanal-åpningstidFritekst]]
 
