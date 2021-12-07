@@ -22,7 +22,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Status*: #til åpen og uformell kommentering, kommenteringsfrist 2022-01-15# +
 *Versjon*: 0.8 +
 *Publisert*: 2021-12-02 +
-*Oppdatert*: 2021-12-06 +
+*Oppdatert*: 2021-12-07 +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
