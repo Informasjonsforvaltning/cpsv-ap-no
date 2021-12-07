@@ -8,6 +8,7 @@ Følgende klasser er obligatoriske:
 
 Følgende klasser er anbefalte:
 
+* <<Aktør>>
 * <<Hendelse>>
 * <<Kontaktpunkt>>
 * <<OffentligOrganisasjon>>
@@ -16,7 +17,6 @@ Følgende klasser er anbefalte:
 
 Følgende klasser er valgfrie:
 
-* <<Aktør>>
 * <<BeskrivendeDatasett>>
 * <<Deltagelse>>
 * <<Dokumentasjon>>
@@ -35,7 +35,7 @@ Følgende klasser er valgfrie:
 
 Følgende klasser som også er vist i den forenklede modellen ovenfor eller i diagrammene som følger, er ikke spesifisert i spesifikasjonen:
 
-* Datasett (`dcat:Dataset`), Datatjeneste (`dcat:DataService`) og Distribusjon (`dcat:Distribution`): Se https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO] for krav til beskrivelse av Datasett, Datatjeneste og Distribusjon. 
+* Datasett (`dcat:Dataset`), Datatjeneste (`dcat:DataService`) og Distribusjon (`dcat:Distribution`): Se https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO] for krav til beskrivelse av Datasett, Datatjeneste og Distribusjon.
 * Begrep (`skos:Concept`): Se https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_] for krav til begrepsbeskrivelser, og https://data.norge.no/specification/skos-ap-no-begrep/[SKOS-AP-NO-begrep] for hvordan begrepsbeskrivelser utformet i henhold til _Forvaltningsstandard for begrepsbeskrivelser_ tilgjengeliggjøres i RDF.
 
 
