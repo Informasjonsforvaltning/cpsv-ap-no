@@ -14,7 +14,7 @@ Spesifikasjonen er basert EUs https://ec.europa.eu/isa2/solutions/core-public-se
 
 Spesifikasjonen inneholder også engelske navn (English name) og beskrivelser (Usage note). Det gjøres oppmerksom på at engelske navn eller beskrivelser ikke alle er ordrett sitat fra EUs originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
 
-Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF] (se «Introduksjon til RDF» som er #under utarbeidelse#), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
+Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF] (det er planlagt en «Introduksjon til RDF»), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
 
 === Målgrupper [[Målgrupper]]
 
