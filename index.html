@@ -1404,13 +1404,13 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="title">Figur 6. Tjeneste og Deltagelse</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i figur <a href="#img-FigurTjenesteOgDeltagelse">Tjeneste og Deltagelse</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste - eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste og dens eier (en Aktør, <code>foaf:Agent</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste og dens kompetente organ.</p>
+<p>Som illustrert i figur <a href="#img-FigurTjenesteOgDeltagelse">Tjeneste og Deltagelse</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste - eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste (<code>cpsvno:Service</code>) og dens eier (en Aktør, <code>foaf:Agent</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste - har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste (<code>cpsv:PublicService</code>) og dens kompetente organ (en Offentlig organisasjon, <code>cv:PublicOrganisation</code>).</p>
 </div>
 <div class="paragraph">
 <p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse">Klassen Deltagelse (cv:Participation)</a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-deltagende">Tjeneste – deltagende (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-deltagende">Offentlig tjeneste – deltagende (cv:hasParticipation)</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a> (eller <a href="#OffentligOrganisasjon-harRolle">Offentlig organisasjon – har rolle i (cv:playsRole)</a>).</p>
 </div>
 <div class="paragraph">
-<p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument» når ikke alle deltagende aktører har begge roller.</p>
+<p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument», når ikke alle deltagende aktører har begge roller.</p>
 </div>
 <div class="paragraph">
 <p>Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Skjenkebevilling».</p>
@@ -12663,7 +12663,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-12-08 07:22:40 UTC
+Sist oppdatert 2021-12-08 07:28:20 UTC
 </div>
 </div>
 </body>
