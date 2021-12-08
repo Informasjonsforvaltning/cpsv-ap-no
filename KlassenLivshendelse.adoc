@@ -92,11 +92,11 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|related service
+|English name|triggers need for
 |URI|cpsvno:triggersNeedFor
 |Range|cpsvno:Service
 |Beskrivelse|Brukes til å referere til tjenester som den aktuelle hendelsen utløser behov for.
-|Usage note|This property links an event directly to a service that is related to it.
+|Usage note|This property links an event directly to a service that the event triggers need for.
 |Subegenskap av / Subproperty of | dct:relation
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
