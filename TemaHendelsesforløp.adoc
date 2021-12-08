@@ -28,7 +28,7 @@ Eksempel i RDF Turtle:
   skos:causes <e-reseptSendt> .
 
 <e-reseptSendt> a cv:Event ;
-  cpsvno:tiggersNeedFor <apotektjeneste> .
+  cpsvno:triggersNeedFor <apotektjeneste> .
 
 <apotektjeneste> a cpsvno:Service.
 -----
