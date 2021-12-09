@@ -597,7 +597,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Katalog-beskrivelse">Katalog – beskrivelse (dct:description)</a></li>
 <li><a href="#Katalog-identifikator">Katalog – identifikator (dct:identifier)</a></li>
 <li><a href="#Katalog-tittel">Katalog – tittel (dct:title)</a></li>
-<li><a href="#Katalog-tjenestebeskrivelse">Katalog – tjenestebeskrivelse (dcatno:service)</a></li>
+<li><a href="#Katalog-inneholderTjeneste">Katalog – inneholder tjeneste (dcatno:containsService)</a></li>
 <li><a href="#Katalog-utgiver">Katalog – utgiver (dct:publisher)</a></li>
 </ul>
 </li>
@@ -618,7 +618,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Katalog-erDelAv">Katalog – er del av (dct:isPartOf)</a></li>
 <li><a href="#Katalog-harDel">Katalog – har del (dct:hasPart)</a></li>
-<li><a href="#Katalog-hendelsesbeskrivelse">Katalog – hendelsesbeskrivelse (dcatno:event)</a></li>
+<li><a href="#Katalog-inneholderHendelse">Katalog – inneholder hendelse (dcatno:containsEvent)</a></li>
 <li><a href="#Katalog-produsent">Katalog – produsent (dct:creator)</a></li>
 <li><a href="#Katalog-rettigheter">Katalog – rettigheter (brukervilkår) (dct:rights)</a></li>
 </ul>
@@ -930,6 +930,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#Endringslogg">Endringslogg</a>
+<ul class="sectlevel2">
+<li><a href="#Edring-v081">Fra v.0.8 til v.0.8.1</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -968,9 +973,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>til åpen og uformell kommentering, kommenteringsfrist 2022-01-15</mark><br>
-<strong>Versjon</strong>: 0.8<br>
-<strong>Publisert</strong>: 2021-12-02<br>
-<strong>Oppdatert</strong>: 2021-12-08<br>
+<strong>Versjon</strong>: 0.8.1<br>
+<strong>Publisert</strong>: 2021-12-02 (v.0.8)<br>
+<strong>Oppdatert</strong>: 2021-12-09 (v.0.8.1) (Se <a href="#Endringslogg">Endringslogg</a>)<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
@@ -1524,7 +1529,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 <div class="title">Figur 10. Katalogbeskrivelse</div>
 </div>
 <div class="paragraph">
-<p>EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (<code>dcat:Catalog</code>) fra <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a>. Spesifikasjonen utvider også klassen Katalog med egendefinerte egenskapene «tjenestebeskrivelse» (<code>cpsvno:service</code>) og «hendelsesbeskrivelse» (<code>cpsvno:event</code>), som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.</p>
+<p>EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (<code>dcat:Catalog</code>) fra <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a>. Spesifikasjonen utvider også klassen Katalog med egendefinerte egenskapene «inneholder tjeneste» (<code>cpsvno:containsService</code>) og «inneholder hendelse» (<code>cpsvno:containsEvent</code>), som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.</p>
 </div>
 </div>
 </div>
@@ -3998,7 +4003,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </div>
 </div>
 <div class="sect3">
-<h4 id="Katalog-tjenestebeskrivelse"><a class="link" href="#Katalog-tjenestebeskrivelse">Katalog – tjenestebeskrivelse (dcatno:service)</a></h4>
+<h4 id="Katalog-inneholderTjeneste"><a class="link" href="#Katalog-inneholderTjeneste">Katalog – inneholder tjeneste (dcatno:containsService)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4011,7 +4016,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcatno:service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcatno:containsService</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -4019,11 +4024,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til tjenestebeskrivelse som er katalogisert i katalogen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en (offentlig) tjeneste som er i katalogen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to the services that are included in the catalogue.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to a (public) service that is in the catalog.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av</strong></p></td>
@@ -4675,7 +4680,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </table>
 </div>
 <div class="sect3">
-<h4 id="Katalog-hendelsesbeskrivelse"><a class="link" href="#Katalog-hendelsesbeskrivelse">Katalog – hendelsesbeskrivelse (dcatno:event)</a></h4>
+<h4 id="Katalog-inneholderHendelse"><a class="link" href="#Katalog-inneholderHendelse">Katalog – inneholder hendelse (dcatno:containsEvent)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4688,7 +4693,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcatno:event</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcatno:containsEvent</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -4696,11 +4701,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til hendelsesbeskrivelse som er katalogisert i katalogen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en hendelse som er i katalogen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to the events that are listed in the catalogue.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to an event that is in the catalog.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av</strong></p></td>
@@ -12650,6 +12655,31 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="paragraph">
 <p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a>.</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Endringslogg"><a class="link" href="#Endringslogg">Endringslogg</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="Edring-v081"><a class="link" href="#Edring-v081">Fra v.0.8 til v.0.8.1</a></h3>
+<div class="paragraph">
+<p>I forbindelse med publisering av <a href="https://data.norge.no/vocabulary/dcatno/dcatno.ttl">de to egendefinerte dcatno-egenskapene</a>, ble det gjort endelig valg av URIer og engelske og norske navn for disse egenskapene.</p>
+</div>
+<div class="paragraph">
+<p>Som følge av dette ble følgende  endret i CPSV-AP-NO:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>"Katalog – tjenestebeskrivelse (<code>dcatno:service</code>)" endret til "Katalog - inneholder tjeneste (<code>dcatno:containsService</code>)", beskrivelsen og den engelske usage note også justert.</p>
+</li>
+<li>
+<p>"Katalog – hendelsesbeskrivelse (<code>dcatno:event</code>)" endret til "Katalog - inneholder hendelse (<code>dcatno:containsEvent</code>)", beskrivelsen og den engelske usage note også justert.</p>
+</li>
+</ul>
+</div>
 <!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -12665,10 +12695,9 @@ ga('send', 'pageview');
 </div>
 </div>
 </div>
-</div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-12-09 10:23:12 UTC
+Sist oppdatert 2021-12-09 15:11:43 UTC
 </div>
 </div>
 </body>
