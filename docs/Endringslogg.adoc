@@ -1,0 +1,11 @@
+== Endringslogg [[Endringslogg]]
+
+=== Fra v.0.8 til v.0.8.1 [[Edring-v081]]
+
+I forbindelse med publisering av https://data.norge.no/vocabulary/dcatno/dcatno.ttl[de to egendefinerte dcatno-egenskapene], ble det gjort endelig valg av URIer og engelske og norske navn for disse egenskapene.
+
+Som følge av dette ble følgende  endret i CPSV-AP-NO:
+
+* "Katalog – tjenestebeskrivelse (`dcatno:service`)" endret til "Katalog - inneholder tjeneste (`dcatno:containsService`)", beskrivelsen og den engelske usage note også justert.
+
+* "Katalog – hendelsesbeskrivelse (`dcatno:event`)" endret til "Katalog - inneholder hendelse (`dcatno:containsEvent`)", beskrivelsen og den engelske usage note også justert.

@@ -82,15 +82,15 @@ Eksempel i RDF Turtle:
    dct:title "Tjeneste- og hendelseskatalog"@nb ; .
 ----
 
-==== Katalog – tjenestebeskrivelse (dcatno:service) [[Katalog-tjenestebeskrivelse]]
+==== Katalog – inneholder tjeneste (dcatno:containsService) [[Katalog-inneholderTjeneste]]
 
 [cols="30s,70d"]
 |===
 |English name|service
-|URI|dcatno:service
+|URI|dcatno:containsService
 |Range|cpsvno:Service
-|Beskrivelse|Brukes til å referere til tjenestebeskrivelse som er katalogisert i katalogen.
-|Usage note|To refer to the services that are included in the catalogue.
+|Beskrivelse|Brukes til å referere til en (offentlig) tjeneste som er i katalogen.
+|Usage note|To refer to a (public) service that is in the catalog.
 |Subegenskap av|dct:hasPart
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -315,15 +315,15 @@ Eksempel i RDF Turtle:
 |Eksempel|
 |===
 
-==== Katalog – hendelsesbeskrivelse (dcatno:event) [[Katalog-hendelsesbeskrivelse]]
+==== Katalog – inneholder hendelse (dcatno:containsEvent) [[Katalog-inneholderHendelse]]
 
 [cols="30s,70d"]
 |===
 |English name|event
-|URI|dcatno:event
+|URI|dcatno:containsEvent
 |Range|cv:Event
-|Beskrivelse|Brukes til å referere til hendelsesbeskrivelse som er katalogisert i katalogen.
-|Usage note|To refer to the events that are listed in the catalogue.
+|Beskrivelse|Brukes til å referere til en hendelse som er i katalogen.
+|Usage note|To refer to an event that is in the catalog.
 |Subegenskap av|dct:hasPart
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional

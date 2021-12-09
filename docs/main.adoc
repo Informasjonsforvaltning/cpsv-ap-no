@@ -20,9 +20,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 
 
 *Status*: #til åpen og uformell kommentering, kommenteringsfrist 2022-01-15# +
-*Versjon*: 0.8 +
-*Publisert*: 2021-12-02 +
-*Oppdatert*: 2021-12-08 +
+*Versjon*: 0.8.1 +
+*Publisert*: 2021-12-02 (v.0.8) +
+*Oppdatert*: 2021-12-09 (v.0.8.1) (Se <<Endringslogg>>) +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
@@ -82,6 +82,8 @@ include::KlassenVilkår.adoc[]
 include::KlassenVirksomhetshendelse.adoc[]
 
 include::KlassenÅpningstid.adoc[]
+
+include::Endringslogg.adoc[]
 
 
 include::shared/stats.adoc[]
