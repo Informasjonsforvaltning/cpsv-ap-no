@@ -74,7 +74,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 
 [cols="30s,70d"]
 |===
-|English name|related service
+|English name|may initiate
 |URI|cpsvno:mayInitiate
 |Range|cpsvno:Service
 |Beskrivelse|Brukes til å referere til tjenester som kan settes i gang av den aktuelle hendelsen.
