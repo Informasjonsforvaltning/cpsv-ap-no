@@ -175,7 +175,7 @@ Eksempel i RDF Turtle:
 |Usage note|This property Indicates a classification for a Public Organisation within some classification scheme.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad| Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (i RDF)] (#NB! Lenken virker ikke (per 2021-11-28)#).
+|Merknad| Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (i RDF)].
 |Eksempel|Brønnøy kommune er av type _Local Authority_.
 |===
 
