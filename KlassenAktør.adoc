@@ -13,7 +13,7 @@ image::images/KlassenAktør.png[]
 |URI|foaf:Agent
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1|For aktør som er en offentlig organisasjon skal det brukes <<OffentligOrganisasjon>>.
-|Merknad 2|Kravsnivå endret fra vaglfri til anbeflt.
+|Merknad 2|Kravsnivå endret fra valgfri til anbefalt.
 |Merknad 3|Norsk utvidelse: range endret fra `dct:Agent` til `foaf:Agent` (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).
 |Eksempel|Vi bruker en fiktiv exAktør (Den beste restauranten AS) som eksempel i dette kapittelet.
 |===
