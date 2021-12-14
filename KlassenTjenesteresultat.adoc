@@ -54,7 +54,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , a dcat:Dataset ;
-   dct:tilte "Skjenkebevilling til «Den beste restauranten AS»"@nb ; .
+   dct:title "Skjenkebevilling til «Den beste restauranten AS»"@nb ; .
 -----
 
 === Anbefalte egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-anbefalte-egenskaper]]
@@ -77,7 +77,7 @@ Eksempel i RDF Turtle:
 Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , a dcat:Dataset ;
-   dct:tilte "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
+   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
 -----
 
 === Valgfrie egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-valgfrie-egenskaper]]
@@ -116,7 +116,7 @@ Eksempel i RDF Turtle:
 Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , a dcat:Dataset ;
-   dct:tilte "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
+   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
    dct:type <tillatelse> ; .
 -----
 
