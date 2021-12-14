@@ -32,7 +32,7 @@ image::images/KlassenTjeneste.png[]
 |Beskrivelse |Brukes til å oppgi en tekstlig beskrivelse av tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere språk. 
 |Usage note |This property represents a free text Description of the Service. 
 |Multiplisitet |1..n 
-|Kravsnivå |Obligatorisk 
+|Kravsnivå |Obligatorisk/Mandatory 
 |Merknad |
 |Eksempel | 
 |===
@@ -48,7 +48,7 @@ image::images/KlassenTjeneste.png[]
 |Beskrivelse |Brukes til å referere til aktøren som eier tjenesten. 
 |Usage note |To refer to the Agent who owns the Service. 
 |Multiplisitet |1..n 
-|Kravsnivå |Obligatorisk 
+|Kravsnivå |Obligatorisk/Mandatory
 |Merknad |
 |Eksempel | 
 |===
@@ -64,7 +64,7 @@ image::images/KlassenTjeneste.png[]
 |Beskrivelse |Brukes til å oppgi en formell identifikasjon til tjenesten. 
 |Usage note |This property represents a formally-issued Identifier for the Service. 
 |Multiplisitet |1..1 
-|Kravsnivå |Obligatorisk 
+|Kravsnivå |Obligatorisk/Mandatory
 |Merknad |Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]

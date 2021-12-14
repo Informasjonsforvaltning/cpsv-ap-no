@@ -36,7 +36,7 @@ Eksempel i RDF Turtle:
 |Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere språk.
 |Usage note|This property represents a free text Description of the Public Service.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk
+|Kravsnivå |Obligatorisk/Mandatory
 |Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
 |Eksempel|Bevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.
 |===
@@ -57,7 +57,7 @@ Eksempel i RDF Turtle:
 |Beskrivelse|Brukes til å referere til den offentlige organisasjonen som har ansvaret for tjenesten, uansett om tjenesten tilbys direkte av den aktuelle offentlige organisasjonen eller er satt bort til andre.
 |Usage note|This property links a Public Service to a Public Organization, which is the responsible Agent for the delivery of the Public Service. Whether the particular Public Organization provides the public service directly or outsources it is not relevant. The Public Organization that is the Competent Authority of the service is the one that is ultimately responsible for managing and providing the public service.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk
+|Kravsnivå |Obligatorisk/Mandatory
 |Merknad|Begrepet ‘competent authority’ er definert i Services Directive (2006/123/EC) som: “any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof”.
 |Eksempel|Brønnøy kommune er det kompetente organet for tjenesten «Skjenkebevilling i Brønnøy kommune»
 |===
@@ -78,7 +78,7 @@ Eksempel i RDF Turtle:
 |Beskrivelse|Brukes til å oppgi en formell identifikasjon til tjenesten.
 |Usage note|This property represents a formally-issued Identifier for the Public Service.
 |Multiplisitet|1..1
-|Kravsnivå|Obligatorisk
+|Kravsnivå |Obligatorisk/Mandatory
 |Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
