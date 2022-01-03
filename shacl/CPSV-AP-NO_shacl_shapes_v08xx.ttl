@@ -36,13 +36,13 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2021-11-30"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO, expressed in SHACL."@en ;
     dct:title "SHACL-rules for CPSV-AP-NO"@en ;
-    owl:versionInfo "0.8.01" ;
-    adms:versionNotes "First biuld up of this shacl-file, for v.0.8 of CPSV-AP-NO. Not testet against any date yet"@en ,
-      "Første oppbygging av denne shacl-filen, for v.0.8 og CPSV-AP-NO. Ikke testet mot noen data ennå."@nb ; 
+    dct:modified "2022-01-03"^^xsd:date ;
+    owl:versionInfo "0.8.02" ;
+    adms:versionNotes "Testet OK using some data registered in FDK."@en ,
+        "Testet OK ved å bruke noe data som er registrert i FDK."@nb ;
     foaf:homepage <https://data.norge.no/specification/cpsv-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -198,8 +198,39 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 :PublicServiceShape a sh:NodeShape;
   sh:name "Public Service"@en , "Offentlig tjeneste"@nb ;
   sh:property
-    # mandatory properties:
-      :hasMin1Max1Shape-cvHasCompetentAuthority # har kompetent organ
+    # mandatory properties
+      :hasMin1MaxNShape-dctDescription, # beskrivelse
+      :hasMin1Max1Shape-cvHasCompetentAuthority, # har kompetent organ
+      :hasMin1Max1Shape-dctIdentifier, # identifikator
+      :hasMin1MaxNShape-dcatContactPoint, # kontaktpunkt
+      :hasMin1MaxNShape-dctTitle, # navn
+      :hasMin1MaxNShape-cpsvProduces, # produserer
+    # recommended properties
+      :hasMin0MaxNShape-dctSpatial, # dekningsområde
+      :hasMin0MaxnShape-dctIsPartOfService, # er del av
+      :hasMin0MaxnShape-dctHasPartService, # har del
+      :hasMin0MaxNShape-foafHomepage, # hjemmeside
+      :hasMin0Max1Shape-admsStatus, # status
+      :hasMin0MaxNShape-cvThematicArea, # temaområde
+      :hasMin0MaxNShape-dctType, # type
+    # optional properties:
+      :hasMin0MaxNShape-cvProcessingTime, # behandlingstid
+      :hasMin0MaxNShape-dctSubject, # begrep
+      :hasMin0MaxNShape-cvIsDescribedAt, # beskrivende datasett
+      :hasMin0MaxNShape-cvHasParticipation, # deltagende
+      :hasMin0MaxNShape-cpsvHasInput, # dokumentasjonskrav
+      :hasMin0MaxNShape-cvIsGroupedBy, # er gruppert ved
+      :hasMin0MaxNShape-cvIsClassifiedBy, # er klassifisert under
+      :hasMin0MaxNShape-cvHasChannel, # er tilgjengelig via
+      :hasMin0MaxNShape-cpsvFollows, # følger regel
+      :hasMin0MaxNShape-cvHasCost, # gebyr
+      :hasMin0MaxNShape-dctRequires, # krever
+      :hasMin0MaxNShape-cvSector, # næringsgruppering
+      :hasMin0MaxNShape-dcatKeyword, # nøkkelord
+      :hasMin0MaxNShape-cvHasLegalResource, # relatert regelverk
+      :hasMin0MaxNShape-dctRelationService, # relatert tjeneste
+      :hasMin0MaxNShape-dctLanguage, # språk
+      :hasMin0MaxNShape-cvHasCriterion # vilkår
   ;
   sh:targetClass cpsv:PublicService .
 
@@ -244,12 +275,14 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   ;
   sh:targetClass dct:PeriodOfTime .
 
-### Klassen Tjeneste (:Service) og Offentlig tjeneste (cpsv:PublicService)
+### Klassen Tjeneste (cpsvno:Servicve)
+# det som er spesifikt for Tjeneste
 :ServiceShape a sh:NodeShape;
-  sh:name "(Public) Service"@en , "(Offentlig) Tjeneste"@nb ;
+  sh:name "Service"@en , "Tjeneste"@nb ;
   sh:property
     # mandatory properties
       :hasMin1MaxNShape-dctDescription, # beskrivelse
+      :hasMin1Max1Shape-cvOwnedBy , # eies av
       :hasMin1Max1Shape-dctIdentifier, # identifikator
       :hasMin1MaxNShape-dcatContactPoint, # kontaktpunkt
       :hasMin1MaxNShape-dctTitle, # navn
@@ -280,18 +313,6 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-dctRelationService, # relatert tjeneste
       :hasMin0MaxNShape-dctLanguage, # språk
       :hasMin0MaxNShape-cvHasCriterion # vilkår
-    ;
-  sh:or (
-    [sh:targetClass cpsv:PublicService]
-    [sh:targetClass cpsvno:Service ] ) .
-
-### Klassen Tjeneste (cpsvno:Servicve)
-# det som er spesifikt for Tjeneste
-:ServiceShape a sh:NodeShape;
-  sh:name "Service"@en , "Tjeneste"@nb ;
-  sh:property
-    # mandatory properties:
-      :hasMin1Max1Shape-cvOwnedBy # eies av
   ;
   sh:targetClass cpsvno:Service .
 
@@ -543,7 +564,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 ## -- cv-properties:
 
 :hasMin1Max1Shape-cvHasCompetentAuthority a sh:PropertyShape;
-  sh:class cv:PublicOrganisation;
+#  sh:class cv:PublicOrganisation; # Enhetsreg bruker ikke denne klasse/type
   sh:minCount 1;
   sh:maxCount 1;
   sh:message "The property cv:hasCompetentAuthority MUST have min. 1 and max. 1 value which MUST refer to an instance of cv:PublicOrganisation"@en,
@@ -736,9 +757,12 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 
 :hasMin1MaxNShape-dcatContactPoint a sh:PropertyShape;
   sh:name "contact point"@en, "kontaktpunkt"@nb;
-  sh:message "The property dcat:contactPoint MUST have min. 1 value referring to an instance of vcard:Kind"@en,
-    "Egenskapen dcat:contactPoint skal ha minst 1 verdi som refererer til instans av vcard:Kind"@nb;
-  sh:class vcard:Kind;
+  sh:minCount 1;
+  sh:message "The property dcat:contactPoint MUST have min. 1 value which should refer to an instance of vcard:Organization"@en,
+    "Egenskapen dcat:contactPoint skal ha minst 1 verdi som bør referere til instans av vcard:Organization"@nb;
+  sh:or (
+    [ sh:class vcard:Kind ]
+    [ sh:class vcard:Organization ] ) ;
   sh:path dcat:contactPoint;
   sh:severity sh:Violation .
 
