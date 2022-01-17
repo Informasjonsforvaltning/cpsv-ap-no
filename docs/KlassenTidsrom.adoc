@@ -12,8 +12,8 @@ image::images/KlassenTidsrom.png[]
 |Usage note|To represent a Period of time.
 |URI|dct:PeriodOfTime
 |Kravsnivå|Valgfri/Optional
-|Merknad 1|Norsk utvidelse: URIen endret fra `cv:PeriodOfTime` til `dct:PeriodOfTime`, for å samkjøre med bl.a. DCAT-AP-NO.
-|Remarks|Norwegian extension: Range changed from `cv:PeriodOfTime` to `dct:PeriodOfTime` in order to align with e.g. DCAT-AP-NO.
+|Merknad 1|Norsk utvidelse: URIen endret fra `cv:PeriodOfTime` til `dct:PeriodOfTime`, for å samkjøre med bl.a. DCAT-AP-NO. Dette er en utvidelse til CCCEV (og ikke CPSV-AP direkte).
+|Remarks|Norwegian extension: URI changed from `cv:PeriodOfTime` to `dct:PeriodOfTime` in order to align with e.g. DCAT-AP-NO. This is an extension to CCCEV (not CPSV-AP directly).
 |Eksempel|
 |===
 
