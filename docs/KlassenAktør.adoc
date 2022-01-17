@@ -106,7 +106,7 @@ Eksempel i RDF Turtle:
 |Beskrivelse|Brukes til å oppgi en adresse til aktøren.
 |Usage note|This property represents an Address related to an Agent.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
+|Kravsnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen `cv:hasAddress` og range `locn:Address`. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI `locn:address` med range `locn:Address`. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen `locn:address`.
 |Eksempel|Restaurantgata 1, Gourmetby, Matland
 |===
