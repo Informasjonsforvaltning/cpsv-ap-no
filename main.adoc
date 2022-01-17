@@ -19,10 +19,10 @@ NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
-*Status*: #til åpen og uformell kommentering, kommenteringsfrist 2022-01-15# +
-*Versjon*: 0.8.1 +
-*Publisert*: 2021-12-02 (v.0.8), 2021-12-09 (v.0.8.1) (Se <<Endringslogg>>) +
-*Oppdatert*: 2021-12-14 (kun å rette opp åpenbare skrivefeil o.l.) +
+*Status*: #under utvikling# +
+*Versjon*: #forberedelse til v.0.9#  +
+*Publisert*: "#under utvikling# (Se <<Endringslogg>>) +
+*Oppdatert*: #løpende oppdatert inntil dette blir "v.0.9"# +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +

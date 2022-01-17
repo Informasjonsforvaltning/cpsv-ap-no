@@ -14,7 +14,7 @@ image::images/KlassenAktør.png[]
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1|For aktør som er en offentlig organisasjon skal det brukes <<OffentligOrganisasjon>>.
 |Merknad 2|Kravsnivå endret fra valgfri til anbefalt.
-|Merknad 3|Norsk utvidelse: range endret fra `dct:Agent` til `foaf:Agent` (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).
+|Merknad 3|Norsk utvidelse: URI endret fra `dct:Agent` til `foaf:Agent` (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).
 |Eksempel|Vi bruker en fiktiv exAktør (Den beste restauranten AS) som eksempel i dette kapittelet.
 |===
 
@@ -106,7 +106,7 @@ Eksempel i RDF Turtle:
 |Beskrivelse|Brukes til å oppgi en adresse til aktøren.
 |Usage note|This property represents an Address related to an Agent.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
+|Kravsnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen `cv:hasAddress` og range `locn:Address`. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI `locn:address` med range `locn:Address`. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen `locn:address`.
 |Eksempel|Restaurantgata 1, Gourmetby, Matland
 |===
