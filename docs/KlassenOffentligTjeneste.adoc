@@ -280,7 +280,7 @@ ADMS Status v.1.0 inneholder nå følgende verdier:
 |Eksempel|
 |===
 
-==== Offentlig tjeneste – type (dct:type) [[OffentligTjeneste--type]]
+==== Offentlig tjeneste – type (dct:type) [[OffentligTjeneste-type]]
 
 [cols="30s,70d"]
 |===
