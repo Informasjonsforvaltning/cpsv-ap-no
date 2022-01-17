@@ -700,7 +700,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#OffentligTjeneste-hjemmeside">Offentlig tjeneste – hjemmeside (foaf:homepage)</a></li>
 <li><a href="#OffentligTjeneste-status">Offentlig tjeneste – status (adms:status)</a></li>
 <li><a href="#OffentligTjeneste-temaområde">Offentlig tjeneste – temaområde (cv:thematicArea)</a></li>
-<li><a href="#OffentligTjeneste--type">Offentlig tjeneste – type (dct:type)</a></li>
+<li><a href="#OffentligTjeneste-type">Offentlig tjeneste – type (dct:type)</a></li>
 </ul>
 </li>
 <li><a href="#OffentligTjeneste-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Offentlig tjeneste</em></a>
@@ -931,6 +931,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Endringslogg">Endringslogg</a>
 <ul class="sectlevel2">
+<li><a href="#_fra_v_8_x_til_v_0_9">Fra v.8.x til v.0.9</a></li>
 <li><a href="#Edring-v081">Fra v.0.8 til v.0.8.1</a></li>
 </ul>
 </li>
@@ -973,7 +974,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>under utvikling</mark><br>
 <strong>Versjon</strong>: <mark>forberedelse til v.0.9</mark> <br>
-<strong>Publisert</strong>: "<mark>under utvikling</mark> (Se <a href="#Endringslogg">Endringslogg</a>)<br>
+<strong>Publisert</strong>: <mark>under utvikling</mark> (Se <a href="#Endringslogg">Endringslogg</a>)<br>
 <strong>Oppdatert</strong>: <mark>løpende oppdatert inntil dette blir "v.0.9"</mark><br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
@@ -6748,7 +6749,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </table>
 </div>
 <div class="sect3">
-<h4 id="OffentligTjeneste--type"><a class="link" href="#OffentligTjeneste--type">Offentlig tjeneste – type (dct:type)</a></h4>
+<h4 id="OffentligTjeneste-type"><a class="link" href="#OffentligTjeneste-type">Offentlig tjeneste – type (dct:type)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8467,11 +8468,11 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: URIen endret fra <code>cv:PeriodOfTime</code> til <code>dct:PeriodOfTime</code>, for å samkjøre med bl.a. DCAT-AP-NO.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: URIen endret fra <code>cv:PeriodOfTime</code> til <code>dct:PeriodOfTime</code>, for å samkjøre med bl.a. DCAT-AP-NO. Dette er en utvidelse til CCCEV (og ikke CPSV-AP direkte).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range changed from <code>cv:PeriodOfTime</code> to <code>dct:PeriodOfTime</code> in order to align with e.g. DCAT-AP-NO.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: URI changed from <code>cv:PeriodOfTime</code> to <code>dct:PeriodOfTime</code> in order to align with e.g. DCAT-AP-NO. This is an extension to CCCEV (not CPSV-AP directly).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -9911,6 +9912,10 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a keyword, term or phrase to describe the Service. </p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n </p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå </strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional </p></td>
 </tr>
@@ -10287,7 +10292,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til dokumentasjonskrav som er spesifikk den aktuelle tjenestekanalen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til dokumentasjonskrav som er spesifikk for den aktuelle tjenestekanalen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -12667,6 +12672,19 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <h2 id="Endringslogg"><a class="link" href="#Endringslogg">Endringslogg</a></h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="_fra_v_8_x_til_v_0_9"><a class="link" href="#_fra_v_8_x_til_v_0_9">Fra v.8.x til v.0.9</a></h3>
+<div class="paragraph">
+<p>I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forklares her, er følgende endret:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><mark>&lt;tekst kommer etter hvert som endringene blir lagt inn&gt;</mark></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
 <h3 id="Edring-v081"><a class="link" href="#Edring-v081">Fra v.0.8 til v.0.8.1</a></h3>
 <div class="paragraph">
 <p>I forbindelse med publisering av <a href="https://data.norge.no/vocabulary/dcatno/dcatno.ttl">de to egendefinerte dcatno-egenskapene</a>, ble det gjort endelig valg av URIer og engelske og norske navn for disse egenskapene.</p>
@@ -12701,7 +12719,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-01-17 14:48:23 UTC
+Sist oppdatert 2022-01-17 15:00:33 UTC
 </div>
 </div>
 </body>

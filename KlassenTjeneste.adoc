@@ -455,6 +455,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Range |rdfs:Literal 
 |Beskrivelse |Brukes til å oppgi nøkkelord som beskriver den aktuelle tjenesten. 
 |Usage note |This property represents a keyword, term or phrase to describe the Service. 
+|Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
 |Merknad | 
 |Eksempel |
