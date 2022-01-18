@@ -4,9 +4,15 @@
 
 I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forklares her, er følgende endret:
 
+* <<OffentligTjeneste>>:
+** egenskapen <<OffentligTjeneste-behandlingstid>>: multiplisitet endret fra 0..n til 0..1
+
 * <<RegulativRessurs>>:
 ** ny egenskap <<RegulativRessurs-språk>>
 ** ny egenskap <<RegulativRessurs-tittel>>
+
+* <<Tjeneste>>:
+* egenskapen <<Tjeneste-behandlingstid>>: multiplisitet endret fra 0..n til 0..1
 
 * <<Tjenesteresultat>>:
 ** ny egenskap <<Tjenesteresultat-språk>>
