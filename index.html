@@ -836,6 +836,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Tjenestekanal-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tjenestekanal</em></a>
 <ul class="sectlevel3">
+<li><a href="#Tjenestekanal-behandlingstid">Tjenestekanal – behandlingstid (cv:processingTime) </a></li>
 <li><a href="#Tjenestekanal-datatjeneste">Tjenestekanal – datatjeneste (cpsvno:dataSeivice)</a></li>
 <li><a href="#Tjenestekanal-dokumentasjonskrav">Tjenestekanal – dokumentasjonskrav (cpsv:hasInput)</a></li>
 <li><a href="#Tjenestekanal-eiesAv">Tjenestekanal – eies av (cv:ownedBy)</a></li>
@@ -10402,6 +10403,61 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="sect2">
 <h3 id="Tjenestekanal-valgfrie-egenskaper"><a class="link" href="#Tjenestekanal-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tjenestekanal</em></a></h3>
 <div class="sect3">
+<h4 id="Tjenestekanal-behandlingstid"><a class="link" href="#Tjenestekanal-behandlingstid">Tjenestekanal – behandlingstid (cv:processingTime) </a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">processing time </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:processingTime </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:duration </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi den estimerte behandlingstiden via denne kanalen. </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of this property is the (estimated) time needed for executing a Service through this canal. </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1 </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> Denne egenskapen brukes bare hvis behandlingstiden er spesifikk for den valgte kanalen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used only if the processing time is specific for the channel chosen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2 </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The actual information is provided using the ISO8601 syntax for durations. </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel </strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
 <h4 id="Tjenestekanal-datatjeneste"><a class="link" href="#Tjenestekanal-datatjeneste">Tjenestekanal – datatjeneste (cpsvno:dataSeivice)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -12997,7 +13053,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-01-18 08:52:06 UTC
+Sist oppdatert 2022-01-18 09:06:43 UTC
 </div>
 </div>
 </body>
