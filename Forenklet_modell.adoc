@@ -6,7 +6,7 @@ Figur <<img-ForenkletModell>> viser en forenklet modell av tjeneste- og hendelse
 // .Forenklet modell for tjeneste- og hendelsesbeskrivelser
 // [link=images/ForenkletModell-CPSV-AP-NO.png]
 // image::images/ForenkletModell-CPSV-AP-NO.png[]
-<#modellen vises inn her, etter at alle endringene er gjennomført#>
+<#modellen settes inn her, etter at alle endringene er gjennomført#>
 
 include::TemaHendelsesforløp.adoc[]
 
