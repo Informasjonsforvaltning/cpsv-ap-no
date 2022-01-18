@@ -50,8 +50,10 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet |0..1 
 |Kravsnivå |Valgfri/Optional 
 |Merknad 1 | Denne egenskapen brukes bare hvis behandlingstiden er spesifikk for den valgte kanalen.
-|Remark 1 | This property is used only if the processing time is specific for the channel chosen. 
-|Remark 2 |The actual information is provided using the ISO8601 syntax for durations. 
+|Remark 1 | This property is used only if the processing time is specific for the channel chosen.
+|Merknad 2 | Norsk utvidelse: ikke eksplisitt med i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
+|Remark 3 |The actual information is provided using the ISO8601 syntax for durations.
 |Eksempel |
 |===
 
