@@ -14,6 +14,9 @@ I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forkl
 * <<Tjeneste>>:
 * egenskapen <<Tjeneste-behandlingstid>>: multiplisitet endret fra 0..n til 0..1
 
+* <<Tjenestekanal>>:
+** ny egenskap <<Tjenestekanal-behandlingstid>>
+
 * <<Tjenesteresultat>>:
 ** ny egenskap <<Tjenesteresultat-språk>>
 
