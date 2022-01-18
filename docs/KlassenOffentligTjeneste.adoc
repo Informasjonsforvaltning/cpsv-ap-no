@@ -13,9 +13,7 @@ image::images/KlassenOffentligTjeneste.png[]
 |URI|cpsv:PublicService
 |Subklasse av / Subclass of|cpsvno:Service
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1|En offentlig tjeneste kan bestå av et obligatorisk eller skjønnsmessig sett av aktiviteter som utføres, eller som kan utføres, av eller på vegne av en offentlig organisasjon, er offentlig finansiert og som kommer fra offentlig politikk.
-|Merknad 2|Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til f.eks. å beskrive tjenester levert av private aktører.
-|Remarks|A Public Service is a mandatory or discretionary set of activities performed, or able to be performed, by or on behalf of a public organisation, publicly funded and arise from public policy.
+|Merknad |Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til f.eks. å beskrive tjenester levert av private aktører.
 |Eksempel|Skjenkebevilling
 |===
 
