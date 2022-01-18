@@ -14,7 +14,7 @@ I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forkl
 ** ny egenskap <<RegulativRessurs-tittel>>
 
 * <<Tjeneste>>:
-* egenskapen <<Tjeneste-behandlingstid>>: multiplisitet endret fra 0..n til 0..1
+** egenskapen <<Tjeneste-behandlingstid>>: multiplisitet endret fra 0..n til 0..1
 ** egenskapen <<Tjeneste-begrep>>: kravsnivå endret fra valgfri til anbefalt
 ** egenskapen <<Tjeneste-dokumentasjonskrav>>: kravsnivå endret fra valgfri til anbefalt
 
@@ -24,7 +24,7 @@ I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forkl
 * <<Tjenesteresultat>>:
 ** ny egenskap <<Tjenesteresultat-språk>>
 
-* #<mer tekst kommer etter hvert som endringene blir lagt inn>#
+* #<flere punkter kan komme, etter hvert som endringene blir lagt inn>#
 
 
 === Fra v.0.8 til v.0.8.1 [[Edring-v081]]
