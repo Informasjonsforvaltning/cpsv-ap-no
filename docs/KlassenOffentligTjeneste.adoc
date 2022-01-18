@@ -168,11 +168,12 @@ Eksempel i RDF Turtle:
 |Usage note|A Public Service is likely to be available only within a given area, typically the area covered by a particular public authority.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+|Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
 * Minst en verdi skal være fra en av følgende kontrollerte lister: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
 
 * For å angi dekningsområde i Norge, bør Kartverkets liste over https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
+|Merknad 2 | Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt.
 |Eksempel|«Skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.
 |===
 
