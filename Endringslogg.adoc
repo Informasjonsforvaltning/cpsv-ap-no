@@ -6,6 +6,8 @@ I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forkl
 
 * <<OffentligTjeneste>>:
 ** egenskapen <<OffentligTjeneste-behandlingstid>>: multiplisitet endret fra 0..n til 0..1
+** egenskapen <<OffentligTjeneste-begrep>>: kravsnivå endret fra valgfri til anbefalt
+** egenskapen <<OffentligTjeneste-dokumentasjonskrav>>: kravsnivå endret fra valgfri til anbefalt
 
 * <<RegulativRessurs>>:
 ** ny egenskap <<RegulativRessurs-språk>>
@@ -13,6 +15,8 @@ I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forkl
 
 * <<Tjeneste>>:
 * egenskapen <<Tjeneste-behandlingstid>>: multiplisitet endret fra 0..n til 0..1
+** egenskapen <<Tjeneste-begrep>>: kravsnivå endret fra valgfri til anbefalt
+** egenskapen <<Tjeneste-dokumentasjonskrav>>: kravsnivå endret fra valgfri til anbefalt
 
 * <<Tjenestekanal>>:
 ** ny egenskap <<Tjenestekanal-behandlingstid>>

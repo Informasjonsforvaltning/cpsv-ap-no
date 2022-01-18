@@ -157,6 +157,21 @@ Eksempel i RDF Turtle:
 
 === Anbefalte egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-anbefalte-egenskaper]]
 
+==== Offentlig tjeneste – begrep (dct:subject) [[OffentligTjeneste-begrep]]
+
+[cols="30s,70d"]
+|===
+|English name|subject
+|URI|dct:subject
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til begrep som er viktig for å forstå tjenesten.
+|Usage note|To refer to concept that is important for the understanding of the service.
+|Multiplisitet|0..n
+|Kravsnivå| Anbefalt/Recommended
+|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå tjenesten.
+|Eksempel|
+|===
+
 ==== Offentlig tjeneste – dekningsområde (dct:spatial) [[OffentligTjeneste-dekningsområde]]
 
 [cols="30s,70d"]
@@ -183,6 +198,31 @@ Eksempel i RDF Turtle:
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> , # Norge
       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ; # Brønnøy kommune
    .
+----
+
+==== Offentlig tjeneste – dokumentasjonskrav (cv:hasInput) [[OffentligTjeneste-dokumentasjonskrav]]
+
+[cols="30s,70d"]
+|===
+|English name|has input
+|URI|cpsv:hasInput
+|Range|cv:Evidence
+|Beskrivelse|Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.
+|Usage note|The Has Input property links a Public Service to one or more instances of the Evidence class.
+|Multiplisitet|0..n
+|Kravsnivå| Anbefalt/Recommended
+|Merknad 1 | Norsk utvidelse: kravsnivå endret fra valgfri til anbefalt.
+|Remark 1 | Norwegian extension: Minimum requirement changed from optional to recommended.  
+|Remark 2 | A specific Public Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.
+|Eksempel|Et av dokumentasjonskravene til å søke om skjenkebevilling er bestått «Kunnskapsprøve».
+|===
+
+Eksempel i RDF Turtle:
+----
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
+   cpsv:hasInput <beståttKunnskapsrøve> ; .
+
+<beståttKunnskapsrøve> a cv:Evidence .
 ----
 
 ==== Offentlig tjeneste – er del av (dct:isPartOf) [[OffentligTjeneste-erDelAv]]
@@ -335,21 +375,6 @@ Eksempel i RDF Turtle:
    cv:processingTime "P1D"^^xsd:duration ; .
 -----
 
-==== Offentlig tjeneste – begrep (dct:subject) [[OffentligTjeneste-begrep]]
-
-[cols="30s,70d"]
-|===
-|English name|subject
-|URI|dct:subject
-|Range|skos:Concept
-|Beskrivelse|Brukes til å referere til begrep som er viktig for å forstå tjenesten.
-|Usage note|To refer to concept that is important for the understanding of the service.
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå tjenesten.
-|Eksempel|
-|===
-
 ==== Offentlig tjeneste – beskrivende datasett (cv:isDescribedAt) [[OffentligTjeneste-beskrivendeDatasett]]
 
 [cols="30s,70d"]
@@ -382,30 +407,6 @@ Eksempel i RDF Turtle:
 |===
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
-
-==== Offentlig tjeneste – dokumentasjonskrav (cv:hasInput) [[OffentligTjeneste-dokumentasjonskrav]]
-
-[cols="30s,70d"]
-|===
-|English name|has input
-|URI|cpsv:hasInput
-|Range|cv:Evidence
-|Beskrivelse|Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.
-|Usage note|The Has Input property links a Public Service to one or more instances of the Evidence class.
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Remarks|A specific Public Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.
-|Eksempel|Et av dokumentasjonskravene til å søke om skjenkebevilling er bestått «Kunnskapsprøve».
-|===
-
-Eksempel i RDF Turtle:
-----
-<skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cpsv:hasInput <beståttKunnskapsrøve> ; .
-
-<beståttKunnskapsrøve> a cv:Evidence .
-----
 
 ==== Offentlig tjeneste – er gruppert ved (cv:isGroupedBy) [[OffentligTjeneste-erGruppertVed]]
 
