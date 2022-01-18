@@ -24,6 +24,8 @@ Følgende klasser er valgfrie:
 * <<Gebyr>>
 * <<Katalog>>
 * <<Livshendelse>>
+* <<PrivatAktør>>
+* <<PrivatTjeneste>>
 * <<Regel>>
 * <<RegulativRessurs>>
 * <<Tidsrom>>
