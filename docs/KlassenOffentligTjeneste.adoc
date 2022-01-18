@@ -228,7 +228,8 @@ Eksempel i RDF Turtle:
 |Usage note|This property refers to a homepage of the Service.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|
+|Merknad| Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt
+|Remark| Norwegian extension: Minimum requirement changed from optional to recommended.
 |Eksempel|https://kommune24-7.no/1813[https://kommune24-7.no/1813]
 |===
 
