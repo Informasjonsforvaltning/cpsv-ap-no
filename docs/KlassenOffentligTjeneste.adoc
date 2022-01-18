@@ -13,7 +13,10 @@ image::images/KlassenOffentligTjeneste.png[]
 |URI|cpsv:PublicService
 |Subklasse av / Subclass of|cpsvno:Service
 |Kravsnivå|Anbefalt/Recommended
-|Merknad |Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til f.eks. å beskrive tjenester levert av private aktører.
+|Merknad 1| Bruk <<PrivatTjeneste>> hvis tjenesten som beskrives er en privat tjeneste.
+|Remark 1| Use <<PrivatTjeneste>> if the service described is a private service.
+|Merknad 2|Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til f.eks. å beskrive tjenester levert av private aktører.
+|Remark 2| Norwegian extension: Minimum requirement changed from mandatory to recommended, such that the specification may also be used e.g. to describe private services.
 |Eksempel|Skjenkebevilling
 |===
 

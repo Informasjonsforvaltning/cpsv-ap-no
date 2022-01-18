@@ -1,3 +1,531 @@
 == Klassen Privat tjeneste [[PrivatTjeneste]]
 
-<#mer tekst kommer#>
+[[img-KlassenPrivatTjeneste]]
+.Klassen Privat tjeneste (cpsvno:PrivateService)
+[link=images/KlassenPrivatTjeneste.png]
+image::images/KlassenPrivatTjeneste.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Private Service
+|Beskrivelse|Brukes til å beskrive en privat tjeneste, dvs. tjeneste levert av en privat aktør.
+|Usage note|To represent a Private Service, i.e., a service provided by a private agent.
+|URI|cpsvno:PrivateService
+|Subklasse av / Subclass of | cpsvno:Service
+|Kravsnivå|Valgfri/Optional
+|Merknad 1|Bruk <<OffentligTjeneste>> når det er en offentlig tjeneste som skal beskrives.
+|Remark 1| Use <<OffentligTjeneste>> when the services described is a public service.
+|Merknad 2|Norsk utvidelse: Denne finnes ikke i CPSV-AP, men trengs for å kunne dekke behov for å beskrive tjenester som er levert av en privat aktør.
+|Remark 2|Norwegian extension: CPSV-AP does not have this class. It is needed in order to describe a service which for instance is provided by a Private Agent.
+|Eksempel|Se under <<OffentligTjeneste>> for eksempler på bruk av de tilsvarende egenskapene.
+|===
+
+[[PrivatTjeneste-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Privat tjeneste_  
+
+[[PrivatTjeneste-beskrivelse]]
+==== Privat tjeneste – beskrivelse (dct:description) 
+
+[cols="30s,70d"]
+|===
+|English name |description 
+|URI |dct:description 
+|Range |rdfs:Literal 
+|Beskrivelse |Brukes til å oppgi en tekstlig beskrivelse av tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere språk. 
+|Usage note |This property represents a free text Description of the Service. 
+|Multiplisitet |1..n 
+|Kravsnivå |Obligatorisk/Mandatory 
+|Merknad |
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-dokumentasjonskrav]]
+==== Privat tjeneste - dokumentasjonskrav (cv:hasInput)
+
+[cols="30s,70d"]
+|===
+|English name |has input 
+|URI |cpsv:hasInput 
+|Range |cv:Evidence 
+|Beskrivelse |Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
+|Usage note |The Has Input property links a Service to one or more instances of the Evidence class. 
+|Multiplisitet |0..n 
+|Kravsnivå | Anbefalt/Recommended 
+|Merknad |
+|Remarks  |  A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.  
+|Eksempel |
+|===
+
+[[PrivatTjeneste-eiesAv]]
+==== Privat tjeneste - eies av (cv:ownedBy)
+
+[cols="30s,70d"]
+|===
+|English name |owned by
+|URI |cv:ownedBy 
+|Range |foaf:Agent 
+|Beskrivelse |Brukes til å referere til aktøren som eier tjenesten. 
+|Usage note |To refer to the Agent who owns the Service. 
+|Multiplisitet |1..n 
+|Kravsnivå |Obligatorisk/Mandatory
+|Merknad |
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-identifikator]]
+==== Privat tjeneste – identifikator (dct:identifier) 
+
+[cols="30s,70d"]
+|===
+|English name |identifier 
+|URI |dct:identifier 
+|Range |rdfs:Literal 
+|Beskrivelse |Brukes til å oppgi en formell identifikasjon til tjenesten. 
+|Usage note |This property represents a formally-issued Identifier for the Service. 
+|Multiplisitet |1..1 
+|Kravsnivå |Obligatorisk/Mandatory
+|Merknad |Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-kontaktpunkt]]
+==== Privat tjeneste – kontaktpunkt (dcat:contactPoint) 
+
+[cols="30s,70d"]
+|===
+|English name |contact point 
+|URI |dcat:contactPoint 
+|Range |vcard:Kind 
+|Beskrivelse |Brukes til å oppgi kontaktpunkt(er) for tjenesten. 
+|Usage note |To specify contact points for the service.  
+|Multiplisitet |1..n 
+|Kravsnivå |Obligatorisk/Mandatory 
+|Merknad |
+|Eksempel |
+|===
+
+[[PrivatTjeneste-navn]]
+==== Privat tjeneste – navn (dct:title) 
+
+[cols="30s,70d"]
+|===
+|English name |name 
+|URI |dct:title 
+|Range |rdfs:Literal 
+|Beskrivelse |Brukes til å oppgi det offisielle navnet på tjenesten. Denne egenskapen kan gjentas når navnet finnes i flere språk. 
+|Usage note |This property represents the official Name of the Service. 
+|Multiplisitet |1..n 
+|Kravsnivå |Obligatorisk/Mandatory 
+|Merknad |
+|Eksempel |
+|===
+
+[[PrivatTjeneste-produserer]]
+==== Privat tjeneste - produserer (cpsv:produces)
+
+[cols="30s,70d"]
+|===
+|English name |produces 
+|URI |cpsv:produces 
+|Range |cv:Output 
+|Beskrivelse |Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.  
+|Usage note |Links a Service to one or more instances of the Output class describing the actual result of executing a given Service. 
+|Multiplisitet |1..n 
+|Kravsnivå |Obligatorisk/Mandatory 
+|Merknad 1|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output`. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.  
+|Merknad 2| Norsk utvidelse: kravsnivået endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe.
+|Eksempel |
+|===
+
+[[PrivatTjeneste-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Privat tjeneste_  
+
+[[PrivatTjeneste-begrep]]
+==== Privat tjeneste – begrep (dct:subject)
+
+[cols="30s,70d"]
+|===
+|English name|subject
+|URI|dct:subject
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til begrep som er viktig for å forstå tjenesten.
+|Usage note|To refer to concept that is important for the understanding of the service.
+|Multiplisitet|0..n
+|Kravsnivå| Anbefalt/Recommended
+|Merknad|
+|Eksempel|
+|===
+
+[[PrivatTjeneste-dekningsområde]]
+==== Privat tjeneste – dekningsområde (dct:spatial) 
+
+[cols="30s,70d"]
+|===
+|English name |spatial coverage 
+|URI |dct:spatial 
+|Range |dct:Location 
+|Beskrivelse |Brukes til å referere til et geografisk eller administrativt område som dekkes av tjenesten. 
+|Usage note |A Service is likely to be available only within a given area. 
+|Multiplisitet |0..n 
+|Kravsnivå |Anbefalt/Recommended 
+|Merknad a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+
+* Minst en verdi skal være fra en av følgende kontrollerte lister: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
+
+* For å angi dekningsområde i Norge, bør Kartverkets liste over https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
+|Eksempel |
+|===
+
+[[PrivatTjeneste-erDelAv]]
+==== Privat tjeneste – er del av (dct:isPartOf)
+
+[cols="30s,70d"]
+|===
+|English name |is part of 
+|URI |dct:isPartOf 
+|Range |cpsvno:Service 
+|Beskrivelse |Brukes til å referere til en annen tjeneste som denne tjenesten er en del av. 
+|Usage note |This property indicates a related Service in which is included.
+|Multiplisitet |0..n 
+|Kravsnivå |Anbefalt/Recommended 
+|Merknad | Denne er den inverse av egenskapen <<PrivatTjeneste-harDel>>.
+|Remark | This property is the inverse of `dct:hasPart.` 
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-harDel]]
+==== Privat tjeneste - har del (dct:hasPart)
+
+[cols="30s,70d"]
+|===
+|English name |has part 
+|URI |dct:hasPart 
+|Range |cpsv:PublicService 
+|Beskrivelse |Brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives. 
+|Usage note |This property indicates a related Registry Service that is included either physically or logically in the described resource.  
+|Multiplisitet |0..n 
+|Kravsnivå |Anbefalt/Recommended 
+|Merknad|Dette er den inverse av egenskapen <<PrivatTjeneste-erDelAv>>. 
+|Remark | This property is the inverse of `dct:isPartOf.` 
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-hjemmeside]]
+==== Privat tjeneste – hjemmeside (foaf:homepage) 
+
+[cols="30s,70d"]
+|===
+|English name |homepage 
+|URI |foaf:homepage 
+|Range |foaf:Document 
+|Beskrivelse |Brukes til å referere til hjemmesiden til tjenesten.   
+|Usage note |This property refers to the homepage of a Service. 
+|Multiplisitet |0..n 
+|Kravsnivå |Anbefalt/Recommended 
+|Merknad | 
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-status]]
+==== Privat tjeneste - status (adms:status) 
+
+[cols="30s,70d"]
+|===
+|English name |status 
+|URI |adms:status 
+|Range |skos:Concept 
+|Beskrivelse |Brukes til å referere til status til tjenesten (f.eks. aktiv, inaktiv, under utvikling osv.) i henhold til et predefinert kontrollert vokabular. 
+|Usage note |Indicates whether a Service is active, inactive, under development etc. according to a controlled vocabulary. 
+|Multiplisitet |0..1 
+|Kravsnivå |Anbefalt/Recommended 
+|Merknad |Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (lenket ressurs i RDF)] (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP). 
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-temaområde]]
+==== Privat tjeneste - temaområde (cv:thematicArea)
+
+[cols="30s,70d"]
+|===
+|English name |thematic area 
+|URI |cv:thematicArea 
+|Range |skos:Concept 
+|Beskrivelse |Brukes til å referere til primært temaområde som dekkes av tjenesten. 
+|Usage note |This property represents the Thematic Area of a Service as described in a controlled vocabulary. 
+|Multiplisitet |0..n 
+|Kravsnivå |Anbefalt/Recommended 
+|Merknad |Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc[EuroVoc]. https://psi.norge.no/los/[Los - felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-type]]
+==== Privat tjeneste - type (dct:type)
+
+[cols="30s,70d"]
+|===
+|English name |type 
+|URI |dct:type 
+|Range |skos:Concept 
+|Beskrivelse |Brukes til å indikere type tjeneste i henhold til et kontrollert vokabular. 
+|Usage note |This property represents the Type of a Service as described in a controlled vocabulary. 
+|Multiplisitet |0..n 
+|Kravsnivå |Anbefalt/Recommended 
+|Merknad |Verdien skal velges fra en felles kontrollert liste over tjenestetyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular. 
+|Eksempel | 
+|===
+ 
+Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig tjeneste):
+
+* #<kom med innspill>#
+
+[[PrivatTjeneste-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Privat tjeneste_
+
+[[PrivatTjeneste-behandlingstid]]
+==== Privat tjeneste – behandlingstid (cv:processingTime) 
+
+[cols="30s,70d"]
+|===
+|English name |processing time 
+|URI |cv:processingTime 
+|Range |rdfs:Literal typed as xsd:duration 
+|Beskrivelse |Brukes til å oppgi den estimerte behandlingstiden. 
+|Usage note |The value of this property is the (estimated) time needed for executing a Service. 
+|Multiplisitet |0..1 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | 
+|Remarks |The actual information is provided using the ISO8601 syntax for durations. 
+|Eksempel |
+|===
+
+[[PrivatTjeneste-beskrivendeDatasett]]
+==== Privat tjeneste – beskrivende datasett (cv:isDescribedAt) 
+
+[cols="30s,70d"]
+|===
+|English name |is described at 
+|URI |cv:isDescribedAt 
+|Range |dcat:Dataset 
+|Beskrivelse |Brukes til å referere til datasett som beskriver tjenesten.  
+|Usage note |The Is Described At property links a Service to the Dataset(s) in which it is being described. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad |Bruk egenskapen <<Tjeneste-dokumentasjonskrav>> for å kytte til datasett som tjenesten bruker, eller egenskapen <<Tjeneste-produserer>> for datasett som tjenesten produserer.  
+|Merknad |
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-deltagende]]
+==== Privat tjeneste – deltagende (cv:hasParticipation)
+
+[cols="30s,70d"]
+|===
+|English name |has participation 
+|URI |cv:hasParticipation 
+|Range |cv:Participation 
+|Beskrivelse |Brukes til å knytte til andre aktører som er deltagende i å levere tjenesten.  
+|Usage note |The CPSV-AP defines the two basic roles of Competent Authority and Service Provider, but this simple model can be extended if required using the Has Participation property that links to the Participation class. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad |   
+|Eksempel |
+|===
+
+[[PrivatTjeneste-erGruppertVed]]
+==== Privat tjeneste – er gruppert ved (cv:isGroupedBy)
+
+[cols="30s,70d"]
+|===
+|English name|is grouped by
+|URI|cv:isGroupedBy
+|Range|cv:Event
+|Beskrivelse|Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
+|Usage note|This property links the Service to the triggering Event class.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+[[PrivatTjeneste-erKlassifisertUnder]]
+==== Privat tjeneste – er klassifisert under (cv:isClassifiedBy) 
+
+[cols="30s,70d"]
+|===
+|English name |is classified by 
+|URI |cv:isClassifiedBy 
+|Range |skos:Concept 
+|Beskrivelse |Brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<Tjeneste-temaområde>>, <<Tjeneste-næringsgruppering>> osv. 
+|Usage note |The Is Classified By property allows to classify the Service with any Concept, other than those already foreseen and defined explicitely in the <<Tjeneste-temaområde>>, <<Tjeneste-næringsgruppering>> etc. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | 
+|Remarks |It is a generic property which can be further specialised to make the classification explicit, for instance for classifying services according to level of digitisation, type of audience …  
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-erTilgjengeligVia]]
+==== Privat tjeneste – er tilgjengelig via (cv:hasChannel) 
+
+[cols="30s,70d"]
+|===
+|English name |has channel 
+|URI |cv:hasChannel 
+|Range |cv:Channel 
+|Beskrivelse |Brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte. 
+|Usage note |This property links the Service to any Channel through which an Agent provides, uses or otherwise interacts with the Service, such as an online service, phone number or office.  
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | 
+|Eksempel |
+|===
+
+[[PrivatTjeneste-følgerRegel]]
+==== Privat tjeneste - følger regel (cpsv:follows)
+
+[cols="30s,70d"]
+|===
+|English name |follows 
+|URI |cpsv:follows 
+|Range |cpsv:Rule 
+|Beskrivelse |Brukes til å referere til regelen som gjelder for tjenesten. 
+|Usage note |This property links a Service to the Rule(s) under which it operates. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | 
+|Eksempel |Se også <<KnytteTilRegelverk>>. 
+|===
+
+[[PrivatTjeneste-gebyr]]
+==== Privat tjeneste – gebyr (cv:hasCost) 
+
+[cols="30s,70d"]
+|===
+|English name |has cost 
+|URI |cv:hasCost 
+|Range |cv:Cost 
+|Beskrivelse |Brukes til å referere til en eller flere instanser av klassen Gebyr (cv:Cost), for å oppgi ev. gebyr for tjenesten.  
+|Usage note |The Has Cost property links a Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Service for the citizen or business related to the execution of the particular Service. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, skal egenskapen <<Gebyr-hvisTilbysGjennom>> brukes.
+|Remarks |Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship. 
+|Eksempel |
+|===
+
+[[PrivatTjeneste-krever]]
+==== Privat tjeneste - krever (dct:requires)
+
+[cols="30s,70d"]
+|===
+|English name |requires 
+|URI |dct:requires 
+|Range |cpsvno:Service
+|Beskrivelse |Brukes til å referere til en eller flere andre tjenester som denne tjenesten krever utført først, eller som denne tjenesten på en eller annen måte bruker resultat fra.  
+|Usage note |One Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | 
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-næringsgruppering]]
+==== Privat tjeneste - næringsgruppering (cv:sector)
+
+[cols="30s,70d"]
+|===
+|English name |sector 
+|URI |cv:sector 
+|Range |skos:Concept 
+|Beskrivelse |Brukes til å referere til industri/sektor som den aktuelle tjenesten er relatert til, eller er ment for. En tjeneste kan relateres til flere industrier/sektorer.  
+|Usage note |This property represents the industry or sector a Service relates to, or is intended for. Note that a single Service may relate to multiple sectors. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad |De mulige verdiene for denne egenskapen velges fra https://www.ssb.no/klass/klassifikasjoner/6/[Standard for næringsgruppering]. 
+|Remarks |The possible values for this property are provided as a controlled vocabulary, https://www.ssb.no/en/klass/klassifikasjoner/6/[Standard Industrial Classification] (based on NACE Rev.2).  
+|Eksempel |
+|Example |
+|===
+
+[[PrivatTjeneste-nøkkelord]]
+==== Privat tjeneste – nøkkelord (dcat:keyword) 
+
+[cols="30s,70d"]
+|===
+|English name |keyword 
+|URI |dcat:keyword 
+|Range |rdfs:Literal 
+|Beskrivelse |Brukes til å oppgi nøkkelord som beskriver den aktuelle tjenesten. 
+|Usage note |This property represents a keyword, term or phrase to describe the Service. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | 
+|Eksempel |
+|===
+
+[[PrivatTjeneste-relatertRegelverk]]
+==== Privat tjeneste - relatert regelverk (cv:hasLegalResource)
+
+[cols="30s,70d"]
+|===
+|English name |has legal resource 
+|URI |cv:hasLegalResource 
+|Range |eli:LegalResource 
+|Beskrivelse |Brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til. 
+|Usage note |The Has Legal Resource property links a Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Service relates, operates or has its legal basis. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | 
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-relatertTjeneste]]
+==== Privat tjeneste – relatert tjeneste (dct:relation) 
+
+[cols="30s,70d"]
+|===
+|English name |related service
+|URI |dct:relation 
+|Range |cpsvno:Service 
+|Beskrivelse |Brukes til å referere til en eller flere andre relaterte tjenester.  
+|Usage note |This property represents a Service related to the particular instance of the Service class. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad |Bruk heller egenskapen <<Tjeneste-krever>> der det er avhengighet mellom tjenestene. 
+|Eksempel | 
+|===
+
+[[PrivatTjeneste-språk]]
+==== Privat tjeneste – språk (dct:language) 
+
+[cols="30s,70d"]
+|===
+|English name |language 
+|URI |dct:language 
+|Range |dct:LinguisticSystem 
+|Beskrivelse |Brukes til å oppgi hvilke språk tjenesten er tilgjengelig på. Dette kan være ett språk eller flere språk, for eksempel i land med mer enn ett offisielt språk. 
+|Usage note |This property represents the language(s) in which the Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad |Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Eksempel |
+|===
+
+[[PrivatTjeneste-vilkår]]
+==== Privat tjeneste – vilkår (cv:hasCriterion) 
+
+[cols="30s,70d"]
+|===
+|English name |has criterion 
+|URI |cv:hasCriterion 
+|Range |cv:CriterionRequirement 
+|Beskrivelse |Brukes til å referere til vilkår knyttet til behov for eller bruk av tjenesten.   
+|Usage note |Links a Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc. 
+|Multiplisitet |0..n 
+|Kravsnivå |Valgfri/Optional 
+|Merknad | 
+|Remarks |The Criterion class is defined in the https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-criterion-and-core-evidence-vocabulary[Core Criterion and Core Evidence Vocabulary]. 
+|Eksempel |
+|===
