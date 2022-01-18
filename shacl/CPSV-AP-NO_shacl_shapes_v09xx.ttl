@@ -214,7 +214,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-cvThematicArea, # temaområde
       :hasMin0MaxNShape-dctType, # type
     # optional properties:
-      :hasMin0MaxNShape-cvProcessingTime, # behandlingstid
+      :hasMin0Max1Shape-cvProcessingTime, # behandlingstid
       :hasMin0MaxNShape-dctSubject, # begrep
       :hasMin0MaxNShape-cvIsDescribedAt, # beskrivende datasett
       :hasMin0MaxNShape-cvHasParticipation, # deltagende
@@ -298,7 +298,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-cvThematicArea, # temaområde
       :hasMin0MaxNShape-dctType, # type
     # optional properties:
-      :hasMin0MaxNShape-cvProcessingTime, # behandlingstid
+      :hasMin0Max1Shape-cvProcessingTime, # behandlingstid
       :hasMin0MaxNShape-dctSubject, # begrep
       :hasMin0MaxNShape-cvIsDescribedAt, # beskrivende datasett
       :hasMin0MaxNShape-cvHasParticipation, # deltagende
@@ -325,6 +325,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
     # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier, # identifikator
     # optinal properties:
+      :hasMin0Max1Shape-cvProcessingTime, # behandlingstid
       :hasMin0MaxNShape-cpsvnoDataService, # datatjeneste
       :hasMin0MaxNShape-cpsvHasInput, # dokumentasjonskrav
       :hasMin0MaxNShape-cvOwnedBy, # eies av
@@ -713,7 +714,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:path cv:playsRole;
   sh:severity sh:Violation .
 
-:hasMin0MaxNShape-cvProcessingTime a sh:PropertyShape;
+:hasMin0Max1Shape-cvProcessingTime a sh:PropertyShape;
   sh:name "processing time"@en, "behandlingstid";
   sh:message "The property cv:processingTime MUST be xsd:duration"@en,
     "Egenskapen cv:processingTime skal være verdi av type xsd:duration"@nb;
