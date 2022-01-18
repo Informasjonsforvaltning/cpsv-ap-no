@@ -4,7 +4,14 @@
 
 I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forklares her, er følgende endret:
 
-* #<tekst kommer etter hvert som endringene blir lagt inn># 
+* <<RegulativRessurs>>:
+** ny egenskap <<RegulativRessurs-språk>>
+** ny egenskap <<RegulativRessurs-tittel>>
+
+* <<Tjenesteresultat>>:
+** ny egenskap <<Tjenesteresultat-språk>>
+
+* #<mer tekst kommer etter hvert som endringene blir lagt inn>#
 
 
 === Fra v.0.8 til v.0.8.1 [[Edring-v081]]
