@@ -260,7 +260,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-dctDescription, # beskrivelse
       :hasMin0MaxNShape-dctIdentifier, # identifikator
       :hasMin0MaxNShape-rdfsSeeAlso, # referanse
-      :hasMin0MaxNshape-dctLanguage, # språk
+      :hasMin0MaxNShape-dctLanguage, # språk
       :hasMin0MaxNShape-dctTitle, # tittel
     # optional properties:
       :hasMin0MaxNShape-dctRelationEliLegalResource # relatert regulativ ressurs
@@ -347,6 +347,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin1MaxNShape-dctTitle, # tittel
     # recommended properties:
       :hasMin0MaxNShape-dctDescription, # beskrivelse
+      :hasMin0MaxNShape-dctLanguage, # språk
     # optional properties:
       :hasMin0MaxNShape-xkosCauses, # kan skape
       :hasMin0MaxNShape-dctType # type

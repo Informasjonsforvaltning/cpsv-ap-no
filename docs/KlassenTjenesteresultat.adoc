@@ -80,6 +80,29 @@ Eksempel i RDF Turtle:
    dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
 -----
 
+==== Tjenesteresultat – språk (dct:language) [[Tjenesteresultat-språk]]
+
+[cols="30s,70d"]
+|===
+|English name|language
+|URI|dct:language
+|Range|dct:LinguisticSystem
+|Beskrivelse|Brukes til å oppgi språk som tjenesteresultatet er i.
+|Usage note|To specify the language that the output is in.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommende
+|Merknad|Norsk utvidelse: Ikke eksplisitt med i CPSV-AP.
+|Remark| Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel|Norsk bokmål
+|===
+
+Eksempel i RDF Turtle:
+-----
+<bevilling1001> a cv:Output , a dcat:Dataset ;
+   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ; .
+-----
+
 === Valgfrie egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-valgfrie-egenskaper]]
 
 [[Tjenesteresultat-kanSkape]]
