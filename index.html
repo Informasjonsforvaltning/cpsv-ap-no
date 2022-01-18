@@ -861,6 +861,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tjenesteresultat-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tjenesteresultat</em></a>
 <ul class="sectlevel3">
 <li><a href="#Tjenesteresultat-beskrivelse">Tjenesteresultat – beskrivelse (dct:description)</a></li>
+<li><a href="#Tjenesteresultat-språk">Tjenesteresultat – språk (dct:language)</a></li>
 </ul>
 </li>
 <li><a href="#Tjenesteresultat-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tjenesteresultat</em></a>
@@ -11183,6 +11184,67 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="Tjenesteresultat-språk"><a class="link" href="#Tjenesteresultat-språk">Tjenesteresultat – språk (dct:language)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">language</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:language</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:LinguisticSystem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi språk som tjenesteresultatet er i.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To specify the language that the output is in.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommende</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt med i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk bokmål</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling1001&gt; a cv:Output , a dcat:Dataset ;
+   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
+   dct:language &lt;http://publications.europa.eu/resource/authority/language/NOB&gt; ; .</pre>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="Tjenesteresultat-valgfrie-egenskaper"><a class="link" href="#Tjenesteresultat-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tjenesteresultat</em></a></h3>
@@ -12886,7 +12948,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-01-18 06:13:45 UTC
+Sist oppdatert 2022-01-18 06:33:05 UTC
 </div>
 </div>
 </body>
