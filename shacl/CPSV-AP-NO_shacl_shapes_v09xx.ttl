@@ -65,7 +65,9 @@
       :hasMin0MaxNShape-locnAddress, # addresse
       :hasMin0MaxNShape-cvPlaysRole # har rolle
     ;
-  sh:targetClass foaf:Agent .
+  sh:or (
+    [sh:targetClass foaf:Agent]
+    [sh:targetClass cpsvno:PrivateAgent] ) .
 
 ### Klassen Deltagelse (cv:Participation)
 :ParticipationShape a sh:NodeShape;

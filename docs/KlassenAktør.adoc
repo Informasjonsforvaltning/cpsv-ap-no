@@ -8,20 +8,15 @@ image::images/KlassenAktør.png[]
 [cols="30s,70d"]
 |===
 |English name|Agent
-|Beskrivelse|Brukes til å representere en aktør.
+|Beskrivelse|Brukes til å representere en aktør, som inkluderer enkeltperson, virksomhet og gruppe.
 |Usage note|The Agent class is any resource that acts or has the power to act. This includes people, organisations and groups. The Public Organization class, defined in the Core Public Organisation Vocabulary, is a notable sub class of Agent.
 |URI|foaf:Agent
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1|For aktør som er en offentlig organisasjon skal det brukes <<OffentligOrganisasjon>>.
+|Merknad 1|For aktør som er en offentlig organisasjon skal <<OffentligOrganisasjon>> brukes. For privat aktør skal <<PrivatAktør>> brukes.
 |Merknad 2|Kravsnivå endret fra valgfri til anbefalt.
 |Merknad 3|Norsk utvidelse: URI endret fra `dct:Agent` til `foaf:Agent` (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).
-|Eksempel|Vi bruker en fiktiv exAktør (Den beste restauranten AS) som eksempel i dette kapittelet.
+|Eksempel| Se eksemplene i <<PrivatAktør>>.
 |===
-
-Eksempel i RDF Turtle:
------
-<exAktør> a foaf:Agent ; .
------
 
 === Obligatoriske egenskaper for klassen _Aktør_ [[Aktør-obligatoriske-egenskaper]]
 
@@ -37,14 +32,8 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|
-|Eksempel|Det fulle navnet til vår exAktør er «Den beste restauranten AS»
+|Eksempel|
 |===
-
-Eksempel i RDF Turtle:
-----
-<exAktør> a foaf:Agent ;
-   foaf:name "Den beste restauranten AS"@nb ; .
-----
 
 === Anbefalte egenskaper for klassen _Aktør_ [[Aktør-anbefalte-egenskaper]]
 
@@ -62,15 +51,9 @@ Eksempel i RDF Turtle:
 |Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. `\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`
-|Eksempel|exAktør har organisasjonsnummer nnnnnnnnn
+|Eksempel|
 |===
 
-Eksempel I RDF Turtle:
------
-<exAktør> a foaf:Agent ;
-   foaf:name "Den beste restauranten AS"@nb ;
-   dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn"^^xsd:anyURI ;  .
------
 
 ==== Aktør – type (dct:type) [[Aktør-type]]
 
@@ -84,15 +67,9 @@ Eksempel I RDF Turtle:
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (i RDF)].
-|Eksempel|Vår Eksempelaktør er av type _Company_.
+|Eksempel|
 |===
 
-Eksempel i RDF Turtle:
------
-<exAktør> a foaf:Agent ;
-   foaf:name "Den beste restauranten AS"@nb ;
-   dct:type adms:Company ;  .
------
 
 === Valgfrie egenskaper for klassen _Aktør_ [[Aktør-valgfrie-egenskaper]]
 
@@ -108,16 +85,9 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen `cv:hasAddress` og range `locn:Address`. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI `locn:address` med range `locn:Address`. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen `locn:address`.
-|Eksempel|Restaurantgata 1, Gourmetby, Matland
+|Eksempel|
 |===
 
-Eksempel i RDF Turtle:
-----
-<exAktør> a foaf:Agent ;
-   foaf:name "Den beste restauranten AS"@nb ;
-     locn:address [ a locn:Address ;
-         locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ] ; .
-----
 
 ==== Aktør – har rolle i (cv:playsRole) [[Aktør-harRolle]]
 
