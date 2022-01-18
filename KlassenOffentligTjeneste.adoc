@@ -322,7 +322,7 @@ Forslag til et kontrollert vokabular for typer offentlig tjeneste:
 |Range|rdfs:Literal typed as xsd:duration
 |Beskrivelse|Brukes til å oppgi den estimerte behandlingstiden.
 |Usage note|The value of this property is the (estimated) time needed for executing a Public Service.
-|Multiplisitet|0..n
+|Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
 |Merknad|
 |Remarks|The actual information is provided using the ISO8601 syntax for durations.

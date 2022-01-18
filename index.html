@@ -6900,7 +6900,7 @@ Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «In
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
@@ -9499,7 +9499,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1 </p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå </strong></p></td>
@@ -12918,6 +12918,16 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="ulist">
 <ul>
 <li>
+<p><a href="#OffentligTjeneste">Klassen Offentlig tjeneste (cpsv:PublicService)</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>egenskapen <a href="#OffentligTjeneste-behandlingstid">Offentlig tjeneste – behandlingstid (cv:processingTime)</a>: multiplisitet endret fra 0..n til 0..1</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
 <p><a href="#RegulativRessurs">Klassen Regulativ ressurs (eli:LegalResource)</a>:</p>
 <div class="ulist">
 <ul>
@@ -12929,6 +12939,12 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </li>
 </ul>
 </div>
+</li>
+<li>
+<p><a href="#Tjeneste">Klassen Tjeneste (cpsvno:Service)</a>:</p>
+</li>
+<li>
+<p>egenskapen <a href="#Tjeneste-behandlingstid">Tjeneste – behandlingstid (cv:processingTime) </a>: multiplisitet endret fra 0..n til 0..1</p>
 </li>
 <li>
 <p><a href="#Tjenesteresultat">Klassen Tjenesteresultat (cv:Output)</a>:</p>
@@ -12981,7 +12997,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-01-18 07:56:42 UTC
+Sist oppdatert 2022-01-18 08:52:06 UTC
 </div>
 </div>
 </body>
