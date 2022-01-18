@@ -206,7 +206,9 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin1MaxNShape-dctTitle, # navn
       :hasMin1MaxNShape-cpsvProduces, # produserer
     # recommended properties
+      :hasMin0MaxNShape-dctSubject, # begrep
       :hasMin0MaxNShape-dctSpatial, # dekningsområde
+      :hasMin0MaxNShape-cpsvHasInput, # dokumentasjonskrav
       :hasMin0MaxnShape-dctIsPartOfService, # er del av
       :hasMin0MaxnShape-dctHasPartService, # har del
       :hasMin0MaxNShape-foafHomepage, # hjemmeside
@@ -215,10 +217,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-dctType, # type
     # optional properties:
       :hasMin0Max1Shape-cvProcessingTime, # behandlingstid
-      :hasMin0MaxNShape-dctSubject, # begrep
       :hasMin0MaxNShape-cvIsDescribedAt, # beskrivende datasett
       :hasMin0MaxNShape-cvHasParticipation, # deltagende
-      :hasMin0MaxNShape-cpsvHasInput, # dokumentasjonskrav
       :hasMin0MaxNShape-cvIsGroupedBy, # er gruppert ved
       :hasMin0MaxNShape-cvIsClassifiedBy, # er klassifisert under
       :hasMin0MaxNShape-cvHasChannel, # er tilgjengelig via
@@ -290,7 +290,9 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin1MaxNShape-dctTitle, # navn
       :hasMin1MaxNShape-cpsvProduces, # produserer
     # recommended properties
+      :hasMin0MaxNShape-dctSubject, # begrep
       :hasMin0MaxNShape-dctSpatial, # dekningsområde
+      :hasMin0MaxNShape-cpsvHasInput, # dokumentasjonskrav
       :hasMin0MaxnShape-dctIsPartOfService, # er del av
       :hasMin0MaxnShape-dctHasPartService, # har del
       :hasMin0MaxNShape-foafHomepage, # hjemmeside
@@ -299,10 +301,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-dctType, # type
     # optional properties:
       :hasMin0Max1Shape-cvProcessingTime, # behandlingstid
-      :hasMin0MaxNShape-dctSubject, # begrep
       :hasMin0MaxNShape-cvIsDescribedAt, # beskrivende datasett
       :hasMin0MaxNShape-cvHasParticipation, # deltagende
-      :hasMin0MaxNShape-cpsvHasInput, # dokumentasjonskrav
       :hasMin0MaxNShape-cvIsGroupedBy, # er gruppert ved
       :hasMin0MaxNShape-cvIsClassifiedBy, # er klassifisert under
       :hasMin0MaxNShape-cvHasChannel, # er tilgjengelig via

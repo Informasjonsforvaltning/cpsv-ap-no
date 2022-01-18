@@ -37,6 +37,23 @@ image::images/KlassenTjeneste.png[]
 |Eksempel | 
 |===
 
+[[Tjeneste-dokumentasjonskrav]]
+==== Tjeneste - dokumentasjonskrav (cv:hasInput)
+
+[cols="30s,70d"]
+|===
+|English name |has input 
+|URI |cpsv:hasInput 
+|Range |cv:Evidence 
+|Beskrivelse |Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
+|Usage note |The Has Input property links a Service to one or more instances of the Evidence class. 
+|Multiplisitet |0..n 
+|Kravsnivå | Anbefalt/Recommended 
+|Merknad |
+|Remarks  |  A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.  
+|Eksempel |
+|===
+
 [[Tjeneste-eiesAv]]
 ==== Tjeneste - eies av (cv:ownedBy)
 
@@ -122,6 +139,22 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 
 [[Tjeneste-anbefalte-egenskaper]]
 === Anbefalte egenskaper for klassen _Tjeneste_  
+
+[[Tjeneste-begrep]]
+==== Tjeneste – begrep (dct:subject)
+
+[cols="30s,70d"]
+|===
+|English name|subject
+|URI|dct:subject
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til begrep som er viktig for å forstå tjenesten.
+|Usage note|To refer to concept that is important for the understanding of the service.
+|Multiplisitet|0..n
+|Kravsnivå| Anbefalt/Recommended
+|Merknad|
+|Eksempel|
+|===
 
 [[Tjeneste-dekningsområde]]
 ==== Tjeneste – dekningsområde (dct:spatial) 
@@ -263,22 +296,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Eksempel |
 |===
 
-[[Tjeneste-begrep]]
-==== Tjeneste – begrep (dct:subject)
-
-[cols="30s,70d"]
-|===
-|English name|subject
-|URI|dct:subject
-|Range|skos:Concept
-|Beskrivelse|Brukes til å referere til begrep som er viktig for å forstå tjenesten.
-|Usage note|To refer to concept that is important for the understanding of the service.
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|
-|===
-
 [[Tjeneste-beskrivendeDatasett]]
 ==== Tjeneste – beskrivende datasett (cv:isDescribedAt) 
 
@@ -309,23 +326,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
 |Merknad |   
-|Eksempel |
-|===
-
-[[Tjeneste-dokumentasjonskrav]]
-==== Tjeneste - dokumentasjonskrav (cv:hasInput)
-
-[cols="30s,70d"]
-|===
-|English name |has input 
-|URI |cpsv:hasInput 
-|Range |cv:Evidence 
-|Beskrivelse |Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
-|Usage note |The Has Input property links a Service to one or more instances of the Evidence class. 
-|Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
-|Merknad | 
-|Remarks |A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel. 
 |Eksempel |
 |===
 
