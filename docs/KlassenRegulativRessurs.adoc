@@ -89,6 +89,44 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 
 Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 
+==== Regulativ ressurs – språk (dct:language) [[RegulativRessurs-språk]]
+
+[cols="30s,70d"]
+|===
+|English name| language
+|URI|dct:language
+|Range|dct:LinguisticSystem
+|Beskrivelse|Brukes til å oppgi språk som den regulative ressursen er i.
+|Usage note|To specify the language the legal resource is in.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark| Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel|Se under <<KnytteTilRegelverk>>.
+|===
+
+Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
+
+==== Regulativ ressurs – tittel (dct:title) [[RegulativRessurs-tittel]]
+
+[cols="30s,70d"]
+|===
+|English name| title
+|URI|dct:title
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi tittel til den regulative ressursen.
+|Usage note|To specify the title of the legal resource.
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark| Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel|Se under <<KnytteTilRegelverk>>.
+|===
+
+Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
+
+
+
 === Valgfrie egenskaper for klassen _Regulativ ressurs_ [[RegulativRessurs-valgfrie-egenskaper]]
 
 ==== Regulativ ressurs – relatert regulativ ressurs (dct:relation) [[RegulativRessurs-relatertRegulativRessurs]]
