@@ -8,7 +8,7 @@ image::images/KlassenOffentligOrganisasjon.png[]
 [cols="30s,70d"]
 |===
 |English name|Public Organisation
-|Beskrivelse|Brukes til å representere en offentlig organisasjon.
+|Anvendelse|Brukes til å representere en offentlig organisasjon.
 |Usage note|To represent a Public Organisation.
 |URI|cv:PublicOrganisation
 |Subklasse av / Subclass of|foaf:Agent
@@ -31,7 +31,7 @@ Eksempel i RDF Turtle:
 |English name|spatial coverage
 |URI|dct:spatial
 |Range|dct:Location
-|Beskrivelse|Brukes til å referere til et geografisk eller administrativt område dekket av organisasjonen.
+|Anvendelse|Brukes til å referere til et geografisk eller administrativt område dekket av organisasjonen.
 |Usage note|This property contains the geographic or administrative region covered by a Public Organisation.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -58,7 +58,7 @@ Eksempel i RDF Turtle:
 |English name|preferred label
 |URI|skos:prefLabel
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi det foretrukne navnet til organisasjonen. Gjentas når navnet finnes i flere ulike språk.
+|Anvendelse|Brukes til å oppgi det foretrukne navnet til organisasjonen. Gjentas når navnet finnes i flere ulike språk.
 |Usage note|For the preferred name of the organisation.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -79,7 +79,7 @@ Eksempel i RDF Turtle:
 |English name|identifier
 |URI|dct:identifier
 |Range|dfs:Literal
-|Beskrivelse|Brukes til å oppgi organisasjonens identifikator, f.eks. i henhold til Enhetsregisterets organisasjonsnummer.
+|Anvendelse|Brukes til å oppgi organisasjonens identifikator, f.eks. i henhold til Enhetsregisterets organisasjonsnummer.
 |Usage note|This property represents an Identifier for an Agent.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -102,7 +102,7 @@ Eksempel i RDF Turtle:
 |English name|name
 |URI|dct:title
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi navn på organisasjonen. Gjentas når navnet finnes i flere ulike språk.
+|Anvendelse|Brukes til å oppgi navn på organisasjonen. Gjentas når navnet finnes i flere ulike språk.
 |Usage note|This property represents the name of the public organisation.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -126,7 +126,7 @@ Eksempel i RDF Turtle:
 |English name|address
 |URI|locn:address
 |Range|locn:Address
-|Beskrivelse|Brukes til å oppgi adresse til en offentlig organisasjon.
+|Anvendelse|Brukes til å oppgi adresse til en offentlig organisasjon.
 |Usage note|This property represents the address.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -149,7 +149,7 @@ Eksempel i RDF Turtle:
 |English name|homepage
 |URI|foaf:homepage
 |Range|foaf:Document
-|Beskrivelse|Brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes i flere ulike språk.
+|Anvendelse|Brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes i flere ulike språk.
 |Usage note|This property refers to the homepage of a Public Organisation.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -171,7 +171,7 @@ Eksempel i RDF Turtle:
 |English name|classification
 |URI|org:classification
 |Range|skos:Concept
-|Beskrivelse|Brukes til å indikere klassifisering av organisasjonen i henhold til et klassifikasjonsskjema.
+|Anvendelse|Brukes til å indikere klassifisering av organisasjonen i henhold til et klassifikasjonsskjema.
 |Usage note|This property Indicates a classification for a Public Organisation within some classification scheme.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -195,7 +195,7 @@ Eksempel i RDF Turtle:
 |English name|plays role
 |URI|cv:playsRole
 |Range|cv:Participation
-|Beskrivelse|Brukes til å knytte en aktør/organisasjon til en instans av deltagelse (cv:Participation) i en tjeneste der organisasjonen har en eller flere roller i.
+|Anvendelse|Brukes til å knytte en aktør/organisasjon til en instans av deltagelse (cv:Participation) i en tjeneste der organisasjonen har en eller flere roller i.
 |Usage note|This property links an Agent / Public Organisation to the Participation class.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
