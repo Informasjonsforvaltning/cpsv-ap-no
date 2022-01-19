@@ -8,7 +8,7 @@ image::images/KlassenTidsrom.png[]
 [cols="30s,70d"]
 |===
 |English name|Period of time
-|Beskrivelse|Brukes til å beskrive et tidsrom.
+|Anvendelse|Brukes til å beskrive et tidsrom.
 |Usage note|To represent a Period of time.
 |URI|dct:PeriodOfTime
 |Kravsnivå|Valgfri/Optional
@@ -30,7 +30,7 @@ IMPORTANT: Vær oppmerksom på at selv om følgende to egenskaper begge er anbef
 |English name|end date
 |URI|dcat:endDate
 |Range|rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse|Brukes til å oppgi slutten på et tidsrom.
+|Anvendelse|Brukes til å oppgi slutten på et tidsrom.
 |Usage note|To specify the end of a period of time.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
@@ -46,7 +46,7 @@ IMPORTANT: Vær oppmerksom på at selv om følgende to egenskaper begge er anbef
 |English name|start date
 |URI|dcat:startDate
 |Range|rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse|Brukes til å oppgi starten på et tidsrom.
+|Anvendelse|Brukes til å oppgi starten på et tidsrom.
 |Usage note|To specify the start of a period of time.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended

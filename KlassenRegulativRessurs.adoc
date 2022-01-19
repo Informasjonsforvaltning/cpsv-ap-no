@@ -10,7 +10,7 @@ image::images/KlassenRegulativRessurs.png[]
 [cols="30s,70d"]
 |===
 |English name|Legal Resource
-|Beskrivelse|Brukes til å representere en regulativ ressurs.
+|Anvendelse|Brukes til å representere en regulativ ressurs.
 |Usage note|This class represents the legislation, policy or policies that lie behind the Rules that govern the service.
 |URI|eli:LegalResource
 |Kravsnivå|Valgfri/Optional
@@ -29,7 +29,7 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |English name|type
 |URI|dct:type
 |Range|eli:ResourceType
-|Beskrivelse|Brukes til å referere til typen av en regulativ ressurs (f.eks. direktiv, forordning).
+|Anvendelse|Brukes til å referere til typen av en regulativ ressurs (f.eks. direktiv, forordning).
 |Usage note|This property refers to the type of a legal resource (e.g. "Directive", "Règlement grand ducal", "law", "Règlement ministériel", "draft proposition", "Parliamentary act", etc.). Member states are encouraged to make their own list of values in the corresponding concept scheme.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -46,7 +46,7 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |English name|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å referere til en tekstlig beskrivelse av ressursen. Gjentas når den finnes i flere ulike språk.
+|Anvendelse|Brukes til å referere til en tekstlig beskrivelse av ressursen. Gjentas når den finnes i flere ulike språk.
 |Usage note|This property contains descriptive textual information about the Legal Resource. This property should be repeated in case there are various versions of the text in different languages.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -61,7 +61,7 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en identifikator til ressursen.
+|Anvendelse|Brukes til å oppgi en identifikator til ressursen.
 |Usage note|This property contains an identifier for the rule.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -79,7 +79,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|reference
 |URI|rdfs:seeAlso
 |Range|rdfs:Resource
-|Beskrivelse|Brukes til å oppgi referanse til den regulative ressursen.
+|Anvendelse|Brukes til å oppgi referanse til den regulative ressursen.
 |Usage note|To specify the reference(s) to the legal resource.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -96,7 +96,7 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 |English name| language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Beskrivelse|Brukes til å oppgi språk som den regulative ressursen er i.
+|Anvendelse|Brukes til å oppgi språk som den regulative ressursen er i.
 |Usage note|To specify the language the legal resource is in.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -114,7 +114,7 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 |English name| title
 |URI|dct:title
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi tittel til den regulative ressursen.
+|Anvendelse|Brukes til å oppgi tittel til den regulative ressursen.
 |Usage note|To specify the title of the legal resource.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -136,7 +136,7 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 |English name|related legal resource
 |URI|dct:relation
 |Range|eli:LegalResource
-|Beskrivelse|Brukes til å referere til en annen relatert regulativ ressurs.
+|Anvendelse|Brukes til å referere til en annen relatert regulativ ressurs.
 |Usage note|This property represents another instance of the Legal Resource class that is related to a particular Legal Resource being described.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
