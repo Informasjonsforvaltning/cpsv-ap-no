@@ -8,7 +8,7 @@ image::images/KlassenÅpningstid.png[]
 [cols="30s,70d"]
 |===
 |English name|Opening Hours Specification
-|Beskrivelse|Brukes til å beskrive detaljer i åpningstid på en strukturert måte.
+|Anvendelse|Brukes til å beskrive detaljer i åpningstid på en strukturert måte.
 |Usage note|A structured value providing information about the opening hours.
 |URI|schema:OpeningHoursSpecification
 |Kravsnivå|Valgfri/Optional
@@ -25,7 +25,7 @@ image::images/KlassenÅpningstid.png[]
 |English name|day of week
 |URI|schema:dayOfWeek
 |Range|schema:DayOfWeek
-|Beskrivelse|Dag i uke som åpningsspesifikasjonen gjelder for.
+|Anvendelse|Dag i uke som åpningsspesifikasjonen gjelder for.
 |Usage note|The day of the week for which these opening hours are valid
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -49,7 +49,7 @@ Eksempel i RDF Turtle:
 |English name|valid from inclusive
 |URI|schema:validFrom
 |Range|rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse|Brukes til å oppgi fra og med når den aktuelle åpningstid gjelder.
+|Anvendelse|Brukes til å oppgi fra og med når den aktuelle åpningstid gjelder.
 |Usage note|The date when the open hours specification becomes valid.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
@@ -72,7 +72,7 @@ ex:ChristmasClosed a schema:OpeningHoursSpecification;
 |English name|valid through inclusive
 |URI|schema:validThrough
 |Range|rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse|Brukes til å oppgi til og med når den aktuelle åpningstiden gjelder.
+|Anvendelse|Brukes til å oppgi til og med når den aktuelle åpningstiden gjelder.
 |Usage note|The date after which when the open hours specification is not valid.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
@@ -90,7 +90,7 @@ Eksempel i RDF Turtle: Se under <<Åpningstid-gyldigFraOgMed>>.
 |English name|closes
 |URI|schema:closes
 |Range|rdfs:Literal typed as xsd:time
-|Beskrivelse|Brukes til å oppgis stengningstidspunkt.
+|Anvendelse|Brukes til å oppgis stengningstidspunkt.
 |Usage note|The closing hour.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
@@ -108,7 +108,7 @@ Eksempel i RDF Turtle: Se under <<Åpningstid-dagerIUka>>.
 |English name|opens
 |URI|schema:opens
 |Range|rdfs:Literal typed as xsd:time
-|Beskrivelse|Brukes til å oppgi åpningstidspunkt.
+|Anvendelse|Brukes til å oppgi åpningstidspunkt.
 |Usage note|The opening hour.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
