@@ -8,7 +8,7 @@ image::images/KlassenDokumentreferanse.png[]
 [cols="30s,70d"]
 |===
 |English name|document reference
-|Beskrivelse|Brukes til å representere en dokumentreferanse som bekreftelse/attest på at et dokumentasjonskrav er oppfylt, vanligvis fra en annen part enn den som oppgir at kravet er oppfylt.
+|Anvendelse|Brukes til å representere en dokumentreferanse som bekreftelse/attest på at et dokumentasjonskrav er oppfylt, vanligvis fra en annen part enn den som oppgir at kravet er oppfylt.
 |Usage note|To represent a reference to the document, attestation or data, usually provided by a party different from the one providing the response, that proves the response.
 |URI|cccev:DocumentReference
 |Kravsnivå|Valgfri/Optional
@@ -30,7 +30,7 @@ Eksempel i RDF Turtle:
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal typed as URI
-|Beskrivelse|Brukes til å oppgi en identifikator til dokumentreferansen.
+|Anvendelse|Brukes til å oppgi en identifikator til dokumentreferansen.
 |Usage note|A Document reference shall contain an identifier.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -51,7 +51,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av dokumentreferansen. Gjentas når beskrivelsen finnes i flere ulike språk.
+|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av dokumentreferansen. Gjentas når beskrivelsen finnes i flere ulike språk.
 |Usage note|A Document reference may contain the description of the attestation or evidentiary document.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -73,7 +73,7 @@ Eksempel i RDF Turtle:
 |English name|url
 |URI|cccev:url
 |Range|rdfs:Literal typed as xsd:anyURI
-|Beskrivelse|Brukes til å oppgi URLen hvor dokumentreferansen kan finnes.
+|Anvendelse|Brukes til å oppgi URLen hvor dokumentreferansen kan finnes.
 |Usage note|The Uniform Resource Locator where the document or attestation can be found.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
@@ -91,7 +91,7 @@ Eksempel i RDF Turtle:
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Beskrivelse|Brukes til å referere til et begrep som representerer type dokumentreferanse.
+|Anvendelse|Brukes til å referere til et begrep som representerer type dokumentreferanse.
 |Usage note|The Document reference may contain the type that categorizes the attestation or evidentiary document.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
