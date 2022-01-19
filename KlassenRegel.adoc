@@ -8,7 +8,7 @@ image::images/KlassenRegel.png[]
 [cols="30s,70d"]
 |===
 |English name|Rule
-|Beskrivelse|Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en (offentlig) tjeneste.
+|Anvendelse|Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en (offentlig) tjeneste.
 |Usage note|The Rule class represents a document that sets out the specific rules, guidelines or procedures that a (Public) Service follows. It includes the terms of service, licence, and authentication requirements of the (Public) Service.
 |URI|cpsv:Rule
 |Kravsnivå|Valgfri/Optional
@@ -25,7 +25,7 @@ image::images/KlassenRegel.png[]
 |English name|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av regelen. Denne egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
+|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av regelen. Denne egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Usage note|This property contains descriptive textual information about the Rule. This property should be repeated in case there are various versions of the text in different languages.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -40,7 +40,7 @@ image::images/KlassenRegel.png[]
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi identifikatoren til regelen.
+|Anvendelse|Brukes til å oppgi identifikatoren til regelen.
 |Usage note|This property contains an identifier for the rule.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -57,7 +57,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|title
 |URI|dct:title
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en beskrivende tittel eller navn for regelen. Gjentas når tittelen finnes i flere ulike språk.
+|Anvendelse|Brukes til å oppgi en beskrivende tittel eller navn for regelen. Gjentas når tittelen finnes i flere ulike språk.
 |Usage note|This property refers to the descriptive title or name of a Resource. This property should be repeated in case there are various versions of the text in different languages.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -74,7 +74,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|implements
 |URI|cpsv:implements
 |Range|eli:LegalResource
-|Beskrivelse|Brukes til å referere til en regulativ ressurs som regelen er definert inn under.
+|Anvendelse|Brukes til å referere til en regulativ ressurs som regelen er definert inn under.
 |Usage note|This property links a Rule to relevant legislation or policy documents, such as the Legal Resource under which the Rules are defined.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -91,7 +91,7 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |English name|language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Beskrivelse|Brukes til å referere til språk/målform som regelen er tilgjengelig i.
+|Anvendelse|Brukes til å referere til språk/målform som regelen er tilgjengelig i.
 |Usage note|This property represents the language(s) in which the Rule is available. This could be one or multiple languages, for instance in countries with more than one official language.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -108,7 +108,7 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Beskrivelse|Brukes til å spesifisere type regel. Denne egenskapen skal bruke et kontrollert vokabular.
+|Anvendelse|Brukes til å spesifisere type regel. Denne egenskapen skal bruke et kontrollert vokabular.
 |Usage note|This property refers to the type of a Rule. It must use a controlled vocabulary.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
