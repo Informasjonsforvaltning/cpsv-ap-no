@@ -8,7 +8,7 @@ image::images/KlassenTjenesteresultat.png[]
 [cols="30s,70d"]
 |===
 |English name|Output
-|Beskrivelse|Brukes til å representere resultat fra en tjeneste.
+|Anvendelse|Brukes til å representere resultat fra en tjeneste.
 |Usage note|Outputs can be any resource - document, artefact – anything produced by the (Public) Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.
 |URI|cv:Output
 |Kravsnivå|Anbefalt/Recommended
@@ -26,7 +26,7 @@ image::images/KlassenTjenesteresultat.png[]
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi identifikatoren til tjenesteresultatet.
+|Anvendelse|Brukes til å oppgi identifikatoren til tjenesteresultatet.
 |Usage note|This property represents an Identifier for the Output.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -43,7 +43,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|name
 |URI|dct:title
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi tittel/navn til tjenesteresultatet.
+|Anvendelse|Brukes til å oppgi tittel/navn til tjenesteresultatet.
 |Usage note|This property represents the official Name of the Output.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -66,7 +66,7 @@ Eksempel i RDF Turtle:
 |English name|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av tjenesteresultatet.
+|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av tjenesteresultatet.
 |Usage note|This property represents a free text Description of the Output.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -87,7 +87,7 @@ Eksempel i RDF Turtle:
 |English name|language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Beskrivelse|Brukes til å oppgi språk som tjenesteresultatet er i.
+|Anvendelse|Brukes til å oppgi språk som tjenesteresultatet er i.
 |Usage note|To specify the language that the output is in.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommende
@@ -113,7 +113,7 @@ Eksempel i RDF Turtle:
 |English name |may cause
 |URI |xkos:causes
 |Range |cv:Event
-|Beskrivelse |Brukes til å uttrykke relasjon mellom et tjenesteresultat og en eller flere hendelser, f.eks. endring av data (som et tjenesteresultat) skaper en eller flere hendelser.
+|Anvendelse |Brukes til å uttrykke relasjon mellom et tjenesteresultat og en eller flere hendelser, f.eks. endring av data (som et tjenesteresultat) skaper en eller flere hendelser.
 |Usage note |To express the relation between an Output and one or more Events, for instance the cases where change of data (as an Output) causes one of more Events.
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -128,7 +128,7 @@ Eksempel i RDF Turtle:
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Beskrivelse|Brukes til å referere til begrep som representerer type(r) tjenesteresultat tilhører.
+|Anvendelse|Brukes til å referere til begrep som representerer type(r) tjenesteresultat tilhører.
 |Usage note|This property represents the type of Output as defined in a controlled vocabulary.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
