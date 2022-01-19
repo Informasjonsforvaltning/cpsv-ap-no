@@ -98,8 +98,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Usage note|This property links the Channel class with one or more instances of the Agent class. This property indicates the owner of a specific Channel through which a (Public) Service is being delivered. Note that Public Organization is a sub class of Agent so that if the owner is the Public Organization, the ownedBy property can link to it.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad|Norsk utvidelse: range endret fra `cv:PublicOrganisation` til `foaf:Agent`. Dette både fordi usage note i CPSV-AP sier at den kan referere til «one or more instances of the Agent Class», og at spesifikasjonen åpner mulighet for å kunne beskrive private tjenester (som ikke eiers av offentlig organisasjon).
-|Eksempel|Tjenestekanaler for tjenesten «Skjenkebevilling i Brønnøy kommune» eies av Brønnøy kommune.
+|Merknad|Norsk utvidelse: range endret fra `cv:PublicOrganisation` til `foaf:Agent`. Dette både fordi usage note i CPSV-AP sier at den kan referere til «one or more instances of the Agent Class», og at spesifikasjonen også dekker behov for å kunne beskrive tjenester som ikke eiers av offentlig organisasjon.
+|Eksempel| Tjenestekanaler for tjenesten «Skjenkebevilling i Brønnøy kommune» eies av Brønnøy kommune.
 |===
 
 Eksempel i RDF Turtle:
