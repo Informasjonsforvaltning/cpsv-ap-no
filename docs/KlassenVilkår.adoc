@@ -8,7 +8,7 @@ image::images/KlassenVilkår.png[]
 [cols="30s,70d"]
 |===
 |English name|Criterion Requirement
-|Beskrivelse|Brukes til å representere vilkår knyttet til bruk av en tjeneste.
+|Anvendelse|Brukes til å representere vilkår knyttet til bruk av en tjeneste.
 |Usage note|Not all (public) services are needed or usable by everyone. For example, the visa service operated by European countries is not needed by European citizens but is needed by some citizens from elsewhere, or public services offering unemployment benefits and grants are targeting specific societal groups.
 |URI|cv:CriterionRequirement
 |Kravsnivå|Valgfri/Optional
@@ -25,7 +25,7 @@ image::images/KlassenVilkår.png[]
 |English name|expected datatype
 |URI|cccev:expectedDataType
 |Range|URI
-|Beskrivelse|Brukes til å oppgi forventet datatype til svaret fra respondenten.
+|Anvendelse|Brukes til å oppgi forventet datatype til svaret fra respondenten.
 |Usage note|Each Criterion requirement shall describe the expected data type that the responder has to provide.
 |Multiplisitet|Obligatorisk/Mandatory
 |Kravsnivå|1..1
@@ -46,7 +46,7 @@ Eksempel i RDF Turtle:
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal typed as URI
-|Beskrivelse|Brukes til å oppgi identifikatoren til vilkåret.
+|Anvendelse|Brukes til å oppgi identifikatoren til vilkåret.
 |Usage note|This property represents an Identifier for the Criterion Requirement.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -63,7 +63,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|name
 |URI|dct:title
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi tittel til vilkåret.
+|Anvendelse|Brukes til å oppgi tittel til vilkåret.
 |Usage note|This property represents the official Name of the Criterion Requirement.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -86,7 +86,7 @@ Eksempel i RDF Turtle:
 |English name|applicable in Period of time
 |URI|cccev:applicableinPeriodOfTime
 |Range|dct:PeriodOfTime
-|Beskrivelse|Hvis et dokumentasjonskrav skal gjelde for en spesifikk tidsperiode, brukes denne egenskapen til å uttrykke dette.
+|Anvendelse|Hvis et dokumentasjonskrav skal gjelde for en spesifikk tidsperiode, brukes denne egenskapen til å uttrykke dette.
 |Usage note|If the Criterion requirement shall apply to a specific time period, this class is used to describe it.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
@@ -102,7 +102,7 @@ Eksempel i RDF Turtle:
 |English name|expected value
 |URI|cccev:expectedValue
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi forventet verdi i svaret fra respondenten.
+|Anvendelse|Brukes til å oppgi forventet verdi i svaret fra respondenten.
 |Usage note|This property is used to define the expected value that the responder has to provide in the Criterion response.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -117,7 +117,7 @@ Eksempel i RDF Turtle:
 |English name|minimum value
 |URI|cccev:minimumValue
 |Range|rdfs:Literal
-|Beskrivelse|Når verdien som oppgis av respondenten må være innenfor et verdiområde eller større enn en spesifikk nedre verdigrense, brukes denne egenskapen til å oppgi den nedre verdigrensen.
+|Anvendelse|Når verdien som oppgis av respondenten må være innenfor et verdiområde eller større enn en spesifikk nedre verdigrense, brukes denne egenskapen til å oppgi den nedre verdigrensen.
 |Usage note|When the value of the Criterion response must fall into a range or it shall be larger than a specific threshold, this property is used to define the minimum expected value.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..1
@@ -132,7 +132,7 @@ Eksempel i RDF Turtle:
 |English name|met by Evidence
 |URI|cccev:metByEvidence
 |Range|cv:Evidence
-|Beskrivelse|Brukes til å oppgi mulig dokumentasjon (instans av cv:Evidence) som brukes av respondenten til å bevise at et dokumentasjonskrav er oppfylt.
+|Anvendelse|Brukes til å oppgi mulig dokumentasjon (instans av cv:Evidence) som brukes av respondenten til å bevise at et dokumentasjonskrav er oppfylt.
 |Usage note|Criterion Requirement may point to a list of candidate Evidences that can be used by the responder to prove the Criterion requirement is fulfilled.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -147,7 +147,7 @@ Eksempel i RDF Turtle:
 |English name|level of certification
 |URI|cccev:levelOfCertification
 |Range|skos:Concept
-|Beskrivelse|Brukes til å oppgi nivå av sertifisering.
+|Anvendelse|Brukes til å oppgi nivå av sertifisering.
 |Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall belong to a specific level of certification, for instance, legalisation.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -168,7 +168,7 @@ Forslag til et kontrollert vokabular for sertifiseringsnivåer:
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Beskrivelse|Brukes til å oppgi type vilkår.
+|Anvendelse|Brukes til å oppgi type vilkår.
 |Usage note|This property represents the type of Criterion Requirement as described in a controlled vocabulary.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -202,7 +202,7 @@ Forslag til et kontrollert vokabular for typer vilkår:
 |English name|type of copy quality
 |URI|cccev:typeOfCopyQuality
 |Range|skos:Concept
-|Beskrivelse|Brukes til å oppgi hvilken type kvalitet kreves av en kopi av en dokumentasjon.
+|Anvendelse|Brukes til å oppgi hvilken type kvalitet kreves av en kopi av en dokumentasjon.
 |Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall be of a specific type of copy, for instance, certified copy.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -223,7 +223,7 @@ Forslag til et kontrollert vokabular for typer kopieringskvalitet:
 |English name|type of translation
 |URI|cccev:typeOfTranslation
 |Range|skos:Concept
-|Beskrivelse|Brukes til å oppgi hvilken type oversettelse som kreves av dokumentasjonsbevis.
+|Anvendelse|Brukes til å oppgi hvilken type oversettelse som kreves av dokumentasjonsbevis.
 |Usage note|A Criterion requirement may specify whether the evidence proving that this Criterion requirement shall be translated and what type of translation shall apply, for instance, certified translation.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -244,7 +244,7 @@ Forslag til et kontrollert vokabular for typer oversettelse:
 |English name|maximum value
 |URI|cccev:maximumValue
 |Range|rdfs:Literal
-|Beskrivelse|Når verdien som oppgis av respondenten må være innenfor et verdiområde eller mindre enn en spesifikk øvre verdigrense, brukes denne egenskapen til å oppgi den øvre verdigrensen.
+|Anvendelse|Når verdien som oppgis av respondenten må være innenfor et verdiområde eller mindre enn en spesifikk øvre verdigrense, brukes denne egenskapen til å oppgi den øvre verdigrensen.
 |Usage note|When the value of the Criterion response must fall into a range or it shall be lesser than a threshold, this property is used to define the maximum expected value.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..1
