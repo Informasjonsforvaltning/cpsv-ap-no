@@ -8,7 +8,7 @@ image::images/KlassenDokumentasjon.png[]
 [cols="30s,70d"]
 |===
 |English name|Evidence
-|Beskrivelse|Brukes til å representere dokumentasjon som trengs for å kunne utføre en tjeneste.
+|Anvendelse|Brukes til å representere dokumentasjon som trengs for å kunne utføre en tjeneste.
 |Usage note|Evidence can be any resource - document, artefact – anything needed for executing the (Public) Service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered. It contains information that proves that a criterion requirement exists or is true, in particular evidences are used to prove that a specific criterion is met.
 |URI|cv:Evidence
 |Kravsnivå|Valgfri/Optional
@@ -30,7 +30,7 @@ Eksempel i RDF Turtle:
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal typed as URI
-|Beskrivelse|Brukes til å oppgi identifikatoren til dokumentasjonen.
+|Anvendelse|Brukes til å oppgi identifikatoren til dokumentasjonen.
 |Usage note|This property represents an Identifier for the piece of Evidence.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -47,7 +47,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|name
 |URI|dct:title
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi tittel til dokumentasjonen. Gjentas når tittelen finnes i flere ulike språk.
+|Anvendelse|Brukes til å oppgi tittel til dokumentasjonen. Gjentas når tittelen finnes i flere ulike språk.
 |Usage note|This property represents the official Name of the piece of Evidence.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -70,7 +70,7 @@ Eksempel i RDF Turtle:
 |English name|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av dokumentasjonen. Gjentas når beskrivelsen finnes i flere ulike språk.
+|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av dokumentasjonen. Gjentas når beskrivelsen finnes i flere ulike språk.
 |Usage note|This property represents a free text Description of the piece of Evidence.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -92,7 +92,7 @@ Eksempel i RDF Turtle:
 |English name|language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Beskrivelse|Brukes til å oppgi språk til dokumentasjonen.
+|Anvendelse|Brukes til å oppgi språk til dokumentasjonen.
 |Usage note|Indicates the language(s) in which the Evidence must be provided.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -119,7 +119,7 @@ Eksempel i RDF Turtle:
 |English name|is supported by
 |URI|cccev:isSupportedBy
 |Range|cccev:DocumentReference
-|Beskrivelse|Brukes til å referere til en attest eller lignende som bekreftelse på dokumentasjonen. Kan også være URL til der bekreftelsen (ev. fra en tredjepart) kan finnes.
+|Anvendelse|Brukes til å referere til en attest eller lignende som bekreftelse på dokumentasjonen. Kan også være URL til der bekreftelsen (ev. fra en tredjepart) kan finnes.
 |Usage note|An Evidence may refer to the attestation, to the evidentiary document or to the URL where the proof from a third party can be found.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -143,7 +143,7 @@ Eksempel i RDF Turtle:
 |English name|related documentation (about the evidence)
 |URI|foaf:page
 |Range|foaf:Document
-|Beskrivelse|Brukes til å referere til mer informasjon om dokumentasjonen.
+|Anvendelse|Brukes til å referere til mer informasjon om dokumentasjonen.
 |Usage note|This property represents documentation that contains information related to the Evidence, for instance a particular template for an administrative document, an application or a guide on formatting the Input.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -165,7 +165,7 @@ Eksempel i RDF Turtle:
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Beskrivelse|Brukes til å referere til begrepet som representerer typen dokumentasjonen tilhører.
+|Anvendelse|Brukes til å referere til begrepet som representerer typen dokumentasjonen tilhører.
 |Usage note|This property represents the type of Evidence as described in a controlled vocabulary.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
