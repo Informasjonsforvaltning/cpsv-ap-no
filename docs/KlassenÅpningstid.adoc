@@ -29,7 +29,8 @@ image::images/KlassenÅpningstid.png[]
 |Usage note|The day of the week for which these opening hours are valid
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel|Mandag til Fredag.
 |===
 
@@ -52,7 +53,8 @@ Eksempel i RDF Turtle:
 |Usage note|The date when the open hours specification becomes valid.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
-|Merknad|
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel|Gyldighet til julestengning.
 |===
 
@@ -74,7 +76,8 @@ ex:ChristmasClosed a schema:OpeningHoursSpecification;
 |Usage note|The date after which when the open hours specification is not valid.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
-|Merknad|
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel|Se under <<Åpningstid-gyldigFraOgMed>>.
 |===
 
@@ -91,7 +94,8 @@ Eksempel i RDF Turtle: Se under <<Åpningstid-gyldigFraOgMed>>.
 |Usage note|The closing hour.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
-|Merknad|
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel|Se under <<Åpningstid-dagerIUka>>.
 |===
 
@@ -108,8 +112,10 @@ Eksempel i RDF Turtle: Se under <<Åpningstid-dagerIUka>>.
 |Usage note|The opening hour.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
-|Merknad|I henhold til https://schema.org/OpeningHoursSpecification[schema.org], at denne egenskapen brukes betyr «åpent» og «lukket» ellers.
-|Remarks|According to https://schema.org/OpeningHoursSpecification[schema.org], “The place is *open* if the https://schema.org/opens[opens] property is specified, and *closed* otherwise.”
+|Merknad 1 |I henhold til https://schema.org/OpeningHoursSpecification[schema.org], at denne egenskapen brukes betyr «åpent» og «lukket» ellers.
+|Remarks 1 |According to https://schema.org/OpeningHoursSpecification[schema.org], “The place is *open* if the https://schema.org/opens[opens] property is specified, and *closed* otherwise.”
+|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel|Se under <<Åpningstid-dagerIUka>>.
 |===
 
