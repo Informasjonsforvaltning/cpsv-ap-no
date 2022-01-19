@@ -8,7 +8,7 @@ image::images/KlassenKatalog.png[]
 [cols="30s,70d"]
 |===
 |English name|Catalog
-|Anvendelse|Brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over tjenester og hendelser.
+|Beskrivelse|Brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over tjenester og hendelser.
 |Usage note|To represent a catalog, in context of this specification a catalog of events and (public) services.
 |URI|dcat:Catalog
 |Kravsnivå|Valgfri/Optional
@@ -30,7 +30,7 @@ Eksempel i RDF Turtle:
 |English name|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi fritekst-beskrivelse av innholdet i katalogen. Gjentas når beskrivelsen finnes i flere ulike språk.
+|Beskrivelse|Brukes til å oppgi fritekst-beskrivelse av innholdet i katalogen. Gjentas når beskrivelsen finnes i flere ulike språk.
 |Usage note|For textual description of the content in the catalog.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -52,7 +52,7 @@ Eksempel i RDF Turtle:
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi identifikatoren til katalogen.
+|Beskrivelse|Brukes til å oppgi identifikatoren til katalogen.
 |Usage note|For the identifier of the catalog.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -71,7 +71,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|title
 |URI|dct:title
 |Range|rdfs:Literal
-|Anvendelse|For å oppgi navnet på katalogen. Gjentas når navnet finnes i flere ulike språk.
+|Beskrivelse|For å oppgi navnet på katalogen. Gjentas når navnet finnes i flere ulike språk.
 |Usage note|For the title of the catalog.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -93,7 +93,7 @@ Eksempel i RDF Turtle:
 |English name|service
 |URI|dcatno:containsService
 |Range|cpsvno:Service
-|Anvendelse|Brukes til å referere til en (offentlig) tjeneste som er i katalogen.
+|Beskrivelse|Brukes til å referere til en (offentlig) tjeneste som er i katalogen.
 |Usage note|To refer to a (public) service that is in the catalog.
 |Subegenskap av|dct:hasPart
 |Multiplisitet|1..n
@@ -110,7 +110,7 @@ Eksempel i RDF Turtle:
 |English name|publisher
 |URI|dct:publisher
 |Range|foaf:Agent
-|Anvendelse|Refererer til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
+|Beskrivelse|Refererer til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
 |Usage note|To refer to the Agent responsible for making the catalog available.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -134,7 +134,7 @@ Eksempel i RDF Turtle:
 |English name|spatial coverage
 |URI|dct:spatial
 |Range|dct:Location
-|Anvendelse|Brukes til å oppgi geografisk område som er dekket av katalogen.
+|Beskrivelse|Brukes til å oppgi geografisk område som er dekket av katalogen.
 |Usage note|For the spatial coverage of the catalog.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -161,7 +161,7 @@ Eksempel i RDF Turtle:
 |English name|modified (last update)
 |URI|dct:modified
 |Range|rdfs:Literal typed as xsd:date or xsd:dateTime
-|Anvendelse|For å oppgi dato for siste oppdatering/endring av katalogen.
+|Beskrivelse|For å oppgi dato for siste oppdatering/endring av katalogen.
 |Usage note|For the date of the last update of the catalog.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
@@ -177,7 +177,7 @@ Eksempel i RDF Turtle:
 |English name|accrual periodicity
 |URI|dct:accrualPeriodicity
 |Range|dct:Frequency
-|Anvendelse|For å oppgi oppdateringsfrekvensen for katalogen.
+|Beskrivelse|For å oppgi oppdateringsfrekvensen for katalogen.
 |Usage note|For the accrual periodicity of the catalog.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
@@ -195,7 +195,7 @@ Eksempel i RDF Turtle:
 |English name|homepage
 |URI|foaf:homepage
 |Range|foaf:Document
-|Anvendelse|Brukes til å referere til nettside som fungerer som hovedside for katalogen.
+|Beskrivelse|Brukes til å referere til nettside som fungerer som hovedside for katalogen.
 |Usage note|To refer to the homepage of the catalog.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
@@ -211,7 +211,7 @@ Eksempel i RDF Turtle:
 |English name|licence
 |URI|dct:license
 |Range|dct:LicenseDocument
-|Anvendelse|Brukes til å vise til lisens for katalogen som beskriver hvordan den kan viderebrukes.
+|Beskrivelse|Brukes til å vise til lisens for katalogen som beskriver hvordan den kan viderebrukes.
 |Usage note|Refer to the licence of the catalog.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
@@ -235,7 +235,7 @@ Eksempel i RDF Turtle:
 |English name|provenance (authenticity)
 |URI|dct:provenance
 |Range|dct:ProvenanceStatement
-|Anvendelse|Brukes til å referere til beskrivelse av autentisitet og integritet til innholdet i katalogen.
+|Beskrivelse|Brukes til å referere til beskrivelse av autentisitet og integritet til innholdet i katalogen.
 |Usage note|This property indicates a statement of the authenticity and the integrity of the the content in a catalog.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -251,7 +251,7 @@ Eksempel i RDF Turtle:
 |English name|language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Anvendelse|Brukes til å oppgi språk som brukes i tekstlige metadata som beskriver innholdet i katalogen. Gjentas hvis metadata er gitt i flere språk.
+|Beskrivelse|Brukes til å oppgi språk som brukes i tekstlige metadata som beskriver innholdet i katalogen. Gjentas hvis metadata er gitt i flere språk.
 |Usage note|To specify the languages used in a catalog.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -279,7 +279,7 @@ Eksempel i RDF Turtle:
 |English name|theme taxonomy
 |URI|dcat:themeTaxonomy
 |Range|skos:ConceptScheme
-|Anvendelse|Brukes til å referere til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere de katalogiserte ressursene i katalogen.
+|Beskrivelse|Brukes til å referere til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere de katalogiserte ressursene i katalogen.
 |Usage note|This property refers to a knowledge organisation system (i.e., thesaurus, taxonomy) used to classify the resources in a catalog.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -297,7 +297,7 @@ Eksempel i RDF Turtle:
 |English name|issued (release date)
 |URI|dct:issued
 |Range|rdfs:Literal typed as xsd:date or xsd:dateTime
-|Anvendelse|Dato for formell utgivelse (publisering) av katalogen.
+|Beskrivelse|Dato for formell utgivelse (publisering) av katalogen.
 |Usage note|This property contains the date of first publication of a Catalogue. This property should be typed as xsd:date or xsd:dateTime.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
@@ -315,7 +315,7 @@ Eksempel i RDF Turtle:
 |English name|is part of
 |URI|dct:isPartOf
 |Range|dcat:Catalog
-|Anvendelse|Brukes til å referere til en beslektet katalog som denne katalogen fysisk eller logisk er inkludert i.
+|Beskrivelse|Brukes til å referere til en beslektet katalog som denne katalogen fysisk eller logisk er inkludert i.
 |Usage note|This property refers to a related Catalogue in which the described Catalogue is physically or logically included.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
@@ -331,7 +331,7 @@ Eksempel i RDF Turtle:
 |English name|has part
 |URI|dct:hasPart
 |Range|dcat:Catalog
-|Anvendelse|Brukes til å referere til en beslektet katalog som er en del av den beskrevne katalogen.
+|Beskrivelse|Brukes til å referere til en beslektet katalog som er en del av den beskrevne katalogen.
 |Usage note|This property refers to a related Catalogue that is part of the described Catalogue.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -347,7 +347,7 @@ Eksempel i RDF Turtle:
 |English name|event
 |URI|dcatno:containsEvent
 |Range|cv:Event
-|Anvendelse|Brukes til å referere til en hendelse som er i katalogen.
+|Beskrivelse|Brukes til å referere til en hendelse som er i katalogen.
 |Usage note|To refer to an event that is in the catalog.
 |Subegenskap av|dct:hasPart
 |Multiplisitet|0..n
@@ -364,7 +364,7 @@ Eksempel i RDF Turtle:
 |English name|creator
 |URI|dct:creator
 |Range|foaf:Agent
-|Anvendelse|Brukes til å referere til aktøren som er hovedansvarlig for å produsere katalogen.
+|Beskrivelse|Brukes til å referere til aktøren som er hovedansvarlig for å produsere katalogen.
 |Usage note|This property contains the entity responsible for producing the catalogue.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
@@ -380,7 +380,7 @@ Eksempel i RDF Turtle:
 |English name|rights (use terms)
 |URI|dct:rights
 |Range|dct:RightsStatement
-|Anvendelse|Brukes til å referere til uttalelse som spesifiserer brukervilkår knyttet til katalogen.
+|Beskrivelse|Brukes til å referere til uttalelse som spesifiserer brukervilkår knyttet til katalogen.
 |Usage note|This property includes a statement that specifies usage rights of the Catalogue.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional

@@ -8,7 +8,7 @@ image::images/KlassenKontaktpunkt.png[]
 [cols="30s,70d"]
 |===
 |English name|contact point
-|Anvendelse|Brukes til å representere kontakt informasjon for en tjeneste, en tjenestekanal, en offentlig organisasjon osv.
+|Beskrivelse|Brukes til å representere kontakt informasjon for en tjeneste, en tjenestekanal, en offentlig organisasjon osv.
 |Usage note|This class represents the contact information for a (Public) Service, Channel, Public Organization, etc.
 |URI|vcard:Kind
 |Kravsnivå|Anbefalt/Recommended
@@ -25,7 +25,7 @@ image::images/KlassenKontaktpunkt.png[]
 |English name|hours available
 |URI|schema:hoursAvailable
 |Range|schema:OpeningHoursSpecification
-|Anvendelse|Brukes til å referere til en strukturert beskrivelse av åpningstid.
+|Beskrivelse|Brukes til å referere til en strukturert beskrivelse av åpningstid.
 |Usage note|This property links a contact point to information about when the contact point is available.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
