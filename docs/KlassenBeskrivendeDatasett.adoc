@@ -3,7 +3,7 @@
 [cols="30s,70d"]
 |===
 |English name|(Public) Service Dataset
-|Beskrivelse|Klassen brukes til å inneholde metadata om en (offentlig) tjeneste.
+|Anvendelse|Klassen brukes til å inneholde metadata om en (offentlig) tjeneste.
 |Usage note|The class describes the metadata of where the dataset is being described, for instance on a regional (public) service portal and/or a national eGovernment portal.
 |URI|dcat:Dataset
 |Kravsnivå|Valgfri/Optional
