@@ -65,10 +65,6 @@ include::KlassenOffentligOrganisasjon.adoc[]
 
 include::KlassenOffentligTjeneste.adoc[]
 
-include::KlassenPrivatAktør.adoc[]
-
-include::KlassenPrivatTjeneste.adoc[]
-
 include::KlassenRegel.adoc[]
 
 include::KlassenRegulativRessurs.adoc[]

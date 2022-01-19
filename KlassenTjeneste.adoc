@@ -13,9 +13,9 @@ image::images/KlassenTjeneste.png[]
 |URI|cpsvno:Service
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1|Bruk <<OffentligTjeneste>> når det er en offentlig tjeneste som skal beskrives.
-|Merknad 2|Norsk utvidelse: Denne finnes ikke i CPSV-AP, men trengs for å kunne dekke behov for å beskrive tjenester som f.eks. er levert av en privat aktør. <<OffentligTjeneste>> som CPSV-AP har, blir en subklasse av denne.
-|Remarks|Norwegian extension: CPSV-AP does not have this class. It is needed in order to describe a service which for instance is delivered by a private Agent. The Public Service Class (`cpsv:PublicService`) that CPSV-AP has, is a subclass of this one.
-|Eksempel|Se under <<OffentligTjeneste>> for eksempler på bruk av denne klassen og de tilsvarende egenskapene.
+|Merknad 2|Norsk utvidelse: Denne finnes ikke i CPSV-AP, men trengs for å kunne dekke behov for å beskrive tjenester som ikke er en offentlig tjeneste. <<OffentligTjeneste>> som CPSV-AP har, blir en subklasse av denne.
+|Remarks|Norwegian extension: CPSV-AP does not have this class. It is needed in order to describe a service which is not a public service. The Public Service Class (`cpsv:PublicService`) that CPSV-AP has, is a subclass of this one.
+|Eksempel|Se under <<OffentligTjeneste>> for eksempler på bruk av de tilsvarende egenskapene.
 |===
 
 [[Tjeneste-obligatoriske-egenskaper]]

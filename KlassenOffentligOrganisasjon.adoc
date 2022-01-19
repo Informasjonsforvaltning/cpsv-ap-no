@@ -13,7 +13,7 @@ image::images/KlassenOffentligOrganisasjon.png[]
 |URI|cv:PublicOrganisation
 |Subklasse av / Subclass of|foaf:Agent
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Norsk utvidelse: Kravsnivå er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til beskrivelse av f.eks. tjenester levert av private aktører.
+|Merknad|Norsk utvidelse: Kravsnivå er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til beskrivelse av f.eks. tjenester levert av aktører som ikke er offentlige organisasjoner.
 |Eksempel|Brønnøy kommune er en offentlig organisasjon.
 |===
 
