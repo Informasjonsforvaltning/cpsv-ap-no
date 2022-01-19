@@ -8,7 +8,7 @@ image::images/KlassenHendelse.png[]
 [cols="30s,70d"]
 |===
 |English name|Event
-|Beskrivelse|Brukes til å representere en https://data.norge.no/concepts/db48fa77-3f47-4d58-b4a3-41569f149c1a[hendelse].
+|Anvendelse|Brukes til å representere en https://data.norge.no/concepts/db48fa77-3f47-4d58-b4a3-41569f149c1a[hendelse].
 |Usage note|This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a (Public) Service. It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses.
 |URI|cv:Event
 |Subklasse av / Subclass of|dcat:Dataset
@@ -27,7 +27,7 @@ image::images/KlassenHendelse.png[]
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal typed as URI
-|Beskrivelse|Brukes til å oppgi identifikatoren til en hendelse.
+|Anvendelse|Brukes til å oppgi identifikatoren til en hendelse.
 |Usage note|This property represents an Identifier for the Event.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -44,7 +44,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|name
 |URI|dct:title
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi tittel til en hendelse. Gjentas når tittelen finnes i flere språk.
+|Anvendelse|Brukes til å oppgi tittel til en hendelse. Gjentas når tittelen finnes i flere språk.
 |Usage note|This property represents the Name (or title) of the Event.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -61,7 +61,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av hendelsen. Gjentas når beskrivelsen finnes i flere språk.
+|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av hendelsen. Gjentas når beskrivelsen finnes i flere språk.
 |Usage note|This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant (Public) Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
@@ -77,7 +77,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|may initiate
 |URI|cpsvno:mayInitiate
 |Range|cpsvno:Service
-|Beskrivelse|Brukes til å referere til tjenester som kan settes i gang av den aktuelle hendelsen.
+|Anvendelse|Brukes til å referere til tjenester som kan settes i gang av den aktuelle hendelsen.
 |Usage note|This property links an event directly to a service that the event may initiate.
 |Subegenskap av / Subproperty of | dct:relation
 |Multiplisitet|0..n
@@ -95,7 +95,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|subject
 |URI|dct:subject
 |Range|skos:Concept
-|Beskrivelse|Brukes til å referere til begrep som er viktig for å forstå hendelsen.
+|Anvendelse|Brukes til å referere til begrep som er viktig for å forstå hendelsen.
 |Usage note|To refer to concept that is important for the understanding of the event.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -110,7 +110,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|distribution
 |URI|dcat:distribution
 |Range|dcat:Distribution
-|Beskrivelse|Brukes til å referere til beskrivelsen av distribusjon av hendelsen.
+|Anvendelse|Brukes til å referere til beskrivelsen av distribusjon av hendelsen.
 |Usage note|To refer to the description of Distribution of the Event.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -125,7 +125,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Beskrivelse|Brukes til å oppgi type hendelse.
+|Anvendelse|Brukes til å oppgi type hendelse.
 |Usage note|The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
