@@ -8,7 +8,7 @@ image::images/KlassenTjenestekanal.png[]
 [cols="30s,70d"]
 |===
 |English name|Channel
-|Beskrivelse|Brukes til å representere kanal/medium som tjenesten er tilgjengelig gjennom.
+|Anvendelse|Brukes til å representere kanal/medium som tjenesten er tilgjengelig gjennom.
 |Usage note|The Channel class represents the medium through which an Agent provides, uses or interacts in another way with a (Public) Service. Typical examples include online services, phone, walk-in centres etc.
 |URI|cv:Channel
 |Kravsnivå|Valgfri/Optional
@@ -25,7 +25,7 @@ image::images/KlassenTjenestekanal.png[]
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal typed as URI
-|Beskrivelse|Brukes til å oppgi identifikatoren til tjenestekanalen.
+|Anvendelse|Brukes til å oppgi identifikatoren til tjenestekanalen.
 |Usage note|This property represents an Identifier for the Channel.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -45,7 +45,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |processing time 
 |URI |cv:processingTime 
 |Range |rdfs:Literal typed as xsd:duration 
-|Beskrivelse |Brukes til å oppgi den estimerte behandlingstiden via denne kanalen. 
+|Anvendelse |Brukes til å oppgi den estimerte behandlingstiden via denne kanalen. 
 |Usage note |The value of this property is the (estimated) time needed for executing a Service through this canal. 
 |Multiplisitet |0..1 
 |Kravsnivå |Valgfri/Optional 
@@ -64,7 +64,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|data service
 |URI|cpsvno:dataService
 |Range|dcat:DataService
-|Beskrivelse|Brukes til å referere til en beskrivelse av en datatjeneste som kanalen benytter.
+|Anvendelse|Brukes til å referere til en beskrivelse av en datatjeneste som kanalen benytter.
 |Usage note|To refer to the description of a data service which the channel uses.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -79,7 +79,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|has input
 |URI|cpsv:hasInput
 |Range|cv:Evidence
-|Beskrivelse|Brukes til å referere til dokumentasjonskrav som er spesifikk for den aktuelle tjenestekanalen.
+|Anvendelse|Brukes til å referere til dokumentasjonskrav som er spesifikk for den aktuelle tjenestekanalen.
 |Usage note|In the majority of cases, the evidence required to use a (Public) Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a (Public) Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the (Public) Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -94,7 +94,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|owned by
 |URI|cv:ownedBy
 |Range|foaf:Agent
-|Beskrivelse|Brukes til å referere til aktøren som eier tjenestekanalen.
+|Anvendelse|Brukes til å referere til aktøren som eier tjenestekanalen.
 |Usage note|This property links the Channel class with one or more instances of the Agent class. This property indicates the owner of a specific Channel through which a (Public) Service is being delivered. Note that Public Organization is a sub class of Agent so that if the owner is the Public Organization, the ownedBy property can link to it.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -116,7 +116,7 @@ Eksempel i RDF Turtle:
 |English name|has address
 |URI|vcard:hasAddress
 |Range|vcard:Address
-|Beskrivelse|Brukes til å oppgi adressen som strukturert data, når tjenestekanalen er et fysisk oppmøtested.
+|Anvendelse|Brukes til å oppgi adressen som strukturert data, når tjenestekanalen er et fysisk oppmøtested.
 |Usage note|To specify the address as structured data, when the channel is a service bureau or location.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -141,7 +141,7 @@ Eksempel i RDF Turtle:
 |English name|has email
 |URI|vcard:hasEmail
 |Range|vcard:Email
-|Beskrivelse|Brukes til å oppgi e-postadresse, når tjenestekanal er e-post.
+|Anvendelse|Brukes til å oppgi e-postadresse, når tjenestekanal er e-post.
 |Usage note|
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -162,7 +162,7 @@ Eksempel i RDF Turtle:
 |English name|has telephone
 |URI|vcard:hasTelephone
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi telefonnummer, når tjenestekanal er telefonisk.
+|Anvendelse|Brukes til å oppgi telefonnummer, når tjenestekanal er telefonisk.
 |Usage note|To specify the telephone number, when the channel is a telephone.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -183,7 +183,7 @@ Eksempel i RDF Turtle:
 |English name|has URL
 |URI|vcard:hasURL
 |Range|rdfs:Literal typed as xsd:anyURI
-|Beskrivelse|Brukes til å oppgi URLen til tjenestekanalen, når kanalen er av type online.
+|Anvendelse|Brukes til å oppgi URLen til tjenestekanalen, når kanalen er av type online.
 |Usage note|To specify the URL to the channel, when the channel is online.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
@@ -204,7 +204,7 @@ Eksempel i RDF Turtle:
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Beskrivelse|Brukes til å oppgi type kanal.
+|Anvendelse|Brukes til å oppgi type kanal.
 |Usage note|This property represents the type of Channel as defined in a controlled vocabulary.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
@@ -241,7 +241,7 @@ Forslag til et kontrollert vokabular for typer tjenestekanal (hentet fra CPSV �
 |English name|opening hours
 |URI|schema:openingHours
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi åpningstid til den aktuelle kanalen, som fritekst. Gjentas når beskrivelsen finnes i flere språk.
+|Anvendelse|Brukes til å oppgi åpningstid til den aktuelle kanalen, som fritekst. Gjentas når beskrivelsen finnes i flere språk.
 |Usage note|This property represents the normal opening hours of a channel. The value should follow the flexible format defined for schema.org's opening hours property28. Following that structure, days of the week are represented by two letter codes (Mo, Tu, We, Th, Fr, Sa, Su). Lists should be comma separated (for example: Mo, We, Fr) and periods separated by a hyphen (for example: Mo-Fr).
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -257,7 +257,7 @@ Forslag til et kontrollert vokabular for typer tjenestekanal (hentet fra CPSV �
 |English name|availability restriction
 |URI|schema:hoursAvailable
 |Range|schema:OpeningHoursSpecification
-|Beskrivelse|Brukes til å oppgi detaljer om åpningstid, som strukturert data.
+|Anvendelse|Brukes til å oppgi detaljer om åpningstid, som strukturert data.
 |Usage note|To specify in detail and as structured data when the channel is available.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
