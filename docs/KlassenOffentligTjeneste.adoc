@@ -13,10 +13,8 @@ image::images/KlassenOffentligTjeneste.png[]
 |URI|cpsv:PublicService
 |Subklasse av / Subclass of|cpsvno:Service
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1| Bruk <<PrivatTjeneste>> hvis tjenesten som beskrives er en privat tjeneste.
-|Remark 1| Use <<PrivatTjeneste>> if the service described is a private service.
-|Merknad 2|Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til f.eks. å beskrive tjenester levert av private aktører.
-|Remark 2| Norwegian extension: Minimum requirement changed from mandatory to recommended, such that the specification may also be used e.g. to describe private services.
+|Merknad |Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til å beskrive tjenester ikke er offentlige tjenester.
+|Remark | Norwegian extension: Minimum requirement changed from mandatory to recommended, such that the specification may also be usedto describe services that are not public services.
 |Eksempel|Skjenkebevilling
 |===
 
@@ -607,7 +605,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad 1| Vurder å bruke egenskapen <<OffentligTjeneste-krever>> der det er avhengighet mellom tjenestene.
-|Merknad 2| Norsk utvidelse: Range endret fra `cpsv:PublicService` til `cpsvno:Service`, som en følge av den norsk utvidelse av å tilføye <<Tjeneste>> som kan tilbys av en privat aktør.
+|Merknad 2| Norsk utvidelse: Range endret fra `cpsv:PublicService` til `cpsvno:Service`, som en følge av den norsk utvidelse av å tilføye <<Tjeneste>>.
 |Eksempel|
 |===
 

@@ -8,7 +8,7 @@ image::images/KlassenVirksomhetshendelse.png[]
 [cols="30s,70d"]
 |===
 |English name|Business Event
-|Beskrivelse|Brukes til å representere en hendelse som er en spesifikk situasjon i livssyklus til en virksomhet og som trigger behov for offentlig tjeneste eller (juridiske) plikter på det spesifikke tidspunkt.
+|Beskrivelse|Brukes til å representere en virksomhetshendelse (_#lenken til begrepsdefinisjonen kommer#_).
 |Usage note|This class represents a Business Event, which specialises Event. A Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time.
 |URI|cv:BusinessEvent
 |Subklasse av / Subclass of|cv:Event
