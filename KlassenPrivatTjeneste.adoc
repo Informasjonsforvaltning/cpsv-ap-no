@@ -8,7 +8,7 @@ image::images/KlassenPrivatTjeneste.png[]
 [cols="30s,70d"]
 |===
 |English name|Private Service
-|Beskrivelse|Brukes til å beskrive en privat tjeneste, dvs. tjeneste levert av en privat aktør.
+|Anvendelse|Brukes til å beskrive en privat tjeneste, dvs. tjeneste levert av en privat aktør.
 |Usage note|To represent a Private Service, i.e., a service provided by a private agent.
 |URI|cpsvno:PrivateService
 |Subklasse av / Subclass of | cpsvno:Service
@@ -31,7 +31,7 @@ image::images/KlassenPrivatTjeneste.png[]
 |English name |description 
 |URI |dct:description 
 |Range |rdfs:Literal 
-|Beskrivelse |Brukes til å oppgi en tekstlig beskrivelse av tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere språk. 
+|Anvendelse |Brukes til å oppgi en tekstlig beskrivelse av tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere språk. 
 |Usage note |This property represents a free text Description of the Service. 
 |Multiplisitet |1..n 
 |Kravsnivå |Obligatorisk/Mandatory 
@@ -47,7 +47,7 @@ image::images/KlassenPrivatTjeneste.png[]
 |English name |has input 
 |URI |cpsv:hasInput 
 |Range |cv:Evidence 
-|Beskrivelse |Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
+|Anvendelse |Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
 |Usage note |The Has Input property links a Service to one or more instances of the Evidence class. 
 |Multiplisitet |0..n 
 |Kravsnivå | Anbefalt/Recommended 
@@ -64,7 +64,7 @@ image::images/KlassenPrivatTjeneste.png[]
 |English name |owned by
 |URI |cv:ownedBy 
 |Range |foaf:Agent 
-|Beskrivelse |Brukes til å referere til aktøren som eier tjenesten. 
+|Anvendelse |Brukes til å referere til aktøren som eier tjenesten. 
 |Usage note |To refer to the Agent who owns the Service. 
 |Multiplisitet |1..n 
 |Kravsnivå |Obligatorisk/Mandatory
@@ -80,7 +80,7 @@ image::images/KlassenPrivatTjeneste.png[]
 |English name |identifier 
 |URI |dct:identifier 
 |Range |rdfs:Literal 
-|Beskrivelse |Brukes til å oppgi en formell identifikasjon til tjenesten. 
+|Anvendelse |Brukes til å oppgi en formell identifikasjon til tjenesten. 
 |Usage note |This property represents a formally-issued Identifier for the Service. 
 |Multiplisitet |1..1 
 |Kravsnivå |Obligatorisk/Mandatory
@@ -98,7 +98,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |contact point 
 |URI |dcat:contactPoint 
 |Range |vcard:Kind 
-|Beskrivelse |Brukes til å oppgi kontaktpunkt(er) for tjenesten. 
+|Anvendelse |Brukes til å oppgi kontaktpunkt(er) for tjenesten. 
 |Usage note |To specify contact points for the service.  
 |Multiplisitet |1..n 
 |Kravsnivå |Obligatorisk/Mandatory 
@@ -114,7 +114,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |name 
 |URI |dct:title 
 |Range |rdfs:Literal 
-|Beskrivelse |Brukes til å oppgi det offisielle navnet på tjenesten. Denne egenskapen kan gjentas når navnet finnes i flere språk. 
+|Anvendelse |Brukes til å oppgi det offisielle navnet på tjenesten. Denne egenskapen kan gjentas når navnet finnes i flere språk. 
 |Usage note |This property represents the official Name of the Service. 
 |Multiplisitet |1..n 
 |Kravsnivå |Obligatorisk/Mandatory 
@@ -130,7 +130,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |produces 
 |URI |cpsv:produces 
 |Range |cv:Output 
-|Beskrivelse |Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.  
+|Anvendelse |Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.  
 |Usage note |Links a Service to one or more instances of the Output class describing the actual result of executing a given Service. 
 |Multiplisitet |1..n 
 |Kravsnivå |Obligatorisk/Mandatory 
@@ -150,7 +150,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|subject
 |URI|dct:subject
 |Range|skos:Concept
-|Beskrivelse|Brukes til å referere til begrep som er viktig for å forstå tjenesten.
+|Anvendelse|Brukes til å referere til begrep som er viktig for å forstå tjenesten.
 |Usage note|To refer to concept that is important for the understanding of the service.
 |Multiplisitet|0..n
 |Kravsnivå| Anbefalt/Recommended
@@ -166,7 +166,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |spatial coverage 
 |URI |dct:spatial 
 |Range |dct:Location 
-|Beskrivelse |Brukes til å referere til et geografisk eller administrativt område som dekkes av tjenesten. 
+|Anvendelse |Brukes til å referere til et geografisk eller administrativt område som dekkes av tjenesten. 
 |Usage note |A Service is likely to be available only within a given area. 
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
@@ -186,7 +186,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |is part of 
 |URI |dct:isPartOf 
 |Range |cpsvno:Service 
-|Beskrivelse |Brukes til å referere til en annen tjeneste som denne tjenesten er en del av. 
+|Anvendelse |Brukes til å referere til en annen tjeneste som denne tjenesten er en del av. 
 |Usage note |This property indicates a related Service in which is included.
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
@@ -203,7 +203,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |has part 
 |URI |dct:hasPart 
 |Range |cpsv:PublicService 
-|Beskrivelse |Brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives. 
+|Anvendelse |Brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives. 
 |Usage note |This property indicates a related Registry Service that is included either physically or logically in the described resource.  
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
@@ -220,7 +220,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |homepage 
 |URI |foaf:homepage 
 |Range |foaf:Document 
-|Beskrivelse |Brukes til å referere til hjemmesiden til tjenesten.   
+|Anvendelse |Brukes til å referere til hjemmesiden til tjenesten.   
 |Usage note |This property refers to the homepage of a Service. 
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
@@ -236,7 +236,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |status 
 |URI |adms:status 
 |Range |skos:Concept 
-|Beskrivelse |Brukes til å referere til status til tjenesten (f.eks. aktiv, inaktiv, under utvikling osv.) i henhold til et predefinert kontrollert vokabular. 
+|Anvendelse |Brukes til å referere til status til tjenesten (f.eks. aktiv, inaktiv, under utvikling osv.) i henhold til et predefinert kontrollert vokabular. 
 |Usage note |Indicates whether a Service is active, inactive, under development etc. according to a controlled vocabulary. 
 |Multiplisitet |0..1 
 |Kravsnivå |Anbefalt/Recommended 
@@ -252,7 +252,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |thematic area 
 |URI |cv:thematicArea 
 |Range |skos:Concept 
-|Beskrivelse |Brukes til å referere til primært temaområde som dekkes av tjenesten. 
+|Anvendelse |Brukes til å referere til primært temaområde som dekkes av tjenesten. 
 |Usage note |This property represents the Thematic Area of a Service as described in a controlled vocabulary. 
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
@@ -268,7 +268,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |type 
 |URI |dct:type 
 |Range |skos:Concept 
-|Beskrivelse |Brukes til å indikere type tjeneste i henhold til et kontrollert vokabular. 
+|Anvendelse |Brukes til å indikere type tjeneste i henhold til et kontrollert vokabular. 
 |Usage note |This property represents the Type of a Service as described in a controlled vocabulary. 
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
@@ -291,7 +291,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |processing time 
 |URI |cv:processingTime 
 |Range |rdfs:Literal typed as xsd:duration 
-|Beskrivelse |Brukes til å oppgi den estimerte behandlingstiden. 
+|Anvendelse |Brukes til å oppgi den estimerte behandlingstiden. 
 |Usage note |The value of this property is the (estimated) time needed for executing a Service. 
 |Multiplisitet |0..1 
 |Kravsnivå |Valgfri/Optional 
@@ -308,7 +308,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |is described at 
 |URI |cv:isDescribedAt 
 |Range |dcat:Dataset 
-|Beskrivelse |Brukes til å referere til datasett som beskriver tjenesten.  
+|Anvendelse |Brukes til å referere til datasett som beskriver tjenesten.  
 |Usage note |The Is Described At property links a Service to the Dataset(s) in which it is being described. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -325,7 +325,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |has participation 
 |URI |cv:hasParticipation 
 |Range |cv:Participation 
-|Beskrivelse |Brukes til å knytte til andre aktører som er deltagende i å levere tjenesten.  
+|Anvendelse |Brukes til å knytte til andre aktører som er deltagende i å levere tjenesten.  
 |Usage note |The CPSV-AP defines the two basic roles of Competent Authority and Service Provider, but this simple model can be extended if required using the Has Participation property that links to the Participation class. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -341,7 +341,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name|is grouped by
 |URI|cv:isGroupedBy
 |Range|cv:Event
-|Beskrivelse|Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
+|Anvendelse|Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
 |Usage note|This property links the Service to the triggering Event class.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
@@ -357,7 +357,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |is classified by 
 |URI |cv:isClassifiedBy 
 |Range |skos:Concept 
-|Beskrivelse |Brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<Tjeneste-temaområde>>, <<Tjeneste-næringsgruppering>> osv. 
+|Anvendelse |Brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<Tjeneste-temaområde>>, <<Tjeneste-næringsgruppering>> osv. 
 |Usage note |The Is Classified By property allows to classify the Service with any Concept, other than those already foreseen and defined explicitely in the <<Tjeneste-temaområde>>, <<Tjeneste-næringsgruppering>> etc. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -374,7 +374,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |has channel 
 |URI |cv:hasChannel 
 |Range |cv:Channel 
-|Beskrivelse |Brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte. 
+|Anvendelse |Brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte. 
 |Usage note |This property links the Service to any Channel through which an Agent provides, uses or otherwise interacts with the Service, such as an online service, phone number or office.  
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -390,7 +390,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |follows 
 |URI |cpsv:follows 
 |Range |cpsv:Rule 
-|Beskrivelse |Brukes til å referere til regelen som gjelder for tjenesten. 
+|Anvendelse |Brukes til å referere til regelen som gjelder for tjenesten. 
 |Usage note |This property links a Service to the Rule(s) under which it operates. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -406,7 +406,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |has cost 
 |URI |cv:hasCost 
 |Range |cv:Cost 
-|Beskrivelse |Brukes til å referere til en eller flere instanser av klassen Gebyr (cv:Cost), for å oppgi ev. gebyr for tjenesten.  
+|Anvendelse |Brukes til å referere til en eller flere instanser av klassen Gebyr (cv:Cost), for å oppgi ev. gebyr for tjenesten.  
 |Usage note |The Has Cost property links a Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Service for the citizen or business related to the execution of the particular Service. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -423,7 +423,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |requires 
 |URI |dct:requires 
 |Range |cpsvno:Service
-|Beskrivelse |Brukes til å referere til en eller flere andre tjenester som denne tjenesten krever utført først, eller som denne tjenesten på en eller annen måte bruker resultat fra.  
+|Anvendelse |Brukes til å referere til en eller flere andre tjenester som denne tjenesten krever utført først, eller som denne tjenesten på en eller annen måte bruker resultat fra.  
 |Usage note |One Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -439,7 +439,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |sector 
 |URI |cv:sector 
 |Range |skos:Concept 
-|Beskrivelse |Brukes til å referere til industri/sektor som den aktuelle tjenesten er relatert til, eller er ment for. En tjeneste kan relateres til flere industrier/sektorer.  
+|Anvendelse |Brukes til å referere til industri/sektor som den aktuelle tjenesten er relatert til, eller er ment for. En tjeneste kan relateres til flere industrier/sektorer.  
 |Usage note |This property represents the industry or sector a Service relates to, or is intended for. Note that a single Service may relate to multiple sectors. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -457,7 +457,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |keyword 
 |URI |dcat:keyword 
 |Range |rdfs:Literal 
-|Beskrivelse |Brukes til å oppgi nøkkelord som beskriver den aktuelle tjenesten. 
+|Anvendelse |Brukes til å oppgi nøkkelord som beskriver den aktuelle tjenesten. 
 |Usage note |This property represents a keyword, term or phrase to describe the Service. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -473,7 +473,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |has legal resource 
 |URI |cv:hasLegalResource 
 |Range |eli:LegalResource 
-|Beskrivelse |Brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til. 
+|Anvendelse |Brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til. 
 |Usage note |The Has Legal Resource property links a Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Service relates, operates or has its legal basis. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -489,7 +489,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |related service
 |URI |dct:relation 
 |Range |cpsvno:Service 
-|Beskrivelse |Brukes til å referere til en eller flere andre relaterte tjenester.  
+|Anvendelse |Brukes til å referere til en eller flere andre relaterte tjenester.  
 |Usage note |This property represents a Service related to the particular instance of the Service class. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -505,7 +505,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |language 
 |URI |dct:language 
 |Range |dct:LinguisticSystem 
-|Beskrivelse |Brukes til å oppgi hvilke språk tjenesten er tilgjengelig på. Dette kan være ett språk eller flere språk, for eksempel i land med mer enn ett offisielt språk. 
+|Anvendelse |Brukes til å oppgi hvilke språk tjenesten er tilgjengelig på. Dette kan være ett språk eller flere språk, for eksempel i land med mer enn ett offisielt språk. 
 |Usage note |This property represents the language(s) in which the Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
@@ -521,7 +521,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |English name |has criterion 
 |URI |cv:hasCriterion 
 |Range |cv:CriterionRequirement 
-|Beskrivelse |Brukes til å referere til vilkår knyttet til behov for eller bruk av tjenesten.   
+|Anvendelse |Brukes til å referere til vilkår knyttet til behov for eller bruk av tjenesten.   
 |Usage note |Links a Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
