@@ -253,7 +253,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet |0..1 
 |Kravsnivå |Anbefalt/Recommended 
 |Merknad 1 |Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (lenket ressurs i RDF)] (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP). 
-|Remark 1 | Value shall be chosen from http://purl.org/adms/status/[ADMS Status Vocabulary (linked resource in RDF)].
+|Remark 1 | The value shall be chosen from http://purl.org/adms/status/[ADMS Status Vocabulary (linked resource in RDF)].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel | 
@@ -545,7 +545,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
-|Remark 1 | Value shall be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Remark 1 | The value shall be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel |
@@ -564,6 +564,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP. 
+|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel |
 |===
