@@ -8,7 +8,7 @@ image::images/KlassenDeltagelse.png[]
 [cols="30s,70d"]
 |===
 |English name|Participation
-|Beskrivelse|Brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <<OffentligTjeneste-harKompetentOrgan>>) eller tjenesteeieren (jf. <<Tjeneste-eiesAv>>), som er involvert i en tjeneste.
+|Anvendelse|Brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <<OffentligTjeneste-harKompetentOrgan>>) eller tjenesteeieren (jf. <<Tjeneste-eiesAv>>), som er involvert i en tjeneste.
 |Usage note|The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider.
 |URI|cv:Participation
 |Kravsnivå|Valgfri/Optional
@@ -25,7 +25,7 @@ image::images/KlassenDeltagelse.png[]
 |English name|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av deltagelsen. Gjentas når beskrivelsen finnes i flere ulike språk.
+|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av deltagelsen. Gjentas når beskrivelsen finnes i flere ulike språk.
 |Usage note|A free text description of the Participation.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
@@ -40,7 +40,7 @@ image::images/KlassenDeltagelse.png[]
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal typed as URI
-|Beskrivelse|Brukes til å oppgi identifikatoren til deltagelsen.
+|Anvendelse|Brukes til å oppgi identifikatoren til deltagelsen.
 |Usage note|This property represents an Identifier for the Participation.
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
@@ -57,7 +57,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|role
 |URI|cv:role
 |Range|skos:Concept
-|Beskrivelse|Brukes til å referere til et begrep som beskriver en rolle i deltagelsen.
+|Anvendelse|Brukes til å referere til et begrep som beskriver en rolle i deltagelsen.
 |Usage note|Provides the role played.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
