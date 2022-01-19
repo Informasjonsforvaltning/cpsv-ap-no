@@ -216,7 +216,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1 |Verdien skal velges fra EUs liste over https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], når lisensen som brukes finnes på listen.
-|Remkark 1| Value shall be chosen from EU's controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], when the licence used is in the vocabulary.
+|Remkark 1| The value shall be chosen from EU's controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], when the licence used is in the vocabulary.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.
@@ -256,7 +256,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1 |Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
-|Remark 1 | Value shall be chosen from EU's controllerd vocabulary for https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Remark 1 | The value shall be chosen from EU's controllerd vocabulary for https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly speficied in CPSP-AP.
 |Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.

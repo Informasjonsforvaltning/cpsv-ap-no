@@ -290,7 +290,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1|Norsk utvidelse: Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (i RDF)] (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).
-|Remark 1| Norwegian extension: Value shall be chosen from http://purl.org/adms/status/[ADMS Status Vocabulary (i RDF)].
+|Remark 1| Norwegian extension: The value shall be chosen from http://purl.org/adms/status/[ADMS Status Vocabulary (i RDF)].
 |Merknad 2 | Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt.
 |Remark 2 | Norwegian extension: Minimum requirement changed from optional to recommended.
 |Eksempel|Ferdig utviklet
