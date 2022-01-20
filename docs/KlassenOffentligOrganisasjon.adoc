@@ -31,7 +31,7 @@ Eksempel i RDF Turtle:
 |English name|spatial coverage
 |URI|dct:spatial
 |Range|dct:Location
-|Anvendelse|Brukes til å referere til et geografisk eller administrativt område dekket av organisasjonen.
+|Anvendelse|Brukes til å referere til et geografisk område dekket av organisasjonen.
 |Usage note|This property contains the geographic or administrative region covered by a Public Organisation.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
