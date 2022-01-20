@@ -178,7 +178,7 @@ Eksempel i RDF Turtle:
 |English name|spatial coverage
 |URI|dct:spatial
 |Range|dct:Location
-|Anvendelse|Brukes til å referere til et geografisk eller administrativt område som dekkes av tjenesten.
+|Anvendelse|Brukes til å referere til et geografisk område som dekkes av tjenesten.
 |Usage note|A Public Service is likely to be available only within a given area, typically the area covered by a particular public authority.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
