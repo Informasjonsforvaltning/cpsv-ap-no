@@ -10,7 +10,7 @@ image::images/KlassenRegulativRessurs.png[]
 [cols="30s,70d"]
 |===
 |English name|Legal Resource
-|Anvendelse|Brukes til å representere en regulativ ressurs.
+|Anvendelse|Brukes til å representere en regulativ ressurs, f.eks. regelverk eller politikk som regulerer utførelsen av en tjeneste.
 |Usage note|This class represents the legislation, policy or policies that lie behind the Rules that govern the service.
 |URI|eli:LegalResource
 |Kravsnivå|Valgfri/Optional
