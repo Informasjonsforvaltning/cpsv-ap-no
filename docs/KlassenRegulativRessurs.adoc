@@ -100,8 +100,10 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 |Usage note|To specify the language the legal resource is in.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
-|Remark| Norwegian extension: Not explicitly specified in CPSV-AP.
+|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Remark 1 | The value shall be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark 2| Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Se under <<KnytteTilRegelverk>>.
 |===
 
