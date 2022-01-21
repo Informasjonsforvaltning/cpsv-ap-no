@@ -57,7 +57,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel |
 |===
 
-==== Tjenestekanal – datatjeneste (cpsvno:dataSeivice) [[Tjenestekanal-datatjeneste]]
+==== Tjenestekanal – datatjeneste (cpsvno:dataService) [[Tjenestekanal-datatjeneste]]
 
 [cols="30s,70d"]
 |===
