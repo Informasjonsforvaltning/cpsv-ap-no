@@ -516,9 +516,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Dokumentasjon-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Dokumentasjon</em></a>
 <ul class="sectlevel3">
-<li><a href="#Dokumentasjon-bekreftesVed">Dokumentasjon – bekreftes ved (cccev:isSupportedBy)</a></li>
 <li><a href="#Dokumentasjon-relatertInformasjon">Dokumentasjon – relatert informasjon (foaf:page)</a></li>
 <li><a href="#Dokumentasjon-type">Dokumentasjon – type (dct:type)</a></li>
+<li><a href="#Dokumentasjon-understøttesAv">Dokumentasjon – understøttes av (cccev:isSupportedBy)</a></li>
 </ul>
 </li>
 </ul>
@@ -2406,65 +2406,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="sect2">
 <h3 id="Dokumentasjon-valgfrie-egenskaper"><a class="anchor" href="#Dokumentasjon-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Dokumentasjon</em></h3>
 <div class="sect3">
-<h4 id="Dokumentasjon-bekreftesVed"><a class="anchor" href="#Dokumentasjon-bekreftesVed"></a>Dokumentasjon – bekreftes ved (cccev:isSupportedBy)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">is supported by</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cccev:isSupportedBy</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cccev:DocumentReference</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en attest eller lignende som bekreftelse på dokumentasjonen. Kan også være URL til der bekreftelsen (ev. fra en tredjepart) kan finnes.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An Evidence may refer to the attestation, to the evidentiary document or to the URL where the proof from a third party can be found.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Denne er ikke eksplisitt med i CPSV-AP, men trengs for f.eks. å knytte et datasett (en eller annen «attest») til dokumentasjonen.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Krav om vandel» kan bekreftes ved «Vandelsattest».</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;kravOmVandel&gt; a cv:Evidence ;
-   dct:title "Krav om vandel"@nb ;
-   cccev:isSupportedBy &lt;vandelsattest&gt; ; .
-
-&lt;vandelsattest&gt; a cccev:DocumentReference ; .</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
 <h4 id="Dokumentasjon-relatertInformasjon"><a class="anchor" href="#Dokumentasjon-relatertInformasjon"></a>Dokumentasjon – relatert informasjon (foaf:page)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2598,6 +2539,65 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><mark>&lt;kom med innspill&gt;</mark></p>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Dokumentasjon-understøttesAv"><a class="anchor" href="#Dokumentasjon-understøttesAv"></a>Dokumentasjon – understøttes av (cccev:isSupportedBy)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is supported by</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cccev:isSupportedBy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cccev:DocumentReference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til f.eks. en attest eller annen ressurs som understøtter dokumentasjonen. Kan også være URL til der ressursen (ev. fra en tredjepart) kan finnes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An Evidence may refer to the attestation, to the evidentiary document or to the URL where the proof from a third party can be found.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Denne er ikke eksplisitt med i CPSV-AP, men trengs for f.eks. å knytte et datasett (en eller annen «attest») til dokumentasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Krav om vandel» kan bekreftes ved «Vandelsattest».</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;kravOmVandel&gt; a cv:Evidence ;
+   dct:title "Krav om vandel"@nb ;
+   cccev:isSupportedBy &lt;vandelsattest&gt; ; .
+
+&lt;vandelsattest&gt; a cccev:DocumentReference ; .</pre>
+</div>
 </div>
 </div>
 </div>
@@ -13280,7 +13280,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-01-24 12:25:37 UTC
+Sist oppdatert 2022-01-25 11:20:33 UTC
 </div>
 </div>
 </body>
