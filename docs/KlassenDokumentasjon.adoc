@@ -112,30 +112,6 @@ Eksempel i RDF Turtle:
 
 === Valgfrie egenskaper for klassen _Dokumentasjon_ [[Dokumentasjon-valgfrie-egenskaper]]
 
-==== Dokumentasjon – bekreftes ved (cccev:isSupportedBy) [[Dokumentasjon-bekreftesVed]]
-
-[cols="30s,70d"]
-|===
-|English name|is supported by
-|URI|cccev:isSupportedBy
-|Range|cccev:DocumentReference
-|Anvendelse|Brukes til å referere til en attest eller lignende som bekreftelse på dokumentasjonen. Kan også være URL til der bekreftelsen (ev. fra en tredjepart) kan finnes.
-|Usage note|An Evidence may refer to the attestation, to the evidentiary document or to the URL where the proof from a third party can be found.
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: Denne er ikke eksplisitt med i CPSV-AP, men trengs for f.eks. å knytte et datasett (en eller annen «attest») til dokumentasjonen.
-|Eksempel|«Krav om vandel» kan bekreftes ved «Vandelsattest».
-|===
-
-Eksempel i RDF Turtle:
------
-<kravOmVandel> a cv:Evidence ;
-   dct:title "Krav om vandel"@nb ;
-   cccev:isSupportedBy <vandelsattest> ; .
-
-<vandelsattest> a cccev:DocumentReference ; .
------
-
 ==== Dokumentasjon – relatert informasjon (foaf:page) [[Dokumentasjon-relatertInformasjon]]
 
 [cols="30s,70d"]
@@ -187,3 +163,27 @@ Forslag til et kontrollert vokabular for dokumentasjonstyper:
 * Protokoll
 * Sertifikat
 * #<kom med innspill>#
+
+==== Dokumentasjon – understøttes av (cccev:isSupportedBy) [[Dokumentasjon-understøttesAv]]
+
+[cols="30s,70d"]
+|===
+|English name|is supported by
+|URI|cccev:isSupportedBy
+|Range|cccev:DocumentReference
+|Anvendelse|Brukes til å referere til f.eks. en attest eller annen ressurs som understøtter dokumentasjonen. Kan også være URL til der ressursen (ev. fra en tredjepart) kan finnes.
+|Usage note|An Evidence may refer to the attestation, to the evidentiary document or to the URL where the proof from a third party can be found.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: Denne er ikke eksplisitt med i CPSV-AP, men trengs for f.eks. å knytte et datasett (en eller annen «attest») til dokumentasjonen.
+|Eksempel|«Krav om vandel» kan bekreftes ved «Vandelsattest».
+|===
+
+Eksempel i RDF Turtle:
+-----
+<kravOmVandel> a cv:Evidence ;
+   dct:title "Krav om vandel"@nb ;
+   cccev:isSupportedBy <vandelsattest> ; .
+
+<vandelsattest> a cccev:DocumentReference ; .
+-----
