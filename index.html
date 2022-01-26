@@ -886,11 +886,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Vilkår-anvendbarhetsperiode">Vilkår – anvendbarhetsperiode (cccev:applicableinPeriodOfTime)</a></li>
 <li><a href="#Vilkår-forventetVerdi">Vilkår – forventet verdi (cccev:expectedValue)</a></li>
 <li><a href="#Vilkår-nedreVerdigrense">Vilkår – nedre verdigrense (cccev:minimumValue)</a></li>
-<li><a href="#Vilkår-oppfyltMedDokumentasjon">Vilkår – oppfylt med dokumentasjon (cccev:metByEvidence)</a></li>
 <li><a href="#Vilkår-sertifiseringsnivå">Vilkår – sertifiseringsnivå (cccev:levelOfCertification)</a></li>
 <li><a href="#Vilkår-type">Vilkår – type (dct:type)</a></li>
 <li><a href="#Vilkår-typeKopieringskvalitet">Vilkår – type kopieringskvalitet (cccev:typeOfCopyQuality)</a></li>
 <li><a href="#Vilkår-typeOversettelse">Vilkår – type oversettelse (cccev:typeOfTranslation)</a></li>
+<li><a href="#Vilkår-verifisertVedDokumentasjon">Vilkår – verifisert ved dokumentasjon (cccev:metByEvidence)</a></li>
 <li><a href="#Vilkår-øvreVerdigrense">Vilkår – øvre verdigrense (cccev:maximumValue)</a></li>
 </ul>
 </li>
@@ -11988,53 +11988,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </table>
 </div>
 <div class="sect3">
-<h4 id="Vilkår-oppfyltMedDokumentasjon"><a class="anchor" href="#Vilkår-oppfyltMedDokumentasjon"></a>Vilkår – oppfylt med dokumentasjon (cccev:metByEvidence)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">met by Evidence</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cccev:metByEvidence</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Evidence</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi mulig dokumentasjon (instans av cv:Evidence) som brukes av respondenten til å bevise at et dokumentasjonskrav er oppfylt.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Criterion Requirement may point to a list of candidate Evidences that can be used by the responder to prove the Criterion requirement is fulfilled.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
 <h4 id="Vilkår-sertifiseringsnivå"><a class="anchor" href="#Vilkår-sertifiseringsnivå"></a>Vilkår – sertifiseringsnivå (cccev:levelOfCertification)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -12319,6 +12272,53 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </li>
 </ul>
 </div>
+</div>
+<div class="sect3">
+<h4 id="Vilkår-verifisertVedDokumentasjon"><a class="anchor" href="#Vilkår-verifisertVedDokumentasjon"></a>Vilkår – verifisert ved dokumentasjon (cccev:metByEvidence)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">met by Evidence</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cccev:metByEvidence</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Evidence</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi mulig dokumentasjon (instans av cv:Evidence) som brukes av respondenten til å argumentere for at et dokumentasjonskrav er oppfylt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Criterion Requirement may point to a list of candidate Evidences that can be used by the responder to prove the Criterion requirement is fulfilled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect3">
 <h4 id="Vilkår-øvreVerdigrense"><a class="anchor" href="#Vilkår-øvreVerdigrense"></a>Vilkår – øvre verdigrense (cccev:maximumValue)</h4>
@@ -13280,7 +13280,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-01-25 11:20:33 UTC
+Sist oppdatert 2022-01-26 11:05:50 UTC
 </div>
 </div>
 </body>

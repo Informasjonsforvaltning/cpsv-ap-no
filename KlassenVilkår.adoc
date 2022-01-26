@@ -125,21 +125,6 @@ Eksempel i RDF Turtle:
 |Eksempel|
 |===
 
-==== Vilkår – oppfylt med dokumentasjon (cccev:metByEvidence) [[Vilkår-oppfyltMedDokumentasjon]]
-
-[cols="30s,70d"]
-|===
-|English name|met by Evidence
-|URI|cccev:metByEvidence
-|Range|cv:Evidence
-|Anvendelse|Brukes til å oppgi mulig dokumentasjon (instans av cv:Evidence) som brukes av respondenten til å bevise at et dokumentasjonskrav er oppfylt.
-|Usage note|Criterion Requirement may point to a list of candidate Evidences that can be used by the responder to prove the Criterion requirement is fulfilled.
-|Multiplisitet|Valgfri/Optional
-|Kravsnivå|0..n
-|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
-|Eksempel|
-|===
-
 ==== Vilkår – sertifiseringsnivå (cccev:levelOfCertification) [[Vilkår-sertifiseringsnivå]]
 
 [cols="30s,70d"]
@@ -236,6 +221,21 @@ Forslag til et kontrollert vokabular for typer oversettelse:
 
 * autorisert oversettelse
 * #<kom med innspill>#
+
+==== Vilkår – verifisert ved dokumentasjon (cccev:metByEvidence) [[Vilkår-verifisertVedDokumentasjon]]
+
+[cols="30s,70d"]
+|===
+|English name|met by Evidence
+|URI|cccev:metByEvidence
+|Range|cv:Evidence
+|Anvendelse|Brukes til å oppgi mulig dokumentasjon (instans av cv:Evidence) som brukes av respondenten til å argumentere for at et dokumentasjonskrav er oppfylt.
+|Usage note|Criterion Requirement may point to a list of candidate Evidences that can be used by the responder to prove the Criterion requirement is fulfilled.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Eksempel|
+|===
 
 ==== Vilkår – øvre verdigrense (cccev:maximumValue) [[Vilkår-øvreVerdigrense]]
 
