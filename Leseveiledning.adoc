@@ -16,9 +16,9 @@ Eksempel: `foaf:Agent` er identifikatoren til klassen `Agent`, slik klassen er s
 Eksempel: `Range skos:Concept` betyr at verdien til egenskapen skal være en instans av klassen `skos:Concept`.
 |Anvendelse |Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne spesifikasjonen.
 |Usage note |Tilsvarende «Anvendelse», men på engelsk (primært ment for engelsktalende utviklere for verktøystøtte). Se under <<Omfang-og-avgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
-|Multiplisitet |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimums og maksimums antall verdier egenskapen skal/kan ha.
+|Multiplisitet |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/kan ha.
 |Kravsnivå |Brukes til å spesifisere om klassen/egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Om-kravene>>.
-|Merknad |Brukes til å angi eventuell(e) merknad(er) angående bruk av klassen/egenskapen, bl.a. om eventuell norsk utvidelse sammenlignet med EU-standarden, om det er krav til bruk av kontrollerte vokabularer, osv.
+|Merknad |Brukes til å gi merknader knyttet til bruk av klassen/egenskapen, bl.a. om eventuell norsk utvidelse sammenlignet med EU-standarden, om det er krav til bruk av kontrollerte vokabularer, osv.
 |Remark |Tilsvarende «Merknad», men på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <<Omfang-og-avgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
 |Eksempel |Brukes til å gi eksempel på bruken av klassen/egenskapen, i prosatekst.
 
