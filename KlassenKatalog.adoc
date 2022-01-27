@@ -92,10 +92,10 @@ Eksempel i RDF Turtle:
 |===
 |English name|service
 |URI|dcatno:containsService
+|Subegenskap av / Subproperty of |dct:hasPart
 |Range|cpsvno:Service
 |Anvendelse|Brukes til å referere til en (offentlig) tjeneste som er i katalogen.
 |Usage note|To refer to a (public) service that is in the catalog.
-|Subegenskap av|dct:hasPart
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -346,10 +346,10 @@ Eksempel i RDF Turtle:
 |===
 |English name|event
 |URI|dcatno:containsEvent
+|Subegenskap av / Subproperty of |dct:hasPart
 |Range|cv:Event
 |Anvendelse|Brukes til å referere til en hendelse som er i katalogen.
 |Usage note|To refer to an event that is in the catalog.
-|Subegenskap av|dct:hasPart
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.

@@ -94,10 +94,10 @@ Eksempel i RDF Turtle:
 |===
 |English name|triggers need for
 |URI|cpsvno:triggersNeedFor
+|Subegenskap av / Subproperty of | dct:relation
 |Range|cpsvno:Service
 |Anvendelse|Brukes til å referere til tjenester som den aktuelle hendelsen kan utløse behov for.
 |Usage note|This property links an event directly to a service that the event triggers need for.
-|Subegenskap av / Subproperty of | dct:relation
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn dct:relation som er i CPSV-AP. Inntil vi finner en passende URI i eksisterende vokabularer, bruker vi denne egendefinerte URI.
