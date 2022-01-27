@@ -449,8 +449,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Omfang-og-avgrensing">Omfang og avgrensing</a></li>
 <li><a href="#Målgrupper">Målgrupper</a></li>
 <li><a href="#Forvaltningsregime">Forvaltningsregime</a></li>
-<li><a href="#Om-kravene">Om kravene i spesifikasjonen</a></li>
+<li><a href="#Om-kravene">Om kravsnivåene i spesifikasjonen</a></li>
 <li><a href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a></li>
+<li><a href="#Leseveiledning">Hvordan leser du tabellene brukt i spesifikasjonen?</a></li>
 </ul>
 </li>
 <li><a href="#Innledning">Innledning – hendelser, tjenester og data</a></li>
@@ -1060,7 +1061,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Om-kravene"><a class="anchor" href="#Om-kravene"></a>Om kravene i spesifikasjonen</h3>
+<h3 id="Om-kravene"><a class="anchor" href="#Om-kravene"></a>Om kravsnivåene i spesifikasjonen</h3>
 <div class="paragraph">
 <p>Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene">DCAT-AP-NO</a> og gjentas derfor ikke her.</p>
 </div>
@@ -1176,6 +1177,75 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xsd</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema#</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/xmlschema-2/">XML Schema Part 2: Datatypes Second Edition</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="Leseveiledning"><a class="anchor" href="#Leseveiledning"></a>Hvordan leser du tabellene brukt i spesifikasjonen?</h3>
+<div class="paragraph">
+<p>Følgende rader (ikke nødvendigvis i den rekkefølgen) er brukt i tabellene der krav til og bruk av klasser og egenskaper i CPSV-AP-NO er spesifisert:</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ledetekst i tabellen</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Hensikt med raden i tabellen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi klasse- eller egenskapsnavn på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <a href="#Omfang-og-avgrensing">Omfang og avgrensing</a> for forklaring på engelske navn og tekster i denne spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi en unik identifikator til klassen eller egenskapen. Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av tjeneste- og hendelsesbeskrivelser som er utformet i henhold til denne spesifikasjonen.</p>
+<p class="tableblock">Eksempel: <code>foaf:Agent</code> er identifikatoren til klassen <code>Agent</code>, slik klassen er spesifisert i <code>foaf</code> (se under <a href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a> for hva <code>foaf</code> står for).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / Subclass of</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en klasse, til å spesifisere hvilken klasse den aktuelle klasse eventuelt er subklasse av.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av / Subproperty of</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere hvilken egenskap den aktuelle egenskap eventuelt er subegenskap av.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere klassen eller datatypen verdien til den aktuelle egenskap skal være av, i form av en unik identifikator (URI) til klassen eller datatypen.</p>
+<p class="tableblock">Eksempel: <code>Range skos:Concept</code> betyr at verdien til egenskapen skal være en instans av klassen <code>skos:Concept</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilsvarende «Anvendelse», men på engelsk (primært ment for engelsktalende utviklere for verktøystøtte). Se under <a href="#Omfang-og-avgrensing">Omfang og avgrensing</a> for forklaring på engelske navn og tekster i denne spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimums og maksimums antall verdier egenskapen skal/kan ha.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å spesifisere om klassen/egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#Om-kravene">Om kravsnivåene i spesifikasjonen</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi eventuell(e) merknad(er) angående bruk av klassen/egenskapen, bl.a. om eventuell norsk utvidelse sammenlignet med EU-standarden, om det er krav til bruk av kontrollerte vokabularer, osv.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilsvarende «Merknad», men på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <a href="#Omfang-og-avgrensing">Omfang og avgrensing</a> for forklaring på engelske navn og tekster i denne spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å gi eksempel på bruken av klassen/egenskapen, i prosatekst.</p>
+<p class="tableblock">Eksempel på hvordan eksemplene vist i prosatekst ser ut i RDF Turtle, er tatt med under den aktuelle tabellen.</p></td>
 </tr>
 </tbody>
 </table>
@@ -13280,7 +13350,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-01-27 07:03:53 UTC
+Sist oppdatert 2022-01-27 10:28:50 UTC
 </div>
 </div>
 </body>
