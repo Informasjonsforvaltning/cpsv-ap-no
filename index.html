@@ -457,7 +457,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Innledning">Innledning – hendelser, tjenester og data</a></li>
 <li><a href="#Forenklet_modell">Forenklet modell for CPSV-AP-NO</a>
 <ul class="sectlevel2">
-<li><a href="#Hendelsesforløp">Å beskrive et hendelsesforløp</a></li>
+<li><a href="#Tjenestekjede">Å beskrive en tjenestekjede</a></li>
 <li><a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a></li>
 <li><a href="#KnytteTilDatasett">Å knytte en (offentlig) tjeneste til et datasett og derfra til API, begrep og informasjonsmodell</a></li>
 <li><a href="#KnytteTilBegrep">Å knytte en tjeneste eller hendelse til begrep</a></li>
@@ -1288,18 +1288,18 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="title">Figur 3. Forenklet modell for tjeneste- og hendelsesbeskrivelser</div>
 </div>
 <div class="sect2">
-<h3 id="Hendelsesforløp"><a class="anchor" href="#Hendelsesforløp"></a>Å beskrive et hendelsesforløp</h3>
+<h3 id="Tjenestekjede"><a class="anchor" href="#Tjenestekjede"></a>Å beskrive en tjenestekjede</h3>
 <div class="paragraph">
-<p>Spesifikasjonen har lagt til grunn at en hendelse er en ikke-delbar enhet, basert på bl.a. EUs forklaring på en Virksomhetshendelse (Business event): "Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business <mark>at this specific point in time</mark>” (vår egen utheving), dvs. en hendelse er noe som skjer på et gitt tidspunkt. Spesifikasjonen følger derfor CPSV-AP som ikke har støtte for å uttrykke at en hendelse kan bestå av andre hendelser.</p>
+<p>Spesifikasjonen har lagt til grunn at en hendelse er en ikke-delbar enhet, basert på bl.a. EUs forklaring på en Virksomhetshendelse (Business event): "Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business <mark>at this specific point in time</mark>” (vår egen utheving), dvs. at en hendelse er noe som skjer på et gitt tidspunkt. Spesifikasjonen følger derfor CPSV-AP som ikke har støtte for å uttrykke at en hendelse kan bestå av andre hendelser.</p>
 </div>
 <div class="paragraph">
-<p>Det er på den annen side mulig å beskrive et hendelsesforløp, dvs. en rekke av enkelthendelser, som vist i figur <a href="#img-Hendelsesforløp">Klasser og egenskaper for beskrivelse av hendelsesforløp</a>.</p>
+<p>Det er på den annen side mulig å beskrive en <a href="https://data.norge.no/concepts/99d36cbe-9368-4ded-b400-efc34eb8917e">tjenestekjede</a> som dekker en rekke av enkelthendelser, som vist i figur <a href="#img-Tjenestekjede">Klasser og egenskaper for beskrivelse av en tjenestekjede</a>.</p>
 </div>
-<div id="img-Hendelsesforløp" class="imageblock">
+<div id="img-Tjenestekjede" class="imageblock">
 <div class="content">
-<a class="image" href="images/FigurHendelsesforløp.png"><img src="images/FigurHendelsesforløp.png" alt="FigurHendelsesforløp"></a>
+<a class="image" href="images/FigurTjenestekjede.png"><img src="images/FigurTjenestekjede.png" alt="FigurTjenestekjede"></a>
 </div>
-<div class="title">Figur 4. Klasser og egenskaper for beskrivelse av hendelsesforløp</div>
+<div class="title">Figur 4. Klasser og egenskaper for beskrivelse av en tjenestekjede</div>
 </div>
 <div class="paragraph">
 <p>Figur <a href="#img-FigurSyktBarnBeskrevetMedCPSVNO">Eksempel på bruk av CPSV-AP-NO til å beskrive deler av livshendelsen "Alvorlig sykt barn"</a> illustrerer hvordan deler av livshendelsen Alvorlig sykt barn illustrert i figur <a href="#img-SyktBarn">Eksempel på sammenheng mellom hendelse, tjeneste og data</a>, beskrives med CPSV-AP-NO.</p>
@@ -13350,7 +13350,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-01-27 10:28:50 UTC
+Sist oppdatert 2022-01-27 11:09:23 UTC
 </div>
 </div>
 </body>
