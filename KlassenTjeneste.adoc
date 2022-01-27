@@ -19,10 +19,10 @@ image::images/KlassenTjeneste.png[]
 |===
 
 [[Tjeneste-obligatoriske-egenskaper]]
-=== Obligatoriske egenskaper for klassen _Tjeneste_  
+=== Obligatoriske egenskaper for klassen _Tjeneste_
 
 [[Tjeneste-beskrivelse]]
-==== Tjeneste – beskrivelse (dct:description) 
+==== Tjeneste – beskrivelse (dct:description)
 
 [cols="30s,70d"]
 |===
@@ -74,7 +74,7 @@ image::images/KlassenTjeneste.png[]
 |===
 
 [[Tjeneste-identifikator]]
-==== Tjeneste – identifikator (dct:identifier) 
+==== Tjeneste – identifikator (dct:identifier)
 
 [cols="30s,70d"]
 |===
@@ -94,7 +94,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 
 [[Tjeneste-kontaktpunkt]]
-==== Tjeneste – kontaktpunkt (dcat:contactPoint) 
+==== Tjeneste – kontaktpunkt (dcat:contactPoint)
 
 [cols="30s,70d"]
 |===
@@ -111,7 +111,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 
 [[Tjeneste-navn]]
-==== Tjeneste – navn (dct:title) 
+==== Tjeneste – navn (dct:title)
 
 [cols="30s,70d"]
 |===
@@ -146,7 +146,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 
 [[Tjeneste-anbefalte-egenskaper]]
-=== Anbefalte egenskaper for klassen _Tjeneste_  
+=== Anbefalte egenskaper for klassen _Tjeneste_
 
 [[Tjeneste-begrep]]
 ==== Tjeneste – begrep (dct:subject)
@@ -166,7 +166,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 
 [[Tjeneste-dekningsområde]]
-==== Tjeneste – dekningsområde (dct:spatial) 
+==== Tjeneste – dekningsområde (dct:spatial)
 
 [cols="30s,70d"]
 |===
@@ -224,7 +224,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 
 [[Tjeneste-hjemmeside]]
-==== Tjeneste – hjemmeside (foaf:homepage) 
+==== Tjeneste – hjemmeside (foaf:homepage)
 
 [cols="30s,70d"]
 |===
@@ -241,7 +241,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 
 [[Tjeneste-status]]
-==== Tjeneste – status (adms:status) 
+==== Tjeneste – status (adms:status)
 
 [cols="30s,70d"]
 |===
@@ -304,7 +304,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 === Valgfrie egenskaper for klassen _Tjeneste_
 
 [[Tjeneste-behandlingstid]]
-==== Tjeneste – behandlingstid (cv:processingTime) 
+==== Tjeneste – behandlingstid (cv:processingTime)
 
 [cols="30s,70d"]
 |===
@@ -322,7 +322,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 [[Tjeneste-beskrivendeDatasett]]
-==== Tjeneste – beskrivende datasett (cv:isDescribedAt) 
+==== Tjeneste – beskrivende datasett (cv:isDescribedAt)
 
 [cols="30s,70d"]
 |===
@@ -374,7 +374,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 [[Tjeneste-erKlassifisertUnder]]
-==== Tjeneste – er klassifisert under (cv:isClassifiedBy) 
+==== Tjeneste – er klassifisert under (cv:isClassifiedBy)
 
 [cols="30s,70d"]
 |===
@@ -391,7 +391,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 [[Tjeneste-erTilgjengeligVia]]
-==== Tjeneste – er tilgjengelig via (cv:hasChannel) 
+==== Tjeneste – er tilgjengelig via (cv:hasChannel)
 
 [cols="30s,70d"]
 |===
@@ -425,7 +425,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 [[Tjeneste-gebyr]]
-==== Tjeneste – gebyr (cv:hasCost) 
+==== Tjeneste – gebyr (cv:hasCost)
 
 [cols="30s,70d"]
 |===
@@ -481,7 +481,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 [[Tjeneste-nøkkelord]]
-==== Tjeneste – nøkkelord (dcat:keyword) 
+==== Tjeneste – nøkkelord (dcat:keyword)
 
 [cols="30s,70d"]
 |===
@@ -515,7 +515,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 [[Tjeneste-relatertTjeneste]]
-==== Tjeneste – relatert tjeneste (dct:relation) 
+==== Tjeneste – relatert tjeneste (dct:relation)
 
 [cols="30s,70d"]
 |===
@@ -533,7 +533,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 [[Tjeneste-språk]]
-==== Tjeneste – språk (dct:language) 
+==== Tjeneste – språk (dct:language)
 
 [cols="30s,70d"]
 |===
@@ -552,7 +552,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |===
 
 [[Tjeneste-vilkår]]
-==== Tjeneste – vilkår (cv:hasCriterion) 
+==== Tjeneste – vilkår (cv:hasCriterion)
 
 [cols="30s,70d"]
 |===
