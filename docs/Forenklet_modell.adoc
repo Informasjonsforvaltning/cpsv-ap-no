@@ -8,7 +8,7 @@ Figur <<img-ForenkletModell>> viser en forenklet modell av tjeneste- og hendelse
 image::images/ForenkletModell-CPSV-AP-NO.png[]
 
 
-include::TemaHendelsesforløp.adoc[]
+include::TemaTjenestekjede.adoc[]
 
 include::TemaKnytteDeltagendeAktørerTilEnTjeneste.adoc[]
 
