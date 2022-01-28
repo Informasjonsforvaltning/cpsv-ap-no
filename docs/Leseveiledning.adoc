@@ -11,7 +11,7 @@ Følgende rader (ikke nødvendigvis i den rekkefølgen) er brukt i tabellene der
 Eksempel: `foaf:Agent` er identifikatoren til klassen `Agent`, slik klassen er spesifisert i `foaf` (se under <<Navnerom>> for hva `foaf` står for).
 |Subklasse av / Subclass of |Denne brukes bare i spesifikasjon av en klasse, til å spesifisere hvilken klasse den aktuelle klasse eventuelt er subklasse av.
 |Subegenskap av / Subproperty of |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere hvilken egenskap den aktuelle egenskap eventuelt er subegenskap av.
-|Range |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere hvilken klasse eller datatype som verdien til den aktuelle egenskap skal være av, i form av en unik identifikator (URI) til klassen eller datatypen.
+|Range |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlig verdi til egenskapen, i form av klasse eller datatype.
 
 Eksempel: `Range skos:Concept` betyr at verdien til egenskapen skal være en instans av klassen `skos:Concept`.
 |Anvendelse |Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne spesifikasjonen.
