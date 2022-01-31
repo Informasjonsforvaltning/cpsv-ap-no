@@ -38,7 +38,7 @@ Eksempel i RDF Turtle:
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
 |===
 
@@ -56,7 +56,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|«En politiattest viser om du har brutt loven innenfor feltet du skal jobbe i eller studere. Arbeidsgiveren din, organisasjonen din eller studiestedet ditt kan kreve en slik attest for å sjekke om du egner deg for jobben eller studiet.»
 |===
 
@@ -78,7 +78,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|Referansen til datasettbeskrivelsen for Politiattest i Felles datakatalog.
 |===
 
@@ -97,7 +97,7 @@ Eksempel i RDF Turtle:
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1 | Verdien skal velges fra en felles kontrollert liste over typer dokumentreferanse når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
 |===
 

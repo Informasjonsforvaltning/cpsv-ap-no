@@ -35,7 +35,7 @@ IMPORTANT: Vær oppmerksom på at selv om følgende to egenskaper begge er anbef
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
 |===
 
@@ -51,6 +51,6 @@ IMPORTANT: Vær oppmerksom på at selv om følgende to egenskaper begge er anbef
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly speficied in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
 |===
