@@ -180,14 +180,14 @@ Forslag til et kontrollert vokabular for typer vilkår:
 * Økonomi
 * #<kom med innspill>#
 
-==== Vilkår – type kopieringskvalitet (cccev:typeOfCopyQuality) [[Vilkår-typeKopieringskvalitet]]
+==== Vilkår – kopitype (cccev:typeOfCopyQuality) [[Vilkår-kopitype]]
 
 [cols="30s,70d"]
 |===
 |English name|type of copy quality
 |URI|cccev:typeOfCopyQuality
 |Range|skos:Concept
-|Anvendelse|Brukes til å oppgi hvilken type kvalitet kreves av en kopi av en dokumentasjon.
+|Anvendelse|Brukes til å oppgi hvilken type kopi som kreves av en dokumentasjon.
 |Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall be of a specific type of copy, for instance, certified copy.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
