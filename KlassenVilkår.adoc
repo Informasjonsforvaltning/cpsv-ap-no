@@ -110,6 +110,27 @@ Eksempel i RDF Turtle:
 |Eksempel|
 |===
 
+==== Vilkår – kopitype (cccev:typeOfCopyQuality) [[Vilkår-kopitype]]
+
+[cols="30s,70d"]
+|===
+|English name|type of copy quality
+|URI|cccev:typeOfCopyQuality
+|Range|skos:Concept
+|Anvendelse|Brukes til å oppgi hvilken type kopi som kreves av en dokumentasjon.
+|Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall be of a specific type of copy, for instance, certified copy.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad 1|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Eksempel|Attestert kopi
+|===
+
+Forslag til et kontrollert vokabular for typer kopieringskvalitet:
+
+* attestert kopi
+* #<kom med innspill>#
+
 ==== Vilkår – nedre verdigrense (cccev:minimumValue) [[Vilkår-nedreVerdigrense]]
 
 [cols="30s,70d"]
@@ -178,27 +199,6 @@ Forslag til et kontrollert vokabular for typer vilkår:
 * Stilling
 * Utdanning
 * Økonomi
-* #<kom med innspill>#
-
-==== Vilkår – kopitype (cccev:typeOfCopyQuality) [[Vilkår-kopitype]]
-
-[cols="30s,70d"]
-|===
-|English name|type of copy quality
-|URI|cccev:typeOfCopyQuality
-|Range|skos:Concept
-|Anvendelse|Brukes til å oppgi hvilken type kopi som kreves av en dokumentasjon.
-|Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall be of a specific type of copy, for instance, certified copy.
-|Multiplisitet|Valgfri/Optional
-|Kravsnivå|0..n
-|Merknad 1|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
-|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
-|Eksempel|Attestert kopi
-|===
-
-Forslag til et kontrollert vokabular for typer kopieringskvalitet:
-
-* attestert kopi
 * #<kom med innspill>#
 
 ==== Vilkår – type oversettelse (cccev:typeOfTranslation) [[Vilkår-typeOversettelse]]
