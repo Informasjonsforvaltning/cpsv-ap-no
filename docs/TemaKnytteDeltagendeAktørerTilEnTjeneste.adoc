@@ -20,7 +20,7 @@ Eksempel i RDF Turtle:
 
 <deltagendeDataleverandør> a cv:Participation ;
    dct:description "deltagende dataleverandører til tjenesten Skjenkebevilling"@nb ;
-   cv:role <dataleverandør> ; .
+   cv:role <https://data.norge.no/vocabulary/role-type#data-provider> ; # dataleverandør .
 
 <Politidirektoratet> a cv:PublicOrganisation ;
    cv:playsRole <deltagendeDataleverandør> ; .

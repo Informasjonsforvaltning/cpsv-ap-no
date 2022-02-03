@@ -83,7 +83,8 @@ Eksempel I RDF Turtle:
 |Usage note|This property refers to a type of the agent.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (i RDF)].
+|Merknad|Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (lenket ressurs i RDF)].
+|Remark | The value shall be chosen from http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (linked resource in RDF)].
 |Eksempel| Vår exAktør er av type _Company_.
 |===
 

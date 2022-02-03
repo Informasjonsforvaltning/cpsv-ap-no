@@ -82,8 +82,8 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |Usage note|This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/s/teOr[Currency].
-|Remarks|The possible values for this property are described the controlled vocabulary https://op.europa.eu/s/teOr[Currency].
+|Merknad|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/s/teOr[Valuta].
+|Remarks|The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/s/teOr[Currency].
 |Eksempel|Se under <<OffentligTjeneste-gebyr>>.
 |===
 

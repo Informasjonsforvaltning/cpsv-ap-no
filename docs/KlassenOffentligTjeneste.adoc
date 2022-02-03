@@ -109,7 +109,7 @@ Eksempel i RDF Turtle:
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
    dcat:contactPoint [ a  vcard:Organization ; # kontaktpunkt
      vcard:hasTelephone "tel:+4775012000" ;
-    ] ;
+    ] ; .
 -----
 
 ==== Offentlig tjeneste – navn (dct:title) [[OffentligTjeneste-navn]]
@@ -184,10 +184,16 @@ Eksempel i RDF Turtle:
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
-* Minst en verdi skal være fra en av følgende kontrollerte lister: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
+* Minst en verdi skal være fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Kontinent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Land]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Sted]; http://sws.geonames.org/[GeoNavn].
 
-* For å angi dekningsområde i Norge, bør Kartverkets liste over https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
+* For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
+|Remark 1 a|Regarding usage of controlled vocabularies, the following requirements apply:
+
+* At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
+
+* To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
 |Merknad 2 | Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt.
+|Remark 2| Norwegian extension: Requirement level changed from optinoal to recommended.
 |Eksempel|«Skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.
 |===
 
@@ -289,8 +295,8 @@ Eksempel i RDF Turtle:
 |Usage note|Indicates whether a Public Service is active, inactive, under development etc. according to a controlled vocabulary.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Norsk utvidelse: Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (i RDF)] (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).
-|Remark 1| Norwegian extension: The value shall be chosen from http://purl.org/adms/status/[ADMS Status Vocabulary (i RDF)].
+|Merknad 1|Norsk utvidelse: Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (lenket ressurs i RDF)] (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).
+|Remark 1| Norwegian extension: The value shall be chosen from http://purl.org/adms/status/[ADMS Status Vocabulary (linked resource in RDF)].
 |Merknad 2 | Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt.
 |Remark 2 | Norwegian extension: Minimum requirement changed from optional to recommended.
 |Eksempel|Ferdig utviklet
@@ -339,16 +345,12 @@ ADMS Status v.1.0 inneholder nå følgende verdier:
 |Usage note|This property represents the Type of a Public Service as described in a controlled vocabulary.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra en felles kontrollert liste over typer offentlig tjeneste når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
-|Remark 1 | The value shall be chosen from a controlled vocabulary when the value.
+|Merknad 1 |Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/public-service-type[Offentlig tjeneste type], når verdien finnes i vokabularet.
+|Remark 1 | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/public-service-type[Public service type], when the value is in the vocabulary.
 |Merknad 2 | Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt.
 |Remark 2 | Norwegian extension: Minimum requirement changed from optional to recommended.
 |Eksempel|
 |===
-
-Forslag til et kontrollert vokabular for typer offentlig tjeneste:
-
-* #<kom med innspill>#
 
 === Valgfrie egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-valgfrie-egenskaper]]
 
@@ -620,7 +622,8 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Merknad|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Språk].
+|Remark |The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Eksempel|For eksempel: Norsk, Norsk Bokmål, Norsk Nynorsk, Nordsamisk, Engelsk.
 |Example|For example: Norwegian, Norwegian Bokmål, Norwegian Nynorsk, Northern Sami, English.
 |===

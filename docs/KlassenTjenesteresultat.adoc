@@ -91,7 +91,7 @@ Eksempel i RDF Turtle:
 |Usage note|To specify the language that the output is in.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommende
-|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Språk].
 |Remark 1 | The value shall be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Merknad 2 |Norsk utvidelse: Ikke eksplisitt med i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
@@ -134,7 +134,8 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents the type of Output as defined in a controlled vocabulary.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|Verdien skal velges fra en felles kontrollert liste over resultattyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-output-type[Tjenesteresultattype], når verdien finnes i vokabularet.
+|Remark |The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-output-type[Service output type], when the value is in the vocabulary.
 |Eksempel|tillatelse
 |===
 
@@ -142,17 +143,6 @@ Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , a dcat:Dataset ;
    dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
-   dct:type <tillatelse> ; .
+   dct:type <https://data.norge.no/vocabulary/service-output-type#permit> ; # tillatelse
+   .
 -----
-
-Forslag til et kontrollert vokabular for typer tjenesteresultat:
-
-* Anerkjennelse
-* Erklæring (ev. deklarasjon)
-* Fysisk objekt
-* Identifikator/aksesskode
-* Rettighet
-* Tillatelse
-* Økonomisk fordel
-* Økonomisk forpliktelse
-* #<kom med innspill>#

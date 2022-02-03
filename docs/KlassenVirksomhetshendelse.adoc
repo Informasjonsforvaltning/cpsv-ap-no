@@ -156,10 +156,7 @@ Eksempel i RDF Turtle:
 |Usage note|The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|Verdien skal velges fra en felles kontrollert liste over hendelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/business-event-type[Virksomhetshendelsestype], når verdien finnes i vokabularet.
+|Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/business-event-type[Business event type], when the value is in the vocabulary.
 |Eksempel|
 |===
-
-Forslag til et kontrollert vokabular for typer virksomhetshendelse:
-
-* #<kom med innspill>#

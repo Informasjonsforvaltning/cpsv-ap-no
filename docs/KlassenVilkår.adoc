@@ -36,7 +36,7 @@ image::images/KlassenVilkår.png[]
 Eksempel i RDF Turtle:
 -----
 <over20år> a cv:CriterionRequirement ;
-   cccev:expectedDataType xsd:boolean ]  ; .
+   cccev:expectedDataType xsd:boolean ; .
 -----
 
 ==== Vilkår – identifikator (dct:identifier) [[Vilkår-identifikator]]
@@ -121,15 +121,12 @@ Eksempel i RDF Turtle:
 |Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall be of a specific type of copy, for instance, certified copy.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad 1|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 1|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/copy-quality-type[Copy quality type], når verdien finnes i vokabularet.
+|Remark 1 |The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/copy-quality-type[Kopitype], when the value is in the vocabulary.
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark 2 |Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Attestert kopi
 |===
-
-Forslag til et kontrollert vokabular for typer kopieringskvalitet:
-
-* attestert kopi
-* #<kom med innspill>#
 
 ==== Vilkår – nedre verdigrense (cccev:minimumValue) [[Vilkår-nedreVerdigrense]]
 
@@ -157,15 +154,12 @@ Forslag til et kontrollert vokabular for typer kopieringskvalitet:
 |Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall belong to a specific level of certification, for instance, legalisation.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad 1|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 1|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/level-of-certification[Sertifiseringsnivå], når verdien finnes i vokabularet.
+|Remark 1 |The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/level-of-certification[Level of certification], when the value is in the vocabulary.
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
-|Eksempel|#Lovregulert#
+|Remark 2 |Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel|
 |===
-
-Forslag til et kontrollert vokabular for sertifiseringsnivåer:
-
-* Lovregulert (legeislation)
-* #<kom med innspill>#
 
 ==== Vilkår – type (dct:type) [[Vilkår-type]]
 
@@ -178,28 +172,19 @@ Forslag til et kontrollert vokabular for sertifiseringsnivåer:
 |Usage note|This property represents the type of Criterion Requirement as described in a controlled vocabulary.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad 1|Verdien skal velges fra en felles kontrollert liste over vilkårstyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 1|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/criterion-requirement-type[Vilkårstype], når verdien finnes i vokabularet.
+|Remark 1|The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/criterion-requirement-type[Criterion requirement type], when the value is in the vocabulary.
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark 2 |Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Vilkåret at søkeren skal være over 20 år, er av type ‘alder’
 |===
 
 Eksempel i RDF Turtle:
 -----
 <over20år> a cv:CriterionRequirement ;
-   dct:type <alder>  ; .
+   dct:type <https://data.norge.no/vocabulary/criterion-requirement-type#age> ; # alder
+   .
 -----
-
-Forslag til et kontrollert vokabular for typer vilkår:
-
-* Alder
-* Attest
-* Helse
-* Kompetanse
-* Sertifisering
-* Stilling
-* Utdanning
-* Økonomi
-* #<kom med innspill>#
 
 ==== Vilkår – type oversettelse (cccev:typeOfTranslation) [[Vilkår-typeOversettelse]]
 
@@ -212,15 +197,12 @@ Forslag til et kontrollert vokabular for typer vilkår:
 |Usage note|A Criterion requirement may specify whether the evidence proving that this Criterion requirement shall be translated and what type of translation shall apply, for instance, certified translation.
 |Multiplisitet|Valgfri/Optional
 |Kravsnivå|0..n
-|Merknad 1|Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 1|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/translation-type[Oversettelsestype], når den finnes i vokabularet.
+|Remark 1 |The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/translation-type[Translation type], when the value is in the vocabulary.
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark 2| Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Autorisert oversettelse
 |===
-
-Forslag til et kontrollert vokabular for typer oversettelse:
-
-* autorisert oversettelse
-* #<kom med innspill>#
 
 ==== Vilkår – verifisert ved dokumentasjon (cccev:metByEvidence) [[Vilkår-verifisertVedDokumentasjon]]
 

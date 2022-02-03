@@ -140,11 +140,16 @@ Eksempel i RDF Turtle:
 |Kravsnivå|Anbefalt/Recommended
 |Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
-* Minst en verdi skal være fra en av følgende kontrollerte lister: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
+* Minst en verdi skal velges fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Kontinent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Land]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Sted]; http://sws.geonames.org/[GeoNavn].
 
-* For å angi dekningsområde i Norge, bør Kartverkets liste over https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
+* For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
+|Remark 1 a|Regarding usage of controlled vocabularies, the following requirements apply:
+
+* At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
+
+* To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
 |Merknad 2| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog har Norge som sitt dekningsområde.
 |===
 
@@ -181,8 +186,8 @@ Eksempel i RDF Turtle:
 |Usage note|For the accrual periodicity of the catalog.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra EUs kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency[Frequency].
-|Remark 1|EU’s controlled vocabulary over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency[Frequency] shall be used.
+|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency[Frekvens].
+|Remark 1|The value shall be chosen from EU’s controlled vocabulary  https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency[Frequency].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -215,8 +220,8 @@ Eksempel i RDF Turtle:
 |Usage note|Refer to the licence of the catalog.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra EUs liste over https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], når lisensen som brukes finnes på listen.
-|Remkark 1| The value shall be chosen from EU's controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], when the licence used is in the vocabulary.
+|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Lisens], når lisensen som brukes i vokabularet.
+|Remkark 1| The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], when the licence used is in the vocabulary.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.
@@ -255,8 +260,8 @@ Eksempel i RDF Turtle:
 |Usage note|To specify the languages used in a catalog.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
-|Remark 1 | The value shall be chosen from EU's controllerd vocabulary for https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Språk].
+|Remark 1 | The value shall be chosen from EU's controllerd vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.
