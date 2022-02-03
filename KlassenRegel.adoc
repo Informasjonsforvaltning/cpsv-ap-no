@@ -95,7 +95,8 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |Usage note|This property represents the language(s) in which the Rule is available. This could be one or multiple languages, for instance in countries with more than one official language.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Merknad|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Språk].
+|Remark |The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Eksempel|
 |===
 
@@ -112,14 +113,7 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |Usage note|This property refers to the type of a Rule. It must use a controlled vocabulary.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|Verdien velges fra en felles kontrollert liste over regeltyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/rule-type[Regeltype], når verdien finnes i vokabularet.
+|Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/rule-type[Rule type], when the value is in the vocabulary.
 |Eksempel|
 |===
-
-Forslag til et kontrollert vokabular for regeltyper:
-
-* Regler vedrørende data:
-** behandlingsgrunnlag (https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing[https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing])
-** utleveringsregel (https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure[https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure])
-** skjermingsregel (https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure[https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure])
-* #<kom med innspill>#

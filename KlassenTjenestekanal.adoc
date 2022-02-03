@@ -208,7 +208,8 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents the type of Channel as defined in a controlled vocabulary.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
-|Merknad|Verdien skal velges fra en felles kontrollert liste over tjenestekanaltyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-channel-type[Tjenestekanaltype], når verdien finnes i vokabularet.
+|Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-channel-type[Service channel type], when the value is in the vocabulary.
 |Eksempel|Online
 |===
 
@@ -216,23 +217,9 @@ Eksempel i RDF Turtle:
 -----
 <viaSkjemaportalen> a cv:Channel ;
    vcard:hasURL "https://kommune24-7.no/1813" ;
-   dct:type <online> ; .
+   dct:type <https://data.norge.no/vocabulary/service-channel-type#online> ; .
 -----
 
-Forslag til et kontrollert vokabular for typer tjenestekanal (hentet fra CPSV – med unntak av «Online Service»:
-
-* E-mail
-* Online Service
-* Homepage
-* Fax
-* Assistant
-* Telephone
-* Mobile App
-* Digital TV
-* Mail
-* Service Bureau
-* Client's Location
-* #<kom med innspill>#
 
 ==== Tjenestekanal – åpningstid fritekst (schema:openingHours) [[Tjenestekanal-åpningstidFritekst]]
 

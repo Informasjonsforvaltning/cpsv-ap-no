@@ -160,31 +160,13 @@ Eksempel i RDF Turtle:
 |Usage note|The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|Verdien skal velges fra en felles kontrollert liste over hendelsestyper når den finnes på listen. Se forslag under til et kontrollert vokabular med typer livshendelser.
+|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/life-event-type[Livshendelsestype], når verdien finnes i vokabularet.
+|Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/life-event-type[Life event type], when the value is in the vocabulary.
 |Eksempel|Å få barn
 |===
 
 Eksempel i RDF Turtle:
 -----
 <åFåBarn> a cv:LifeEvent ;
-   dct:type <havingChild> ; .
+   dct:type <https://data.norge.no/vocabulary/life-event-type#having-a-child> ; .
 -----
-
-Forslag til et kontrollert vokabular med følgende typer livshendelser (hentet fra kap. 4 av CPSV-AP):
-
-* Having a child
-* Becoming a (social) caretaker
-* Starting education
-* Looking for a new job
-* Losing/quitting a job
-* Looking for a place to live
-* Changing relationship status
-* Driving a vehicle
-* Travelling abroad
-* Moving to/from the country
-* Going into military service
-* Facing an emergency / health problem
-* Facing a crime
-* Retirement
-* Death of a relative
-* #<kom med innspill>#

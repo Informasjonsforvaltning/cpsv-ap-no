@@ -935,7 +935,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Endringslogg">Endringslogg</a>
 <ul class="sectlevel2">
-<li><a href="#_fra_v_8_x_til_v_0_9">Fra v.8.x til v.0.9</a></li>
+<li><a href="#Endring-v090">Fra v.8.x til v.0.9</a></li>
 <li><a href="#Edring-v081">Fra v.0.8 til v.0.8.1</a></li>
 </ul>
 </li>
@@ -976,15 +976,15 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: <mark>under utvikling</mark><br>
-<strong>Versjon</strong>: <mark>forberedelse til v.0.9</mark> <br>
-<strong>Publisert</strong>: <mark>under utvikling</mark> (Se <a href="#Endringslogg">Endringslogg</a>)<br>
-<strong>Oppdatert</strong>: <mark>løpende oppdatert inntil dette blir "v.0.9"</mark><br>
+<p><strong>Status</strong>: <mark>til utprøving</mark><br>
+<strong>Versjon</strong>: v.0.9 <br>
+<strong>Publisert</strong>: 2022-02-03 (Se <a href="#Endringslogg">Endringslogg</a>)<br>
+<strong>Oppdatert</strong>: 2022-02-03<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
 <strong>Veileder</strong>: &lt;ingen&gt;<br>
-<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (<mark>ikke tilpasset ennå</mark>)</p>
+<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (ved å oppgi URLen til denne <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v09xx.ttl">shacl-fil</a> som "Regelsett lenke", <mark>shacl-filen er under utvikling</mark>)</p>
 </div>
 <!-- toc disabled -->
 </div>
@@ -1361,7 +1361,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 
 &lt;deltagendeDataleverandør&gt; a cv:Participation ;
    dct:description "deltagende dataleverandører til tjenesten Skjenkebevilling"@nb ;
-   cv:role &lt;dataleverandør&gt; ; .
+   cv:role &lt;https://data.norge.no/vocabulary/role-type#data-provider&gt; ; # dataleverandør .
 
 &lt;Politidirektoratet&gt; a cv:PublicOrganisation ;
    cv:playsRole &lt;deltagendeDataleverandør&gt; ; .</pre>
@@ -1419,10 +1419,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <pre>&lt;skjenkebevilling&gt; a cpsv:PublicService ;
    cv:hasLegalResource [ a eli:LegalResource ;
-      dct:type [ a eli:ResourceType ; skos:prefLabel "lov" ; ] ;
+      dct:type &lt;https://data.norge.no/vocabulary/legal-resource-type#act&gt; ; # lov
       dct:title "Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)"@nb ;
       dct:language &lt;http://publications.europa.eu/resource/authority/language/NOB&gt; ;
-      rdfs:seeAlso &lt;https://lovdata.no/eli/lov/1989/06/02/27/nor/html&gt; ; ] ;
+      rdfs:seeAlso &lt;https://lovdata.no/eli/lov/1989/06/02/27/&gt; ;
      ] ; .</pre>
 </div>
 </div>
@@ -1791,7 +1791,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra <a href="http://purl.org/adms/publishertype/">ADMS Publisher Type Vocabulary (i RDF)</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra <a href="http://purl.org/adms/publishertype/">ADMS Publisher Type Vocabulary (lenket ressurs i RDF)</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from <a href="http://purl.org/adms/publishertype/">ADMS Publisher Type Vocabulary (linked resource in RDF)</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -2152,11 +2156,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over roller når den finnes på listen. Se forslag til et kontrollert vokabular for rolletyper under denne tabellen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/role-type">Rolletype</a>, når verdien finnes i vokabularet.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This should be provided using a controlled vocabulary. Since this is an extension mechanism for the CSPV-AP, the controlled vocabulary should be decided to suit local implementations.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/role-type">Role type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -2164,31 +2168,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular med følgende rolletyper:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Tjenesteprodusent (f.eks. Sem og Stenersen for kommunene)</p>
-</li>
-<li>
-<p>Tjenestetilbyder (f.eks. Altinn, Evry (kommunene))</p>
-</li>
-<li>
-<p>Sluttbruker (hvem er tjenesten for)</p>
-</li>
-<li>
-<p>Datakonsument (bruker av dataene)</p>
-</li>
-<li>
-<p>Dataleverandør (bidrar med data)</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -2450,7 +2429,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EU sin kontrollerte liste over <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Språk</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -2570,7 +2553,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over typer dokumentasjon (Evidence) når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/evidence-type">Dokumentasjonstype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/evidence-type">Evidence type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -2585,30 +2572,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <pre>&lt;kravOmVandel&gt; a cv:Evidence ;
    dct:title "Krav om vandel"@nb ;
-   dct:type &lt;attest&gt; ; .</pre>
+   dct:type &lt;https://data.norge.no/vocabulary/evidence-type#attestation&gt; ; # attest .</pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for dokumentasjonstyper:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Attest</p>
-</li>
-<li>
-<p>Erklæring</p>
-</li>
-<li>
-<p>Protokoll</p>
-</li>
-<li>
-<p>Sertifikat</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
 </div>
 </div>
 <div class="sect3">
@@ -2939,14 +2904,18 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over typer dokumentreferanse når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/document-reference-type">Dokumentreferansetype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/document-reference-type">Document reference type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
 </tr>
 <tr>
@@ -2955,16 +2924,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for typer dokumentreferanse:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Kjernegruppen har ikke klart å forstå hvordan man skal tolke det engelske «usage note». <mark>Gi innspill</mark> på hvordan man kan kategorisere attestasjoner, protokoller osv.</p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -3205,11 +3164,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EU sin kontrollerte liste over <a href="https://op.europa.eu/s/teOr">Currency</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/s/teOr">Valuta</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The possible values for this property are described the controlled vocabulary <a href="https://op.europa.eu/s/teOr">Currency</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/s/teOr">Currency</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -3715,7 +3674,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over hendelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/event-type">Hendelsestype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/event-type">Event type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -3723,22 +3686,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for hendelsestyper (som ikke er «livshendelser» eller «virksomhetshendelser»):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>vedtak fattet</p>
-</li>
-<li>
-<p>data endret</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -4136,10 +4083,26 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="ulist">
 <ul>
 <li>
-<p>Minst en verdi skal være fra en av følgende kontrollerte lister: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+<p>Minst en verdi skal velges fra en av følgende kontrollerte vokabularer: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Kontinent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Land</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Sted</a>; <a href="http://sws.geonames.org/">GeoNavn</a>.</p>
 </li>
 <li>
-<p>For å angi dekningsområde i Norge, bør Kartverkets liste over <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+<p>For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Regarding usage of controlled vocabularies, the following requirements apply:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>At least one value shall be chosen from the following controlled vocabularies: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+</li>
+<li>
+<p>To specify spatial coverage in Norway, the Norwegian Mapping Authority&#8217;s controlled vocabulary <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative units</a> should be used.</p>
 </li>
 </ul>
 </div></div></td>
@@ -4149,7 +4112,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
 </tr>
 <tr>
@@ -4257,11 +4220,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte liste over <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency">Frequency</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency">Frekvens</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EU’s controlled vocabulary over <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency">Frequency</a> shall be used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU’s controlled vocabulary  <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency">Frequency</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
@@ -4367,11 +4330,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs liste over <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence">Licence</a>, når lisensen som brukes finnes på listen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence">Lisens</a>, når lisensen som brukes i vokabularet.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remkark 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU&#8217;s controlled vocabulary for <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence">Licence</a>, when the licence used is in the vocabulary.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence">Licence</a>, when the licence used is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
@@ -4486,11 +4449,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EU sin kontrollerte liste over <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Språk</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU&#8217;s controllerd vocabulary for <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU&#8217;s controllerd vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
@@ -5432,7 +5395,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over hendelsestyper når den finnes på listen. Se forslag under til et kontrollert vokabular med typer livshendelser.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/life-event-type">Livshendelsestype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/life-event-type">Life event type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -5446,63 +5413,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="listingblock">
 <div class="content">
 <pre>&lt;åFåBarn&gt; a cv:LifeEvent ;
-   dct:type &lt;havingChild&gt; ; .</pre>
+   dct:type &lt;https://data.norge.no/vocabulary/life-event-type#having-a-child&gt; ; .</pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular med følgende typer livshendelser (hentet fra kap. 4 av CPSV-AP):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Having a child</p>
-</li>
-<li>
-<p>Becoming a (social) caretaker</p>
-</li>
-<li>
-<p>Starting education</p>
-</li>
-<li>
-<p>Looking for a new job</p>
-</li>
-<li>
-<p>Losing/quitting a job</p>
-</li>
-<li>
-<p>Looking for a place to live</p>
-</li>
-<li>
-<p>Changing relationship status</p>
-</li>
-<li>
-<p>Driving a vehicle</p>
-</li>
-<li>
-<p>Travelling abroad</p>
-</li>
-<li>
-<p>Moving to/from the country</p>
-</li>
-<li>
-<p>Going into military service</p>
-</li>
-<li>
-<p>Facing an emergency / health problem</p>
-</li>
-<li>
-<p>Facing a crime</p>
-</li>
-<li>
-<p>Retirement</p>
-</li>
-<li>
-<p>Death of a relative</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -5611,10 +5523,26 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="ulist">
 <ul>
 <li>
-<p>Minst en verdi skal være fra en av følgende kontrollerte lister: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+<p>Minst en verdi skal være fra en av følgende kontrollerte vokabularer: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Kontinent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Land</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Sted</a>; <a href="http://sws.geonames.org/">GeoNavn</a>.</p>
 </li>
 <li>
-<p>For å angi dekningsområde i Norge, bør Kartverkets liste over <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+<p>For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Regarding usage of controlled vocabularies, the following requirements apply:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>At least one value shall be chosen from the following controlled vocabularies: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+</li>
+<li>
+<p>To specify spatial coverage in Norway, the Norwegian Mapping Authority&#8217;s controlled vocabulary <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative units</a> should be used.</p>
 </li>
 </ul>
 </div></div></td>
@@ -6337,7 +6265,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    dcat:contactPoint [ a  vcard:Organization ; # kontaktpunkt
      vcard:hasTelephone "tel:+4775012000" ;
-    ] ;</pre>
+    ] ; .</pre>
 </div>
 </div>
 </div>
@@ -6550,10 +6478,26 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="ulist">
 <ul>
 <li>
-<p>Minst en verdi skal være fra en av følgende kontrollerte lister: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+<p>Minst en verdi skal være fra en av følgende kontrollerte vokabularer: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Kontinent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Land</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Sted</a>; <a href="http://sws.geonames.org/">GeoNavn</a>.</p>
 </li>
 <li>
-<p>For å angi dekningsområde i Norge, bør Kartverkets liste over <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+<p>For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Regarding usage of controlled vocabularies, the following requirements apply:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>At least one value shall be chosen from the following controlled vocabularies: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+</li>
+<li>
+<p>To specify spatial coverage in Norway, the Norwegian Mapping Authority&#8217;s controlled vocabulary <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative units</a> should be used.</p>
 </li>
 </ul>
 </div></div></td>
@@ -6561,6 +6505,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Requirement level changed from optinoal to recommended.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -6846,11 +6794,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien skal velges fra <a href="http://purl.org/adms/status/">ADMS Status Vocabulary (i RDF)</a> (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien skal velges fra <a href="http://purl.org/adms/status/">ADMS Status Vocabulary (lenket ressurs i RDF)</a> (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: The value shall be chosen from <a href="http://purl.org/adms/status/">ADMS Status Vocabulary (i RDF)</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: The value shall be chosen from <a href="http://purl.org/adms/status/">ADMS Status Vocabulary (linked resource in RDF)</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
@@ -6993,11 +6941,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over typer offentlig tjeneste når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/public-service-type">Offentlig tjeneste type</a>, når verdien finnes i vokabularet.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from a controlled vocabulary when the value.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/public-service-type">Public service type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
@@ -7013,16 +6961,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for typer offentlig tjeneste:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -7787,7 +7725,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EU sin kontrollerte liste over <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Språk</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -8151,7 +8093,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EU sin kontrollerte liste over <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Språk</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -8201,7 +8147,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien velges fra en felles kontrollert liste over regeltyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/rule-type">Regeltype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/rule-type">Rule type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -8209,32 +8159,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for regeltyper:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Regler vedrørende data:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>behandlingsgrunnlag (<a href="https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing">https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing</a>)</p>
-</li>
-<li>
-<p>utleveringsregel (<a href="https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure">https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure</a>)</p>
-</li>
-<li>
-<p>skjermingsregel (<a href="https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure">https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure</a>)</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -8326,8 +8250,20 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/legal-resource-type">Regulativ ressurs type</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/legal-resource-type">Legal resource type</a>, when the value is in the vocabulary.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men i DCAT-AP-NO.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -8526,7 +8462,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Språk</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
@@ -9356,10 +9292,26 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 <div class="ulist">
 <ul>
 <li>
-<p>Minst en verdi skal være fra en av følgende kontrollerte lister: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+<p>Minst en verdi skal være fra en av følgende kontrollerte vokabularer: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Kontinent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Land</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Sted</a>; <a href="http://sws.geonames.org/">GeoNavn</a>.</p>
 </li>
 <li>
-<p>For å angi dekningsområde i Norge, bør Kartverkets liste over <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+<p>For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Regarding usage of controlled vocabularies, the following requirements apply:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>At least one value shall be chosen from the following controlled vocabularies: <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+</li>
+<li>
+<p>To specify spatial coverage in Norway, the Norwegian Mapping Authority&#8217;s controlled vocabulary <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative units</a> should be used.</p>
 </li>
 </ul>
 </div></div></td>
@@ -9369,7 +9321,7 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
 </tr>
 <tr>
@@ -9696,14 +9648,18 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over tjenestetyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular. </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/service-type">Tjenestetype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/service-type">Service type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
 </tr>
 <tr>
@@ -9712,17 +9668,6 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p> 
-Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig tjeneste):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -10460,7 +10405,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Språk</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
@@ -11113,7 +11058,11 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over tjenestekanaltyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/service-channel-type">Tjenestekanaltype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/service-channel-type">Service channel type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -11128,51 +11077,8 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="content">
 <pre>&lt;viaSkjemaportalen&gt; a cv:Channel ;
    vcard:hasURL "https://kommune24-7.no/1813" ;
-   dct:type &lt;online&gt; ; .</pre>
+   dct:type &lt;https://data.norge.no/vocabulary/service-channel-type#online&gt; ; .</pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for typer tjenestekanal (hentet fra CPSV – med unntak av «Online Service»:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>E-mail</p>
-</li>
-<li>
-<p>Online Service</p>
-</li>
-<li>
-<p>Homepage</p>
-</li>
-<li>
-<p>Fax</p>
-</li>
-<li>
-<p>Assistant</p>
-</li>
-<li>
-<p>Telephone</p>
-</li>
-<li>
-<p>Mobile App</p>
-</li>
-<li>
-<p>Digital TV</p>
-</li>
-<li>
-<p>Mail</p>
-</li>
-<li>
-<p>Service Bureau</p>
-</li>
-<li>
-<p>Client&#8217;s Location</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
 </div>
 </div>
 <div class="sect3">
@@ -11527,7 +11433,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Språk</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
@@ -11646,7 +11552,11 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over resultattyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/service-output-type">Tjenesteresultattype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/service-output-type">Service output type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -11661,42 +11571,9 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="content">
 <pre>&lt;bevilling1001&gt; a cv:Output , a dcat:Dataset ;
    dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
-   dct:type &lt;tillatelse&gt; ; .</pre>
+   dct:type &lt;https://data.norge.no/vocabulary/service-output-type#permit&gt; ; # tillatelse
+   .</pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for typer tjenesteresultat:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Anerkjennelse</p>
-</li>
-<li>
-<p>Erklæring (ev. deklarasjon)</p>
-</li>
-<li>
-<p>Fysisk objekt</p>
-</li>
-<li>
-<p>Identifikator/aksesskode</p>
-</li>
-<li>
-<p>Rettighet</p>
-</li>
-<li>
-<p>Tillatelse</p>
-</li>
-<li>
-<p>Økonomisk fordel</p>
-</li>
-<li>
-<p>Økonomisk forpliktelse</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -11801,7 +11678,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="listingblock">
 <div class="content">
 <pre>&lt;over20år&gt; a cv:CriterionRequirement ;
-   cccev:expectedDataType xsd:boolean ]  ; .</pre>
+   cccev:expectedDataType xsd:boolean ; .</pre>
 </div>
 </div>
 </div>
@@ -12048,11 +11925,19 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/copy-quality-type">Copy quality type</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/copy-quality-type">Kopitype</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -12060,19 +11945,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for typer kopieringskvalitet:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>attestert kopi</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Vilkår-nedreVerdigrense"><a class="anchor" href="#Vilkår-nedreVerdigrense"></a>Vilkår – nedre verdigrense (cccev:minimumValue)</h4>
@@ -12159,31 +12031,26 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/level-of-certification">Sertifiseringsnivå</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/level-of-certification">Level of certification</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Lovregulert</mark></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for sertifiseringsnivåer:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Lovregulert (legeislation)</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Vilkår-type"><a class="anchor" href="#Vilkår-type"></a>Vilkår – type (dct:type)</h4>
@@ -12223,11 +12090,19 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over vilkårstyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/criterion-requirement-type">Vilkårstype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/criterion-requirement-type">Criterion requirement type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -12241,42 +12116,9 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <div class="listingblock">
 <div class="content">
 <pre>&lt;over20år&gt; a cv:CriterionRequirement ;
-   dct:type &lt;alder&gt;  ; .</pre>
+   dct:type &lt;https://data.norge.no/vocabulary/criterion-requirement-type#age&gt; ; # alder
+   .</pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for typer vilkår:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Alder</p>
-</li>
-<li>
-<p>Attest</p>
-</li>
-<li>
-<p>Helse</p>
-</li>
-<li>
-<p>Kompetanse</p>
-</li>
-<li>
-<p>Sertifisering</p>
-</li>
-<li>
-<p>Stilling</p>
-</li>
-<li>
-<p>Utdanning</p>
-</li>
-<li>
-<p>Økonomi</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
 </div>
 </div>
 <div class="sect3">
@@ -12317,11 +12159,19 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over oversettelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/translation-type">Oversettelsestype</a>, når den finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/translation-type">Translation type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -12329,19 +12179,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for typer oversettelse:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>autorisert oversettelse</p>
-</li>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Vilkår-verifisertVedDokumentasjon"><a class="anchor" href="#Vilkår-verifisertVedDokumentasjon"></a>Vilkår – verifisert ved dokumentasjon (cccev:metByEvidence)</h4>
@@ -12869,7 +12706,11 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra en felles kontrollert liste over hendelsestyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/business-event-type">Virksomhetshendelsestype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/business-event-type">Business event type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -12877,16 +12718,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Forslag til et kontrollert vokabular for typer virksomhetshendelse:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><mark>&lt;kom med innspill&gt;</mark></p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -13238,7 +13069,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 <h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Endringslogg</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_fra_v_8_x_til_v_0_9"><a class="anchor" href="#_fra_v_8_x_til_v_0_9"></a>Fra v.8.x til v.0.9</h3>
+<h3 id="Endring-v090"><a class="anchor" href="#Endring-v090"></a>Fra v.8.x til v.0.9</h3>
 <div class="paragraph">
 <p>I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forklares her, er følgende endret:</p>
 </div>
@@ -13309,9 +13140,6 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 </ul>
 </div>
 </li>
-<li>
-<p><mark>&lt;flere punkter kan komme, etter hvert som endringene blir lagt inn&gt;</mark></p>
-</li>
 </ul>
 </div>
 </div>
@@ -13350,7 +13178,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-01-31 10:38:19 UTC
+Sist oppdatert 2022-02-03 13:53:24 UTC
 </div>
 </div>
 </body>

@@ -20,15 +20,15 @@ NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
-*Status*: #under utvikling# +
-*Versjon*: #forberedelse til v.0.9#  +
-*Publisert*: #under utvikling# (Se <<Endringslogg>>) +
-*Oppdatert*: #løpende oppdatert inntil dette blir "v.0.9"# +
+*Status*: #til utprøving# +
+*Versjon*: v.0.9  +
+*Publisert*: 2022-02-03 (Se <<Endringslogg>>) +
+*Oppdatert*: 2022-02-03 +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
 *Veileder*: <ingen> +
-*Valideringsverktøy*: https://data.norge.no/validator (#ikke tilpasset ennå#)
+*Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v09xx.ttl[shacl-fil] som "Regelsett lenke", #shacl-filen er under utvikling#)
 
 toc::[]
 

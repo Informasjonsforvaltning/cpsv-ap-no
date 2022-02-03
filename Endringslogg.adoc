@@ -1,6 +1,6 @@
 == Endringslogg [[Endringslogg]]
 
-=== Fra v.8.x til v.0.9
+=== Fra v.8.x til v.0.9 [[Endring-v090]]
 
 I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forklares her, er følgende endret:
 
@@ -23,9 +23,6 @@ I tillegg til en del redaksjonelle feilopprettinger/presiseringer som ikke forkl
 
 * <<Tjenesteresultat>>:
 ** ny egenskap <<Tjenesteresultat-språk>>
-
-* #<flere punkter kan komme, etter hvert som endringene blir lagt inn>#
-
 
 === Fra v.0.8 til v.0.8.1 [[Edring-v081]]
 

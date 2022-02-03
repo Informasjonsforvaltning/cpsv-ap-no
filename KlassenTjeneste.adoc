@@ -179,11 +179,16 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Kravsnivå |Anbefalt/Recommended 
 |Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
-* Minst en verdi skal være fra en av følgende kontrollerte lister: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
+* Minst en verdi skal være fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Kontinent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Land]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Sted]; http://sws.geonames.org/[GeoNavn].
 
-* For å angi dekningsområde i Norge, bør Kartverkets liste over https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
+* For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
+|Remark 1  a|Regarding usage of controlled vocabularies, the following requirements apply:
+
+* At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place[Place]; http://sws.geonames.org/[GeoNames].
+
+* To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel |
 |===
 
@@ -290,15 +295,12 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Usage note |This property represents the Type of a Service as described in a controlled vocabulary. 
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
-|Merknad 1 |Verdien skal velges fra en felles kontrollert liste over tjenestetyper når den finnes på listen. Se forslag under til et slikt kontrollert vokabular. 
+|Merknad 1 |Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-type[Tjenestetype], når verdien finnes i vokabularet.
+|Remark 1 | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-type[Service type], when the value is in the vocabulary.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel | 
 |===
- 
-Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig tjeneste):
-
-* #<kom med innspill>#
 
 [[Tjeneste-valgfrie-egenskaper]]
 === Valgfrie egenskaper for klassen _Tjeneste_
@@ -544,7 +546,7 @@ Forslag til et kontrollert vokabular for typer tjeneste (som ikke er offentlig t
 |Usage note |This property represents the language(s) in which the Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. 
 |Multiplisitet |0..n 
 |Kravsnivå |Valgfri/Optional 
-|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Språk].
 |Remark 1 | The value shall be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.

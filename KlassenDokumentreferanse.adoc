@@ -95,12 +95,9 @@ Eksempel i RDF Turtle:
 |Usage note|The Document reference may contain the type that categorizes the attestation or evidentiary document.
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1 | Verdien skal velges fra en felles kontrollert liste over typer dokumentreferanse når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad 1 | Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/document-reference-type[Dokumentreferansetype], når verdien finnes i vokabularet.
+|Remark 1 | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/document-reference-type[Document reference type], when the value is in the vocabulary.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
 |===
-
-Forslag til et kontrollert vokabular for typer dokumentreferanse:
-
-* Kjernegruppen har ikke klart å forstå hvordan man skal tolke det engelske «usage note». #Gi innspill# på hvordan man kan kategorisere attestasjoner, protokoller osv.

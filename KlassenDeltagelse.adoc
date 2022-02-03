@@ -61,16 +61,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Usage note|Provides the role played.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
-|Merknad|Verdien skal velges fra en felles kontrollert liste over roller når den finnes på listen. Se forslag til et kontrollert vokabular for rolletyper under denne tabellen.
-|Remarks|This should be provided using a controlled vocabulary. Since this is an extension mechanism for the CSPV-AP, the controlled vocabulary should be decided to suit local implementations.
+|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/role-type[Rolletype], når verdien finnes i vokabularet.
+|Remarks|The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/role-type[Role type], when the value is in the vocabulary.
 |Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
-
-Forslag til et kontrollert vokabular med følgende rolletyper:
-
-* Tjenesteprodusent (f.eks. Sem og Stenersen for kommunene)
-* Tjenestetilbyder (f.eks. Altinn, Evry (kommunene))
-* Sluttbruker (hvem er tjenesten for)
-* Datakonsument (bruker av dataene)
-* Dataleverandør (bidrar med data)
-* #<kom med innspill>#

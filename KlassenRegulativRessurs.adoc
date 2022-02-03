@@ -33,7 +33,10 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |Usage note|This property refers to the type of a legal resource (e.g. "Directive", "Règlement grand ducal", "law", "Règlement ministériel", "draft proposition", "Parliamentary act", etc.). Member states are encouraged to make their own list of values in the corresponding concept scheme.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
-|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men i DCAT-AP-NO.
+|Merknad 1 | Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/legal-resource-type[Regulativ ressurs type], når verdien finnes i vokabularet.
+|Remark 1 | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/legal-resource-type[Legal resource type], when the value is in the vocabulary.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men i DCAT-AP-NO.
+|Remark 2 |Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|
 |===
 
@@ -100,7 +103,7 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 |Usage note|To specify the language the legal resource is in.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Språk].
 |Remark 1 | The value shall be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
 |Remark 2| Norwegian extension: Not explicitly specified in CPSV-AP.

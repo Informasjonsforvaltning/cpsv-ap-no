@@ -96,7 +96,8 @@ Eksempel i RDF Turtle:
 |Usage note|Indicates the language(s) in which the Evidence must be provided.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt/Recommended
-|Merknad|Verdien skal velges fra EU sin kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
+|Merknad|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Språk].
+|Remark | The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
 |Eksempel|Dokumentasjon på «Krav om vandel» kan være på bokmål, nynorsk eller engelsk.
 |===
 
@@ -145,7 +146,8 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents the type of Evidence as described in a controlled vocabulary.
 |Multiplisitet|0..1
 |Kravsnivå|Valgfri/Optional
-|Merknad|Verdien skal velges fra en felles kontrollert liste over typer dokumentasjon (Evidence) når den finnes på listen. Se forslag under til et slikt kontrollert vokabular.
+|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/evidence-type[Dokumentasjonstype], når verdien finnes i vokabularet.
+|Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/evidence-type[Evidence type], when the value is in the vocabulary.
 |Eksempel|Dokumentasjon til «Krav om vandel» er av type «attest»
 |===
 
@@ -153,16 +155,8 @@ Eksempel i RDF Turtle:
 -----
 <kravOmVandel> a cv:Evidence ;
    dct:title "Krav om vandel"@nb ;
-   dct:type <attest> ; .
+   dct:type <https://data.norge.no/vocabulary/evidence-type#attestation> ; # attest .
 -----
-
-Forslag til et kontrollert vokabular for dokumentasjonstyper:
-
-* Attest
-* Erklæring
-* Protokoll
-* Sertifikat
-* #<kom med innspill>#
 
 ==== Dokumentasjon – understøttes av (cccev:isSupportedBy) [[Dokumentasjon-understøttesAv]]
 

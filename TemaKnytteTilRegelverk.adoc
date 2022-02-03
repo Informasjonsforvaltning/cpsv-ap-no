@@ -16,9 +16,9 @@ Eksempel i RDF Turtle:
 -----
 <skjenkebevilling> a cpsv:PublicService ;
    cv:hasLegalResource [ a eli:LegalResource ;
-      dct:type [ a eli:ResourceType ; skos:prefLabel "lov" ; ] ;
+      dct:type <https://data.norge.no/vocabulary/legal-resource-type#act> ; # lov
       dct:title "Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)"@nb ;
-      dct:language <http://publications.europa.eu/resource/authority/language/NOB> ; 
-      rdfs:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> ; ] ;
+      dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+      rdfs:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/> ; 
      ] ; .
 -----
