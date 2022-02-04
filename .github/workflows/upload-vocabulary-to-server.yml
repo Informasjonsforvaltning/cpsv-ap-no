@@ -1,0 +1,29 @@
+name: upload files to server
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - ontology/**
+
+jobs:
+  test_uploading_of_file:
+    name: Upload vocabulary to static-rdf-server
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Upload to static-rdf-server in staging
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v1.0.0-alpha.1
+        id: upload-files
+        with:
+          ontology-type: "vocabulary"
+          ontology: "cpsvno"
+          rdf-file: "ontology/cpsvno.ttl"
+          html-file: "ontology/cpsvno.html"
+          host: "https://data.norge.no"
+          api-key: ${{ secrets.API_KEY }}
