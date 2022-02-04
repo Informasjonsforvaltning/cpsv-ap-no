@@ -1,0 +1,15 @@
+== Klassen Beskrivende datasett (dcat:Dataset) [[BeskrivendeDatasett]]
+
+[cols="30s,70d"]
+|===
+|English name|(Public) Service Dataset
+|Anvendelse|Klassen brukes til å inneholde metadata om en (offentlig) tjeneste.
+|Usage note|The class describes the metadata of where the dataset is being described, for instance on a regional (public) service portal and/or a national eGovernment portal.
+|URI|dcat:Dataset
+|Kravsnivå|Valgfri/Optional
+|Merknad 1|Norsk avvik inntil EU også endrer tilsvarende: URI er endret fra `cv:PublicServiceDataset` til `dcat:Dataset` (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse)
+|Merknad 2|Dette er ikke datasett som en tjeneste bruker (<<OffentligTjeneste-dokumentasjonskrav>>) eller datasett som tjenesten produsere (<<OffentligTjeneste-produserer>>).
+|Eksempel|
+|===
+
+Se ellers https://data.norge.no/specification/dcat-ap-no/#Datasett[DCAT-AP-NO] for obligatoriske, anbefalte og valgfrie egenskaper for klassen Datasett, som også gjelder for spesifikasjonen.

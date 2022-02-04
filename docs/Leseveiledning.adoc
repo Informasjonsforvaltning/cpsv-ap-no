@@ -1,0 +1,26 @@
+=== Hvordan leser du tabellene brukt i spesifikasjonen? [[Leseveiledning]]
+
+Følgende rader (ikke nødvendigvis i den rekkefølgen) er brukt i tabellene der krav til og bruk av klasser og egenskaper i CPSV-AP-NO er spesifisert:
+
+[cols="30s,70d"]
+|===
+|Ledetekst i tabellen | *Hensikt med raden i tabellen*
+|English name|Brukes til å angi klasse- eller egenskapsnavn på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <<Omfang-og-avgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
+|URI |Brukes til å angi en unik identifikator til klassen eller egenskapen. Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av tjeneste- og hendelsesbeskrivelser som er utformet i henhold til denne spesifikasjonen.
+
+Eksempel: `foaf:Agent` er identifikatoren til klassen `Agent`, slik klassen er spesifisert i `foaf` (se under <<Navnerom>> for hva `foaf` står for).
+|Subklasse av / Subclass of |Denne brukes bare i spesifikasjon av en klasse, til å spesifisere hvilken klasse den aktuelle klasse eventuelt er subklasse av.
+|Subegenskap av / Subproperty of |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere hvilken egenskap den aktuelle egenskap eventuelt er subegenskap av.
+|Range |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlig verdi til egenskapen, i form av klasse eller datatype.
+
+Eksempel: `Range skos:Concept` betyr at verdien til egenskapen skal være en instans av klassen `skos:Concept`.
+|Anvendelse |Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne spesifikasjonen.
+|Usage note |Tilsvarende «Anvendelse», men på engelsk (primært ment for engelsktalende utviklere for verktøystøtte). Se under <<Omfang-og-avgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
+|Multiplisitet |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/kan ha.
+|Kravsnivå |Brukes til å spesifisere om klassen/egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Om-kravene>>.
+|Merknad |Brukes til å gi merknader knyttet til bruk av klassen/egenskapen, bl.a. om eventuell norsk utvidelse sammenlignet med EU-standarden, om det er krav til bruk av kontrollerte vokabularer, osv.
+|Remark |Tilsvarende «Merknad», men på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <<Omfang-og-avgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
+|Eksempel |Brukes til å gi eksempel på bruken av klassen/egenskapen, i prosatekst.
+
+Eksempel på hvordan eksemplene vist i prosatekst ser ut i RDF Turtle, er tatt med under den aktuelle tabellen.
+|===

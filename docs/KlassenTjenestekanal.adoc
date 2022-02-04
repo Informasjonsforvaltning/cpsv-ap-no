@@ -1,0 +1,255 @@
+== Klassen Tjenestekanal (cv:Channel) [[Tjenestekanal]]
+
+[[img-KlassenTjenestekanal]]
+.Klassen Tjenestekanal (cv:Channel)
+[link=images/KlassenTjenestekanal.png]
+image::images/KlassenTjenestekanal.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Channel
+|Anvendelse|Brukes til å representere kanal/medium som tjenesten er tilgjengelig gjennom.
+|Usage note|The Channel class represents the medium through which an Agent provides, uses or interacts in another way with a (Public) Service. Typical examples include online services, phone, walk-in centres etc.
+|URI|cv:Channel
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+=== Obligatoriske egenskaper for klassen _Tjenestekanal_ [[Tjenestekanal-obligatoriske-egenskaper]]
+
+==== Tjenestekanal – identifikator (dct:identifier) [[Tjenestekanal-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal typed as URI
+|Anvendelse|Brukes til å oppgi identifikatoren til tjenestekanalen.
+|Usage note|This property represents an Identifier for the Channel.
+|Multiplisitet|1..1
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|Eksempel|
+|===
+
+=== Valgfrie egenskaper for klassen _Tjenestekanal_ [[Tjenestekanal-valgfrie-egenskaper]]
+
+[[Tjenestekanal-behandlingstid]]
+==== Tjenestekanal – behandlingstid (cv:processingTime) 
+
+[cols="30s,70d"]
+|===
+|English name |processing time 
+|URI |cv:processingTime 
+|Range |rdfs:Literal typed as xsd:duration 
+|Anvendelse |Brukes til å oppgi den estimerte behandlingstiden via denne kanalen. 
+|Usage note |The value of this property is the (estimated) time needed for executing a Service through this canal. 
+|Multiplisitet |0..1 
+|Kravsnivå |Valgfri/Optional 
+|Merknad 1 | Denne egenskapen brukes bare hvis behandlingstiden er spesifikk for den valgte kanalen.
+|Remark 1 | This property is used only if the processing time is specific for the channel chosen.
+|Merknad 2 | Norsk utvidelse: ikke eksplisitt med i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
+|Remark 3 |The actual information is provided using the ISO8601 syntax for durations.
+|Eksempel |
+|===
+
+==== Tjenestekanal – datatjeneste (cpsvno:dataService) [[Tjenestekanal-datatjeneste]]
+
+[cols="30s,70d"]
+|===
+|English name|data service
+|URI|cpsvno:dataService
+|Range|dcat:DataService
+|Anvendelse|Brukes til å referere til en beskrivelse av en datatjeneste som kanalen benytter.
+|Usage note|To refer to the description of a data service which the channel uses.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad|Norsk utvidelse: Finnes ikke eksplisitt i CPSV-AP. Det er behov for å knytte kanalen til en datatjenestebeskrivelse.
+|Eksempel|
+|===
+
+==== Tjenestekanal – dokumentasjonskrav (cpsv:hasInput) [[Tjenestekanal-dokumentasjonskrav]]
+
+[cols="30s,70d"]
+|===
+|English name|has input
+|URI|cpsv:hasInput
+|Range|cv:Evidence
+|Anvendelse|Brukes til å referere til dokumentasjonskrav som er spesifikk for den aktuelle tjenestekanalen.
+|Usage note|In the majority of cases, the evidence required to use a (Public) Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a (Public) Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the (Public) Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Vanligvis skal dokumentasjonskrav være uavhengig av tjenestekanal, og dokumentasjonskrav bør knyttes til (offentlig) tjeneste.
+|Eksempel|
+|===
+
+==== Tjenestekanal – eies av (cv:ownedBy) [[Tjenestekanal-eiesAv]]
+
+[cols="30s,70d"]
+|===
+|English name|owned by
+|URI|cv:ownedBy
+|Range|foaf:Agent
+|Anvendelse|Brukes til å referere til aktøren som eier tjenestekanalen.
+|Usage note|This property links the Channel class with one or more instances of the Agent class. This property indicates the owner of a specific Channel through which a (Public) Service is being delivered. Note that Public Organization is a sub class of Agent so that if the owner is the Public Organization, the ownedBy property can link to it.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad|Norsk utvidelse: range endret fra `cv:PublicOrganisation` til `foaf:Agent`. Dette både fordi usage note i CPSV-AP sier at den kan referere til «one or more instances of the Agent Class», og at spesifikasjonen også dekker behov for å kunne beskrive tjenester som ikke eiers av offentlig organisasjon.
+|Eksempel| Tjenestekanaler for tjenesten «Skjenkebevilling i Brønnøy kommune» eies av Brønnøy kommune.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<viaSkjemaportalen> a cv:Channel ;
+   vcard:hasURL "https://kommune24-7.no/1813" ;
+   cv:ownedBy "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827" ; .
+-----
+
+==== Tjenestekanal – har adresse (vcard:hasAddress) [[Tjenestekanal-harAdresse]]
+
+[cols="30s,70d"]
+|===
+|English name|has address
+|URI|vcard:hasAddress
+|Range|vcard:Address
+|Anvendelse|Brukes til å oppgi adressen som strukturert data, når tjenestekanalen er et fysisk oppmøtested.
+|Usage note|To specify the address as structured data, when the channel is a service bureau or location.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad|Norsk utvidelse: Finnes ikke eksplisitt i CPSV-AP. Det er behov for å oppgi adressen når tjenestekanalen er et fysisk oppmøtested.
+|Eksempel|Besøksadressen til Brønnøy kommune.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<personligOppmøte> a cv:Channel ;
+   vcard:hasAddress [ a vcard:Organization ;
+      vcard:street-address "Sivert Nielsens gt. 24" ;
+      vcard:locality "Brønnøysund" ;
+      vcard:postal-code "8905" ;
+      vcard:country-name "Norge"@nb , "Norway"@en ; ] ; .
+-----
+
+==== Tjenestekanal – har e-post (vcard:hasEmail) [[Tjenestekanal-harE-post]]
+
+[cols="30s,70d"]
+|===
+|English name|has email
+|URI|vcard:hasEmail
+|Range|vcard:Email
+|Anvendelse|Brukes til å oppgi e-postadresse, når tjenestekanal er e-post.
+|Usage note|
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad|Norsk utvidelse: Finnes ikke eksplisitt i CPSV-AP. Det er behov for å oppgi e-postadresse når tjenestekanalen er e-post.
+|Eksempel|E-postadressen til Brønnøy kommune.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<viaEpost> a cv:Channel ;
+   vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no" ; .
+-----
+
+==== Tjenestekanal – har telefon (vcard:hasTelephone) [[Tjenestekanal-harTelefon]]
+
+[cols="30s,70d"]
+|===
+|English name|has telephone
+|URI|vcard:hasTelephone
+|Range|rdfs:Literal
+|Anvendelse|Brukes til å oppgi telefonnummer, når tjenestekanal er telefonisk.
+|Usage note|To specify the telephone number, when the channel is a telephone.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad|Norsk utvidelse: Finnes ikke eksplisitt i CPSV-AP. Det er behov for å oppgi telefonnummer når tjenestekanalen er telefon.
+|Eksempel|Telefonnummeret til Brønnøykommune.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<viaTelefon> a cv:Channel ;
+   vcard:hasTelephone "tel:+4775012000" ; .
+-----
+
+==== Tjenestekanal – har URL (vcard:hasURL) [[Tjenestekanal-harURL]]
+
+[cols="30s,70d"]
+|===
+|English name|has URL
+|URI|vcard:hasURL
+|Range|rdfs:Literal typed as xsd:anyURI
+|Anvendelse|Brukes til å oppgi URLen til tjenestekanalen, når kanalen er av type online.
+|Usage note|To specify the URL to the channel, when the channel is online.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad|Norsk utvidelse: Finnes ikke eksplisitt i CPSV-AP. Det er behov for å oppgi nettadresse (URL) når tjenestekanalen er nettkanal.
+|Eksempel|Nettadressen til skjemaportalen der søknad om skjenkebevilling i Brønnøy kommune kan direkte fylles ut.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<viaSkjemaportalen> a cv:Channel ;
+   vcard:hasURL "https://kommune24-7.no/1813" ; .
+-----
+
+==== Tjenestekanal – type (dct:type) [[Tjenestekanal-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Anvendelse|Brukes til å oppgi type kanal.
+|Usage note|This property represents the type of Channel as defined in a controlled vocabulary.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-channel-type[Tjenestekanaltype], når verdien finnes i vokabularet.
+|Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-channel-type[Service channel type], when the value is in the vocabulary.
+|Eksempel|Online
+|===
+
+Eksempel i RDF Turtle:
+-----
+<viaSkjemaportalen> a cv:Channel ;
+   vcard:hasURL "https://kommune24-7.no/1813" ;
+   dct:type <https://data.norge.no/vocabulary/service-channel-type#online> ; .
+-----
+
+
+==== Tjenestekanal – åpningstid fritekst (schema:openingHours) [[Tjenestekanal-åpningstidFritekst]]
+
+[cols="30s,70d"]
+|===
+|English name|opening hours
+|URI|schema:openingHours
+|Range|rdfs:Literal
+|Anvendelse|Brukes til å oppgi åpningstid til den aktuelle kanalen, som fritekst. Gjentas når beskrivelsen finnes i flere språk.
+|Usage note|This property represents the normal opening hours of a channel. The value should follow the flexible format defined for schema.org's opening hours property28. Following that structure, days of the week are represented by two letter codes (Mo, Tu, We, Th, Fr, Sa, Su). Lists should be comma separated (for example: Mo, We, Fr) and periods separated by a hyphen (for example: Mo-Fr).
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Denne egenskapen brukes til å oppgi åpningstid i fritekst. Bruk heller egenskapen <<Tjenestekanal-åpningstidStrukturert>> for å oppgi åpningstid som strukturerte data.
+|Eksempel|Tidsrom når telefon er betjent.
+|===
+
+
+==== Tjenestekanal - åpningstid strukturert (schema:hoursAvailable) [[Tjenestekanal-åpningstidStrukturert]]
+
+[cols="30s,70d"]
+|===
+|English name|availability restriction
+|URI|schema:hoursAvailable
+|Range|schema:OpeningHoursSpecification
+|Anvendelse|Brukes til å oppgi detaljer om åpningstid, som strukturert data.
+|Usage note|To specify in detail and as structured data when the channel is available.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad|EU har brukt denne egenskapen til å uttrykke når noe _ikke_ er tilgjengelig, noe vi mener ikke er korrekt bruk av denne egenskapen, til tross for at schema:OpeningHoursSpecification blir per default oppfattet som «lukket» hvis ikke egenskapen schema:opens brukes.
+|Eksempel|Se eksempler under <<Åpningstid>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Åpningstid>>.

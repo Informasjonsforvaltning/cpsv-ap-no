@@ -1,0 +1,44 @@
+== Om denne versjonen [[Om_denne_versjonen]]
+
+Denne versjonen (v.0.8) er til åpen og uformell kommentering, med *kommenteringsfrist 15. januar 2022*. Hvem som helst kan kommentere og du trenger ikke å få dine innspill forankret i din organisasjon.
+
+Kjernegruppen som har utarbeidet dette utkastet har bestått av ressurspersoner fra Digitaliseringsdirektoratet (Digdir). Kjernegruppen ønsker innspill på bl.a. følgende:
+
+. Innledende kapitler <<OmSpesifikasjonen>> og <<Innledning>>:
+.. Generelt, gi oss tilbakemelding på om vi treffer de aktuelle målgruppene med disse innledende kapitlene, med konkrete forbedringsforslag hvis ikke.
+.. Spesielt om <<Målgrupper>>: Savner du flere/andre målgrupper som spesifikasjonen også kan være nyttig for, i så fall hvem, hvorfor og hvordan?
+. Omfang:
+.. Er det noen behov som ikke er dekket av spesifikasjonen?
+... Generelt, gi oss tilbakemelding på hva du mener mangler, med konkrete eksempler på behov, samt forslag til kravsnivå (obligatorisk/anbefalt/valgfri) og norske navn og beskrivelser.
+.. Er noen av kravene (obligatoriske/anbefalte/valgfrie) for strenge eller for svake?
+... Generelt, gi oss tilbakemelding på hva du mener er for strengt eller for svakt og hvorfor, og forslag til det du mener er riktig kravsnivå.
+.. Spesielt om kontrollerte vokabularer: Det er i spesifikasjonen stilt krav til bruk av kontrollerte vokabularer for egenskaper som skal ha «kodede verdier», f.eks. «type» (`dct:type`). Flere av kontrollerte vokabularer er ennå ikke endelig fastsatt og tilgjengeliggjort av EUs Publications Office og det er uvisst når dette blir gjort fra EU. Vi har derfor i denne versjonen av spesifikasjonen startet med forslag til kontrollerte vokabularer som mangler. Forslagene er tatt med rett under beskrivelsen av de aktuelle egenskapene.
+... Gi oss tilbakemelding på forslagene dekker behov som du ser, med konkrete endringsforslag (hva som ev. mangler, er feil, osv.).
+. Forståelighet:
+.. Norske klasse- og egenskapsnavn. Selv om i utvekslingen/tilgjengeliggjøringen er det URIene (f.eks. `cv:BusinessEvent`) som skal tas med og ikke de norske klasse- og egenskapsnavnene, er det viktig at norske navn (f.eks. «Virksomhetshendelse» for `cv:BusinessEvent`) er forståelige og meningsfulle for målgruppene av spesifikasjonen.
+... Generelt, gi oss tilbakemelding på hva du mener kan forbedres, med konkrete forbedringsforslag samt kort begrunnelse.
+... Spesielt, om det norske navnet «Livshendelse» for <<Livshendelse>>.
+Kjernegruppen diskuterte også et alternativt norsk navn for denne klassen, «Innbyggerhendelse», som semantisk gjenspeiler direkte intensjonen med denne klassen (dvs. å beskrive hendelse hos en innbygger), og som dessuten er et direkte «motsvar» til navnet for <<Virksomhetshendelse>> (å beskrive hendelse hos en virksomhet). Dessuten, i EU sin forklaring for <<Virksomhetshendelse>> står det også at “a Business Event is a specific situation or event #in the lifecycle# of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time” (vår egen utheving), dvs. en Virksomhetshendelse er egentlig en også livshendelse men hos en virksomhet. Digdir sin side om https://www.digdir.no/sammenhengende-tjenester/arbeidet-med-de-sju-livshendelsene/1170[Arbeidet med de sju livshendelsene], tar også med seg virksomhetshendelsene «Starte og drive en bedrift» (nr. 5 på listen) og «Starte og drive en frivillig organisasjon» (nr. 7 på listen) under samlebetegnelsen «livshendelse».  +
++
+Pga. at «livshendelse» er et ord som er politisk forankret både i Norge og EU (life event), har kjernegruppen i denne versjonen valgt å bruke «Livshendelse» som klassenavn for hendelse hos innbygger.  +
++
+#*Spørsmål*#: Syns du klassen heller bør hete «Innbyggerhendelse» (et mer semantisk presist navn) enn nåværende «Livshendelse» (et mer «politisk» gjenkjennbart navn)? Eller har du forslag til andre navn?
+
+.. Struktur:
+... Generelt: gi oss tilbakemelding på hva du konkret mener bør kunne forbedres strukturmessig, f.eks. rekkefølgen av (under)kapitlene, «mal» for tabellene som nå er brukt til å beskrive klasser og egenskaper, osv.
+.. Beskrivelser av klasser og egenskaper:
+... Generelt, gi oss tilbakemelding på hva (beskrivelsen av hvilken klasse eller egenskap) du konkret mener bør kunne forbedres, med forslag til alternativ formulering.
+.. Eksempler:
+... Generelt, gi oss tilbakemelding på hva (hvilket eksempel til hvilken klasse/egenskap) du mener er feil eller uklare, eller mangler etc., med konkrete forbedringsforslag og ev. (alternative) eksempler.
+.... Når det gjelder å utarbeide eksempler har kjernegruppen brukt følgende prioriteringsrekkefølge: obligatoriske egenskaper - anbefalte egenskaper - valgfrie egenskaper, og prosatekst eksempler (i tabellene markert med eksempel) – eksempler i RDF Turtle (etter tabellene). Kjernegruppen har ikke hatt som mål å ha eksempler på alle egenskaper.
+. RDF-tekniske innspill:
+.. Under utarbeidelse av denne versjonen av spesifikasjonen, ble det identifisert behov som ikke er dekket av CPSV-AP. Vi har derfor utvidet CPSV-AP med å tilføye klasser og egenskaper, enten ved å gjenbruke klasser og egenskaper fra eksisterende RDF-vokabularer eller å bruke våre egendefinerte klasser og egenskaper (med navnerom `cpsvno` eller `dcatno`) der vi ikke fant egnede tilsvar i eksisterende RDF-vokabularer.
+... Generelt: Si fra hvis vi har valgt feil klasser/egenskaper fra eksisterende RDF-vokabularer, med forslag til hva vi burde ha valgt.
+... Spesielt: Til våre egendefinerte klasser/egenskaper (med navnerom `cpsvno` og `dcatno`), si fra hvis du vet om noen eksisterende klasser/egenskaper som dekker de samme behovene og som vi burde brukt istedenfor å lage våre egendefinerte klasser/egenskaper.
+
+
+Hvordan gir du tilbakemeldinger?
+
+* Vi ber deg fortrinnsvis legge dine tilbakemeldinger inn som https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette en bruker gratis.
+
+* Du kan alternativt sende oss dine tilbakemeldinger på e-post, til adressen mailto:informasjonsforvaltning@digdir.no[informasjonsforvaltning(at)digdir.no, CPSV-AP-NOv08].

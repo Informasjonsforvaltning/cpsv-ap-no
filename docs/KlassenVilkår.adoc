@@ -1,0 +1,235 @@
+== Klassen Vilkår (cv:CriterionRequirement) [[Vilkår]]
+
+[[img-KlassenVilkår]]
+.Klassen Vilkår (cv:CriterionRequirement)
+[link=images/KlassenVilkår.png]
+image::images/KlassenVilkår.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Criterion Requirement
+|Anvendelse|Brukes til å representere vilkår knyttet til bruk av en tjeneste.
+|Usage note|Not all (public) services are needed or usable by everyone. For example, the visa service operated by European countries is not needed by European citizens but is needed by some citizens from elsewhere, or public services offering unemployment benefits and grants are targeting specific societal groups.
+|URI|cv:CriterionRequirement
+|Kravsnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|«Over 20 år»
+|===
+
+=== Obligatoriske egenskaper for klassen _Vilkår_ [[Vilkår-obligatoriske-egenskaper]]
+
+==== Vilkår – forventet datatype (cccev:expectedDataType) [[Vilkår-forventetDatatype]]
+
+[cols="30s,70d"]
+|===
+|English name|expected datatype
+|URI|cccev:expectedDataType
+|Range|URI
+|Anvendelse|Brukes til å oppgi forventet datatype til svaret fra respondenten.
+|Usage note|Each Criterion requirement shall describe the expected data type that the responder has to provide.
+|Multiplisitet|Obligatorisk/Mandatory
+|Kravsnivå|1..1
+|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men CCCEV som CPSP-AV baseres på sier «Each Criterion requirement shall describe the expected data type shall describe…».
+|Eksempel|Kravet om at søkeren skal være over 20 år har forventet datatype «boolean» (ja/nei).
+|===
+
+Eksempel i RDF Turtle:
+-----
+<over20år> a cv:CriterionRequirement ;
+   cccev:expectedDataType xsd:boolean ; .
+-----
+
+==== Vilkår – identifikator (dct:identifier) [[Vilkår-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal typed as URI
+|Anvendelse|Brukes til å oppgi identifikatoren til vilkåret.
+|Usage note|This property represents an Identifier for the Criterion Requirement.
+|Multiplisitet|1..1
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|Eksempel|
+|===
+
+==== Vilkår – tittel (dct:title) [[Vilkår-tittel]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|dct:title
+|Range|rdfs:Literal
+|Anvendelse|Brukes til å oppgi tittel til vilkåret.
+|Usage note|This property represents the official Name of the Criterion Requirement.
+|Multiplisitet|1..n
+|Kravsnivå|Obligatorisk/Mandatory
+|Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n for å støtte flerspråklighet.
+|Eksempel|«Over 20 år»
+|===
+
+Eksempel i RDF Turtle:
+-----
+<over20år> a cv:CriterionRequirement ;
+   dct:title "Over 20 år"@nb ; .
+-----
+
+=== Valgfrie egenskaper for klassen _Vilkår_ [[Vilkår-valgfrie-egenskaper]]
+
+==== Vilkår – anvendbarhetsperiode (cccev:applicableinPeriodOfTime) [[Vilkår-anvendbarhetsperiode]]
+
+[cols="30s,70d"]
+|===
+|English name|applicable in Period of time
+|URI|cccev:applicableinPeriodOfTime
+|Range|dct:PeriodOfTime
+|Anvendelse|Hvis et dokumentasjonskrav skal gjelde for en spesifikk tidsperiode, brukes denne egenskapen til å uttrykke dette.
+|Usage note|If the Criterion requirement shall apply to a specific time period, this class is used to describe it.
+|Multiplisitet|0..1
+|Kravsnivå|Valgfri/Optional
+|Merknad 1|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Merknad 2|Norsk utvidelse: Range endret fra `cv:PeriodOfTime` i CCCEV, til `dct:PeriodOfTime` for å samkjøre med bl.a. DCAT-AP-NO.
+|Eksempel|
+|===
+
+==== Vilkår – forventet verdi (cccev:expectedValue) [[Vilkår-forventetVerdi]]
+
+[cols="30s,70d"]
+|===
+|English name|expected value
+|URI|cccev:expectedValue
+|Range|rdfs:Literal
+|Anvendelse|Brukes til å oppgi forventet verdi i svaret fra respondenten.
+|Usage note|This property is used to define the expected value that the responder has to provide in the Criterion response.
+|Multiplisitet|0..n
+|Kravsnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Eksempel|
+|===
+
+==== Vilkår – kopitype (cccev:typeOfCopyQuality) [[Vilkår-kopitype]]
+
+[cols="30s,70d"]
+|===
+|English name|type of copy quality
+|URI|cccev:typeOfCopyQuality
+|Range|skos:Concept
+|Anvendelse|Brukes til å oppgi hvilken type kopi som kreves av en dokumentasjon.
+|Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall be of a specific type of copy, for instance, certified copy.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad 1|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/copy-quality-type[Copy quality type], når verdien finnes i vokabularet.
+|Remark 1 |The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/copy-quality-type[Kopitype], when the value is in the vocabulary.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark 2 |Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel|Attestert kopi
+|===
+
+==== Vilkår – nedre verdigrense (cccev:minimumValue) [[Vilkår-nedreVerdigrense]]
+
+[cols="30s,70d"]
+|===
+|English name|minimum value
+|URI|cccev:minimumValue
+|Range|rdfs:Literal
+|Anvendelse|Når verdien som oppgis av respondenten må være innenfor et verdiområde eller større enn en spesifikk nedre verdigrense, brukes denne egenskapen til å oppgi den nedre verdigrensen.
+|Usage note|When the value of the Criterion response must fall into a range or it shall be larger than a specific threshold, this property is used to define the minimum expected value.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..1
+|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Eksempel|
+|===
+
+==== Vilkår – sertifiseringsnivå (cccev:levelOfCertification) [[Vilkår-sertifiseringsnivå]]
+
+[cols="30s,70d"]
+|===
+|English name|level of certification
+|URI|cccev:levelOfCertification
+|Range|skos:Concept
+|Anvendelse|Brukes til å oppgi nivå av sertifisering.
+|Usage note|A Criterion requirement may specify whether the Evidence proving this Criterion requirement shall belong to a specific level of certification, for instance, legalisation.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad 1|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/level-of-certification[Sertifiseringsnivå], når verdien finnes i vokabularet.
+|Remark 1 |The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/level-of-certification[Level of certification], when the value is in the vocabulary.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark 2 |Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel|
+|===
+
+==== Vilkår – type (dct:type) [[Vilkår-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Anvendelse|Brukes til å oppgi type vilkår.
+|Usage note|This property represents the type of Criterion Requirement as described in a controlled vocabulary.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad 1|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/criterion-requirement-type[Vilkårstype], når verdien finnes i vokabularet.
+|Remark 1|The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/criterion-requirement-type[Criterion requirement type], when the value is in the vocabulary.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark 2 |Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel|Vilkåret at søkeren skal være over 20 år, er av type ‘alder’
+|===
+
+Eksempel i RDF Turtle:
+-----
+<over20år> a cv:CriterionRequirement ;
+   dct:type <https://data.norge.no/vocabulary/criterion-requirement-type#age> ; # alder
+   .
+-----
+
+==== Vilkår – type oversettelse (cccev:typeOfTranslation) [[Vilkår-typeOversettelse]]
+
+[cols="30s,70d"]
+|===
+|English name|type of translation
+|URI|cccev:typeOfTranslation
+|Range|skos:Concept
+|Anvendelse|Brukes til å oppgi hvilken type oversettelse som kreves av dokumentasjonsbevis.
+|Usage note|A Criterion requirement may specify whether the evidence proving that this Criterion requirement shall be translated and what type of translation shall apply, for instance, certified translation.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad 1|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/translation-type[Oversettelsestype], når den finnes i vokabularet.
+|Remark 1 |The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/translation-type[Translation type], when the value is in the vocabulary.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Remark 2| Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel|Autorisert oversettelse
+|===
+
+==== Vilkår – verifisert ved dokumentasjon (cccev:metByEvidence) [[Vilkår-verifisertVedDokumentasjon]]
+
+[cols="30s,70d"]
+|===
+|English name|met by Evidence
+|URI|cccev:metByEvidence
+|Range|cv:Evidence
+|Anvendelse|Brukes til å oppgi mulig dokumentasjon (instans av cv:Evidence) som brukes av respondenten til å argumentere for at et dokumentasjonskrav er oppfylt.
+|Usage note|Criterion Requirement may point to a list of candidate Evidences that can be used by the responder to prove the Criterion requirement is fulfilled.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..n
+|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Eksempel|
+|===
+
+==== Vilkår – øvre verdigrense (cccev:maximumValue) [[Vilkår-øvreVerdigrense]]
+
+[cols="30s,70d"]
+|===
+|English name|maximum value
+|URI|cccev:maximumValue
+|Range|rdfs:Literal
+|Anvendelse|Når verdien som oppgis av respondenten må være innenfor et verdiområde eller mindre enn en spesifikk øvre verdigrense, brukes denne egenskapen til å oppgi den øvre verdigrensen.
+|Usage note|When the value of the Criterion response must fall into a range or it shall be lesser than a threshold, this property is used to define the maximum expected value.
+|Multiplisitet|Valgfri/Optional
+|Kravsnivå|0..1
+|Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+|Eksempel|
+|===

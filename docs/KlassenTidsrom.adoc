@@ -1,0 +1,56 @@
+== Klassen Tidsrom (dct:PeriodOfTime) [[Tidsrom]]
+
+[[img-KlassenTidsrom]]
+.Klassen Tidsrom (dct:PeriodOfTime)
+[link=images/KlassenTidsrom.png]
+image::images/KlassenTidsrom.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Period of time
+|Anvendelse|Brukes til å beskrive et tidsrom.
+|Usage note|To represent a Period of time.
+|URI|dct:PeriodOfTime
+|Kravsnivå|Valgfri/Optional
+|Merknad 1 | Norsk utvidelse: Klassen Tidsrom er ikke eksplisitt i CPSV-AP, men brukes som range av en egenskap (fra CCCEV) som vi har føyet til.
+|Remark 1 | Norwegian extension: The class Period of Time is not in CPSV-AP, but used as range of a property (from CCCEV) that we have added.
+|Merknad 2 |Norsk utvidelse: URIen endret fra `cv:PeriodOfTime` til `dct:PeriodOfTime`, for å samkjøre med bl.a. DCAT-AP-NO. Dette er en utvidelse til CCCEV (og ikke CPSV-AP direkte).
+|Remark 2 |Norwegian extension: URI changed from `cv:PeriodOfTime` to `dct:PeriodOfTime` in order to align with e.g. DCAT-AP-NO. This is an extension to CCCEV (not CPSV-AP directly).
+|Eksempel|
+|===
+
+=== Anbefalte egenskaper for klassen _Tidsrom_ [[Tidsrom-anbefalte-egenskaper]]
+
+IMPORTANT: Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ingen obligatoriske, skal en av de to være til stede for hver forekomst av klassen `dct:PeriodOfTime` (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato).
+
+==== Tidsrom – sluttdato/-tid (dcat:endDate) [[Tidsrom-sluttdato-tid]]
+
+[cols="30s,70d"]
+|===
+|English name|end date
+|URI|dcat:endDate
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
+|Anvendelse|Brukes til å oppgi slutten på et tidsrom.
+|Usage note|To specify the end of a period of time.
+|Multiplisitet|0..1
+|Kravsnivå|Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel|
+|===
+
+==== Tidsrom – startdato/-tid (dcat:startDate) [[Tidsrom-startdato-tid]]
+
+[cols="30s,70d"]
+|===
+|English name|start date
+|URI|dcat:startDate
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
+|Anvendelse|Brukes til å oppgi starten på et tidsrom.
+|Usage note|To specify the start of a period of time.
+|Multiplisitet|0..1
+|Kravsnivå|Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel|
+|===
