@@ -17,13 +17,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Upload to static-rdf-server in staging
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v1.0.0-alpha.1
-        id: upload-files
+      - name: Upload rdf to static-rdf-server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v2
+        id: upload-rdf
         with:
           ontology-type: "vocabulary"
           ontology: "cpsvno"
-          rdf-file: "ontology/cpsvno.ttl"
-          html-file: "ontology/cpsvno.html"
+          file: "ontology/cpsvno.ttl"
+          file-type: "text/turtle"
+          file-language: "en"
           host: "https://data.norge.no"
-          api-key: ${{ secrets.API_KEY }}
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+      - name: Upload html nb to static-rdf-server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v2
+        id: upload-html-nb
+        with:
+          ontology-type: "vocabulary"
+          ontology: "cpsvno"
+          file: "ontology/cpsvno.html"
+          file-type: "text/html"
+          file-language: "nb"
+          host: "https://data.norge.no"
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
