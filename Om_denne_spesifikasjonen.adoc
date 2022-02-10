@@ -8,7 +8,7 @@ Spesifikasjonen inngår i https://www.digdir.no/informasjonsforvaltning/rammever
 
 === Omfang og avgrensing [[Omfang-og-avgrensing]]
 
-Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser samt å utveksle/tilgjengeliggjøre beskrivelsene. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere (offentlige) tjenester, dvs. ikke en hvilken som helst hendelse.
+Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser samt å utveksle/tilgjengeliggjøre beskrivelsene. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere tjenester, dvs. ikke en hvilken som helst hendelse.
 
 Spesifikasjonen er basert EUs https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en[CPSV-AP] (_Core Public Service Vocabulary Application Profile_). I tillegg til beskrivelser av offentlige tjenester som CPSV-AP dekker, dekker spesifikasjonen også behovet for å beskrive tjenester som ikke er offentlige tjenester, men som f.eks. er involvert i sammenhengende tjenester fra det offentlige.
 
@@ -18,7 +18,7 @@ Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF] (det er plan
 
 === Målgrupper [[Målgrupper]]
 
-Spesifikasjonen har ikke sluttbrukere av (offentlige) tjenester som sin målgruppe, men
+Spesifikasjonen har ikke sluttbrukere av tjenester som sin målgruppe, men
 
 * deg som skal beskrive
 ** din virksomhets tjenester overfor innbyggere, næringsliv og sivilsamfunnet ellers,

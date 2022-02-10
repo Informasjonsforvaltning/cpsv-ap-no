@@ -9,7 +9,7 @@ image::images/KlassenDokumentasjon.png[]
 |===
 |English name|Evidence
 |Anvendelse|Brukes til å representere dokumentasjon som trengs for å kunne utføre en tjeneste.
-|Usage note|Evidence can be any resource - document, artefact – anything needed for executing the (Public) Service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered. It contains information that proves that a criterion requirement exists or is true, in particular evidences are used to prove that a specific criterion is met.
+|Usage note|Evidence can be any resource - document, artefact – anything needed for executing the service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered. It contains information that proves that a criterion requirement exists or is true, in particular evidences are used to prove that a specific criterion is met.
 |URI|cv:Evidence
 |Kravsnivå|Valgfri/Optional
 |Merknad|

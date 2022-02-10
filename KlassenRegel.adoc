@@ -8,8 +8,8 @@ image::images/KlassenRegel.png[]
 [cols="30s,70d"]
 |===
 |English name|Rule
-|Anvendelse|Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en (offentlig) tjeneste.
-|Usage note|The Rule class represents a document that sets out the specific rules, guidelines or procedures that a (Public) Service follows. It includes the terms of service, licence, and authentication requirements of the (Public) Service.
+|Anvendelse|Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en tjeneste.
+|Usage note|The Rule class represents a document that sets out the specific rules, guidelines or procedures that a Service follows. It includes the terms of service, licence, and authentication requirements of the Service.
 |URI|cpsv:Rule
 |Kravsnivå|Valgfri/Optional
 |Merknad|

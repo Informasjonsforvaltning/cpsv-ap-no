@@ -9,7 +9,7 @@ image::images/KlassenGebyr.png[]
 |===
 |English name|Cost
 |Anvendelse|Brukes til å representere gebyr.
-|Usage note|The Cost class represents any costs related to the execution of a (Public) Service that the Agent consuming it needs to pay.
+|Usage note|The Cost class represents any costs related to the execution of a service that the Agent consuming it needs to pay.
 |URI|cv:Cost
 |Kravsnivå|Valgfri/Optional
 |Merknad|
@@ -98,7 +98,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |English name|is defined by
 |URI|cv:isDefinedBy
 |Range|foaf:Agent
-|Anvendelse|Brukes til å referere til en eller flere aktører (inkl. offentlige organisasjon) som bestemmer gebyr for en tjeneste.
+|Anvendelse|Brukes til å referere til en eller flere aktører (inkl. offentlige organisasjoner) som bestemmer gebyr for en tjeneste.
 |Usage note|This property links the Cost class with one or more instances of the Agent class (foaf:Agent). This property refers to the agent(s) defining the costs associated with the delivery of a particular Service.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
