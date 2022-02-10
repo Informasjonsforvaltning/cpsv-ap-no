@@ -217,9 +217,9 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 |English name |has part 
 |URI |dct:hasPart 
-|Range |cpsv:PublicService 
+|Range |cpsvno:Service 
 |Anvendelse |Brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives. 
-|Usage note |This property indicates a related Registry Service that is included either physically or logically in the described resource.  
+|Usage note |This property indicates a related Service that is included either physically or logically in the described resource.  
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
 |Merknad 1 |Dette er den inverse av egenskapen <<Tjeneste-harDel>>. 
