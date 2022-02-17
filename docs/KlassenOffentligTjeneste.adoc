@@ -124,7 +124,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
-|Eksempel|«Sskjenkebevilling»
+|Eksempel|«Skjenkebevilling»
 |===
 
 Eksempel i RDF Turtle:
