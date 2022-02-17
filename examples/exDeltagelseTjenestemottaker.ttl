@@ -18,14 +18,9 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAkt%C3%B8r.ttl> a foaf:Agent ;
-	# mandatory
-		foaf:name "Den beste restauranten AS"@nb ; # navn
-	# recommended
-		dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/123456789"^^xsd:anyURI ; # identifikator
-		dct:type <http://purl.org/adms/publishertype/Company> ; # type
-	# optional
-		locn:address [ a locn:Address ;
-			locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ] ; # adresse
-		cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestemottaker.ttl> ; # deltagelse
-	.
+<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestemottaker.ttl> a foaf:Agent ;
+   # mandatory
+      dct:description "Deltagelse med rollen \"tjenestemottaker\""@nb ; # beskrivelse
+      dct:identifier <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestemottaker.ttl> ; # identifikator
+      cv:role <https://data.norge.no/vocabulary/role-type#service-receiver> ; # tjenestemottaker
+   .
