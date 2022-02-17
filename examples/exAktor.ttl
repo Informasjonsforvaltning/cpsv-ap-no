@@ -18,7 +18,7 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAkt%C3%B8r.ttl> a foaf:Agent ;
+<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl> a foaf:Agent ;
 	# mandatory
 		foaf:name "Den beste restauranten AS"@nb ; # navn
 	# recommended
