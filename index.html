@@ -696,7 +696,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#OffentligTjeneste-begrep">Offentlig tjeneste – begrep (dct:subject)</a></li>
 <li><a href="#OffentligTjeneste-dekningsområde">Offentlig tjeneste – dekningsområde (dct:spatial)</a></li>
-<li><a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)</a></li>
+<li><a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cpsv:hasInput)</a></li>
 <li><a href="#OffentligTjeneste-erDelAv">Offentlig tjeneste – er del av (dct:isPartOf)</a></li>
 <li><a href="#OffentligTjeneste-harDel">Offentlig tjeneste – har del (dct:hasPart)</a></li>
 <li><a href="#OffentligTjeneste-hjemmeside">Offentlig tjeneste – hjemmeside (foaf:homepage)</a></li>
@@ -786,7 +786,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tjeneste-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Tjeneste</em></a>
 <ul class="sectlevel3">
 <li><a href="#Tjeneste-beskrivelse">Tjeneste – beskrivelse (dct:description)</a></li>
-<li><a href="#Tjeneste-dokumentasjonskrav">Tjeneste - dokumentasjonskrav (cv:hasInput)</a></li>
 <li><a href="#Tjeneste-eiesAv">Tjeneste - eies av (cv:ownedBy)</a></li>
 <li><a href="#Tjeneste-identifikator">Tjeneste – identifikator (dct:identifier)</a></li>
 <li><a href="#Tjeneste-kontaktpunkt">Tjeneste – kontaktpunkt (dcat:contactPoint)</a></li>
@@ -798,6 +797,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Tjeneste-begrep">Tjeneste – begrep (dct:subject)</a></li>
 <li><a href="#Tjeneste-dekningsområde">Tjeneste – dekningsområde (dct:spatial)</a></li>
+<li><a href="#Tjeneste-dokumentasjonskrav">Tjeneste - dokumentasjonskrav (cpsv:hasInput)</a></li>
 <li><a href="#Tjeneste-erDelAv">Tjeneste – er del av (dct:isPartOf)</a></li>
 <li><a href="#Tjeneste-harDel">Tjeneste - har del (dct:hasPart)</a></li>
 <li><a href="#Tjeneste-hjemmeside">Tjeneste – hjemmeside (foaf:homepage)</a></li>
@@ -1963,7 +1963,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette er ikke datasett som en tjeneste bruker (<a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)</a>) eller datasett som tjenesten produsere (<a href="#OffentligTjeneste-produserer">Offentlig tjeneste – produserer (cpsv:produces)</a>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette er ikke datasett som en tjeneste bruker (<a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cpsv:hasInput)</a>) eller datasett som tjenesten produsere (<a href="#OffentligTjeneste-produserer">Offentlig tjeneste – produserer (cpsv:produces)</a>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -6529,7 +6529,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="OffentligTjeneste-dokumentasjonskrav"><a class="anchor" href="#OffentligTjeneste-dokumentasjonskrav"></a>Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)</h4>
+<h4 id="OffentligTjeneste-dokumentasjonskrav"><a class="anchor" href="#OffentligTjeneste-dokumentasjonskrav"></a>Offentlig tjeneste – dokumentasjonskrav (cpsv:hasInput)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7063,7 +7063,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk egenskapen <a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)</a> for å kytte til datasett som tjenesten bruker, eller egenskapen <a href="#OffentligTjeneste-produserer">Offentlig tjeneste – produserer (cpsv:produces)</a> for datasett som tjenesten produserer.`</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk egenskapen <a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cpsv:hasInput)</a> for å kytte til datasett som tjenesten bruker, eller egenskapen <a href="#OffentligTjeneste-produserer">Offentlig tjeneste – produserer (cpsv:produces)</a> for datasett som tjenesten produserer.`</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
@@ -8876,61 +8876,6 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 </table>
 </div>
 <div class="sect3">
-<h4 id="Tjeneste-dokumentasjonskrav"><a class="anchor" href="#Tjeneste-dokumentasjonskrav"></a>Tjeneste - dokumentasjonskrav (cv:hasInput)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">has input </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:hasInput </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Evidence </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (<code>cv:Evidence</code>), som kreves av tjenesten.  </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The Has Input property links a Service to one or more instances of the Evidence class. </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.  </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel </strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
 <h4 id="Tjeneste-eiesAv"><a class="anchor" href="#Tjeneste-eiesAv"></a>Tjeneste - eies av (cv:ownedBy)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -9323,6 +9268,61 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel </strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Tjeneste-dokumentasjonskrav"><a class="anchor" href="#Tjeneste-dokumentasjonskrav"></a>Tjeneste - dokumentasjonskrav (cpsv:hasInput)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has input </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:hasInput </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Evidence </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (<code>cv:Evidence</code>), som kreves av tjenesten.  </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Has Input property links a Service to one or more instances of the Evidence class. </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.  </p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel </strong></p></td>
@@ -9765,7 +9765,7 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk egenskapen <a href="#Tjeneste-dokumentasjonskrav">Tjeneste - dokumentasjonskrav (cv:hasInput)</a> for å kytte til datasett som tjenesten bruker, eller egenskapen <a href="#Tjeneste-produserer">Tjeneste - produserer (cpsv:produces)</a> for datasett som tjenesten produserer.  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk egenskapen <a href="#Tjeneste-dokumentasjonskrav">Tjeneste - dokumentasjonskrav (cpsv:hasInput)</a> for å kytte til datasett som tjenesten bruker, eller egenskapen <a href="#Tjeneste-produserer">Tjeneste - produserer (cpsv:produces)</a> for datasett som tjenesten produserer.  </p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
@@ -13086,7 +13086,7 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 <p>egenskapen <a href="#OffentligTjeneste-begrep">Offentlig tjeneste – begrep (dct:subject)</a>: kravsnivå endret fra valgfri til anbefalt</p>
 </li>
 <li>
-<p>egenskapen <a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cv:hasInput)</a>: kravsnivå endret fra valgfri til anbefalt</p>
+<p>egenskapen <a href="#OffentligTjeneste-dokumentasjonskrav">Offentlig tjeneste – dokumentasjonskrav (cpsv:hasInput)</a>: kravsnivå endret fra valgfri til anbefalt</p>
 </li>
 </ul>
 </div>
@@ -13115,7 +13115,7 @@ Vær oppmerksom på at selv om følgende to egenskaper begge er anbefalte og ing
 <p>egenskapen <a href="#Tjeneste-begrep">Tjeneste – begrep (dct:subject)</a>: kravsnivå endret fra valgfri til anbefalt</p>
 </li>
 <li>
-<p>egenskapen <a href="#Tjeneste-dokumentasjonskrav">Tjeneste - dokumentasjonskrav (cv:hasInput)</a>: kravsnivå endret fra valgfri til anbefalt</p>
+<p>egenskapen <a href="#Tjeneste-dokumentasjonskrav">Tjeneste - dokumentasjonskrav (cpsv:hasInput)</a>: kravsnivå endret fra valgfri til anbefalt</p>
 </li>
 </ul>
 </div>
@@ -13178,7 +13178,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-02-10 14:11:21 UTC
+Sist oppdatert 2022-02-17 12:53:14 UTC
 </div>
 </div>
 </body>
