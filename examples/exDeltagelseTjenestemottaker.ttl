@@ -21,6 +21,6 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestemottaker.ttl> a cv:Participation ;
    # mandatory
       dct:description "Deltagelse med rollen \"tjenestemottaker\""@nb ; # beskrivelse
-      dct:identifier <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestemottaker.ttl> ; # identifikator
+      dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestemottaker.ttl"^^xsd:anyURI ; # identifikator
       cv:role <https://data.norge.no/vocabulary/role-type#service-receiver> ; # tjenestemottaker
    .
