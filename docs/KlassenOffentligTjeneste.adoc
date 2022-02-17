@@ -205,7 +205,7 @@ Eksempel i RDF Turtle:
    .
 ----
 
-==== Offentlig tjeneste – dokumentasjonskrav (cv:hasInput) [[OffentligTjeneste-dokumentasjonskrav]]
+==== Offentlig tjeneste – dokumentasjonskrav (cpsv:hasInput) [[OffentligTjeneste-dokumentasjonskrav]]
 
 [cols="30s,70d"]
 |===

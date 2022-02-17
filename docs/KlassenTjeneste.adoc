@@ -38,24 +38,6 @@ image::images/KlassenTjeneste.png[]
 |Eksempel | 
 |===
 
-[[Tjeneste-dokumentasjonskrav]]
-==== Tjeneste - dokumentasjonskrav (cv:hasInput)
-
-[cols="30s,70d"]
-|===
-|English name |has input 
-|URI |cpsv:hasInput 
-|Range |cv:Evidence 
-|Anvendelse |Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
-|Usage note |The Has Input property links a Service to one or more instances of the Evidence class. 
-|Multiplisitet |0..n 
-|Kravsnivå | Anbefalt/Recommended 
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Remarks  |  A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.  
-|Eksempel |
-|===
-
 [[Tjeneste-eiesAv]]
 ==== Tjeneste - eies av (cv:ownedBy)
 
@@ -189,6 +171,24 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 * To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel |
+|===
+
+[[Tjeneste-dokumentasjonskrav]]
+==== Tjeneste - dokumentasjonskrav (cpsv:hasInput)
+
+[cols="30s,70d"]
+|===
+|English name |has input 
+|URI |cpsv:hasInput 
+|Range |cv:Evidence 
+|Anvendelse |Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
+|Usage note |The Has Input property links a Service to one or more instances of the Evidence class. 
+|Multiplisitet |0..n 
+|Kravsnivå | Anbefalt/Recommended 
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remarks  |  A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.  
 |Eksempel |
 |===
 
