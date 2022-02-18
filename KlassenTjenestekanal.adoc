@@ -241,7 +241,7 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|availability restriction
+|English name|opening hours as structured data
 |URI|schema:hoursAvailable
 |Range|schema:OpeningHoursSpecification
 |Anvendelse|Brukes til å oppgi detaljer om åpningstid, som strukturert data.
