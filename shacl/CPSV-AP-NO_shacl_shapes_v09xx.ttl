@@ -5,6 +5,7 @@
 @prefix cv: <http://data.europa.eu/m8g/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatap: <http://data.europa.eu/r5r> .
+@prefix dcatno: <https://data.norge.no/vocabulary/dcatno#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -39,10 +40,10 @@
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO, expressed in SHACL."@en ;
     dct:title "SHACL-rules for CPSV-AP-NO"@en ;
-    dct:modified "2022-02-17"^^xsd:date ;
-    owl:versionInfo "0.9.02" ;
-    adms:versionNotes "Aligned to v.0.9 of CPSV-AP-NO."@en ,
-        "Justert til v.0.9 av CPSV-AP-NO."@nb ;
+    dct:modified "2022-02-22"^^xsd:date ;
+    owl:versionInfo "0.9.03" ;
+    adms:versionNotes "More rules added/adjuested. Still not checking usage of controlled vocabulary."@en ,
+        "Flere regler føyet til / justert. Fremdeles ingen sjekk på bruk av kontrollerte vokabularer."@nb ;
     foaf:homepage <https://data.norge.no/specification/cpsv-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -89,9 +90,9 @@
       :hasMin0MaxNShape-dctDescription, # beskrivelse
       :hasMin0MaxNShape-dctLanguage, # språk
     # optional properties:
-      :hasMin0MaxNShape-cccevIsSupportedBy, # bekreftes ved
       :hasMin0MaxNShape-foafPage,# relatert informasjon
-      :hasMin0Max1Shape-dctType # type
+      :hasMin0Max1Shape-dctType, # type
+      :hasMin0MaxNShape-cccevIsSupportedBy # understøttes av
     ;
   sh:targetClass cv:Evidence .
 
@@ -125,7 +126,7 @@
     ;
   sh:targetClass cv:Cost .
 
-### Klassen Hendelse (cv:Event), Livshendelse (cv:LifeEvent), Virksomhetshendelse (cv:BusinessEvent)
+### Felles for Klassene Hendelse (cv:Event), Livshendelse (cv:LifeEvent), Virksomhetshendelse (cv:BusinessEvent)
 :EventShape a sh:NodeShape;
   sh:name "Event, Live Event, Business Event"@en, "Hendelse, Livshendelse, Virksomhetshendelse"@nb;
   sh:property
@@ -145,7 +146,7 @@
     [sh:targetClass cv:BusinessEvent] ) .
 
 ### Klassen Hendelse (cv:Event)
-# det som er spesifkt for Hendelse (cv:Event)
+# det som er spesifikt for Hendelse (cv:Event)
 :EventShape a sh:NodeShape;
   sh:name "Event"@en, "Hendelse"@nb;
   sh:property
@@ -153,6 +154,35 @@
       :hasMin0MaxNShape-cpsvnoMayInitiate # kan sette i gang
     ;
   sh:targetClass cv:Event .
+
+### Klassen Katalog (dcat:Catalog)
+:CatalogShape a sh:NodeShape;
+  sh:name "Catalog"@en, "Katalog"@nb;
+  sh:property
+   # mandatory
+      :hasMin1MaxNShape-dctDescription, # beskrivelse
+      :hasMin1Max1Shape-dctIdentifier, # identifikator
+      :hasMin1MaxNShape-dctTitle, #tittel
+      :hasMin1MaxNShape-dcatnoContainsService, # inneholder tjeneste
+      :hasMin1Max1Shape-dctPublisher, # utgiver
+   # recommended
+      :hasMin0MaxNShape-dctSpatial, # dekningsområde
+      :hasMin0MaxNShape-dctModified, # endringsdato
+      :hasMin0Max1Shape-dctAccrualPeriodicity, # frekvens
+      :hasMin0Max1Shape-foafHomepage, # hjemmeside
+      :hasMin0Max1Shape-dctLicense, # lisens
+      :hasMin0MaxNShape-dctProvenance, # opphav
+      :hasMin0MaxNShape-dctLanguage, # språk
+      :hasMin0MaxNShape-dcatThemeTaxonomy, # temaer
+      :hasMin0Max1Shape-dctIssued, # utgivelsesdato
+   # optional
+      :hasMin0Max1Shape-dctIsPartOfCatalog, # er del av
+      :hasMin0MaxNShape-dctHasPartCatalog, # har del
+      :hasMin0MaxNShape-dcatnoContainsEvent, # inneholder hendelse
+      :hasMin0Max1Shape-dctCreator, # produsent
+      :hasMin0MaxNShape-dctRights # rettigheter
+      ;
+   sh:targetClass dcat:Catalog .
 
 ### Klassen Kontaktpunkt (vcard:Kind)
 :ContactPointShape a sh:NodeShape;
@@ -209,8 +239,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-dctSubject, # begrep
       :hasMin0MaxNShape-dctSpatial, # dekningsområde
       :hasMin0MaxNShape-cpsvHasInput, # dokumentasjonskrav
-      :hasMin0MaxnShape-dctIsPartOfService, # er del av
-      :hasMin0MaxnShape-dctHasPartService, # har del
+      :hasMin0MaxNShape-dctIsPartOfService, # er del av
+      :hasMin0MaxNShape-dctHasPartService, # har del
       :hasMin0MaxNShape-foafHomepage, # hjemmeside
       :hasMin0Max1Shape-admsStatus, # status
       :hasMin0MaxNShape-cvThematicArea, # temaområde
@@ -293,8 +323,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-dctSubject, # begrep
       :hasMin0MaxNShape-dctSpatial, # dekningsområde
       :hasMin0MaxNShape-cpsvHasInput, # dokumentasjonskrav
-      :hasMin0MaxnShape-dctIsPartOfService, # er del av
-      :hasMin0MaxnShape-dctHasPartService, # har del
+      :hasMin0MaxNShape-dctIsPartOfService, # er del av
+      :hasMin0MaxNShape-dctHasPartService, # har del
       :hasMin0MaxNShape-foafHomepage, # hjemmeside
       :hasMin0Max1Shape-admsStatus, # status
       :hasMin0MaxNShape-cvThematicArea, # temaområde
@@ -366,12 +396,12 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
     # optional properties:
       :hasMin0MaxNShape-cccevApplicableinPeriodOfTime, # anvendbarhetsperiode
       :hasMin0MaxNShape-cccevExpectedValue, # forventet verdi
+      :hasMin0MaxNShape-cccevTypeOfCopyQuality, # kopitype
       :hasMin0MaxNShape-cccevMinimumValue, # nedre verdigrense
-      :hasMin0MaxNShape-cccevMetByEvidence, # oppfylt med dokumentasjon
       :hasMin0MaxNShape-cccevLevelOfCertification, # sertifiseringsnivå
       :hasMin0MaxNShape-dctType, # type
-      :hasMin0MaxNShape-cccevTypeOfCopyQuality, # type kopieringskvalitet
       :hasMin0MaxNShape-cccevTypeOfTranslation, # type oversettelse
+      :hasMin0MaxNShape-cccevMetByEvidence, # verifisert ved dokumentasjon
       :hasMin0MaxNShape-cccevMaximumValue # øvre verdigrense
     ;
   sh:targetClass cv:CriterionRequirement .
@@ -400,7 +430,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:path cccev:applicableinPeriodOfTime;
   sh:name "applicable in Period of time"@en, "anvendbarhetsperiode"@nb;
   sh:message "The property cccev:applicableinPeriodOfTime MUST be an IRI referring to an instance of dct:PeriodOfTime"@en,
-    "Egenskapen cccev:applicableinPeriodOfTime skal være en IRI som refererer til instans av dct:PeriodOfTime"@nb;
+    "Egenskapen cccev:applicableinPeriodOfTime skal være en IRI som refererer til en instans av dct:PeriodOfTime"@nb;
   sh:severity sh:Violation .
 
 :hasMin1Max1Shape-cccevExpectedDataType a sh:PropertyShape;
@@ -425,9 +455,9 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:class cccev:DocumentReference;
 #  sh:nodeKind sh:IRI;
   sh:path cccev:isSupportedBy;
-  sh:name "is supported by"@en, "bekreftes ved"@nb;
+  sh:name "is supported by"@en, "understøttes av"@nb;
   sh:message "The property cccev:isSupportedBy MUST be an IRI referring to an instance of cccev:DocumentReference"@en,
-    "Egenskapen cccev:isSupportedBy skal være en IRI som refererer til instans av cccev:DocumentReference"@nb;
+    "Egenskapen cccev:isSupportedBy skal være en IRI som refererer til en instans av cccev:DocumentReference"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cccevLevelOfCertification a sh:PropertyShape;
@@ -436,7 +466,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:path cccev:levelOfCertification;
   sh:name "level of certification"@en, "sertifiseringsnivå"@nb;
   sh:message "The property cccev:levelOfCertification MUST be an IRI referring to an instance of skos:Concept"@en,
-    "Egenskapen cccev:levelOfCertification skal være en IRI som refererer til instans av skos:Concept"@nb;
+    "Egenskapen cccev:levelOfCertification skal være en IRI som refererer til en instans av skos:Concept"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cccevMaximumValue a sh:PropertyShape;
@@ -451,9 +481,9 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:class cv:Evidence;
 #  sh:nodeKind sh:IRI;
   sh:path cccev:metByEvidence;
-  sh:name "met by Evidence"@en, "oppfylt med dokumentasjon"@nb;
+  sh:name "met by Evidence"@en, "verifisert ved dokumentasjon"@nb;
   sh:message "The property cccev:metByEvidence MUST be an IRI referring to an instance of cv:Evidence"@en,
-    "Egenskapen cccev:metByEvidence skal være en IRI som refererer til instans av cv:Evidence"@nb;
+    "Egenskapen cccev:metByEvidence skal være en IRI som refererer til en instans av cv:Evidence"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cccevMinimumValue a sh:PropertyShape;
@@ -468,9 +498,9 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:path cccev:levelOfCertification;
-  sh:name "type of copy quality"@en, "type kopieringskvalitet"@nb;
+  sh:name "type of copy quality"@en, "kopitype"@nb;
   sh:message "The property cccev:typeOfCopyQuality MUST be an IRI referring to an instance of skos:Concept"@en,
-    "Egenskapen cccev:typeOfCopyQuality skal være en IRI som refererer til instans av skos:Concept"@nb;
+    "Egenskapen cccev:typeOfCopyQuality skal være en IRI som refererer til en instans av skos:Concept"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cccevTypeOfTranslation a sh:PropertyShape;
@@ -479,7 +509,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:path cccev:typeOfTranslation;
   sh:name "type of translation"@en, "type oversettelse"@nb;
   sh:message "The property cccev:typeOfTranslation MUST be an IRI referring to an instance of skos:Concept"@en,
-    "Egenskapen cccev:typeOfTranslation skal være en IRI som refererer til instans av skos:Concept"@nb;
+    "Egenskapen cccev:typeOfTranslation skal være en IRI som refererer til en instans av skos:Concept"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cccevUrl a sh:PropertyShape;
@@ -497,7 +527,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "follows"@en, "følger regel"@nb;
   sh:message "The property cpsv:follows MUST be an IRI referring to an instance of cpsv:Rule"@en,
-    "Egenskapen cpsv:follows skal være en IRI som refererer til instans av cpsv:Rule"@nb;
+    "Egenskapen cpsv:follows skal være en IRI som refererer til en instans av cpsv:Rule"@nb;
   sh:path cpsv:follows;
   sh:severity sh:Violation .
 
@@ -506,7 +536,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "has input"@en, "dokumentasjonskrav"@nb;
   sh:message "The property cpsv:hasInput MUST be an IRI referring to an instance of cv:Evidence"@en,
-    "Egenskapen cpsv:hasInput skal være en IRI som refererer til instans av cv:Evidence"@nb;
+    "Egenskapen cpsv:hasInput skal være en IRI som refererer til en instans av cv:Evidence"@nb;
   sh:path cpsv:hasInput;
   sh:severity sh:Violation .
 
@@ -515,7 +545,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "implements"@en, "implementerer"@nb;
   sh:message "The property cpsv:implements MUST be an IRI referring to an instance of eli:LegalResource"@en,
-    "Egenskapen cpsv:implements skal være en IRI som refererer til instans av eli:LegalResource"@nb;
+    "Egenskapen cpsv:implements skal være en IRI som refererer til en instans av eli:LegalResource"@nb;
   sh:path cpsv:implements;
   sh:severity sh:Violation .
 
@@ -538,7 +568,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "data service"@en, "datatjeneste"@nb;
   sh:message "The property cpsvno:dataService MUST be an IRI referring to an instance of dcat:DataService"@en,
-    "Egenskapen cpsvno:dataService skal være en IRI som skal referere til instans av dcat:DataService"@nb;
+    "Egenskapen cpsvno:dataService skal være en IRI som skal referere til en instans av dcat:DataService"@nb;
   sh:path cpsvno:dataService;
   sh:severity sh:Violation .
 
@@ -549,7 +579,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "may initiate"@en, "kan sette i gang"@nb;
   sh:message "The property cpsvno:mayInitiate MUST be an IRI referring to an instance of cpsvno:Service or cpsv:PublicSerivce"@en,
-    "Egenskapen cpsvno:mayInitiate skal være en IRI som refererer til instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
+    "Egenskapen cpsvno:mayInitiate skal være en IRI som refererer til en instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
   sh:path cpsvno:mayInitiate;
   sh:severity sh:Violation .
 
@@ -560,7 +590,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "triggers need for"@en, "utløser behov for"@nb;
   sh:message "The property cpsvno:triggersNeedFor MUST be an IRI referring to an instance of cpsvno:Service or cpsv:PublicSerivce"@en,
-    "Egenskapen cpsvno:triggersNeedFor skal være en IRI som refererer til instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
+    "Egenskapen cpsvno:triggersNeedFor skal være en IRI som refererer til en instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
   sh:path cpsvno:mayInitiate;
   sh:severity sh:Violation .
 
@@ -573,7 +603,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:minCount 1;
   sh:maxCount 1;
   sh:message "The property cv:hasCompetentAuthority MUST have min. 1 and max. 1 value which MUST refer to an instance of cv:PublicOrganisation"@en,
-    "Egenskapen cv:hasCompetentAuthority skal ha min. 1 og maks. 1 verdi som skal referere til instans av cv:PublicOrganisation"@nb;
+    "Egenskapen cv:hasCompetentAuthority skal ha min. 1 og maks. 1 verdi som skal referere til en instans av cv:PublicOrganisation"@nb;
   sh:name "has competent authority"@en, "har kompetent organ"@nb;
   sh:path cv:hasCompetentAuthority;
   sh:severity sh:Violation .
@@ -593,7 +623,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "has channel"@en, "er tilgjengelig via"@nb;
   sh:message "The property cv:hasChannel MUST refer to an instance of cv:Channel"@en,
-    "Egenskapen cv:hasChannel skal referere til instans av cv:Channel"@nb;
+    "Egenskapen cv:hasChannel skal referere til en instans av cv:Channel"@nb;
   sh:path cv:hasChannel;
   sh:severity sh:Violation .
 
@@ -602,7 +632,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "has cost"@en, "gebyr"@nb;
   sh:message "The property cv:hasCost MUST refer to an instance of cv:Cost"@en,
-    "Egenskapen cv:hasCost skal referere til instans av cv:Cost"@nb;
+    "Egenskapen cv:hasCost skal referere til en instans av cv:Cost"@nb;
   sh:path cv:hasCost;
   sh:severity sh:Violation .
 
@@ -610,8 +640,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:class cv:CriterionRequirement;
 #  sh:nodeKind sh:IRI;
   sh:name "has criterion"@en, "vilkår"@nb;
-  sh:message "The property cv:hasCriterion MUST be IRI referring to an instance of cv:CriterionRequirement"@en,
-    "Egenskapen cv:hasCriterion skal være IRI som refererer til instans av cv:CriterionRequirement"@nb;
+  sh:message "The property cv:hasCriterion MUST be an IRI referring to an instance of cv:CriterionRequirement"@en,
+    "Egenskapen cv:hasCriterion skal være en IRI som refererer til en instans av cv:CriterionRequirement"@nb;
   sh:path cv:hasCriterion;
   sh:severity sh:Violation .
 
@@ -620,7 +650,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "has legal resource"@en, "relatert regelverk"@nb;
   sh:message "The property cv:hasLegalResource MUST be an IRI referring to an instance of eli:LegalResource"@en,
-    "Egenskapen cv:hasLegalResource skal være en IRI som refererer til instans av cv:hasLegalResource"@nb;
+    "Egenskapen cv:hasLegalResource skal være en IRI som refererer til en instans av cv:hasLegalResource"@nb;
   sh:path cv:hasLegalResource;
   sh:severity sh:Violation .
 
@@ -629,7 +659,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "has participation"@en, "deltagende"@nb;
   sh:message "The property cv:hasParticipation MUST be IRI referring to an instance of cv:Participation"@en,
-    "Egenskapen cv:hasParticipation skal være IRI som refererer til instans av cv:Participation"@nb;
+    "Egenskapen cv:hasParticipation skal være IRI som refererer til en instans av cv:Participation"@nb;
   sh:path cv:hasParticipation;
   sh:severity sh:Violation .
 
@@ -637,8 +667,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:class cv:Channel;
 #  sh:nodeKind sh:IRI;
   sh:maxCount 1;
-  sh:message "The property cv:ifAccessedThrough may have max. 1 value which MUST be instance of cv:Channel"@en,
-    "Egenskapen cv:ifAccessedThrough kan ha maks. 1 verdi som skal referere til instans av cv:Channel";
+  sh:message "The property cv:ifAccessedThrough may have max. 1 value referring to an instance of cv:Channel"@en,
+    "Egenskapen cv:ifAccessedThrough kan ha maks. 1 verdi som skal referere til en instans av cv:Channel";
   sh:name "if accessed through"@en, "hvis tilbys gjennom"@nb;
   sh:path cv:ifAccessedThrough;
   sh:severity sh:Violation .
@@ -650,7 +680,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "isDefinedBy"@en, "er bestemt av"@nb;
   sh:message "The property cv:isDefinedBy MUST be IRI referring to an instance of cv:PublicOrganisation or foaf:Agent"@en,
-    "Egenskapen cv:isDefinedBy skal være en IRI som refererer til instans av cv:PublicOrganisation eller foaf:Agent"@nb;
+    "Egenskapen cv:isDefinedBy skal være en IRI som refererer til en instans av cv:PublicOrganisation eller foaf:Agent"@nb;
   sh:path cv:isDefinedBy;
   sh:severity sh:Violation .
 
@@ -658,8 +688,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:name "is classified by"@en, "er klassifisert ved"@nb;
-  sh:message "The property cv:isClassifiedBy MUST be IRI referring to a defined concept"@en,
-    "Egenskapen cv:isClassifiedBy skal være IRI (som refererer til begrep)"@nb;
+  sh:message "The property cv:isClassifiedBy MUST be IRI referring to an instance of skos:Concept"@en,
+    "Egenskapen cv:isClassifiedBy skal være IRI som refererer til en instans av skos:Concept"@nb;
   sh:path cv:isClassifiedBy;
   sh:severity sh:Warning .
 
@@ -668,16 +698,20 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "is described at"@en, "beskrivende datasett"@nb;
   sh:message "The propety cv:isDescribedAt MUST be IRI referring to an instace of dcat:Dataset"@en,
-    "Egenskapen cv:isDescribedAt skal være IRI som refererer til instans av dcat:Dataset"@nb;
+    "Egenskapen cv:isDescribedAt skal være IRI som refererer til en instans av dcat:Dataset"@nb;
   sh:path cv:isDescribedAt;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvIsGroupedBy a sh:PropertyShape;
-  sh:class cv:Event;
+  sh:or (
+   [sh:class cv:Event]
+   [sh:class cv:LifeEvent]
+   [sh:class cv:BusinessEvent]
+   );
 #  sh:nodeKind sh:IRI;
   sh:name "is grouped by"@en, "er gruppert ved"@nb;
-  sh:message "The property cv:IsGroupedBy MUST be IRI which MUST refer to an instance of cv:Event"@en,
-    "Egenskapen cv:IsGroupedBy skal være IRI som refererer til instans av cv:Event"@nb;
+  sh:message "The property cv:IsGroupedBy MUST be IRI which MUST refer to an instance of cv:Event, cv:LifeEvent or cv:BusinessEvent"@en,
+    "Egenskapen cv:IsGroupedBy skal være IRI som refererer til en instans av cv:Event, cv:LifeEvent eller cv:BusinessEvent"@nb;
   sh:path cv:IsGroupedBy;
   sh:severity sh:Violation .
 
@@ -688,7 +722,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "owned by"@en, "eies av"@nb;
   sh:message "The property cv:ownedBy MUST be an IRI referring to an instance of foaf:Agent or cv:PublicOrganisation"@en,
-    "Egenskapen cv:ownedBy skal være IRI som refererer til instans av foaf:Agent eller cv:PublicOrganisation"@nb;
+    "Egenskapen cv:ownedBy skal være IRI som refererer til en instans av foaf:Agent eller cv:PublicOrganisation"@nb;
   sh:path cv:ownedBy;
   sh:severity sh:Violation .
 
@@ -701,7 +735,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:maxCount 1;
   sh:name "owned by"@en, "eies av"@nb;
   sh:message "The property cv:ownedBy MUST have min. 1 and max. 1 value which MUST be an IRI referring to an instance of foaf:Agent or cv:PublicOrganisation"@en,
-    "Egenskapen cv:ownedBy skal ha miin. 1 og maks. 1 verdi som skal være IRI som refererer til instans av foaf:Agent eller cv:PublicOrganisation"@nb;
+    "Egenskapen cv:ownedBy skal ha miin. 1 og maks. 1 verdi som skal være IRI som refererer til en instans av foaf:Agent eller cv:PublicOrganisation"@nb;
   sh:path cv:ownedBy;
   sh:severity sh:Violation .
 
@@ -710,14 +744,14 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "plays role"@en, "har rolle i"@nb;
   sh:message "The property cv:playsRole MUST be an IRI referring to an instance of cv:Participation"@en,
-    "Egenskapen cv:playsRole skal være en IRI som refererer til instans av cv:Participation"@nb;
+    "Egenskapen cv:playsRole skal være en IRI som refererer til en instans av cv:Participation"@nb;
   sh:path cv:playsRole;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-cvProcessingTime a sh:PropertyShape;
   sh:name "processing time"@en, "behandlingstid";
-  sh:message "The property cv:processingTime MUST be xsd:duration"@en,
-    "Egenskapen cv:processingTime skal være verdi av type xsd:duration"@nb;
+  sh:message "The property cv:processingTime MUST be of datatype xsd:duration"@en,
+    "Egenskapen cv:processingTime skal være verdi av datatype xsd:duration"@nb;
   sh:datatype xsd:duration;
   sh:path cv:processingTime;
   sh:severity sh:Violation .
@@ -725,8 +759,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 :hasMin1MaxNShape-cvRole a sh:PropertyShape;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
-  sh:message "The property cv:role MUST be an IRI referring to an instance of skos:Concept"@en,
-    "Egenskapen cv:role skal være en IRI som refererer til instans av skos:Concept"@nb;
+  sh:message "The property cv:role MUST have min. 1 value which MUST be an IRI referring to an instance of skos:Concept"@en,
+    "Egenskapen cv:role skal ha min. 1 verdi som skal være en IRI som refererer til en instans av skos:Concept"@nb;
   sh:minCount 1;
   sh:name "role"@en;
   sh:path cv:role;
@@ -736,8 +770,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:name "sector"@en, "næringsgruppering"@nb;
-  sh:message "The property cv:sector MUST be IRI referring to concept"@en,
-    "Egenskapen cv:sector skal være IRI som refererer til begrep"@nb;
+  sh:message "The property cv:sector MUST be IRI referring to an instance of skos:Concept"@en,
+    "Egenskapen cv:sector skal være IRI som refererer til en instans av skos:Concept"@nb;
   sh:path cv:sector;
   sh:severity sh:Warning .
 
@@ -746,6 +780,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #  sh:nodeKind sh:IRI;
   sh:name "thematic area"@en, "temaområde";
   sh:path cv:thematicArea;
+  sh:message "The property cv:thematicArea MUST be an IRI referring to an instance of skos:Concept"@en,
+      "Egenskapen cv:thematicArea skal være en IRI som refererer til en instans av skos:Concept"@en;
   sh:severity sh:Warning .
 
 :hasMin0Max1Shape-cvValue a sh:PropertyShape;
@@ -763,7 +799,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:name "contact point"@en, "kontaktpunkt"@nb;
   sh:minCount 1;
   sh:message "The property dcat:contactPoint MUST have min. 1 value which should refer to an instance of vcard:Organization"@en,
-    "Egenskapen dcat:contactPoint skal ha minst 1 verdi som bør referere til instans av vcard:Organization"@nb;
+    "Egenskapen dcat:contactPoint skal ha minst 1 verdi som bør referere til en instans av vcard:Organization"@nb;
   sh:or (
     [ sh:class vcard:Kind ]
     [ sh:class vcard:Organization ] ) ;
@@ -773,7 +809,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 :hasMin0MaxNShape-dcatDistribution a sh:PropertyShape;
   sh:name "distribution"@en, "distribusjon"@nb;
   sh:message "The property dcat:distribution MUST refer to an instance of dcat:Distribution"@en,
-    "Egenskapen dcat:distribution skal referere til instans av dcat:Distribution"@nb;
+    "Egenskapen dcat:distribution skal referere til en instans av dcat:Distribution"@nb;
   sh:class dcat:Distribution;
   sh:path dcat:distribution;
   sh:severity sh:Violation .
@@ -783,13 +819,9 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:message "The property dcat:endDate may have max. 1 value which MUST be either xsd:date or xsd:dateTime"@en,
     "Egenskapen dcat:endDate kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb;
   sh:path dcat:endDate;
-  sh:or ([
-          sh:datatype xsd:date
-      ]
-      [
-          sh:datatype xsd:dateTime
-      ]
-  ) ;
+  sh:or ([sh:datatype xsd:date]
+      [sh:datatype xsd:dateTime]
+      ) ;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dcatKeyword a sh:PropertyShape;
@@ -803,24 +835,64 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:message "The property dcat:startDate may have max. 1 value which MUST be either xsd:date or xsd:dateTime"@en,
     "Egenskapen dcat:startDate kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb;
   sh:path dcat:startDate;
-  sh:or ([
-          sh:datatype xsd:date
-      ]
-      [
-          sh:datatype xsd:dateTime
-      ]
-  ) ;
+  sh:or ([sh:datatype xsd:date]
+      [sh:datatype xsd:dateTime]
+      ) ;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dcatThemeTaxonomy a sh:PropertyShape;
   sh:name "theme taxonomy"@en, "temaer"@nb;
-  sh:nodeKind sh:IRI;
-  sh:message "The property dct:type UST be an IRI (referring to e.g. a controlled vocabulary)"@en,
-    "Egenskapen dct:type skal være en IRI (som refererer til f.eks. et kontrollert vokabular)"@nb;
+  sh:class skos:ConceptScheme;
+#  sh:nodeKind sh:IRI;
+  sh:message "The property dcat:themeTaxonomy UST be an IRI referring toan instance of skos:ConceptScheme"@en,
+    "Egenskapen dcat:themeTaxonomy skal være en IRI som refererer til en instans av skos:ConceptScheme"@nb;
   sh:path dcat:themeTaxonomy;
   sh:severity sh:Violation .
 
+## -- dcatno-properties
+
+:hasMin1MaxNShape-dcatnoContainsService a sh:PropertyShape;
+   sh:name "servicve"@en, "inneholder tjeneste"@nb;
+   sh:message "The property dcatno:containsService MUST have min 1. value which MUST be an IRI referring to an instance of cpsvno:Service or cpsv:PublicSerivce",
+      "Egenskapen dcatno:containsService SKAL have min 1. verdi som SKAL være en IRI som refererer til en instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
+   sh:or (
+      [sh:class cpsvno:Service]
+      [sh:class cpsv:PublicSerivce] );
+   sh:path dcatno:containsService;
+   sh:minCount 1;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-dcatnoContainsEvent a sh:PropertyShape;
+   sh:name "servicve"@en, "inneholder tjeneste"@nb;
+   sh:message "The property dcatno:containsEvent MUST be an IRI referring to an instance of cv:Event, cv:LifeEvent or cv:BusinessEvent",
+      "Egenskapen dcatno:containsEvent SKAL være en IRI som refererer til en instans av cv:Event, cv:LifeEvent eller cv:BusinessEvent"@nb;
+   sh:or (
+      [sh:class cv:Event]
+      [sh:class cv:LifeEvent]
+      [sh:class cv:BusinessEvent] );
+   sh:path dcatno:containsEvent;
+   sh:severity sh:Violation .
+
 ## -- dct-properties:
+
+:hasMin0Max1Shape-dctAccrualPeriodicity a sh:PropertyShape;
+   sh:name "accrual periodicity"@en, "frekvens"@nb;
+   sh:maxCount 1;
+   sh:path dct:accrualPeriodicity;
+   sh:class dct:Frequency;
+   sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST be an URI referring to an instance of dct:Frequency"@en ,
+     "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal være en URI som refererer til en instans av dct:Frequency"@nb ;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctCreator a sh:PropertyShape;
+  sh:class foaf:Agent;
+#  sh:nodeKind sh:IRI;
+  sh:maxCount 1;
+  sh:message "The property dct:creator may have max. 1 value which MUST be an URI referring to an instance of foaf:Agent"@en ,
+    "Egenskapen dct:publisher kan ha maks. 1 verdi som skal være en URI som refererer til en instans av foaf:Agent"@nb ;
+  sh:name "creator"@en, "produsent"@nb ;
+  sh:path dct:creator;
+  sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctDescription a sh:PropertyShape;
   sh:message "The property dct:desription MUST be Literal"@en ,
@@ -839,8 +911,15 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:path dct:description;
   sh:severity sh:Violation .
 
-:hasMin0MaxnShape-dctHasPartService a sh:PropertyShape;
-  sh:message "The property dct:hasPart MUST be an IRI referring to an instance of cpsvno:Service or cpsv:PublicService"@en, "Egenskapen dct:hasPart skal være en IRI som refererer til instans av cpsvno:Service eller cpsv:PublicService"@nb ;
+:hasMin0MaxNShape-dctHasPartCatalog a sh:PropertyShape;
+  sh:message "The property dct:hasPart MUST be an IRI referring to an instance of dcat:Catalog"@en, "Egenskapen dct:hasPart skal være en IRI som refererer til en instans av dcat:Catalog"@nb ;
+  sh:name "has part"@en, "har del"@nb ;
+  sh:class dcat:Catalog;
+  sh:path dct:hasPart;
+  sh:severity sh:Violation .
+
+:hasMin0MaxNShape-dctHasPartService a sh:PropertyShape;
+  sh:message "The property dct:hasPart MUST be an IRI referring to an instance of cpsvno:Service or cpsv:PublicService"@en, "Egenskapen dct:hasPart skal være en IRI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb ;
   sh:name "has part"@en, "har del"@nb ;
   sh:or (
     [sh:class cpsvno:Service]
@@ -872,8 +951,15 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:path dct:identifier;
   sh:severity sh:Violation .
 
-:hasMin0MaxnShape-dctIsPartOfService a sh:PropertyShape;
-  sh:message "The property dct:isPartOf MUST be an IRI referring to an instance of cpsvno:Service or cpsv:PublicService"@en, "Egenskapen dct:isPartOf skal være en IRI som refererer til instans av cpsvno:Service eller cpsv:PublicService"@nb ;
+:hasMin0Max1Shape-dctIsPartOfCatalog a sh:PropertyShape;
+  sh:message "The property dct:isPartOf may have max. 1 value which MUST be an IRI referring to an instance of dcat:Catalog"@en, "Egenskapen dct:isPartOf kan ha maks. 1 verdi som skal være en IRI som refererer til en instans av dcat:Catalog"@nb ;
+  sh:name "is part of"@en, "er del av"@nb ;
+  sh:class dcat:Catalog;
+  sh:path dct:isPartOf;
+  sh:severity sh:Violation .
+
+:hasMin0MaxNShape-dctIsPartOfService a sh:PropertyShape;
+  sh:message "The property dct:isPartOf MUST be an IRI referring to an instance of cpsvno:Service or cpsv:PublicService"@en, "Egenskapen dct:isPartOf skal være en IRI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb ;
   sh:name "is part of"@en, "er del av"@nb ;
   sh:or (
     [sh:class cpsvno:Service]
@@ -881,20 +967,59 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:path dct:isPartOf;
   sh:severity sh:Violation .
 
+:hasMin0Max1Shape-dctIssued a sh:PropertyShape;
+  sh:message "The property dct:issued may have max. 1 value which MUST be of datatype xsd:date or xsd:dateTime"@en, "Egenskapen dct:issued kan ha maks. 1 verdi som skal av datatype xsd:date eller xsd:dateTime"@nb ;
+  sh:name "issued (release date)"@en, "utgivelsesdato"@nb ;
+  sh:or (
+    [sh:datatype xsd:date]
+    [sh:datatype xsd:dateTime] );
+  sh:path dct:issued;
+  sh:maxCount 1;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctLicense a sh:PropertyShape;
+  sh:class dct:LicenseDocument;
+#  sh:nodeKind sh:IRI;
+  sh:name "licence"@en, "lisens"@nb ;
+  sh:path dct:license;
+  sh:maxCount 1;
+  sh:message "The property dct:license may have max. 1 value which MUST be an URI referring to an instance of dct:LicenseDocument"@en, "Egenskapen dct:license kan ha maks. 1 verdi som skal være en IRI som refererer til en instans av dct:LicenseDocument"@nb ;
+  sh:severity sh:Warning .
+
 :hasMin0MaxNShape-dctLanguage a sh:PropertyShape;
   sh:class dct:LinguisticSystem;
 #  sh:nodeKind sh:IRI;
   sh:name "language"@en, "språk"@nb ;
   sh:path dct:language;
+  sh:message "The property dct:language MUST be an IRI referring to an instance of dct:LinguisticSystem"@en, "Egenskapen dct:language skal være en IRI som refererer til en instans av dct:LinguisticSystem"@nb ;
   sh:severity sh:Warning .
+
+:hasMin0MaxNShape-dctModified a sh:PropertyShape;
+   sh:name "modified (last update)"@en, "endringsdato"@nb;
+   sh:path dct:modified;
+   sh:or (
+      [sh:datatype xsd:date]
+      [sh:datatype xsd:dateTime]
+      );
+  sh:message "The property dct:modified MUST be a value of datatype xsd:date or xsd:dateTime"@en, "Egenskapen dct:modified skal være av datatype xsd:date eller xsd:dateTime"@nb ;
+  sh:severity sh:Violation .
+
+:hasMin0MaxNShape-dctProvenance a sh:PropertyShape;
+  sh:class dct:ProvenanceStatement;
+#  sh:nodeKind sh:IRI;
+  sh:message "The property dct:provenance MUST be an URI referring to an instance of dct:ProvenanceStatement"@en ,
+    "Egenskapen dct:provenance skal være en URI som refererer til en instans av dct:ProvenanceStatement"@nb ;
+  sh:name "provenance (authenticity)"@en, "opphav"@nb ;
+  sh:path dct:provenance;
+  sh:severity sh:Violation .
 
 :hasMin1Max1Shape-dctPublisher a sh:PropertyShape;
   sh:class foaf:Agent;
 #  sh:nodeKind sh:IRI;
   sh:minCount 1;
   sh:maxCount 1;
-  sh:message "The property dct:publisher MUST have min. 1 and max. 1 value"@en ,
-    "Egenskapen dct:publisher skal ha min. 1 og maks. 1 verdi"@nb ;
+  sh:message "The property dct:publisher MUST have min. 1 and max. 1 value which MUST be an URI referring to an instance of foaf:Agent"@en ,
+    "Egenskapen dct:publisher skal ha min. 1 og maks. 1 verdi som skal være en URI som refererer til en instans av foaf:Agent"@nb ;
   sh:name "publisher"@en, "utgiver"@nb ;
   sh:path dct:publisher;
   sh:severity sh:Violation .
@@ -914,7 +1039,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
     [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
   sh:message "The property dct:relation MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
-    "Egenskapen dct:relation skal referere til instans av cpsvno:Service eller cpsv:PublicService"@nb;
+    "Egenskapen dct:relation skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:name "related service"@en , "relatert tjeneste"@nb;
   sh:path dct:relation;
   sh:severity sh:Violation .
@@ -925,9 +1050,19 @@ sh:or (
   [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
 sh:message "The property dct:relation MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
-  "Egenskapen dct:relation skal referere til instans av cpsvno:Service eller cpsv:PublicService"@nb;
+  "Egenskapen dct:relation skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:name "requires"@en, "krever"@nb;
   sh:path dct:requires;
+  sh:severity sh:Violation .
+
+:hasMin0MaxNShape-dctRights a sh:PropertyShape;
+   sh:class dct:RightsStatement;
+#  sh:nodeKind sh:IRI;
+sh:message "The property dct:rights may have max. 1 value which MUST be an URI referring to an instance of dct:RightsStatement"@en,
+  "Egenskapen dct:rights kan ha maks. 1 verdi som skal være en URI som refererer til en instans av dct:RightsStatement"@nb;
+  sh:name "rights (use terms)"@en, "rettigheter"@nb;
+  sh:path dct:rights;
+  sh:maxCount 1;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctSpatial a sh:PropertyShape;
@@ -950,10 +1085,10 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctSubject a sh:PropertyShape;
-  sh:message "The property dct:subject MUST have min. 1 value which MUST be an IRI (referring to a defined concept)"@en,
-    "Egenskapen dct:subject skal ha minst 1 verdi som skal være en IRI som refererer til begrep"@nb;
+  sh:message "The property dct:subject MUST be an IRI referring to an instance of skos:Concept"@en,
+    "Egenskapen dct:subject skal være en IRI som refererer til en instans av skos:Concept"@nb;
   sh:name "concept"@en, "begrep"@nb;
-  sh:nodeKind sh:IRI;
+  sh:class skos:Concept;
   sh:path dct:subject;
   sh:severity sh:Violation .
 
@@ -985,8 +1120,8 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
 :hasMin0MaxNShape-dctType a sh:PropertyShape;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
-  sh:message "The property dct:type MUST be an IRI (referring to a defined concept)"@en,
-    "Egenskapen dct:type skal være en IRI (som refererer til begrep)"@nb;
+  sh:message "The property dct:type MUST be an IRI referring to an instance of skos:Concept"@en,
+    "Egenskapen dct:type skal være en IRI som refererer til en instans av skos:Concept"@nb;
   sh:name "type"@en, "type"@nb;
   sh:path dct:type;
   sh:severity sh:Warning .
@@ -1002,6 +1137,16 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
   sh:severity sh:Warning .
 
 #### foaf-properties:
+
+:hasMin0Max1Shape-foafHomepage a sh:PropertyShape;
+  sh:class foaf:Document;
+#  sh:nodeKind sh:IRI;
+  sh:maxCount 1;
+  sh:name "homepage"@en, "hjemmeside"@nb;
+  sh:message "The property foaf:homepag may have max 1 value which MUST be an IRI referring to an instance of foaf:Document"@en,
+    "Egenskapen foaf:homepag kan ha maks. 1 verdi som kal være en IRI som refererer til en instans av foaf:Document"@nb;
+  sh:path foaf:homepage;
+  sh:severity sh:Warning .
 
 :hasMin0MaxNShape-foafHomepage a sh:PropertyShape;
   sh:class foaf:Document;
@@ -1024,8 +1169,8 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
   sh:class foaf:Document;
 #  sh:nodeKind sh:IRI;
   sh:name "page"@en, "relatert informasjon"@nb;
-  sh:message "The property foaf:page MUST be an IRI"@en,
-    "Egenskapen foaf:page skal være en IRI"@nb;
+  sh:message "The property foaf:page MUST be an IRI refer to an instance of foaf:Document"@en,
+    "Egenskapen foaf:page skal være en IRI som refererer til en instans av foaf:Document"@nb;
   sh:path foaf:page;
   sh:severity sh:Warning .
 
@@ -1036,7 +1181,7 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
   sh:class locn:Address;
 #  sh:nodeKind sh:IRI;
   sh:message "The property locn:address MUST be an IRI referring to an instance of locn:Address"@en,
-    "Egenskapen locn:address skal være en IRI som skal referere til instans av locn:Address"@nb;
+    "Egenskapen locn:address skal være en IRI som skal referere til en instans av locn:Address"@nb;
   sh:path locn:address;
   sh:severity sh:Violation .
 
@@ -1047,7 +1192,7 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:message "The property org:classification MUST be an IRI referring to an instance of skos:Concept"@en,
-    "Egenskapen org:classification skal være en IRI som skal referere til instans av skos:Concept"@nb;
+    "Egenskapen org:classification skal være en IRI som skal referere til en instans av skos:Concept"@nb;
   sh:path org:classification;
   sh:severity sh:Violation .
 
@@ -1070,7 +1215,7 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
 #  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:message "The property schema:hoursAvailable may have max. 1 value which MUST be an IRI referring to an instance of schema:OpeningHoursSpecification"@en,
-    "Egenskapen schema:hoursAvailable kan ha maks. 1 verdi som skal være en IRI som skal referere til instans av schema:OpeningHoursSpecification"@nb;
+    "Egenskapen schema:hoursAvailable kan ha maks. 1 verdi som skal være en IRI som skal referere til en instans av schema:OpeningHoursSpecification"@nb;
   sh:path schema:hoursAvailable;
   sh:severity sh:Violation .
 
@@ -1079,7 +1224,7 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
   sh:class schema:OpeningHoursSpecification;
 #  sh:nodeKind sh:IRI;
   sh:message "The property schema:hoursAvailable MUST be an IRI referring to an instance of schema:OpeningHoursSpecification"@en,
-    "Egenskapen schema:hoursAvailable skal være en IRI som skal referere til instans av schema:OpeningHoursSpecification"@nb;
+    "Egenskapen schema:hoursAvailable skal være en IRI som skal referere til en instans av schema:OpeningHoursSpecification"@nb;
   sh:path schema:hoursAvailable;
   sh:severity sh:Violation .
 
@@ -1117,7 +1262,7 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
 #  sh:nodeKind sh:IRI;
   sh:name "has address"@en, "har adresse"@nb;
   sh:message "The property vcard:hasAddress MUST be an IRI referring to an instance of vcard:hasAddress"@en,
-    "Egenskapen vcard:hasAddress skal være en IRI som refererer til instans av vcard:hasAddress"@nb;
+    "Egenskapen vcard:hasAddress skal være en IRI som refererer til en instans av vcard:hasAddress"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-vcardHasEmail a sh:PropertyShape;
@@ -1126,13 +1271,12 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
 #  sh:nodeKind sh:IRI;
   sh:name "has email"@en, "har e-post"@nb;
   sh:message "The property vcard:hasEmail MUST be an IRI referring to an instance of vcard:hasEmail"@en,
-    "Egenskapen vcard:hasEmail skal være en IRI som refererer til instans av vcard:hasEmail"@nb;
+    "Egenskapen vcard:hasEmail skal være en IRI som refererer til en instans av vcard:hasEmail"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-vcardHasTelephone a sh:PropertyShape;
   sh:path vcard:hasTelephone;
-  sh:class vcard:Email;
-#  sh:nodeKind sh:Literal;
+  sh:nodeKind sh:Literal;
   sh:name "has telephone"@en, "har telefon"@nb;
   sh:message "The property vcard:hasTelephone MUST be Literal"@en,
     "Egenskapen vcard:hasTelephone skal være Literal"@nb;
@@ -1150,10 +1294,12 @@ sh:message "The property dct:relation MUST refer to an instance of cpsvno:Servic
 
 :hasMin0MaxNShape-xkosCauses a sh:PropertyShape;
   sh:path xkos:causes;
-  sh:class cv:Event;
+  sh:or ( [sh:class cv:Event]
+      [sh:class cv:LifeEvent]
+      [sh:class cv:BusinessEvent] )  ;
   sh:name "may cause"@en, "kan skape"@nb;
   sh:message "The property xkos:causes MUST be an IRI referring to an instance of cv:Event"@en,
-    "Egenskapen xkos:causes skal være IRI som refererer til instans av cv:Event"@nb;
+    "Egenskapen xkos:causes skal være IRI som refererer til en instans av cv:Event"@nb;
   sh:severity sh:Violation .
 
 
