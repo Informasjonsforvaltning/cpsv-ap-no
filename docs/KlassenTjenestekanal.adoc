@@ -127,7 +127,7 @@ Eksempel i RDF Turtle:
 Eksempel i RDF Turtle:
 -----
 <personligOppmøte> a cv:Channel ;
-   vcard:hasAddress [ a vcard:Organization ;
+   vcard:hasAddress [ a vcard:Address ;
       vcard:street-address "Sivert Nielsens gt. 24" ;
       vcard:locality "Brønnøysund" ;
       vcard:postal-code "8905" ;
