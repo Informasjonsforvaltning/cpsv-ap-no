@@ -21,7 +21,7 @@
    schema:openingHours """Døgnkontinuerlig tjeneste (24-7)."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Round-the-clock service (24-7)."""@en;
-   schema:hoursAvailable <https://example.org/ÅpningstidDøgnkontinuerlig>;
+   schema:hoursAvailable <https://example.org/ApningstidDognkontinuerlig>;
    .
  
 #### End of the file, 2022-02-23 14:50:57
