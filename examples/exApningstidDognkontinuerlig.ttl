@@ -13,8 +13,6 @@
        <https://schema.org/Friday>,
        <https://schema.org/Saturday>,
        <https://schema.org/Sunday>;
-   schema:closes "15:00"^^xsd:time;
-   schema:opens "09:00"^^xsd:time;
    .
  
 #### End of the file, 2022-02-23 16:26:50
