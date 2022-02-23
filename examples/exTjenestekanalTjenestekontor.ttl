@@ -16,7 +16,7 @@
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://example.org/exDokumentasjon>;
    cv:ownedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827>;
-   vcard:hasAddress [ a vcard:Organization ;
+   vcard:hasAddress [ a vcard:Address ;
       vcard:street-address "Sivert Nielsens gt. 24" ;
       vcard:locality "Brønnøysund" ;
       vcard:postal-code "8905" ;
