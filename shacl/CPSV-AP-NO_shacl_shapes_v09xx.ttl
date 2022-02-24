@@ -37,7 +37,7 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
+    dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO, expressed in SHACL."@en ;
     dct:title "SHACL-rules for CPSV-AP-NO"@en ;
     dct:modified "2022-02-24"^^xsd:date ;
@@ -439,9 +439,13 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 
 ### Klassen Virksomhetshendelse (cv:BusinessEvent)
 # det som er spesielt for klassen virksomhetshendelse (i tillegg til klassen Hendelse)
-# :BusinessEventShape a sh:NodeShape;
-#    @@@
-#    sh:targetClass cv:BusinessEvent .
+:BusinessEventShape a sh:NodeShape;
+  sh:name "Business event"@en, "Virksomhetshendelse"@nb;
+  sh:property
+   # optional properties:
+      :HasShapeCV-dctTypeBusinessEventMin0MaxN # type, kontrollert vokabular
+   ;
+ sh:targetClass cv:BusinessEvent .
 
 ##################################
 
@@ -1456,22 +1460,31 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
    );
   sh:severity sh:Violation .
 
+:HasShapeCV-dctTypeBusinessEventMin0MaxN a sh:PropertyShape;
+  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/business-event-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/business-event-type#"@nb;
+  sh:name "business event - type"@en, "virksomhetshendelse - type"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path dct:type;
+  sh:pattern "^https://data.norge.no/vocabulary/business-event-type#";
+  sh:severity sh:Warning .
+
 :HasShapeCV-dctTypeCriterionRequirementMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://fellesdatakatalog.digdir.no/vocabulary/criterion-requirement-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://fellesdatakatalog.digdir.no/vocabulary/criterion-requirement-type#"@nb;
+  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/criterion-requirement-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/criterion-requirement-type#"@nb;
   sh:name "type"@en, "type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
-  sh:pattern "^https://fellesdatakatalog.digdir.no/vocabulary/criterion-requirement-type#";
+  sh:pattern "^https://data.norge.no/vocabulary/criterion-requirement-type#";
   sh:severity sh:Warning .
 
 :HasShapeCV-dctTypeEventMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://fellesdatakatalog.digdir.no/vocabulary/event-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://fellesdatakatalog.digdir.no/vocabulary/event-type#"@nb;
+  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/event-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/event-type#"@nb;
   sh:name "type"@en, "type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
-  sh:pattern "^https://fellesdatakatalog.digdir.no/vocabulary/event-type#";
+  sh:pattern "^https://data.norge.no/vocabulary/event-type#";
   sh:severity sh:Warning .
 
 :HasShapeCV-dctTypeEvidenceMin0Max1 a sh:PropertyShape;
