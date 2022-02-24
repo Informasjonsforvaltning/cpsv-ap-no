@@ -294,7 +294,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 #      :hasMin0MaxNShape-dctLanguage, # språk
       :HasShapeCV-dctLanguageMin0MaxN, # språk, kontrollert vokabular
     # optional properties:
-      :hasMin0MaxNShape-dctType # type
+#      :hasMin0MaxNShape-dctType # type
+      :HasShapeCV-dctTypeRuleMin0MaxN # type kontrollert vokabular
     ;
   sh:targetClass cpsv:Rule .
 
@@ -303,7 +304,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:name "Legal Resource"@en, "Regulativ ressurs"@nb;
   sh:property
     # mandatory properties:
-      :hasMin1MaxNShape-dctType, # type
+#      :hasMin1MaxNShape-dctType, # type
+      :HasShapeCV-dctTypeEventMin0MaxN, # type, kontrollert vokabular
     # recommended properties:
       :hasMin0MaxNShape-dctDescription, # beskrivelse
       :hasMin0MaxNShape-dctIdentifier, # identifikator
@@ -1434,12 +1436,21 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:severity sh:Warning .
 
 :HasShapeCV-dctTypeEventMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/event-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/event-type#"@nb;
+  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/legal-resource-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/legal-resource-type#"@nb;
   sh:name "type"@en, "type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
-  sh:pattern "^https://data.norge.no/vocabulary/event-type#";
+  sh:pattern "^https://data.norge.no/vocabulary/legal-resource-type#";
+  sh:severity sh:Warning .
+
+:HasShapeCV-dctTypeLegalResourceMin0MaxN a sh:PropertyShape;
+  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/rule-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/rule-type#"@nb;
+  sh:name "type"@en, "type"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path dct:type;
+  sh:pattern "^https://data.norge.no/vocabulary/rule-type#";
   sh:severity sh:Warning .
 
 :HasShapeCV-dctTypeLifeEventMin0MaxN a sh:PropertyShape;
@@ -1458,6 +1469,15 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/public-service-type#";
+  sh:severity sh:Warning .
+
+:HasShapeCV-dctTypeRuleMin0MaxN a sh:PropertyShape;
+  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/rule-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/rule-type#"@nb;
+  sh:name "type"@en, "type"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path dct:type;
+  sh:pattern "^https://data.norge.no/vocabulary/rule-type#";
   sh:severity sh:Warning .
 
 :HasShapeCV-orgClassificationMin0MaxN a sh:PropertyShape;
