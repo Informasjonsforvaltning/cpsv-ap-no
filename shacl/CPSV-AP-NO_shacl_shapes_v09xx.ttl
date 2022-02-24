@@ -459,7 +459,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:maxCount 1;
   sh:message "The property adms:status SHOULD appear only once and MUST be instance of skos:Concept"@en ,
     "Egenskapen adms:status kan ha maks 1 verdi som skal være instans av skos:Concept"@nb ;
-  sh:name "status"@en;
+  sh:name "status"@en, "status"@nb;
   sh:path adms:status;
   sh:severity sh:Warning .
 
@@ -1380,7 +1380,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-cccevTypeOfTranslationMin0MaxN a sh:PropertyShape;
   sh:message "The property cccev:typeOfTranslation SHOULD have the following pattern: https://data.norge.no/vocabulary/translation-type#"@en,
    "Egenskapen cccev:typeOfTranslation bør ha følgende mønster: https://data.norge.no/vocabulary/translation-type#"@nb;
-  sh:name "type of copy quality"@en, "kopitype"@nb;
+  sh:name "translation type"@en, "oversettelsestype"@nb;
   sh:nodeKind sh:IRI;
   sh:path cccev:typeOfTranslation;
   sh:pattern "^https://data.norge.no/vocabulary/translation-type#";
@@ -1412,7 +1412,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctAccrualPeriodicityMin0Max1 a sh:PropertyShape;
   sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/dataset/frequency/"@en,
    "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/dataset/frequency/"@nb;
-  sh:name "language"@en, "språk"@nb;
+  sh:name "accrual periodicity"@en, "frekvens"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:accrualPeriodicity;
   sh:maxCount 1;
@@ -1450,7 +1450,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeAgentMin0Max1 a sh:PropertyShape;
   sh:message "The property dct:type may have max. 1 value which MUST have the following pattern: http://purl.org/adms/publishertype/"@en,
    "Egenskapen dct:type kan ha maks. 1 verdi som skal ha følgende mønster: http://purl.org/adms/publishertype/"@nb;
-  sh:name "language"@en, "språk"@nb;
+  sh:name "type"@en, "type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:maxCount 1;
@@ -1472,7 +1472,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeCriterionRequirementMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/criterion-requirement-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/criterion-requirement-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "criterion requirement - type"@en, "vilkår - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/criterion-requirement-type#";
@@ -1481,7 +1481,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeEventMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/event-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/event-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "event - type"@en, "hendelse - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/event-type#";
@@ -1490,7 +1490,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeEvidenceMin0Max1 a sh:PropertyShape;
   sh:message "The property dct:type may have max. 1 value which SHOULD have the following pattern: https://data.norge.no/vocabulary/evidence-type#"@en,
    "Egenskapen dct:type kan ha maks. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/evidence-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "evidence - type"@en, "dokumentasjon - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:maxCount 1;
@@ -1500,7 +1500,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeDocumentReferenceMin0Max1 a sh:PropertyShape;
   sh:message "The property dct:type may have max. 1 value which SHOULD have the following pattern: https://data.norge.no/vocabulary/document-reference-type#"@en,
    "Egenskapen dct:type kan ha maks. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/document-reference-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "document reference - type"@en, "dokumentreferanse - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:maxCount 1;
@@ -1510,7 +1510,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeLegalResourceMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/legal-resource-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/legal-resource-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "legal resource - type"@en, "regulativ ressurs - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/legal-resource-type#";
@@ -1519,7 +1519,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeLifeEventMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/life-event-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/life-event-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "life event - type"@en, "livshendelse - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/life-event-type#";
@@ -1528,7 +1528,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypePublicServiceMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/public-service-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/public-service-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "public service - type"@en, "offentlig tjeneste - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/public-service-type#";
@@ -1537,7 +1537,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeRoleMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/role-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/role-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "role - type"@en, "rolle - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/role-type#";
@@ -1546,7 +1546,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeRuleMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/rule-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/rule-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "rule - type"@en, "regel - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/rule-type#";
@@ -1555,7 +1555,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeServiceMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/service-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/service-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "service - type"@en, "tjeneste - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/service-type#";
@@ -1564,7 +1564,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeServiceChannelMin0Max1 a sh:PropertyShape;
   sh:message "The property dct:type may have max. 1 value which SHOULD have the following pattern: https://data.norge.no/vocabulary/service-channel-type#"@en,
    "Egenskapen dct:type kan ha maks. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/service-channel-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "service channel - type"@en, "tjenestekanal - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:maxCount 1;
@@ -1574,7 +1574,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-dctTypeServiceOutputMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/service-output-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/service-output-type#"@nb;
-  sh:name "type"@en, "type"@nb;
+  sh:name "service outout - type"@en, "tjenesteresultat - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/service-output-type#";
@@ -1583,7 +1583,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
 :HasShapeCV-orgClassificationMin0MaxN a sh:PropertyShape;
   sh:message "The property org:classification MUST have the following pattern: http://purl.org/adms/publishertype/"@en,
    "Egenskapen org:classification skal ha følgende mønster: http://purl.org/adms/publishertype/"@nb;
-  sh:name "language"@en, "språk"@nb;
+  sh:name "organization - classification"@en, "organisasjon - klassifisering"@nb;
   sh:nodeKind sh:IRI;
   sh:path org:classification;
   sh:or (
