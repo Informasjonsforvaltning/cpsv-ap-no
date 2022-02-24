@@ -387,7 +387,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-vcardHasEmail, # har e-post
       :hasMin0MaxNShape-vcardHasTelephone, # har telefon
       :hasMin0MaxNShape-vcardHasURL, # har URL
-      :hasMin0Max1Shape-dctType, # type
+#      :hasMin0Max1Shape-dctType, # type
+      :HasShapeCV-dctTypeServiceChannelMin0Max1, # type, kontrollert vokabular
       :hasMin0MaxNShape-schemaOpeningHours, # åpningstid fritekst
       :hasMin0Max1Shape-schemaHoursAvailable # åpningstid strukturert
     ;
@@ -1489,6 +1490,16 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/service-type#";
+  sh:severity sh:Warning .
+
+:HasShapeCV-dctTypeServiceChannelMin0Max1 a sh:PropertyShape;
+  sh:message "The property dct:type may have max. 1 value which SHOULD have the following pattern: https://data.norge.no/vocabulary/service-channel-type#"@en,
+   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/service-channel-type#"@nb;
+  sh:name "type"@en, "type"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path dct:type;
+  sh:maxCount 1;
+  sh:pattern "^https://data.norge.no/vocabulary/service-channel-type#";
   sh:severity sh:Warning .
 
 :HasShapeCV-orgClassificationMin0MaxN a sh:PropertyShape;
