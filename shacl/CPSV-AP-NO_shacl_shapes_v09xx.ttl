@@ -347,7 +347,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :hasMin0MaxNShape-dctIsPartOfService, # er del av
       :hasMin0MaxNShape-dctHasPartService, # har del
       :hasMin0MaxNShape-foafHomepage, # hjemmeside
-      :hasMin0Max1Shape-admsStatus, # status
+#      :hasMin0Max1Shape-admsStatus, # status
+      :HasShapeCV-admsStatusMin0Max1, # status, kontrollert vokabular
       :hasMin0MaxNShape-cvThematicArea, # temaområde
       :hasMin0MaxNShape-dctType, # type
     # optional properties:
