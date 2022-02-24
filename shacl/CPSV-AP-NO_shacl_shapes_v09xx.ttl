@@ -1210,7 +1210,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:class foaf:Document;
 #  sh:nodeKind sh:IRI;
   sh:name "page"@en, "relatert informasjon"@nb;
-  sh:message "The property foaf:page MUST be a URI refer to an instance of foaf:Document"@en,
+  sh:message "The property foaf:page MUST be a URI referring to an instance of foaf:Document"@en,
     "Egenskapen foaf:page skal være en URI som refererer til en instans av foaf:Document"@nb;
   sh:path foaf:page;
   sh:severity sh:Warning .
