@@ -305,7 +305,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:property
     # mandatory properties:
 #      :hasMin1MaxNShape-dctType, # type
-      :HasShapeCV-dctTypeEventMin0MaxN, # type, kontrollert vokabular
+      :HasShapeCV-dctTypeLegalResourceMin0MaxN, # type, kontrollert vokabular
     # recommended properties:
       :hasMin0MaxNShape-dctDescription, # beskrivelse
       :hasMin0MaxNShape-dctIdentifier, # identifikator
@@ -407,7 +407,8 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
       :HasShapeCV-dctLanguageMin0MaxN, # språk, kontrollert vokabular
     # optional properties:
       :hasMin0MaxNShape-xkosCauses, # kan skape
-      :hasMin0MaxNShape-dctType # type
+#      :hasMin0MaxNShape-dctType # type
+      :HasShapeCV-dctTypeServiceOutputMin0MaxN # type, kontrollert vokabular
     ;
   sh:targetClass cv:Output .
 
@@ -422,15 +423,25 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
     # optional properties:
       :hasMin0MaxNShape-cccevApplicableinPeriodOfTime, # anvendbarhetsperiode
       :hasMin0MaxNShape-cccevExpectedValue, # forventet verdi
-      :hasMin0MaxNShape-cccevTypeOfCopyQuality, # kopitype
+#      :hasMin0MaxNShape-cccevTypeOfCopyQuality, # kopitype
+      :HasShapeCV-cccevTypeOfCopyQualityMin0MaxN, # kopitype, kontrollert vokabular
       :hasMin0MaxNShape-cccevMinimumValue, # nedre verdigrense
-      :hasMin0MaxNShape-cccevLevelOfCertification, # sertifiseringsnivå
-      :hasMin0MaxNShape-dctType, # type
-      :hasMin0MaxNShape-cccevTypeOfTranslation, # type oversettelse
+#      :hasMin0MaxNShape-cccevLevelOfCertification, # sertifiseringsnivå
+      :HasShapeCV-cccevLevelOfCertificationMin0MaxN, # sertifiseringsnivå, kontrollert vokabular
+#      :hasMin0MaxNShape-dctType, # type
+      :HasShapeCV-dctTypeCriterionRequirementMin0MaxN, # type, kontrollert vokabular
+#      :hasMin0MaxNShape-cccevTypeOfTranslation, # type oversettelse
+      :HasShapeCV-cccevTypeOfTranslationMin0MaxN, # type oversettelse, kontrollert vokabular
       :hasMin0MaxNShape-cccevMetByEvidence, # verifisert ved dokumentasjon
       :hasMin0MaxNShape-cccevMaximumValue # øvre verdigrense
     ;
   sh:targetClass cv:CriterionRequirement .
+
+### Klassen Virksomhetshendelse (cv:BusinessEvent)
+# det som er spesielt for klassen virksomhetshendelse (i tillegg til klassen Hendelse)
+# :BusinessEventShape a sh:NodeShape;
+#    @@@
+#    sh:targetClass cv:BusinessEvent .
 
 ##################################
 
@@ -1344,6 +1355,33 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
    ;
   sh:severity sh:Violation .
 
+:HasShapeCV-cccevLevelOfCertificationMin0MaxN a sh:PropertyShape;
+  sh:message "The property cccev:levelOfCertification SHOULD have the following pattern: https://data.norge.no/vocabulary/level-of-certification#"@en,
+   "Egenskapen cccev:levelOfCertification bør ha følgende mønster: https://data.norge.no/vocabulary/level-of-certification#"@nb;
+  sh:name "level of certification"@en, "sertifiseringsnivå"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path cccev:levelOfCertification;
+  sh:pattern "^https://data.norge.no/vocabulary/level-of-certification#";
+  sh:severity sh:Warning .
+
+:HasShapeCV-cccevTypeOfCopyQualityMin0MaxN a sh:PropertyShape;
+  sh:message "The property cccev:typeOfCopyQuality SHOULD have the following pattern: https://data.norge.no/vocabulary/copy-quality-type#"@en,
+   "Egenskapen cccev:typeOfCopyQuality bør ha følgende mønster: https://data.norge.no/vocabulary/copy-quality-type#"@nb;
+  sh:name "type of copy quality"@en, "kopitype"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path cccev:typeOfCopyQuality;
+  sh:pattern "^https://data.norge.no/vocabulary/copy-quality-type#";
+  sh:severity sh:Warning .
+
+:HasShapeCV-cccevTypeOfTranslationMin0MaxN a sh:PropertyShape;
+  sh:message "The property cccev:typeOfTranslation SHOULD have the following pattern: https://data.norge.no/vocabulary/translation-type#"@en,
+   "Egenskapen cccev:typeOfTranslation bør ha følgende mønster: https://data.norge.no/vocabulary/translation-type#"@nb;
+  sh:name "type of copy quality"@en, "kopitype"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path cccev:typeOfTranslation;
+  sh:pattern "^https://data.norge.no/vocabulary/translation-type#";
+  sh:severity sh:Warning .
+
 :HasShapeCV-cvCurrencyMin0Max1 a sh:PropertyShape;
   sh:message "The property cv:currency may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/dataset/currency/"@en,
    "Egenskapen cv:currency kan ha max. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/dataset/currency/"@nb;
@@ -1362,7 +1400,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
    "Egenskapen cv:role skal ha min. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/role-type#"@nb;
   sh:name "role"@en, "rolle"@nb;
   sh:nodeKind sh:IRI;
-  sh:path dct:language;
+  sh:path cv:role;
   sh:minCount 1;
   sh:pattern "^https://data.norge.no/vocabulary/role-type#";
   sh:severity sh:Warning .
@@ -1418,6 +1456,24 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
    );
   sh:severity sh:Violation .
 
+:HasShapeCV-dctTypeCriterionRequirementMin0MaxN a sh:PropertyShape;
+  sh:message "The property dct:type SHOULD have the following pattern: https://fellesdatakatalog.digdir.no/vocabulary/criterion-requirement-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://fellesdatakatalog.digdir.no/vocabulary/criterion-requirement-type#"@nb;
+  sh:name "type"@en, "type"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path dct:type;
+  sh:pattern "^https://fellesdatakatalog.digdir.no/vocabulary/criterion-requirement-type#";
+  sh:severity sh:Warning .
+
+:HasShapeCV-dctTypeEventMin0MaxN a sh:PropertyShape;
+  sh:message "The property dct:type SHOULD have the following pattern: https://fellesdatakatalog.digdir.no/vocabulary/event-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://fellesdatakatalog.digdir.no/vocabulary/event-type#"@nb;
+  sh:name "type"@en, "type"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path dct:type;
+  sh:pattern "^https://fellesdatakatalog.digdir.no/vocabulary/event-type#";
+  sh:severity sh:Warning .
+
 :HasShapeCV-dctTypeEvidenceMin0Max1 a sh:PropertyShape;
   sh:message "The property dct:type may have max. 1 value which SHOULD have the following pattern: https://data.norge.no/vocabulary/evidence-type#"@en,
    "Egenskapen dct:type kan ha maks. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/evidence-type#"@nb;
@@ -1438,22 +1494,13 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:pattern "^https://data.norge.no/vocabulary/document-reference-type#";
   sh:severity sh:Warning .
 
-:HasShapeCV-dctTypeEventMin0MaxN a sh:PropertyShape;
+:HasShapeCV-dctTypeLegalResourceMin0MaxN a sh:PropertyShape;
   sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/legal-resource-type#"@en,
    "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/legal-resource-type#"@nb;
   sh:name "type"@en, "type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/legal-resource-type#";
-  sh:severity sh:Warning .
-
-:HasShapeCV-dctTypeLegalResourceMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/rule-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/rule-type#"@nb;
-  sh:name "type"@en, "type"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path dct:type;
-  sh:pattern "^https://data.norge.no/vocabulary/rule-type#";
   sh:severity sh:Warning .
 
 :HasShapeCV-dctTypeLifeEventMin0MaxN a sh:PropertyShape;
@@ -1472,6 +1519,15 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/public-service-type#";
+  sh:severity sh:Warning .
+
+:HasShapeCV-dctTypeRoleMin0MaxN a sh:PropertyShape;
+  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/role-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/role-type#"@nb;
+  sh:name "type"@en, "type"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path dct:type;
+  sh:pattern "^https://data.norge.no/vocabulary/role-type#";
   sh:severity sh:Warning .
 
 :HasShapeCV-dctTypeRuleMin0MaxN a sh:PropertyShape;
@@ -1500,6 +1556,15 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:path dct:type;
   sh:maxCount 1;
   sh:pattern "^https://data.norge.no/vocabulary/service-channel-type#";
+  sh:severity sh:Warning .
+
+:HasShapeCV-dctTypeServiceOutputMin0MaxN a sh:PropertyShape;
+  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/service-output-type#"@en,
+   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/service-output-type#"@nb;
+  sh:name "type"@en, "type"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path dct:type;
+  sh:pattern "^https://data.norge.no/vocabulary/service-output-type#";
   sh:severity sh:Warning .
 
 :HasShapeCV-orgClassificationMin0MaxN a sh:PropertyShape;
