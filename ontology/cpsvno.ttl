@@ -13,18 +13,18 @@
 ### About this ontology:
 
 <https://data.norge.no/vocabulary/cpsvno#> rdf:type owl:Ontology ;
-                                            owl:versionIRI <cpsvno:v.0.4> ;
-                                            dct:modified "2022-02-04"^^xsd:date ;
+                                            owl:versionIRI <cpsvno:v.0.5> ;
+                                            dct:modified "2022-02-25"^^xsd:date ;
                                             rdfs:comment "Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP."@nb ,
                                                          "Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP"@en ;
                                             rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
                                                              "Norwegian Digitalisation Agency"@en ;
                                             rdfs:label "CPSV-AP-NO"@en ,
                                                        "CPSV-AP-NO"@nb ;
-                                            owl:versionInfo """V.0.4:
+                                            owl:versionInfo """V.0.5:
 - Fremdeles ikke komplett, bare som et kontrollert vokabular.
 - kontrollert vokabular utgår, peker til det nye med den nye URI."""@nb ,
-                                                            """V.0.4:
+                                                            """V.0.5:
 - Still incomplete, only as a controlled vocabulary.
 - Controlled vocabulary deprecated, pointing to a new one with the new URI."""@en .
 
