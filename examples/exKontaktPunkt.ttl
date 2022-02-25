@@ -10,9 +10,9 @@
    schema:hoursAvailable <https://example.org/ApningstidResepsjon>;
    vcard:hasURL <https://www.bronnoy.kommune.no/>;
    vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no"^^xsd:anyURI;
-   vcard:hasLanguage "Bokmål (nb)"^^xsd:anyURI,
-       "Nynorsk (nn)"^^xsd:anyURI,
-       "English (en)"^^xsd:anyURI;
+   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>,
+       <http://publications.europa.eu/resource/authority/language/NNO>,
+       <http://publications.europa.eu/resource/authority/language/ENG>;
    vcard:hasOganizationName """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy Municipality"""@en;
