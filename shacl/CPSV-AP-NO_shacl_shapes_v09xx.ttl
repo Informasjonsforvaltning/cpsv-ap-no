@@ -40,7 +40,7 @@
     dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO, expressed in SHACL."@en ;
     dct:title "SHACL-rules for CPSV-AP-NO"@en ;
-    dct:modified "2022-02-24"^^xsd:date ;
+    dct:modified "2022-02-25"^^xsd:date ;
     owl:versionInfo "0.9.03" ;
     adms:versionNotes "More rules added/adjuested. With some check on usage of controlled vocabulary."@en ,
         "Flere regler føyet til / justert. Noen sjekk på bruk av kontrollerte vokabularer."@nb ;
@@ -1193,8 +1193,8 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:class foaf:Document;
 #  sh:nodeKind sh:IRI;
   sh:name "homepage"@en, "hjemmeside"@nb;
-  sh:message "The property foaf:homepag MUST be an IRI"@en,
-    "Egenskapen foaf:homepag skal være en IRI"@nb;
+  sh:message "The property foaf:homepag MUST be an IRI referring to an instance of foaf:Document"@en,
+    "Egenskapen foaf:homepag skal være en IRI som refererer til en instans av foaf:Document"@nb;
   sh:path foaf:homepage;
   sh:severity sh:Warning .
 
