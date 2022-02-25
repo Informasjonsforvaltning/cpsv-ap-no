@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.3.0.3 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.3.0.3 (Windows)"/>
 	<meta name="created" content="00:00:00"/>
 	<meta name="changed" content="00:00:00"/>
 	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 0.79in }
-		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
 		pre { background: transparent }
 		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
-		pre.cjk { font-family: "Noto Sans Mono CJK SC", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
 		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
 	</style>
 </head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">@prefix : &lt;https://data.norge.no/vocabulary/cpsvno#&gt; .
+<body lang="nb-NO" link="#000080" vlink="#800000" dir="ltr"><pre class="western">@prefix : &lt;https://data.norge.no/vocabulary/cpsvno#&gt; .
 @prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
@@ -30,18 +30,18 @@
 ### About this ontology:
 
 &lt;https://data.norge.no/vocabulary/cpsvno#&gt; rdf:type owl:Ontology ;
-                                            owl:versionIRI &lt;cpsvno:v.0.4&gt; ;
-                                            dct:modified &quot;2022-02-04&quot;^^xsd:date ;
+                                            owl:versionIRI &lt;cpsvno:v.0.5&gt; ;
+                                            dct:modified &quot;2022-02-25&quot;^^xsd:date ;
                                             rdfs:comment &quot;Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP.&quot;@nb ,
                                                          &quot;Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP&quot;@en ;
                                             rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb ,
                                                              &quot;Norwegian Digitalisation Agency&quot;@en ;
                                             rdfs:label &quot;CPSV-AP-NO&quot;@en ,
                                                        &quot;CPSV-AP-NO&quot;@nb ;
-                                            owl:versionInfo &quot;&quot;&quot;V.0.4:
+                                            owl:versionInfo &quot;&quot;&quot;V.0.5:
 - Fremdeles ikke komplett, bare som et kontrollert vokabular.
-- kontrollert vokabular utgår, peker til det nye med den nye URI.&quot;&quot;&quot;@nb ,
-                                                            &quot;&quot;&quot;V.0.4:
+- kontrollert vokabular utg&aring;r, peker til det nye med den nye URI.&quot;&quot;&quot;@nb ,
+                                                            &quot;&quot;&quot;V.0.5:
 - Still incomplete, only as a controlled vocabulary.
 - Controlled vocabulary deprecated, pointing to a new one with the new URI.&quot;&quot;&quot;@en .
 
@@ -72,7 +72,7 @@ skos:Concept rdf:type owl:Class .
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure
 cpsvno:ruleForDisclosure rdf:type owl:NamedIndividual ,
                                   skos:Concept ;
-    adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+    adms:status &lt;http://publications.europa.eu/resource/authority/concept-status/RETIRED&gt; ;
     dct:isReplacedBy &lt;https://data.norge.no/vocabulary/rule-type#disclosure-rule&gt; ;
                          rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb ,
                                           &quot;Norwegian Digitalisation Agency&quot;@en ;
@@ -85,7 +85,7 @@ cpsvno:ruleForDisclosure rdf:type owl:NamedIndividual ,
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure
 cpsvno:ruleForNonDisclosure rdf:type owl:NamedIndividual ,
                                      skos:Concept ;
-    adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+    adms:status &lt;http://publications.europa.eu/resource/authority/concept-status/RETIRED&gt; ;
     dct:isReplacedBy &lt;https://data.norge.no/vocabulary/rule-type#non-disclosure-rule&gt; ;
                             rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb ,
                                              &quot;Norwegian Digitalisation Agency&quot;@en ;
@@ -96,7 +96,7 @@ cpsvno:ruleForNonDisclosure rdf:type owl:NamedIndividual ,
 
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing
 cpsvno:ruleForDataProcessing rdf:type owl:NamedIndividual , skos:Concept ;
-    adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+    adms:status &lt;http://publications.europa.eu/resource/authority/concept-status/RETIRED&gt; ;
     dct:isReplacedBy &lt;https://data.norge.no/vocabulary/rule-type#data-processing-rule&gt; ;
     rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb , &quot;Norwegian Digitalisation Agency&quot;@en ;
     skos:definition &quot;regel som regulerer behandling av data, spesielt personopplysninger&quot;@nb ,

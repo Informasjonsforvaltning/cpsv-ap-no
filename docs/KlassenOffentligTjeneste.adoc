@@ -14,7 +14,7 @@ image::images/KlassenOffentligTjeneste.png[]
 |Subklasse av / Subclass of|cpsvno:Service
 |Kravsnivå|Anbefalt/Recommended
 |Merknad |Norsk utvidelse: Kravsnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også kal kunne brukes til å beskrive tjenester ikke er offentlige tjenester.
-|Remark | Norwegian extension: Minimum requirement changed from mandatory to recommended, such that the specification may also be usedto describe services that are not public services.
+|Remark | Norwegian extension: Minimum requirement changed from mandatory to recommended, such that the specification may also be used to describe services that are not public services.
 |Eksempel|Skjenkebevilling
 |===
 
@@ -124,7 +124,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
-|Eksempel|«Sskjenkebevilling»
+|Eksempel|«Skjenkebevilling»
 |===
 
 Eksempel i RDF Turtle:
@@ -205,7 +205,7 @@ Eksempel i RDF Turtle:
    .
 ----
 
-==== Offentlig tjeneste – dokumentasjonskrav (cv:hasInput) [[OffentligTjeneste-dokumentasjonskrav]]
+==== Offentlig tjeneste – dokumentasjonskrav (cpsv:hasInput) [[OffentligTjeneste-dokumentasjonskrav]]
 
 [cols="30s,70d"]
 |===
@@ -519,7 +519,7 @@ Eksempel i RDF Turtle:
 |URI|dct:requires
 |Range|cpsvno:Service
 |Anvendelse|Brukes til å referere til en eller flere andre tjenester som denne tjenesten krever utført først, eller som denne tjenesten på en eller annen måte bruker resultat fra.
-|Usage note|One Public Service may require, or in some way make use of, the output of one or several other Public Services. In this case, for a Public Service to be executed, another Public Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input.
+|Usage note|One Public Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Public Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: Range endret fra `cpsv:PublicService` til `cpsvno:Service`, som en følge av den norsk utvidelse av å tilføye <<Tjeneste>>.
@@ -603,7 +603,7 @@ Eksempel i RDF Turtle:
 |URI|dct:relation
 |Range|cpsvno:Service
 |Anvendelse|Brukes til å referere til en eller flere andre relaterte tjenester.
-|Usage note|This property represents a Public Service related to the particular instance of the Public Service class.
+|Usage note|This property represents a Service related to the particular instance of the Public Service class.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad 1| Vurder å bruke egenskapen <<OffentligTjeneste-krever>> der det er avhengighet mellom tjenestene.

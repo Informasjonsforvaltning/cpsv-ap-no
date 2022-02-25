@@ -205,7 +205,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
-|Remarks|The Participation class (`cv:Participation`) facilitates the detailed description of how an Agent / Public Organisation participates in or interacts with a (Public) Service and may include temporal and spatial constraints on that participation.
+|Remarks|The Participation class (`cv:Participation`) facilitates the detailed description of how an Agent / Public Organisation participates in or interacts with a Service and may include temporal and spatial constraints on that participation.
 |Eksempel|Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 

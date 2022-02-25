@@ -9,7 +9,7 @@ image::images/KlassenKatalog.png[]
 |===
 |English name|Catalog
 |Anvendelse|Brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over tjenester og hendelser.
-|Usage note|To represent a catalog, in context of this specification a catalog of events and (public) services.
+|Usage note|To represent a catalog, in context of this specification a catalog of events and services.
 |URI|dcat:Catalog
 |Kravsnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: EUs CPSV-AP dekker ikke katalogbeskrivelse. Denne klassen fra DCAT-AP-NO tas med her for å kunne denne norsk behov for å beskrive «tjeneste-/hendelseskataloger».
@@ -94,8 +94,8 @@ Eksempel i RDF Turtle:
 |URI|dcatno:containsService
 |Subegenskap av / Subproperty of |dct:hasPart
 |Range|cpsvno:Service
-|Anvendelse|Brukes til å referere til en (offentlig) tjeneste som er i katalogen.
-|Usage note|To refer to a (public) service that is in the catalog.
+|Anvendelse|Brukes til å referere til en tjeneste som er i katalogen.
+|Usage note|To refer to a service that is in the catalog.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
