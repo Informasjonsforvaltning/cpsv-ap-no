@@ -9,13 +9,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
-<https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827>
+<https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>
    rdf:type cv:PublicOrganisation;
    dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
    skos:prefLabel """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy kommune"""@en;
-   dct:identifier <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827>;
+   dct:identifier <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
    dct:title """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy kommune"""@en;
