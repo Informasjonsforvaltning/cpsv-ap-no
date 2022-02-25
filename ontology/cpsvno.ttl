@@ -55,7 +55,7 @@ skos:Concept rdf:type owl:Class .
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure
 cpsvno:ruleForDisclosure rdf:type owl:NamedIndividual ,
                                   skos:Concept ;
-    adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED> ;
+    adms:status <http://publications.europa.eu/resource/authority/concept-status/RETIRED> ;
     dct:isReplacedBy <https://data.norge.no/vocabulary/rule-type#disclosure-rule> ;
                          rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
                                           "Norwegian Digitalisation Agency"@en ;
@@ -68,7 +68,7 @@ cpsvno:ruleForDisclosure rdf:type owl:NamedIndividual ,
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure
 cpsvno:ruleForNonDisclosure rdf:type owl:NamedIndividual ,
                                      skos:Concept ;
-    adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED> ;
+    adms:status <http://publications.europa.eu/resource/authority/concept-status/RETIRED> ;
     dct:isReplacedBy <https://data.norge.no/vocabulary/rule-type#non-disclosure-rule> ;
                             rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
                                              "Norwegian Digitalisation Agency"@en ;
@@ -79,7 +79,7 @@ cpsvno:ruleForNonDisclosure rdf:type owl:NamedIndividual ,
 
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing
 cpsvno:ruleForDataProcessing rdf:type owl:NamedIndividual , skos:Concept ;
-    adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED> ;
+    adms:status <http://publications.europa.eu/resource/authority/concept-status/RETIRED> ;
     dct:isReplacedBy <https://data.norge.no/vocabulary/rule-type#data-processing-rule> ;
     rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     skos:definition "regel som regulerer behandling av data, spesielt personopplysninger"@nb ,
