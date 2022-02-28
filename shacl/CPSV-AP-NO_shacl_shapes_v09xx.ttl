@@ -40,7 +40,7 @@
     dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO, expressed in SHACL."@en ;
     dct:title "SHACL-rules for CPSV-AP-NO"@en ;
-    dct:modified "2022-02-25"^^xsd:date ;
+    dct:modified "2022-02-28"^^xsd:date ;
     owl:versionInfo "0.9.03" ;
     adms:versionNotes "More rules added/adjuested. With some check on usage of controlled vocabulary."@en ,
         "Flere regler føyet til / justert. Noen sjekk på bruk av kontrollerte vokabularer."@nb ;
@@ -1387,15 +1387,15 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:severity sh:Warning .
 
 :HasShapeCV-cvCurrencyMin0Max1 a sh:PropertyShape;
-  sh:message "The property cv:currency may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/dataset/currency/"@en,
-   "Egenskapen cv:currency kan ha max. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/dataset/currency/"@nb;
+  sh:message "The property cv:currency may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/authority/currency/"@en,
+   "Egenskapen cv:currency kan ha max. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/authority/currency/"@nb;
   sh:name "currency"@en, "valuta"@nb;
   sh:nodeKind sh:IRI;
   sh:path cv:currency;
   sh:maxCount 1;
   sh:or (
-   [sh:pattern "^http://publications.europa.eu/resource/dataset/currency/"]
-   [sh:pattern "^https://publications.europa.eu/resource/dataset/currency/"] )
+   [sh:pattern "^http://publications.europa.eu/resource/authority/currency/"]
+   [sh:pattern "^https://publications.europa.eu/resource/authority/currency/"] )
    ;
   sh:severity sh:Violation .
 
@@ -1410,15 +1410,15 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:severity sh:Warning .
 
 :HasShapeCV-dctAccrualPeriodicityMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/dataset/frequency/"@en,
-   "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/dataset/frequency/"@nb;
+  sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/authority/frequency/"@en,
+   "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/authority/frequency/"@nb;
   sh:name "accrual periodicity"@en, "frekvens"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:accrualPeriodicity;
   sh:maxCount 1;
   sh:or (
-   [sh:pattern "^http://publications.europa.eu/resource/dataset/frequency/"]
-   [sh:pattern "^https://publications.europa.eu/resource/dataset/frequency/"]
+   [sh:pattern "^http://publications.europa.eu/resource/authority/frequency/"]
+   [sh:pattern "^https://publications.europa.eu/resource/authority/frequency/"]
    );
   sh:severity sh:Violation .
 
