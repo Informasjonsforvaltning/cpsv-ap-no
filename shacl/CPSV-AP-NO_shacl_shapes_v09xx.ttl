@@ -616,22 +616,22 @@ sh:targetClass cv:BusinessEvent .
 :hasMin0MaxNShape-cpsvnoMayInitiate a sh:PropertyShape;
   sh:or (
     [sh:class cpsvno:Service]
-    [sh:class cpsv:PublicSerivce] );
+    [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
   sh:name "may initiate"@en, "kan sette i gang"@nb;
-  sh:message "The property cpsvno:mayInitiate MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicSerivce"@en,
-    "Egenskapen cpsvno:mayInitiate skal være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
+  sh:message "The property cpsvno:mayInitiate MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicService"@en,
+    "Egenskapen cpsvno:mayInitiate skal være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:path cpsvno:mayInitiate;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cpsvnoTriggersNeedFor a sh:PropertyShape;
   sh:or (
     [sh:class cpsvno:Service]
-    [sh:class cpsv:PublicSerivce] );
+    [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
   sh:name "triggers need for"@en, "utløser behov for"@nb;
-  sh:message "The property cpsvno:triggersNeedFor MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicSerivce"@en,
-    "Egenskapen cpsvno:triggersNeedFor skal være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
+  sh:message "The property cpsvno:triggersNeedFor MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicService"@en,
+    "Egenskapen cpsvno:triggersNeedFor skal være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:path cpsvno:mayInitiate;
   sh:severity sh:Violation .
 
@@ -894,11 +894,11 @@ sh:targetClass cv:BusinessEvent .
 
 :hasMin1MaxNShape-dcatnoContainsService a sh:PropertyShape;
    sh:name "servicve"@en, "inneholder tjeneste"@nb;
-   sh:message "The property dcatno:containsService MUST have min 1. value which MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicSerivce",
-      "Egenskapen dcatno:containsService SKAL have min 1. verdi som SKAL være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
+   sh:message "The property dcatno:containsService MUST have min 1. value which MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicService",
+      "Egenskapen dcatno:containsService SKAL have min 1. verdi som SKAL være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
    sh:or (
       [sh:class cpsvno:Service]
-      [sh:class cpsv:PublicSerivce] );
+      [sh:class cpsv:PublicService] );
    sh:path dcatno:containsService;
    sh:minCount 1;
    sh:severity sh:Violation .
