@@ -133,7 +133,7 @@
   sh:targetClass cv:Cost .
 
 ### Felles for Klassene Hendelse (cv:Event), Livshendelse (cv:LifeEvent), Virksomhetshendelse (cv:BusinessEvent)
-:EventShape a sh:NodeShape;
+:EventAndSubclassesShape a sh:NodeShape;
   sh:name "Event, Live Event, Business Event"@en, "Hendelse, Livshendelse, Virksomhetshendelse"@nb;
   sh:property
     # mandatory properties:
@@ -204,10 +204,10 @@
     ;
   sh:targetClass vcard:Kind .
 
-### Klassen Livshendelse (cv:LifeEvent) og Virksomhetshendelse (cv:BusinessEvent)
+### Klassen Livshendelse (cv:LifeEvent)
 # det som er i tillegg til / forskjellig fra klassen Hendelse (cv:Event)
-:EventShape a sh:NodeShape;
-sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
+:LifeEventShape a sh:NodeShape;
+sh:name "Life Event"@en, "Livshendelse"@nb;
   sh:property
    # recommended properties:
       :hasMin0MaxNShape-cpsvnoTriggersNeedFor, # utløser behov for
