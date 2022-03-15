@@ -214,9 +214,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
    # optional properties:
       :HasShapeCV-dctTypeLifeEventMin0MaxN # type, kontrollert vokabular
     ;
-  sh:or (
-    [sh:targetClass cv:LifeEvent]
-    [sh:targetClass cv:BusinessEvent] ).
+  sh:targetClass cv:LifeEvent .
 
 ### Klassen Offentlig organisasjon (cv:PublicOrganisation)
 :PublicOrganizationShape a sh:NodeShape;
@@ -443,9 +441,11 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:name "Business event"@en, "Virksomhetshendelse"@nb;
   sh:property
    # optional properties:
-      :HasShapeCV-dctTypeBusinessEventMin0MaxN # type, kontrollert vokabular
-   ;
- sh:targetClass cv:BusinessEvent .
+      :HasShapeCV-dctTypeBusinessEventMin0MaxN, # type kontrollert vokabular
+ # optional properties:
+    :HasShapeCV-dctTypeBusinessEventMin0MaxN # type kontrollert vokabular
+    ;
+sh:targetClass cv:BusinessEvent .
 
 ##################################
 
