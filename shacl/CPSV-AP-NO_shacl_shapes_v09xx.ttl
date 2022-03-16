@@ -21,7 +21,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 @prefix cpsvno: <https://data.norge.no/vocabulary/cpsvno#> .
-@prefix : <https://data.norge.no/vocabulary/cpsvno#> .
+@prefix : <https://data.norge.no/vocabulary/cpsvno-shacl#> .
 
 ### About this SHACL:
 <https://github.com/Informasjonsforvaltning/cpsv-ap-no/tree/develop/shacl/>
@@ -40,10 +40,10 @@
     dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO, expressed in SHACL."@en ;
     dct:title "SHACL-rules for CPSV-AP-NO"@en ;
-    dct:modified "2022-03-15"^^xsd:date ;
+    dct:modified "2022-03-16"^^xsd:date ;
     owl:versionInfo "0.9.04" ;
-    adms:versionNotes "More rules added/adjuested. With some check on usage of controlled vocabulary."@en ,
-        "Flere regler føyet til / justert. Noen sjekk på bruk av kontrollerte vokabularer."@nb ;
+    adms:versionNotes "As complete as it could be."@en ,
+        "Så komplett som det kan være."@nb ;
     foaf:homepage <https://data.norge.no/specification/cpsv-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
