@@ -598,7 +598,7 @@ sh:targetClass cv:BusinessEvent .
   sh:minCount 1;
   sh:name "produces"@en, "produserer"@nb;
   sh:message "The property cpsv:produces MUST have min. 1 value which MUST be a URI referring to an instance of cv:Output or dcat:Dataset"@en,
-    "Egenskapen cpsv:produces skal ha min. 1 verdi som skal være en URI som refererer til istans av cv:Output eller dcat:Dataset"@nb;
+    "Egenskapen cpsv:produces skal ha min. 1 verdi som skal være en URI som refererer til instans av cv:Output eller dcat:Dataset"@nb;
   sh:path cpsv:produces;
   sh:severity sh:Violation .
 
