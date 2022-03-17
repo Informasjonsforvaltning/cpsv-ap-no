@@ -9,6 +9,7 @@
    rdf:type dct:PeriodOfTime;
    dcat:endDate "2024-12-31"^^xsd:date;
    dcat:startDate "2020-01-01"^^xsd:date;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTidsrom.ttl"^^xsd:anyURI;
    .
  
-#### End of the file, 2022-03-15 17:07:43
+#### End of the file, 2022-03-17 10:23:20
