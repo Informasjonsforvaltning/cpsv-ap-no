@@ -94,13 +94,13 @@ locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
        """This is a dummy business event that can be used in connection with testing CPSV-AP-NO when there is a need for a relationship to a business event."""@en;
    .
  
-<https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/983887406>
+<https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983887406>
    rdf:type cv:PublicOrganisation;
    dct:spatial <https://data.geonorge.no/administrativeEnheter/nasjon/id/173163>;
    skos:prefLabel """Helse- og omsorgsdepartementet"""@nb,
        """Helse- og omsorgsdepartementet"""@nn,
        """Ministry of Health and Care Services"""@en;
-   dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/983887406"^^xsd:anyURI;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983887406"^^xsd:anyURI;
    dct:title """Helse- og omsorgsdepartementet"""@nb,
        """Helse- og omsorgsdepartementet"""@nn,
        """Ministry of Health and Care Services"""@en;
@@ -110,13 +110,13 @@ locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
    org:classification <http://purl.org/adms/publishertype/NationalAuthority>;
    .
  
-<https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/982531950>
+<https://organization-catalog.fellesdatakatalog.digdir.no/organizations/982531950>
    rdf:type cv:PublicOrganisation;
    dct:spatial <https://data.geonorge.no/administrativeEnheter/nasjon/id/173163>;
    skos:prefLabel """Politidirektoratet"""@nb,
        """Politidirektoratet"""@nn,
        """National Police Directorate"""@en;
-   dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/982531950"^^xsd:anyURI;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/982531950"^^xsd:anyURI;
    dct:title """Politidirektoratet"""@nb,
        """Politidirektoratet"""@nn,
        """National Police Directorate"""@en;
@@ -203,7 +203,7 @@ locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
        """Teksten blir vist på nynorsk."""@nn,
        """The text is displayed in English."""@en;
    cv:currency <http://publications.europa.eu/resource/authority/currency/NOK>;
-   cv:isDefinedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/983887406>;
+   cv:isDefinedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983887406>;
    cv:ifAccessedThrough <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl>;
    .
  
@@ -265,13 +265,13 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl"^^xsd:anyURI;
    .
  
-<https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>
+<https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291>
    rdf:type cv:PublicOrganisation;
    dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
    skos:prefLabel """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy Municipality"""@en;
-   dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291"^^xsd:anyURI;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291"^^xsd:anyURI;
    dct:title """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy Municipality"""@en;
@@ -319,7 +319,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:description """Bevilling for skjenking av alkoholholdig drikk, enten som alminnelig bevilling eller som bevilling for lukket selskap."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """The text is displayed in English."""@en;
-   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
+   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligTjeneste.ttl"^^xsd:anyURI;
    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>;
    dct:title """Skjenkebevilling"""@nb,
@@ -422,7 +422,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:processingTime "PD3"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
+   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291>;
    vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no"^^vcard:Email;
    dct:type <https://data.norge.no/vocabulary/service-channel-type#e-mail>;
    schema:openingHours """Døgnkontinuerlig tjeneste (24-7)."""@nb,
@@ -437,7 +437,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:processingTime "PD6"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
+   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291>;
    vcard:hasTelephone """tel:+4775012000""";
    dct:type <https://data.norge.no/vocabulary/service-channel-type#telephone>;
    schema:openingHours """Telefonen er åpen mandag - fredag: kl  09:00 - 15:00."""@nb,
@@ -453,7 +453,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:processingTime "PD5"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
+   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291>;
    vcard:hasAddress [ a vcard:Address ;
       vcard:street-address "Sivert Nielsens gt. 24" ;
       vcard:locality "Brønnøysund" ;
@@ -473,7 +473,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:processingTime "PD1"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
+   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291>;
    vcard:hasURL <https://kommune24-7.no/1813>;
    dct:type <https://data.norge.no/vocabulary/service-channel-type#online-service>;
    schema:openingHours """Døgnkontinuerlig tjeneste (24-7)."""@nb,
@@ -608,4 +608,4 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerStengt.ttl"^^xsd:anyURI;
    .
  
-#### End of the file, 2022-03-16 13:30:58
+#### End of the file, 2022-03-17 12:04:32
