@@ -13,7 +13,7 @@
        """Teksten blir vist på nynorsk."""@nn,
        """The text is displayed in English."""@en;
    cv:currency <http://publications.europa.eu/resource/authority/currency/NOK>;
-   cv:isDefinedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/983887406>;
+   cv:isDefinedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983887406>;
    cv:ifAccessedThrough <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl>;
    .
  
