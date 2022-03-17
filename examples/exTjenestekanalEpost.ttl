@@ -15,7 +15,7 @@
    cv:processingTime "PD3"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
+   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291>;
    vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no"^^vcard:Email;
    dct:type <https://data.norge.no/vocabulary/service-channel-type#e-mail>;
    schema:openingHours """Døgnkontinuerlig tjeneste (24-7)."""@nb,
