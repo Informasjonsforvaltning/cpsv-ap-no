@@ -16,7 +16,7 @@
        """The text is displayed in English."""@en;
    cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligTjeneste.ttl"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/KontaktPunkt>;
+   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>;
    dct:title """Skjenkebevilling"""@nb,
        """Skjenkjeløyve"""@nn,
        """Liquor license"""@en;
@@ -55,4 +55,4 @@
    cv:hasCriterion <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>;
    .
  
-#### End of the file, 2022-03-15 15:18:54
+#### End of the file, 2022-03-17 09:51:21
