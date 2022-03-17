@@ -15,7 +15,7 @@
    cv:processingTime "PD6"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
+   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291>;
    vcard:hasTelephone """tel:+4775012000""";
    dct:type <https://data.norge.no/vocabulary/service-channel-type#telephone>;
    schema:openingHours """Telefonen er åpen mandag - fredag: kl  09:00 - 15:00."""@nb,
