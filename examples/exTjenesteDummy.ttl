@@ -15,7 +15,7 @@
        """The text is displayed in English."""@en;
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunktDummy.ttl>;
+   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktpunktDummy.ttl>;
    dct:title """Dummytjeneste"""@nb,
        """Dummytjeneste"""@nn,
        """Dummy service"""@en;
@@ -24,4 +24,4 @@
        <http://publications.europa.eu/resource/authority/language/NOB>;
    .
  
-#### End of the file, 2022-03-16 08:06:37
+#### End of the file, 2022-03-18 16:18:46
