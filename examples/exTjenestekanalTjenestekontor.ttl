@@ -15,7 +15,7 @@
    cv:processingTime "PD5"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjon.ttl>;
+   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
    vcard:hasAddress [ a vcard:Address ;
       vcard:street-address "Sivert Nielsens gt. 24" ;
       vcard:locality "Brønnøysund" ;
@@ -29,4 +29,4 @@
    schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerStengt.ttl>;
    .
  
-#### End of the file, 2022-03-21 15:16:38
+#### End of the file, 2022-03-22 08:53:56

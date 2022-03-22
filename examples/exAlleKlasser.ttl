@@ -93,13 +93,13 @@ locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
        """This is a dummy business event that can be used in connection with testing CPSV-AP-NO when there is a need for a relationship to a business event."""@en;
    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjonHOD.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonHOD.ttl>
    rdf:type cv:PublicOrganisation;
-   dct:spatial <https://data.geonorge.no/administrativeEnheter/nasjon/id/173163>;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
    skos:prefLabel """Helse- og omsorgsdepartementet"""@nb,
        """Helse- og omsorgsdepartementet"""@nn,
        """Ministry of Health and Care Services"""@en;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjonHOD.ttl"^^xsd:anyURI;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonHOD.ttl"^^xsd:anyURI;
    dct:title """Helse- og omsorgsdepartementet"""@nb,
        """Helse- og omsorgsdepartementet"""@nn,
        """Ministry of Health and Care Services"""@en;
@@ -109,13 +109,13 @@ locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
    org:classification <http://purl.org/adms/publishertype/NationalAuthority>;
    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjonPoliti.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonPoliti.ttl>
    rdf:type cv:PublicOrganisation;
-   dct:spatial <https://data.geonorge.no/administrativeEnheter/nasjon/id/173163>;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
    skos:prefLabel """Politidirektoratet"""@nb,
        """Politidirektoratet"""@nn,
        """National Police Directorate"""@en;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjonPoliti.ttl"^^xsd:anyURI;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonPoliti.ttl"^^xsd:anyURI;
    dct:title """Politidirektoratet"""@nb,
        """Politidirektoratet"""@nn,
        """National Police Directorate"""@en;
@@ -202,7 +202,7 @@ locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
        """Teksten blir vist på nynorsk."""@nn,
        """The text is displayed in English."""@en;
    cv:currency <http://publications.europa.eu/resource/authority/currency/NOK>;
-   cv:isDefinedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjonHOD.ttl>;
+   cv:isDefinedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonHOD.ttl>;
    cv:ifAccessedThrough <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl>;
    .
  
@@ -263,13 +263,14 @@ odrl:attributionURL <https://digdir.no/> ; ];
    vcard:hasTelephone """tel:+4775012000""";
    .
  
-<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjon.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>
    rdf:type cv:PublicOrganisation;
-   dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
+       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
    skos:prefLabel """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy Municipality"""@en;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjon.ttl"^^xsd:anyURI;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl"^^xsd:anyURI;
    dct:title """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy Municipality"""@en;
@@ -326,7 +327,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl>;
    dct:subject <https://data.norge.no/concepts/ac03f19d-8e73-4723-a509-933598ed8252>,
        <https://data.norge.no/concepts/c2b2848e-5aa8-4ebb-8983-f0972b49611d>;
-   dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
+       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
    dct:isPartOf <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:hasPart <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
@@ -419,7 +421,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:processingTime "PD3"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjon.ttl>;
+   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
    vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no"^^vcard:Email;
    dct:type <https://data.norge.no/vocabulary/service-channel-type#e-mail>;
    schema:openingHours """Døgnkontinuerlig tjeneste (24-7)."""@nb,
@@ -434,7 +436,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:processingTime "PD6"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjon.ttl>;
+   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
    vcard:hasTelephone """tel:+4775012000""";
    dct:type <https://data.norge.no/vocabulary/service-channel-type#telephone>;
    schema:openingHours """Telefonen er åpen mandag - fredag: kl  09:00 - 15:00."""@nb,
@@ -450,7 +452,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:processingTime "PD5"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjon.ttl>;
+   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
    vcard:hasAddress [ a vcard:Address ;
       vcard:street-address "Sivert Nielsens gt. 24" ;
       vcard:locality "Brønnøysund" ;
@@ -470,7 +472,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:processingTime "PD1"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjon.ttl>;
+   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
    vcard:hasURL <https://kommune24-7.no/1813>;
    dct:type <https://data.norge.no/vocabulary/service-channel-type#online-service>;
    schema:openingHours """Døgnkontinuerlig tjeneste (24-7)."""@nb,
@@ -600,4 +602,4 @@ odrl:attributionURL <https://digdir.no/> ; ];
    schema:dayOfWeek <https://schema.org/PublicHolidays>;
    .
  
-#### End of the file, 2022-03-21 15:15:40
+#### End of the file, 2022-03-22 08:53:46

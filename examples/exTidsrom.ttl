@@ -11,4 +11,4 @@
    dcat:startDate "2020-01-01"^^xsd:date;
    .
  
-#### End of the file, 2022-03-21 15:16:38
+#### End of the file, 2022-03-22 08:53:56

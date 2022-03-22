@@ -13,8 +13,8 @@
        """Teksten blir vist på nynorsk."""@nn,
        """The text is displayed in English."""@en;
    cv:currency <http://publications.europa.eu/resource/authority/currency/NOK>;
-   cv:isDefinedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjonHOD.ttl>;
+   cv:isDefinedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonHOD.ttl>;
    cv:ifAccessedThrough <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl>;
    .
  
-#### End of the file, 2022-03-21 15:16:38
+#### End of the file, 2022-03-22 08:53:56

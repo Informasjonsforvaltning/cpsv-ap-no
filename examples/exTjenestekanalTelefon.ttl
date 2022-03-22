@@ -15,7 +15,7 @@
    cv:processingTime "PD6"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
-   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/OffentligOrganisasjon.ttl>;
+   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
    vcard:hasTelephone """tel:+4775012000""";
    dct:type <https://data.norge.no/vocabulary/service-channel-type#telephone>;
    schema:openingHours """Telefonen er åpen mandag - fredag: kl  09:00 - 15:00."""@nb,
@@ -25,4 +25,4 @@
    schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerBegrenset.ttl>;
    .
  
-#### End of the file, 2022-03-21 15:16:38
+#### End of the file, 2022-03-22 08:53:56

@@ -23,7 +23,8 @@
    cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl>;
    dct:subject <https://data.norge.no/concepts/ac03f19d-8e73-4723-a509-933598ed8252>,
        <https://data.norge.no/concepts/c2b2848e-5aa8-4ebb-8983-f0972b49611d>;
-   dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
+       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
    dct:isPartOf <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:hasPart <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
@@ -55,4 +56,4 @@
    cv:hasCriterion <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>;
    .
  
-#### End of the file, 2022-03-21 15:16:38
+#### End of the file, 2022-03-22 08:53:56
