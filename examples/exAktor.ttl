@@ -19,4 +19,4 @@ locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
    cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenesteMottaker.ttl>;
    .
  
-#### End of the file, 2022-03-22 08:53:56
+#### End of the file, 2022-03-24 13:24:44

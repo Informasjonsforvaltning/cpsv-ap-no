@@ -99,7 +99,7 @@ locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
    skos:prefLabel """Helse- og omsorgsdepartementet"""@nb,
        """Helse- og omsorgsdepartementet"""@nn,
        """Ministry of Health and Care Services"""@en;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonHOD.ttl"^^xsd:anyURI;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983887406"^^xsd:anyURI;
    dct:title """Helse- og omsorgsdepartementet"""@nb,
        """Helse- og omsorgsdepartementet"""@nn,
        """Ministry of Health and Care Services"""@en;
@@ -115,7 +115,7 @@ locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
    skos:prefLabel """Politidirektoratet"""@nb,
        """Politidirektoratet"""@nn,
        """National Police Directorate"""@en;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonPoliti.ttl"^^xsd:anyURI;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/982531950"^^xsd:anyURI;
    dct:title """Politidirektoratet"""@nb,
        """Politidirektoratet"""@nn,
        """National Police Directorate"""@en;
@@ -270,7 +270,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    skos:prefLabel """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy Municipality"""@en;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl"^^xsd:anyURI;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291"^^xsd:anyURI;
    dct:title """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy Municipality"""@en;
@@ -602,4 +602,4 @@ odrl:attributionURL <https://digdir.no/> ; ];
    schema:dayOfWeek <https://schema.org/PublicHolidays>;
    .
  
-#### End of the file, 2022-03-22 08:53:46
+#### End of the file, 2022-03-24 13:28:39

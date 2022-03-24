@@ -17,4 +17,4 @@
    cv:ifAccessedThrough <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl>;
    .
  
-#### End of the file, 2022-03-22 08:53:56
+#### End of the file, 2022-03-24 13:24:45

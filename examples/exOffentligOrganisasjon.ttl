@@ -16,7 +16,7 @@
    skos:prefLabel """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy Municipality"""@en;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl"^^xsd:anyURI;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291"^^xsd:anyURI;
    dct:title """Brønnøy kommune"""@nb,
        """Brønnøy kommune"""@nn,
        """Brønnøy Municipality"""@en;
@@ -27,4 +27,4 @@
    cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl>;
    .
  
-#### End of the file, 2022-03-22 08:53:56
+#### End of the file, 2022-03-24 13:24:45
