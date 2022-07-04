@@ -12,7 +12,7 @@ image::images/KlassenDatasett.png[]
 |Anvendelse|Klassen brukes til å inneholde metadata #om en tjeneste#.
 |Usage note|This class represents a collection of #metadata# and where #they# can be found, for instance on a regional public service portal and/or a national eGovernment portal.
 |URI|dcat:Dataset
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad |
 |Eksempel|
 |===
