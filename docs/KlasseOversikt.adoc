@@ -20,7 +20,6 @@ Følgende klasser er valgfrie:
 * <<BeskrivendeDatasett>>
 * <<Deltagelse>>
 * <<Dokumentasjon>>
-* <<Dokumentreferanse>>
 * <<Gebyr>>
 * <<Katalog>>
 * <<Livshendelse>>
