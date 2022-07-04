@@ -1,0 +1,230 @@
+== Klassen Adresse (locn:Address) [[Adresse]]
+
+[[img-KlassenAdresse]]
+.Klassen Adresse (locn:Addresss)
+[link=images/KlassenAdresse.png]
+image::images/KlassenAdresse.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Agent
+|Anvendelse|Klassen brukes til å representere en adresse.
+|Usage note|This class is used to represent an address (a spatial object that in a human-readable way identifies a fixed location).
+|URI|foaf:Agent
+|Kravnivå|Valgfri/Optional
+|Merknad |
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+-----
+<eksempelAdresse> a locn:Address ; .
+-----
+
+
+=== Valgfrie egenskaper for klassen _Adresse_ [[Adresse-valgfrie-egenskaper]]
+
+====  Adresse – adresseområde (locn:addressArea) [[Adresse-adresseområde]]
+
+[cols="30s,70d"]
+|===
+|English name|address area
+|URI|locn:addressArea
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – adresseId (locn:addressId) [[Adresse-adresseId]]
+
+[cols="30s,70d"]
+|===
+|English name|address ID
+|URI|locn:addressId
+|Range|rdfs:Literal
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – administrativ enhet (locn:adminUnit) [[Adresse-admin-enhet]]
+
+[cols="30s,70d"]
+|===
+|English name|administrative unit
+|URI|locn:addressUnit
+|Range|cv:AdminUnit
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – administrativ enhet nivå 1 (locn:adminUnitL1) [[Adresse-admin-enhet-nivå1]]
+
+[cols="30s,70d"]
+|===
+|English name|administrative unit level 1
+|URI|locn:addressUnitL1
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – administrativ enhet nivå 2 (locn:adminUnitL2) [[Adresse-admin-enhet-nivå2]]
+
+[cols="30s,70d"]
+|===
+|English name|administrative unit level 2
+|URI|locn:addressUnitL2
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – fullstendig adresse (locn:fullAddress) [[Adresse-fullstendig-adresse]]
+
+[cols="30s,70d"]
+|===
+|English name|full address
+|URI|locn:fullAddress
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – #gate# (locn:throughfare) [[Adresse-gate]]
+
+[cols="30s,70d"]
+|===
+|English name|throughfare
+|URI|locn:throughfare
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+
+====  Adresse – lokasjonsbetegnelse (locn:locatorDesignator) [[Adresse-lokasjonsbetegnelse]]
+
+[cols="30s,70d"]
+|===
+|English name|locator designator
+|URI|locn:locatorDesignator
+|Range|rdfs:Literal
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – lokasjonsnavn (locn:locatorName) [[Adresse-lokasjonsnavn]]
+
+[cols="30s,70d"]
+|===
+|English name|locator name
+|URI|locn:locatorName
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – postnummer (locn:postCode) [[Adresse-postnummer]]
+
+[cols="30s,70d"]
+|===
+|English name|post code
+|URI|locn:postCode
+|Range|rdfs:Literal
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – poststed (locn:postName) [[Adresse-poststed]]
+
+[cols="30s,70d"]
+|===
+|English name|post name
+|URI|locn:postName
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
+
+====  Adresse – postboks (locn:poBox) [[Adresse-postboks]]
+
+[cols="30s,70d"]
+|===
+|English name|post office box
+|URI|locn:poBox
+|Range|rdfs:Literal
+|Anvendelse|Egenskapen brukes til å oppgi ...
+|Usage note|This property represents ...
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|
+|Eksempel|
+|===
+
+Eksempel i RDF Turtle:
