@@ -160,14 +160,14 @@ Eksempel i RDF Turtle:
    dct:type <https://data.norge.no/vocabulary/evidence-type#attestation> ; # attest .
 -----
 
-==== Dokumentasjon – #understøtter vilkår# (cv:supportsRequirement) [[Dokumentasjon-understøtter-vilkår]]
+==== Dokumentasjon – understøtter vilkår (cv:supportsRequirement) [[Dokumentasjon-understøtter-vilkår]]
 
 [cols="30s,70d"]
 |===
 |English name| supports requirement
 |URI| cv:supportsRequirement
 |Range| cv:Requirement
-|Anvendelse| Egenskapen brukes til å referere vilkår som dokumentasjonen #understøtter#.
+|Anvendelse| Egenskapen brukes til å referere vilkår som dokumentasjonen understøtter.
 |Usage note| This property is used to refer to the requirement that the evidence supports.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
