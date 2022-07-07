@@ -118,8 +118,8 @@ Eksempel I RDF Turtle:
 |English name|has part
 |URI|dct:hasPart
 |Range|cpsvno:Service
-|Anvendelse|Egenskapen brukes til å referere tjenester. #NB! for vag beskrivelse#
-|Usage note|This property links a Dataset to the Public Service. #NB! for vag beskrivelse#
+|Anvendelse|Egenskapen brukes til å referere til tjenester. #NB! for vag beskrivelse#
+|Usage note|This property links a Dataset to the Service. #NB! for vag beskrivelse#
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |Merknad|
