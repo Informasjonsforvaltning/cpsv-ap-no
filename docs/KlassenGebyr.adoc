@@ -11,7 +11,7 @@ image::images/KlassenGebyr.png[]
 |Anvendelse|Brukes til å representere gebyr.
 |Usage note|The Cost class represents any costs related to the execution of a service that the Agent consuming it needs to pay.
 |URI|cv:Cost
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad|
 |Eksempel|Se under <<OffentligTjeneste-gebyr>>.
 |===
@@ -28,7 +28,7 @@ image::images/KlassenGebyr.png[]
 |Anvendelse|Brukes til å oppgi en identifikator til gebyret.
 |Usage note|This property represents an Identifier for the Cost.
 |Multiplisitet|1..1
-|Kravsnivå|Obligatorisk/Mandatory
+|Kravnivå|Obligatorisk/Mandatory
 |Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
@@ -47,7 +47,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Anvendelse|Brukes til å oppgi gebyrbeløpet.
 |Usage note|This property represents a numeric value indicating the amount of the Cost.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad|
 |Eksempel|Se under <<OffentligTjeneste-gebyr>>.
 |===
@@ -64,7 +64,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av gebyret. Gjentas når beskrivelsen finnes i flere språk.
 |Usage note|This property represents a free text description of the Cost.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt
+|Kravnivå|Anbefalt
 |Merknad|Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n, for å støtte flerspråklighet.
 |Eksempel|Se under <<OffentligTjeneste-gebyr>>.
 |===
@@ -81,7 +81,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |Anvendelse|Brukes til å oppgi valutatype av gebyret.
 |Usage note|This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency[Valuta].
 |Remarks|The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency[Currency].
 |Eksempel|Se under <<OffentligTjeneste-gebyr>>.
@@ -101,9 +101,9 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |Anvendelse|Brukes til å referere til en eller flere organisasjonen (inkl. offentlige organisasjoner) som bestemmer gebyr for en tjeneste.
 |Usage note|This property links the Cost class with one or more instances of the Agent class (foaf:Agent). This property refers to the organisation(s) defining the costs associated with the delivery of a particular Service.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad|
-|Eksempel| 
+|Eksempel|
 |===
 
 ==== Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough) [[Gebyr-hvisTilbysGjennom]]
@@ -116,7 +116,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |Anvendelse|Brukes til å referere til en tjenestekanal som det aktuelle gebyret er spesifikt for.
 |Usage note|Where the cost varies depending on the channel used, for example, if accessed through an online service cf. accessed at a physical location, the cost can be linked to the channel using the If Accessed Through property.
 |Multiplisitet|0..1
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad|
 |Eksempel|
 |===
