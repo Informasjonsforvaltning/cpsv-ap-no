@@ -11,7 +11,7 @@ image::images/KlassenKatalog.png[]
 |Anvendelse|Brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over tjenester og hendelser.
 |Usage note|To represent a catalog, in context of this specification a catalog of events and services.
 |URI|dcat:Catalog
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: EUs CPSV-AP dekker ikke katalogbeskrivelse. Denne klassen fra DCAT-AP-NO tas med her for å kunne denne norsk behov for å beskrive «tjeneste-/hendelseskataloger».
 |Eksempel|https://data.norge.no/public-services[https://data.norge.no/public-services] er en katalog over tjenester og hendelser.
 |===
@@ -29,11 +29,11 @@ Eksempel i RDF Turtle:
 |===
 |English name|description
 |URI|dct:description
-|Range|rdfs:Literal
+|Range|rdf:langString
 |Anvendelse|Brukes til å oppgi fritekst-beskrivelse av innholdet i katalogen. Gjentas når beskrivelsen finnes i flere ulike språk.
 |Usage note|For textual description of the content in the catalog.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
+|Kravnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|«Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser»
@@ -55,7 +55,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å oppgi identifikatoren til katalogen.
 |Usage note|For the identifier of the catalog.
 |Multiplisitet|1..1
-|Kravsnivå|Obligatorisk/Mandatory
+|Kravnivå|Obligatorisk/Mandatory
 |Merknad 1|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
@@ -70,11 +70,11 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 |English name|title
 |URI|dct:title
-|Range|rdfs:Literal
+|Range|rdf:langString
 |Anvendelse|For å oppgi navnet på katalogen. Gjentas når navnet finnes i flere ulike språk.
 |Usage note|For the title of the catalog.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
+|Kravnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|Tjeneste- og hendelseskatalog
@@ -97,7 +97,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å referere til en tjeneste som er i katalogen.
 |Usage note|To refer to a service that is in the catalog.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
+|Kravnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -113,7 +113,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Refererer til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
 |Usage note|To refer to the Agent responsible for making the catalog available.
 |Multiplisitet|1..1
-|Kravsnivå|Obligatorisk/Mandatory
+|Kravnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|Digdir er utgiver av «Tjeneste- og hendelseskatalog» i Felles datakatalog.
@@ -137,7 +137,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å oppgi geografisk område som er dekket av katalogen.
 |Usage note|For the spatial coverage of the catalog.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
 * Minst en verdi skal velges fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted]; http://sws.geonames.org/[GeoNavn].
@@ -169,7 +169,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|For å oppgi dato for siste oppdatering/endring av katalogen.
 |Usage note|For the date of the last update of the catalog.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -185,7 +185,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|For å oppgi oppdateringsfrekvensen for katalogen.
 |Usage note|For the accrual periodicity of the catalog.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frekvens].
 |Remark 1|The value shall be chosen from EU’s controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frequency].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -203,7 +203,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å referere til nettside som fungerer som hovedside for katalogen.
 |Usage note|To refer to the homepage of the catalog.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -219,7 +219,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å vise til lisens for katalogen som beskriver hvordan den kan viderebrukes.
 |Usage note|Refer to the licence of the catalog.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Lisens], når lisensen som brukes i vokabularet.
 |Remkark 1| The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], when the licence used is in the vocabulary.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -243,7 +243,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å referere til beskrivelse av autentisitet og integritet til innholdet i katalogen.
 |Usage note|This property indicates a statement of the authenticity and the integrity of the the content in a catalog.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -259,7 +259,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å oppgi språk som brukes i tekstlige metadata som beskriver innholdet i katalogen. Gjentas hvis metadata er gitt i flere språk.
 |Usage note|To specify the languages used in a catalog.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
 |Remark 1 | The value shall be chosen from EU's controllerd vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -287,7 +287,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å referere til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere de katalogiserte ressursene i katalogen.
 |Usage note|This property refers to a knowledge organisation system (i.e., thesaurus, taxonomy) used to classify the resources in a catalog.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad 1 |Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los - felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
 |Remark 1 | At least one value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los] may be used in addition.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -305,7 +305,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Dato for formell utgivelse (publisering) av katalogen.
 |Usage note|This property contains the date of first publication of a Catalogue. This property should be typed as xsd:date or xsd:dateTime.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå|Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -323,7 +323,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å referere til en beslektet katalog som denne katalogen fysisk eller logisk er inkludert i.
 |Usage note|This property refers to a related Catalogue in which the described Catalogue is physically or logically included.
 |Multiplisitet|0..1
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -339,7 +339,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å referere til en beslektet katalog som er en del av den beskrevne katalogen.
 |Usage note|This property refers to a related Catalogue that is part of the described Catalogue.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -356,7 +356,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å referere til en hendelse som er i katalogen.
 |Usage note|To refer to an event that is in the catalog.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -372,7 +372,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å referere til aktøren som er hovedansvarlig for å produsere katalogen.
 |Usage note|This property contains the entity responsible for producing the catalogue.
 |Multiplisitet|0..1
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
@@ -388,7 +388,7 @@ Eksempel i RDF Turtle:
 |Anvendelse|Brukes til å referere til uttalelse som spesifiserer brukervilkår knyttet til katalogen.
 |Usage note|This property includes a statement that specifies usage rights of the Catalogue.
 |Multiplisitet|0..1
-|Kravsnivå|Valgfri/Optional
+|Kravnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|
