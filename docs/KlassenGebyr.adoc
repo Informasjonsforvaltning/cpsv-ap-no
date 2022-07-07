@@ -60,7 +60,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |===
 |English name|description
 |URI|dct:description
-|Range|rdfs:Literal
+|Range|rdf:langString
 |Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av gebyret. Gjentas når beskrivelsen finnes i flere språk.
 |Usage note|This property represents a free text description of the Cost.
 |Multiplisitet|0..n
