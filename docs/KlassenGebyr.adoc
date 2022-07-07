@@ -24,7 +24,7 @@ image::images/KlassenGebyr.png[]
 |===
 |English name|identifier
 |URI|dct:identifier
-|Range|rdfs:Literal typed as URI
+|Range|rdfs:Literal 
 |Anvendelse|Brukes til å oppgi en identifikator til gebyret.
 |Usage note|This property represents an Identifier for the Cost.
 |Multiplisitet|1..1
