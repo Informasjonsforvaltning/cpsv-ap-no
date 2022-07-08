@@ -8,7 +8,7 @@ image::images/KlassenKontaktpunkt.png[]
 [cols="30s,70d"]
 |===
 |English name|contact point
-|Anvendelse|Brukes til å representere kontakt informasjon for en tjeneste, en tjenestekanal, en offentlig organisasjon osv.
+|Anvendelse| Klassen brukes til å representere kontakt informasjon for en tjeneste, en tjenestekanal, en offentlig organisasjon osv.
 |Usage note|This class represents the contact information for a Service, Channel, Public Organization, etc.
 |URI|cv:ContactPoint
 |Kravnivå|Anbefalt/Recommended
@@ -25,7 +25,7 @@ image::images/KlassenKontaktpunkt.png[]
 |English name| availability rescrition
 |URI| cv:specialOpeningHoursSpecification
 |Range| cv:OpeningHoursSpecification
-|Anvendelse| Brukes til å oppgi begrenset åpningstid til kontaktpunktet, som strukturert data.
+|Anvendelse| Egenskapen brukes til å oppgi begrenset åpningstid til kontaktpunktet, som strukturert data.
 |Usage note| This property is used to specify the time interval during which the Contact Point is not available, as structured data.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
@@ -40,7 +40,7 @@ image::images/KlassenKontaktpunkt.png[]
 |English name| email
 |URI| cv:email
 |Range| rdfs:Literal
-|Anvendelse| Brukes til å oppgi e-postadresse til kontaktpunktet.
+|Anvendelse| Egenskapen brukes til å oppgi e-postadresse til kontaktpunktet.
 |Usage note| This property represents an electronic address through which the Contact Point can be contacted.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
@@ -55,7 +55,7 @@ image::images/KlassenKontaktpunkt.png[]
 |English name| has language
 |URI| vcard:hasLanguage
 |Range| dct:LinguisticSystem
-|Anvendelse| Brukes til å oppgi språk som kontaktpunktet bruker.
+|Anvendelse| Egenskapen brukes til å oppgi språk som kontaktpunktet bruker.
 |Usage note| This property specifies which language(s) the contact point uses.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
@@ -70,7 +70,7 @@ image::images/KlassenKontaktpunkt.png[]
 |English name| contact page
 |URI| cv:contactPage
 |Range| foaf:Document
-|Anvendelse| Brukes til å oppgi kontaktside til kontaktpunktet.
+|Anvendelse| Egenskapen brukes til å oppgi kontaktside til kontaktpunktet.
 |Usage note| This property refers to a contact page that could be used to reach out the contact point.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
@@ -85,7 +85,7 @@ image::images/KlassenKontaktpunkt.png[]
 |English name| opening hours (text)
 |URI| cv:openingHours
 |Range| rdf:langString
-|Anvendelse| Brukes til å oppgi ordinær åpningstid for kontaktpunktet, i fritekst.
+|Anvendelse| Egenskapen brukes til å oppgi ordinær åpningstid for kontaktpunktet, i fritekst.
 |Usage note| This property specifies the opening hours for the contact point, in text.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
@@ -100,8 +100,8 @@ image::images/KlassenKontaktpunkt.png[]
 |English name| hours available (structured)
 |URI|schema:hoursAvailable
 |Range|schema:OpeningHoursSpecification
-|Anvendelse|Brukes til å referere til en strukturert beskrivelse av åpningstid.
-|Usage note|This property links a contact point to information about when the contact point is available, as structured data.
+|Anvendelse| Egenskapen brukes til å referere til en strukturert beskrivelse av åpningstid.
+|Usage note| This property links a contact point to information about when the contact point is available, as structured data.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -118,7 +118,7 @@ Eksempel i RDF Turtle: Se under <<Åpningstid>>.
 |English name| telehpone
 |URI| cv:telephone
 |Range| rdfs:Literal
-|Anvendelse| Brukes til å oppgi telefonnummer til kontaktpunktet.
+|Anvendelse| Egenskapen brukes til å oppgi telefonnummer til kontaktpunktet.
 |Usage note| This property represents a telephone number through which the Contact Point can be contacted.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
