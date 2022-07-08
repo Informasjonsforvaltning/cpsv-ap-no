@@ -239,7 +239,7 @@ Eksempel i RDF Turtle:
 |===
 |English name|opening hours
 |URI|schema:openingHours
-|Range|rdfs:langString
+|Range|rdf:langString
 |Anvendelse| Egenskapen brukes  til å oppgi åpningstid til den aktuelle kanalen, som fritekst. Gjentas når beskrivelsen finnes i flere språk.
 |Usage note| This property represents the normal opening hours of a channel. The value should follow the flexible format defined for schema.org's opening hours property28. Following that structure, days of the week are represented by two letter codes (Mo, Tu, We, Th, Fr, Sa, Su). Lists should be comma separated (for example: Mo, We, Fr) and periods separated by a hyphen (for example: Mo-Fr).
 |Multiplisitet|0..n
@@ -260,7 +260,7 @@ Eksempel i RDF Turtle:
 |Usage note| This property specifies in detail and as structured data when the channel is available.
 |Multiplisitet|0..n
 |Kravnivå  |Valgfri/Optional
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifiert i CPSV-AP. 
+|Merknad| Norsk utvidelse: Ikke eksplisitt spesifiert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Se eksempler under <<Åpningstid>>.
 |===
