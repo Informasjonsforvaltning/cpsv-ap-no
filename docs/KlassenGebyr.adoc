@@ -8,7 +8,7 @@ image::images/KlassenGebyr.png[]
 [cols="30s,70d"]
 |===
 |English name|Cost
-|Anvendelse|Brukes til å representere gebyr.
+|Anvendelse| Klassen brukes til å representere gebyr.
 |Usage note|The Cost class represents any costs related to the execution of a service that the Agent consuming it needs to pay.
 |URI|cv:Cost
 |Kravnivå|Valgfri/Optional
@@ -24,8 +24,8 @@ image::images/KlassenGebyr.png[]
 |===
 |English name|identifier
 |URI|dct:identifier
-|Range|rdfs:Literal 
-|Anvendelse|Brukes til å oppgi en identifikator til gebyret.
+|Range|rdfs:Literal
+|Anvendelse| Egenskapen brukes til å oppgi en identifikator til gebyret.
 |Usage note|This property represents an Identifier for the Cost.
 |Multiplisitet|1..1
 |Kravnivå|Obligatorisk/Mandatory
@@ -44,7 +44,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|value
 |URI|cv:value
 |Range|rdf:Litereal typed as xsd:decimal
-|Anvendelse|Brukes til å oppgi gebyrbeløpet.
+|Anvendelse| Egenskapen brukes til å oppgi gebyrbeløpet.
 |Usage note|This property represents a numeric value indicating the amount of the Cost.
 |Multiplisitet|0..1
 |Kravnivå|Anbefalt/Recommended
@@ -61,7 +61,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |English name|description
 |URI|dct:description
 |Range|rdf:langString
-|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av gebyret. Gjentas når beskrivelsen finnes i flere språk.
+|Anvendelse| Egenskapen brukes til å oppgi en tekstlig beskrivelse av gebyret. Gjentas når beskrivelsen finnes i flere språk.
 |Usage note|This property represents a free text description of the Cost.
 |Multiplisitet|0..n
 |Kravnivå|Anbefalt
@@ -78,7 +78,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |English name|currency
 |URI|cv:currency
 |Range|URI
-|Anvendelse|Brukes til å oppgi valutatype av gebyret.
+|Anvendelse| Egenskapen brukes til å oppgi valutatype av gebyret.
 |Usage note|This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed.
 |Multiplisitet|0..1
 |Kravnivå|Anbefalt/Recommended
@@ -98,7 +98,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |English name|is defined by
 |URI|cv:isDefinedBy
 |Range| org:Organization
-|Anvendelse|Brukes til å referere til en eller flere organisasjonen (inkl. offentlige organisasjoner) som bestemmer gebyr for en tjeneste.
+|Anvendelse| Egenskapen brukes til å referere til en eller flere organisasjonen (inkl. offentlige organisasjoner) som bestemmer gebyr for en tjeneste.
 |Usage note|This property links the Cost class with one or more instances of the Agent class (foaf:Agent). This property refers to the organisation(s) defining the costs associated with the delivery of a particular Service.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
@@ -113,7 +113,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |English name|if accessed through
 |URI|cv:ifAccessedThrough
 |Range|cv:Channel
-|Anvendelse|Brukes til å referere til en tjenestekanal som det aktuelle gebyret er spesifikt for.
+|Anvendelse| Egenskapen brukes til å referere til en tjenestekanal som det aktuelle gebyret er spesifikt for.
 |Usage note|Where the cost varies depending on the channel used, for example, if accessed through an online service cf. accessed at a physical location, the cost can be linked to the channel using the If Accessed Through property.
 |Multiplisitet|0..1
 |Kravnivå|Valgfri/Optional
