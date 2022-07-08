@@ -8,11 +8,11 @@ image::images/KlassenVirksomhetshendelse.png[]
 [cols="30s,70d"]
 |===
 |English name|Business Event
-|Anvendelse|Brukes til å representere en https://data.norge.no/concepts/71fd9d69-ca64-3f9b-a1d3-7ade4d069f8a[virksomhetshendelse].
-|Usage note|This class represents a Business Event, which specialises Event. A Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time.
+|Anvendelse| Klassen brukes til å representere en https://data.norge.no/concepts/71fd9d69-ca64-3f9b-a1d3-7ade4d069f8a[virksomhetshendelse].
+|Usage note| This class represents a Business Event, which specialises Event. A Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time.
 |URI|cv:BusinessEvent
 |Subklasse av / Subclass of|cv:Event
-|Kravsnivå|Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad|
 |Remarks|A Business Event requires a set of services to be delivered and consumed in order for the associated business need(s) or obligation(s) to be fulfilled. Business Events are defined within the context of a particular Member State.
 |Eksempel|«Å starte og drive en restaurant» er en virksomhetshendelse.
@@ -32,10 +32,10 @@ Eksempel i RDF Turtle:
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal typed as xsd:anyURI
-|Anvendelse|Brukes til å oppgi identifikatoren til en hendelse.
-|Usage note|This property represents an Identifier for the Event.
+|Anvendelse| Egenskapen brukes til å oppgi identifikatoren til en hendelse.
+|Usage note| This property represents an Identifier for the Event.
 |Multiplisitet|1..1
-|Kravsnivå|Obligatorisk/Mandatory
+|Kravnivå |Obligatorisk/Mandatory
 |Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
@@ -48,11 +48,11 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 |English name|name
 |URI|dct:title
-|Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi navn til en hendelse. Gjentas når navnet finnes i flere språk.
-|Usage note|This property represents the Name (or title) of the Event.
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navn til en hendelse. Gjentas når navnet finnes i flere språk.
+|Usage note| This property represents the Name (or title) of the Event.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
+|Kravnivå |Obligatorisk/Mandatory
 |Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
 |Eksempel|Å starte og drive en restaurant
 |===
@@ -71,12 +71,12 @@ Eksempel i RDF Turtle:
 |===
 |English name|description
 |URI|dct:description
-|Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av hendelsen. Gjentas når beskrivelsen finnes i flere språk.
-|Usage note|This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description.
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi en tekstlig beskrivelse av hendelsen. Gjentas når beskrivelsen finnes i flere språk.
+|Usage note| This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt, dette fordi enhver hendelse bør beskrives med mindre navnet er selvforklarende.
+|Kravnivå |Anbefalt/Recommended
+|Merknad 1|Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt, dette fordi enhver hendelse bør beskrives med mindre navnet er selvforklarende.
 |Merknad 2|Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n, for å støtte flerspråklighet.
 |Eksempel|Elektronisk prosess for etablering og oppstart av en restaurant.
 |===
@@ -96,10 +96,10 @@ Eksempel i RDF Turtle:
 |URI|cpsvno:triggersNeedFor
 |Subegenskap av / Subproperty of | dct:relation
 |Range|cpsvno:Service
-|Anvendelse|Brukes til å referere til tjenester som den aktuelle hendelsen kan utløse behov for.
-|Usage note|This property links an event directly to a service that the event triggers need for.
+|Anvendelse| Egenskapen brukes til å referere til tjenester som den aktuelle hendelsen kan utløse behov for.
+|Usage note|T his property links an event directly to a service that the event triggers need for.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn dct:relation som er i CPSV-AP. Inntil vi finner en passende URI i eksisterende vokabularer, bruker vi denne egendefinerte URI.
 |Eksempel|Hendelsen «Starte og drive en restaurant» utløser behov for tjenesten «Skjenkebevilling».
 |===
@@ -122,10 +122,10 @@ Eksempel i RDF Turtle:
 |English name|subject
 |URI|dct:subject
 |Range|skos:Concept
-|Anvendelse|Brukes til å referere til begrep som er viktig for å forstå hendelsen.
-|Usage note|To refer to concept that is important for the understanding of the event.
+|Anvendelse| Egenskapen brukes til å referere til begrep som er viktig for å forstå hendelsen.
+|Usage note| This property refers to a concept that is important for the understanding of the event.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå hendelsen.
 |Eksempel|
 |===
@@ -137,10 +137,10 @@ Eksempel i RDF Turtle:
 |English name|distribution
 |URI|dcat:distribution
 |Range|dcat:Distribution
-|Anvendelse|Brukes til å referere til distribusjon av hendelse som f.eks. kan abonneres på.
-|Usage note|To refer to Distribution of the Event.
+|Anvendelse| Egenskapen brukes til å referere til distribusjon av hendelse som f.eks. kan abonneres på.
+|Usage note| This property refers to Distribution of the Event.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad|Norsk utvidelse: Denne finnes ikke i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm som kan abonneres på.
 |Eksempel|
 |===
@@ -152,10 +152,10 @@ Eksempel i RDF Turtle:
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Anvendelse|Brukes til å oppgi type hendelse.
-|Usage note|The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.
+|Anvendelse| Egenskapen brukes til å oppgi type hendelse.
+|Usage note| This property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/business-event-type[Virksomhetshendelsestype], når verdien finnes i vokabularet.
 |Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/business-event-type[Business event type], when the value is in the vocabulary.
 |Eksempel|
