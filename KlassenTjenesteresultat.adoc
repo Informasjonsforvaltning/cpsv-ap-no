@@ -8,12 +8,12 @@ image::images/KlassenTjenesteresultat.png[]
 [cols="30s,70d"]
 |===
 |English name|Output
-|Anvendelse|Brukes til å representere resultat fra en tjeneste.
-|Usage note|Outputs can be any resource - document, artefact – anything produced by the Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.
+|Anvendelse| Klassen brukes til å representere resultat fra en tjeneste.
+|Usage note| Outputs can be any resource – document, artefact – anything produced by the Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.
 |URI|cv:Output
-|Kravsnivå|Anbefalt/Recommended
-|Merknad 1|I samsvar med https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[DCAT-AP-NO], kan datasett (`dcat:Dataset`) være en type `cv:Output`. På denne måten kan tjenesteresultatet være et datasett som kan deles, f.eks. selve «bevillingen» som et datasett
-|Merknad 2|Norsk utvidelse: Kravsnivå endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.
+|Kravnivå |Anbefalt/Recommended
+|Merknad |Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.
+|Remark | Norwegian extension: Requirement level changed from optional to recommended.
 |Eksempel|Resultater fra tjenesten «Skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).
 |===
 
@@ -26,34 +26,32 @@ image::images/KlassenTjenesteresultat.png[]
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi identifikatoren til tjenesteresultatet.
-|Usage note|This property represents an Identifier for the Output.
+|Anvendelse| Egenskapen brukes til å oppgi identifikatoren til tjenesteresultatet.
+|Usage note| This property represents an Identifier for the Output.
 |Multiplisitet|1..1
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+|Kravnivå |Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
-|Eksempel|
 |===
 
-==== Tjenesteresultat – tittel (dct:title) [[Tjenesteresultat-tittel]]
+==== Tjenesteresultat – navn (dct:title) [[Tjenesteresultat-navn]]
 
 [cols="30s,70d"]
 |===
 |English name|name
 |URI|dct:title
-|Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi tittel/navn til tjenesteresultatet.
-|Usage note|This property represents the official Name of the Output.
+|Range| rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi  navn til tjenesteresultatet. Egenskapen bør gjentas når navnet finnes på flere språk.
+|Usage note| This property represents the official Name of the Output, repeated when the name is in several parallel languages.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
+|Kravnivå |Obligatorisk/Mandatory
 |Eksempel|«Skjenkebevilling til «Den beste restauranten AS»»
 |===
 
 Eksempel i RDF Turtle:
 -----
-<bevilling1001> a cv:Output , a dcat:Dataset ;
+<bevilling1001> a cv:Output , dcat:Dataset ;
    dct:title "Skjenkebevilling til «Den beste restauranten AS»"@nb ; .
 -----
 
@@ -65,18 +63,18 @@ Eksempel i RDF Turtle:
 |===
 |English name|description
 |URI|dct:description
-|Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av tjenesteresultatet.
-|Usage note|This property represents a free text Description of the Output.
+|Range| rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi en tekstlig beskrivelse av tjenesteresultatet. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+|Usage note| This property represents a free text Description of the Output, repeated when the description is in several parallel languages.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n for å støtte flerspråklighet.
-|Eksempel|
+|Kravnivå |Anbefalt/Recommended
+|Merknad| Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+|Remark | Norwegian extension: Requirement level changed from optional to recommended.
 |===
 
 Eksempel i RDF Turtle:
 -----
-<bevilling1001> a cv:Output , a dcat:Dataset ;
+<bevilling1001> a cv:Output , dcat:Dataset ;
    dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
 -----
 
@@ -87,20 +85,20 @@ Eksempel i RDF Turtle:
 |English name|language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Anvendelse|Brukes til å oppgi språk som tjenesteresultatet er i.
-|Usage note|To specify the language that the output is in.
+|Anvendelse| Egenskapen brukes til å oppgi hvilke språk tjenesteresultat er tilgjengelig på. Dette kan være ett språk eller flere språk, for eksempel i land med mer enn ett offisielt språk.
+|Usage note| This property represents the language(s) in which the Output is available. This could be one or multiple languages, for instance in countries with more than one official language.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommende
+|Kravnivå |Anbefalt/Recommende
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
 |Remark 1 | The value shall be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language].
-|Merknad 2 |Norsk utvidelse: Ikke eksplisitt med i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
+|Merknad 2 |Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+|Remark 2 | Norwegian extension: Requirement level changed from optional to recommended.
 |Eksempel|Norsk bokmål
 |===
 
 Eksempel i RDF Turtle:
 -----
-<bevilling1001> a cv:Output , a dcat:Dataset ;
+<bevilling1001> a cv:Output , dcat:Dataset ;
    dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ; .
 -----
@@ -115,13 +113,16 @@ Eksempel i RDF Turtle:
 |English name |may cause
 |URI |xkos:causes
 |Range |cv:Event
-|Anvendelse |Brukes til å uttrykke relasjon mellom et tjenesteresultat og en eller flere hendelser, f.eks. endring av data (som et tjenesteresultat) skaper en eller flere hendelser.
-|Usage note |To express the relation between an Output and one or more Events, for instance the cases where change of data (as an Output) causes one of more Events.
+|Anvendelse | Egenskapen brukes til å uttrykke relasjon mellom et tjenesteresultat og en eller flere hendelser, f.eks. endring av data (som et tjenesteresultat) skaper en eller flere hendelser.
+|Usage note | This property expresses the relation between an Output and one or more Events, for instance the cases where change of data (as an Output) causes one of more Events.
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
-|Merknad |Norsk utvidelse: Finnes ikke i CPSV-AP. Det er behov for å tydeliggjøre kopling mellom et tjenesteresultat (f.eks. endring i et datasett) og hendelsen(e) som skapes av endringen.
-|Eksempel | 
+|Kravnivå  |Valgfri/Optional 
+|Merknad |Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Det er behov for å tydeliggjøre kopling mellom et tjenesteresultat (f.eks. endring i et datasett) og hendelsen(e) som skapes av endringen.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel | Se <<img-FigurSyktBarnBeskrevetMedCPSVNO>>
 |===
+
+Eksempel i RDF Turtle: Se under <<img-FigurSyktBarnBeskrevetMedCPSVNO>>.
 
 ==== Tjenesteresultat – type (dct:type) [[Tjenesteresultat-type]]
 
@@ -130,10 +131,10 @@ Eksempel i RDF Turtle:
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Anvendelse|Brukes til å referere til begrep som representerer type(r) tjenesteresultat tilhører.
-|Usage note|This property represents the type of Output as defined in a controlled vocabulary.
+|Anvendelse| Egenskapen brukes til å referere til begrep som representerer type(r) tjenesteresultat tilhører.
+|Usage note| This property represents the type of Output as defined in a controlled vocabulary.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-output-type[Tjenesteresultattype], når verdien finnes i vokabularet.
 |Remark |The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-output-type[Service output type], when the value is in the vocabulary.
 |Eksempel|tillatelse
@@ -141,7 +142,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<bevilling1001> a cv:Output , a dcat:Dataset ;
+<bevilling1001> a cv:Output , dcat:Dataset ;
    dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
    dct:type <https://data.norge.no/vocabulary/service-output-type#permit> ; # tillatelse
    .

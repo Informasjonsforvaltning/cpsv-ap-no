@@ -1,0 +1,221 @@
+== Klassen Adresse (locn:Address) [[Adresse]]
+
+[[img-KlassenAdresse]]
+.Klassen Adresse (locn:Address)
+[link=images/KlassenAdresse.png]
+image::images/KlassenAdresse.png[]
+
+[cols="30s,70d"]
+|===
+|English name|Address
+|Anvendelse|Klassen brukes til å representere en adresse.
+|Usage note|This class is used to represent an address (a spatial object that in a human-readable way identifies a fixed location).
+|URI|locn:Address
+|Kravnivå|Valgfri/Optional
+|===
+
+=== Valgfrie egenskaper for klassen _Adresse_ [[Adresse-valgfrie-egenskaper]]
+
+====  Adresse – administrativ enhet (cv:adminUnit) [[Adresse-admin-enhet]]
+
+[cols="30s,70d"]
+|===
+|English name|administrative unit
+|URI| cv:adminUnit
+|Range|cv:AdminUnit
+|Anvendelse| Egenskapen brukes til å koble en adresse til <<AdministrativEnhet>>.
+|Usage note| This property links an Address with the <<<<AdministrativEnhet, Administrative Unit class>>.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
+|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
+|===
+
+====  Adresse – administrativ enhet nivå 1 (locn:adminUnitL1) [[Adresse-admin-enhet-nivå1]]
+
+[cols="30s,70d"]
+|===
+|English name|administrative unit level 1
+|URI|locn:adminUnitL1
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navnet på det øverste nivået i
+adressen, og dette vil som regel være navnet på et land.
+|Usage note| This property represents the name of the uppermost level of the
+address, almost always a country.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad| Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – administrativ enhet nivå 2 (locn:adminUnitL2) [[Adresse-admin-enhet-nivå2]]
+
+[cols="30s,70d"]
+|===
+|English name|administrative unit level 2
+|URI|locn:addressUnitL2
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navnet på et sekundært nivå/region i
+adressen, vanligvis et fylke, stat eller annet slikt område som
+vanligvis omfatter flere lokaliteter.
+|Usage note| This property represents the name of a secondary level/region of the
+address, usually a county, state or other such area that typically
+encompasses several localities.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – adresseId (locn:addressId) [[Adresse-adresseId]]
+
+[cols="30s,70d"]
+|===
+|English name|address ID
+|URI|locn:addressId
+|Range|xsd:string
+|Anvendelse| Egenskapen brukes til å oppgi en globalt unik identifikator for hver
+forekomst av en adresse.
+|Usage note| This property represents a globally unique identifier for each
+instance of an Address.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
+|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
+|===
+
+====  Adresse – adresseringsområde (locn:addressArea) [[Adresse-adresseringsområde]]
+
+[cols="30s,70d"]
+|===
+|English name|address area
+|URI|locn:addressArea
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navnet til et geografisk område som
+inneholder flere enkeltadresser.
+|Usage note| This property represents the name of a geographic area that groups
+Addresses.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – adressetilleggsnavn (locn:locatorName) [[Adresse-adressetilleggsnavn]]
+
+[cols="30s,70d"]
+|===
+|English name|locator name
+|URI|locn:locatorName
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi bruksnavn, som for eksempel navn
+på gårdsbruket, navn på institusjonen eller bygningen.
+|Usage note| This property represents proper noun(s) applied to the real world
+entity identified by the locator.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – bruksenhetsnummer (locn:locatorDesignator) [[Adresse-bruksenhetsnummer]]
+
+[cols="30s,70d"]
+|===
+|English name|locator designator
+|URI|locn:locatorDesignator
+|Range|xsd:string
+|Anvendelse| Egenskapen brukes til å oppgi et antall eller en sekvens av tegn som
+unikt identifiserer bruksenheten.
+|Usage note| This property represents a number or sequence of characters that
+uniquely identifies the locator within the relevant scope.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
+|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
+|===
+
+====  Adresse – fullstendig adresse (locn:fullAddress) [[Adresse-fullstendigAdresse]]
+
+[cols="30s,70d"]
+|===
+|English name|full address
+|URI|locn:fullAddress
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi hele adressen skrevet som en streng.
+|Usage note| This property represents the complete address written as a string.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – gjennomfartsåre (locn:throughfare) [[Adresse-gjennomfartsåre]]
+
+[cols="30s,70d"]
+|===
+|English name|throughfare
+|URI|locn:throughfare
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navnet på en passasje eller
+veistrekning fra ett sted til et annet.
+|Usage note| This property represents the name of a passage or way through from
+one location to another.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – postboks (locn:poBox) [[Adresse-postboks]]
+
+[cols="30s,70d"]
+|===
+|English name|post office box
+|URI|locn:poBox
+|Range| xsd:string
+|Anvendelse| Egenskapen brukes til å oppgi en stedsbetegnelse for et
+postleveringssted på et postkontor, vanligvis et nummer.
+|Usage note| This property represents a location designator for a postal delivery
+point at a post office, usually a number.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
+|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
+|===
+
+====  Adresse – postnummer (locn:postCode) [[Adresse-postnummer]]
+
+[cols="30s,70d"]
+|===
+|English name|post code
+|URI|locn:postCode
+|Range| xsd:string
+|Anvendelse| Egenskapen brukes til å kunne oppgi kode som er opprettet og
+vedlikeholdt for postformål.
+|Usage note| This property represents the code created and maintained for
+postal purposes to identify a subdivision of addresses and postal
+delivery points.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
+|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
+|===
+
+====  Adresse – poststed (locn:postName) [[Adresse-poststed]]
+
+[cols="30s,70d"]
+|===
+|English name|post name
+|URI|locn:postName
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å kunne oppgi stedsnavn som er opprettet og
+vedlikehold for postformål.
+|Usage note| This property represents a name created and maintained for postal
+purposes to identify a subdivision of addresses and postal delivery
+points.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|===

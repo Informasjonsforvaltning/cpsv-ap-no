@@ -8,13 +8,14 @@ image::images/KlassenTjeneste.png[]
 [cols="30s,70d"]
 |===
 |English name|Service
-|Anvendelse|Brukes til å beskrive en tjeneste.
-|Usage note|To represent a Service.
+|Anvendelse| Klassen brukes til å beskrive en tjeneste.
+|Usage note| This class represents a Service.
 |URI|cpsvno:Service
-|Kravsnivå|Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad 1|Bruk <<OffentligTjeneste>> når det er en offentlig tjeneste som skal beskrives.
-|Merknad 2|Norsk utvidelse: Denne finnes ikke i CPSV-AP, men trengs for å kunne dekke behov for å beskrive tjenester som ikke er en offentlig tjeneste. <<OffentligTjeneste>> som CPSV-AP har, blir en subklasse av denne.
-|Remarks|Norwegian extension: CPSV-AP does not have this class. It is needed in order to describe a service which is not a public service. The Public Service Class (`cpsv:PublicService`) that CPSV-AP has, is a subclass of this one.
+|Remark 1 | Use <<OffentligTjeneste>>  when the services to be described is a public service.
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men trengs for å kunne dekke behov for å beskrive tjenester som ikke er en offentlig tjeneste. <<OffentligTjeneste>> som CPSV-AP har, blir en subklasse av denne.
+|Remark 2|Norwegian extension: Not explicitly specified in CPSV-AP. It is needed in order to describe a service which is not a public service. The Public Service Class (`cpsv:PublicService`) that CPSV-AP has, is a subclass of this one.
 |Eksempel|Se under <<OffentligTjeneste>> for eksempler på bruk av de tilsvarende egenskapene.
 |===
 
@@ -28,31 +29,45 @@ image::images/KlassenTjeneste.png[]
 |===
 |English name |description 
 |URI |dct:description 
-|Range |rdfs:Literal 
-|Anvendelse |Brukes til å oppgi en tekstlig beskrivelse av tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere språk. 
-|Usage note |This property represents a free text Description of the Service. 
+|Range | rdf:langString  
+|Anvendelse | Egenskapen brukes til å oppgi en tekstlig beskrivelse av tjenesten. Egenskapen bør gjentas når beskrivelsen finnes på flere språk. 
+|Usage note | This property represents a free text Description of the Service, repeated when the text is in parallel languages. 
 |Multiplisitet |1..n 
-|Kravsnivå |Obligatorisk/Mandatory 
+|Kravnivå  |Obligatorisk/Mandatory 
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
 |===
 
 [[Tjeneste-eiesAv]]
-==== Tjeneste - eies av (cv:ownedBy)
+==== Tjeneste – eies av (cv:ownedBy)
 
 [cols="30s,70d"]
 |===
 |English name |owned by
 |URI |cv:ownedBy 
-|Range |foaf:Agent 
-|Anvendelse |Brukes til å referere til aktøren som eier tjenesten. 
-|Usage note |To refer to the Agent who owns the Service. 
+|Range | org:Organization 
+|Anvendelse | Egenskapen brukes til å referere til aktøren som eier tjenesten. 
+|Usage note | This property refers to the Agent who owns the Service. 
 |Multiplisitet |1..n 
-|Kravsnivå |Obligatorisk/Mandatory
+|Kravnivå  |Obligatorisk/Mandatory
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
+|===
+
+[[Tjeneste-har-kontaktpunkt]]
+==== Tjeneste – har kontaktpunkt (cv:hasContactPoint)
+
+[cols="30s,70d"]
+|===
+|English name |contact point 
+|URI |  cv:hasContactPoint
+|Range | cv:ContactPoint 
+|Anvendelse | Egenskapen brukes til å oppgi kontaktpunkt(er) for tjenesten. 
+|Usage note | This property specifies contact points for the service.  
+|Multiplisitet |1..n 
+|Kravnivå  |Obligatorisk/Mandatory 
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===
 
 [[Tjeneste-identifikator]]
@@ -63,33 +78,15 @@ image::images/KlassenTjeneste.png[]
 |English name |identifier 
 |URI |dct:identifier 
 |Range |rdfs:Literal 
-|Anvendelse |Brukes til å oppgi en formell identifikasjon til tjenesten. 
-|Usage note |This property represents a formally-issued Identifier for the Service. 
+|Anvendelse | Egenskapen brukes til å oppgi en formell identifikasjon til tjenesten. 
+|Usage note | This property represents a formally-issued Identifier for the Service. 
 |Multiplisitet |1..1 
-|Kravsnivå |Obligatorisk/Mandatory
-|Merknad 1 |Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+|Kravnivå  |Obligatorisk/Mandatory
+|Merknad 1 |Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
 |Merknad 2| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
-|===
-
-[[Tjeneste-kontaktpunkt]]
-==== Tjeneste – kontaktpunkt (dcat:contactPoint)
-
-[cols="30s,70d"]
-|===
-|English name |contact point 
-|URI |dcat:contactPoint 
-|Range |vcard:Kind 
-|Anvendelse |Brukes til å oppgi kontaktpunkt(er) for tjenesten. 
-|Usage note |To specify contact points for the service.  
-|Multiplisitet |1..n 
-|Kravsnivå |Obligatorisk/Mandatory 
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
 |===
 
 [[Tjeneste-navn]]
@@ -99,32 +96,29 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 |English name |name 
 |URI |dct:title 
-|Range |rdfs:Literal 
-|Anvendelse |Brukes til å oppgi det offisielle navnet på tjenesten. Denne egenskapen kan gjentas når navnet finnes i flere språk. 
-|Usage note |This property represents the official Name of the Service. 
+|Range | rdf:langString  
+|Anvendelse | Egenskapen brukes til å oppgi det offisielle navnet på tjenesten. Egenskapen bør gjentas når navnet finnes på flere språk. 
+|Usage note | This property represents the official Name of the Service, repeated when the name is in parallel languages.
 |Multiplisitet |1..n 
-|Kravsnivå |Obligatorisk/Mandatory 
+|Kravnivå  |Obligatorisk/Mandatory 
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
 |===
 
 [[Tjeneste-produserer]]
-==== Tjeneste - produserer (cpsv:produces)
+==== Tjeneste – produserer (cpsv:produces)
 
 [cols="30s,70d"]
 |===
 |English name |produces 
 |URI |cpsv:produces 
 |Range |cv:Output 
-|Anvendelse |Brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.  
-|Usage note |Links a Service to one or more instances of the Output class describing the actual result of executing a given Service. 
+|Anvendelse | Egenskapen brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.  
+|Usage note | This property links a Service to one or more instances of the Output class describing the actual result of executing a given Service. 
 |Multiplisitet |1..n 
-|Kravsnivå |Obligatorisk/Mandatory 
-|Merknad 1|Se tilsvarende https://data.norge.no/specification/dcat-ap-no/#OffentligTjeneste-produserer[beskrivelse i DCAT-AP-NO], der bl.a. Datasett (`dcat:Dataset`) er en subklasse av `cv:Output`. På denne måte kan en tjeneste produsere et datasett som tjenesteresultat.  
-|Merknad 2| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Kravnivå  |Obligatorisk/Mandatory 
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
 |===
 
 [[Tjeneste-anbefalte-egenskaper]]
@@ -138,13 +132,12 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|subject
 |URI|dct:subject
 |Range|skos:Concept
-|Anvendelse|Brukes til å referere til begrep som er viktig for å forstå tjenesten.
-|Usage note|To refer to concept that is important for the understanding of the service.
+|Anvendelse| Egenskapen brukes til å referere til begrep som er viktig for å forstå tjenesten.
+|Usage note| This property refers to concept that is important for the understanding of the service.
 |Multiplisitet|0..n
-|Kravsnivå| Anbefalt/Recommended
+|Kravnivå | Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel|
 |===
 
 [[Tjeneste-dekningsområde]]
@@ -155,10 +148,10 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |spatial coverage 
 |URI |dct:spatial 
 |Range |dct:Location 
-|Anvendelse |Brukes til å referere til et geografisk område som dekkes av tjenesten. 
-|Usage note |A Service is likely to be available only within a given area. 
+|Anvendelse | Egenskapen brukes til å referere til et geografisk område som dekkes av tjenesten. 
+|Usage note | This property represents a given area within which a Service is likely to be available. 
 |Multiplisitet |0..n 
-|Kravsnivå |Anbefalt/Recommended 
+|Kravnivå  |Anbefalt/Recommended 
 |Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
 * Minst en verdi skal være fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted]; http://sws.geonames.org/[GeoNavn].
@@ -171,25 +164,6 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 * To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
-|===
-
-[[Tjeneste-dokumentasjonskrav]]
-==== Tjeneste - dokumentasjonskrav (cpsv:hasInput)
-
-[cols="30s,70d"]
-|===
-|English name |has input 
-|URI |cpsv:hasInput 
-|Range |cv:Evidence 
-|Anvendelse |Brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
-|Usage note |The Has Input property links a Service to one or more instances of the Evidence class. 
-|Multiplisitet |0..n 
-|Kravsnivå | Anbefalt/Recommended 
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Remarks  |  A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.  
-|Eksempel |
 |===
 
 [[Tjeneste-erDelAv]]
@@ -200,32 +174,49 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |is part of 
 |URI |dct:isPartOf 
 |Range |cpsvno:Service 
-|Anvendelse |Brukes til å referere til en annen tjeneste som denne tjenesten er en del av. 
-|Usage note |This property indicates a related Service in which is included. This property is the inverse of `dct:hasPart.` 
+|Anvendelse | Egenskapen brukes til å referere til en annen tjeneste som tjenesten er en del av. 
+|Usage note | This property indicates a related Service in which is included. This property is the inverse of `dct:hasPart.` 
 |Multiplisitet |0..n 
-|Kravsnivå |Anbefalt/Recommended 
+|Kravnivå  |Anbefalt/Recommended 
 |Merknad 1 | Denne er den inverse av egenskapen <<Tjeneste-harDel>>.
+|Remark 1 | This is the inverse of the property <<Tjeneste-harDel>>.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===
 
 [[Tjeneste-harDel]]
-==== Tjeneste - har del (dct:hasPart)
+==== Tjeneste – har del (dct:hasPart)
 
 [cols="30s,70d"]
 |===
 |English name |has part 
 |URI |dct:hasPart 
 |Range |cpsvno:Service 
-|Anvendelse |Brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives. 
-|Usage note |This property indicates a related Service that is included either physically or logically in the described resource.  
+|Anvendelse | Egenskapen brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives. 
+|Usage note | This property indicates a related Service that is included either physically or logically in the described resource.  
 |Multiplisitet |0..n 
-|Kravsnivå |Anbefalt/Recommended 
+|Kravnivå  |Anbefalt/Recommended 
 |Merknad 1 |Dette er den inverse av egenskapen <<Tjeneste-harDel>>. 
+|Remark 1 | This is the inverse of the property <<Tjeneste-harDel>>. 
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|===
+
+[[Tjeneste-har-dokumentasjonskrav]]
+==== Tjeneste – har dokumentasjonskrav (cpsv:hasInput)
+
+[cols="30s,70d"]
+|===
+|English name |has input 
+|URI |cpsv:hasInput 
+|Range |cv:Evidence 
+|Anvendelse | Egenskapen brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
+|Usage note | This property links a Service to one or more instances of the Evidence class. 
+|Multiplisitet |0..n 
+|Kravnivå  | Anbefalt/Recommended 
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
+|Remark  |  A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.  
 |===
 
 [[Tjeneste-hjemmeside]]
@@ -236,13 +227,12 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |homepage 
 |URI |foaf:homepage 
 |Range |foaf:Document 
-|Anvendelse |Brukes til å referere til hjemmesiden til tjenesten.   
-|Usage note |This property refers to the homepage of a Service. 
+|Anvendelse | Egenskapen brukes til å referere til hjemmesiden til tjenesten.   
+|Usage note | This property refers to the homepage of a Service. 
 |Multiplisitet |0..n 
-|Kravsnivå |Anbefalt/Recommended 
+|Kravnivå  |Anbefalt/Recommended 
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
 |===
 
 [[Tjeneste-status]]
@@ -253,53 +243,32 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |status 
 |URI |adms:status 
 |Range |skos:Concept 
-|Anvendelse |Brukes til å referere til status til tjenesten (f.eks. aktiv, inaktiv, under utvikling osv.) i henhold til et predefinert kontrollert vokabular. 
-|Usage note |Indicates whether a Service is active, inactive, under development etc. according to a controlled vocabulary. 
+|Anvendelse | Egenskapen brukes til å referere til status til tjenesten (f.eks. aktiv, inaktiv, under utvikling osv.) i henhold til et predefinert kontrollert vokabular. 
+|Usage note | This property indicates whether a Service is active, inactive, under development etc. according to a controlled vocabulary. 
 |Multiplisitet |0..1 
-|Kravsnivå |Anbefalt/Recommended 
+|Kravnivå  |Anbefalt/Recommended 
 |Merknad 1 |Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (lenket ressurs i RDF)] (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP). 
 |Remark 1 | The value shall be chosen from http://purl.org/adms/status/[ADMS Status Vocabulary (linked resource in RDF)].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
 |===
 
 [[Tjeneste-temaområde]]
-==== Tjeneste - temaområde (cv:thematicArea)
+==== Tjeneste – temaområde (cv:thematicArea)
 
 [cols="30s,70d"]
 |===
 |English name |thematic area 
 |URI |cv:thematicArea 
 |Range |skos:Concept 
-|Anvendelse |Brukes til å referere til primært temaområde som dekkes av tjenesten. 
-|Usage note |This property represents the Thematic Area of a Service as described in a controlled vocabulary. 
+|Anvendelse | Egenskapen brukes til å referere til primært temaområde som dekkes av tjenesten. 
+|Usage note | This property represents the Thematic Area of a Service as described in a controlled vocabulary. 
 |Multiplisitet |0..n 
-|Kravsnivå |Anbefalt/Recommended 
-|Merknad 1 |Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los - felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
+|Kravnivå  |Anbefalt/Recommended 
+|Merknad 1 |Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
 |Remark 1 | At least one value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los] may be used in addition.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
-|===
-
-[[Tjeneste-type]]
-==== Tjeneste - type (dct:type)
-
-[cols="30s,70d"]
-|===
-|English name |type 
-|URI |dct:type 
-|Range |skos:Concept 
-|Anvendelse |Brukes til å indikere type tjeneste i henhold til et kontrollert vokabular. 
-|Usage note |This property represents the Type of a Service as described in a controlled vocabulary. 
-|Multiplisitet |0..n 
-|Kravsnivå |Anbefalt/Recommended 
-|Merknad 1 |Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-type[Tjenestetype], når verdien finnes i vokabularet.
-|Remark 1 | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-type[Service type], when the value is in the vocabulary.
-|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
 |===
 
 [[Tjeneste-valgfrie-egenskaper]]
@@ -312,15 +281,15 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 |English name |processing time 
 |URI |cv:processingTime 
-|Range |rdfs:Literal typed as xsd:duration 
-|Anvendelse |Brukes til å oppgi den estimerte behandlingstiden. 
-|Usage note |The value of this property is the (estimated) time needed for executing a Service. 
+|Range | xsd:duration 
+|Anvendelse | Egenskapen brukes til å oppgi den estimerte behandlingstiden. 
+|Usage note | The value of this property is the (estimated) time needed for executing a Service. 
 |Multiplisitet |0..1 
-|Kravsnivå |Valgfri/Optional 
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Remarks |The actual information is provided using the ISO8601 syntax for durations. 
-|Eksempel |
+|Kravnivå  |Valgfri/Optional 
+|Merknad 1 | Opplysningen skal oppgis ved hjelp av ISO 8601-syntaksen for varighet. Forklaring er gitt på https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia-siden] som refererer til den offisielle ISO-standarden.
+|Remark 1 |The actual information is provided using the ISO 8601 syntax for durations. Explanation is provided in the https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia page] that references the official ISO standard.
+|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===
 
 [[Tjeneste-beskrivendeDatasett]]
@@ -331,31 +300,13 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |is described at 
 |URI |cv:isDescribedAt 
 |Range |dcat:Dataset 
-|Anvendelse |Brukes til å referere til datasett som beskriver tjenesten.  
-|Usage note |The Is Described At property links a Service to the Dataset(s) in which it is being described. 
+|Anvendelse | Egenskapen brukes til å referere til datasett som beskriver tjenesten.  
+|Usage note | This property links a Service to the Dataset(s) in which it is being described. 
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
-|Merknad 1 |Bruk egenskapen <<Tjeneste-dokumentasjonskrav>> for å kytte til datasett som tjenesten bruker, eller egenskapen <<Tjeneste-produserer>> for datasett som tjenesten produserer.  
+|Kravnivå  |Valgfri/Optional 
+|Merknad 1 |Bruk egenskapen <<Tjeneste-har-dokumentasjonskrav>> for å kytte til datasett som tjenesten bruker, eller egenskapen <<Tjeneste-produserer>> for datasett som tjenesten produserer.  
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
-|===
-
-[[Tjeneste-deltagende]]
-==== Tjeneste – deltagende (cv:hasParticipation)
-
-[cols="30s,70d"]
-|===
-|English name |has participation 
-|URI |cv:hasParticipation 
-|Range |cv:Participation 
-|Anvendelse |Brukes til å knytte til andre aktører som er deltagende i å levere tjenesten.  
-|Usage note |The CPSV-AP defines the two basic roles of Competent Authority and Service Provider, but this simple model can be extended if required using the Has Participation property that links to the Participation class. 
-|Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
 |===
 
 [[Tjeneste-erGruppertVed]]
@@ -366,13 +317,12 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|is grouped by
 |URI|cv:isGroupedBy
 |Range|cv:Event
-|Anvendelse|Brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
-|Usage note|This property links the Service to the triggering Event class.
+|Anvendelse| Egenskapen brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
+|Usage note| This property links the Service to the triggering Event class.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel|
 |===
 
 [[Tjeneste-erKlassifisertUnder]]
@@ -383,13 +333,12 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |is classified by 
 |URI |cv:isClassifiedBy 
 |Range |skos:Concept 
-|Anvendelse |Brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<Tjeneste-temaområde>>, <<Tjeneste-næringsgruppering>> osv. 
-|Usage note |The Is Classified By property allows to classify the Service with any Concept, other than those already foreseen and defined explicitely in the <<Tjeneste-temaområde>>, <<Tjeneste-næringsgruppering>> etc. 
+|Anvendelse | Egenskapen brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<Tjeneste-temaområde>>, <<Tjeneste-sektor>> osv. 
+|Usage note | This property allows to classify the Service with any Concept, other than those already foreseen and defined explicitely in the <<Tjeneste-temaområde>>, <<Tjeneste-sektor>> etc. 
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
+|Kravnivå  |Valgfri/Optional 
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.  
-|Eksempel | 
 |===
 
 [[Tjeneste-erTilgjengeligVia]]
@@ -400,86 +349,111 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |has channel 
 |URI |cv:hasChannel 
 |Range |cv:Channel 
-|Anvendelse |Brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte. 
-|Usage note |This property links the Service to any Channel through which an Agent provides, uses or otherwise interacts with the Service, such as an online service, phone number or office.  
+|Anvendelse | Egenskapen brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte. 
+|Usage note | This property links the Service to any Channel through which an Agent provides, uses or otherwise interacts with the Service, such as an online service, phone number or office.  
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
+|Kravnivå  |Valgfri/Optional 
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
 |===
 
 [[Tjeneste-følgerRegel]]
-==== Tjeneste - følger regel (cpsv:follows)
+==== Tjeneste – følger regel (cpsv:follows)
 
 [cols="30s,70d"]
 |===
 |English name |follows 
 |URI |cpsv:follows 
 |Range |cpsv:Rule 
-|Anvendelse |Brukes til å referere til regelen som gjelder for tjenesten. 
-|Usage note |This property links a Service to the Rule(s) under which it operates. 
+|Anvendelse | Egenskapen brukes til å referere til regelen som gjelder for tjenesten. 
+|Usage note | This property links a Service to the Rule(s) under which it operates. 
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
+|Kravnivå  |Valgfri/Optional 
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel |Se også <<KnytteTilRegelverk>>. 
 |===
 
-[[Tjeneste-gebyr]]
-==== Tjeneste – gebyr (cv:hasCost)
+[[Tjeneste-har-deltagelse]]
+==== Tjeneste – har deltagelse (cv:hasParticipation)
+
+[cols="30s,70d"]
+|===
+|English name |has participation 
+|URI |cv:hasParticipation 
+|Range |cv:Participation 
+|Anvendelse | Egenskapen brukes til å knytte til andre aktører som deltar i eller samhandler med tjenesten.  
+|Usage note | The CPSV-AP defines the two basic roles of Competent Authority and Service Provider, but this simple model can be extended if required using this property that links to the Participation class. 
+|Multiplisitet |0..n 
+|Kravnivå  |Valgfri/Optional 
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|===
+
+[[Tjeneste-har-gebyr]]
+==== Tjeneste – har gebyr (cv:hasCost)
 
 [cols="30s,70d"]
 |===
 |English name |has cost 
 |URI |cv:hasCost 
 |Range |cv:Cost 
-|Anvendelse |Brukes til å referere til en eller flere instanser av klassen Gebyr (cv:Cost), for å oppgi ev. gebyr for tjenesten.  
-|Usage note |The Has Cost property links a Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Service for the citizen or business related to the execution of the particular Service. 
+|Anvendelse | Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (cv:Cost), for å oppgi ev. gebyr for tjenesten.  
+|Usage note | This property links a Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Service for the citizen or business related to the execution of the particular Service. 
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
+|Kravnivå  |Valgfri/Optional 
 |Merknad 1 | Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, skal egenskapen <<Gebyr-hvisTilbysGjennom>> brukes.
-|Remarks 1 |Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship. 
+|Remark 1 |Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship. 
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
+|===
+
+[[Tjeneste-har-krav]]
+==== Tjeneste – har krav (cv:holdsRequirement)
+
+[cols="30s,70d"]
+|===
+|English name | holds requirement
+|URI | cv:holdsRequirement 
+|Range | cv:Requirement 
+|Anvendelse | Egenskapen brukes til å referere til vilkår knyttet til behov for eller bruk av tjenesten.   
+|Usage note | This property links a Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc. 
+|Multiplisitet |0..n 
+|Kravnivå  |Valgfri/Optional 
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|===
+
+[[Tjeneste-har-relatert-regelverk]]
+==== Tjeneste – har relatert regelverk (cv:hasLegalResource)
+
+[cols="30s,70d"]
+|===
+|English name |has legal resource 
+|URI |cv:hasLegalResource 
+|Range |eli:LegalResource 
+|Anvendelse | Egenskapen brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til. 
+|Usage note | This property links a Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Service relates, operates or has its legal basis. 
+|Multiplisitet |0..n 
+|Kravnivå  |Valgfri/Optional 
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===
 
 [[Tjeneste-krever]]
-==== Tjeneste - krever (dct:requires)
+==== Tjeneste – krever (dct:requires)
 
 [cols="30s,70d"]
 |===
 |English name |requires 
 |URI |dct:requires 
 |Range |cpsvno:Service
-|Anvendelse |Brukes til å referere til en eller flere andre tjenester som denne tjenesten krever utført først, eller som denne tjenesten på en eller annen måte bruker resultat fra.  
-|Usage note |One Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input. 
+|Anvendelse | Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultat fra.  
+|Usage note | One Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input. 
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
+|Kravnivå  |Valgfri/Optional 
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
-|===
-
-[[Tjeneste-næringsgruppering]]
-==== Tjeneste - næringsgruppering (cv:sector)
-
-[cols="30s,70d"]
-|===
-|English name |sector 
-|URI |cv:sector 
-|Range |skos:Concept 
-|Anvendelse |Brukes til å referere til industri/sektor som den aktuelle tjenesten er relatert til, eller er ment for. En tjeneste kan relateres til flere industrier/sektorer.  
-|Usage note |This property represents the industry or sector a Service relates to, or is intended for. Note that a single Service may relate to multiple sectors. 
-|Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
-|Merknad 1 |De mulige verdiene for denne egenskapen velges fra https://www.ssb.no/klass/klassifikasjoner/6/[Standard for næringsgruppering]. 
-|Remarks  1 |The possible values for this property are provided as a controlled vocabulary, https://www.ssb.no/en/klass/klassifikasjoner/6/[Standard Industrial Classification] (based on NACE Rev.2).  
-|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
-|Example |
 |===
 
 [[Tjeneste-nøkkelord]]
@@ -489,31 +463,13 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |===
 |English name |keyword 
 |URI |dcat:keyword 
-|Range |rdfs:Literal 
-|Anvendelse |Brukes til å oppgi nøkkelord som beskriver den aktuelle tjenesten. 
-|Usage note |This property represents a keyword, term or phrase to describe the Service. 
+|Range | rdf:langString  
+|Anvendelse | Egenskapen brukes til å oppgi nøkkelord som beskriver den aktuelle tjenesten. 
+|Usage note | This property represents a keyword, term or phrase to describe the Service. 
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
+|Kravnivå  |Valgfri/Optional 
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
-|===
-
-[[Tjeneste-relatertRegelverk]]
-==== Tjeneste - relatert regelverk (cv:hasLegalResource)
-
-[cols="30s,70d"]
-|===
-|English name |has legal resource 
-|URI |cv:hasLegalResource 
-|Range |eli:LegalResource 
-|Anvendelse |Brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til. 
-|Usage note |The Has Legal Resource property links a Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Service relates, operates or has its legal basis. 
-|Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
 |===
 
 [[Tjeneste-relatertTjeneste]]
@@ -524,14 +480,31 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |related service
 |URI |dct:relation 
 |Range |cpsvno:Service 
-|Anvendelse |Brukes til å referere til en eller flere andre relaterte tjenester.  
-|Usage note |This property represents a Service related to the particular instance of the Service class. 
+|Anvendelse | Egenskapen brukes til å referere til en eller flere andre relaterte tjenester.  
+|Usage note | This property represents a Service related to the particular instance of the Service class. 
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
+|Kravnivå  |Valgfri/Optional 
 |Merknad 1 |Bruk heller egenskapen <<Tjeneste-krever>> der det er avhengighet mellom tjenestene. 
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel | 
+|===
+
+[[Tjeneste-sektor]]
+==== Tjeneste – sektor (cv:sector)
+
+[cols="30s,70d"]
+|===
+|English name |sector 
+|URI |cv:sector 
+|Range |skos:Concept 
+|Anvendelse | Egenskapen brukes til å referere til industri/sektor som den aktuelle tjenesten er relatert til, eller er ment for. En tjeneste kan relateres til flere industrier/sektorer.  
+|Usage note | This property represents the industry or sector a Service relates to, or is intended for. Note that a single Service may relate to multiple sectors. 
+|Multiplisitet |0..n 
+|Kravnivå  |Valgfri/Optional 
+|Merknad 1 |De mulige verdiene for egenskapen velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme].
+|Remark 1 | The possible values for this property are described in the controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme Authority Table] of the Publications Office.
+|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===
 
 [[Tjeneste-språk]]
@@ -542,30 +515,30 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |language 
 |URI |dct:language 
 |Range |dct:LinguisticSystem 
-|Anvendelse |Brukes til å oppgi hvilke språk tjenesten er tilgjengelig på. Dette kan være ett språk eller flere språk, for eksempel i land med mer enn ett offisielt språk. 
-|Usage note |This property represents the language(s) in which the Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. 
+|Anvendelse | Egenskapen brukes til å oppgi hvilke språk tjenesten er tilgjengelig på. Dette kan være ett språk eller flere språk, for eksempel i land med mer enn ett offisielt språk. 
+|Usage note | This property represents the language(s) in which the Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. 
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
+|Kravnivå  |Valgfri/Optional 
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
 |Remark 1 | The value shall be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
 |===
 
-[[Tjeneste-vilkår]]
-==== Tjeneste – vilkår (cv:hasCriterion)
+[[Tjeneste-type]]
+==== Tjeneste – type (dct:type)
 
 [cols="30s,70d"]
 |===
-|English name |has criterion 
-|URI |cv:hasCriterion 
-|Range |cv:CriterionRequirement 
-|Anvendelse |Brukes til å referere til vilkår knyttet til behov for eller bruk av tjenesten.   
-|Usage note |Links a Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc. 
+|English name |type 
+|URI |dct:type 
+|Range |skos:Concept 
+|Anvendelse | Egenskapen brukes til å indikere type tjeneste i henhold til et kontrollert vokabular. 
+|Usage note | This property represents the Type of a Service as described in a controlled vocabulary. 
 |Multiplisitet |0..n 
-|Kravsnivå |Valgfri/Optional 
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel |
+|Kravnivå  | Valgfri/Optional 
+|Merknad 1 |Verdien bør velges fra et kontrollert vokabular.
+|Remark 1 | The value should be chosen from a controlled vocabulary.
+|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===

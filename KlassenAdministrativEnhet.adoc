@@ -1,0 +1,61 @@
+== Klassen Administrativ enhet [[AdministrativEnhet]]
+
+[[img-KlassenAdministrativEnhet]]
+.Klassen Administrativ enhet (cv:AdminUnit)
+[link=images/KlassenAdministrativEnhet.png]
+image::images/KlassenAdministrativEnhet.png[]
+
+[cols="30s,70d"]
+|===
+|English name|  Administrative unit
+|Anvendelse| Klassen brukes til å representere en detaljert administrativ enhet som er organisert i et hierarki.
+
+Klassen bør brukes når det finnes en klassifisering av administrative enheter, istedenfor å bruke fritekst-egenskapene <<Adresse-admin-enhet-nivå1>> og <<Adresse-admin-enhet-nivå2>>.
+|Usage note|This class represents a detailed administrative unit organized in a hierarchy.
+
+This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text.
+|URI| cv:AdminUnit
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i Core Location Vocabulary som CPSV-AP bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in Core Location Vocabulary which CPSV-AP also uses.
+|===
+
+=== Obligatoriske egenskaper for klassen _Administrativ enhet_ [[AdministrativeEnhet-obligatoriske-egenskaper]]
+
+==== Administrativ enhet – kode (cv:code) [[AdministrativEnhet-kode]]
+
+[cols="30s,70d"]
+|===
+|English name| code
+|URI| cv:code
+|Range|skos:Concept
+|Anvendelse| Egenskapen brukes til å referere til klassifiseringen av den administrative enheten.
+
+Noen anbefalte kodelister fra EUs Publications Office er: https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu[Administrative Territorial Units (ATU)], https://ec.europa.eu/eurostat/web/nuts/background[NUTS] and https://ec.europa.eu/eurostat/web/nuts/local-administrative-units[Local Administrative Units (LAU)].
+|Usage note| This property refers to the classification of the administrative unit.
+
+Some recommended codelists from the EU Publications Office and Eurostat include: https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu[Administrative Territorial Units (ATU)], https://ec.europa.eu/eurostat/web/nuts/background[NUTS] and https://ec.europa.eu/eurostat/web/nuts/local-administrative-units[Local Administrative Units (LAU)].
+|Multiplisitet|1..1
+|Kravnivå| Obligarorisk/Mandatory
+|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+|===
+
+==== Administrativ enhet – nivå (cv:level) [[AdministrativEnhet-nivå]]
+
+[cols="30s,70d"]
+|===
+|English name| level
+|URI| cv:level
+|Range|skos:Concept
+|Anvendelse| Egenskapen brukes til å referere til nivået av den administrative enheten i klassifiseringshierarkiet.
+
+Noen anbefalte kodelister fra EUs Publications Office er: https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu[Administrative Territorial Units (ATU)], https://ec.europa.eu/eurostat/web/nuts/background[NUTS] and https://ec.europa.eu/eurostat/web/nuts/local-administrative-units[Local Administrative Units (LAU)].
+|Usage note| This property refers to the classification of the administrative unit.
+
+Some recommended codelists from the EU Publications Office and Eurostat include: https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu[Administrative Territorial Units (ATU)], https://ec.europa.eu/eurostat/web/nuts/background[NUTS] and https://ec.europa.eu/eurostat/web/nuts/local-administrative-units[Local Administrative Units (LAU)].
+|Multiplisitet|1..1
+|Kravnivå| Obligarorisk/Mandatory
+|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+|===
