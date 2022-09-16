@@ -12,7 +12,6 @@ image::images/KlassenDeltagelse.png[]
 |Usage note|The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider.
 |URI|cv:Participation
 |Kravnivå|Valgfri/Optional
-|Merknad|Se også <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
@@ -24,12 +23,11 @@ image::images/KlassenDeltagelse.png[]
 |===
 |English name|description
 |URI|dct:description
-|Range|rdfs:Literal
-|Anvendelse| Egenskapen brukes til å oppgi en tekstlig beskrivelse av deltagelsen. Gjentas når beskrivelsen finnes i flere ulike språk.
-|Usage note| This property represents a free text description of the Participation.
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi en tekstlig beskrivelse av deltagelsen. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+|Usage note| This property represents a free text description of the Participation, repeated when the description is in parallel languages.
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
-|Merknad|Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n for å støtte flerspråklighet.
 |Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
@@ -39,15 +37,14 @@ image::images/KlassenDeltagelse.png[]
 |===
 |English name|identifier
 |URI|dct:identifier
-|Range|rdfs:Literal typed as URI
+|Range|rdfs:Literal
 |Anvendelse| Egenskapen brukes til å oppgi identifikatoren til deltagelsen.
 |Usage note|This property represents an Identifier for the Participation.
 |Multiplisitet|1..1
 |Kravnivå|Obligatorisk/Mandatory
-|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
-|Eksempel|
 |===
 
 ==== Deltagelse – rolle (cv:role) [[Deltagelse-rolle]]
@@ -62,6 +59,6 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
 |Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/role-type[Rolletype], når verdien finnes i vokabularet.
-|Remarks|The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/role-type[Role type], when the value is in the vocabulary.
+|Remark|The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/role-type[Role type], when the value is in the vocabulary.
 |Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===

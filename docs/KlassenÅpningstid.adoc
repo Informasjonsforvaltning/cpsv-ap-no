@@ -1,19 +1,17 @@
-== Klassen Åpningstid (schema:OpeningHoursSpecification) [[Åpningstid]]
+== Klassen Åpningstid (cv:OpeningHoursSpecification) [[Åpningstid]]
 
 [[img-KlassenÅpningstid]]
-.Klassen Åpningstid (schema:OpeningHoursSpecificatinon)
+.Klassen Åpningstid (cv:OpeningHoursSpecificatinon)
 [link=images/KlassenÅpningstid.png]
 image::images/KlassenÅpningstid.png[]
 
 [cols="30s,70d"]
 |===
 |English name|Opening Hours Specification
-|Anvendelse| Klassen brukes til å beskrive detaljer i åpningstid på en strukturert måte.
+|Anvendelse| Klassen brukes til å beskrive detaljer om åpningstid på en strukturert måte.
 |Usage note| This class represents a structured value providing information about the opening hours.
 |URI| cv:OpeningHoursSpecification
 |Kravnivå |Valgfri/Optional
-|Merknad|
-|Eksempel|
 |===
 
 === Valgfrie egenskaper for Klassen _Åpningstid_ [[Åpningstid-valgfrie-egenskaper]]
@@ -25,18 +23,18 @@ image::images/KlassenÅpningstid.png[]
 |English name|day of week
 |URI|schema:dayOfWeek
 |Range|schema:DayOfWeek
-|Anvendelse| Egenskapen brukes til å oppgi dag i uke som åpningsspesifikasjonen gjelder for.
+|Anvendelse| Egenskapen brukes til å oppgi dag i uke som åpningen gjelder for.
 |Usage note| This property represents the day of the week for which these opening hours are valid
 |Multiplisitet|0..n
 |Kravnivå |Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-|Eksempel|Mandag til Fredag.
+|Eksempel|Mandag til fredag.
 |===
 
 Eksempel i RDF Turtle:
 -----
-<åpningsTid> a schema:OpeningHoursSpecification ;
+<åpningsTid> a cv:OpeningHoursSpecification ;
    schema:dayOfWeek schema:Monday , schema:Tuesday , schema:Wednesday , schema:Tursday , schema:Friday ;
    schema:opens "08:00"^^xsd:time ;
    schema:closes "16:00"^^xsd:time ; .
@@ -48,8 +46,8 @@ Eksempel i RDF Turtle:
 |===
 |English name|valid from inclusive
 |URI|schema:validFrom
-|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
-|Anvendelse| Egenskapen brukes til å oppgi fra og med når den aktuelle åpningstid gjelder.
+|Range| xsd:date or xsd:dateTime
+|Anvendelse| Egenskapen brukes til å oppgi fra og med når åpningstiden gjelder.
 |Usage note| This property represents the date when the open hours specification becomes valid.
 |Multiplisitet|0..1
 |Kravnivå |Valgfri/Optional
@@ -60,7 +58,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-ex:ChristmasClosed a schema:OpeningHoursSpecification;
+<ChristmasClosed> a cv:OpeningHoursSpecification;
    schema:validFrom "2016-12-24T012:00Z"^^xsd:dateTime ;
    schema:validThrough "2017-01-02T09:00Z"^^xsd:dateTime .
 -----
@@ -71,8 +69,8 @@ ex:ChristmasClosed a schema:OpeningHoursSpecification;
 |===
 |English name|valid through inclusive
 |URI|schema:validThrough
-|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
-|Anvendelse| Egenskapen brukes til å oppgi til og med når den aktuelle åpningstiden gjelder.
+|Range| xsd:date or xsd:dateTime
+|Anvendelse| Egenskapen brukes til å oppgi til og med når åpningstiden gjelder.
 |Usage note| This property represents the date after which when the open hours specification is not valid.
 |Multiplisitet|0..1
 |Kravnivå |Valgfri/Optional
@@ -89,8 +87,8 @@ Eksempel i RDF Turtle: Se under <<Åpningstid-gyldigFraOgMed>>.
 |===
 |English name|closes
 |URI|schema:closes
-|Range|rdfs:Literal typed as xsd:time
-|Anvendelse| Egenskapen brukes til å oppgis stengningstidspunkt.
+|Range| xsd:time
+|Anvendelse| Egenskapen brukes til å oppgi tidspunktet for stengning.
 |Usage note| This property represents the closing hour.
 |Multiplisitet|0..1
 |Kravnivå |Valgfri/Optional
@@ -107,13 +105,13 @@ Eksempel i RDF Turtle: Se under <<Åpningstid-dagerIUka>>.
 |===
 |English name|opens
 |URI|schema:opens
-|Range|rdfs:Literal typed as xsd:time
-|Anvendelse| Egenskapen brukes til å oppgi åpningstidspunkt.
+|Range| xsd:time
+|Anvendelse| Egenskapen brukes til å oppgi tidspunktet for åpning.
 |Usage note| This property represents the opening hour.
 |Multiplisitet|0..1
 |Kravnivå |Valgfri/Optional
-|Merknad 1 |I henhold til https://schema.org/OpeningHoursSpecification[schema.org], at denne egenskapen brukes betyr «åpent» og «lukket» ellers.
-|Remarks 1 |According to https://schema.org/OpeningHoursSpecification[schema.org], “The place is *open* if the https://schema.org/opens[opens] property is specified, and *closed* otherwise.”
+|Merknad 1 |I henhold til https://schema.org/OpeningHoursSpecification[schema.org] er det «åpent» hvis egenskapen brukes og «lukket» ellers.
+|Remark 1 |According to https://schema.org/OpeningHoursSpecification[schema.org], “The place is *open* if the https://schema.org/opens[opens] property is specified, and *closed* otherwise.”
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
 |Eksempel|Se under <<Åpningstid-dagerIUka>>.

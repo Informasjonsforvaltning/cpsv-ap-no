@@ -1,0 +1,228 @@
+== Klassen Krav (cv:Requirement) [[Krav]]
+
+[[img-KlassenKrav]]
+.Klassen Krav (cv:Requirement)
+[link=images/KlassenKrav.png]
+image::images/KlassenKrav.png[]
+
+[cols="30s,70d"]
+|===
+|English name| Requirement
+|Anvendelse| Klassen brukes til å representere nødvendige betingelser eller forutsetninger for bruk av en tjeneste, som bevises ved dokumentasjon.
+|Usage note| The class represents condition or prerequisite that is to be proven by Evidence.
+
+Not all public services are needed or are used by everyone. For example, the visa service operated by European countries is not needed by European citizens but is needed by some citizens from elsewhere, or public services offering unemployment benefits and grants are targeting specific societal groups. The CPSV-AP reuses the Core Criterion and Core Evidence Vocabulary for this class. Requirement is a generic class representing any type of prerequisite that may be desired, needed or imposed as an obligation. CCCEV recommends to not use the Requirement class directly, but rather a more semantically-enriched subclass such as Criterion, Information Requirement or Constraint. Also note that the Requirement class is specified at a more abstract level and is not to be used as the instantiation of a Requirement for a specific Agent. To illustrate the notion: the European Directive on services in the internal market defines requirement as any obligation, prohibition, condition or limit provided for in the laws, regulations or administrative provisions of the Member States or in consequence of case-law, administrative practice, the rules of professional bodies, or the collective rules of professional associations or other professional organisations, adopted in the exercise of their legal autonomy.
+|URI|cv:Requirement
+|Kravnivå|Valgfri/Optional
+|===
+
+=== Obligatoriske egenskaper for klassen _Krav_ [[Krav-obligatoriske-egenskaper]]
+
+==== Krav – identifikator (dct:identifier) [[Krav-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Anvendelse| Egenskapen brukes til å oppgi identifikatoren til kravet.
+|Usage note|This property represents an identifier for the Requirement.
+|Multiplisitet|1..1
+|Kravnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|Eksempel|
+|===
+
+==== Krav – navn (dct:title) [[Krav-navn]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|dct:title
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navn til kravet. Egenskapen bør gjentas når navnet er på flere språk.
+|Usage note|This property represents the official Name of the Requirement, repeated when the name is in several languages.
+|Multiplisitet|1..n
+|Kravnivå|Obligatorisk/Mandatory
+|===
+
+
+=== Anbefalte egenskaper for klassen _Krav_ [[Krav-anbefalte-egenskaper]]
+
+==== Krav – beskrivelse (dct:description) [[Krav-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name| description
+|URI|dct:description
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi beskrivelse av kravet. Egenskapen bør gjentas når beskrivelsen er på flere språk.
+|Usage note|This property represents a description of the Requirement, repeated when the description is in several languages.
+|Multiplisitet|0..n
+|Kravnivå|Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+=== Valgfrie egenskaper for klassen _Krav_ [[Krav-valgfrie-egenskaper]]
+
+==== Krav – er subkrav av (cv:isRequirementOf) [[Krav-er-krav-til]]
+
+[cols="30s,70d"]
+|===
+|English name|  is requirement of
+|URI| cv:isRequirementOf
+|Range| cv:Requirement
+|Anvendelse| Egenskapen brukes til å representere en referanse mellom et subkrav og dets forelderkrav.
+|Usage note|This property represents a reference between a sub-Requirement and its parent Requirement.
+
+The relation between a parent Requirement and a sub-Requirement can be complex. Therefore, qualified relations (see hasQualifiedRelation) can be used to represent this relationship on its own and qualify it with additional information such as a date, a place. This is left to implementers. In the case where the purpose is to link the two Requirements without additional information, the simple relationship as proposed here can be directly used.
+|Multiplisitet|0..n
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Krav – er utledet fra (cv:isDerivedFrom) [[Krav-er-utledet-fra]]
+
+[cols="30s,70d"]
+|===
+|English name| is derived from
+|URI| cv:hasDerivedFrom
+|Range| cv:ReferenceFramework
+|Anvendelse| Egenskapen brukes til å referere til referanserammeverk som kravet er basert på, f.eks. lov, forskrift eller annen regulering.
+|Usage note|This property refers to the Reference Framework on which the Requirement is based, such as a law or regulation.
+
+Note that a Requirement can have several Reference Frameworks from which it is derived.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Krav – er utstedt av (dct:publisher) [[Krav-er-utstedt-av]]
+
+[cols="30s,70d"]
+|===
+|English name| is issued by
+|URI| dct:publisher
+|Range| foaf:Agent
+|Anvendelse| Egenskapen brukes til å referere til aktøren som har utstedt kravet.
+|Usage note|This property refers to the Agent that has published the Requirement.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Krav – har dokumentasjonstypeliste (cv:hasEvidenceTypeList) [[Krav-har-dokumentasjonstypeliste]]
+
+[cols="30s,70d"]
+|===
+|English name| has evidence type list
+|URI| cv:hasEvidenceTypeList
+|Range| cv:EvidenceTypeList
+|Anvendelse| Egenskapen brukes til å referere til dokumentasjonstypeliste som spesifiserer dokumentasjonstypene som trengs for å tilfredsstille kravet.
+
+Et krav kan ha en eller flere dokumentasjonstypelister. For at kravet skal være oppfylt, skal dokumentasjonen være i samsvar med minst én av listene når det er flere lister.
+|Usage note|This property refers to the Evidence Type List that specifies the Evidence Types that are needed to meet the Requirement.
+
+One or several Lists of Evidence Types can support a Requirement. At least one of them must be satisfied by the response to the Requirement.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Krav – har informasjonsbegrep (cv:hasConcept) [[Krav-har-informasjonsbegrep]]
+
+[cols="30s,70d"]
+|===
+|English name| has concept
+|URI| cv:hasConcept
+|Range| cv:InformationConcept
+|Anvendelse| Egenskapen brukes til å referere til informasjonsbegrep som kravet forventer en verdi av.
+|Usage note|This property refers to the Information Concept for which a value is expected by the Requirement.
+
+Information Concepts defined for specific Requirements also represent the basis for specifying the Supported Value an Evidence should provide.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Krav – har kvalifisert relasjon til andre krav (cv:hasQualifiedRelation) [[Krav-har-kvalifisert-relasjon-til-andre-krav]]
+
+[cols="30s,70d"]
+|===
+|English name| has qualified relation
+|URI| cv:hasQualifiedRelation
+|Range| cv:Requirement
+|Anvendelse| Egenskapen brukes til å representere en beskrevet/kategorisert relasjon til instans av klassen Krav eller en av dens subklasser.
+|Usage note|This property represents a described and/or categorised relation to another Requirement.
+
+This property leaves the possibility to define a qualified relation from Requirement to Information Requirement or Constraint as well as a qualified relation from Requirement to Requirement. A use case would be to specialize an EU requirement in Member States' specific requirements.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Krav – har mer spesifikt krav (cv:hasRequirement) [[Krav-har-mer-spesifikt-krav]]
+
+[cols="30s,70d"]
+|===
+|English name| has requirement
+|URI| cv:hasRequirement
+|Range| cv:Requirement
+|Anvendelse| Egenskapen brukes til å referere til et mer spesifikt krav som er en del av kravet.
+|Usage note|This property refers to a more specific Requirement that is part of the Requirement.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Krav – har understøttende dokumentasjon (cv:hasSupportingEvidence) [[Krav-har-understøttende-dokumentasjon]]
+
+[cols="30s,70d"]
+|===
+|English name| has supporting evidence
+|URI| hasSupportingEvidence
+|Range| cv:Evidence
+|Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for kravet.
+|Usage note|This property refers to the Evidence that supplies information, proof or support for the Requirement.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|===
+
+==== Krav – tilfredsstiller regel (cv:fulfils) [[Krav-tilfredsstiller]]
+
+[cols="30s,70d"]
+|===
+|English name| fulfils
+|URI| cv:fulfils
+|Range| cpsv:Rule
+|Anvendelse| Egenskapen brukes til å referere til regel som kravet tilfredsstiller.
+|Usage note|This property refers to the rules that the requirement fulfils.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|===
+
+
+==== Krav – type (dct:type) [[Krav-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Anvendelse| Egenskapen brukes til å referere til kategorien kravet tilhører.
+|Usage note|This property refers to the category to which the Requirement belongs.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad |Verdien bør velges fra et kontrollert vokabular.
+|Remark |The value should be chosen from a controlled vocabulary.
+|===

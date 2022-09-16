@@ -12,41 +12,40 @@ image::images/KlassenTidsrom.png[]
 |Usage note| This class  represents a period of time of interval.
 |URI| time:ProperInterval
 |Kravnivå | Valgfri/Optional
-|Merknad 1 | Norsk utvidelse: Denne klassen er ikke eksplisitt i CPSV-AP, men brukes som range av en egenskap (fra CCCEV) som vi har føyet til.
-|Remark 1 | Norwegian extension: This class is not in CPSV-AP, but used as range of a property (from CCCEV) that we have added.
-|Eksempel|
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men brukes som range av en egenskap (fra CCCEV) som vi har føyet til.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but used as range of a property (from CCCEV) that we have added.
 |===
 
 === Anbefalte egenskaper for klassen _Tidsrom_ [[Tidsrom-anbefalte-egenskaper]]
 
-=== Tidsrom - sluttidspunkt (time:hasEnd) [[Tidsrom-sluttidspunkt]]
+==== Tidsrom – sluttidspunkt (time:hasEnd) [[Tidsrom-sluttidspunkt]]
 [cols="30s,70d"]
 |===
-|English name | end
+|English name | end time
 |URI| time:hasEnd
-|Range| rdfs:Literal typed as xsd:dateTime
+|Range| xsd:dateTime
 |Anvendelse | Egenskapen brukes til å oppgi slutten på et tidsrom eller intervall.
 |Usage note | This property represents the end of a period or interval.
 |Multiplisitet| 0..1
-|Kravnivå | Valgfritt
+|Kravnivå | Anbefalt/Recommended
 |===
 
-=== Tidsrom - starttidspunkt (time:hasBeginning) [[Tidsrom-starttidspunkt]]
+==== Tidsrom – starttidspunkt (time:hasBeginning) [[Tidsrom-starttidspunkt]]
 [cols="30s,70d"]
 |===
-|English name | beginning
+|English name | start time
 |URI| time:hasBeginning
-|Range| rdfs:Literal typed as xsd:dateTime
+|Range| xsd:dateTime
 |Anvendelse | Egenskapen brukes til å oppgi begynnelsen på et tidsrom eller intervall.
 |Usage note | This property represents the beginning of a period or interval.
 |Multiplisitet| 0..1
 |Kravnivå | Anbefalt/Recommended
 |===
 
-=== Tidsrom - tidsrom (time:hasBeginning) [[Tidsrom-tidsrom]]
+==== Tidsrom – tidsrom (time:hasXSDDuration) [[Tidsrom-tidsrom]]
 [cols="30s,70d"]
 |===
-|English name | beginning
+|English name | duration
 |URI| time:hasXSDDuration
 |Range| rdfs:Literal typed as xsd:duration
 |Anvendelse | Egenskapen brukes til å oppgi et tidsrom eller intervall.

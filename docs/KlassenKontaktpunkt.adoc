@@ -12,8 +12,6 @@ image::images/KlassenKontaktpunkt.png[]
 |Usage note|This class represents the contact information for a Service, Channel, Public Organization, etc.
 |URI|cv:ContactPoint
 |Kravnivå|Anbefalt/Recommended
-|Merknad|Norsk utvidelse: URI endret fra `schema:ContactPoint` til `vcard:Kind`, for å samkjøre med DCAT-AP-NO.
-|Eksempel|
 |===
 
 === Valgfrie egenskaper for klassen _Kontaktpunkt_ [[Kontaktpunkt-valgfrie-egenskaper]]
@@ -29,8 +27,6 @@ image::images/KlassenKontaktpunkt.png[]
 |Usage note| This property is used to specify the time interval during which the Contact Point is not available, as structured data.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|
 |===
 
 ==== Kontaktpunkt – e-post (cv:email) [[Kontaktpunkt-e-post]]
@@ -44,8 +40,6 @@ image::images/KlassenKontaktpunkt.png[]
 |Usage note| This property represents an electronic address through which the Contact Point can be contacted.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|
 |===
 
 ==== Kontaktpunkt – har språk (vcard:hasLanguage) [[Kontaktpunkt-har-språk]]
@@ -60,7 +54,7 @@ image::images/KlassenKontaktpunkt.png[]
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Eksempel|
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Kontaktpunkt – kontaktside (cv:contactPage) [[Kontaktpunkt-kontaktside]]
@@ -74,8 +68,6 @@ image::images/KlassenKontaktpunkt.png[]
 |Usage note| This property refers to a contact page that could be used to reach out the contact point.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|
 |===
 
 ==== Kontaktpunkt – ordinær åpningstid fritekst (cv:openingHours) [[Kontaktpunkt-ordinær-åpningstid-fritekst]]
@@ -85,12 +77,12 @@ image::images/KlassenKontaktpunkt.png[]
 |English name| opening hours (text)
 |URI| cv:openingHours
 |Range| rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi ordinær åpningstid for kontaktpunktet, i fritekst.
-|Usage note| This property specifies the opening hours for the contact point, in text.
+|Anvendelse| Egenskapen brukes til å oppgi ordinær åpningstid for kontaktpunktet, i fritekst. Egenskapen bør gjentas når teksten er på flere språk.
+|Usage note| This property specifies the opening hours for the contact point, in text, repeated when the text is in parallel languages.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|
+|Merknad| Norsk utvidelse: Range endret fra rdfs:Literal til rdf:langString, for å være presis på at språkkode skal oppgis.
+|Remark | Norwegian extension: Range changed from rdfs:Literal to rdf:langString, in order to specify that the language code shall be given.
 |===
 
 ==== Kontaktpunkt – ordinær åpningstid strukturert (schema:hoursAvailable) [[Kontaktpunkt-ordinær-åpningstid-strukturert]]
@@ -99,12 +91,13 @@ image::images/KlassenKontaktpunkt.png[]
 |===
 |English name| hours available (structured)
 |URI|schema:hoursAvailable
-|Range|schema:OpeningHoursSpecification
+|Range|cv:OpeningHoursSpecification
 |Anvendelse| Egenskapen brukes til å referere til en strukturert beskrivelse av åpningstid.
 |Usage note| This property links a contact point to information about when the contact point is available, as structured data.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Se eksempler under <<Åpningstid>>.
 |===
 
@@ -122,6 +115,4 @@ Eksempel i RDF Turtle: Se under <<Åpningstid>>.
 |Usage note| This property represents a telephone number through which the Contact Point can be contacted.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|
 |===

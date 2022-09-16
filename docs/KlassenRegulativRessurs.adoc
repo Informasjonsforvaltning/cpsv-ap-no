@@ -1,21 +1,18 @@
-ravnivå == Klassen Regulativ ressurs (eli:LegalResource) [[RegulativRessurs]]
-
+== Klassen Regulativ ressurs (eli:LegalResource) [[RegulativRessurs]]
 
 [[img-KlassenRegulativRessurs]]
 .Klassen Regulativ ressurs (eli:LegealResource)
 [link=images/KlassenRegulativRessurs.png]
 image::images/KlassenRegulativRessurs.png[]
 
-
 [cols="30s,70d"]
 |===
 |English name|Legal Resource
-|Anvendelse| Klassen brukes til å representere en regulativ ressurs, f.eks. regelverk eller politikk som regulerer utførelsen av en tjeneste.
+|Anvendelse| Klassen brukes til å representere en regulativ ressurs, f.eks. lovgivning/lovverket, retningslinjer eller politikk som regulerer utførelsen av en tjeneste.
 |Usage note| This class represents the legislation, policy or policies that lie behind the Rules that govern the service.
 |URI|eli:LegalResource
 |Kravnivå |Valgfri/Optional
-|Merknad|
-|Eksempel|Se under <<KnytteTilRegelverk>> for eksempel på bruk av denne klassen.
+|Eksempel|Se under <<KnytteTilRegelverk>> for eksempel på bruk av klassen.
 |===
 
 Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
@@ -29,13 +26,12 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |English name|description
 |URI|dct:description
 |Range| rdf:langString
-|Anvendelse| Egenskapen brukes til å referere til en tekstlig beskrivelse av ressursen. Gjentas når den finnes i flere ulike språk.
+|Anvendelse| Egenskapen brukes til å referere til en tekstlig beskrivelse av ressursen. Egenskapen bør gjentas når den finnes på flere språk.
 |Usage note|This property contains descriptive textual information about the Legal Resource. This property should be repeated in case there are various versions of the text in different languages.
 |Multiplisitet|0..n
 |Kravnivå |Anbefalt/Recommended
 |Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men i DCAT-AP-NO.
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|
 |===
 
 ==== Regulativ ressurs – identifikator (dct:identifier) [[RegulativRessurs-identifikator]]
@@ -46,15 +42,14 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |URI|dct:identifier
 |Range|rdfs:Literal
 |Anvendelse| Egenskapen brukes til å oppgi en identifikator til ressursen.
-|Usage note|This property contains an identifier for the rule.
+|Usage note|This property contains an identifier for the resource.
 |Multiplisitet|0..1
 |Kravnivå |Anbefalt/Recommended
-|Merknad 1|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+|Merknad 1|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men i DCAT-AP-NO.
 |Remark 2| Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|
 |===
 
 ==== Regulativ ressurs – referanse (rdfs:seeAlso) [[RegulativRessurs-referanse]]
@@ -82,8 +77,8 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 |English name| language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Anvendelse| Egenskapen brukes til å oppgi språk som den regulative ressursen er i.
-|Usage note|To specify the language the legal resource is in.
+|Anvendelse| Egenskapen brukes til å oppgi språk som den regulative ressursen er  tilgjengelig på.
+|Usage note|To specify the language in which the legal resource is available.
 |Multiplisitet|0..n
 |Kravnivå |Anbefalt/Recommended
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
@@ -102,8 +97,8 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 |English name| title
 |URI|dct:title
 |Range| rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi tittel til den regulative ressursen.
-|Usage note|To specify the title of the legal resource.
+|Anvendelse| Egenskapen brukes til å oppgi tittel til den regulative ressursen. Egenskapen bør gjentas bør tittelen finnes på flere språk.
+|Usage note|To specify the title of the legal resource, repeated when the title is in several parallel languages.
 |Multiplisitet|0..n
 |Kravnivå |Anbefalt/Recommended
 |Merknad|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
@@ -122,13 +117,12 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 |Range|eli:ResourceType
 |Anvendelse| Egenskapen brukes til å referere til typen av en regulativ ressurs (f.eks. direktiv, forordning).
 |Usage note|This property refers to the type of a legal resource (e.g. "Directive", "Règlement grand ducal", "law", "Règlement ministériel", "draft proposition", "Parliamentary act", etc.). Member states are encouraged to make their own list of values in the corresponding concept scheme.
-|Multiplisitet|1..n
-|Kravnivå |Obligatorisk/Mandatory
+|Multiplisitet|0..n
+|Kravnivå | Anbefalt/Recommended
 |Merknad 1 | Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/legal-resource-type[Regulativ ressurs type], når verdien finnes i vokabularet.
 |Remark 1 | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/legal-resource-type[Legal resource type], when the value is in the vocabulary.
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men i DCAT-AP-NO.
 |Remark 2 |Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|
 |===
 
 
@@ -146,6 +140,4 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 |Usage note|This property represents another instance of the Legal Resource class that is related to a particular Legal Resource being described.
 |Multiplisitet|0..n
 |Kravnivå |Valgfri/Optional
-|Merknad|
-|Eksempel|
 |===
