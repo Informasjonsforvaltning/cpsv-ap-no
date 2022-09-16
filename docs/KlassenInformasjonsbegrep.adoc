@@ -1,0 +1,98 @@
+== Klassen Informasjonsbegrep (cv:InformationConcept) [[Informasjonsbegrep]]
+
+[[img-KlassenInformasjonsbegrep]]
+.Klassen Informasjonsbegrep (cv:InformationConcept)
+[link=images/KlassenInformasjonsbegrep.png]
+image::images/KlassenInformasjonsbegrep.png[]
+
+[cols="30s,70d"]
+|===
+|English name| Information concept
+|Anvendelse| Klassen brukes til å representere en del av informasjonen som dokumentasjonen gir eller som vilkåret trenger. Informasjonsbegrepklassen tilbyr muligheten til å beskrive vilkårene konseptuelt og oppgitte fakta i dokumentasjon. I kombinasjon med Gyldig verdi-klassen er dette et (første) skritt mot å tilrettelegge for vurderingen av kravene på en automatisert måte basert på dokumentasjonen som er gitt.
+|Usage note| This class represents a piece of information that the Evidence provides or the Requirement needs. The Information Concept class offers the ability to describe conceptually the Requirements and provided facts in Evidences. In complementarity with the Supported Value class, this is a (first) step towards facilitating the assessment of the requirements in an automated way based on the Evidence provided.
+|URI| cv:InformationConcept
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+=== Obligatoriske egenskaper for klassen _Informasjonsbegrep_ [[Informasjonsbegrep-obligatoriske-egenskaper]]
+
+==== Informasjonsbegrep – uttrykk av forventet verdi (cv:expressionOfExpectedValue) [[Informasjonsbegrep-uttrykkAvForventetVerdi]]
+
+[cols="30s,70d"]
+|===
+|English name|expression of expected value
+|URI|cv:expressionOfExpectedValue
+|Range|rdfs:Literal
+|Anvendelse|Egenskapen brukes til å representere en formulering på et formelt språk av forventet verdi(er) for informasjonsbegrepet som samsvarer med begrepene fra vilkårene som er definert og må respekteres av de medfølgende gyldige verdiene.
+|Usage note|This property represents a formulation in a formal language of the expected value(s) for the Information Concept which is aligned with the concepts from the Requirements defined and must be respected by the supplied Supported Values.
+|Multiplisitet|1..1
+|Kravnivå|Obligatorisk/Mandatory
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+=== Anbefalte egenskaper for klassen _Informasjonsbegrep_ [[Informasjonsbegrep-anbefalte-egenskaper]]
+
+==== Informasjonsbegrep – beskrivelse (dct:description) [[Informasjonsbegrep-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name|description
+|URI|dct:description
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi en tekstlig beskrivelse av informasjonsbegrepet. F.eks. informasjon om begrepets art, egenskaper, bruk eller annen tilleggsinformasjon om begrepet. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+|Usage note|This property represents a short explanation supporting the understanding of the Information Concept. The explanation can include information about the nature, attributes, uses or any other additional information about the Information Concept.
+|Multiplisitet|0..n
+|Kravnivå|Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+=== Valgfrie egenskaper for klassen _Informasjonsbegrep_ [[Informasjonsbegrep-valgfrie-egenskaper]]
+
+==== Informasjonsbegrep – identifikator (dct:identifier) [[Informasjonsbegrep-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Anvendelse|Egenskapen brukes til å oppgi identifikatoren til informasjonsbegrepet.
+|Usage note|This property represents an unambiguous reference to the Information Concept.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Informasjonsbegrep – navn (skos:prefLabel) [[Informasjonsbegrep-navn]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|skos:prefLabel
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi navnet til informasjonsbegrepet.
+|Usage note|This property represents the Name of the Information Concept.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Informasjonsbegrep – type (dct:type) [[Informasjonsbegrep-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Anvendelse|Egenskapen brukes til å spesifisere hvilken kategori informasjonsbegrepet tilhører.
+|Usage note|This property represents the category to which the Information Concept belongs.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===

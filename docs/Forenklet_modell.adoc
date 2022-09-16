@@ -7,6 +7,7 @@ Figur <<img-ForenkletModell>> viser en forenklet modell av tjeneste- og hendelse
 [link=images/ForenkletModell-CPSV-AP-NO.png]
 image::images/ForenkletModell-CPSV-AP-NO.png[]
 
+include::TemaDokumentasjonskrav.adoc[]
 
 include::TemaTjenestekjede.adoc[]
 

@@ -1,0 +1,96 @@
+== Klassen Organisasjon (org:Organization) [[Organisasjon]]
+
+[[img-KlassenOrganisasjon]]
+.Klassen Organisasjon (org:Organization)
+[link=images/KlassenOrganisasjon.png]
+image::images/KlassenOrganisasjon.png[]
+
+[cols="30s,70d"]
+|===
+|English name|organization
+|Anvendelse|Klassen brukes til å representere en organisasjon.
+|Usage note|This class represents an organization. An organization is a group of people that get together in a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent.
+|URI|org:Organization
+|Subklasse av / Subclass of|foaf:Agent
+|Kravnivå|Anbefalt/Recommended
+|===
+
+=== Obligatoriske egenskaper for klassen _Organisasjon_ [[Organisasjon-obligatoriske-egenskaper]]
+
+==== Organisasjon – identifikator (dct:identifier) [[Organisasjon-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Anvendelse|Egenskapen brukes til å angi oranisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
+|Usage note|This property contains the identifier for the Organization.
+|Multiplisitet|1..1
+|Kravnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. `\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`
+|===
+
+==== Organisasjon – navn (dct:title) [[Organisasjon-navn]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|dct:title
+|Range|Rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi navnet på organisasjonen. Egenskapen bør gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
+|Usage note|This property contains the name of the organization. This property should be repeated for different versions of the name (e.g. the name in different languages).
+|Multiplisitet|1..n
+|Kravnivå|Obligatorisk/Mandatory
+|===
+
+=== Anbefalte egenskaper for klassen _Organisasjon_ [[Organisasjon-anbefalte-egenskaper]]
+
+==== Organisasjon – type (dct:type) [[Organisasjon-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Anvendelse|Egenskapen brukes til å oppgi type organisasjon.
+|Usage note|This property refers to a type of the organization.
+|Multiplisitet|0..1
+|Kravnivå|Anbefalt/Recommended
+|Merknad 1|Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (lenket ressurs i RDF)].
+|Remark 1|The value shall be chosen from http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (linked resource in RDF)].
+|Merknad 2|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2|Norwegian extension: Not explicitly specified in CPSV-AP.
+|===
+
+=== Valgfrie egenskaper for klassen _Organisasjon_ [[Organisasjon-valgfrige-egenskaper]]
+
+==== Organisasjon – adresse (locn:address) [[Organisasjon-adresse]]
+
+[cols="30s,70d"]
+|===
+|English name|address
+|URI|locn:address
+|Range|locn:Address
+|Anvendelse|Egenskapen brukes til å oppgi en adresse til organisasjonen.
+|Usage note|This property represents an Address related to an Organization.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad|Norsk utvidelse: multiplisitet er endret fra 0..1 til 0..n.
+|Remark|Norwegian extension: Multiplicity changed from 0..1 to 0..n.
+|===
+
+==== Organisasjon – har rolle i (cv:playsRole) [[Organisasjon-har-rolle-i]]
+
+[cols="30s,70d"]
+|===
+|English name|plays role
+|URI|cv:playsRole
+|Range|cv:Participation
+|Anvendelse|Egenskapen brukes til å knytte en deltagelse (cv:Participation) til en organisasjon.
+|Usage note|This property links an Oranization to the Participation class (cv:Participation). The Participation class facilitates the detailed description of how an Organization participates in or interacts with a Public Service and may include temporal and spatial information.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|===
