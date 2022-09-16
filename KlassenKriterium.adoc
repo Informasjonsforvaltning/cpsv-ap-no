@@ -269,7 +269,7 @@ The weight must be between 0 and 1. Usually, all Criteria can be integrated with
 |Anvendelse|Brukes til å oppgi hvordan vektingen bør tolkes i et komplekst evalueringsuttrykk, f.eks. som en prosent i et evalueringsuttrykk.
 |Usage note| This property represents an indication of how the weight should be interpreted in a complex evaluation expression, e.g. as a percentage in an evaluation expression
 
-An existing codelist http://publications.europa.eu/resource/authority/number-weight[Number weight]. An example of its use is shown https://docs.ted.europa.eu/eforms/0.3.1/index.html#awardCriteriaSection[here].
+An existing codelist http://publications.europa.eu/resource/authority/number-weight[Number weight] (the linked resource in RDF). 
 |Multiplisitet| 0..1
 |Kravnivå| Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
