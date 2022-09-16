@@ -99,7 +99,7 @@ For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisa
 Eksempel i RDF Turtle:
 -----
 <BrønnøyKommune> a cv:PublicOrganisation ;
-   dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827" ; .
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" ; .
 -----
 
 ==== Offentlig organisasjon – navn (dct:title) [[OffentligOrganisasjon-navn]]
@@ -114,7 +114,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..n
 |Kravnivå | Obligatorisk/Mandatory
 |Merknad |Både navn (denne egenskapen) og <<OffentligOrganisasjon-foretrukketNavn>> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Egenskapen <<OffentligOrganisasjon-foretrukketNavn>> anbefalt brukes primært. Når det ikke finnes flere navn enn det foretrukne navnet, har disse to egenskapene samme verdi.
-|Remark | Both name (this property) and the property <<OffentligOrganisasjon-foretrukketNavn>> are mandatory. The property <<OffentligOrganisasjon-foretrukketNavn>> should be used primarily. When there are no more names than the preferred name, these two properties should have the same value. 
+|Remark | Both name (this property) and the property <<OffentligOrganisasjon-foretrukketNavn>> are mandatory. The property <<OffentligOrganisasjon-foretrukketNavn>> should be used primarily. When there are no more names than the preferred name, these two properties should have the same value.
 |Eksempel|Brønnøy kommune
 |===
 

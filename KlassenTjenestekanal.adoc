@@ -116,7 +116,7 @@ Eksempel i RDF Turtle:
 -----
 <viaSkjemaportalen> a cv:Channel ;
    vcard:hasURL "https://kommune24-7.no/1813" ;
-   cv:ownedBy "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827" ; .
+   cv:ownedBy "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" ; .
 -----
 
 ==== Tjenestekanal – har adresse (vcard:hasAddress) [[Tjenestekanal-harAdresse]]

@@ -234,14 +234,14 @@ Agents transmitting the Evidence are usually the Agents that are issuing the Evi
 |Usage note| This property represents documentation that contains information related to the Evidence, for instance a particular template for an administrative document, an application or a guide on formatting the Input.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Eksempel|Krav om vandel er forklart nærmere på https://kommune24-7.no/1813/702431[denne siden hos Brønnøy kommune].
+|Eksempel|Krav om vandel er forklart i https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#§1-7b[alkoholloven §1-7b ].
 |===
 
 Eksempel i RDF Turtle:
 -----
 <kravOmVandel> a cv:Evidence ;
    dct:title "Krav om vandel"@nb ;
-   foaf:page <https://kommune24-7.no/1813/702431> ; .
+   foaf:page <https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#§1-7b> ; .
 -----
 
 ==== Dokumentasjon – type (dct:type) [[Dokumentasjon-type]]

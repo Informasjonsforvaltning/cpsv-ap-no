@@ -2120,7 +2120,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Datatjeneste (<code>dcat:DataService</code>) og Distribusjon (<code>dcat:Distribution</code>): Se <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a> for krav til beskrivelse av Datasett, Datatjeneste og Distribusjon.</p>
 </li>
 <li>
-<p>Begrep (<code>skos:Concept</code>): Se <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a> for krav til begrepsbeskrivelser, og <a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-begrep</a> for hvordan begrepsbeskrivelser utformet i henhold til <em>Forvaltningsstandard for begrepsbeskrivelser</em> tilgjengeliggjøres i RDF.</p>
+<p>Begrep (<code>skos:Concept</code>): Se <a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-begrep</a> for hvordan begrepsbeskrivelser tilgjengeliggjøres i RDF.</p>
 </li>
 </ul>
 </div>
@@ -3015,7 +3015,7 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.</p>
-<p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. <code>https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code></p></td>
+<p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -3959,7 +3959,7 @@ points.</p></td>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Se ellers <a href="https://data.norge.no/specification/dcat-ap-no/#Datasett">DCAT-AP-NO</a> for egenskapene som kan brukes til å beskrive et datasett, i tillegg til egenskapene spesifisert her.</p>
+<p>Se ellers <a href="https://data.norge.no/specification/dcat-ap-no/#Datasett">klassen Datasett i DCAT-AP-NO</a> for egenskapene som kan brukes til å beskrive et datasett, i tillegg til egenskapene spesifisert her.</p>
 </div>
 <div class="sect2">
 <h3 id="Datasett-obligatoriske-egenskaper"><a class="anchor" href="#Datasett-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Datasett</em></h3>
@@ -4081,7 +4081,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Verdien bør være autoritativ URI for aktøren, f.eks. dct:publisher <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673" class="bare">https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Verdien bør være autoritativ URI for aktøren, f.eks. <code>dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673&gt;</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -5119,7 +5119,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Krav om vandel er forklart nærmere på <a href="https://kommune24-7.no/1813/702431">denne siden hos Brønnøy kommune</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Krav om vandel er forklart i <a href="https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#§1-7b">alkoholloven §1-7b </a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -5130,7 +5130,7 @@ points.</p></td>
 <div class="content">
 <pre>&lt;kravOmVandel&gt; a cv:Evidence ;
    dct:title "Krav om vandel"@nb ;
-   foaf:page &lt;https://kommune24-7.no/1813/702431&gt; ; .</pre>
+   foaf:page &lt;https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#§1-7b&gt; ; .</pre>
 </div>
 </div>
 </div>
@@ -7596,7 +7596,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/public-services">https://data.norge.no/public-services</a> er en katalog over tjenester og hendelser.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/public-services-and-events">Tjeneste- og hendelsesdelen av Felles datakatalog</a> er en katalog over tjenester og hendelser.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7605,7 +7605,7 @@ points.</p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://data.norge.no/public-services&gt; a dcat:Catalog ; .</pre>
+<pre>&lt;https://data.norge.no/public-services-and-events&gt; a dcat:Catalog ; .</pre>
 </div>
 </div>
 <div class="sect2">
@@ -7665,7 +7665,7 @@ points.</p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://data.norge.no/public-services&gt; a dcat:Catalog ;
+<pre>&lt;https://data.norge.no/public-services-and-events&gt; a dcat:Catalog ;
    dct:description "Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser"@nb ; .</pre>
 </div>
 </div>
@@ -7828,7 +7828,7 @@ points.</p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://data.norge.no/public-services&gt; a dcat:Catalog ;
+<pre>&lt;https://data.norge.no/public-services-and-events&gt; a dcat:Catalog ;
    dct:title "Tjeneste- og hendelseskatalog"@nb ; .</pre>
 </div>
 </div>
@@ -7888,8 +7888,8 @@ points.</p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://data.norge.no/public-services&gt; a dcat:Catalog ;
-   dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; .</pre>
+<pre>&lt;https://data.norge.no/public-services-and-events&gt; a dcat:Catalog ;
+   dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; .</pre>
 </div>
 </div>
 </div>
@@ -7983,7 +7983,7 @@ points.</p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://data.norge.no/public-services&gt; a dcat:Catalog ;
+<pre>&lt;https://data.norge.no/public-services-and-events&gt; a dcat:Catalog ;
    dct:spatial &lt;http://publications.europa.eu/resource/authority/country/NOR&gt; ; .</pre>
 </div>
 </div>
@@ -8251,7 +8251,7 @@ points.</p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://data.norge.no/public-services&gt; a dcat:Catalog ;
+<pre>&lt;https://data.norge.no/public-services-and-events&gt; a dcat:Catalog ;
    dct:license &lt;http://publications.europa.eu/resource/authority/licence/CC_BY_4_0&gt; ; .</pre>
 </div>
 </div>
@@ -8366,7 +8366,7 @@ points.</p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://data.norge.no/public-services&gt; a dcat:Catalog ;
+<pre>&lt;https://data.norge.no/public-services-and-events&gt; a dcat:Catalog ;
    dct:language 
       &lt;https://publications.europa.eu/resource/authority/language/NOB&gt;, # bokmål  
       &lt;https://publications.europa.eu/resource/authority/language/NNN&gt;, # nynorsk
@@ -11507,7 +11507,7 @@ points.</p></td>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;BrønnøyKommune&gt; a cv:PublicOrganisation ;
-   dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827" ; .</pre>
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" ; .</pre>
 </div>
 </div>
 </div>
@@ -11987,7 +11987,7 @@ points.</p></td>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
-   cv:hasCompetentAuthority &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291&gt; ; . # Brønnøy kommune</pre>
+   cv:hasCompetentAuthority &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291&gt; ; . # Brønnøy kommune</pre>
 </div>
 </div>
 </div>
@@ -13683,7 +13683,7 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.</p>
-<p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. <code>https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code></p></td>
+<p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code></p></td>
 </tr>
 </tbody>
 </table>
@@ -16830,7 +16830,7 @@ points.</p></td>
 <div class="content">
 <pre>&lt;viaSkjemaportalen&gt; a cv:Channel ;
    vcard:hasURL "https://kommune24-7.no/1813" ;
-   cv:ownedBy "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827" ; .</pre>
+   cv:ownedBy "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" ; .</pre>
 </div>
 </div>
 </div>
@@ -18675,7 +18675,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-16 09:20:58 UTC
+Sist oppdatert 2022-09-16 09:50:29 UTC
 </div>
 </div>
 </body>
