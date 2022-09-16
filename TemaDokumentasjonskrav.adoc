@@ -84,7 +84,7 @@ Eksemplet i RDF Turtle:
    dct:conformsTo <pass> ; # i samsvar med
    cv:supportsConcept <alder> ; # understøtter informasjonsbegrep
    cv:supportsRequirement <alderskrav> ; # understøtter krav
-   cv:supportsValue <alderFraPass> ; # understøtter verdi
+   cv:supportsValue <alderFraPass> ; # gir understøttende opplysning
    .
 
 <alderFraPass> a cv:SupportedValue ;
