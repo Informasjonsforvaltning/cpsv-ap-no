@@ -24,7 +24,7 @@ image::images/KlassenAdresse.png[]
 |URI| cv:adminUnit
 |Range|cv:AdminUnit
 |Anvendelse| Egenskapen brukes til å koble en adresse til <<AdministrativEnhet>>.
-|Usage note| This property links an Address with the <<<<AdministrativEnhet, Administrative Unit class>>.
+|Usage note| This property links an Address with the <<AdministrativEnhet, Administrative Unit class>>.
 |Multiplisitet|0..1
 |Kravnivå|Valgfri/Optional
 |Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
