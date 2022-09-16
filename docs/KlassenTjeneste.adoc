@@ -501,7 +501,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Usage note | This property represents the industry or sector a Service relates to, or is intended for. Note that a single Service may relate to multiple sectors. 
 |Multiplisitet |0..n 
 |Kravnivå  |Valgfri/Optional 
-|Merknad 1 |De mulige verdiene for egenskapen velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme].
+|Merknad 1 |De mulige verdiene for egenskapen er beskrevet i EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme].
 |Remark 1 | The possible values for this property are described in the controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme Authority Table] of the Publications Office.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
