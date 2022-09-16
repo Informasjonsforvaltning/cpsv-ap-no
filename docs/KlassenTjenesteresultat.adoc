@@ -12,8 +12,10 @@ image::images/KlassenTjenesteresultat.png[]
 |Usage note| Outputs can be any resource – document, artefact – anything produced by the Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.
 |URI|cv:Output
 |Kravnivå |Anbefalt/Recommended
-|Merknad |Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.
-|Remark | Norwegian extension: Requirement level changed from optional to recommended.
+|Merknad 1 |Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.
+|Remark 1 | Norwegian extension: Requirement level changed from optional to recommended.
+|Merknad 2 | Norsk utvidelse: Som illustrert i <<img-ForenkletModell>> er Datasett (`dcat:Dataset`) en subklasse av denne klassen, noe som ikke CPSV-AP eksplisitt sier. Dette fordi et tjenesteresultat ofte kan være datasett.
+|Remark 2 | Norwegian extension: As illustrated in <<img-ForenkletModell>>, the class Dataset (`dcat:Dataset`) is a subclass of this class, which CPSV-AP does not explicitly speficy. This is because an Output may often be dataset. 
 |Eksempel|Resultater fra tjenesten «Skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).
 |===
 
