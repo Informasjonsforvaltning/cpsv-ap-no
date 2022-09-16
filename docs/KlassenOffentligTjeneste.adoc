@@ -382,7 +382,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravnivå | Valgfri/Optional
 |Merknad|Bruk egenskapen <<OffentligTjeneste-har-dokumentasjonskrav>> for å knytte til datasett som tjenesten bruker, eller egenskapen <<OffentligTjeneste-produserer>> for datasett som tjenesten produserer.
-|Remark | Use the property <<OffentligTjeneste-har-dokumentasjonskrav>> to refer to the dataset that the service uses, or the property <<OffentligTjeneste-produserer>> for the dataset that the service produces. 
+|Remark | Use the property <<OffentligTjeneste-har-dokumentasjonskrav>> to refer to the dataset that the service uses, or the property <<OffentligTjeneste-produserer>> for the dataset that the service produces.
 |===
 
 ==== Offentlig tjeneste – er gruppert ved (cv:isGroupedBy) [[OffentligTjeneste-erGruppertVed]]
@@ -612,7 +612,7 @@ Eksempel i RDF Turtle:
 |Usage note| This property represents the industry or sector a Public Service relates to, or is intended for. Note that a single Public Service may relate to multiple sectors.
 |Multiplisitet|0..n
 |Kravnivå | Valgfri/Optional
-|Merknad|De mulige verdiene for egenskapen velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme].
+|Merknad|De mulige verdiene for egenskapen er beskrevet i EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme].
 |Remark| The possible values for this property are described in the controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme Authority Table] of the Publications Office.
 |===
 
