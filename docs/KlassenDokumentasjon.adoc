@@ -123,7 +123,7 @@ Eksempel i RDF Turtle:
 |Range| foaf:Agent
 |Anvendelse| Egenskapen brukes til å oppgi aktør som sender dokumentasjonen.
 
-Aktøren som sender dokumentasjonen er vanligvis den som har utstedt dokumentasjonen, eller en tjenesteleverandør på vegne av utstederen.  
+Aktøren som sender dokumentasjonen er vanligvis den som har utstedt dokumentasjonen, eller en tjenesteleverandør på vegne av utstederen.
 |Usage note| This property represents the Agent that transmits the Evidence.
 
 Agents transmitting the Evidence are usually the Agents that are issuing the Evidence or service providers acting on behalf of the Evidence issuing Agents such as software developer companies.
@@ -163,8 +163,6 @@ Agents transmitting the Evidence are usually the Agents that are issuing the Evi
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
 |===
 
-Eksempel i RDF Turtle:
-
 ==== Dokumentasjon – gyldighetsperiode (cv:validityPeriod) [[Dokumentasjon-gyldighetsperiode]]
 
 [cols="30s,70d"]
@@ -179,8 +177,6 @@ Eksempel i RDF Turtle:
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
 |===
-
-Eksempel i RDF Turtle:
 
 ==== Dokumentasjon –  i samsvar med (dct:conformsTo) [[Dokumentasjon-iSamsvarMed]]
 
@@ -197,8 +193,6 @@ Eksempel i RDF Turtle:
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
 |===
 
-Eksempel i RDF Turtle:
-
 ==== Dokumentasjon – konfidensialitetsnivå (cv:confidentialityLevelType) [[Dokumentasjon-konfidensialitetsnivå]]
 
 [cols="30s,70d"]
@@ -214,8 +208,6 @@ Eksempel i RDF Turtle:
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
 |===
 
-Eksempel i RDF Turtle:
-
 ==== Dokumentasjon –  produsent (dct:creator) [[Dokumentasjon-produsent]]
 
 [cols="30s,70d"]
@@ -230,8 +222,6 @@ Eksempel i RDF Turtle:
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
 |===
-
-Eksempel i RDF Turtle:
 
 ==== Dokumentasjon – relatert informasjon (foaf:page) [[Dokumentasjon-relatertInformasjon]]
 
@@ -293,9 +283,7 @@ Eksempel i RDF Turtle:
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
 |===
 
-Eksempel i RDF Turtle:
-
-==== Dokumentasjon – understøtter krav (cv:supportsRequirement) [[Dokumentasjon-understøtterKrav]]
+=== Dokumentasjon – understøtter krav (cv:supportsRequirement) [[Dokumentasjon-understøtterKrav]]
 
 [cols="30s,70d"]
 |===
@@ -307,8 +295,6 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |===
-
-Eksempel i RDF Turtle:
 
 ==== Dokumentasjon –  utsteder (dct:publisher) [[Dokumentasjon-utsteder]]
 
