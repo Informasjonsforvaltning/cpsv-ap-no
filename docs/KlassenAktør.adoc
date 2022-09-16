@@ -15,7 +15,7 @@ image::images/KlassenAktør.png[]
 |Merknad 1|For aktør som er en offentlig organisasjon skal <<OffentligOrganisasjon>> brukes.
 |Remark 1 | For Agent which is a public organisation, <<OffentligOrganisasjon>>  shall be used.
 |Merknad 2| Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
-|Remark 2 | Norwegian extension: Requirement level changed from optional to recommended. 
+|Remark 2 | Norwegian extension: Requirement level changed from optional to recommended.
 |Eksempel| Som eksempel på bruk av klassen, bruker vi en fiktiv exAktør ("Den beste restauranten AS") som ikke er en offentlig organisasjon.
 |===
 
@@ -39,7 +39,7 @@ Eksempel i RDF Turtle:
 |Kravnivå|Obligatorisk/Mandatory
 |Merknad| Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
-For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. `\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`
+For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`
 |Eksempel| Vår exAktør har organisasjonsnummer 1656923949276 (NB! ugyldig org.nr.)
 |===
 

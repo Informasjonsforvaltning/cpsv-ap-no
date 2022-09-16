@@ -64,7 +64,7 @@ Eksempel i RDF Turtle:
 Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ; . # Brønnøy kommune
+   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291> ; . # Brønnøy kommune
 -----
 
 ==== Offentlig tjeneste – har kontaktpunkt (cv:hasContactPoint) [[OffentligTjeneste-har-kontaktpunkt]]

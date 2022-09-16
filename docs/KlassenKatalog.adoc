@@ -14,12 +14,12 @@ image::images/KlassenKatalog.png[]
 |Kravnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: CPSV-AP dekker ikke katalogbeskrivelse. Klassen fra DCAT-AP-NO tas med her for å kunne dekke norsk behov for å beskrive «tjeneste-/hendelseskataloger».
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|https://data.norge.no/public-services[https://data.norge.no/public-services] er en katalog over tjenester og hendelser.
+|Eksempel| https://data.norge.no/public-services-and-events[Tjeneste- og hendelsesdelen av Felles datakatalog] er en katalog over tjenester og hendelser.
 |===
 
 Eksempel i RDF Turtle:
 ----
-<https://data.norge.no/public-services> a dcat:Catalog ; .
+<https://data.norge.no/public-services-and-events> a dcat:Catalog ; .
 ----
 
 === Obligatoriske egenskaper for klassen _Katalog_ [[Katalog-obligatoriske-egenskaper]]
@@ -42,7 +42,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 ----
-<https://data.norge.no/public-services> a dcat:Catalog ;
+<https://data.norge.no/public-services-and-events> a dcat:Catalog ;
    dct:description "Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser"@nb ; .
 ----
 
@@ -98,7 +98,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 
 Eksempel i RDF Turtle:
 ----
-<https://data.norge.no/public-services> a dcat:Catalog ;
+<https://data.norge.no/public-services-and-events> a dcat:Catalog ;
    dct:title "Tjeneste- og hendelseskatalog"@nb ; .
 ----
 
@@ -120,8 +120,8 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<https://data.norge.no/public-services> a dcat:Catalog ;
-   dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; .
+<https://data.norge.no/public-services-and-events> a dcat:Catalog ;
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; .
 -----
 
 === Anbefalte egenskaper for klassen _Katalog_ [[Katalog-anbefalte-egenskaper]]
@@ -154,7 +154,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<https://data.norge.no/public-services> a dcat:Catalog ;
+<https://data.norge.no/public-services-and-events> a dcat:Catalog ;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ; .
 -----
 
@@ -241,7 +241,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<https://data.norge.no/public-services> a dcat:Catalog ;
+<https://data.norge.no/public-services-and-events> a dcat:Catalog ;
    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ; .
 -----
 
@@ -280,7 +280,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle:
 -----
-<https://data.norge.no/public-services> a dcat:Catalog ;
+<https://data.norge.no/public-services-and-events> a dcat:Catalog ;
    dct:language 
       <https://publications.europa.eu/resource/authority/language/NOB>, # bokmål  
       <https://publications.europa.eu/resource/authority/language/NNN>, # nynorsk
