@@ -6,7 +6,7 @@
 image::images/FigurTjenesteMedDataInnOgUt.png[]
 
 
-Som illustrert i figur <<img-TjenesteOgData>>, kan et Tjenesteresultat (`cv:Output`) produsert av en Tjeneste (`cpsvno:Service` inkl. subklassen Offentlig tjeneste (`cpsv:PublicService`)) være et Datasett (`dcat:Dataset`), f.eks. selve  «bevilling» som et resultat fra tjenesten «Skjenkebevilling» kan deles som et datasett.
+Som illustrert i <<img-TjenesteOgData>>, kan et Tjenesteresultat (`cv:Output`) produsert av en Tjeneste (`cpsvno:Service` inkl. subklassen Offentlig tjeneste (`cpsv:PublicService`)) være et Datasett (`dcat:Dataset`), f.eks. selve  «bevilling» som et resultat fra tjenesten «Skjenkebevilling» kan deles som et datasett.
 
 Som også illustrert i figuren, kan et dokumentasjonskrav (`cv:Evidence`) være et datasett (`dcat:Dataset`), f.eks. «Vandelsattest».
 
