@@ -8,9 +8,9 @@ image::images/KlassenDokumentasjonstypeliste.png[]
 [cols="30s,70d"]
 |===
 |English name|  Evidence type list
-|Anvendelse| Klassen brukes til å representere en gruppe av dokumentasjonstyper som kreves for å oppfylle et vilkår.
+|Anvendelse| Klassen brukes til å representere en gruppe av dokumentasjonstyper som kreves for å oppfylle et krav.
 
-Kravet om å være i samsvar med en dokumentasjonstypeliste er oppfylt **hvis og bare hvis** den aktuelle dokumentasjonen samsvarer med **alle** typer som listen inneholder. Det er med andre ord en `AND` betingelse mellom typene på en gitt dokumentasjonsliste, og en `OR` betingelse mellom ulike dokumentasjonslister.  
+Kravet om å være i samsvar med en dokumentasjonstypeliste er oppfylt **hvis og bare hvis** den aktuelle dokumentasjonen samsvarer med **alle** typer som listen inneholder. Det er med andre ord en `AND` betingelse mellom typene på en gitt dokumentasjonsliste, og en `OR` betingelse mellom ulike dokumentasjonslister.
 |Usage note| This class represents a group of Evidence Types for conforming to a Requirement.
 
 An Evidence Type List is satisfied, if and only if, for all included Evidence Types in this List, corresponding conformant Evidence(s) are supporting the Requirement having this List. The Evidence Type List describes thus an AND condition on the different Evidence Types within the list and an OR condition between two or more Evidence Type Lists. Combinations of alternative Lists can be provided for a respondent of a Requirement to choose amongst them.

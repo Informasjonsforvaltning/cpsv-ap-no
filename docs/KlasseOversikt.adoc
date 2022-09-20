@@ -13,6 +13,7 @@ Følgende klasser er anbefalte:
 * <<Kontaktpunkt>>
 * <<OffentligOrganisasjon>>
 * <<OffentligTjeneste>>
+* <<Organisasjon>>
 * <<Tjeneste>>
 * <<Tjenesteresultat>>
 
@@ -34,7 +35,6 @@ Følgende klasser er valgfrie:
 * <<Krav>>
 * <<Kriterium>>
 * <<Livshendelse>>
-* <<Organisasjon>>
 * <<Referanserammeverk>>
 * <<Regel>>
 * <<RegulativRessurs>>

@@ -115,7 +115,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Usage note| This property refers to the description of Distribution of the Event.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm.
+|Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm.
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel| Se https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/hendelsesliste/[Skatteetatens Hendelsesliste].
 |===

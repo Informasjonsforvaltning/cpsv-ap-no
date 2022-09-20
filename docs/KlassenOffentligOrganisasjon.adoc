@@ -65,8 +65,8 @@ Eksempel i RDF Turtle:
 |English name|preferred name
 |URI|skos:prefLabel
 |Range|rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen.
-|Usage note| This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology.
+|Anvendelse| Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. EGenskapen bør gjentas når navnet finnes på flere språk.
+|Usage note| This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology. The property should be repeated when the name is in several languages.
 |Multiplisitet| 1..n
 |Kravnivå | Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: multiplisitet endret fra 1..1 til 1..n.
@@ -113,8 +113,8 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents the name of the public organisation, repeated when the name is in parallel languages.
 |Multiplisitet|1..n
 |Kravnivå | Obligatorisk/Mandatory
-|Merknad |Både navn (denne egenskapen) og <<OffentligOrganisasjon-foretrukketNavn>> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Egenskapen <<OffentligOrganisasjon-foretrukketNavn>> anbefalt brukes primært. Når det ikke finnes flere navn enn det foretrukne navnet, har disse to egenskapene samme verdi.
-|Remark | Both name (this property) and the property <<OffentligOrganisasjon-foretrukketNavn>> are mandatory. The property <<OffentligOrganisasjon-foretrukketNavn>> should be used primarily. When there are no more names than the preferred name, these two properties should have the same value.
+|Merknad |Både navn (denne egenskapen) og <<OffentligOrganisasjon-foretrukketNavn>> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Det anbefales at egenskapen <<OffentligOrganisasjon-foretrukketNavn>> primært brukes. Når det ikke finnes flere navn enn det foretrukne navnet, skal disse to egenskapene ha samme verdi.
+|Remark | Both name (this property) and the property <<OffentligOrganisasjon-foretrukketNavn>> are mandatory. The property <<OffentligOrganisasjon-foretrukketNavn>> should be used primarily. When there are no more names than the preferred name, these two properties shall have the same value.
 |Eksempel|Brønnøy kommune
 |===
 
@@ -177,7 +177,7 @@ Eksempel i RDF Turtle:
        locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ] ; .
 -----
 
-==== Offentlig organisasjon – har rolle i (cv:playsRole) [[OffentligOrganisasjon-harRolle]]
+==== Offentlig organisasjon – har rolle i (cv:playsRole) [[OffentligOrganisasjon-har-rolle-i]]
 
 [cols="30s,70d"]
 |===
@@ -203,7 +203,7 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerT
 |English name|homepage
 |URI|foaf:homepage
 |Range|foaf:Document
-|Anvendelse| Egenskapen brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes på flere språk.
+|Anvendelse| Egenskapen brukes til å referere til hjemmesiden til organisasjonen. 
 |Usage note|This property refers to the homepage of a Public Organisation.
 |Multiplisitet|0..n
 |Kravnivå | Anbefalt/Recommended
