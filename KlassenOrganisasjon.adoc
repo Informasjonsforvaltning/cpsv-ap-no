@@ -13,7 +13,13 @@ image::images/KlassenOrganisasjon.png[]
 |URI|org:Organization
 |Subklasse av / Subclass of|foaf:Agent
 |Kravnivå|Anbefalt/Recommended
+|Eksempel| Som eksempel på bruk av klassen, bruker vi en fiktiv exOrg ("Den beste restauranten AS") som ikke er en offentlig organisasjon.
 |===
+
+Eksempel i RDF Turtle:
+-----
+<exOrg> a org:Organization ; .
+-----
 
 === Obligatoriske egenskaper for klassen _Organisasjon_ [[Organisasjon-obligatoriske-egenskaper]]
 
@@ -24,14 +30,21 @@ image::images/KlassenOrganisasjon.png[]
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Anvendelse|Egenskapen brukes til å angi oranisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
+|Anvendelse|Egenskapen brukes til å angi organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
 |Usage note|This property contains the identifier for the Organization.
 |Multiplisitet|1..1
 |Kravnivå|Obligatorisk/Mandatory
 |Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`
+|Eksempel| Vår exOrg har organisasjonsnummer 1656923949276 (NB! ugyldig org.nr.)
 |===
+
+Eksempel I RDF Turtle:
+-----
+<exOrg> a org:Organization ;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/1656923949276"^^xsd:anyURI ;  .
+-----
 
 ==== Organisasjon – navn (dct:title) [[Organisasjon-navn]]
 
@@ -39,12 +52,19 @@ For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisa
 |===
 |English name|name
 |URI|dct:title
-|Range|Rdf:langString
-|Anvendelse|Egenskapen brukes til å oppgi navnet på organisasjonen. Egenskapen bør gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
+|Range|rdf:langString
+|Anvendelse|Egenskapen brukes til å oppgi navnet på organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
 |Usage note|This property contains the name of the organization. This property should be repeated for different versions of the name (e.g. the name in different languages).
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
+|Eksempel| Navnet til vår exOrg er «Den beste restauranten AS» (bokmål)
 |===
+
+Eksempel i RDF Turtle:
+----
+<exOrg> a org:Organization ;
+   dct:title "Den beste restauranten AS"@nb ; .
+----
 
 === Anbefalte egenskaper for klassen _Organisasjon_ [[Organisasjon-anbefalte-egenskaper]]
 
@@ -63,7 +83,14 @@ For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisa
 |Remark 1|The value shall be chosen from http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (linked resource in RDF)].
 |Merknad 2|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2|Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel| Vår exOrg er av type _Company_.
 |===
+
+Eksempel i RDF Turtle:
+-----
+<exOrg> a org:Organization ;
+   dct:type <http://purl.org/adms/publishertype/Company> ;  .
+-----
 
 === Valgfrie egenskaper for klassen _Organisasjon_ [[Organisasjon-valgfrige-egenskaper]]
 
@@ -80,7 +107,10 @@ For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisa
 |Kravnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: multiplisitet er endret fra 0..1 til 0..n.
 |Remark|Norwegian extension: Multiplicity changed from 0..1 to 0..n.
+|Eksempel| Se under <<Adresse>>
 |===
+
+Eksempel i RDF Turtle: Se under <<Adresse>>
 
 ==== Organisasjon – har rolle i (cv:playsRole) [[Organisasjon-har-rolle-i]]
 
@@ -93,4 +123,7 @@ For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisa
 |Usage note|This property links an Oranization to the Participation class (cv:Participation). The Participation class facilitates the detailed description of how an Organization participates in or interacts with a Public Service and may include temporal and spatial information.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
+|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
+
+Eksempel i RDF Turtle: Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.

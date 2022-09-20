@@ -595,7 +595,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Aktør-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Aktør</em></a>
 <ul class="sectlevel3">
 <li><a href="#Aktør-adresse">Aktør – adresse (locn:address)</a></li>
-<li><a href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a></li>
+<li><a href="#Aktør-har-rolle-i">Aktør – har rolle i (cv:playsRole)</a></li>
 </ul>
 </li>
 </ul>
@@ -1000,7 +1000,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#OffentligOrganisasjon-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Offentlig organisasjon</em></a>
 <ul class="sectlevel3">
 <li><a href="#OffentligOrganisasjon-adresse">Offentlig organisasjon – adresse (locn:address)</a></li>
-<li><a href="#OffentligOrganisasjon-harRolle">Offentlig organisasjon – har rolle i (cv:playsRole)</a></li>
+<li><a href="#OffentligOrganisasjon-har-rolle-i">Offentlig organisasjon – har rolle i (cv:playsRole)</a></li>
 <li><a href="#OffentligOrganisasjon-hjemmeside">Offentlig organisasjon – hjemmeside (foaf:homepage)</a></li>
 </ul>
 </li>
@@ -1320,7 +1320,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><strong>Status</strong>: <mark>Til kommentering, frist 28. oktober 2022</mark><br>
 <strong>Versjon</strong>: <mark>Kommenteringsversjon (før v.1.0)</mark><br>
 <strong>Publisert</strong>: 2022-09-16<br>
-<strong>Oppdatert</strong>: 2022-09-16<br>
+<strong>Oppdatert</strong>: 2022-09-20<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
@@ -1862,10 +1862,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="title">Figur 8. Tjeneste og Deltagelse</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i <a href="#img-FigurTjenesteOgDeltagelse">Figur 8</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste – eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste (<code>cpsvno:Service</code>) og dens eier (en Aktør, <code>foaf:Agent</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste (<code>cpsv:PublicService</code>) og dens kompetente organ (en Offentlig organisasjon, <code>cv:PublicOrganisation</code>).</p>
+<p>Som illustrert i <a href="#img-FigurTjenesteOgDeltagelse">Figur 8</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste – eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste (<code>cpsvno:Service</code>) og dens eier (en Organisasjon, <code>Org:Organization</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste (<code>cpsv:PublicService</code>) og dens kompetente organ (en Offentlig organisasjon, <code>cv:PublicOrganisation</code>).</p>
 </div>
 <div class="paragraph">
-<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse"><em>Klassen Deltagelse (cv:Participation)</em></a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-har-deltagelse">Tjeneste – har deltagelse (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-har-deltagelse">Offentlig tjeneste – har deltagelse (cv:hasParticipation)</a>). En Aktør (inkl. Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-harRolle">Aktør – har rolle i (cv:playsRole)</a> (eller <a href="#OffentligOrganisasjon-harRolle">Offentlig organisasjon – har rolle i (cv:playsRole)</a>).</p>
+<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse"><em>Klassen Deltagelse (cv:Participation)</em></a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-har-deltagelse">Tjeneste – har deltagelse (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-har-deltagelse">Offentlig tjeneste – har deltagelse (cv:hasParticipation)</a>). En Aktør (inkl. Organisasjon og Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-har-rolle-i">Aktør – har rolle i (cv:playsRole)</a> (eller <a href="#Organisasjon-har-rolle-i">Organisasjon – har rolle i (cv:playsRole)</a>, <a href="#OffentligOrganisasjon-har-rolle-i">Offentlig organisasjon – har rolle i (cv:playsRole)</a>).</p>
 </div>
 <div class="paragraph">
 <p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument», når ikke alle deltagende aktører har begge roller.</p>
@@ -2022,6 +2022,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><a href="#OffentligTjeneste"><em>Klassen Offentlig tjeneste (cpsv:PublicService)</em></a></p>
 </li>
 <li>
+<p><a href="#Organisasjon"><em>Klassen Organisasjon (org:Organization)</em></a></p>
+</li>
+<li>
 <p><a href="#Tjeneste"><em>Klassen Tjeneste (cpsvno:Service)</em></a></p>
 </li>
 <li>
@@ -2081,9 +2084,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </li>
 <li>
 <p><a href="#Livshendelse"><em>Klassen Livshendelse (cv:LifeEvent)</em></a></p>
-</li>
-<li>
-<p><a href="#Organisasjon"><em>Klassen Organisasjon (org:Organization)</em></a></p>
 </li>
 <li>
 <p><a href="#Referanserammeverk"><em>Klassen Referanserammeverk (cv:ReferenceFramework)</em></a></p>
@@ -2946,11 +2946,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For aktør som er en offentlig organisasjon skal <a href="#OffentligOrganisasjon"><em>Klassen Offentlig organisasjon (cv:PublicOrganisation)</em></a> brukes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For aktør som er en offentlig organisasjon skal <a href="#OffentligOrganisasjon"><em>Klassen Offentlig organisasjon (cv:PublicOrganisation)</em></a> brukes, og for aktør som er en ikke-offentlig organisasjon skal <a href="#Organisasjon"><em>Klassen Organisasjon (org:Organization)</em></a> brukes.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For Agent which is a public organisation, <a href="#OffentligOrganisasjon"><em>Klassen Offentlig organisasjon (cv:PublicOrganisation)</em></a>  shall be used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For Agent which is a public organisation, <a href="#OffentligOrganisasjon"><em>Klassen Offentlig organisasjon (cv:PublicOrganisation)</em></a>  shall be used. For Agent which is a non-public organisation, <a href="#Organisasjon"><em>Klassen Organisasjon (org:Organization)</em></a> shall be used.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
@@ -2960,20 +2960,8 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Requirement level changed from optional to recommended.</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Som eksempel på bruk av klassen, bruker vi en fiktiv exAktør ("Den beste restauranten AS") som ikke er en offentlig organisasjon.</p></td>
-</tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;exAktør&gt; a foaf:Agent ; .</pre>
-</div>
-</div>
 <div class="sect2">
 <h3 id="Aktør-obligatoriske-egenskaper"><a class="anchor" href="#Aktør-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Aktør</em></h3>
 <div class="sect3">
@@ -3015,23 +3003,10 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.</p>
-<p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Vår exAktør har organisasjonsnummer 1656923949276 (NB! ugyldig org.nr.)</p></td>
+<p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte, se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator">Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.</a></p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Eksempel I RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;exAktør&gt; a foaf:Agent ;
-   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/1656923949276"^^xsd:anyURI ;  .</pre>
-</div>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Aktør-navn"><a class="anchor" href="#Aktør-navn"></a>Aktør – navn (dt:title)</h4>
@@ -3069,21 +3044,8 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Navnet til vår exAktør er «Den beste restauranten AS» (bokmål)</p></td>
-</tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;exAktør&gt; a foaf:Agent ;
-   dct:title "Den beste restauranten AS"@nb ; .</pre>
-</div>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -3140,21 +3102,8 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Vår exAktør er av type <em>Company</em>.</p></td>
-</tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;exAktør&gt; a foaf:Agent ;
-   dct:type &lt;http://purl.org/adms/publishertype/Company&gt; ;  .</pre>
-</div>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -3203,18 +3152,11 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Multiplicity changed from 0..1 to 0..n.</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Adresse"><em>Klassen Adresse (locn:Address)</em></a></p></td>
-</tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Adresse"><em>Klassen Adresse (locn:Address)</em></a></p>
-</div>
 </div>
 <div class="sect3">
-<h4 id="Aktør-harRolle"><a class="anchor" href="#Aktør-harRolle"></a>Aktør – har rolle i (cv:playsRole)</h4>
+<h4 id="Aktør-har-rolle-i"><a class="anchor" href="#Aktør-har-rolle-i"></a>Aktør – har rolle i (cv:playsRole)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3249,15 +3191,8 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p></td>
-</tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p>
-</div>
 </div>
 </div>
 </div>
@@ -5172,11 +5107,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra et kontrollerte vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra kontrollerte vokabular <a href="https://data.norge.no/vocabulary/evidence-type">Dokumentasjonstype</a>, når verdien finnes på listen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The value should be chosen from a controlled vocabulary.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the controlled vocabulary <a href="https://data.norge.no/vocabulary/evidence-type">Evidence type</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -5266,7 +5201,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til vilkår som dokumentasjonen understøtter.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til krav som dokumentasjonen understøtter.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -5651,7 +5586,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en gruppe av dokumentasjonstyper som kreves for å oppfylle et vilkår.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en gruppe av dokumentasjonstyper som kreves for å oppfylle et krav.</p>
 <p class="tableblock">Kravet om å være i samsvar med en dokumentasjonstypeliste er oppfylt <strong>hvis og bare hvis</strong> den aktuelle dokumentasjonen samsvarer med <strong>alle</strong> typer som listen inneholder. Det er med andre ord en <code>AND</code> betingelse mellom typene på en gitt dokumentasjonsliste, og en <code>OR</code> betingelse mellom ulike dokumentasjonslister.</p></td>
 </tr>
 <tr>
@@ -6547,7 +6482,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
@@ -6631,7 +6566,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en del av informasjonen som dokumentasjonen gir eller som vilkåret trenger. Informasjonsbegrepklassen tilbyr muligheten til å beskrive vilkårene konseptuelt og oppgitte fakta i dokumentasjon. I kombinasjon med Gyldig verdi-klassen er dette et (første) skritt mot å tilrettelegge for vurderingen av kravene på en automatisert måte basert på dokumentasjonen som er gitt.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en del av informasjonen som dokumentasjonen gir eller som kravet trenger. Informasjonsbegrepklassen tilbyr muligheten til å beskrive kravene konseptuelt og oppgitte fakta i dokumentasjon. I kombinasjon med Understøttende opplysning-klassen er dette et (første) skritt mot å tilrettelegge for vurderingen av kravene på en automatisert måte basert på dokumentasjonen som er gitt.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -6679,7 +6614,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å representere en formulering på et formelt språk av forventet verdi(er) for informasjonsbegrepet som samsvarer med begrepene fra vilkårene som er definert og må respekteres av de medfølgende gyldige verdiene.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å representere en formulering på et formelt språk av forventet verdi(er) for informasjonsbegrepet som samsvarer med begrepene fra kravene som er definert og må respekteres av de medfølgende understøttende opplysninger.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -6826,11 +6761,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet til informasjonsbegrepet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet til informasjonsbegrepet. Egenskapen bør gjentas når navnet finnes på flere språk.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the Name of the Information Concept.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the Name of the Information Concept. The property should be repeated when the name is in several languages.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -11420,11 +11355,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. EGenskapen bør gjentas når navnet finnes på flere språk.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology. The property should be repeated when the name is in several languages.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -11549,11 +11484,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Både navn (denne egenskapen) og <a href="#OffentligOrganisasjon-foretrukketNavn">Offentlig organisasjon – foretrukket navn (skos:prefLabel)</a> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Egenskapen <a href="#OffentligOrganisasjon-foretrukketNavn">Offentlig organisasjon – foretrukket navn (skos:prefLabel)</a> anbefalt brukes primært. Når det ikke finnes flere navn enn det foretrukne navnet, har disse to egenskapene samme verdi.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Både navn (denne egenskapen) og <a href="#OffentligOrganisasjon-foretrukketNavn">Offentlig organisasjon – foretrukket navn (skos:prefLabel)</a> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Det anbefales at egenskapen <a href="#OffentligOrganisasjon-foretrukketNavn">Offentlig organisasjon – foretrukket navn (skos:prefLabel)</a> primært brukes. Når det ikke finnes flere navn enn det foretrukne navnet, skal disse to egenskapene ha samme verdi.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Both name (this property) and the property <a href="#OffentligOrganisasjon-foretrukketNavn">Offentlig organisasjon – foretrukket navn (skos:prefLabel)</a> are mandatory. The property <a href="#OffentligOrganisasjon-foretrukketNavn">Offentlig organisasjon – foretrukket navn (skos:prefLabel)</a> should be used primarily. When there are no more names than the preferred name, these two properties should have the same value.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Both name (this property) and the property <a href="#OffentligOrganisasjon-foretrukketNavn">Offentlig organisasjon – foretrukket navn (skos:prefLabel)</a> are mandatory. The property <a href="#OffentligOrganisasjon-foretrukketNavn">Offentlig organisasjon – foretrukket navn (skos:prefLabel)</a> should be used primarily. When there are no more names than the preferred name, these two properties shall have the same value.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -11706,7 +11641,7 @@ points.</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="OffentligOrganisasjon-harRolle"><a class="anchor" href="#OffentligOrganisasjon-harRolle"></a>Offentlig organisasjon – har rolle i (cv:playsRole)</h4>
+<h4 id="OffentligOrganisasjon-har-rolle-i"><a class="anchor" href="#OffentligOrganisasjon-har-rolle-i"></a>Offentlig organisasjon – har rolle i (cv:playsRole)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -11774,7 +11709,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes på flere språk.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til hjemmesiden til organisasjonen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -13242,7 +13177,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til vilkår knyttet til behov for eller bruk av tjenesten.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til krav knyttet til behov for eller bruk av tjenesten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -13258,7 +13193,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Et av vilkårene for å søke om skjenkebevilling er at søkeren skal være over 20 år.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et av kravene for å søke om skjenkebevilling er at søkeren skal være over 20 år.</p></td>
 </tr>
 </tbody>
 </table>
@@ -13335,7 +13270,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultat fra.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -13640,8 +13575,20 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Som eksempel på bruk av klassen, bruker vi en fiktiv exOrg ("Den beste restauranten AS") som ikke er en offentlig organisasjon.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exOrg&gt; a org:Organization ; .</pre>
+</div>
+</div>
 <div class="sect2">
 <h3 id="Organisasjon-obligatoriske-egenskaper"><a class="anchor" href="#Organisasjon-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Organisasjon</em></h3>
 <div class="sect3">
@@ -13666,7 +13613,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å angi oranisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å angi organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -13685,8 +13632,21 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.</p>
 <p class="tableblock">For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vår exOrg har organisasjonsnummer 1656923949276 (NB! ugyldig org.nr.)</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel I RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exOrg&gt; a org:Organization ;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/1656923949276"^^xsd:anyURI ;  .</pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Organisasjon-navn"><a class="anchor" href="#Organisasjon-navn"></a>Organisasjon – navn (dct:title)</h4>
@@ -13706,11 +13666,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Rdf:langString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet på organisasjonen. Egenskapen bør gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet på organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -13724,8 +13684,21 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navnet til vår exOrg er «Den beste restauranten AS» (bokmål)</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exOrg&gt; a org:Organization ;
+   dct:title "Den beste restauranten AS"@nb ; .</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -13782,8 +13755,21 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vår exOrg er av type <em>Company</em>.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exOrg&gt; a org:Organization ;
+   dct:type &lt;http://purl.org/adms/publishertype/Company&gt; ;  .</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -13832,8 +13818,15 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Multiplicity changed from 0..1 to 0..n.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Adresse"><em>Klassen Adresse (locn:Address)</em></a></p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Adresse"><em>Klassen Adresse (locn:Address)</em></a></p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Organisasjon-har-rolle-i"><a class="anchor" href="#Organisasjon-har-rolle-i"></a>Organisasjon – har rolle i (cv:playsRole)</h4>
@@ -13871,8 +13864,15 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p>
+</div>
 </div>
 </div>
 </div>
@@ -13898,7 +13898,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere lovgivning eller offisiell politikk som vilkår er utledet fra. Eksempler kan være prosedyrer, anskaffelsesreglement osv.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere lovgivning eller offisiell politikk som krav er utledet fra. Eksempler kan være prosedyrer, anskaffelsesreglement osv.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -14129,7 +14129,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en beskrivende navn eller navn for regelen. Gjentas når navnet finnes på flere språk.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi et beskrivende navn eller tittel for regelen. Egenskapen bør gjentas når navnet finnes på flere språk.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -14225,7 +14225,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til språk som regelen er tilgjengelig i.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi hvilke språk regelen er tilgjengelig på.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -14809,6 +14809,14 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -14848,6 +14856,14 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -14869,7 +14885,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:duration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:duration</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -14886,6 +14902,14 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
 </tr>
 </tbody>
 </table>
@@ -16111,7 +16135,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til vilkår knyttet til behov for eller bruk av tjenesten.   </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til krav knyttet til behov for eller bruk av tjenesten.   </p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note </strong></p></td>
@@ -16205,7 +16229,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultat fra.  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra.  </p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note </strong></p></td>
@@ -17079,7 +17103,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:anyURI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:anyURI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -17441,7 +17465,7 @@ points.</p></td>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;bevilling1001&gt; a cv:Output , dcat:Dataset ;
-   dct:title "Skjenkebevilling til «Den beste restauranten AS»"@nb ; .</pre>
+   dct:title "Skjenkebevilling for servering av alkoholholdig drikk i gruppe 3"@nb ; .</pre>
 </div>
 </div>
 </div>
@@ -17500,7 +17524,7 @@ points.</p></td>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;bevilling1001&gt; a cv:Output , dcat:Dataset ;
-   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .</pre>
+   dct:description "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .</pre>
 </div>
 </div>
 </div>
@@ -17568,7 +17592,7 @@ points.</p></td>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;bevilling1001&gt; a cv:Output , dcat:Dataset ;
-   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
+   dct:title "Skjenkebevilling for servering av alkoholholdig drikk i gruppe 3"@nb ;
    dct:language &lt;http://publications.europa.eu/resource/authority/language/NOB&gt; ; .</pre>
 </div>
 </div>
@@ -17686,7 +17710,7 @@ points.</p></td>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;bevilling1001&gt; a cv:Output , dcat:Dataset ;
-   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
+   dct:title "Skjenkebevilling for servering av alkoholholdig drikk i gruppe 3"@nb ;
    dct:type &lt;https://data.norge.no/vocabulary/service-output-type#permit&gt; ; # tillatelse
    .</pre>
 </div>
@@ -18683,7 +18707,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-16 10:57:10 UTC
+Sist oppdatert 2022-09-20 07:43:41 UTC
 </div>
 </div>
 </body>

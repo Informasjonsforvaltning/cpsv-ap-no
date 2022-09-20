@@ -510,11 +510,11 @@ Eksempel i RDF Turtle:
 |English name| holds requirement
 |URI| cv:holdsRequirement
 |Range| cv:Requirement
-|Anvendelse| Egenskapen brukes til å referere til vilkår knyttet til behov for eller bruk av tjenesten.
+|Anvendelse| Egenskapen brukes til å referere til krav knyttet til behov for eller bruk av tjenesten.
 |Usage note| This property links a Public Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc.
 |Multiplisitet|0..n
 |Kravnivå | Valgfri/Optional
-|Eksempel|Et av vilkårene for å søke om skjenkebevilling er at søkeren skal være over 20 år.
+|Eksempel|Et av kravene for å søke om skjenkebevilling er at søkeren skal være over 20 år.
 |===
 
 Eksempel i RDF Turtle:
@@ -545,7 +545,7 @@ Eksempel i RDF Turtle:
 |English name|requires
 |URI|dct:requires
 |Range|cpsvno:Service
-|Anvendelse| Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultat fra.
+|Anvendelse| Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra.
 |Usage note| One Public Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Public Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input.
 |Multiplisitet|0..n
 |Kravnivå | Valgfri/Optional

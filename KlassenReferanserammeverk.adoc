@@ -8,7 +8,7 @@ image::images/KlassenReferanserammeverk.png[]
 [cols="30s,70d"]
 |===
 |English name| Reference framework
-|Anvendelse| Klassen brukes til å representere lovgivning eller offisiell politikk som vilkår er utledet fra. Eksempler kan være prosedyrer, anskaffelsesreglement osv.
+|Anvendelse| Klassen brukes til å representere lovgivning eller offisiell politikk som krav er utledet fra. Eksempler kan være prosedyrer, anskaffelsesreglement osv.
 |Usage note|This class represents legislation or official policy from which Requirements are derived. Examples include procedures, tendering legislation, etc.
 |URI| cv:ReferenceFramework
 |Kravnivå| Valgfri/Optional
