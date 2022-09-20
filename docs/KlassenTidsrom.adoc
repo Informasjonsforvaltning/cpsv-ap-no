@@ -28,6 +28,8 @@ image::images/KlassenTidsrom.png[]
 |Usage note | This property represents the end of a period or interval.
 |Multiplisitet| 0..1
 |Kravnivå | Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===
 
 ==== Tidsrom – starttidspunkt (time:hasBeginning) [[Tidsrom-starttidspunkt]]
@@ -40,6 +42,8 @@ image::images/KlassenTidsrom.png[]
 |Usage note | This property represents the beginning of a period or interval.
 |Multiplisitet| 0..1
 |Kravnivå | Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===
 
 ==== Tidsrom – tidsrom (time:hasXSDDuration) [[Tidsrom-tidsrom]]
@@ -47,9 +51,11 @@ image::images/KlassenTidsrom.png[]
 |===
 |English name | duration
 |URI| time:hasXSDDuration
-|Range| rdfs:Literal typed as xsd:duration
+|Range| xsd:duration
 |Anvendelse | Egenskapen brukes til å oppgi et tidsrom eller intervall.
 |Usage note | This property represents a period or interval.
 |Multiplisitet| 0..1
 |Kravnivå | Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===

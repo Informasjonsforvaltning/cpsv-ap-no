@@ -209,7 +209,7 @@ Eksempel i RDF Turtle:
 |===
 |English name|has URL
 |URI|vcard:hasURL
-|Range|rdfs:Literal typed as xsd:anyURI
+|Range| xsd:anyURI
 |Anvendelse| Egenskapen brukes  til å oppgi URLen til tjenestekanalen, når kanalen er av type online.
 |Usage note| This property specifies the URL to the channel, when the channel is online.
 |Multiplisitet|Valgfri/Optional

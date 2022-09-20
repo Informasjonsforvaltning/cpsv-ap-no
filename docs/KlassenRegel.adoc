@@ -53,7 +53,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|name
 |URI|dct:title
 |Range| rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi en beskrivende navn eller navn for regelen. Gjentas når navnet finnes på flere språk.
+|Anvendelse| Egenskapen brukes til å oppgi et beskrivende navn eller tittel for regelen. Egenskapen bør gjentas når navnet finnes på flere språk.
 |Usage note| This property refers to the descriptive title or name of a Resource. This property should be repeated in case there are various versions of the text in different languages.
 |Multiplisitet|1..n
 |Kravnivå |Obligatorisk/Mandatory
@@ -86,7 +86,7 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |English name|language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Anvendelse| Egenskapen brukes til å referere til språk som regelen er tilgjengelig i.
+|Anvendelse| Egenskapen brukes til å oppgi hvilke språk regelen er tilgjengelig på.
 |Usage note|This property represents the language(s) in which the Rule is available. This could be one or multiple languages, for instance in countries with more than one official language.
 |Multiplisitet|0..n
 |Kravnivå |Anbefalt/Recommended

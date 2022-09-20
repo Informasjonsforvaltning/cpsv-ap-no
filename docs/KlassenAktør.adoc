@@ -12,17 +12,11 @@ image::images/KlassenAktør.png[]
 |Usage note|The Agent class is any resource that acts or has the power to act. This includes people, organisations and groups.
 |URI|foaf:Agent
 |Kravnivå|Anbefalt/Recommended
-|Merknad 1|For aktør som er en offentlig organisasjon skal <<OffentligOrganisasjon>> brukes.
-|Remark 1 | For Agent which is a public organisation, <<OffentligOrganisasjon>>  shall be used.
+|Merknad 1|For aktør som er en offentlig organisasjon skal <<OffentligOrganisasjon>> brukes, og for aktør som er en ikke-offentlig organisasjon skal <<Organisasjon>> brukes.
+|Remark 1 | For Agent which is a public organisation, <<OffentligOrganisasjon>>  shall be used. For Agent which is a non-public organisation, <<Organisasjon>> shall be used.
 |Merknad 2| Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
 |Remark 2 | Norwegian extension: Requirement level changed from optional to recommended.
-|Eksempel| Som eksempel på bruk av klassen, bruker vi en fiktiv exAktør ("Den beste restauranten AS") som ikke er en offentlig organisasjon.
 |===
-
-Eksempel i RDF Turtle:
------
-<exAktør> a foaf:Agent ; .
------
 
 === Obligatoriske egenskaper for klassen _Aktør_ [[Aktør-obligatoriske-egenskaper]]
 
@@ -39,15 +33,8 @@ Eksempel i RDF Turtle:
 |Kravnivå|Obligatorisk/Mandatory
 |Merknad| Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
-For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`
-|Eksempel| Vår exAktør har organisasjonsnummer 1656923949276 (NB! ugyldig org.nr.)
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
 |===
-
-Eksempel I RDF Turtle:
------
-<exAktør> a foaf:Agent ;
-   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/1656923949276"^^xsd:anyURI ;  .
------
 
 ==== Aktør – navn (dt:title) [[Aktør-navn]]
 
@@ -60,14 +47,7 @@ Eksempel I RDF Turtle:
 |Usage note| This property contains the name of the agent. This property should be repeated for different versions of the name (e.g. the name in different languages).
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
-|Eksempel| Navnet til vår exAktør er «Den beste restauranten AS» (bokmål)
 |===
-
-Eksempel i RDF Turtle:
-----
-<exAktør> a foaf:Agent ;
-   dct:title "Den beste restauranten AS"@nb ; .
-----
 
 === Anbefalte egenskaper for klassen _Aktør_ [[Aktør-anbefalte-egenskaper]]
 
@@ -86,14 +66,7 @@ Eksempel i RDF Turtle:
 |Remark 1 | The value shall be chosen from http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (linked resource in RDF)].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel| Vår exAktør er av type _Company_.
 |===
-
-Eksempel i RDF Turtle:
------
-<exAktør> a foaf:Agent ;
-   dct:type <http://purl.org/adms/publishertype/Company> ;  .
------
 
 === Valgfrie egenskaper for klassen _Aktør_ [[Aktør-valgfrie-egenskaper]]
 
@@ -110,13 +83,9 @@ Eksempel i RDF Turtle:
 |Kravnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: multiplisitet er endret fra 0..1 til 0..n.
 | Remark | Norwegian extension: Multiplicity changed from 0..1 to 0..n.
-|Eksempel| Se under <<Adresse>>
 |===
 
-Eksempel i RDF Turtle: Se under <<Adresse>>
-
-
-==== Aktør – har rolle i (cv:playsRole) [[Aktør-harRolle]]
+==== Aktør – har rolle i (cv:playsRole) [[Aktør-har-rolle-i]]
 
 [cols="30s,70d"]
 |===
@@ -127,7 +96,4 @@ Eksempel i RDF Turtle: Se under <<Adresse>>
 |Usage note| This property links an Agent to the Participation class (`cv:Participation`). The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
-
-Eksempel i RDF Turtle: Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.

@@ -15,7 +15,7 @@ image::images/KlassenTjenesteresultat.png[]
 |Merknad 1 |Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.
 |Remark 1 | Norwegian extension: Requirement level changed from optional to recommended.
 |Merknad 2 | Norsk utvidelse: Som illustrert i <<img-ForenkletModell>> er Datasett (`dcat:Dataset`) en subklasse av denne klassen, noe som ikke CPSV-AP eksplisitt sier. Dette fordi et tjenesteresultat ofte kan være datasett.
-|Remark 2 | Norwegian extension: As illustrated in <<img-ForenkletModell>>, the class Dataset (`dcat:Dataset`) is a subclass of this class, which CPSV-AP does not explicitly speficy. This is because an Output may often be dataset. 
+|Remark 2 | Norwegian extension: As illustrated in <<img-ForenkletModell>>, the class Dataset (`dcat:Dataset`) is a subclass of this class, which CPSV-AP does not explicitly speficy. This is because an Output may often be dataset.
 |Eksempel|Resultater fra tjenesten «Skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).
 |===
 
@@ -54,7 +54,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , dcat:Dataset ;
-   dct:title "Skjenkebevilling til «Den beste restauranten AS»"@nb ; .
+   dct:title "Skjenkebevilling for servering av alkoholholdig drikk i gruppe 3"@nb ; .
 -----
 
 === Anbefalte egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-anbefalte-egenskaper]]
@@ -77,7 +77,7 @@ Eksempel i RDF Turtle:
 Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , dcat:Dataset ;
-   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
+   dct:description "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
 -----
 
 ==== Tjenesteresultat – språk (dct:language) [[Tjenesteresultat-språk]]
@@ -101,7 +101,7 @@ Eksempel i RDF Turtle:
 Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , dcat:Dataset ;
-   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
+   dct:title "Skjenkebevilling for servering av alkoholholdig drikk i gruppe 3"@nb ;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ; .
 -----
 
@@ -145,7 +145,7 @@ Eksempel i RDF Turtle: Se under <<img-FigurSyktBarnBeskrevetMedCPSVNO>>.
 Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , dcat:Dataset ;
-   dct:title "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ;
+   dct:title "Skjenkebevilling for servering av alkoholholdig drikk i gruppe 3"@nb ;
    dct:type <https://data.norge.no/vocabulary/service-output-type#permit> ; # tillatelse
    .
 -----
