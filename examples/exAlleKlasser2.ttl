@@ -101,7 +101,7 @@
    locn:address [ a locn:Address ;
        locn:fullAddress "Teatergata 9, 0180 OSLO"@nb ; ];
    foaf:homepage <https://www.regjeringen.no/no/dep/hod/id421/>;
-   org:classification <http://purl.org/adms/publishertype/NationalAuthority>;
+   dct:type <http://purl.org/adms/publishertype/NationalAuthority>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonPoliti.ttl>
@@ -117,7 +117,7 @@
    locn:address [ a locn:Address ;
        locn:fullAddress "Fridtjof Nansens vei 14, 0369 OSLO"@nb ; ];
    foaf:homepage <https://www.politiet.no/>;
-   org:classification <http://purl.org/adms/publishertype/NationalAuthority>;
+   dct:type <http://purl.org/adms/publishertype/NationalAuthority>;
    cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
    .
  
@@ -162,17 +162,6 @@
        <http://publications.europa.eu/resource/authority/language/NNO>;
    foaf:page <https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#%C2%A71-7b>;
    dct:type <https://data.norge.no/vocabulary/evidence-type#attestation>;
-   cccev:isSupportedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentreferanse.ttl>;
-   .
- 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentreferanse.ttl>
-   rdf:type cccev:DocumentReference;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentreferanse.ttl"^^xsd:anyURI;
-   dct:description """En politiattest viser om du har brutt loven innenfor feltet du skal jobbe i eller studere. Arbeidsgiveren din, organisasjonen din eller studiestedet ditt kan kreve en slik attest for å sjekke om du egner deg for jobben eller studiet."""@nb,
-       """Teksten blir vist på nynorsk."""@nn,
-       """The text is displayed in English."""@en;
-   cccev:url <https://example.org/example-dataset>;
-   dct:type <https://data.norge.no/vocabulary/document-reference-type#example-type>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKatalogDummy.ttl>
@@ -192,7 +181,7 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exGebyr.ttl>
    rdf:type cv:Cost;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exGebyr.ttl"^^xsd:anyURI;
-   cv:value "0,51"^^xsd:decimal;
+   cv:hasValue "0,51"^^xsd:double;
    dct:description """Pr. vareliter for alkoholdhold drikke i gruppe 1."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """The text is displayed in English."""@en;
@@ -241,21 +230,16 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>
    rdf:type vcard:Organization;
    schema:hoursAvailable <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exApningstidResepsjon.ttl>;
-   vcard:hasURL <https://www.bronnoy.kommune.no/>;
-   vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no"^^xsd:anyURI;
+   cv:ContactPage <https://www.bronnoy.kommune.no/>
+   cv:email "mailto:postmottak@bronnoy.kommune.no"^^xsd:anyURI;
    vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   vcard:hasOganizationName """Brønnøy kommune"""@nb,
-       """Brønnøy kommune"""@nn,
-       """Brønnøy Municipality"""@en;
-   vcard:hasOrganizationUnit """Brønnøy kommune, Politisk sekretariat"""@nb,
-       """Brønnøy kommune, Politisk sekretariat"""@nn,
-       """Brønnøy Municipality, Political Secretariat"""@en;
-   vcard:hasStreetAddress """Sivert Nielsens gt. 24, 8905 Brønnøysund"""@nb,
-       """Sivert Nielsens gt. 24, 8905 Brønnøysund"""@nn,
-       """Sivert Nielsens gt. 24, 8905 Brønnøysund"""@en;
-   vcard:hasTelephone """tel:+4775012000""";
+   cv:telephone """tel:+4775012000""";
+   cv:openingHours """Resepsjonen er åpent for henvendelser mandag - fredag: kl  10:00 - 14:00."""@no,
+       """Teksten blir vist på nynorsk."""@nn,
+       """The reception is open for inquiries Monday - Friday: 10:00 - 14:00."""@en;
+schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerStengt.ttl>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>
@@ -272,7 +256,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    locn:address [ a locn:Address ;
        locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ];
    foaf:homepage <https://www.bronnoy.kommune.no/>;
-   org:classification <http://purl.org/adms/publishertype/LocalAuthority>;
+   dct:type <http://purl.org/adms/publishertype/LocalAuthority>;
    cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl>;
    .
  
@@ -315,7 +299,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
        """The text is displayed in English."""@en;
    cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligTjeneste.ttl"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>;
+   cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>;
    dct:title """Skjenkebevilling"""@nb,
        """Skjenkjeløyve"""@nn,
        """Liquor license"""@en;
@@ -352,7 +336,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:hasCriterion <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>;
+   cv:holdsRequirement <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegel.ttl>
@@ -389,9 +373,9 @@ odrl:attributionURL <https://digdir.no/> ; ];
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTidsrom.ttl>
-   rdf:type dct:PeriodOfTime;
-   dcat:endDate "2024-12-31"^^xsd:date;
-   dcat:startDate "2020-01-01"^^xsd:date;
+   rdf:type time:Properinterval;
+   time:hasEnd "2024-12-31"^^xsd:dateTime;
+   time:hasBeginning "2020-01-01"^^xsd:dateTime;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>
@@ -401,7 +385,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
        """The text is displayed in English."""@en;
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktpunktDummy.ttl>;
+   cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktpunktDummy.ttl>;
    dct:title """Dummytjeneste"""@nb,
        """Dummytjeneste"""@nn,
        """Dummy service"""@en;
@@ -419,7 +403,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
    vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no"^^vcard:Email;
    dct:type <https://data.norge.no/vocabulary/service-channel-type#e-mail>;
-   schema:openingHours """Døgnkontinuerlig tjeneste (24-7)."""@nb,
+   cv:openingHours """Døgnkontinuerlig tjeneste (24-7)."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Round-the-clock service (24-7)."""@en;
    schema:hoursAvailable <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDognkontinuerligApning.ttl>;
@@ -434,11 +418,11 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
    vcard:hasTelephone """tel:+4775012000""";
    dct:type <https://data.norge.no/vocabulary/service-channel-type#telephone>;
-   schema:openingHours """Telefonen er åpen mandag - fredag: kl  09:00 - 15:00."""@nb,
+   cv:openingHours """Telefonen er åpen mandag - fredag: kl  09:00 - 15:00."""@nb,
        """Teksten blir vist på nynorsk.""",
        """The phone is open Monday - Friday: 09:00 - 15:00."""@en;
    schema:hoursAvailable <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exApningstidTelefon.ttl>;
-   schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerBegrenset.ttl>;
+   cv:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerBegrenset.ttl>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalTjenestekontor.ttl>
@@ -454,11 +438,11 @@ odrl:attributionURL <https://digdir.no/> ; ];
       vcard:postal-code "8905" ;
       vcard:country-name "Norge"@nb , "Norway"@en ; ];
    dct:type <https://data.norge.no/vocabulary/service-channel-type#service-bureau>;
-   schema:openingHours """Resepsjonen er åpent for henvendelser mandag - fredag: kl  10:00 - 14:00."""@no,
+   cv:openingHours """Resepsjonen er åpent for henvendelser mandag - fredag: kl  10:00 - 14:00."""@no,
        """Teksten blir vist på nynorsk."""@nn,
        """The reception is open for inquiries Monday - Friday: 10:00 - 14:00."""@en;
    schema:hoursAvailable <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exApningstidResepsjon.ttl>;
-   schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerStengt.ttl>;
+   cv:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerStengt.ttl>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl>
