@@ -9,7 +9,7 @@
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl>
    rdf:type foaf:Agent;
-   foaf:name """The best restaurant AS"""@en,
+   foaf:title """The best restaurant AS"""@en,
        """Den beste restauranten AS"""@nb,
        """Den beste restauranten AS"""@nn;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl"^^xsd:anyURI;
