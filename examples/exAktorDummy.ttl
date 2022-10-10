@@ -8,7 +8,7 @@
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>
    rdf:type foaf:Agent;
-   foaf:name """Dummy aktør"""@nb,
+   foaf:title """Dummy aktør"""@nb,
        """Dummy aktør"""@nn,
        """Dummy agent"""@en;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl"^^xsd:anyURI;
