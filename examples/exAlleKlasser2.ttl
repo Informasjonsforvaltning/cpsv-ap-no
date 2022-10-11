@@ -482,7 +482,7 @@ schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Infor
    dct:title """Over 20 år"""@nb,
        """Over 20 år"""@nn,
        """Over 20 years"""@en;
-   dct:description """test"""
+   dct:description """Styrer og stedfortreder må være over 20 år."""
    cv:fulfils <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl>
    .
  
@@ -573,4 +573,4 @@ schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Infor
    schema:dayOfWeek <https://schema.org/PublicHolidays>;
    .
  
-#### End of the file, 2022-10-11 09:00:39
+#### End of the file, 2022-10-11 10:30:39
