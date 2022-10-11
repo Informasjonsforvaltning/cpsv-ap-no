@@ -228,7 +228,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>
-   rdf:type vcard:Organization;
+   rdf:type cv:ContactPoint;
    schema:hoursAvailable <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exApningstidResepsjon.ttl>;
    cv:ContactPage <https://www.bronnoy.kommune.no/>
    cv:email "mailto:postmottak@bronnoy.kommune.no"^^xsd:anyURI;
@@ -463,12 +463,12 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl>
    rdf:type cv:Output;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl"^^xsd:anyURI;
-   dct:title """Skjenkebevilling til «Den beste restauranten AS»"""@nb,
-       """Skjenkebevilling til «Den beste restauranten AS»"""@nn,
-       """Liquor license for \"Den beste restauranten AS\""""@en;
-   dct:description """Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 1."""@nb,
+   dct:title """Skjenkebevilling gruppe 1»"""@nb,
+       """Skjenkebevilling gruppe 1»"""@nn,
+       """Liquor license group 1""""@en;
+   dct:description """Skjenkebevilling for servering av alkoholholdig drikk i gruppe 1."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
-       """Licensing to \"Den beste restauranten AS\", for serving alcoholic beverages in group 1."""@en;
+       """Licensing to for serving alcoholic beverages in group 1."""@en;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
@@ -526,7 +526,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:title """Vedtak om skjenkebevilling"""@nb,
        """Vedtak om skjenkebevilling"""@nn,
        """Decision on liquor license"""@en;
-   dct:description """Det er fattet vedtak om å gi skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 1, jf. Alkoholloven § 4-2"""@nb,
+   dct:description """Det er fattet vedtak om å gi skjenkebevilling til for servering av alkoholholdig drikk i gruppe 1, jf. Alkoholloven § 4-2"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """The text is displayed in English."""@en;
    cpsvno:mayTrigger <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
@@ -580,4 +580,4 @@ odrl:attributionURL <https://digdir.no/> ; ];
    schema:dayOfWeek <https://schema.org/PublicHolidays>;
    .
  
-#### End of the file, 2022-10-11 14:31:39
+#### End of the file, 2022-10-11 16:36:39
