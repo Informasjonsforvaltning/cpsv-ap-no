@@ -239,7 +239,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:openingHours """Resepsjonen er åpent for henvendelser mandag - fredag: kl  10:00 - 14:00."""@no,
        """Teksten blir vist på nynorsk."""@nn,
        """The reception is open for inquiries Monday - Friday: 10:00 - 14:00."""@en;
-schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerStengt.ttl>;
+   cv:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerStengt.ttl>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>
@@ -314,7 +314,7 @@ schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Infor
    foaf:homepage <https://kommune24-7.no/1813>;
    adms:status <http://purl.org/adms/status/Completed>;
    cv:thematicArea <http://eurovoc.europa.eu/5018>;
-   dct:type <https://data.norge.no/vocabulary/public-service-type#exercise-of-public-authority>;
+   dct:type <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
    cv:processingTime "P6D"^^xsd:duration;
    cv:isDescribedAt <https://example.org/example-dataset>;
    cv:hasParticipation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
@@ -580,4 +580,4 @@ schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Infor
    schema:dayOfWeek <https://schema.org/PublicHolidays>;
    .
  
-#### End of the file, 2022-10-11 12:31:39
+#### End of the file, 2022-10-11 14:31:39
