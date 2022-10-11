@@ -482,8 +482,11 @@ schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Infor
    dct:title """Over 20 år"""@nb,
        """Over 20 år"""@nn,
        """Over 20 years"""@en;
-   dct:description """Styrer og stedfortreder må være over 20 år."""
-   cv:fulfils <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl>
+   dct:description """Styrer og stedfortreder må være over 20 år."""@nb,
+       """Styrar og avløysar må vera over 20 år."""@nn,
+       """Directors and deputies must be over 20 years of age."""@en;
+   dct:type <https://data.norge.no/vocabulary/criterion-requirement-type#age>
+   cv:fulfils <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl>;
    .
  
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVirksomhetshendelse.ttl>
@@ -495,7 +498,7 @@ schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Infor
    dct:description """Elektronisk prosess for å søke om skjenkebevilling. (I eksempelet har vi kun tatt med at det søkes i en kommune)"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Electronic process for starting and running a restaurant."""@en;
-   cpsvno:triggersNeedFor <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligTjeneste.ttl>;
+   cpsvno:mayTriggerNeedFor <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligTjeneste.ttl>;
    dct:subject <https://example.org/example-concept/skjenkebevilling>;
    dcat:distribution <https://example.org/example-distribusjon>;
    dct:type <https://data.norge.no/vocabulary/business-event-type#needing-a-licence-or-permit-or-certificate>;
@@ -504,11 +507,13 @@ schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Infor
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exLivshendelse.ttl>
    rdf:type cv:LifeEvent;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exLivshendelse.ttl"^^xsd:anyURI;
-   dct:title """Å få barn"""@nb;
+   dct:title """Å få barn"""@nb,
+       """Å få barn"""@nn,
+       """Have children"""@en;
    dct:description """Å få barn omfatter både en rekke generelle behov som treffer de fleste som skal ha barn, og spesielle behov som kan oppstå i valgt periode. Mange deler av offentlig sektor er involvert."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Having children includes both a number of general needs that affect most people who are going to have children, and special needs that may arise in the chosen period. Many parts of the public sector are involved."""@en;
-   cpsvno:triggersNeedFor <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
+   cpsvno:mayTriggerNeedFor <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:subject <https://data.norge.no/concepts/2ad4e3f6-b707-3a34-acf5-8c22069d94d0>,
        <https://data.norge.no/concepts/8faeebea-e703-471e-8468-7fee484b7441>;
    dcat:distribution <https://example.org/example-distribution>;
@@ -518,11 +523,13 @@ schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Infor
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHendelse.ttl>
    rdf:type cv:Event;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHendelse.ttl"^^xsd:anyURI;
-   dct:title """Vedtak om skjenkebevilling"""@nb;
+   dct:title """Vedtak om skjenkebevilling"""@nb,
+       """Vedtak om skjenkebevilling"""@nn,
+       """Decision on liquor license"""@en;
    dct:description """Det er fattet vedtak om å gi skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 1, jf. Alkoholloven § 4-2"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """The text is displayed in English."""@en;
-   cpsvno:mayInitiate <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
+   cpsvno:mayTrigger <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:subject <https://data.norge.no/concepts/ad2ab3f9-17a1-4494-b15e-4ba3967a6424>;
    dcat:distribution <https://example.org/example-distribusjon>;
    dct:type <https://data.norge.no/vocabulary/event-type#administrative-decision-made>;
@@ -573,4 +580,4 @@ schema:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Infor
    schema:dayOfWeek <https://schema.org/PublicHolidays>;
    .
  
-#### End of the file, 2022-10-11 10:30:39
+#### End of the file, 2022-10-11 11:22:39
