@@ -40,11 +40,11 @@
     dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO, expressed in SHACL."@en ;
     dct:title "SHACL-rules for CPSV-AP-NO"@en ;
-    dct:modified "2022-03-16"^^xsd:date ;
-    owl:versionInfo "0.9.04" ;
+    dct:modified "2022-10-20"^^xsd:date ;
+    owl:versionInfo "0.9.05" ;
     adms:versionNotes "As complete as it could be."@en ,
         "Så komplett som det kan være."@nb ;
-    foaf:homepage <https://data.norge.no/specification/cpsv-ap-no/> ;
+    foaf:homepage <https://github.com/Informasjonsforvaltning/cpsv-ap-no> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
         foaf:name "Informasjonsforvaltning, Digitaliseringsdirektoratet" ;
@@ -188,7 +188,6 @@
       :hasMin0Max1Shape-dctIssued, # utgivelsesdato
    # optional
       :hasMin0Max1Shape-dctIsPartOfCatalog, # er del av
-      :hasMin0MaxNShape-dctHasPartCatalog, # har del
       :hasMin0MaxNShape-dcatnoContainsEvent, # inneholder hendelse
       :hasMin0Max1Shape-dctCreator, # produsent
       :hasMin0MaxNShape-dctRights # rettigheter
@@ -950,13 +949,6 @@ sh:targetClass cv:BusinessEvent .
   sh:name "description"@en, "beskrivelse"@nb;
   sh:nodeKind sh:Literal;
   sh:path dct:description;
-  sh:severity sh:Violation .
-
-:hasMin0MaxNShape-dctHasPartCatalog a sh:PropertyShape;
-  sh:message "The property dct:hasPart MUST be a URI referring to an instance of dcat:Catalog"@en, "Egenskapen dct:hasPart skal være en URI som refererer til en instans av dcat:Catalog"@nb ;
-  sh:name "has part"@en, "har del"@nb ;
-  sh:class dcat:Catalog;
-  sh:path dct:hasPart;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctHasPartService a sh:PropertyShape;
