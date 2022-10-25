@@ -182,7 +182,7 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exGebyr.ttl>
    rdf:type cv:Cost;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exGebyr.ttl"^^xsd:anyURI;
-   cv:hasValue "0,51"^^xsd:double;
+   cv:hasValue "0.51"^^xsd:double;
    dct:description """Pr. vareliter for alkoholdhold drikke i gruppe 1."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """The text is displayed in English."""@en;
@@ -398,7 +398,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalEpost.ttl>
    rdf:type cv:Channel;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalEpost.ttl"^^xsd:anyURI;
-   cv:processingTime "PD3"^^xsd:duration;
+   cv:processingTime "P3D"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
@@ -413,7 +413,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalTelefon.ttl>
    rdf:type cv:Channel;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalTelefon.ttl"^^xsd:anyURI;
-   cv:processingTime "PD6"^^xsd:duration;
+   cv:processingTime "P6D"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
@@ -429,7 +429,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalTjenestekontor.ttl>
    rdf:type cv:Channel;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalTjenestekontor.ttl"^^xsd:anyURI;
-   cv:processingTime "PD5"^^xsd:duration;
+   cv:processingTime "P5D"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
@@ -449,7 +449,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl>
    rdf:type cv:Channel;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl"^^xsd:anyURI;
-   cv:processingTime "PD1"^^xsd:duration;
+   cv:processingTime "P1D"^^xsd:duration;
    cpsvno:dataService <https://example.org/example-datatjeneste>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>;
