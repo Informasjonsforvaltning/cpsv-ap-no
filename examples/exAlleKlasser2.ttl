@@ -543,8 +543,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
        <https://schema.org/Wednesday>,
        <https://schema.org/Thursday>,
        <https://schema.org/Friday>;
-   schema:closes "15:00"^^xsd:time;
-   schema:opens "09:00"^^xsd:time;
+   schema:closes "15:00:00"^^xsd:time;
+   schema:opens "09:00:00"^^xsd:time;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exApningstidResepsjon.ttl>
@@ -554,8 +554,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
        <https://schema.org/Wednesday>,
        <https://schema.org/Thursday>,
        <https://schema.org/Friday>;
-   schema:closes "14:00"^^xsd:time;
-   schema:opens "10:00"^^xsd:time;
+   schema:closes "14:00:00"^^xsd:time;
+   schema:opens "10:00:00"^^xsd:time;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDognkontinuerligApning.ttl>
@@ -572,8 +572,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerBegrenset.ttl>
    rdf:type cv:OpeningHoursSpecification;
    schema:dayOfWeek <https://schema.org/PublicHolidays>;
-   schema:closes "12:00"^^xsd:time;
-   schema:opens "10:00"^^xsd:time;
+   schema:closes "12:00:00"^^xsd:time;
+   schema:opens "10:00:00"^^xsd:time;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerStengt.ttl>
