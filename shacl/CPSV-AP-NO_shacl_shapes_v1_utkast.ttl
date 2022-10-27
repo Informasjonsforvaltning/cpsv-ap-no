@@ -48,9 +48,9 @@
     dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.2.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.2.x, expressed in SHACL."@en ;
-    dct:modified "2022-10-26"^^xsd:date ;
+    dct:modified "2022-10-27"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "0.001" ;
+    owl:versionInfo "0.002" ;
     adms:versionNotes "For CPSV-AP-NO v.2.x."@en ;
     .
 
@@ -2047,8 +2047,8 @@ sh:name "post box"@en , "postboks"@nb ;
 ### shapes for checks on usage of controlled voabularies:
 
 :hasShapeCV-admsStatusMin0Max1 a sh:PropertyShape;
-  sh:message "The property adms:status may have max. 1 value which MUST have the following pattern: http://purl.org/adms/status/"@en,
-   "Egenskapen adms:status kan ha max. 1 verdi som skal ha følgende mønster: http://purl.org/adms/status/"@nb;
+  sh:message "The property adms:status may have max. 1 value which MUST have value chosen from http://purl.org/adms/status/"@en,
+   "Egenskapen adms:status kan ha max. 1 verdi som skal ha verdi hentet fra http://purl.org/adms/status/"@nb;
   sh:name "status"@en, "status"@nb;
   sh:nodeKind sh:IRI;
   sh:path adms:status;
@@ -2060,8 +2060,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Violation .
 
 :hasShapeCV-cvCurrencyMin0Max1 a sh:PropertyShape;
-  sh:message "The property cv:currency may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/authority/currency/"@en,
-   "Egenskapen cv:currency kan ha max. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/authority/currency/"@nb;
+  sh:message "The property cv:currency may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/currency/"@en,
+   "Egenskapen cv:currency kan ha max. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/currency/"@nb;
   sh:name "currency"@en, "valuta"@nb;
   sh:nodeKind sh:IRI;
   sh:path cv:currency;
@@ -2073,8 +2073,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Violation .
 
 :hasShapeCV-cvRoleMin1MaxN a sh:PropertyShape;
-  sh:message "The property cv:role MUST have min. 1 value which SHOULD have the following pattern: https://data.norge.no/vocabulary/role-type#"@en,
-   "Egenskapen cv:role skal ha min. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/role-type#"@nb;
+  sh:message "The property cv:role MUST have min. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/role-type#"@en,
+   "Egenskapen cv:role skal ha min. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/role-type#"@nb;
   sh:name "role"@en, "rolle"@nb;
   sh:nodeKind sh:IRI;
   sh:path cv:role;
@@ -2083,8 +2083,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctAccrualPeriodicityMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/authority/frequency/"@en,
-   "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/authority/frequency/"@nb;
+  sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/frequency/"@en,
+   "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/frequency/"@nb;
   sh:name "accrual periodicity"@en, "frekvens"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:accrualPeriodicity;
@@ -2096,8 +2096,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctLanguageMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:language MUST have the following pattern: http://publications.europa.eu/resource/authority/language/"@en,
-   "Egenskapen dct:language skal ha følgende mønster: http://publications.europa.eu/resource/authority/language/"@nb;
+  sh:message "The property dct:language MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
+   "Egenskapen dct:language skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
   sh:name "language"@en, "språk"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:language;
@@ -2108,8 +2108,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctLicenseMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:license may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/authority/licence/"@en,
-   "Egenskapen dct:license kan ha max. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/authority/licence/"@nb;
+  sh:message "The property dct:license may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/licence/"@en,
+   "Egenskapen dct:license kan ha max. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/licence/"@nb;
   sh:name "license"@en, "lisens"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:license;
@@ -2121,8 +2121,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctTypeAgentMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:type may have max. 1 value which MUST have the following pattern: http://purl.org/adms/publishertype/"@en,
-   "Egenskapen dct:type kan ha maks. 1 verdi som skal ha følgende mønster: http://purl.org/adms/publishertype/"@nb;
+  sh:message "The property dct:type may have max. 1 value which MUST have value chosen from http://purl.org/adms/publishertype/"@en,
+   "Egenskapen dct:type kan ha maks. 1 verdi som skal ha verdi hentet fra http://purl.org/adms/publishertype/"@nb;
   sh:name "type"@en, "type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2134,8 +2134,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctTypeBusinessEventMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/business-event-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/business-event-type#"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/business-event-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/business-event-type#"@nb;
   sh:name "business event - type"@en, "virksomhetshendelse - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2143,8 +2143,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeCriterionRequirementMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/criterion-requirement-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/criterion-requirement-type#"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/criterion-requirement-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/criterion-requirement-type#"@nb;
   sh:name "criterion requirement - type"@en, "vilkår - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2152,8 +2152,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeEventMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/event-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/event-type#"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/event-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/event-type#"@nb;
   sh:name "Event - type"@en, "Hendelse - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2161,8 +2161,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeEvidenceMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:type may have max. 1 value which SHOULD have the following pattern: https://data.norge.no/vocabulary/evidence-type#"@en,
-   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/evidence-type#"@nb;
+  sh:message "The property dct:type may have max. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/evidence-type#"@en,
+   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/evidence-type#"@nb;
   sh:name "evidence - type"@en, "dokumentasjon - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2171,8 +2171,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeDocumentReferenceMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:type may have max. 1 value which SHOULD have the following pattern: https://data.norge.no/vocabulary/document-reference-type#"@en,
-   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/document-reference-type#"@nb;
+  sh:message "The property dct:type may have max. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/document-reference-type#"@en,
+   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/document-reference-type#"@nb;
   sh:name "document reference - type"@en, "dokumentreferanse - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2181,8 +2181,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeLegalResourceMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/legal-resource-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/legal-resource-type#"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/legal-resource-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/legal-resource-type#"@nb;
   sh:name "legal resource - type"@en, "regulativ ressurs - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2190,8 +2190,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeLifeEventMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/life-event-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/life-event-type#"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/life-event-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/life-event-type#"@nb;
   sh:name "life event - type"@en, "livshendelse - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2203,13 +2203,13 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
   sh:pattern "^https://www.ssb.no/klass/klassifikasjoner/45";
-  sh:message "The property dct:type SHOULD have the following pattern: https://www.ssb.no/klass/klassifikasjoner/45"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://www.ssb.no/klass/klassifikasjoner/45"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://www.ssb.no/klass/klassifikasjoner/45"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://www.ssb.no/klass/klassifikasjoner/45"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeRoleMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/role-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/role-type#"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/role-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/role-type#"@nb;
   sh:name "role - type"@en, "rolle - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2217,8 +2217,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeRuleMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/rule-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/rule-type#"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/rule-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/rule-type#"@nb;
   sh:name "rule - type"@en, "regel - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2226,8 +2226,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeServiceMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/service-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/service-type#"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/service-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/service-type#"@nb;
   sh:name "service - type"@en, "tjeneste - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2235,8 +2235,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeServiceChannelMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:type may have max. 1 value which SHOULD have the following pattern: https://data.norge.no/vocabulary/service-channel-type#"@en,
-   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha følgende mønster: https://data.norge.no/vocabulary/service-channel-type#"@nb;
+  sh:message "The property dct:type may have max. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/service-channel-type#"@en,
+   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/service-channel-type#"@nb;
   sh:name "service channel - type"@en, "tjenestekanal - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2245,8 +2245,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeServiceOutputMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have the following pattern: https://data.norge.no/vocabulary/service-output-type#"@en,
-   "Egenskapen dct:type bør ha følgende mønster: https://data.norge.no/vocabulary/service-output-type#"@nb;
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/service-output-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/service-output-type#"@nb;
   sh:name "service outout - type"@en, "tjenesteresultat - type"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
@@ -2254,8 +2254,8 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Warning .
 
 :hasShapeCV-orgClassificationMin0MaxN a sh:PropertyShape;
-  sh:message "The property org:classification MUST have the following pattern: http://purl.org/adms/publishertype/"@en,
-   "Egenskapen org:classification skal ha følgende mønster: http://purl.org/adms/publishertype/"@nb;
+  sh:message "The property org:classification MUST have value chosen from http://purl.org/adms/publishertype/"@en,
+   "Egenskapen org:classification skal ha verdi hentet fra http://purl.org/adms/publishertype/"@nb;
   sh:name "organization - classification"@en, "organisasjon - klassifisering"@nb;
   sh:nodeKind sh:IRI;
   sh:path org:classification;
@@ -2273,8 +2273,8 @@ sh:name "post box"@en , "postboks"@nb ;
       [sh:pattern "^http://publications.europa.eu/resource/authority/language/"]
       [sh:pattern "^https://publications.europa.eu/resource/authority/language/"]
       );
-   sh:message "The property vcard:hasLanguage MUST have the following pattern: http://publications.europa.eu/resource/authority/language/"@en,
-      "Egenskapen vcard:hasLanguage skal ha følgende mønster: http://publications.europa.eu/resource/authority/language/"@nb;
+   sh:message "The property vcard:hasLanguage MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
+      "Egenskapen vcard:hasLanguage skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
    sh:severity sh:Warning .
 
 ############################################
