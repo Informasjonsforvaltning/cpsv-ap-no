@@ -103,8 +103,7 @@
       :hasMin0MaxNShape-locnAddress, # adresse (locn:address)
       :hasMin0MaxNShape-cvPlaysRole # har rolle i (cv:playsRole)
     ;
- sh:and ( [sh:targetClass foaf:Agent, org:Organization, cv:PublicOrganisation ]
-          [ sh:not ( [sh:targetObjectsOf cv:role]) ] );
+ sh:targetClass foaf:Agent, org:Organization, cv:PublicOrganisation ;
    .
 
 ### Klassen Begrensning (cv:Constraint)
