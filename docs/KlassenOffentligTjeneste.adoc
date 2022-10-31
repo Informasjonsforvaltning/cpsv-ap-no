@@ -497,7 +497,7 @@ Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cv:hasCost [ a cv:Cost ;
-      cv:value "0.49"^^xsd:decimal ; # beløp
+      cv:hasValue "0.49"^^xsd:decimal ; # beløp
       cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ; # valuta
       dct:description "Pr. vareliter for alkoholdhold drikke i gruppe 1"@nb ;
    ] ; .
