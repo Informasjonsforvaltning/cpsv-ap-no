@@ -90,7 +90,7 @@ The relation between a parent Requirement and a sub-Requirement can be complex. 
 [cols="30s,70d"]
 |===
 |English name| is derived from
-|URI| cv:hasDerivedFrom
+|URI| cv:isDerivedFrom
 |Range| cv:ReferenceFramework
 |Anvendelse| Egenskapen brukes til å referere til referanserammeverk som kravet er basert på, f.eks. lov, forskrift eller annen regulering.
 |Usage note|This property refers to the Reference Framework on which the Requirement is based, such as a law or regulation.

@@ -115,7 +115,7 @@ Et subkrav/forelderkrav er en instans av klassen Krav (`cv:Requirement`) eller e
 [cols="30s,70d"]
 |===
 |English name| is derived from
-|URI| cv:hasDerivedFrom
+|URI| cv:isDerivedFrom
 |Range| cv:ReferenceFramework
 |Anvendelse| Egenskapen brukes til å referere til referanserammeverk som begrensningen er basert på, f.eks. lov, forskrift eller annen regulering.
 |Usage note|This property refers to the Reference Framework on which the Constraint is based, such as a law or regulation.
