@@ -206,7 +206,7 @@ Information Concepts defined for specific Criterions also represent the basis fo
 [cols="30s,70d"]
 |===
 |English name| has supporting evidence
-|URI| hasSupportingEvidence
+|URI| cv:hasSupportingEvidence
 |Range| cv:Evidence
 |Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for kriteriet.
 |Usage note|This property refers to the Evidence that supplies information, proof or support for the Criterion.

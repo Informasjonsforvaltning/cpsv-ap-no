@@ -189,7 +189,7 @@ Information Concepts defined for specific Information Requirements also represen
 [cols="30s,70d"]
 |===
 |English name| has supporting evidence
-|URI| hasSupportingEvidence
+|URI| cv:hasSupportingEvidence
 |Range| cv:Evidence
 |Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for informasjonskravet.
 |Usage note|This property refers to the Evidence that supplies information, proof or support for the Information Requirement.

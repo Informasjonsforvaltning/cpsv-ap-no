@@ -196,7 +196,7 @@ One or several Lists of Evidence Types can support a Constraint. At least one of
 [cols="30s,70d"]
 |===
 |English name| has supporting evidence
-|URI| hasSupportingEvidence
+|URI| cv:hasSupportingEvidence
 |Range| cv:Evidence
 |Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for begrensningen.
 |Usage note|This property refers to the Evidence that supplies information, proof or support for the Constraint.

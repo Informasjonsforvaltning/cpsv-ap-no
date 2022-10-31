@@ -190,7 +190,7 @@ This property leaves the possibility to define a qualified relation from Require
 [cols="30s,70d"]
 |===
 |English name| has supporting evidence
-|URI| hasSupportingEvidence
+|URI| cv:hasSupportingEvidence
 |Range| cv:Evidence
 |Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for kravet.
 |Usage note|This property refers to the Evidence that supplies information, proof or support for the Requirement.
