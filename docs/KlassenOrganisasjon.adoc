@@ -68,6 +68,28 @@ Eksempel i RDF Turtle:
 
 === Anbefalte egenskaper for klassen _Organisasjon_ [[Organisasjon-anbefalte-egenskaper]]
 
+==== Organisasjon – hjemmeside (foaf:homepage) [[Organisasjon-hjemmeside]]
+
+[cols="30s,70d"]
+|===
+|English name|homepage
+|URI|foaf:homepage
+|Range|foaf:Document
+|Anvendelse| Egenskapen brukes til å referere til hjemmesiden til organisasjonen.
+|Usage note|This property refers to the homepage of an Organisation.
+|Multiplisitet|0..n
+|Kravnivå | Anbefalt/Recommended
+|Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel| https://example.org/home
+|===
+
+Eksempel i RDF Turtle:
+-----
+<exOrg> a org:Organization ;
+   foaf:homepage <https://example.org/home> ;  .
+-----
+
 ==== Organisasjon – type (dct:type) [[Organisasjon-type]]
 
 [cols="30s,70d"]
