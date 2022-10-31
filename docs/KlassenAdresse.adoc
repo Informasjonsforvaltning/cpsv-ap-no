@@ -53,7 +53,7 @@ address, almost always a country.
 [cols="30s,70d"]
 |===
 |English name|administrative unit level 2
-|URI|locn:addressUnitL2
+|URI|locn:adminUnitL2
 |Range|rdf:langString
 |Anvendelse| Egenskapen brukes til å oppgi navnet på et sekundært nivå/region i
 adressen, vanligvis et fylke, stat eller annet slikt område som
