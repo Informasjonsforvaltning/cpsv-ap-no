@@ -1,9 +1,5 @@
 == Om denne versjonen [[Om_denne_versjonen]]
 
-Dette er en kommenteringsversjon (før fastsetting av v.1.0), med #**kommenteringsfrist 28. oktober 2022**#. Hvem som helst kan kommentere og du trenger ikke å få dine innspill forankret i din organisasjon.
+Dette er et #utkast# til v.1.0 av CPSV-AP-NO. Utkastet har vært ute til uformell kommentering (frist 28. okt. 2022) og de få innspillene som ble registrert er innarbeidet i denne versjonen.
 
-Hvordan gir du tilbakemeldinger?
-
-* Vi ber deg fortrinnsvis legge dine tilbakemeldinger inn som https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette en bruker gratis.
-
-* Du kan alternativt sende oss dine tilbakemeldinger på e-post, til adressen mailto:informasjonsforvaltning@digdir.no[informasjonsforvaltning(at)digdir.no, CPSV-AP-NO-kommenteringsversjon], fortrinnsvis ved å bruke link:files/Mal-tilbakemeldinger.docx[denne malen for detaljerte tilbakemeldinger (Word)].
+Spesifikasjonen CPSV-AP-NO er basert på EUs CPSV-AP. EU har plan om å ferdigstille neste release av CSPV-AP innen utgangen av november 2022. Vi avventer derfor ferdigstilling av denne spesifikasjonen til EU er ferdig med sin CPSV-AP, slik at vår CPSV-AP-NO blir mest mulig i samsvar med CPSV-AP fra EU. 
