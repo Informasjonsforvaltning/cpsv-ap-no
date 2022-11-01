@@ -118,23 +118,6 @@ entity identified by the locator.
 |Remark | Max. one per language.
 |===
 
-====  Adresse – bruksenhetsnummer (locn:locatorDesignator) [[Adresse-bruksenhetsnummer]]
-
-[cols="30s,70d"]
-|===
-|English name|locator designator
-|URI|locn:locatorDesignator
-|Range|xsd:string
-|Anvendelse| Egenskapen brukes til å oppgi et antall eller en sekvens av tegn som
-unikt identifiserer bruksenheten.
-|Usage note| This property represents a number or sequence of characters that
-uniquely identifies the locator within the relevant scope.
-|Multiplisitet|0..1
-|Kravnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
-|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
-|===
-
 ====  Adresse – fullstendig adresse (locn:fullAddress) [[Adresse-fullstendigAdresse]]
 
 [cols="30s,70d"]
@@ -148,24 +131,67 @@ uniquely identifies the locator within the relevant scope.
 |Kravnivå|Valgfri/Optional
 |Merknad | Maks. én per språk.
 |Remark | Max. one per language.
+|Eksempel| Den fullstendige besøksadressen til Digdir i Oslo er: «7. etasje, Lørenfaret 1C, 0580 Oslo, Norge».
 |===
 
-====  Adresse – gjennomfartsåre (locn:throughfare) [[Adresse-gjennomfartsåre]]
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:fullAddress "7. etasje, Lørenfaret 1C, 0580 Oslo, Norge"@nb ,
+      "7th floor, Lorenfaret 1C, 0580 Oslo, Norway"@en ;
+   .
+-----
+
+====  Adresse – gate-/vei-/områdenavn (locn:throughfare) [[Adresse-gate-vei-område-navn]]
 
 [cols="30s,70d"]
 |===
 |English name|throughfare
 |URI|locn:throughfare
 |Range|rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi navnet på en passasje eller
-veistrekning fra ett sted til et annet.
+|Anvendelse| Egenskapen brukes til å oppgi navnet på en passasje eller en veistrekning fra ett sted til et annet, f.eks. en gate, en vei, eller et område.
 |Usage note| This property represents the name of a passage or way through from
 one location to another.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |Merknad | Maks. én per språk.
 |Remark | Max. one per language.
+|Eksempel| «Lørenfaret» er gatenavn, i den fullstendige besøksadressen til Didgir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).
 |===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   .
+-----
+
+====  Adresse – husnummer m.m. (locn:locatorDesignator) [[Adresse-husnummer-med-mer]]
+
+[cols="30s,70d"]
+|===
+|English name|locator designator
+|URI|locn:locatorDesignator
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi et nummer eller en sekvens av tegn som
+unikt identifiserer lokasjonen i den aktuelle konteksten, f.eks. hus-/oppgangsnummer, ev. også etasjenummer, leilighetsnummer, romnummer eller lignende.
+|Usage note| This property represents a number or sequence of characters that uniquely identifies the locator within the relevant scope.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad 1 | Maks. én per språk.
+|Remark 1 | Max. one per language.
+|Merknad 2 | Norsk utvidelse: Range er endret fra `xsd:string` til `rdf:langString`, fordi egenskapen kan inneholde  språksensitive verdier (f.eks. "etasje"@nb vs. "floor"@en).
+|Remark 2 | Norwegian extension: Range changed from `xsd:string` to `rdf:langString`, because this property may contain language sensitive values (e.g., "etasje"@nb vs. "floor"@en).
+|Eksempel| «7. etasje, 1C» er husnummer m.m., i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»), i konteksten «Lørenfaret» (se <<Adresse-gate-vei-område-navn>>).
+|===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   .
+-----
 
 ====  Adresse – postboks (locn:poBox) [[Adresse-postboks]]
 
@@ -173,16 +199,29 @@ one location to another.
 |===
 |English name|post office box
 |URI|locn:poBox
-|Range| xsd:string
+|Range| rdf:langString
 |Anvendelse| Egenskapen brukes til å oppgi en stedsbetegnelse for et
 postleveringssted på et postkontor, vanligvis et nummer.
 |Usage note| This property represents a location designator for a postal delivery
 point at a post office, usually a number.
-|Multiplisitet|0..1
+|Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
-|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
+|Merknad 1 | Maks. én per språk.
+|Remark 1 | Max. one per language.
+|Merknad 2 | Norsk utvidelse: Range endret fra xsd:string til rdf:langString, for å kunne ha postboksanleggsnavnet i ulike språkvarianter (f.eks. å erstatte norske bokstaver æ, ø, å med a, o, a)
+|Remark 2 | Norwegian extension: Range changed from xsd:string to rdf:langString, in order to specify the p.o.box facility name in different languages (e.g., to replace the Norwegian letters æ, ø, å with a, o, a)
+|Eksempel | Postboksadressen til Digdir i Oslo: «Postboks 1382 Vika, 0114 Oslo, Norge»
 |===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-postboksadresse> a locn:Address ;
+   locn:poBox "1382 Vika"@nb , "1382 Vika"@en ;
+   locn:postCode "0114" ;
+   locn:postName "Oslo"@nb , "Oslo"@en ;
+   .
+-----
+
 
 ====  Adresse – postnummer (locn:postCode) [[Adresse-postnummer]]
 
@@ -200,7 +239,17 @@ delivery points.
 |Kravnivå|Valgfri/Optional
 |Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
 |Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
+|Eksempel| «0580» er postnummer, i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).
 |===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:postCode "0580" ;
+   .
+-----
 
 ====  Adresse – poststed (locn:postName) [[Adresse-poststed]]
 
@@ -218,4 +267,15 @@ points.
 |Kravnivå|Valgfri/Optional
 |Merknad | Maks. én per språk.
 |Remark | Max. one per language.
+|Eksempel| «Oslo» er poststed, i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).
 |===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:postCode "0580" ;
+   locn:postName "Oslo"@nb , "Oslo"@en ;
+   .
+-----
