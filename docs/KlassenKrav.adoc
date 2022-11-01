@@ -223,6 +223,6 @@ This property leaves the possibility to define a qualified relation from Require
 |Usage note|This property refers to the category to which the Requirement belongs.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad |Verdien bør velges fra et kontrollert vokabular.
-|Remark |The value should be chosen from a controlled vocabulary.
+|Merknad |Verdien bør velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/requirement-type[Kravtype] når verdien finnes i det vokabularet.
+|Remark |The value should be chosen from the controlled vocabulary https://data.norge.no/vocabulary/requirement-type[Requirement type] when the value is in that vocabulary.
 |===
