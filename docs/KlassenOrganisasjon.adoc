@@ -114,7 +114,7 @@ Eksempel i RDF Turtle: se under <<OffentligOrganisasjon-dekningsområde>>.
 
 Eksempel i RDF Turtle:
 -----
-<BrønnøyKommune> a org:Organization ;
+<exOrg> a org:Organization ;
    skos:prefLabel "Den beste restauranten AS"@nb ; .
 -----
 
