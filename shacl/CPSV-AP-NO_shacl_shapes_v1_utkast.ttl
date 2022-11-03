@@ -327,7 +327,7 @@
 
 ### Klassen Konsesjonskontrakt (cv:ConcessionContract)
 :ConcessionContractShape a sh:NodeShape;
-  sh:name "Contact Point"@en, "Kontaktpunkt"@nb;
+  sh:name "Concession contract"@en, "Konsesjonskontrakt"@nb;
   sh:property
       # mandatory:
          :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
@@ -338,7 +338,7 @@
       # optional:
          :hasMin0MaxNShape-cvEstablishedUnder # etablert i henhold til (cv:establishedUnder)
       ;
-  sh:targetClass vcard:Kind .
+  sh:targetClass cv:ConcessionContract .
 
 ### Klassen Kontaktpunkt (cv:ContactPoint) @@@@@ NB! Sjekk om EU endrer på denne
 :ContactPointShape a sh:NodeShape;
@@ -347,12 +347,13 @@
       # optional properties:
          :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification, # begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification)
          :hasMin0MaxNShape-cvEmail, # e-post (cv:email)
-#         :hasMin0MaxNShape-vcardHasLanguage, # har språk (vcard:hasLanguage)
-         :hasShapeCV-vcardHasLanguageMin0MaxN, # har språk (vcard:hasLanguage) kontrollert vokabular
+#         :hasMin0MaxNShape-schemaAvailableLanguage, # har språk (schema:availableLanguage)
+         :hasShapeCV-schemaAvailableLanguagMin0MaxN, # har språk (schema:availableLanguage) kontrollert vokabular
          :hasMin0MaxNShape-cvContactPage, # kontaktside (cv:contactPage)
          :hasMin0MaxNShape-cvOpeningHours, # ordinær åpningstid fritekst (cv:openingHours)
          :hasMin0MaxNShape-schemaHoursAvailable, # ordinær åpningstid strukturert (schema:hoursAvailable)
-         :hasMin0MaxNShape-cvTelephone # telefon (cv:telephone)
+         :hasMin0MaxNShape-cvTelephone, # telefon (cv:telephone)
+         :hasMin0MaxNShape-schemaContactType # type kontaktpunkt (schema:contactType)
       ;
    sh:targetClass cv:ContactPoint .
 
@@ -1870,6 +1871,22 @@ sh:name "post box"@en , "postboks"@nb ;
 
 #### schema-properties:
 
+:hasMin0MaxNShape-schemaAvailableLanguage a sh:PropertyShape;
+   sh:name "available language"@en, "har språk"@nb;
+   sh:path schema:availableLanguage;
+   sh:class dct:LinguisticSystem;
+   sh:message "The property schema:availableLanguage MUST refer to an instance of dct:LinguisticSystem"@en,
+      "Egenskapen schema:availableLanguage skal referere til en instans av dct:LinguisticSystem"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-schemaContactType a sh:PropertyShape;
+   sh:name "contact type"@en, "type kontaktpunkt"@nb;
+   sh:path schema:contactType;
+   sh:datatype rdf:langString;
+   sh:message "The property schema:contactType MUST be of datatype rdf:langString"@en,
+      "Egenskapen schema:contactType skal være av datatype rdf:langString"@nb;
+   sh:severity sh:Violation .
+
 :hasMin0MaxNShape-schemaDayOfWeek a sh:PropertyShape;
    sh:name "day of week"@en, "dager i uka"@nb;
    sh:path schema:dayOfWeek;
@@ -1896,8 +1913,8 @@ sh:name "post box"@en , "postboks"@nb ;
       [sh:datatype xsd:date]
       [sh:datatype xsd:dateTime] ) ;
    sh:maxCount 1;
-   sh:message "The property schema:validFrom may have max. 1 value which MUST be of type xsd:date or xsd:dateTime"@en,
-      "Egenskapen schema:validFrom kan ha maks. 1 verdi som skal være av type xsd:date eller xsd:dateTime"@nb;
+   sh:message "The property schema:validFrom may have max. 1 value which MUST be of datatype xsd:date or xsd:dateTime"@en,
+      "Egenskapen schema:validFrom kan ha maks. 1 verdi som skal være av datatype xsd:date eller xsd:dateTime"@nb;
    sh:severity sh:Violation .
 
 :hasMin0Max1Shape-schemaValidThrough a sh:PropertyShape;
@@ -2004,14 +2021,6 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:message "The property vcard:hasEmail MUST refer to an instance of vcard:hasEmail"@en,
     "Egenskapen vcard:hasEmail skal referere til en instans av vcard:hasEmail"@nb;
   sh:severity sh:Violation .
-
-:hasMin0MaxNShape-vcardHasLanguage a sh:PropertyShape;
-   sh:name "has language"@en, "har språk"@nb;
-   sh:path vcard:hasLanguage;
-   sh:class dct:LinguisticSystem;
-   sh:message "The property vcard:hasLanguage MUST refer to an instance of dct:LinguisticSystem"@en,
-      "Egenskapen vcard:hasLanguage skal referere til en instans av dct:LinguisticSystem"@nb;
-   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-vcardHasTelephone a sh:PropertyShape;
   sh:path vcard:hasTelephone;
@@ -2263,16 +2272,16 @@ sh:name "post box"@en , "postboks"@nb ;
    );
   sh:severity sh:Violation .
 
-:hasShapeCV-vcardHasLanguageMin0MaxN a sh:PropertyShape;
+:hasShapeCV-schemaAvailableLanguagMin0MaxN a sh:PropertyShape;
    sh:name "has language"@en, "har språk"@nb;
    sh:nodeKind sh:IRI;
-   sh:path vcard:hasLanguage;
+   sh:path schema:availableLanguage;
    sh:or (
       [sh:pattern "^http://publications.europa.eu/resource/authority/language/"]
       [sh:pattern "^https://publications.europa.eu/resource/authority/language/"]
       );
-   sh:message "The property vcard:hasLanguage MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
-      "Egenskapen vcard:hasLanguage skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
+   sh:message "The property schema:availableLanguage MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
+      "Egenskapen schema:availableLanguage skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
    sh:severity sh:Warning .
 
 ############################################
