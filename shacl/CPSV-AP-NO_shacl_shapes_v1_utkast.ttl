@@ -605,6 +605,9 @@ sh:targetClass org:Organization .
    sh:property
       # mandatory properties:
          :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
+      # recommended properties:
+#         :hasMin0Max1Shape-dctType, # type (dct:type)
+         :hasShapeCV-dctTypeServiceChannelMin0Max1, # type (dct:type), kontrollert vokabular
       # optinal properties:
          :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification, # begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification)
          :hasMin0Max1Shape-cvProcessingTime, # behandlingstid (cv:processingTime)
@@ -617,9 +620,7 @@ sh:targetClass org:Organization .
          :hasMin0MaxNShape-vcardHasTelephone, # har telefon (vcard:hasTelephone)
          :hasMin0MaxNShape-vcardHasURL, # har URL (vcard:hasURL)
          :hasMin0MaxNShape-cvOpeningHours, # ordinær åpningstid fritekst (cv:openingHours)
-         :hasMin0MaxNShape-schemaHoursAvailable, # ordinær åpningstid strukturert (schema:hoursAvailable)
-#         :hasMin0Max1Shape-dctType, # type (dct:type)
-         :hasShapeCV-dctTypeServiceChannelMin0Max1 # type (dct:type), kontrollert vokabular
+         :hasMin0MaxNShape-schemaHoursAvailable # ordinær åpningstid strukturert (schema:hoursAvailable)
       ;
    sh:targetClass cv:Channel .
 
