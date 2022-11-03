@@ -885,11 +885,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Kontaktpunkt-begrenset-åpningstid-strukturert">Kontaktpunkt – begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification)</a></li>
 <li><a href="#Kontaktpunkt-e-post">Kontaktpunkt – e-post (cv:email)</a></li>
-<li><a href="#Kontaktpunkt-har-språk">Kontaktpunkt – har språk (vcard:hasLanguage)</a></li>
+<li><a href="#Kontaktpunkt-har-språk">Kontaktpunkt – har språk (schema:availableLanguage)</a></li>
 <li><a href="#Kontaktpunkt-kontaktside">Kontaktpunkt – kontaktside (cv:contactPage)</a></li>
 <li><a href="#Kontaktpunkt-ordinær-åpningstid-fritekst">Kontaktpunkt – ordinær åpningstid fritekst (cv:openingHours)</a></li>
 <li><a href="#Kontaktpunkt-ordinær-åpningstid-strukturert">Kontaktpunkt – ordinær åpningstid strukturert (schema:hoursAvailable)</a></li>
 <li><a href="#Kontaktpunkt-telefon">Kontaktpunkt – telefon (cv:telephone)</a></li>
+<li><a href="#Kontaktpunkt-type-kontaktpunkt">Kontaktpunkt – type kontaktpunkt (schema:contactType)</a></li>
 </ul>
 </li>
 </ul>
@@ -9110,7 +9111,7 @@ points.</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kontaktpunkt-har-språk"><a class="anchor" href="#Kontaktpunkt-har-språk"></a>Kontaktpunkt – har språk (vcard:hasLanguage)</h4>
+<h4 id="Kontaktpunkt-har-språk"><a class="anchor" href="#Kontaktpunkt-har-språk"></a>Kontaktpunkt – har språk (schema:availableLanguage)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9123,7 +9124,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasLanguage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:availableLanguage</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -9331,6 +9332,45 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a telephone number through which the Contact Point can be contacted.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Kontaktpunkt-type-kontaktpunkt"><a class="anchor" href="#Kontaktpunkt-type-kontaktpunkt"></a>Kontaktpunkt – type kontaktpunkt (schema:contactType)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">contact type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:contactType</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å beskrive kontaktpunktet. Egenskapen bør gjentas når beskrivelsen er på flere språk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a description of the Contact Point, repeated when the description is in different languages.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -19025,7 +19065,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-03 09:49:57 UTC
+Sist oppdatert 2022-11-03 10:24:53 UTC
 </div>
 </div>
 </body>

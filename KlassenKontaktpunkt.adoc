@@ -42,12 +42,12 @@ image::images/KlassenKontaktpunkt.png[]
 |Kravnivå|Valgfri/Optional
 |===
 
-==== Kontaktpunkt – har språk (vcard:hasLanguage) [[Kontaktpunkt-har-språk]]
+==== Kontaktpunkt – har språk (schema:availableLanguage) [[Kontaktpunkt-har-språk]]
 
 [cols="30s,70d"]
 |===
 |English name| has language
-|URI| vcard:hasLanguage
+|URI| schema:availableLanguage
 |Range| dct:LinguisticSystem
 |Anvendelse| Egenskapen brukes til å oppgi språk som kontaktpunktet bruker.
 |Usage note| This property specifies which language(s) the contact point uses.
@@ -115,6 +115,19 @@ Eksempel i RDF Turtle: Se under <<Åpningstid>>.
 |Range| rdfs:Literal
 |Anvendelse| Egenskapen brukes til å oppgi telefonnummer til kontaktpunktet.
 |Usage note| This property represents a telephone number through which the Contact Point can be contacted.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|===
+
+==== Kontaktpunkt – type kontaktpunkt (schema:contactType) [[Kontaktpunkt-type-kontaktpunkt]]
+
+[cols="30s,70d"]
+|===
+|English name| contact type
+|URI| schema:contactType
+|Range| rdf:langString
+|Anvendelse| Egenskapen brukes til å beskrive kontaktpunktet. Egenskapen bør gjentas når beskrivelsen er på flere språk.
+|Usage note| This property represents a description of the Contact Point, repeated when the description is in different languages.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |===
