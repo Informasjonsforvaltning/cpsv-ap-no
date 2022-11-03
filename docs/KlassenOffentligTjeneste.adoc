@@ -8,7 +8,7 @@ image::images/KlassenOffentligTjeneste.png[]
 [cols="30s,70d"]
 |===
 |English name|Public Service
-|Anvendelse| Klassen brukes til å representere en https://data.norge.no/concepts?q=offentlig%20tjeneste[offentlig tjeneste].
+|Anvendelse| Klassen brukes til å representere en https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0[offentlig tjeneste].
 |Usage note| This class represents a Public Service.
 |URI|cpsv:PublicService
 |Subklasse av / Subclass of|cpsvno:Service
