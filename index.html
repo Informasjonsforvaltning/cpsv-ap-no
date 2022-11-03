@@ -831,6 +831,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Katalog-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Katalog</em></a>
 <ul class="sectlevel3">
 <li><a href="#Katalog-beskrivelse">Katalog – beskrivelse (dct:description)</a></li>
+<li><a href="#Katalog-har-kontaktpunkt">Katalog – har kontaktpunkt (cv:hasContactPoint)</a></li>
 <li><a href="#Katalog-identifikator">Katalog – identifikator (dct:identifier)</a></li>
 <li><a href="#Katalog-inneholderTjeneste">Katalog – inneholder tjeneste (dcatno:containsService)</a></li>
 <li><a href="#Katalog-tittel">Katalog – tittel (dct:title)</a></li>
@@ -7704,6 +7705,60 @@ points.</p></td>
 <div class="content">
 <pre>&lt;https://data.norge.no/public-services-and-events&gt; a dcat:Catalog ;
    dct:description "Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser"@nb ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Katalog-har-kontaktpunkt"><a class="anchor" href="#Katalog-har-kontaktpunkt"></a>Katalog – har kontaktpunkt (cv:hasContactPoint)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">contact point</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasContactPoint</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ContactPoint</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi kontaktpunkt(er) for katalogen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents contact points for the catalog.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;tjenestekatalog&gt; a dcat:Catalog ;
+   cv:hasContactPoint [ a  cv:ContactPoint ; # kontaktpunkt
+     cv:telephone "tel:+4775012000" ;
+    ] ; .</pre>
 </div>
 </div>
 </div>
@@ -19065,7 +19120,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-03 10:24:53 UTC
+Sist oppdatert 2022-11-03 10:41:55 UTC
 </div>
 </div>
 </body>
