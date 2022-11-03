@@ -1187,6 +1187,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tjenestekanal-identifikator">Tjenestekanal – identifikator (dct:identifier)</a></li>
 </ul>
 </li>
+<li><a href="#Tjenestekanal-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tjenestekanal</em></a>
+<ul class="sectlevel3">
+<li><a href="#Tjenestekanal-type">Tjenestekanal – type (dct:type)</a></li>
+</ul>
+</li>
 <li><a href="#Tjenestekanal-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tjenestekanal</em></a>
 <ul class="sectlevel3">
 <li><a href="#Tjenestekanal-begrenset-åpningstid-strukturert">Tjenestekanal – begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification)</a></li>
@@ -1201,7 +1206,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tjenestekanal-harURL">Tjenestekanal – har URL (vcard:hasURL)</a></li>
 <li><a href="#Tjenestekanal-ordinær-åpningstid-fritekst">Tjenestekanal – ordinær åpningstid fritekst (cv:openingHours)</a></li>
 <li><a href="#Tjenestekanal-ordninær-åpningstid-strukturert">Tjenestekanal – ordinær åpningstid strukturert (schema:hoursAvailable)</a></li>
-<li><a href="#Tjenestekanal-type">Tjenestekanal – type (dct:type)</a></li>
 </ul>
 </li>
 </ul>
@@ -16916,6 +16920,70 @@ points.</p></td>
 </div>
 </div>
 <div class="sect2">
+<h3 id="Tjenestekanal-anbefalte-egenskaper"><a class="anchor" href="#Tjenestekanal-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Tjenestekanal</em></h3>
+<div class="sect3">
+<h4 id="Tjenestekanal-type"><a class="anchor" href="#Tjenestekanal-type"></a>Tjenestekanal – type (dct:type)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes  til å oppgi type kanal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the type of Channel as defined in a controlled vocabulary.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/service-channel-type">Tjenestekanaltype</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/service-channel-type">Service channel type</a>, when the value is in the vocabulary.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Online</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;viaSkjemaportalen&gt; a cv:Channel ;
+   vcard:hasURL "https://kommune24-7.no/1813" ;
+   dct:type &lt;https://data.norge.no/vocabulary/service-channel-type#online&gt; ; .</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="Tjenestekanal-valgfrie-egenskaper"><a class="anchor" href="#Tjenestekanal-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Tjenestekanal</em></h3>
 <div class="sect3">
 <h4 id="Tjenestekanal-begrenset-åpningstid-strukturert"><a class="anchor" href="#Tjenestekanal-begrenset-åpningstid-strukturert"></a>Tjenestekanal – begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification)</h4>
@@ -17559,67 +17627,6 @@ points.</p></td>
 </table>
 <div class="paragraph">
 <p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid"><em>Klassen Åpningstid (cv:OpeningHoursSpecification)</em></a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Tjenestekanal-type"><a class="anchor" href="#Tjenestekanal-type"></a>Tjenestekanal – type (dct:type)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes  til å oppgi type kanal.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the type of Channel as defined in a controlled vocabulary.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/service-channel-type">Tjenestekanaltype</a>, når verdien finnes i vokabularet.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/service-channel-type">Service channel type</a>, when the value is in the vocabulary.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Online</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;viaSkjemaportalen&gt; a cv:Channel ;
-   vcard:hasURL "https://kommune24-7.no/1813" ;
-   dct:type &lt;https://data.norge.no/vocabulary/service-channel-type#online&gt; ; .</pre>
-</div>
 </div>
 </div>
 </div>
@@ -19018,7 +19025,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-03 08:17:13 UTC
+Sist oppdatert 2022-11-03 09:39:45 UTC
 </div>
 </div>
 </body>

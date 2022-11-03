@@ -32,6 +32,31 @@ image::images/KlassenTjenestekanal.png[]
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
 |===
 
+=== Anbefalte egenskaper for klassen _Tjenestekanal_ [[Tjenestekanal-anbefalte-egenskaper]]
+
+==== Tjenestekanal – type (dct:type) [[Tjenestekanal-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Anvendelse| Egenskapen brukes  til å oppgi type kanal.
+|Usage note| This property represents the type of Channel as defined in a controlled vocabulary.
+|Multiplisitet|0..1
+|Kravnivå  | Anbefalt/Recommended
+|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-channel-type[Tjenestekanaltype], når verdien finnes i vokabularet.
+|Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-channel-type[Service channel type], when the value is in the vocabulary.
+|Eksempel|Online
+|===
+
+Eksempel i RDF Turtle:
+-----
+<viaSkjemaportalen> a cv:Channel ;
+   vcard:hasURL "https://kommune24-7.no/1813" ;
+   dct:type <https://data.norge.no/vocabulary/service-channel-type#online> ; .
+-----
+
 === Valgfrie egenskaper for klassen _Tjenestekanal_ [[Tjenestekanal-valgfrie-egenskaper]]
 
 ==== Tjenestekanal – begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification) [[Tjenestekanal-begrenset-åpningstid-strukturert]]
@@ -241,7 +266,6 @@ Eksempel i RDF Turtle:
 |Eksempel|Tidsrom når telefon er betjent.
 |===
 
-
 ==== Tjenestekanal – ordinær åpningstid strukturert (schema:hoursAvailable) [[Tjenestekanal-ordninær-åpningstid-strukturert]]
 
 [cols="30s,70d"]
@@ -259,26 +283,3 @@ Eksempel i RDF Turtle:
 |===
 
 Eksempel i RDF Turtle: Se under <<Åpningstid>>.
-
-==== Tjenestekanal – type (dct:type) [[Tjenestekanal-type]]
-
-[cols="30s,70d"]
-|===
-|English name|type
-|URI|dct:type
-|Range|skos:Concept
-|Anvendelse| Egenskapen brukes  til å oppgi type kanal.
-|Usage note| This property represents the type of Channel as defined in a controlled vocabulary.
-|Multiplisitet|0..1
-|Kravnivå  |Valgfri/Optional
-|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-channel-type[Tjenestekanaltype], når verdien finnes i vokabularet.
-|Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-channel-type[Service channel type], when the value is in the vocabulary.
-|Eksempel|Online
-|===
-
-Eksempel i RDF Turtle:
------
-<viaSkjemaportalen> a cv:Channel ;
-   vcard:hasURL "https://kommune24-7.no/1813" ;
-   dct:type <https://data.norge.no/vocabulary/service-channel-type#online> ; .
------
