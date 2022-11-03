@@ -8,7 +8,7 @@ image::images/KlassenOffentligTjeneste.png[]
 [cols="30s,70d"]
 |===
 |English name|Public Service
-|Anvendelse| Klassen brukes til å representere en https://data.norge.no/concepts?q=offentlig%20tjeneste[offentlig tjeneste].
+|Anvendelse| Klassen brukes til å representere en https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0[offentlig tjeneste].
 |Usage note| This class represents a Public Service.
 |URI|cpsv:PublicService
 |Subklasse av / Subclass of|cpsvno:Service
@@ -497,7 +497,7 @@ Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
    cv:hasCost [ a cv:Cost ;
-      cv:value "0.49"^^xsd:decimal ; # beløp
+      cv:hasValue "0.49"^^xsd:decimal ; # beløp
       cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ; # valuta
       dct:description "Pr. vareliter for alkoholdhold drikke i gruppe 1"@nb ;
    ] ; .

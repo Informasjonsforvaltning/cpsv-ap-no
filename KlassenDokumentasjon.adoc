@@ -283,7 +283,7 @@ Eksempel i RDF Turtle:
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
 |===
 
-=== Dokumentasjon – understøtter krav (cv:supportsRequirement) [[Dokumentasjon-understøtterKrav]]
+==== Dokumentasjon – understøtter krav (cv:supportsRequirement) [[Dokumentasjon-understøtterKrav]]
 
 [cols="30s,70d"]
 |===

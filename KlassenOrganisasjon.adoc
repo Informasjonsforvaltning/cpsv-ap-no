@@ -68,6 +68,56 @@ Eksempel i RDF Turtle:
 
 === Anbefalte egenskaper for klassen _Organisasjon_ [[Organisasjon-anbefalte-egenskaper]]
 
+==== Organisasjon – dekningsområde (dct:spatial) [[Organisasjon-dekningsområde]]
+
+[cols="30s,70d"]
+|===
+|English name|spatial coverage
+|URI|dct:spatial
+|Range|dct:Location
+|Anvendelse| Egenskapen brukes til å referere til et geografisk område dekket av organisasjonen.
+|Usage note| This property contains the geographic or administrative region covered by an Organisation.
+|Multiplisitet| 0..n
+|Kravnivå | Anbefalt/Recommended
+|Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+
+* Minst en verdi skal være fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted]; http://sws.geonames.org/[GeoNavn].
+
+* For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
+|Remark 1 a|Regarding usage of controlled vocabularies, the following requirements apply:
+
+* At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place]; http://sws.geonames.org/[GeoNames].
+
+* To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
+|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel| Se under <<OffentligOrganisasjon-dekningsområde>>.
+|===
+
+Eksempel i RDF Turtle: se under <<OffentligOrganisasjon-dekningsområde>>.
+
+==== Organisasjon – foretrukket navn (skos:prefLabel) [[Organisasjon-foretrukketNavn]]
+
+[cols="30s,70d"]
+|===
+|English name|preferred name
+|URI|skos:prefLabel
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
+|Usage note| This property represents a preferred label is used to provide the primary, legally recognised name of the Organization, as defined in the ORG Ontology. The property should be repeated when the name is in several languages.
+|Multiplisitet| 0..n
+|Kravnivå | Anbefalt/Recommended
+|Merknad| Norsk utvidelse: ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: not explicitly specified in CPSV-AP.
+|Eksempel| Navnet til vår exOrg er «Den beste restauranten AS» (bokmål)
+|===
+
+Eksempel i RDF Turtle:
+-----
+<exOrg> a org:Organization ;
+   skos:prefLabel "Den beste restauranten AS"@nb ; .
+-----
+
 ==== Organisasjon – type (dct:type) [[Organisasjon-type]]
 
 [cols="30s,70d"]
@@ -127,3 +177,25 @@ Eksempel i RDF Turtle: Se under <<Adresse>>
 |===
 
 Eksempel i RDF Turtle: Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+
+==== Organisasjon – hjemmeside (foaf:homepage) [[Organisasjon-hjemmeside]]
+
+[cols="30s,70d"]
+|===
+|English name|homepage
+|URI|foaf:homepage
+|Range|foaf:Document
+|Anvendelse| Egenskapen brukes til å referere til hjemmesiden til organisasjonen.
+|Usage note|This property refers to the homepage of an Organisation.
+|Multiplisitet|0..n
+|Kravnivå | Valgfri/Optional
+|Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel| https://example.org/home
+|===
+
+Eksempel i RDF Turtle:
+-----
+<exOrg> a org:Organization ;
+   foaf:homepage <https://example.org/home> ;  .
+-----

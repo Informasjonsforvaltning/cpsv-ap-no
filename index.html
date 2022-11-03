@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.18">
 <meta name="author" content="Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency">
 <title>Spesifikasjon for tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -85,10 +85,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -569,9 +569,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Adresse-adresseId">Adresse – adresseId (locn:addressId)</a></li>
 <li><a href="#Adresse-adresseringsområde">Adresse – adresseringsområde (locn:addressArea)</a></li>
 <li><a href="#Adresse-adressetilleggsnavn">Adresse – adressetilleggsnavn (locn:locatorName)</a></li>
-<li><a href="#Adresse-bruksenhetsnummer">Adresse – bruksenhetsnummer (locn:locatorDesignator)</a></li>
 <li><a href="#Adresse-fullstendigAdresse">Adresse – fullstendig adresse (locn:fullAddress)</a></li>
-<li><a href="#Adresse-gjennomfartsåre">Adresse – gjennomfartsåre (locn:throughfare)</a></li>
+<li><a href="#Adresse-gate-vei-område-navn">Adresse – gate-/vei-/områdenavn (locn:throughfare)</a></li>
+<li><a href="#Adresse-husnummer-med-mer">Adresse – husnummer m.m. (locn:locatorDesignator)</a></li>
 <li><a href="#Adresse-postboks">Adresse – postboks (locn:poBox)</a></li>
 <li><a href="#Adresse-postnummer">Adresse – postnummer (locn:postCode)</a></li>
 <li><a href="#Adresse-poststed">Adresse – poststed (locn:postName)</a></li>
@@ -688,10 +688,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Dokumentasjon-relatertInformasjon">Dokumentasjon – relatert informasjon (foaf:page)</a></li>
 <li><a href="#Dokumentasjon-type">Dokumentasjon – type (dct:type)</a></li>
 <li><a href="#Dokumentasjon-understøtterInformasjonsbegrep">Dokumentasjon – understøtter informasjonsbegrep (cv:supportsConcept)</a></li>
-</ul>
-</li>
-<li><a href="#Dokumentasjon-understøtterKrav">Dokumentasjon – understøtter krav (cv:supportsRequirement)</a>
-<ul class="sectlevel3">
+<li><a href="#Dokumentasjon-understøtterKrav">Dokumentasjon – understøtter krav (cv:supportsRequirement)</a></li>
 <li><a href="#Dokumentasjon-utsteder">Dokumentasjon –  utsteder (dct:publisher)</a></li>
 </ul>
 </li>
@@ -712,7 +709,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Dokumentasjonstype-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Dokumentasjonstype</em></a>
 <ul class="sectlevel3">
 <li><a href="#Dokumentasjonstype-erSpesifisertI">Dokumentasjonstype – er spesifisert i (cv:isSpecifiedIn)</a></li>
-<li><a href="#Dokumentasjonstype-gyldighetsperiodeBegrensning">Dokumentasjonstype – gyldighetsperiode, begrensning (cv:ValidityPeriodConstraint)</a></li>
+<li><a href="#Dokumentasjonstype-gyldighetsperiodeBegrensning">Dokumentasjonstype – gyldighetsperiode, begrensning (cv:validityPeriodConstraint)</a></li>
 <li><a href="#Dokumentasjonstype-utstedelsessted">Dokumentasjonstype – utstedelsessted (cv:issuingPlace)</a></li>
 </ul>
 </li>
@@ -1062,6 +1059,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Organisasjon-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Organisasjon</em></a>
 <ul class="sectlevel3">
+<li><a href="#Organisasjon-dekningsområde">Organisasjon – dekningsområde (dct:spatial)</a></li>
+<li><a href="#Organisasjon-foretrukketNavn">Organisasjon – foretrukket navn (skos:prefLabel)</a></li>
 <li><a href="#Organisasjon-type">Organisasjon – type (dct:type)</a></li>
 </ul>
 </li>
@@ -1069,6 +1068,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Organisasjon-adresse">Organisasjon – adresse (locn:address)</a></li>
 <li><a href="#Organisasjon-har-rolle-i">Organisasjon – har rolle i (cv:playsRole)</a></li>
+<li><a href="#Organisasjon-hjemmeside">Organisasjon – hjemmeside (foaf:homepage)</a></li>
 </ul>
 </li>
 </ul>
@@ -1317,10 +1317,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: <mark>Til kommentering, frist 28. oktober 2022</mark><br>
-<strong>Versjon</strong>: <mark>Kommenteringsversjon (før v.1.0)</mark><br>
-<strong>Publisert</strong>: 2022-09-16<br>
-<strong>Oppdatert</strong>: 2022-09-20<br>
+<p><strong>Status</strong>: <mark>under ferdigstilling (avventer ferdigstilling av EUs CPSV-AP som denne er basert på)</mark><br>
+<strong>Versjon</strong>: <mark>utkast til v.1.0</mark><br>
+<strong>Publisert</strong>: 2022-11-01<br>
+<strong>Oppdatert</strong>: 2022-11-03<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
@@ -1332,20 +1332,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <h2 id="Om_denne_versjonen"><a class="anchor" href="#Om_denne_versjonen"></a>Om denne versjonen</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Dette er en kommenteringsversjon (før fastsetting av v.1.0), med <mark><strong>kommenteringsfrist 28. oktober 2022</strong></mark>. Hvem som helst kan kommentere og du trenger ikke å få dine innspill forankret i din organisasjon.</p>
+<p>Dette er et <mark>utkast</mark> til v.1.0 av CPSV-AP-NO. Utkastet har vært ute til uformell kommentering (frist 28. okt. 2022). Innspillene fra/etter kommenteringsrunden er (løpende) innarbeidet i denne versjonen.</p>
 </div>
 <div class="paragraph">
-<p>Hvordan gir du tilbakemeldinger?</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Vi ber deg fortrinnsvis legge dine tilbakemeldinger inn som <a href="https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues">Github Issues</a>. Dersom du ikke allerede har bruker på Github kan du opprette en bruker gratis.</p>
-</li>
-<li>
-<p>Du kan alternativt sende oss dine tilbakemeldinger på e-post, til adressen <a href="mailto:informasjonsforvaltning@digdir.no?subject=CPSV-AP-NO-kommenteringsversjon">informasjonsforvaltning(at)digdir.no</a>, fortrinnsvis ved å bruke <a href="files/Mal-tilbakemeldinger.docx">denne malen for detaljerte tilbakemeldinger (Word)</a>.</p>
-</li>
-</ul>
+<p>Spesifikasjonen CPSV-AP-NO er basert på EUs CPSV-AP. EU har plan om å ferdigstille neste release av CSPV-AP innen utgangen av november 2022. Vi avventer derfor ferdigstilling av denne spesifikasjonen til EU er ferdig med sin CPSV-AP, slik at vår CPSV-AP-NO blir mest mulig i samsvar med CPSV-AP fra EU.</p>
 </div>
 <!-- toc disabled -->
 </div>
@@ -1487,7 +1477,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>foaf</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://xmlns.com/foaf/0.1/</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/spec/">FOAF Vocabulary</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/0.1/">FOAF Vocabulary</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>locn</strong></p></td>
@@ -1915,7 +1905,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Spesifikasjonen utvider CPSV-AP med egenskapen «begrep» (<code>dct:subject</code>) i <a href="#Hendelse"><em>Klassen Hendelse (cv:Event)</em></a>, <a href="#Livshendelse"><em>Klassen Livshendelse (cv:LifeEvent)</em></a>, <a href="#Virksomhetshendelse"><em>Klassen Virksomhetshendelse (cv:BusinessEvent)</em></a>, <a href="#Tjeneste"><em>Klassen Tjeneste (cpsvno:Service)</em></a> og <a href="#OffentligTjeneste"><em>Klassen Offentlig tjeneste (cpsv:PublicService)</em></a>. Egenskapen brukes til å referere til et eller flere begreper som er relatert til hendelsen/tjenesten og som er viktig for å forstå hendelsen/tjenesten. Det anbefales å referere til begreper som er publisert i f.eks. <a href="https://data.norge.no/concepts">begrepsdelen av Felles datakatalog</a>. Eksempel: begrepet ‘daglig leder’ er viktig for tjenesten «Skjenkebevilling».</p>
 </div>
 <div class="paragraph">
-<p>Se ellers også <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a> for krav til begrepsbeskrivelser, og <a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-begrep</a> for hvordan begrepsbeskrivelser utformet i henhold til <em>Forvaltningsstandard for begrepsbeskrivelser</em> tilgjengeliggjøres i RDF.</p>
+<p>Se også <a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-begrep</a> for hvordan begrepsbeskrivelser tilgjengeliggjøres i RDF.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1980,7 +1970,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="title">Figur 12. Katalogbeskrivelse</div>
 </div>
 <div class="paragraph">
-<p>EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (<code>dcat:Catalog</code>) fra <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a>. Spesifikasjonen utvider også klassen Katalog med egendefinerte egenskapene «inneholder tjeneste» (<code>cpsvno:containsService</code>) og «inneholder hendelse» (<code>cpsvno:containsEvent</code>), som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.</p>
+<p>EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (<code>dcat:Catalog</code>) fra <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a>. Spesifikasjonen utvider også klassen Katalog med egendefinerte egenskapene «inneholder tjeneste» (<code>dcatno:containsService</code>) og «inneholder hendelse» (<code>dcatno:containsEvent</code>), som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.</p>
 </div>
 </div>
 </div>
@@ -2428,7 +2418,7 @@ address, almost always a country.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locn:addressUnitL2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">locn:adminUnitL2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -2613,55 +2603,6 @@ entity identified by the locator.</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Adresse-bruksenhetsnummer"><a class="anchor" href="#Adresse-bruksenhetsnummer"></a>Adresse – bruksenhetsnummer (locn:locatorDesignator)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locator designator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locn:locatorDesignator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:string</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi et antall eller en sekvens av tegn som
-unikt identifiserer bruksenheten.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a number or sequence of characters that
-uniquely identifies the locator within the relevant scope.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: multiplisitet endret fra 0..n til 0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: multiplicity changed from 0..n to 0..1</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
 <h4 id="Adresse-fullstendigAdresse"><a class="anchor" href="#Adresse-fullstendigAdresse"></a>Adresse – fullstendig adresse (locn:fullAddress)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2705,11 +2646,26 @@ uniquely identifies the locator within the relevant scope.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Max. one per language.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Den fullstendige besøksadressen til Digdir i Oslo er: «7. etasje, Lørenfaret 1C, 0580 Oslo, Norge».</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;digdirOslo-besøksadresse&gt; a locn:Address ;
+   locn:fullAddress "7. etasje, Lørenfaret 1C, 0580 Oslo, Norge"@nb ,
+      "7th floor, Lorenfaret 1C, 0580 Oslo, Norway"@en ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect3">
-<h4 id="Adresse-gjennomfartsåre"><a class="anchor" href="#Adresse-gjennomfartsåre"></a>Adresse – gjennomfartsåre (locn:throughfare)</h4>
+<h4 id="Adresse-gate-vei-område-navn"><a class="anchor" href="#Adresse-gate-vei-område-navn"></a>Adresse – gate-/vei-/områdenavn (locn:throughfare)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2730,8 +2686,7 @@ uniquely identifies the locator within the relevant scope.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet på en passasje eller
-veistrekning fra ett sted til et annet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet på en passasje eller en veistrekning fra ett sted til et annet, f.eks. en gate, en vei, eller et område.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -2754,8 +2709,93 @@ one location to another.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Max. one per language.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Lørenfaret» er gatenavn, i den fullstendige besøksadressen til Didgir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;digdirOslo-besøksadresse&gt; a locn:Address ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Adresse-husnummer-med-mer"><a class="anchor" href="#Adresse-husnummer-med-mer"></a>Adresse – husnummer m.m. (locn:locatorDesignator)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">locator designator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">locn:locatorDesignator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi et nummer eller en sekvens av tegn som
+unikt identifiserer lokasjonen i den aktuelle konteksten, f.eks. hus-/oppgangsnummer, ev. også etasjenummer, leilighetsnummer, romnummer eller lignende.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a number or sequence of characters that uniquely identifies the locator within the relevant scope.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maks. én per språk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max. one per language.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range er endret fra <code>xsd:string</code> til <code>rdf:langString</code>, fordi egenskapen kan inneholde  språksensitive verdier (f.eks. "etasje"@nb vs. "floor"@en).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range changed from <code>xsd:string</code> to <code>rdf:langString</code>, because this property may contain language sensitive values (e.g., "etasje"@nb vs. "floor"@en).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«7. etasje, 1C» er husnummer m.m., i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»), i konteksten «Lørenfaret» (se <a href="#Adresse-gate-vei-område-navn">Adresse – gate-/vei-/områdenavn (locn:throughfare)</a>).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;digdirOslo-besøksadresse&gt; a locn:Address ;
+   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Adresse-postboks"><a class="anchor" href="#Adresse-postboks"></a>Adresse – postboks (locn:poBox)</h4>
@@ -2775,7 +2815,7 @@ one location to another.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -2789,22 +2829,46 @@ point at a post office, usually a number.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: multiplisitet endret fra 0..n til 0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maks. én per språk.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: multiplicity changed from 0..n to 0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max. one per language.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range endret fra xsd:string til rdf:langString, for å kunne ha postboksanleggsnavnet i ulike språkvarianter (f.eks. å erstatte norske bokstaver æ, ø, å med a, o, a)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range changed from xsd:string to rdf:langString, in order to specify the p.o.box facility name in different languages (e.g., to replace the Norwegian letters æ, ø, å with a, o, a)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postboksadressen til Digdir i Oslo: «Postboks 1382 Vika, 0114 Oslo, Norge»</p></td>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;digdirOslo-postboksadresse&gt; a locn:Address ;
+   locn:poBox "1382 Vika"@nb , "1382 Vika"@en ;
+   locn:postCode "0114" ;
+   locn:postName "Oslo"@nb , "Oslo"@en ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Adresse-postnummer"><a class="anchor" href="#Adresse-postnummer"></a>Adresse – postnummer (locn:postCode)</h4>
@@ -2853,8 +2917,24 @@ delivery points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: multiplicity changed from 0..n to 0..1</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«0580» er postnummer, i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;digdirOslo-besøksadresse&gt; a locn:Address ;
+   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:postCode "0580" ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Adresse-poststed"><a class="anchor" href="#Adresse-poststed"></a>Adresse – poststed (locn:postName)</h4>
@@ -2903,8 +2983,25 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Max. one per language.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Oslo» er poststed, i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;digdirOslo-besøksadresse&gt; a locn:Address ;
+   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:postCode "0580" ;
+   locn:postName "Oslo"@nb , "Oslo"@en ;
+   .</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -3504,7 +3601,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasDerivedFrom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDerivedFrom</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -3742,7 +3839,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">hasSupportingEvidence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasSupportingEvidence</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -5178,9 +5275,8 @@ points.</p></td>
 </tbody>
 </table>
 </div>
-</div>
-<div class="sect2">
-<h3 id="Dokumentasjon-understøtterKrav"><a class="anchor" href="#Dokumentasjon-understøtterKrav"></a>Dokumentasjon – understøtter krav (cv:supportsRequirement)</h3>
+<div class="sect3">
+<h4 id="Dokumentasjon-understøtterKrav"><a class="anchor" href="#Dokumentasjon-understøtterKrav"></a>Dokumentasjon – understøtter krav (cv:supportsRequirement)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5217,6 +5313,7 @@ points.</p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="sect3">
 <h4 id="Dokumentasjon-utsteder"><a class="anchor" href="#Dokumentasjon-utsteder"></a>Dokumentasjon –  utsteder (dct:publisher)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -5469,7 +5566,7 @@ points.</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Dokumentasjonstype-gyldighetsperiodeBegrensning"><a class="anchor" href="#Dokumentasjonstype-gyldighetsperiodeBegrensning"></a>Dokumentasjonstype – gyldighetsperiode, begrensning (cv:ValidityPeriodConstraint)</h4>
+<h4 id="Dokumentasjonstype-gyldighetsperiodeBegrensning"><a class="anchor" href="#Dokumentasjonstype-gyldighetsperiodeBegrensning"></a>Dokumentasjonstype – gyldighetsperiode, begrensning (cv:validityPeriodConstraint)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5482,7 +5579,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ValidityPeriodConstraint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:validityPeriodConstraint</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -6160,7 +6257,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a service. It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a service.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -7086,7 +7183,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasDerivedFrom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDerivedFrom</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -7372,7 +7469,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">hasSupportingEvidence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasSupportingEvidence</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -9045,11 +9142,19 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language">Språk</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language">Language</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
 </tr>
 </tbody>
@@ -9479,7 +9584,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasDerivedFrom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDerivedFrom</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -9766,7 +9871,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">hasSupportingEvidence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasSupportingEvidence</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -9868,11 +9973,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra et kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra det kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/requirement-type">Kravtype</a> når verdien finnes i det vokabularet.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The value should be chosen from a controlled vocabulary.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value should be chosen from the controlled vocabulary <a href="https://data.norge.no/vocabulary/requirement-type">Requirement type</a> when the value is in that vocabulary.</p></td>
 </tr>
 </tbody>
 </table>
@@ -10178,7 +10283,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasDerivedFrom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDerivedFrom</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -10464,7 +10569,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">hasSupportingEvidence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasSupportingEvidence</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -11355,7 +11460,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. EGenskapen bør gjentas når navnet finnes på flere språk.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -11616,7 +11721,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
@@ -11721,7 +11826,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
@@ -11772,7 +11877,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en <a href="https://data.norge.no/concepts?q=offentlig%20tjeneste">offentlig tjeneste</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en <a href="https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0">offentlig tjeneste</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -13148,7 +13253,7 @@ points.</p></td>
 <div class="content">
 <pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cv:hasCost [ a cv:Cost ;
-      cv:value "0.49"^^xsd:decimal ; # beløp
+      cv:hasValue "0.49"^^xsd:decimal ; # beløp
       cv:currency &lt;http://publications.europa.eu/resource/authority/currency/NOK&gt; ; # valuta
       dct:description "Pr. vareliter for alkoholdhold drikke i gruppe 1"@nb ;
    ] ; .</pre>
@@ -13704,6 +13809,152 @@ points.</p></td>
 <div class="sect2">
 <h3 id="Organisasjon-anbefalte-egenskaper"><a class="anchor" href="#Organisasjon-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Organisasjon</em></h3>
 <div class="sect3">
+<h4 id="Organisasjon-dekningsområde"><a class="anchor" href="#Organisasjon-dekningsområde"></a>Organisasjon – dekningsområde (dct:spatial)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spatial coverage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:spatial</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Location</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et geografisk område dekket av organisasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property contains the geographic or administrative region covered by an Organisation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Følgende krav til bruk av kontrollerte vokabularer gjelder:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Minst en verdi skal være fra en av følgende kontrollerte vokabularer: <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent">Kontinent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country">Land</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place">Sted</a>; <a href="http://sws.geonames.org/">GeoNavn</a>.</p>
+</li>
+<li>
+<p>For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> brukes.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Regarding usage of controlled vocabularies, the following requirements apply:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>At least one value shall be chosen from the following controlled vocabularies: <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent">Continent</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country">Country</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place">Place</a>; <a href="http://sws.geonames.org/">GeoNames</a>.</p>
+</li>
+<li>
+<p>To specify spatial coverage in Norway, the Norwegian Mapping Authority&#8217;s controlled vocabulary <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative units</a> should be used.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#OffentligOrganisasjon-dekningsområde">Offentlig organisasjon – dekningsområde (dct:spatial)</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: se under <a href="#OffentligOrganisasjon-dekningsområde">Offentlig organisasjon – dekningsområde (dct:spatial)</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Organisasjon-foretrukketNavn"><a class="anchor" href="#Organisasjon-foretrukketNavn"></a>Organisasjon – foretrukket navn (skos:prefLabel)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preferred name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:prefLabel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a preferred label is used to provide the primary, legally recognised name of the Organization, as defined in the ORG Ontology. The property should be repeated when the name is in several languages.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: not explicitly specified in CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navnet til vår exOrg er «Den beste restauranten AS» (bokmål)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exOrg&gt; a org:Organization ;
+   skos:prefLabel "Den beste restauranten AS"@nb ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="Organisasjon-type"><a class="anchor" href="#Organisasjon-type"></a>Organisasjon – type (dct:type)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -13872,6 +14123,66 @@ points.</p></td>
 </table>
 <div class="paragraph">
 <p>Eksempel i RDF Turtle: Se under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Organisasjon-hjemmeside"><a class="anchor" href="#Organisasjon-hjemmeside"></a>Organisasjon – hjemmeside (foaf:homepage)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">homepage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:homepage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til hjemmesiden til organisasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the homepage of an Organisation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://example.org/home" class="bare">https://example.org/home</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exOrg&gt; a org:Organization ;
+   foaf:homepage &lt;https://example.org/home&gt; ;  .</pre>
+</div>
 </div>
 </div>
 </div>
@@ -18707,7 +19018,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-20 07:57:52 UTC
+Sist oppdatert 2022-11-03 08:17:13 UTC
 </div>
 </div>
 </body>

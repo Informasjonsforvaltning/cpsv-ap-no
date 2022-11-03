@@ -91,7 +91,7 @@ Et subkrav/forelderkrav er en instans av klassen Krav (`cv:Requirement`) eller e
 [cols="30s,70d"]
 |===
 |English name| is derived from
-|URI| cv:hasDerivedFrom
+|URI| cv:isDerivedFrom
 |Range| cv:ReferenceFramework
 |Anvendelse| Egenskapen brukes til å referere til referanserammeverk som informasjonskravet er basert på, f.eks. lov, forskrift eller annen regulering.
 |Usage note|This property refers to the Reference Framework on which the Information Requirement is based, such as a law or regulation.
@@ -189,7 +189,7 @@ Information Concepts defined for specific Information Requirements also represen
 [cols="30s,70d"]
 |===
 |English name| has supporting evidence
-|URI| hasSupportingEvidence
+|URI| cv:hasSupportingEvidence
 |Range| cv:Evidence
 |Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for informasjonskravet.
 |Usage note|This property refers to the Evidence that supplies information, proof or support for the Information Requirement.

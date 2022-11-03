@@ -90,7 +90,7 @@ The relation between a parent Requirement and a sub-Requirement can be complex. 
 [cols="30s,70d"]
 |===
 |English name| is derived from
-|URI| cv:hasDerivedFrom
+|URI| cv:isDerivedFrom
 |Range| cv:ReferenceFramework
 |Anvendelse| Egenskapen brukes til å referere til referanserammeverk som kravet er basert på, f.eks. lov, forskrift eller annen regulering.
 |Usage note|This property refers to the Reference Framework on which the Requirement is based, such as a law or regulation.
@@ -190,7 +190,7 @@ This property leaves the possibility to define a qualified relation from Require
 [cols="30s,70d"]
 |===
 |English name| has supporting evidence
-|URI| hasSupportingEvidence
+|URI| cv:hasSupportingEvidence
 |Range| cv:Evidence
 |Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for kravet.
 |Usage note|This property refers to the Evidence that supplies information, proof or support for the Requirement.
@@ -223,6 +223,6 @@ This property leaves the possibility to define a qualified relation from Require
 |Usage note|This property refers to the category to which the Requirement belongs.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad |Verdien bør velges fra et kontrollert vokabular.
-|Remark |The value should be chosen from a controlled vocabulary.
+|Merknad |Verdien bør velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/requirement-type[Kravtype] når verdien finnes i det vokabularet.
+|Remark |The value should be chosen from the controlled vocabulary https://data.norge.no/vocabulary/requirement-type[Requirement type] when the value is in that vocabulary.
 |===
