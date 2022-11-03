@@ -15,54 +15,92 @@
 		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
 	</style>
 </head>
-<body lang="nb-NO" link="#000080" vlink="#800000" dir="ltr"><pre class="western">@prefix : &lt;https://data.norge.no/vocabulary/cpsvno#&gt; .
-@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .
+<body lang="nb-NO" link="#000080" vlink="#800000" dir="ltr"><pre class="western">@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .
+@prefix dct: &lt;http://purl.org/dc/terms/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix xml: &lt;http://www.w3.org/XML/1998/namespace&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix xml: &lt;http://www.w3.org/XML/1998/namespace&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
 @prefix cpsvno: &lt;https://data.norge.no/vocabulary/cpsvno#&gt; .
-@prefix dct: &lt;http://purl.org/dc/terms/&gt; .
-@base &lt;https://data.norge.no/vocabulary/cpsvno#&gt; .
 
 ### About this ontology:
 
 &lt;https://data.norge.no/vocabulary/cpsvno#&gt; rdf:type owl:Ontology ;
-                                            owl:versionIRI &lt;cpsvno:v.0.5&gt; ;
-                                            dct:modified &quot;2022-02-25&quot;^^xsd:date ;
-                                            rdfs:comment &quot;Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP.&quot;@nb ,
-                                                         &quot;Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP&quot;@en ;
-                                            rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb ,
-                                                             &quot;Norwegian Digitalisation Agency&quot;@en ;
-                                            rdfs:label &quot;CPSV-AP-NO&quot;@en ,
-                                                       &quot;CPSV-AP-NO&quot;@nb ;
-                                            owl:versionInfo &quot;&quot;&quot;V.0.5:
-- Fremdeles ikke komplett, bare som et kontrollert vokabular.
-- kontrollert vokabular utg&aring;r, peker til det nye med den nye URI.&quot;&quot;&quot;@nb ,
-                                                            &quot;&quot;&quot;V.0.5:
-- Still incomplete, only as a controlled vocabulary.
-- Controlled vocabulary deprecated, pointing to a new one with the new URI.&quot;&quot;&quot;@en .
+   rdfs:label &quot;CPSV-AP-NO&quot;@en , &quot;CPSV-AP-NO&quot;@nb ;
+   rdfs:comment &quot;Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP.&quot;@nb ,
+      &quot;Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP&quot;@en ;
+   rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb , &quot;Norwegian Digitalisation Agency&quot;@en ;
+   dct:creator [
+      foaf:homepage &lt;https://www.digdir.no/&gt; ;
+      foaf:name &quot;Digitaliseringsdirektoratet&quot;@nb , &quot;Norwegian Digitalisation Agency&quot;@en ;
+      ];
+   foaf:homepage &lt;https://github.com/Informasjonsforvaltning/cpsv-ap-no&gt; ;
+   foaf:maker [
+      foaf:mbox &lt;mailto:informasjonsforvaltning@digdir.no&gt; ;
+      foaf:name &quot;Informasjonsforvaltning, Digitaliseringsdirektoratet&quot; ;
+      foaf:page &lt;https://www.digdir.no&gt;
+      ];
+   dct:license &lt;https://creativecommons.org/licenses/by/4.0&gt; ;
+   dct:modified &quot;2022-11-02&quot;^^xsd:date ;
+   owl:versionInfo &quot;v.0.6&quot; ;
+   adms:versionNotes &quot;Klasser og egenskaper som er definert andre steder og som ikke har endret bruk i CPSV-AP-NO, er ikke spesifisert her.&quot;@nb ,
+      &quot;The classes and properties which are defined elsewhere and for which CPSV-AP-NO has not modified usage, are not specified here.&quot;@en
+   .
 
 #################################################################
-#    Annotation properties
+#    Classes defined in CPSV-AP-NO
 #################################################################
 
-###  http://www.w3.org/2004/02/skos/core#definition
-skos:definition rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-skos:prefLabel rdf:type owl:AnnotationProperty .
-
+cpsvno:Service a owl:Class ;
+   skos:prefLabel &quot;Service&quot;@en , &quot;Tjeneste&quot;@nb ;
+   skos:scopeNote &quot;This class represents a service.&quot;@en ,
+      &quot;Klassen brukes til &aring; beskrive en tjeneste.&quot;@nb ;
+   .
 
 #################################################################
-#    Classes
+#    Classes defined elsewhere, with modified usage/spesification
 #################################################################
 
-###  http://www.w3.org/2004/02/skos/core#Concept
-skos:Concept rdf:type owl:Class .
+cpsv:PublicService a owl:Class ;
+   rdfs:subClassOf cpsvno:Service ; # This is a Norweigan extension made in CPSV-AP-NO
+   skos:prefLabel &quot;Public Service&quot;@en , &quot;Offentlig tjeneste&quot;@nb ;
+   skos:scopeNote &quot;Klassen brukes til &aring; representere en offentlig tjeneste.&quot;@en ,
+      &quot;Klassen brukes til &aring; beskrive en tjeneste.&quot;@nb ;
+      rdfs:seeAlso &lt;https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0&gt; ;
+   .
+
+#################################################################
+#    Properties defined in CPSV-AP-NO
+#################################################################
+
+cpsvno:dataService a owl:ObjectProperty ;
+   skos:prefLabel &quot;data service&quot;@en , &quot;datatjeneste&quot;@nb ;
+   skos:scopeNote &quot;This property refers to the description of a data service which the channel uses.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; referere til en beskrivelse av en datatjeneste som kanalen benytter.&quot;@nb ;
+   rdfs:domain cv:Channel ;
+   rdfs:range dcat:DataServic ;
+   .
+
+cpsvno:mayTrigger a owl:ObjectProperty ;
+   rdfs:subPropertyOf dct:relation ;
+   skos:prefLabel &quot;may trigger&quot;@en , &quot;kan sette i gang&quot;@nb ;
+   skos:scopeNote &quot;This property links an event directly to a service that the event may trigger.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; referere til tjenester som kan settes i gang av den aktuelle hendelsen.&quot;@nb ;
+   rdfs:domain cv:Event ;
+   rdfs:range cpsvno:Service ;
+   .
+
+cpsvno:mayTriggerNeedFor a owl:ObjectProperty ;
+   rdfs:subPropertyOf cpsvno:mayTrigger ;
+   skos:prefLabel &quot;may trigger need for&quot;@en , &quot;kan utl&oslash;se behov for&quot;@nb ;
+   skos:scopeNote &quot;This property links an event directly to a service that the event may trigger need for.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; referere til tjenester som den aktuelle hendelsen kan utl&oslash;se behov for.&quot;@nb ;
+   rdfs:domain cv:LifeEvent , cv:BusinessEvent ;
+   rdfs:range cpsvno:Service ;
+   .
 
 
 #################################################################
@@ -70,29 +108,27 @@ skos:Concept rdf:type owl:Class .
 #################################################################
 
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure
-cpsvno:ruleForDisclosure rdf:type owl:NamedIndividual ,
-                                  skos:Concept ;
+cpsvno:ruleForDisclosure a owl:NamedIndividual , skos:Concept ;
     adms:status &lt;http://publications.europa.eu/resource/authority/concept-status/RETIRED&gt; ;
     dct:isReplacedBy &lt;https://data.norge.no/vocabulary/rule-type#disclosure-rule&gt; ;
-                         rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb ,
-                                          &quot;Norwegian Digitalisation Agency&quot;@en ;
-                         skos:definition &quot;regel som regulerer utlevering av en ressurs (f.eks. et datasett)&quot;@nb ,
-                                         &quot;rule that regulates disclosure of a resource (e.g. a dataset)&quot;@en ;
-                         skos:prefLabel &quot;rule for disclosure&quot;@en ,
-                                        &quot;utleveringsregel&quot;@nb .
+    rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb ,
+         &quot;Norwegian Digitalisation Agency&quot;@en ;
+    skos:definition &quot;regel som regulerer utlevering av en ressurs (f.eks. et datasett)&quot;@nb ,
+        &quot;rule that regulates disclosure of a resource (e.g. a dataset)&quot;@en ;
+    skos:prefLabel &quot;rule for disclosure&quot;@en ,
+       &quot;utleveringsregel&quot;@nb .
 
 
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure
-cpsvno:ruleForNonDisclosure rdf:type owl:NamedIndividual ,
-                                     skos:Concept ;
+cpsvno:ruleForNonDisclosure a owl:NamedIndividual , skos:Concept ;
     adms:status &lt;http://publications.europa.eu/resource/authority/concept-status/RETIRED&gt; ;
     dct:isReplacedBy &lt;https://data.norge.no/vocabulary/rule-type#non-disclosure-rule&gt; ;
-                            rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb ,
-                                             &quot;Norwegian Digitalisation Agency&quot;@en ;
-                            skos:definition &quot;regel som regulerer skjerming av en ressurs (f.eks. et datasett)&quot;@nb ,
-                                            &quot;rule that regulates non-disclosure of a resource (e.g. a dataset)&quot;@en ;
-                            skos:prefLabel &quot;rule for non-disclosure&quot;@en ,
-                                           &quot;skjermingsregel&quot;@nb .
+    rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb ,
+         &quot;Norwegian Digitalisation Agency&quot;@en ;
+    skos:definition &quot;regel som regulerer skjerming av en ressurs (f.eks. et datasett)&quot;@nb ,
+        &quot;rule that regulates non-disclosure of a resource (e.g. a dataset)&quot;@en ;
+    skos:prefLabel &quot;rule for non-disclosure&quot;@en ,
+       &quot;skjermingsregel&quot;@nb .
 
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing
 cpsvno:ruleForDataProcessing rdf:type owl:NamedIndividual , skos:Concept ;
@@ -100,21 +136,8 @@ cpsvno:ruleForDataProcessing rdf:type owl:NamedIndividual , skos:Concept ;
     dct:isReplacedBy &lt;https://data.norge.no/vocabulary/rule-type#data-processing-rule&gt; ;
     rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb , &quot;Norwegian Digitalisation Agency&quot;@en ;
     skos:definition &quot;regel som regulerer behandling av data, spesielt personopplysninger&quot;@nb ,
-                                           &quot;rule that regulates processing of data, especially personal data&quot;@en ;
+          &quot;rule that regulates processing of data, especially personal data&quot;@en ;
      skos:prefLabel &quot;rule for data processing&quot;@en ,
-                                          &quot;behandlingsgrunnlag&quot;@nb .
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( cpsvno:ruleForDisclosure
-                        cpsvno:ruleForNonDisclosure
-                      )
-] .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi</pre>
+         &quot;behandlingsgrunnlag&quot;@nb .</pre>
 </body>
 </html>
