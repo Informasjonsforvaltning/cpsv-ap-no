@@ -79,18 +79,16 @@
          :hasMin0Max1Shape-locnAddressId, # adresseId, locn:adressID
          :hasMin0MaxNShape-locnAddressArea, # adresseringsområde, locn:addressArea
          :hasMin0MaxNShape-locnLocatorName, # adressetilleggsnavn, locn:locatorName
-         :hasMin0Max1Shape-locnLocatorDesignator, # @@@ hus-/oppgangsnr, locn:locatorDesignator
          :hasMin0MaxNShape-locnFullAddress, # fullstendig adresse, locn:fullAddress
-         :hasMin0MaxNShape-locnThroughfare, # gate-/vei-/omraådenavn, locn:throughfare
-         :hasMin0Max1Shape-locnPoBox, # postboks, locn:poBox
+         :hasMin0MaxNShape-locnThroughfare, # gate-/vei-/områdenavn, locn:throughfare
+         :hasMin0MaxNShape-locnLocatorDesignator, # husnummer m.m., locn:locatorDesignator
+         :hasMin0MaxNShape-locnPoBox, # postboks, locn:poBox
          :hasMin0Max1Shape-locnPostCode, # postnummer, locn:postCode
-         :hasMin0Max1Shape-locnPostName  # poststed, locn:postName
+         :hasMin0MaxNShape-locnPostName  # poststed, locn:postName
       ;
    sh:targetClass locn:Address .
 
-### Klassen Aktør (foaf:Agent), Organisasjon (org:Organization) og Offentlig organisasjon (cv:PublicOrganisation)
-### cv:PublicOrganisation rdfs:subClassOf org:Organization .
-### org:Organization rdfs:subClassOf foaf:Agent.
+### Klassen Aktør (foaf:Agent)
 :AgentShape a sh:NodeShape;
   sh:name "Agent"@en, "Aktør"@nb;
   sh:property
@@ -103,7 +101,7 @@
       :hasMin0MaxNShape-locnAddress, # adresse (locn:address)
       :hasMin0MaxNShape-cvPlaysRole # har rolle i (cv:playsRole)
     ;
- sh:targetClass foaf:Agent, org:Organization, cv:PublicOrganisation ;
+ sh:targetClass foaf:Agent ;
    .
 
 ### Klassen Begrensning (cv:Constraint)
@@ -420,25 +418,24 @@ sh:name "Life Event"@en, "Livshendelse"@nb;
     ;
   sh:targetClass cv:LifeEvent .
 
-### Klassen Offentlig organisasjon (cv:PublicOrganisation)
-### cv:PublicOrganisation rdfs:subClassOf org:Organization
-###
-### bare egenskaper som arves ned fra org:Organization, derfor ikke behov for egen Shacl-shape
-### :PublicOrganizationShape a sh:NodeShape;
-###   sh:property
-###     # mandatory properties:
-###       :hasMin1MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
-###       :hasMin1MaxNShape-skosPrefLabel, # foretrukket navn (skos:prefLabel)
-###       :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
-###       :hasMin1MaxNShape-dctTitle, # navn (dct:title)
-###     # recommended properties:
-###       :hasShapeCV-dctTypeAgentMin0Max1, # type (dct:type), kontrollert vokabular
-###     # optional properties:
-###       :hasMin0MaxNShape-locnAddress, # adresse (locn:address)
-###       :hasMin0MaxNShape-cvPlaysRole, # har rolle i (cv:playsRole)
-###       :hasMin0MaxNShape-foafHomepage # hjemmeside (foaf:homepage)
-###     ;
-###   sh:targetClass cv:PublicOrganisation .
+### Offentlig organisasjon (cv:PublicOrganisation)
+:PublicOrganizationShape a sh:NodeShape;
+   sh:name "Public organization"@en, "Offentlig organisasjon"@nb;
+   sh:property
+   # mandatory properties:
+      :hasMin1MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
+      :hasMin1MaxNShape-skosPrefLabel, # foretrukket navn (skos:prefLabel)
+      :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
+      :hasMin1MaxNShape-dctTitle, # navn (dct:title)
+   # recommended properties:
+#      :hasMin0MaxNShape-dctType, # type (dct:type)
+      :hasShapeCV-dctTypeAgentMin0Max1, # type (dct:type), kontrollert vokabular
+   # optional properties:
+      :hasMin0MaxNShape-locnAddress, # adresse (locn:address)
+      :hasMin0MaxNShape-cvPlaysRole, # har rolle i (cv:playsRole
+      :hasMin0MaxNShape-foafHomepage # hjemmeside (foaf:homepage)
+  ;
+sh:targetClass cv:PublicOrganisation .
 
 ### Klassen Offentlig tjeneste  (cpsv:PublicServicve)
 :PublicServiceShape a sh:NodeShape;
@@ -483,21 +480,24 @@ sh:name "Life Event"@en, "Livshendelse"@nb;
   ;
   sh:targetClass cpsv:PublicService .
 
-### Organisasjon (org:Organization), Offentlig organisasjon (cv:PublicOrganisation)
-### det som er i tillegg til foaf:Agent
-### cv:PublicOrganisation rdfs:subClassOf org:Organization
-###  org:Organization rdfs:subClassOf foaf:Agent
-###
+### Klassen Organisasjon (org:Organization)
 :OrganizationShape a sh:NodeShape;
    sh:name "Organization"@en, "Organisasjon"@nb;
    sh:property
    # mandatory properties:
-      :hasMin1MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
-      :hasMin1MaxNShape-skosPrefLabel, # foretrukket navn (skos:prefLabel)
+      :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
+      :hasMin1MaxNShape-dctTitle, # navn (dct:title)
+   # recommended properties:
+      :hasMin0MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
+      :hasMin0MaxNShape-skosPrefLabel, # foretrukket navn (skos:prefLabel)
+#      :hasMin0MaxNShape-dctType, # type (dct:type)
+      :hasShapeCV-dctTypeAgentMin0Max1, # type (dct:type), kontrollert vokabular
    # optional properties:
+      :hasMin0MaxNShape-locnAddress, # adresse (locn:address)
+      :hasMin0MaxNShape-cvPlaysRole, # har rolle i (cv:playsRole
       :hasMin0MaxNShape-foafHomepage # hjemmeside (foaf:homepage)
   ;
-sh:targetClass org:Organization, cv:PublicOrganisation .
+sh:targetClass org:Organization .
 
 ### Klassen Referanserammeverk (cv:ReferenceFramework)
 :ReferenceFrameworkShape a sh:NodeShape;
@@ -1794,14 +1794,13 @@ sh:message "The property dct:rights may have max. 1 value which MUST refer to an
      "Egenskapen locn:locatorName skal være av type rdf:langString"@nb;
    sh:severity sh:Violation .
 
-:hasMin0Max1Shape-locnLocatorDesignator a sh:PropertyShape;
+:hasMin0MaxNShape-locnLocatorDesignator a sh:PropertyShape;
    sh:name "locator designator"@en , "bruksenhetsnummer"@nb ;
    sh:path locn:locatorDesignator;
-   sh:maxCount 1;
-   sh:nodeKind sh:Literal;
-   sh:message "The property locn:locatorName may have max 1 value"@en,
-     "Egenskapen locn:locatorName kan ha maks. 1 verdi"@nb;
-   sh:severity sh:Violation .
+   sh:datatype rdf:langString;
+   sh:message "The property locn:locatorName should be of datatype rdf:langString"@en,
+     "Egenskapen locn:locatorName bør være av datatype rdf:langString"@nb;
+   sh:severity sh:Warning .
 
 :hasMin0MaxNShape-locnFullAddress a sh:PropertyShape;
    sh:name "full address"@en , "fullstendig adresse"@nb ;
@@ -1819,14 +1818,13 @@ sh:message "The property dct:rights may have max. 1 value which MUST refer to an
      "Egenskapen locn:throughfare skal være av type rdf:langString"@nb;
    sh:severity sh:Violation .
 
-:hasMin0Max1Shape-locnPoBox a sh:PropertyShape;
+:hasMin0MaxNShape-locnPoBox a sh:PropertyShape;
 sh:name "post box"@en , "postboks"@nb ;
    sh:path locn:poBox;
-   sh:maxCount 1;
-   sh:nodeKind sh:Literal;
-   sh:message "The property locn:poBox may have max 1 value"@en,
-     "Egenskapen locn:poBox kan ha maks. 1 verdi"@nb;
-   sh:severity sh:Violation .
+   sh:datatype rdf:langString;
+   sh:message "The property locn:poBox should be of datatype rdf:langString"@en,
+     "Egenskapen locn:poBox bør være av datatype rdf:langString"@nb;
+   sh:severity sh:Warning .
 
 :hasMin0Max1Shape-locnPostCode a sh:PropertyShape;
    sh:name "post code"@en , "postnummer"@nb ;
@@ -1837,7 +1835,7 @@ sh:name "post box"@en , "postboks"@nb ;
      "Egenskapen locn:postCode kan ha maks. 1 verdi"@nb;
    sh:severity sh:Violation .
 
-:hasMin0Max1Shape-locnPostName a sh:PropertyShape;
+:hasMin0MaxNShape-locnPostName a sh:PropertyShape;
    sh:name "post name"@en , "poststed"@nb ;
    sh:path locn:postName;
    sh:datatype rdf:langString;
