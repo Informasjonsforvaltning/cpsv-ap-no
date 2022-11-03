@@ -65,7 +65,7 @@ Eksempel i RDF Turtle:
 |English name|preferred name
 |URI|skos:prefLabel
 |Range|rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. EGenskapen bør gjentas når navnet finnes på flere språk.
+|Anvendelse| Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
 |Usage note| This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology. The property should be repeated when the name is in several languages.
 |Multiplisitet| 1..n
 |Kravnivå | Obligatorisk/Mandatory
@@ -164,7 +164,7 @@ Eksempel i RDF Turtle:
 |Anvendelse| Egenskapen brukes til å oppgi adresse til en offentlig organisasjon.
 |Usage note|This property represents the address.
 |Multiplisitet|0..n
-|Kravnivå | Anbefalt/Recommended
+|Kravnivå | Valgfri/Optional
 |Merknad| Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n.
 |Remark | Norwegian extension: Multiplicity changed from 0..1 to 0..n.
 |===
@@ -195,7 +195,6 @@ The Participation class (`cv:Participation`) facilitates the detailed descriptio
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 
-
 ==== Offentlig organisasjon – hjemmeside (foaf:homepage) [[OffentligOrganisasjon-hjemmeside]]
 
 [cols="30s,70d"]
@@ -203,10 +202,10 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerT
 |English name|homepage
 |URI|foaf:homepage
 |Range|foaf:Document
-|Anvendelse| Egenskapen brukes til å referere til hjemmesiden til organisasjonen. 
+|Anvendelse| Egenskapen brukes til å referere til hjemmesiden til organisasjonen.
 |Usage note|This property refers to the homepage of a Public Organisation.
 |Multiplisitet|0..n
-|Kravnivå | Anbefalt/Recommended
+|Kravnivå | Valgfri/Optional
 |Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|https://www.bronnoy.kommune.no/[https://www.bronnoy.kommune.no/]

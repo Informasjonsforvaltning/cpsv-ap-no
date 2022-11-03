@@ -22,10 +22,10 @@ NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
-*Status*: #Til kommentering, frist 28. oktober 2022# +
-*Versjon*: #Kommenteringsversjon (før v.1.0)# +
-*Publisert*: 2022-09-16 +
-*Oppdatert*: 2022-09-20 +
+*Status*: #under ferdigstilling (avventer ferdigstilling av EUs CPSV-AP som denne er basert på)# +
+*Versjon*: #utkast til v.1.0# +
+*Publisert*: 2022-11-01 +
+*Oppdatert*: 2022-11-03 +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +

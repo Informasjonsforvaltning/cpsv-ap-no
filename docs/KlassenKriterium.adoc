@@ -108,7 +108,7 @@ Et subkrav/forelderkrav er en instans av klassen Krav (`cv:Requirement`) eller e
 [cols="30s,70d"]
 |===
 |English name| is derived from
-|URI| cv:hasDerivedFrom
+|URI| cv:isDerivedFrom
 |Range| cv:ReferenceFramework
 |Anvendelse| Egenskapen brukes til å referere til referanserammeverk som kriteriet er basert på, f.eks. lov, forskrift eller annen regulering.
 |Usage note|This property refers to the Reference Framework on which the Criterion is based, such as a law or regulation.
@@ -206,7 +206,7 @@ Information Concepts defined for specific Criterions also represent the basis fo
 [cols="30s,70d"]
 |===
 |English name| has supporting evidence
-|URI| hasSupportingEvidence
+|URI| cv:hasSupportingEvidence
 |Range| cv:Evidence
 |Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for kriteriet.
 |Usage note|This property refers to the Evidence that supplies information, proof or support for the Criterion.
@@ -269,7 +269,7 @@ The weight must be between 0 and 1. Usually, all Criteria can be integrated with
 |Anvendelse|Brukes til å oppgi hvordan vektingen bør tolkes i et komplekst evalueringsuttrykk, f.eks. som en prosent i et evalueringsuttrykk.
 |Usage note| This property represents an indication of how the weight should be interpreted in a complex evaluation expression, e.g. as a percentage in an evaluation expression
 
-An existing codelist http://publications.europa.eu/resource/authority/number-weight[Number weight] (the linked resource in RDF). 
+An existing codelist http://publications.europa.eu/resource/authority/number-weight[Number weight] (the linked resource in RDF).
 |Multiplisitet| 0..1
 |Kravnivå| Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.

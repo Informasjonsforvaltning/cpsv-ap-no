@@ -71,12 +71,12 @@ Eksempel i RDF Turtle: Se under <<Å-beskrive-dokumentasjonskrav>>.
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
 |===
 
-==== Dokumentasjonstype – gyldighetsperiode, begrensning (cv:ValidityPeriodConstraint) [[Dokumentasjonstype-gyldighetsperiodeBegrensning]]
+==== Dokumentasjonstype – gyldighetsperiode, begrensning (cv:validityPeriodConstraint) [[Dokumentasjonstype-gyldighetsperiodeBegrensning]]
 
 [cols="30s,70d"]
 |===
 |English name|validity period constraint
-|URI|cv:ValidityPeriodConstraint
+|URI|cv:validityPeriodConstraint
 |Range|time:ProperInterval
 |Anvendelse|Egenskapen brukes til å referere til tidsmessige betingelser for gyldighetsperioden til dokumentasjonstypen.
 |Usage note|This property represents temporal condition on the validity period of the Evidence Type. E.g. A Belgian birth evidence is valid for X months after emission. To express constraints on the validity period that must hold when assessing the evidence (e.g. the certificate of good conduct cannot be issued more than 3 months ago), we refer to the Constraint class.
