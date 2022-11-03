@@ -46,6 +46,28 @@ Eksempel i RDF Turtle:
    dct:description "Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser"@nb ; .
 ----
 
+==== Katalog – har kontaktpunkt (cv:hasContactPoint) [[Katalog-har-kontaktpunkt]]
+
+[cols="30s,70d"]
+|===
+|English name|contact point
+|URI| cv:hasContactPoint
+|Range| cv:ContactPoint
+|Anvendelse| Egenskapen brukes til å oppgi kontaktpunkt(er) for katalogen.
+|Usage note| This property represents contact points for the catalog.
+|Multiplisitet|1..n
+|Kravnivå | Obligatorisk/Mandatory
+|Eksempel|Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<tjenestekatalog> a dcat:Catalog ;
+   cv:hasContactPoint [ a  cv:ContactPoint ; # kontaktpunkt
+     cv:telephone "tel:+4775012000" ;
+    ] ; .
+-----
+
 ==== Katalog – identifikator (dct:identifier) [[Katalog-identifikator]]
 
 [cols="30s,70d"]

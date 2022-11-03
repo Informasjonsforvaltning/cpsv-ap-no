@@ -300,6 +300,7 @@
   sh:property
    # mandatory
       :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
+      :hasMin1MaxNShape-cvHasContactPoint, # har kontaktpunkt (cv:hasContactPoint)
       :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
       :hasMin1MaxNShape-dcatnoContainsService, # inneholder tjeneste
       :hasMin1MaxNShape-dctTitle, # tittel (dct:title)
