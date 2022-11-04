@@ -48,9 +48,9 @@
     dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.2.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.2.x, expressed in SHACL."@en ;
-    dct:modified "2022-10-27"^^xsd:date ;
+    dct:modified "2022-11-04"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "0.002" ;
+    owl:versionInfo "0.003" ;
     adms:versionNotes "For CPSV-AP-NO v.2.x."@en ;
     .
 
@@ -86,6 +86,29 @@
          :hasMin0Max1Shape-locnPostCode, # postnummer, locn:postCode
          :hasMin0MaxNShape-locnPostName  # poststed, locn:postName
       ;
+   sh:targetClass locn:Address .
+
+### @@@ Sjekk om EU kommer til å endre på denne klassen.
+# sjekker om minst en egenskap har verdi, siden alle er valgfrie
+:AddressShape2 a sh:NodeShape;
+   sh:name "Address"@en, "Adresse"@nb;
+   sh:or (
+      [sh:property [ sh:path cv:adminUnit; sh:minCount 1]]
+      [sh:property [ sh:path locn:adminUnitL1; sh:minCount 1]]
+      [sh:property [ sh:path locn:adminUnitL2; sh:minCount 1]]
+      [sh:property [ sh:path locn:addressId; sh:minCount 1]]
+      [sh:property [ sh:path locn:addressArea; sh:minCount 1]]
+      [sh:property [ sh:path locn:locatorName; sh:minCount 1]]
+      [sh:property [ sh:path locn:fullAddress; sh:minCount 1]]
+      [sh:property [ sh:path locn:throughfare; sh:minCount 1]]
+      [sh:property [ sh:path locn:locatorDesignator; sh:minCount 1]]
+      [sh:property [ sh:path locn:poBox; sh:minCount 1]]
+      [sh:property [ sh:path locn:postCode; sh:minCount 1]]
+      [sh:property [ sh:path locn:postName; sh:minCount 1]]
+   );
+   sh:message "Although all the properties are optional, at least one property should have value."@en,
+      "Selv om alle egenskaper er valgfrie, bør minst én ha verdi."@nb;
+   sh:severity sh:Warning;
    sh:targetClass locn:Address .
 
 ### Klassen Aktør (foaf:Agent)
@@ -358,6 +381,19 @@
       ;
    sh:targetClass cv:ContactPoint .
 
+# sjekker om minst en egenskap har verdi, selv om alle er valgfrie
+:ContactPointShape a sh:NodeShape;
+   sh:name "Contact Point"@en, "Kontaktpunkt"@nb;
+   sh:or (
+      [sh:property [sh:path cv:email; sh:minCount 1]]
+      [sh:property [sh:path cv:contactPage; sh:minCount 1]]
+      [sh:property [sh:path cv:telephone; sh:minCount 1]]
+      );
+   sh:message "At least one of the properties cv:email, cv:contactPage or cv:telephone should have value, although all are optional."@en,
+      "Minst én av egenskapene cv:email, cv:contactPage eller cv:telephone bør ha verdi, selv om alle er valgfrie"@nb;
+   sh:severity sh:Warning;
+   sh:targetClass cv:ContactPoint .
+
 ### Klassen Krav (cv:Requirement)
 :RequirementShape a sh:NodeShape;
    sh:name "Constraint"@en, "Begrensning"@nb;
@@ -547,6 +583,19 @@ sh:targetClass org:Organization .
       ;
    sh:targetClass eli:LegalResource .
 
+# sjekker om minst en egenskap har verdi, selv om ingen obligatorisk
+:LegalResourceShape2 a sh:NodeShape;
+   sh:name "Legal Resource"@en, "Regulativ ressurs"@nb;
+   sh:or (
+      [sh:property [sh:path dct:description; sh:minCount 1]]
+      [sh:property [sh:path rdfs:seeAlso; sh:minCount 1]]
+      [sh:property [sh:path dct:title; sh:minCount 1]]
+      );
+   sh:message "At least one of the properties dct:description, rdfs:seeAlso or dct:title should have value, although none of them are mandatory."@en,
+      "Minst én av egenskapene dct:description, rdfs:seeAlso eller dct:title bør ha verdi, selv om ingen av dem er obligatoriske."@nb;
+   sh:severity sh:Warning;
+   sh:targetClass eli:LegalResource .
+
 ### Klassen Tidsrom (time:ProperInterval)
 :PeriodOfTimeShape a sh:NodeShape;
   sh:name "Proper interval"@en , "Tidsrom"@nb ;
@@ -557,6 +606,19 @@ sh:targetClass org:Organization .
       :hasMin0Max1Shape-timeHasXsdDuration # tidsrom (time:hasXSDDuration)
   ;
   sh:targetClass time:ProperInterval .
+
+# sjekker om minst en av egenskapene har verdi, selv om ingen er obligatoriske
+:PeriodOfTimeShape2 a sh:NodeShape;
+   sh:name "Proper interval"@en , "Tidsrom"@nb ;
+   sh:or (
+      [sh:property [sh:path time:hasEnd; sh:minCount 1]]
+      [sh:property [sh:path time:hasBeginning; sh:minCount 1]]
+      [sh:property [sh:path time:hasXSDDuration; sh:minCount 1]]
+   );
+   sh:message "At least one of the properties should have value, alhough none of them are mandatory."@en,
+      "Minst én av egenskapene bør ha verdi, selv om ingen av dem er obligatoriske."@nb;
+   sh:severity sh:Warning;
+   sh:targetClass time:ProperInterval .
 
 ### Klassen Tjeneste (cpsvno:Servicve)
 :ServiceShape a sh:NodeShape;
@@ -644,7 +706,6 @@ sh:targetClass org:Organization .
     ;
   sh:targetClass cv:Output .
 
-
 ### Klassen Understøttende opplysning (cv:SupportedValue)
 :SupportedValueShape a sh:NodeShape;
    sh:name "Supported value"@en, "Understøttende opplysning"@nb;
@@ -678,6 +739,21 @@ sh:targetClass org:Organization .
          :hasMin0Max1Shape-schemaCloses, # stenger (schema:closes)
          :hasMin0Max1Shape-schemaOpens # åpner (schema:opens)
    ;
+   sh:targetClass cv:OpeningHoursSpecification .
+
+# sjekker om minst en egenskap har verdi, selv ingen er obligatoriske
+:OpeningHoursSpecificationShape2 a sh:NodeShape;
+   sh:name "Opening Hours Specification"@en, "Åpningstid"@nb;
+   sh:or(
+      [sh:property [sh:path schema:dayOfWeek; sh:minCount 1]]
+      [sh:property [sh:path schema:validFrom; sh:minCount 1]]
+      [sh:property [sh:path schema:validThrough; sh:minCount 1]]
+      [sh:property [sh:path schema:closes; sh:minCount 1]]
+      [sh:property [sh:path schema:opens; sh:minCount 1]]
+   );
+   sh:message "At least one of the properties should have value, although none of them are mandatory."en,
+      "Minst én av egenskapene bør ha verdi, selv om ingen av dem er obligatoriske."@nb;
+   sh:severity sh:Warning;
    sh:targetClass cv:OpeningHoursSpecification .
 
 ##################################
