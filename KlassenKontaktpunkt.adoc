@@ -130,4 +130,6 @@ Eksempel i RDF Turtle: Se under <<Åpningstid>>.
 |Usage note| This property represents a description of the Contact Point, repeated when the description is in different languages.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
+|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
