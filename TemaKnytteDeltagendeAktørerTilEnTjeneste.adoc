@@ -3,7 +3,7 @@
 [[img-FigurTjenesteOgDeltagelse]]
 .Tjeneste og Deltagelse
 [link=images/FigurTjenesteOgDeltagelse.png]
-image::images/FigurTjenesteOgDeltagelse.png[]
+image::images/FigurTjenesteOgDeltagelse.png[alt="UML-diagram med åtte klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 Som illustrert i <<img-FigurTjenesteOgDeltagelse>> brukes egenskapen <<Tjeneste-eiesAv>> til å uttrykke relasjonen mellom en Tjeneste (`cpsvno:Service`) og dens eier (en Organisasjon, `Org:Organization`), og egenskapen <<OffentligTjeneste-harKompetentOrgan>> til å uttrykke relasjonen mellom en Offentlig tjeneste (`cpsv:PublicService`) og dens kompetente organ (en Offentlig organisasjon, `cv:PublicOrganisation`).
 

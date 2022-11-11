@@ -7,14 +7,14 @@ Det er på den annen side mulig å beskrive en https://data.norge.no/concepts/99
 [[img-Tjenestekjede]]
 .Klasser og egenskaper for beskrivelse av en tjenestekjede
 [link=images/FigurTjenestekjede.png]
-image::images/FigurTjenestekjede.png[]
+image::images/FigurTjenestekjede.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i UML-diagrammet er forklart i teksten."]
 
 <<img-FigurSyktBarnBeskrevetMedCPSVNO>> illustrerer hvordan deler av livshendelsen Alvorlig sykt barn illustrert i <<img-SyktBarn>>, beskrives med CPSV-AP-NO.
 
 [[img-FigurSyktBarnBeskrevetMedCPSVNO]]
 .Eksempel på bruk av CPSV-AP-NO til å beskrive deler av livshendelsen "Alvorlig sykt barn"
 [link=images/FigurSyktBarnBeskrevetMedCPSVNO.png]
-image::images/FigurSyktBarnBeskrevetMedCPSVNO.png[]
+image::images/FigurSyktBarnBeskrevetMedCPSVNO.png[alt="RDF-graf med fem noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."]
 
 Eksempel i RDF Turtle:
 -----

@@ -5,7 +5,7 @@ Spesifikasjonen gjør det mulig å beskrive et dokumentasjonskrav strukturert og
 [[img-FigurEksempelDokumentasjonskrav]]
 .Eksempel - beskrivelse av «alderskrav» til tjenesten «prøvingsattest»
 [link=images/FigurEksempelDokumentasjonskrav.png]
-image::images/FigurEksempelDokumentasjonskrav.png[]
+image::images/FigurEksempelDokumentasjonskrav.png[alt="RDF-graf med ni RDF-noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."]
 
 <<img-FigurEksempelDokumentasjonskrav>> Viser et eksempel på å beskrive et av kravene som skal oppfylles for å kunne utføre tjenesten https://www.skatteetaten.no/skjema/provingsattest/[«prøvingsattest»] som Skatteetaten tilbyr.
 
@@ -30,7 +30,7 @@ Som illustrert i <<img-FigurEksempelDokumentasjonskrav2>>, er det også mulig å
 [[img-FigurEksempelDokumentasjonskrav2]]
 .Eksempel på å knytte dokumentasjonskrav til lovgivning
 [link=images/FigurEksempelDokumentasjonskrav2.png]
-image::images/FigurEksempelDokumentasjonskrav2.png[]
+image::images/FigurEksempelDokumentasjonskrav2.png[alt="RDF-graf med seks noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."]
 
 Eksemplet i RDF Turtle:
 -----

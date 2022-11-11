@@ -3,7 +3,7 @@
 [[img-KlassenInformasjonsbegrep]]
 .Klassen Informasjonsbegrep (cv:InformationConcept)
 [link=images/KlassenInformasjonsbegrep.png]
-image::images/KlassenInformasjonsbegrep.png[]
+image::images/KlassenInformasjonsbegrep.png[alt="UML-diagram med klassen Informasjonsbegrep og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

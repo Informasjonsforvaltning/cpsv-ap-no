@@ -3,7 +3,7 @@
 [[img-KlassenDeltagelse]]
 .Klassen Deltagelse (cv:Participation)
 [link=images/KlassenDeltagelse.png]
-image::images/KlassenDeltagelse.png[]
+image::images/KlassenDeltagelse.png[alt="UML-diagram med klassen Deltagelse og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

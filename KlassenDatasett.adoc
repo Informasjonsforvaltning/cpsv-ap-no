@@ -3,7 +3,7 @@
 [[img-KlassenDatasett]]
 .Klassen Datasett (dcat:Dataset)
 [link=images/KlassenDatasett.png]
-image::images/KlassenDatasett.png[]
+image::images/KlassenDatasett.png[alt="UML-diagram med klassen Datasett, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 
 [cols="30s,70d"]

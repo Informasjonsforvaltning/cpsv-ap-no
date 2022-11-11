@@ -3,7 +3,7 @@
 [[img-KlassenRegel]]
 .Klassen Regel (cv:Rule)
 [link=images/KlassenRegel.png]
-image::images/KlassenRegel.png[]
+image::images/KlassenRegel.png[alt="UML-diagram med klassen Regel, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

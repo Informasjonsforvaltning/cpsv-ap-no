@@ -3,7 +3,7 @@
 [[img-KlassenAdministrativEnhet]]
 .Klassen Administrativ enhet (cv:AdminUnit)
 [link=images/KlassenAdministrativEnhet.png]
-image::images/KlassenAdministrativEnhet.png[]
+image::images/KlassenAdministrativEnhet.png[alt="UML-diagram med klassen Aktør og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
