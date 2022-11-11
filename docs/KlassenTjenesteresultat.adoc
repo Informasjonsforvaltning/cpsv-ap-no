@@ -3,7 +3,7 @@
 [[img-KlassenTjenesteresultat]]
 .Klassen Tjenesteresultat (cv:Output)
 [link=images/KlassenTjenesteresultat.png]
-image::images/KlassenTjenesteresultat.png[]
+image::images/KlassenTjenesteresultat.png[alt="UML-diagram med klassen Tjenesteresultat, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

@@ -3,7 +3,7 @@
 [[img-KlassenDokumentasjon]]
 .Klassen Dokumentasjon (cv:Evidence)
 [link=images/KlassenDokumentasjon.png]
-image::images/KlassenDokumentasjon.png[]
+image::images/KlassenDokumentasjon.png[alt="UML-diagram med klassen Dokumentasjon, dens egenskaper og dens relasjoner til seks andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

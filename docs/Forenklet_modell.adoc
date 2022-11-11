@@ -5,7 +5,7 @@
 [[img-ForenkletModell]]
 .Forenklet modell for tjeneste- og hendelsesbeskrivelser
 [link=images/ForenkletModell-CPSV-AP-NO.png]
-image::images/ForenkletModell-CPSV-AP-NO.png[]
+image::images/ForenkletModell-CPSV-AP-NO.png[alt="UML-diagram med 23 klasser og relasjoner imellom klassene, hvor norske utvidelser er gulet ut. Klassene og relasjonene er forklart i spesifikasjonen."]
 
 include::TemaDokumentasjonskrav.adoc[]
 

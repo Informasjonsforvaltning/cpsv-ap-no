@@ -3,7 +3,7 @@
 [[img-KlassenTjeneste]]
 .Klassen Tjeneste (cpsvno:Service)
 [link=images/KlassenTjeneste.png]
-image::images/KlassenTjeneste.png[]
+image::images/KlassenTjeneste.png[alt="UML-diagram med klassen Tjeneste, dens egenskaper og dens relasjoner til 13 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

@@ -3,7 +3,7 @@
 [[img-KlassenLivshendelse]]
 .Klassen Livshendelse (cv:LifeEvent)
 [link=images/KlassenLivshendelse.png]
-image::images/KlassenLivshendelse.png[]
+image::images/KlassenLivshendelse.png[alt="UML-diagram med klassen Livshendelse, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

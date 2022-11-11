@@ -3,7 +3,7 @@
 [[img-KlassenKonsesjonskontrakt]]
 .Klassen Konsesjonskontrakt (cv:ConcessionContract)
 [link=images/KlassenKonsesjonskontrakt.png]
-image::images/KlassenKonsesjonskontrakt.png[]
+image::images/KlassenKonsesjonskontrakt.png[alt="UML-diagram med klassen Konsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

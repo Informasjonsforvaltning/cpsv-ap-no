@@ -3,13 +3,13 @@
 [[img-KlassenHendelse]]
 .Klassen Hendelse (cv:Event)
 [link=images/KlassenHendelse.png]
-image::images/KlassenHendelse.png[]
+image::images/KlassenHendelse.png[alt="UML-diagram med klassen Hendelse, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
 |English name|Event
 |Anvendelse| Klassen brukes til å representere en https://data.norge.no/concepts/db48fa77-3f47-4d58-b4a3-41569f149c1a[hendelse].
-|Usage note|This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a service. 
+|Usage note|This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a service.
 |URI|cv:Event
 |Subklasse av / Subclass of|dcat:Dataset
 |Kravnivå|Anbefalt/Recommended

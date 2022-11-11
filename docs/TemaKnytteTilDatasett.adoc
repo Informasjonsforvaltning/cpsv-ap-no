@@ -3,7 +3,7 @@
 [[img-TjenesteOgData]]
 .Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat
 [link=images/FigurTjenesteMedDataInnOgUt.png]
-image::images/FigurTjenesteMedDataInnOgUt.png[]
+image::images/FigurTjenesteMedDataInnOgUt.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 
 Som illustrert i <<img-TjenesteOgData>>, kan et Tjenesteresultat (`cv:Output`) produsert av en Tjeneste (`cpsvno:Service` inkl. subklassen Offentlig tjeneste (`cpsv:PublicService`)) være et Datasett (`dcat:Dataset`), f.eks. selve  «bevilling» som et resultat fra tjenesten «Skjenkebevilling» kan deles som et datasett.

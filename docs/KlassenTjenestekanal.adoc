@@ -3,7 +3,7 @@
 [[img-KlassenTjenestekanal]]
 .Klassen Tjenestekanal (cv:Channel)
 [link=images/KlassenTjenestekanal.png]
-image::images/KlassenTjenestekanal.png[]
+image::images/KlassenTjenestekanal.png[alt="UML-diagram med klassen Tjenestekanal, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

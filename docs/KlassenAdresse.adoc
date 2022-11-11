@@ -3,7 +3,7 @@
 [[img-KlassenAdresse]]
 .Klassen Adresse (locn:Address)
 [link=images/KlassenAdresse.png]
-image::images/KlassenAdresse.png[]
+image::images/KlassenAdresse.png[alt="UML-diagram med klassen Adresse, dens egenskaper og dens relasjon til en annen klasse. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
