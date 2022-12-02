@@ -2286,9 +2286,9 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:name "public service - type"@en, "Offentlig tjeneste - hovedformål"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:type;
-  sh:pattern "^https://www.ssb.no/klass/klassifikasjoner/45";
-  sh:message "The property dct:type SHOULD have value chosen from https://www.ssb.no/klass/klassifikasjoner/45"@en,
-   "Egenskapen dct:type bør ha verdi hentet fra https://www.ssb.no/klass/klassifikasjoner/45"@nb;
+  sh:pattern "^http://publications.europa.eu/resource/dataset/main-activity";
+  sh:message "The property dct:type SHOULD have value chosen from http://publications.europa.eu/resource/dataset/main-activity"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra http://publications.europa.eu/resource/dataset/main-activity"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeRoleMin0MaxN a sh:PropertyShape;
