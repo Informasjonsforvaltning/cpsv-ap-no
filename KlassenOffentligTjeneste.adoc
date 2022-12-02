@@ -297,8 +297,8 @@ Eksempel i RDF Turtle:
 |Usage note| This property represents the Type of a Public Service as described in a controlled vocabulary.
 |Multiplisitet|0..n
 |Kravnivå | Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra https://www.ssb.no/klass/klassifikasjoner/45[Standard for COFOG koder], når verdien finnes i standarden.
-|Remark 1 | The possible values for this property are described in https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/main-activity[the controlled vocabulary COFOG main activity Authority Table] of the Publications Office.
+|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/main-activity[Main activity], når verdien finnes i standarden.
+|Remark 1 | The possible values for this property are described in EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/main-activity[Main activity].
 |Merknad 2 | Norsk utvidelse: Kravnivå er endret fra valgfri til anbefalt.
 |Remark 2 | Norwegian extension: Requirement level changed from optional to recommended.
 |===
