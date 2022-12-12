@@ -645,6 +645,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Deltagelse-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Deltagelse</em></a>
 <ul class="sectlevel3">
 <li><a href="#Deltagelse-beskrivelse">Deltagelse – beskrivelse (dct:description)</a></li>
+<li><a href="#Deltagelse-har-deltager">Deltagelse – har deltager (cv:hasParticipant)</a></li>
 <li><a href="#Deltagelse-identifikator">Deltagelse – identifikator (dct:identifier)</a></li>
 <li><a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a></li>
 </ul>
@@ -1845,7 +1846,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse"><em>Klassen Deltagelse (cv:Participation)</em></a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-har-deltagelse">Tjeneste – har deltagelse (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-har-deltagelse">Offentlig tjeneste – har deltagelse (cv:hasParticipation)</a>). En Aktør (inkl. Organisasjon og Offentlig organisasjon) kan delta i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-deltar-i">Aktør – deltar i (cv:participates)</a> (eller <a href="#Organisasjon-deltar-i">Organisasjon – deltar i (cv:participates)</a>, <a href="#OffentligOrganisasjon-deltar-i">Offentlig organisasjon – deltar i (cv:participates)</a>).</p>
 </div>
 <div class="paragraph">
-<p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument», når ikke alle deltagende aktører har begge roller.</p>
+<p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten).</p>
 </div>
 <div class="paragraph">
 <p>Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Skjenkebevilling».</p>
@@ -1859,12 +1860,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
    cv:hasParticipation &lt;deltagendeDataleverandør&gt; ; .
 
 &lt;deltagendeDataleverandør&gt; a cv:Participation ;
-   dct:description "deltagende dataleverandører til tjenesten Skjenkebevilling"@nb ;
+   dct:description "deltagende dataleverandør til tjenesten Skjenkebevilling"@nb ;
    cv:role &lt;https://data.norge.no/vocabulary/role-type#data-provider&gt; ; # dataleverandør
+   cv:hasParticipant &lt;Politidirektoratet&gt; ;
    .
 
 &lt;Politidirektoratet&gt; a cv:PublicOrganisation ;
-   cv:playsRole &lt;deltagendeDataleverandør&gt; ; .</pre>
+   cv:participates &lt;deltagendeDataleverandør&gt; ; .</pre>
 </div>
 </div>
 </div>
@@ -4157,6 +4159,49 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a free text description of the Participation, repeated when the description is in parallel languages.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#KnytteDeltagendeAktørerTilEnTjeneste">Å knytte deltagende aktører til en tjeneste</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Deltagelse-har-deltager"><a class="anchor" href="#Deltagelse-har-deltager"></a>Deltagelse – har deltager (cv:hasParticipant)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has participant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasParticipant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til aktøren som er involvert i deltagelsen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the Agent involved in the Participation.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -18463,7 +18508,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-12 14:47:31 UTC
+Sist oppdatert 2022-12-12 15:08:50 UTC
 </div>
 </div>
 </body>

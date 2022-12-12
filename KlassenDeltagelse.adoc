@@ -31,6 +31,21 @@ image::images/KlassenDeltagelse.png[alt="UML-diagram med klassen Deltagelse og d
 |Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
+
+==== Deltagelse – har deltager (cv:hasParticipant) [[Deltagelse-har-deltager]]
+
+[cols="30s,70d"]
+|===
+|English name| has participant
+|URI| cv:hasParticipant
+|Range| foaf:Agent
+|Anvendelse| Egenskapen brukes til å referere til aktøren som er involvert i deltagelsen.
+|Usage note| This property refers to the Agent involved in the Participation.
+|Multiplisitet|1..n
+|Kravnivå|Obligatorisk/Mandatory
+|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+|===
+
 ==== Deltagelse – identifikator (dct:identifier) [[Deltagelse-identifikator]]
 
 [cols="30s,70d"]
