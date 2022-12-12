@@ -22,7 +22,7 @@ image::images/KlassenKontaktpunkt.png[alt="UML-diagram med klassen Kontaktpunkt,
 |===
 |English name| availability rescrition
 |URI| cv:specialOpeningHoursSpecification
-|Range| cv:OpeningHoursSpecification
+|Range| time:TemporalEntity
 |Anvendelse| Egenskapen brukes til å oppgi begrenset åpningstid til kontaktpunktet, som strukturert data.
 |Usage note| This property is used to specify the time interval during which the Contact Point is not available, as structured data.
 |Multiplisitet|0..n
@@ -72,38 +72,23 @@ image::images/KlassenKontaktpunkt.png[alt="UML-diagram med klassen Kontaktpunkt,
 |Kravnivå|Valgfri/Optional
 |===
 
-==== Kontaktpunkt – ordinær åpningstid fritekst (cv:openingHours) [[Kontaktpunkt-ordinær-åpningstid-fritekst]]
-
-[cols="30s,70d"]
-|===
-|English name| opening hours (text)
-|URI| cv:openingHours
-|Range| rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi ordinær åpningstid for kontaktpunktet, i fritekst. Egenskapen bør gjentas når teksten er på flere språk.
-|Usage note| This property specifies the opening hours for the contact point, in text, repeated when the text is in parallel languages.
-|Multiplisitet|0..n
-|Kravnivå|Valgfri/Optional
-|Merknad| Norsk utvidelse: Range endret fra rdfs:Literal til rdf:langString, for å være presis på at språkkode skal oppgis.
-|Remark | Norwegian extension: Range changed from rdfs:Literal to rdf:langString, in order to specify that the language code shall be given.
-|===
-
-==== Kontaktpunkt – ordinær åpningstid strukturert (schema:hoursAvailable) [[Kontaktpunkt-ordinær-åpningstid-strukturert]]
+==== Kontaktpunkt – ordinær åpningstid strukturert (cv:openingHours) [[Kontaktpunkt-ordinær-åpningstid-strukturert]]
 
 [cols="30s,70d"]
 |===
 |English name| hours available (structured)
-|URI|schema:hoursAvailable
-|Range|cv:OpeningHoursSpecification
+|URI|cv:openingHours
+|Range|time:TemporalEntity
 |Anvendelse| Egenskapen brukes til å referere til en strukturert beskrivelse av åpningstid.
 |Usage note| This property links a contact point to information about when the contact point is available, as structured data.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|Se eksempler under <<Åpningstid>>.
+|Eksempel|Se eksempler under <<Tidsenhet>>.
 |===
 
-Eksempel i RDF Turtle: Se under <<Åpningstid>>.
+Eksempel i RDF Turtle: Se under <<Tidsenhet>>.
 
 
 ==== Kontaktpunkt – telefon (cv:telephone) [[Kontaktpunkt-telefon]]

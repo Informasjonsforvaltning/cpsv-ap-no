@@ -65,17 +65,15 @@ Eksempel i RDF Turtle:
 |===
 |English name| availability restriction
 |URI| cv:specialOpeningHoursSpecification
-|Range| cv:OpeningHoursSpecification
+|Range| time:TemporalEntity
 |Anvendelse| Egenskapen brukes  til å oppgi begrenset åpningstid, som strukturert data.
 |Usage note| This property links a channel to information about when the channel is not available.
 |Multiplisitet|0..n
 |Kravnivå  |Valgfri/Optional
-|Merknad | Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n
-|Remark | Norwegian extension: Multiplicity changed from 0..1 to 0..n.
-|Eksempel|Se eksempler under <<Åpningstid>>.
+|Eksempel|Se eksempler under <<Tidsenhet>>.
 |===
 
-Eksempel i RDF Turtle: Se under <<Åpningstid>>.
+Eksempel i RDF Turtle: Se under <<Tidsenhet>>.
 
 ==== Tjenestekanal – behandlingstid (cv:processingTime) [[Tjenestekanal-behandlingstid]]
 
@@ -250,36 +248,18 @@ Eksempel i RDF Turtle:
    vcard:hasURL "https://kommune24-7.no/1813" ; .
 -----
 
-==== Tjenestekanal – ordinær åpningstid fritekst (cv:openingHours) [[Tjenestekanal-ordinær-åpningstid-fritekst]]
-
-[cols="30s,70d"]
-|===
-|English name|opening hours
-|URI| cv:openingHours
-|Range|rdf:langString
-|Anvendelse| Egenskapen brukes  til å oppgi åpningstid til den aktuelle kanalen, som fritekst. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
-|Usage note| This property represents the normal opening hours of a channel. The value should follow the flexible format defined for schema.org's opening hours property. Following that structure, days of the week are represented by two letter codes (Mo, Tu, We, Th, Fr, Sa, Su). Lists should be comma separated (for example: Mo, We, Fr) and periods separated by a hyphen (for example: Mo-Fr).
-|Multiplisitet|0..n
-|Kravnivå  |Valgfri/Optional
-|Merknad| Egenskapen brukes til å oppgi åpningstid i fritekst. Bruk heller egenskapen <<Tjenestekanal-ordninær-åpningstid-strukturert>> for å oppgi åpningstid som strukturerte data.
-|Remark | This property is used only to specify the opening hours in free text. Use rather the property <<Tjenestekanal-ordninær-åpningstid-strukturert>> to specify the opening hours as structured data.
-|Eksempel|Tidsrom når telefon er betjent.
-|===
-
-==== Tjenestekanal – ordinær åpningstid strukturert (schema:hoursAvailable) [[Tjenestekanal-ordninær-åpningstid-strukturert]]
+==== Tjenestekanal – ordinær åpningstid strukturert (cv:openingHours) [[Tjenestekanal-ordninær-åpningstid-strukturert]]
 
 [cols="30s,70d"]
 |===
 |English name|opening hours as structured data
 |URI|schema:hoursAvailable
-|Range|cv:OpeningHoursSpecification
+|Range| time:TemporalEntity
 |Anvendelse| Egenskapen brukes  til å oppgi detaljer om åpningstid, som strukturert data.
 |Usage note| This property specifies in detail and as structured data when the channel is available.
 |Multiplisitet|0..n
 |Kravnivå  |Valgfri/Optional
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifiert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|Se eksempler under <<Åpningstid>>.
+|Eksempel|Se eksempler under <<Tidsenhet>>.
 |===
 
-Eksempel i RDF Turtle: Se under <<Åpningstid>>.
+Eksempel i RDF Turtle: Se under <<Tidsenhet>>.

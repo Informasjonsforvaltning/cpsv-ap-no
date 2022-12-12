@@ -877,8 +877,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Kontaktpunkt-e-post">Kontaktpunkt – e-post (cv:email)</a></li>
 <li><a href="#Kontaktpunkt-har-språk">Kontaktpunkt – har språk (schema:availableLanguage)</a></li>
 <li><a href="#Kontaktpunkt-kontaktside">Kontaktpunkt – kontaktside (cv:contactPage)</a></li>
-<li><a href="#Kontaktpunkt-ordinær-åpningstid-fritekst">Kontaktpunkt – ordinær åpningstid fritekst (cv:openingHours)</a></li>
-<li><a href="#Kontaktpunkt-ordinær-åpningstid-strukturert">Kontaktpunkt – ordinær åpningstid strukturert (schema:hoursAvailable)</a></li>
+<li><a href="#Kontaktpunkt-ordinær-åpningstid-strukturert">Kontaktpunkt – ordinær åpningstid strukturert (cv:openingHours)</a></li>
 <li><a href="#Kontaktpunkt-telefon">Kontaktpunkt – telefon (cv:telephone)</a></li>
 <li><a href="#Kontaktpunkt-type-kontaktpunkt">Kontaktpunkt – type kontaktpunkt (schema:contactType)</a></li>
 </ul>
@@ -1114,6 +1113,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#Tidsenhet">Klassen Tidsenhet (time:TempoeralEntity)</a></li>
 <li><a href="#Tidsrom">Klassen Tidsrom (time:ProperInterval)</a>
 <ul class="sectlevel2">
 <li><a href="#Tidsrom-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tidsrom</em></a>
@@ -1195,8 +1195,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tjenestekanal-harE-post">Tjenestekanal – har e-post (vcard:hasEmail)</a></li>
 <li><a href="#Tjenestekanal-harTelefon">Tjenestekanal – har telefon (vcard:hasTelephone)</a></li>
 <li><a href="#Tjenestekanal-harURL">Tjenestekanal – har URL (vcard:hasURL)</a></li>
-<li><a href="#Tjenestekanal-ordinær-åpningstid-fritekst">Tjenestekanal – ordinær åpningstid fritekst (cv:openingHours)</a></li>
-<li><a href="#Tjenestekanal-ordninær-åpningstid-strukturert">Tjenestekanal – ordinær åpningstid strukturert (schema:hoursAvailable)</a></li>
+<li><a href="#Tjenestekanal-ordninær-åpningstid-strukturert">Tjenestekanal – ordinær åpningstid strukturert (cv:openingHours)</a></li>
 </ul>
 </li>
 </ul>
@@ -1257,19 +1256,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Virksomhetshendelse-begrep">Virksomhetshendelse – begrep (dct:subject)</a></li>
 <li><a href="#Virksomhetshendelse-distribusjon">Virksomhetshendelse – distribusjon (dcat:distribution)</a></li>
 <li><a href="#Virksomhetshendelse-type">Virksomhetshendelse – type (dct:type)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#Åpningstid">Klassen Åpningstid (cv:OpeningHoursSpecification)</a>
-<ul class="sectlevel2">
-<li><a href="#Åpningstid-valgfrie-egenskaper">Valgfrie egenskaper for Klassen <em>Åpningstid</em></a>
-<ul class="sectlevel3">
-<li><a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a></li>
-<li><a href="#Åpningstid-gyldigFraOgMed">Åpningstid – gyldig fra og med (schema:validFrom)</a></li>
-<li><a href="#Åpningstid-gyldigTilOgMed">Åpningstid – gyldig til og med (schema:validThrough)</a></li>
-<li><a href="#Åpningstid-stenger">Åpningstid – stenger (schema:closes)</a></li>
-<li><a href="#Åpningstid-åpner">Åpningstid – åpner (schema:opens)</a></li>
 </ul>
 </li>
 </ul>
@@ -2077,6 +2063,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><a href="#RegulativRessurs"><em>Klassen Regulativ ressurs (eli:LegalResource)</em></a></p>
 </li>
 <li>
+<p><a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a></p>
+</li>
+<li>
 <p><a href="#Tidsrom"><em>Klassen Tidsrom (time:ProperInterval)</em></a></p>
 </li>
 <li>
@@ -2087,9 +2076,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </li>
 <li>
 <p><a href="#Virksomhetshendelse"><em>Klassen Virksomhetshendelse (cv:BusinessEvent)</em></a></p>
-</li>
-<li>
-<p><a href="#Åpningstid"><em>Klassen Åpningstid (cv:OpeningHoursSpecification)</em></a></p>
 </li>
 </ul>
 </div>
@@ -8886,7 +8872,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:OpeningHoursSpecification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -9041,54 +9027,7 @@ points.</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kontaktpunkt-ordinær-åpningstid-fritekst"><a class="anchor" href="#Kontaktpunkt-ordinær-åpningstid-fritekst"></a>Kontaktpunkt – ordinær åpningstid fritekst (cv:openingHours)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">opening hours (text)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:openingHours</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi ordinær åpningstid for kontaktpunktet, i fritekst. Egenskapen bør gjentas når teksten er på flere språk.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property specifies the opening hours for the contact point, in text, repeated when the text is in parallel languages.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range endret fra rdfs:Literal til rdf:langString, for å være presis på at språkkode skal oppgis.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range changed from rdfs:Literal to rdf:langString, in order to specify that the language code shall be given.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="Kontaktpunkt-ordinær-åpningstid-strukturert"><a class="anchor" href="#Kontaktpunkt-ordinær-åpningstid-strukturert"></a>Kontaktpunkt – ordinær åpningstid strukturert (schema:hoursAvailable)</h4>
+<h4 id="Kontaktpunkt-ordinær-åpningstid-strukturert"><a class="anchor" href="#Kontaktpunkt-ordinær-åpningstid-strukturert"></a>Kontaktpunkt – ordinær åpningstid strukturert (cv:openingHours)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9101,11 +9040,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">schema:hoursAvailable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:openingHours</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:OpeningHoursSpecification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -9133,12 +9072,12 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Åpningstid"><em>Klassen Åpningstid (cv:OpeningHoursSpecification)</em></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid"><em>Klassen Åpningstid (cv:OpeningHoursSpecification)</em></a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -14910,6 +14849,14 @@ points.</p></td>
 </div>
 </div>
 <div class="sect1">
+<h2 id="Tidsenhet"><a class="anchor" href="#Tidsenhet"></a>Klassen Tidsenhet (time:TempoeralEntity)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&lt;#kommer#&gt;</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="Tidsrom"><a class="anchor" href="#Tidsrom"></a>Klassen Tidsrom (time:ProperInterval)</h2>
 <div class="sectionbody">
 <div id="img-KlassenTidsrom" class="imageblock">
@@ -16871,7 +16818,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:OpeningHoursSpecification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -16890,21 +16837,13 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Multiplicity changed from 0..1 to 0..n.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Åpningstid"><em>Klassen Åpningstid (cv:OpeningHoursSpecification)</em></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid"><em>Klassen Åpningstid (cv:OpeningHoursSpecification)</em></a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -17393,58 +17332,7 @@ points.</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Tjenestekanal-ordinær-åpningstid-fritekst"><a class="anchor" href="#Tjenestekanal-ordinær-åpningstid-fritekst"></a>Tjenestekanal – ordinær åpningstid fritekst (cv:openingHours)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">opening hours</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:openingHours</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes  til å oppgi åpningstid til den aktuelle kanalen, som fritekst. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the normal opening hours of a channel. The value should follow the flexible format defined for schema.org&#8217;s opening hours property. Following that structure, days of the week are represented by two letter codes (Mo, Tu, We, Th, Fr, Sa, Su). Lists should be comma separated (for example: Mo, We, Fr) and periods separated by a hyphen (for example: Mo-Fr).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi åpningstid i fritekst. Bruk heller egenskapen <a href="#Tjenestekanal-ordninær-åpningstid-strukturert">Tjenestekanal – ordinær åpningstid strukturert (schema:hoursAvailable)</a> for å oppgi åpningstid som strukturerte data.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used only to specify the opening hours in free text. Use rather the property <a href="#Tjenestekanal-ordninær-åpningstid-strukturert">Tjenestekanal – ordinær åpningstid strukturert (schema:hoursAvailable)</a> to specify the opening hours as structured data.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom når telefon er betjent.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="Tjenestekanal-ordninær-åpningstid-strukturert"><a class="anchor" href="#Tjenestekanal-ordninær-åpningstid-strukturert"></a>Tjenestekanal – ordinær åpningstid strukturert (schema:hoursAvailable)</h4>
+<h4 id="Tjenestekanal-ordninær-åpningstid-strukturert"><a class="anchor" href="#Tjenestekanal-ordninær-åpningstid-strukturert"></a>Tjenestekanal – ordinær åpningstid strukturert (cv:openingHours)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -17461,7 +17349,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:OpeningHoursSpecification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -17480,21 +17368,13 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifiert i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Åpningstid"><em>Klassen Åpningstid (cv:OpeningHoursSpecification)</em></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid"><em>Klassen Åpningstid (cv:OpeningHoursSpecification)</em></a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p>
 </div>
 </div>
 </div>
@@ -18537,341 +18417,6 @@ points.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Åpningstid"><a class="anchor" href="#Åpningstid"></a>Klassen Åpningstid (cv:OpeningHoursSpecification)</h2>
-<div class="sectionbody">
-<div id="img-KlassenÅpningstid" class="imageblock">
-<div class="content">
-<a class="image" href="images/KlassenÅpningstid.png"><img src="images/KlassenÅpningstid.png" alt="UML-diagram med klassen Åpningstid og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
-</div>
-<div class="title">Figur 43. Klassen Åpningstid (cv:OpeningHoursSpecificatinon)</div>
-</div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Opening Hours Specification</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å beskrive detaljer om åpningstid på en strukturert måte.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This class represents a structured value providing information about the opening hours.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:OpeningHoursSpecification</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-</tbody>
-</table>
-<div class="sect2">
-<h3 id="Åpningstid-valgfrie-egenskaper"><a class="anchor" href="#Åpningstid-valgfrie-egenskaper"></a>Valgfrie egenskaper for Klassen <em>Åpningstid</em></h3>
-<div class="sect3">
-<h4 id="Åpningstid-dagerIUka"><a class="anchor" href="#Åpningstid-dagerIUka"></a>Åpningstid – dager i uka (schema:dayOfWeek)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">day of week</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">schema:dayOfWeek</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">schema:DayOfWeek</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi dag i uke som åpningen gjelder for.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the day of the week for which these opening hours are valid</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mandag til fredag.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;åpningsTid&gt; a cv:OpeningHoursSpecification ;
-   schema:dayOfWeek schema:Monday , schema:Tuesday , schema:Wednesday , schema:Tursday , schema:Friday ;
-   schema:opens "08:00"^^xsd:time ;
-   schema:closes "16:00"^^xsd:time ; .</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Åpningstid-gyldigFraOgMed"><a class="anchor" href="#Åpningstid-gyldigFraOgMed"></a>Åpningstid – gyldig fra og med (schema:validFrom)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">valid from inclusive</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">schema:validFrom</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:date or xsd:dateTime</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi fra og med når åpningstiden gjelder.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the date when the open hours specification becomes valid.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gyldighet til julestengning.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;ChristmasClosed&gt; a cv:OpeningHoursSpecification;
-   schema:validFrom "2016-12-24T012:00Z"^^xsd:dateTime ;
-   schema:validThrough "2017-01-02T09:00Z"^^xsd:dateTime .</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Åpningstid-gyldigTilOgMed"><a class="anchor" href="#Åpningstid-gyldigTilOgMed"></a>Åpningstid – gyldig til og med (schema:validThrough)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">valid through inclusive</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">schema:validThrough</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:date or xsd:dateTime</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi til og med når åpningstiden gjelder.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the date after which when the open hours specification is not valid.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Åpningstid-gyldigFraOgMed">Åpningstid – gyldig fra og med (schema:validFrom)</a>.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid-gyldigFraOgMed">Åpningstid – gyldig fra og med (schema:validFrom)</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Åpningstid-stenger"><a class="anchor" href="#Åpningstid-stenger"></a>Åpningstid – stenger (schema:closes)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">closes</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">schema:closes</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:time</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi tidspunktet for stengning.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the closing hour.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a>.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Åpningstid-åpner"><a class="anchor" href="#Åpningstid-åpner"></a>Åpningstid – åpner (schema:opens)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">opens</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">schema:opens</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:time</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi tidspunktet for åpning.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the opening hour.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I henhold til <a href="https://schema.org/OpeningHoursSpecification">schema.org</a> er det «åpent» hvis egenskapen brukes og «lukket» ellers.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">According to <a href="https://schema.org/OpeningHoursSpecification">schema.org</a>, “The place is <strong>open</strong> if the <a href="https://schema.org/opens">opens</a> property is specified, and <strong>closed</strong> otherwise.”</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a>.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Åpningstid-dagerIUka">Åpningstid – dager i uka (schema:dayOfWeek)</a>.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Endringslogg</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -18893,7 +18438,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-12 11:42:49 UTC
+Sist oppdatert 2022-12-12 12:12:02 UTC
 </div>
 </div>
 </body>
