@@ -37,11 +37,11 @@ Følgende klasser er valgfrie:
 * <<Referanserammeverk>>
 * <<Regel>>
 * <<RegulativRessurs>>
+* <<Tidsenhet>>
 * <<Tidsrom>>
 * <<Tjenestekanal>>
 * <<UnderstøttendeOpplysning>>
 * <<Virksomhetshendelse>>
-* <<Åpningstid>>
 
 Følgende klasser som også er vist i den forenklede modellen ovenfor eller i diagrammene som følger, er ikke spesifisert i spesifikasjonen:
 

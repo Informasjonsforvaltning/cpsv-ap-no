@@ -93,6 +93,8 @@ include::KlassenRegel.adoc[]
 
 include::KlassenRegulativRessurs.adoc[]
 
+include::KlassenTidsenhet.adoc[]
+
 include::KlassenTidsrom.adoc[]
 
 include::KlassenTjeneste.adoc[]
@@ -104,8 +106,6 @@ include::KlassenTjenesteresultat.adoc[]
 include::KlassenUnderstøttendeOpplysning.adoc[]
 
 include::KlassenVirksomhetshendelse.adoc[]
-
-include::KlassenÅpningstid.adoc[]
 
 include::Endringslogg.adoc[]
 
