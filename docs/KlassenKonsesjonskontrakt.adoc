@@ -1,7 +1,9 @@
-== Klassen Konsesjonskontrakt (cv:ConcessionContract) [[Konsesjonskontrakt]]
+== Klassen Konsesjonskontrakt (epo:ConcessionContract) [[Konsesjonskontrakt]]
+
+#NB NB NB må sjekke hvordan klassen er definert i ePO, https://github.com/OP-TED/ePO#
 
 [[img-KlassenKonsesjonskontrakt]]
-.Klassen Konsesjonskontrakt (cv:ConcessionContract)
+.Klassen Konsesjonskontrakt (epo:ConcessionContract)
 [link=images/KlassenKonsesjonskontrakt.png]
 image::images/KlassenKonsesjonskontrakt.png[alt="UML-diagram med klassen Konsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
@@ -14,7 +16,7 @@ image::images/KlassenKonsesjonskontrakt.png[alt="UML-diagram med klassen Konsesj
 Concessions are contracts for pecuniary interest by means of which one or more contracting authorities or contracting entities entrusts the execution of works, or the provision and the management of services, to one or more economic operators.
 
 The object of such contracts is the procurement of works or services by means of a concession, the consideration of which consists in the right to exploit the works or services or in that right together with payment. Such contracts may, but do not necessarily, involve a transfer of ownership to contracting authorities or contracting entities, but contracting authorities or contracting entities always obtain the benefits of the works or services in question. The definition comes from the Directive https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0023&from=EN[2014/23/EU].
-|URI| cv:ConcessionContract
+|URI| epo:ConcessionContract
 |Subklasse av / Subclass of|
 |Kravnivå| Valgfri/Optional
 |===
@@ -31,6 +33,8 @@ The object of such contracts is the procurement of works or services by means of
 |Anvendelse|Egenskapen brukes til å oppgi en fritekst beskrivelse av konsesjonskontrakten. Egenskap bør gjentas når beskrivelsen er på flere språk.
 |Usage note|This property represents a free text description of the Concession Contract, repeated when the description is in parallel languages.
 |Multiplisitet|1..n
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.
 |Kravnivå|Obligatorisk/Mandatory
 |===
 
@@ -45,6 +49,8 @@ The object of such contracts is the procurement of works or services by means of
 |Usage note|This property represents an Identifier for the Concession Contract.
 |Multiplisitet|1..1
 |Kravnivå|Obligatorisk/Mandatory
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.
 |===
 
 ==== Konsesjonskontrakt – har leverandør (cv:hasEconomicOperator) [[Konsesjonskontrakt-harLeverandør]]
@@ -58,6 +64,8 @@ The object of such contracts is the procurement of works or services by means of
 |Usage note|This property refers to the Economic Operator in charge for the provision and the management of the services.
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.
 |===
 
 ==== Konsesjonskontrakt – har oppdragsgiver (cv:hasContractingAuthority) [[Konsesjonskontrakt-harOppdragsgiver]]
@@ -71,6 +79,8 @@ The object of such contracts is the procurement of works or services by means of
 |Usage note|This property refers to the Contracting Authority which is ultimately responsible for a service.
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.
 |===
 
 ==== Konsesjonskontrakt – navn (dct:title) [[Konsesjonskontrakt-navn]]
@@ -84,6 +94,8 @@ The object of such contracts is the procurement of works or services by means of
 |Usage note|This property represents the name of the contract, repeated when the name is in parallel languages.
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.
 |===
 
 === Valgfrie egenskaper for klassen _Konsesjonskontrakt_ [[Konsesjonskontrakt-valgfrie-egenskaper]]
@@ -99,4 +111,6 @@ The object of such contracts is the procurement of works or services by means of
 |Usage note|This property refers to relevant legislation or policy documents i.e. the Legal Resource under which the Concession Contracts are being defined.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.
 |===
