@@ -584,7 +584,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Aktør-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Aktør</em></a>
 <ul class="sectlevel3">
 <li><a href="#Aktør-adresse">Aktør – adresse (locn:address)</a></li>
-<li><a href="#Aktør-har-rolle-i">Aktør – har rolle i (cv:playsRole)</a></li>
+<li><a href="#Aktør-har-rolle-i">Aktør – deltar i (cv:participates)</a></li>
 </ul>
 </li>
 </ul>
@@ -1850,7 +1850,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Som illustrert i <a href="#img-FigurTjenesteOgDeltagelse">Figur 8</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste – eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste (<code>cpsvno:Service</code>) og dens eier (en Organisasjon, <code>Org:Organization</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste (<code>cpsv:PublicService</code>) og dens kompetente organ (en Offentlig organisasjon, <code>cv:PublicOrganisation</code>).</p>
 </div>
 <div class="paragraph">
-<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse"><em>Klassen Deltagelse (cv:Participation)</em></a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-har-deltagelse">Tjeneste – har deltagelse (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-har-deltagelse">Offentlig tjeneste – har deltagelse (cv:hasParticipation)</a>). En Aktør (inkl. Organisasjon og Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-har-rolle-i">Aktør – har rolle i (cv:playsRole)</a> (eller <a href="#Organisasjon-har-rolle-i">Organisasjon – har rolle i (cv:playsRole)</a>, <a href="#OffentligOrganisasjon-har-rolle-i">Offentlig organisasjon – har rolle i (cv:playsRole)</a>).</p>
+<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse"><em>Klassen Deltagelse (cv:Participation)</em></a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-har-deltagelse">Tjeneste – har deltagelse (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-har-deltagelse">Offentlig tjeneste – har deltagelse (cv:hasParticipation)</a>). En Aktør (inkl. Organisasjon og Offentlig organisasjon) kan ha en eller flere roller i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-har-rolle-i">Aktør – deltar i (cv:participates)</a> (eller <a href="#Organisasjon-har-rolle-i">Organisasjon – har rolle i (cv:playsRole)</a>, <a href="#OffentligOrganisasjon-har-rolle-i">Offentlig organisasjon – har rolle i (cv:playsRole)</a>).</p>
 </div>
 <div class="paragraph">
 <p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). Slik vi forstår CPSV-AP, ved å knytte en Aktør til en gitt Deltagelse, sier man implisitt at Aktøren har alle rollene i den aktuelle Deltagelse. Det bør derfor lages flere instanser av klassen Deltagelse, f.eks. en med bare rollen «dataleverandør» og en med bare rollen «datakonsument», når ikke alle deltagende aktører har begge roller.</p>
@@ -3040,7 +3040,7 @@ points.</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Aktør-har-rolle-i"><a class="anchor" href="#Aktør-har-rolle-i"></a>Aktør – har rolle i (cv:playsRole)</h4>
+<h4 id="Aktør-har-rolle-i"><a class="anchor" href="#Aktør-har-rolle-i"></a>Aktør – deltar i (cv:participates)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3053,7 +3053,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:playsRole</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:participates</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -3065,7 +3065,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property links an Agent to the Participation class (<code>cv:Participation</code>). The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property links an Agent to the Participation class (<code>cv:Participation</code>). The Participation class facilitates the detailed description of how an Agent participates in or interacts with a service and may include temporal and spatial information.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -18893,7 +18893,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-12 08:25:12 UTC
+Sist oppdatert 2022-12-12 08:44:15 UTC
 </div>
 </div>
 </body>

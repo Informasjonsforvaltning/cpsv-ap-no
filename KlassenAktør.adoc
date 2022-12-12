@@ -83,15 +83,15 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Kravnivå|Valgfri/Optional
 |===
 
-==== Aktør – har rolle i (cv:playsRole) [[Aktør-har-rolle-i]]
+==== Aktør – deltar i (cv:participates) [[Aktør-har-rolle-i]]
 
 [cols="30s,70d"]
 |===
 |English name|plays role
-|URI|cv:playsRole
+|URI|cv:participates
 |Range|cv:Participation
 |Anvendelse| Egenskapen brukes til å knytte en deltagelse (`cv:Participation`) til en aktør.
-|Usage note| This property links an Agent to the Participation class (`cv:Participation`). The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information.
+|Usage note| This property links an Agent to the Participation class (`cv:Participation`). The Participation class facilitates the detailed description of how an Agent participates in or interacts with a service and may include temporal and spatial information.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |===
