@@ -98,7 +98,7 @@ Eksempel i RDF Turtle:
 |Usage note| This property links an event directly to a service that the event may trigger need for.
 |Multiplisitet|0..n
 |Kravnivå |Anbefalt/Recommended
-|Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn `dct:relation` som er i CPSV-AP.
+|Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for en mer presis URI enn `cv:hasRelatedService` som er i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Hendelsen «Starte og drive en restaurant» utløser behov for tjenesten «Skjenkebevilling».
 |===
