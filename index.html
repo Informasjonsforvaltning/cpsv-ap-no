@@ -549,16 +549,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#OversiktOverKlassene">Oversikt over klasser i spesifikasjonen</a></li>
-<li><a href="#AdministrativEnhet">Klassen Administrativ enhet</a>
-<ul class="sectlevel2">
-<li><a href="#AdministrativeEnhet-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Administrativ enhet</em></a>
-<ul class="sectlevel3">
-<li><a href="#AdministrativEnhet-kode">Administrativ enhet – kode (cv:code)</a></li>
-<li><a href="#AdministrativEnhet-nivå">Administrativ enhet – nivå (cv:level)</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li><a href="#Adresse">Klassen Adresse (locn:Address)</a>
 <ul class="sectlevel2">
 <li><a href="#Adresse-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Adresse</em></a>
@@ -2033,9 +2023,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#AdministrativEnhet"><em>Klassen Administrativ enhet</em></a></p>
-</li>
-<li>
 <p><a href="#Adresse"><em>Klassen Adresse (locn:Address)</em></a></p>
 </li>
 <li>
@@ -2125,163 +2112,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="AdministrativEnhet"><a class="anchor" href="#AdministrativEnhet"></a>Klassen Administrativ enhet</h2>
-<div class="sectionbody">
-<div id="img-KlassenAdministrativEnhet" class="imageblock">
-<div class="content">
-<a class="image" href="images/KlassenAdministrativEnhet.png"><img src="images/KlassenAdministrativEnhet.png" alt="UML-diagram med klassen Aktør og dens egenskaper. Innholdet i diagrammet er forklart i teksten."></a>
-</div>
-<div class="title">Figur 13. Klassen Administrativ enhet (cv:AdminUnit)</div>
-</div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Administrative unit</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en detaljert administrativ enhet som er organisert i et hierarki.</p>
-<p class="tableblock">Klassen bør brukes når det finnes en klassifisering av administrative enheter, istedenfor å bruke fritekst-egenskapene <a href="#Adresse-admin-enhet-nivå1">Adresse – administrativ enhet nivå 1 (locn:adminUnitL1)</a> og <a href="#Adresse-admin-enhet-nivå2">Adresse – administrativ enhet nivå 2 (locn:adminUnitL2)</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This class represents a detailed administrative unit organized in a hierarchy.</p>
-<p class="tableblock">This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:AdminUnit</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i Core Location Vocabulary som CPSV-AP bruker.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP, but in Core Location Vocabulary which CPSV-AP also uses.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="sect2">
-<h3 id="AdministrativeEnhet-obligatoriske-egenskaper"><a class="anchor" href="#AdministrativeEnhet-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Administrativ enhet</em></h3>
-<div class="sect3">
-<h4 id="AdministrativEnhet-kode"><a class="anchor" href="#AdministrativEnhet-kode"></a>Administrativ enhet – kode (cv:code)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">code</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:code</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til klassifiseringen av den administrative enheten.</p>
-<p class="tableblock">Noen anbefalte kodelister fra EUs Publications Office er: <a href="https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu">Administrative Territorial Units (ATU)</a>, <a href="https://ec.europa.eu/eurostat/web/nuts/background">NUTS</a> and <a href="https://ec.europa.eu/eurostat/web/nuts/local-administrative-units">Local Administrative Units (LAU)</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the classification of the administrative unit.</p>
-<p class="tableblock">Some recommended codelists from the EU Publications Office and Eurostat include: <a href="https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu">Administrative Territorial Units (ATU)</a>, <a href="https://ec.europa.eu/eurostat/web/nuts/background">NUTS</a> and <a href="https://ec.europa.eu/eurostat/web/nuts/local-administrative-units">Local Administrative Units (LAU)</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligarorisk/Mandatory</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="AdministrativEnhet-nivå"><a class="anchor" href="#AdministrativEnhet-nivå"></a>Administrativ enhet – nivå (cv:level)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">level</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:level</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til nivået av den administrative enheten i klassifiseringshierarkiet.</p>
-<p class="tableblock">Noen anbefalte kodelister fra EUs Publications Office er: <a href="https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu">Administrative Territorial Units (ATU)</a>, <a href="https://ec.europa.eu/eurostat/web/nuts/background">NUTS</a> and <a href="https://ec.europa.eu/eurostat/web/nuts/local-administrative-units">Local Administrative Units (LAU)</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the classification of the administrative unit.</p>
-<p class="tableblock">Some recommended codelists from the EU Publications Office and Eurostat include: <a href="https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu">Administrative Territorial Units (ATU)</a>, <a href="https://ec.europa.eu/eurostat/web/nuts/background">NUTS</a> and <a href="https://ec.europa.eu/eurostat/web/nuts/local-administrative-units">Local Administrative Units (LAU)</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligarorisk/Mandatory</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="Adresse"><a class="anchor" href="#Adresse"></a>Klassen Adresse (locn:Address)</h2>
 <div class="sectionbody">
 <div id="img-KlassenAdresse" class="imageblock">
 <div class="content">
 <a class="image" href="images/KlassenAdresse.png"><img src="images/KlassenAdresse.png" alt="UML-diagram med klassen Adresse, dens egenskaper og dens relasjon til en annen klasse. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 14. Klassen Adresse (locn:Address)</div>
+<div class="title">Figur 13. Klassen Adresse (locn:Address)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2971,7 +2808,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenAktør.png"><img src="images/KlassenAktør.png" alt="UML-diagram med klassen Aktør, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 15. Klassen Aktør (foaf:Agent)</div>
+<div class="title">Figur 14. Klassen Aktør (foaf:Agent)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3251,7 +3088,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenBegrensning.png"><img src="images/KlassenBegrensning.png" alt="UML-diagram med klassen Begrensning, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 16. Klassen Begrensning (cv:Constraint)</div>
+<div class="title">Figur 15. Klassen Begrensning (cv:Constraint)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3910,7 +3747,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenDatasett.png"><img src="images/KlassenDatasett.png" alt="UML-diagram med klassen Datasett, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 17. Klassen Datasett (dcat:Dataset)</div>
+<div class="title">Figur 16. Klassen Datasett (dcat:Dataset)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4265,7 +4102,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenDeltagelse.png"><img src="images/KlassenDeltagelse.png" alt="UML-diagram med klassen Deltagelse og dens egenskaper. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 18. Klassen Deltagelse (cv:Participation)</div>
+<div class="title">Figur 17. Klassen Deltagelse (cv:Participation)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4449,7 +4286,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenDokumentasjon.png"><img src="images/KlassenDokumentasjon.png" alt="UML-diagram med klassen Dokumentasjon, dens egenskaper og dens relasjoner til seks andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 19. Klassen Dokumentasjon (cv:Evidence)</div>
+<div class="title">Figur 18. Klassen Dokumentasjon (cv:Evidence)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5321,7 +5158,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenDokumentasjonstype.png"><img src="images/KlassenDokumentasjonstype.png" alt="UML-diagram med klassen Dokumentasjonstype, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 20. Klassen Dokumentasjonstype (cv:EvidenceType)</div>
+<div class="title">Figur 19. Klassen Dokumentasjonstype (cv:EvidenceType)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5619,7 +5456,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenDokumentasjonstypeliste.png"><img src="images/KlassenDokumentasjonstypeliste.png" alt="UML-diagram med klassen Dokumentasjonstypeliste, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 21. Klassen Dokumentasjonstypeliste (cv:EvidenceTypeList)</div>
+<div class="title">Figur 20. Klassen Dokumentasjonstypeliste (cv:EvidenceTypeList)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5869,7 +5706,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenGebyr.png"><img src="images/KlassenGebyr.png" alt="UML-diagram med klassen Gebyr, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 22. Klassen Gebyr (cv:Cost)</div>
+<div class="title">Figur 21. Klassen Gebyr (cv:Cost)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6189,7 +6026,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenHendelse.png"><img src="images/KlassenHendelse.png" alt="UML-diagram med klassen Hendelse, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 23. Klassen Hendelse (cv:Event)</div>
+<div class="title">Figur 22. Klassen Hendelse (cv:Event)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6599,7 +6436,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenInformasjonsbegrep.png"><img src="images/KlassenInformasjonsbegrep.png" alt="UML-diagram med klassen Informasjonsbegrep og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 24. Klassen Informasjonsbegrep (cv:InformationConcept)</div>
+<div class="title">Figur 23. Klassen Informasjonsbegrep (cv:InformationConcept)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6890,7 +6727,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenInformasjonskrav.png"><img src="images/KlassenInformasjonskrav.png" alt="UML-diagram med klassen Informasjonskrav, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 25. Klassen Informasjonskrav (cv:InformationRequirement)</div>
+<div class="title">Figur 24. Klassen Informasjonskrav (cv:InformationRequirement)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7540,7 +7377,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenKatalog.png"><img src="images/KlassenKatalog.png" alt="UML-diagram med klassen Katalog, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 26. Klassen Katalog (dcat:Catalog)</div>
+<div class="title">Figur 25. Klassen Katalog (dcat:Catalog)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8714,7 +8551,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenKonsesjonskontrakt.png"><img src="images/KlassenKonsesjonskontrakt.png" alt="UML-diagram med klassen Konsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 27. Klassen Konsesjonskontrakt (cv:ConcessionContract)</div>
+<div class="title">Figur 26. Klassen Konsesjonskontrakt (cv:ConcessionContract)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8999,7 +8836,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenKontaktpunkt.png"><img src="images/KlassenKontaktpunkt.png" alt="UML-diagram med klassen Kontaktpunkt, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 28. Klassen Kontaktpunkt (cv:ContactPoint)</div>
+<div class="title">Figur 27. Klassen Kontaktpunkt (cv:ContactPoint)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -9400,7 +9237,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenKrav.png"><img src="images/KlassenKrav.png" alt="UML-diagram med klassen Krav, dens egenskaper og dens relasjoner til seks andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 29. Klassen Krav (cv:Requirement)</div>
+<div class="title">Figur 28. Klassen Krav (cv:Requirement)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -10043,7 +9880,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenKriterium.png"><img src="images/KlassenKriterium.png" alt="UML-diagram med klassen Kriterium, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 30. Klassen Kriterium (cv:Criterion)</div>
+<div class="title">Figur 29. Klassen Kriterium (cv:Criterion)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -10884,7 +10721,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenLivshendelse.png"><img src="images/KlassenLivshendelse.png" alt="UML-diagram med klassen Livshendelse, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 31. Klassen Livshendelse (cv:LifeEvent)</div>
+<div class="title">Figur 30. Klassen Livshendelse (cv:LifeEvent)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -11343,7 +11180,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenOffentligOrganisasjon.png"><img src="images/KlassenOffentligOrganisasjon.png" alt="UML-diagram med klassen Offentlig organisasjon, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 32. Klassen Offentlig organisasjon (cv:PublicOrganisation)</div>
+<div class="title">Figur 31. Klassen Offentlig organisasjon (cv:PublicOrganisation)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -11906,7 +11743,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenOffentligTjeneste.png"><img src="images/KlassenOffentligTjeneste.png" alt="UML-diagram med klassen Offentlig tjeneste, dens egenskaper og dens relasjoner til 14 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 33. Klassen Offentlig tjeneste (cpsv:PublicService)</div>
+<div class="title">Figur 32. Klassen Offentlig tjeneste (cpsv:PublicService)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -13691,7 +13528,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenOrganisasjon.png"><img src="images/KlassenOrganisasjon.png" alt="UML-diagram med klassen Organisasjon, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 34. Klassen Organisasjon (org:Organization)</div>
+<div class="title">Figur 33. Klassen Organisasjon (org:Organization)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14230,7 +14067,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenReferanserammeverk.png"><img src="images/KlassenReferanserammeverk.png" alt="UML-diagram med klassen Referanserammeverk og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 35. Klassen Referanserammeverk (cv:ReferenceFramework)</div>
+<div class="title">Figur 34. Klassen Referanserammeverk (cv:ReferenceFramework)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14334,7 +14171,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenRegel.png"><img src="images/KlassenRegel.png" alt="UML-diagram med klassen Regel, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 36. Klassen Regel (cv:Rule)</div>
+<div class="title">Figur 35. Klassen Regel (cv:Rule)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14664,7 +14501,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenRegulativRessurs.png"><img src="images/KlassenRegulativRessurs.png" alt="UML-diagram med klassen Regulativ ressurs og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 37. Klassen Regulativ ressurs (eli:LegealResource)</div>
+<div class="title">Figur 36. Klassen Regulativ ressurs (eli:LegealResource)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -15079,7 +14916,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTidsrom.png"><img src="images/KlassenTidsrom.png" alt="UML-diagram med klassen Tidsrom og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 38. Klassen Tidsrom (time:ProperInterval)</div>
+<div class="title">Figur 37. Klassen Tidsrom (time:ProperInterval)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -15270,7 +15107,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjeneste.png"><img src="images/KlassenTjeneste.png" alt="UML-diagram med klassen Tjeneste, dens egenskaper og dens relasjoner til 13 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 39. Klassen Tjeneste (cpsvno:Service)</div>
+<div class="title">Figur 38. Klassen Tjeneste (cpsvno:Service)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -16873,7 +16710,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjenestekanal.png"><img src="images/KlassenTjenestekanal.png" alt="UML-diagram med klassen Tjenestekanal, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 40. Klassen Tjenestekanal (cv:Channel)</div>
+<div class="title">Figur 39. Klassen Tjenestekanal (cv:Channel)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17670,7 +17507,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjenesteresultat.png"><img src="images/KlassenTjenesteresultat.png" alt="UML-diagram med klassen Tjenesteresultat, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 41. Klassen Tjenesteresultat (cv:Output)</div>
+<div class="title">Figur 40. Klassen Tjenesteresultat (cv:Output)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -18075,7 +17912,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenUnderstøttendeOpplysning.png"><img src="images/KlassenUnderstøttendeOpplysning.png" alt="UML-diagram med klassen Understøttende opplysning, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 42. Klassen Understøttende opplysning (cv:SupportedValue)</div>
+<div class="title">Figur 41. Klassen Understøttende opplysning (cv:SupportedValue)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -18269,7 +18106,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenVirksomhetshendelse.png"><img src="images/KlassenVirksomhetshendelse.png" alt="UML-diagram med klassen Virksomhetshendelse, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 43. Klassen Virksomhetshendelse (cv:BusinessEvent)</div>
+<div class="title">Figur 42. Klassen Virksomhetshendelse (cv:BusinessEvent)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -18706,7 +18543,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenÅpningstid.png"><img src="images/KlassenÅpningstid.png" alt="UML-diagram med klassen Åpningstid og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 44. Klassen Åpningstid (cv:OpeningHoursSpecificatinon)</div>
+<div class="title">Figur 43. Klassen Åpningstid (cv:OpeningHoursSpecificatinon)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -19056,7 +18893,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-12 08:22:57 UTC
+Sist oppdatert 2022-12-12 08:25:12 UTC
 </div>
 </div>
 </body>
