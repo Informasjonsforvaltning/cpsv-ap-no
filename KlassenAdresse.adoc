@@ -16,21 +16,6 @@ image::images/KlassenAdresse.png[alt="UML-diagram med klassen Adresse, dens egen
 
 === Valgfrie egenskaper for klassen _Adresse_ [[Adresse-valgfrie-egenskaper]]
 
-====  Adresse – administrativ enhet (cv:adminUnit) [[Adresse-admin-enhet]]
-
-[cols="30s,70d"]
-|===
-|English name|administrative unit
-|URI| cv:adminUnit
-|Range|cv:AdminUnit
-|Anvendelse| Egenskapen brukes til å koble en adresse til <<AdministrativEnhet>>.
-|Usage note| This property links an Address with the <<AdministrativEnhet, Administrative Unit class>>.
-|Multiplisitet|0..1
-|Kravnivå|Valgfri/Optional
-|Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
-|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
-|===
-
 ====  Adresse – administrativ enhet nivå 1 (locn:adminUnitL1) [[Adresse-admin-enhet-nivå1]]
 
 [cols="30s,70d"]
@@ -180,8 +165,8 @@ unikt identifiserer lokasjonen i den aktuelle konteksten, f.eks. hus-/oppgangsnu
 |Kravnivå|Valgfri/Optional
 |Merknad 1 | Maks. én per språk.
 |Remark 1 | Max. one per language.
-|Merknad 2 | Norsk utvidelse: Range er endret fra `xsd:string` til `rdf:langString`, fordi egenskapen kan inneholde  språksensitive verdier (f.eks. "etasje"@nb vs. "floor"@en).
-|Remark 2 | Norwegian extension: Range changed from `xsd:string` to `rdf:langString`, because this property may contain language sensitive values (e.g., "etasje"@nb vs. "floor"@en).
+|Merknad 2 | Norsk utvidelse: Range er endret fra `rdfs:Literal` til `rdf:langString`, fordi egenskapen kan inneholde språksensitive verdier (f.eks. "etasje"@nb vs. "floor"@en).
+|Remark 2 | Norwegian extension: Range changed from `rdfs:Literal` to `rdf:langString`, because this property may contain language sensitive values (e.g., "etasje"@nb vs. "floor"@en).
 |Eksempel| «7. etasje, 1C» er husnummer m.m., i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»), i konteksten «Lørenfaret» (se <<Adresse-gate-vei-område-navn>>).
 |===
 
@@ -207,9 +192,9 @@ point at a post office, usually a number.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |Merknad 1 | Maks. én per språk.
-|Remark 1 | Max. one per language.
-|Merknad 2 | Norsk utvidelse: Range endret fra xsd:string til rdf:langString, for å kunne ha postboksanleggsnavnet i ulike språkvarianter (f.eks. å erstatte norske bokstaver æ, ø, å med a, o, a)
-|Remark 2 | Norwegian extension: Range changed from xsd:string to rdf:langString, in order to specify the p.o.box facility name in different languages (e.g., to replace the Norwegian letters æ, ø, å with a, o, a)
+|Remark 1 | Max. one per language.`
+|Merknad 2 | Norsk utvidelse: Range endret fra `rdfs:Literal` til `rdf:langString`, for å kunne ha postboksanleggsnavnet i ulike språkvarianter (f.eks. å erstatte norske bokstaver æ, ø, å med a, o, a)
+|Remark 2 | Norwegian extension: Range changed from `rdfs:Literal` to `rdf:langString`, in order to specify the p.o.box facility name in different languages (e.g., to replace the Norwegian letters æ, ø, å with a, o, a)
 |Eksempel | Postboksadressen til Digdir i Oslo: «Postboks 1382 Vika, 0114 Oslo, Norge»
 |===
 
@@ -229,7 +214,7 @@ Eksempel i RDF Turtle:
 |===
 |English name|post code
 |URI|locn:postCode
-|Range| xsd:string
+|Range| rdfs:Literal
 |Anvendelse| Egenskapen brukes til å kunne oppgi kode som er opprettet og
 vedlikeholdt for postformål.
 |Usage note| This property represents the code created and maintained for

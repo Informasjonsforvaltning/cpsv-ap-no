@@ -563,7 +563,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#Adresse-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Adresse</em></a>
 <ul class="sectlevel3">
-<li><a href="#Adresse-admin-enhet">Adresse – administrativ enhet (cv:adminUnit)</a></li>
 <li><a href="#Adresse-admin-enhet-nivå1">Adresse – administrativ enhet nivå 1 (locn:adminUnitL1)</a></li>
 <li><a href="#Adresse-admin-enhet-nivå2">Adresse – administrativ enhet nivå 2 (locn:adminUnitL2)</a></li>
 <li><a href="#Adresse-adresseId">Adresse – adresseId (locn:addressId)</a></li>
@@ -2315,53 +2314,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="sect2">
 <h3 id="Adresse-valgfrie-egenskaper"><a class="anchor" href="#Adresse-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Adresse</em></h3>
 <div class="sect3">
-<h4 id="Adresse-admin-enhet"><a class="anchor" href="#Adresse-admin-enhet"></a>Adresse – administrativ enhet (cv:adminUnit)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">administrative unit</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:adminUnit</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:AdminUnit</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å koble en adresse til <a href="#AdministrativEnhet"><em>Klassen Administrativ enhet</em></a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property links an Address with the <a href="#AdministrativEnhet">Administrative Unit class</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: multiplisitet endret fra 0..n til 0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: multiplicity changed from 0..n to 0..1</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
 <h4 id="Adresse-admin-enhet-nivå1"><a class="anchor" href="#Adresse-admin-enhet-nivå1"></a>Adresse – administrativ enhet nivå 1 (locn:adminUnitL1)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2779,11 +2731,11 @@ unikt identifiserer lokasjonen i den aktuelle konteksten, f.eks. hus-/oppgangsnu
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range er endret fra <code>xsd:string</code> til <code>rdf:langString</code>, fordi egenskapen kan inneholde  språksensitive verdier (f.eks. "etasje"@nb vs. "floor"@en).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range er endret fra <code>rdfs:Literal</code> til <code>rdf:langString</code>, fordi egenskapen kan inneholde språksensitive verdier (f.eks. "etasje"@nb vs. "floor"@en).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range changed from <code>xsd:string</code> to <code>rdf:langString</code>, because this property may contain language sensitive values (e.g., "etasje"@nb vs. "floor"@en).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range changed from <code>rdfs:Literal</code> to <code>rdf:langString</code>, because this property may contain language sensitive values (e.g., "etasje"@nb vs. "floor"@en).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -2847,15 +2799,15 @@ point at a post office, usually a number.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Max. one per language.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max. one per language.`</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range endret fra xsd:string til rdf:langString, for å kunne ha postboksanleggsnavnet i ulike språkvarianter (f.eks. å erstatte norske bokstaver æ, ø, å med a, o, a)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range endret fra <code>rdfs:Literal</code> til <code>rdf:langString</code>, for å kunne ha postboksanleggsnavnet i ulike språkvarianter (f.eks. å erstatte norske bokstaver æ, ø, å med a, o, a)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range changed from xsd:string to rdf:langString, in order to specify the p.o.box facility name in different languages (e.g., to replace the Norwegian letters æ, ø, å with a, o, a)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range changed from <code>rdfs:Literal</code> to <code>rdf:langString</code>, in order to specify the p.o.box facility name in different languages (e.g., to replace the Norwegian letters æ, ø, å with a, o, a)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -2894,7 +2846,7 @@ point at a post office, usually a number.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -19104,7 +19056,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-12 07:37:27 UTC
+Sist oppdatert 2022-12-12 08:22:57 UTC
 </div>
 </div>
 </body>
