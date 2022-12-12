@@ -69,8 +69,6 @@ Eksempel i RDF Turtle:
 |Usage note| This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology. The property should be repeated when the name is in several languages.
 |Multiplisitet| 1..n
 |Kravnivå | Obligatorisk/Mandatory
-|Merknad| Norsk utvidelse: multiplisitet endret fra 1..1 til 1..n.
-|Remark | Norwegian extension: the multiplicity changed from 1..1 to 1..n.
 |Eksempel|Brønnøy kommune
 |===
 
