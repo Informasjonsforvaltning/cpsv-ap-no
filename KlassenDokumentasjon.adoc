@@ -187,10 +187,8 @@ Agents transmitting the Evidence are usually the Agents that are issuing the Evi
 |Range| cv:EvidenceType
 |Anvendelse| Egenskapen brukes til å oppgi dokumentasjonstypen som dokumentasjonen er i samsvar med.
 |Usage note| This property represents the Evidence Type that specifies characteristics of the Evidence.
-|Multiplisitet|0..1
+|Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
 |===
 
 ==== Dokumentasjon – konfidensialitetsnivå (cv:confidentialityLevelType) [[Dokumentasjon-konfidensialitetsnivå]]
