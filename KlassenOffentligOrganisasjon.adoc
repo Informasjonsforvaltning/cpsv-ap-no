@@ -175,14 +175,14 @@ Eksempel i RDF Turtle:
        locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ] ; .
 -----
 
-==== Offentlig organisasjon – har rolle i (cv:playsRole) [[OffentligOrganisasjon-har-rolle-i]]
+==== Offentlig organisasjon – deltar i (cv:participates) [[OffentligOrganisasjon-deltar-i]]
 
 [cols="30s,70d"]
 |===
 |English name|plays role
-|URI|cv:playsRole
+|URI|cv:participates
 |Range|cv:Participation
-|Anvendelse| Egenskapen brukes til å knytte en aktør/organisasjon til en instans av deltagelse (cv:Participation) i en tjeneste der organisasjonen har en eller flere roller.
+|Anvendelse| Egenskapen brukes til å knytte en offentlig organisasjon til en deltagelse (cv:Participation).
 |Usage note|This property links an Agent / Public Organisation to the Participation class.
 
 The Participation class (`cv:Participation`) facilitates the detailed description of how an Agent / Public Organisation participates in or interacts with a Service and may include temporal and spatial constraints on that participation.

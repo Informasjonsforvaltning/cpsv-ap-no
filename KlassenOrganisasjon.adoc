@@ -160,12 +160,12 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle: Se under <<Adresse>>
 
-==== Organisasjon – har rolle i (cv:playsRole) [[Organisasjon-har-rolle-i]]
+==== Organisasjon – deltar i (cv:participates) [[Organisasjon-deltar-i]]
 
 [cols="30s,70d"]
 |===
 |English name|plays role
-|URI|cv:playsRole
+|URI|cv:participates
 |Range|cv:Participation
 |Anvendelse|Egenskapen brukes til å knytte en deltagelse (cv:Participation) til en organisasjon.
 |Usage note|This property links an Oranization to the Participation class (cv:Participation). The Participation class facilitates the detailed description of how an Organization participates in or interacts with a Public Service and may include temporal and spatial information.

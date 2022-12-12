@@ -83,7 +83,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Kravnivå|Valgfri/Optional
 |===
 
-==== Aktør – deltar i (cv:participates) [[Aktør-har-rolle-i]]
+==== Aktør – deltar i (cv:participates) [[Aktør-deltar-i]]
 
 [cols="30s,70d"]
 |===
