@@ -851,7 +851,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Konsesjonskontrakt">Klassen Konsesjonskontrakt (cv:ConcessionContract)</a>
+<li><a href="#Konsesjonskontrakt">Klassen Konsesjonskontrakt (epo:ConcessionContract)</a>
 <ul class="sectlevel2">
 <li><a href="#Konsesjonskontrakt-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Konsesjonskontrakt</em></a>
 <ul class="sectlevel3">
@@ -1456,6 +1456,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://eur-lex.europa.eu/eli-register/about.html">European Legislation Identifier</a></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>epo</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://data.europa.eu/a4g/ontology#</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/OP-TED/ePO">eProcurement Ontology (ePO)</a></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>foaf</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://xmlns.com/foaf/0.1/</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/0.1/">FOAF Vocabulary</a></p></td>
@@ -1525,6 +1530,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 @prefix dcatno: &lt;https://data.norge.no/vocabulary/dcatno#&gt; .
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
 @prefix eli: &lt;http://data.europa.eu/eli/ontology#&gt; .
+@prefix epo: &lt;http://data.europa.eu/a4g/ontology#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
 @prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .
 @prefix org: &lt;http://www.w3.org/ns/org#&gt; .
@@ -2042,7 +2048,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><a href="#Katalog"><em>Klassen Katalog (dcat:Catalog)</em></a></p>
 </li>
 <li>
-<p><a href="#Konsesjonskontrakt"><em>Klassen Konsesjonskontrakt (cv:ConcessionContract)</em></a></p>
+<p><a href="#Konsesjonskontrakt"><em>Klassen Konsesjonskontrakt (epo:ConcessionContract)</em></a></p>
 </li>
 <li>
 <p><a href="#Krav"><em>Klassen Krav (cv:Requirement)</em></a></p>
@@ -8531,13 +8537,16 @@ points.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Konsesjonskontrakt"><a class="anchor" href="#Konsesjonskontrakt"></a>Klassen Konsesjonskontrakt (cv:ConcessionContract)</h2>
+<h2 id="Konsesjonskontrakt"><a class="anchor" href="#Konsesjonskontrakt"></a>Klassen Konsesjonskontrakt (epo:ConcessionContract)</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><mark>NB NB NB må sjekke hvordan klassen er definert i ePO, <a href="https://github.com/OP-TED/ePO" class="bare">https://github.com/OP-TED/ePO</a></mark></p>
+</div>
 <div id="img-KlassenKonsesjonskontrakt" class="imageblock">
 <div class="content">
 <a class="image" href="images/KlassenKonsesjonskontrakt.png"><img src="images/KlassenKonsesjonskontrakt.png" alt="UML-diagram med klassen Konsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 26. Klassen Konsesjonskontrakt (cv:ConcessionContract)</div>
+<div class="title">Figur 26. Klassen Konsesjonskontrakt (epo:ConcessionContract)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8561,7 +8570,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ConcessionContract</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">epo:ConcessionContract</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / Subclass of</strong></p></td>
@@ -8608,6 +8617,14 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
 </tr>
@@ -8650,6 +8667,14 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -8688,6 +8713,14 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8728,6 +8761,14 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -8766,6 +8807,14 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8808,6 +8857,14 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
 </tr>
 </tbody>
 </table>
@@ -18438,7 +18495,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-12 12:12:02 UTC
+Sist oppdatert 2022-12-12 12:38:59 UTC
 </div>
 </div>
 </body>

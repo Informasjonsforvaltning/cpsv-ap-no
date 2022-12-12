@@ -13,6 +13,7 @@ Navnerom for dette vokabularet er: `\https://data.norge.no/vocabulary/cpsvno#`
 |dcatno | `\https://data.norge.no/vocabulary/dcatno#` | https://data.norge.no/specification/dcat-ap-no/[Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)]
 |dct | `\http://purl.org/dc/terms/` | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
 |eli | `\http://data.europa.eu/eli/ontology#` | https://eur-lex.europa.eu/eli-register/about.html[European Legislation Identifier]
+|epo | `\http://data.europa.eu/a4g/ontology#` | https://github.com/OP-TED/ePO[eProcurement Ontology (ePO)]
 |foaf | `\http://xmlns.com/foaf/0.1/` | http://xmlns.com/foaf/0.1/[FOAF Vocabulary]
 |locn | `\http://www.w3.org/ns/locn#` | https://www.w3.org/ns/locn[ISA Programme Location Core Vocabulary]
 |org | `\http://www.w3.org/ns/org#` | https://www.w3.org/TR/vocab-org/[The Organization Ontology]
@@ -36,6 +37,7 @@ Eksempel på prefiksene ovenfor uttrykt i RDF Turtle:
 @prefix dcatno: <https://data.norge.no/vocabulary/dcatno#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
