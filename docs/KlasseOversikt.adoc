@@ -19,7 +19,6 @@ Følgende klasser er anbefalte:
 
 Følgende klasser er valgfrie:
 
-* <<AdministrativEnhet>>
 * <<Adresse>>
 * <<Begrensning>>
 * <<Datasett>>
