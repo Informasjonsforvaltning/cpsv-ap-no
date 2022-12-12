@@ -155,8 +155,6 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents an Address related to an Organization.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: multiplisitet er endret fra 0..1 til 0..n.
-|Remark|Norwegian extension: Multiplicity changed from 0..1 to 0..n.
 |Eksempel| Se under <<Adresse>>
 |===
 

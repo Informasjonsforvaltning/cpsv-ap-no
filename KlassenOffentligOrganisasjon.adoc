@@ -165,8 +165,6 @@ Eksempel i RDF Turtle:
 |Usage note|This property represents the address.
 |Multiplisitet|0..n
 |Kravnivå | Valgfri/Optional
-|Merknad| Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n.
-|Remark | Norwegian extension: Multiplicity changed from 0..1 to 0..n.
 |===
 
 Eksempel i RDF Turtle:
