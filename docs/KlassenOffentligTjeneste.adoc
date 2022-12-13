@@ -477,6 +477,19 @@ The Participation class facilitates the detailed description of how an Agent par
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 
+==== Offentlig tjeneste – har dokumentasjonstype (cv:hasInputType) [[OffentligTjeneste-har-dokumentasjonstype]]
+
+[cols="30s,70d"]
+|===
+|English name|has input type
+|URI|cv:hasInputType
+|Range|cv:EvidenceType
+|Anvendelse| Egenskapen brukes til å knytte til tjenesten en eller flere dokumentasjonstyper.
+|Usage note| It links a Public Service to one or more instances of the EvidenceType class.
+|Multiplisitet|0..n
+|Kravnivå | Valgfri/Optional
+|===
+
 ==== Offentlig tjeneste – har gebyr (cv:hasCost) [[OffentligTjeneste-har-gebyr]]
 
 [cols="30s,70d"]

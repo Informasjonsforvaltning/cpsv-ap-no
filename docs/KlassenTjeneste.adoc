@@ -390,8 +390,21 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===
 
-[[Tjeneste-har-gebyr]]
-==== Tjeneste – har gebyr (cv:hasCost)
+==== Tjeneste – har dokumentasjonstype (cv:hasInputType) [[Tjeneste-har-dokumentasjonstype]]
+
+[cols="30s,70d"]
+|===
+|English name|has input type
+|URI|cv:hasInputType
+|Range|cv:EvidenceType
+|Anvendelse| Egenskapen brukes til å knytte til tjenesten en eller flere dokumentasjonstyper.
+|Usage note| It links a Public Service to one or more instances of the EvidenceType class.
+|Multiplisitet|0..n
+|Kravnivå | Valgfri/Optional
+|===
+
+
+==== Tjeneste – har gebyr (cv:hasCost) [[Tjeneste-har-gebyr]]
 
 [cols="30s,70d"]
 |===
