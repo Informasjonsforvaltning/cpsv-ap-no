@@ -83,8 +83,6 @@ image::images/KlassenKontaktpunkt.png[alt="UML-diagram med klassen Kontaktpunkt,
 |Usage note| This property links a contact point to information about when the contact point is available, as structured data.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Se eksempler under <<Tidsenhet>>.
 |===
 
