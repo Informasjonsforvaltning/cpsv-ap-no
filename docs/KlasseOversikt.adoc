@@ -30,7 +30,6 @@ Følgende klasser er valgfrie:
 * <<Informasjonsbegrep>>
 * <<Informasjonskrav>>
 * <<Katalog>>
-* <<Konsesjonskontrakt>>
 * <<Krav>>
 * <<Kriterium>>
 * <<Livshendelse>>
@@ -40,6 +39,7 @@ Følgende klasser er valgfrie:
 * <<Tidsenhet>>
 * <<Tidsrom>>
 * <<Tjenestekanal>>
+* <<Tjenestekonsesjonskontrakt>>
 * <<UnderstøttendeOpplysning>>
 * <<Virksomhetshendelse>>
 

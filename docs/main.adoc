@@ -71,8 +71,6 @@ include::KlassenInformasjonskrav.adoc[]
 
 include::KlassenKatalog.adoc[]
 
-include::KlassenKonsesjonskontrakt.adoc[]
-
 include::KlassenKontaktpunkt.adoc[]
 
 include::KlassenKrav.adoc[]
@@ -100,6 +98,8 @@ include::KlassenTidsrom.adoc[]
 include::KlassenTjeneste.adoc[]
 
 include::KlassenTjenestekanal.adoc[]
+
+include::KlassenTjenestekonsesjonskontrakt.adoc[]
 
 include::KlassenTjenesteresultat.adoc[]
 
