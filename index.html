@@ -1096,7 +1096,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Tidsenhet">Klassen Tidsenhet (time:TempoeralEntity)</a></li>
+<li><a href="#Tidsenhet">Klassen Tidsenhet (time:TempoeralEntity)</a>
+<ul class="sectlevel2">
+<li><a href="#Tidsenhet-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tidsenhet</em></a>
+<ul class="sectlevel3">
+<li><a href="#Tidsenhet-beskrivelse">Tidsenhet – beskrivelse (dct:description)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#Tidsrom">Klassen Tidsrom (time:ProperInterval)</a>
 <ul class="sectlevel2">
 <li><a href="#Tidsrom-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tidsrom</em></a>
@@ -1302,7 +1310,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><strong>Status</strong>: <mark>under ferdigstilling (avventer ferdigstilling av EUs CPSV-AP som denne er basert på)</mark><br>
 <strong>Versjon</strong>: <mark>utkast til v.1.0</mark><br>
 <strong>Publisert</strong>: 2022-11-01<br>
-<strong>Oppdatert</strong>: 2022-12-12<br>
+<strong>Oppdatert</strong>: 2022-12-13<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
@@ -14571,8 +14579,97 @@ points.</p></td>
 <div class="sect1">
 <h2 id="Tidsenhet"><a class="anchor" href="#Tidsenhet"></a>Klassen Tidsenhet (time:TempoeralEntity)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>&lt;#kommer#&gt;</p>
+<div id="img-KlassenTidsenhet" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenTidsenhet.png"><img src="images/KlassenTidsenhet.png" alt="UML-diagram med klassen Tidsenhet og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
+</div>
+<div class="title">Figur 36. Klassen Tidsenhet (time:TempoeralEntity)</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">temporal entity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å beskrive et tidsinterval eller tidspunkt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This class represents a temporal interval or instant.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:TempoeralEntity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen inneholder nå to egenskaper som kan brukes til en enkel og tekstlig beskrivelse av en tidsenhet. For mer strukturert beskrivelse av tid kan modellen i Time Ontology brukes, se <a href="https://www.w3.org/TR/owl-time/#dtd-vs-dt">et eksempel</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The class contains now two properties that may be used for a simple and free text description of a temporal entity. For more structured data use the model in Time Ontology, see <a href="https://www.w3.org/TR/owl-time/#dtd-vs-dt">an example</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="Tidsenhet-anbefalte-egenskaper"><a class="anchor" href="#Tidsenhet-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Tidsenhet</em></h3>
+<div class="sect3">
+<h4 id="Tidsenhet-beskrivelse"><a class="anchor" href="#Tidsenhet-beskrivelse"></a>Tidsenhet – beskrivelse (dct:description)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">end time</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:hasEnd</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:dateTime</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi slutten på et tidsrom eller intervall.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the end of a period or interval.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -14583,7 +14680,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTidsrom.png"><img src="images/KlassenTidsrom.png" alt="UML-diagram med klassen Tidsrom og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 36. Klassen Tidsrom (time:ProperInterval)</div>
+<div class="title">Figur 37. Klassen Tidsrom (time:ProperInterval)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14774,7 +14871,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjeneste.png"><img src="images/KlassenTjeneste.png" alt="UML-diagram med klassen Tjeneste, dens egenskaper og dens relasjoner til 13 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 37. Klassen Tjeneste (cpsvno:Service)</div>
+<div class="title">Figur 38. Klassen Tjeneste (cpsvno:Service)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -16377,7 +16474,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjenestekanal.png"><img src="images/KlassenTjenestekanal.png" alt="UML-diagram med klassen Tjenestekanal, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 38. Klassen Tjenestekanal (cv:Channel)</div>
+<div class="title">Figur 39. Klassen Tjenestekanal (cv:Channel)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17107,7 +17204,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjenestekonsesjonskontrakt.png"><img src="images/KlassenTjenestekonsesjonskontrakt.png" alt="UML-diagram med klassen Konsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 39. Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContrac)</div>
+<div class="title">Figur 40. Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContrac)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17388,7 +17485,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjenesteresultat.png"><img src="images/KlassenTjenesteresultat.png" alt="UML-diagram med klassen Tjenesteresultat, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 40. Klassen Tjenesteresultat (cv:Output)</div>
+<div class="title">Figur 41. Klassen Tjenesteresultat (cv:Output)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17793,7 +17890,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenUnderstøttendeOpplysning.png"><img src="images/KlassenUnderstøttendeOpplysning.png" alt="UML-diagram med klassen Understøttende opplysning, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 41. Klassen Understøttende opplysning (cv:SupportedValue)</div>
+<div class="title">Figur 42. Klassen Understøttende opplysning (cv:SupportedValue)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17987,7 +18084,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenVirksomhetshendelse.png"><img src="images/KlassenVirksomhetshendelse.png" alt="UML-diagram med klassen Virksomhetshendelse, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 42. Klassen Virksomhetshendelse (cv:BusinessEvent)</div>
+<div class="title">Figur 43. Klassen Virksomhetshendelse (cv:BusinessEvent)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -18439,7 +18536,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-13 08:58:12 UTC
+Sist oppdatert 2022-12-13 09:02:45 UTC
 </div>
 </div>
 </body>
