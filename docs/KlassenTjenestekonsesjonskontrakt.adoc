@@ -1,4 +1,4 @@
-== Klassen Konsesjonskontrakt (cv:ServiceConcessionContract) [[Tjenestekonsesjonskontrakt]]
+== Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContract) [[Tjenestekonsesjonskontrakt]]
 
 [[img-KlassenKonsesjonskontrakt]]
 .Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContrac)
