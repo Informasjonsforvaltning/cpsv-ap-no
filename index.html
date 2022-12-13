@@ -852,24 +852,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Konsesjonskontrakt">Klassen Konsesjonskontrakt (epo:ConcessionContract)</a>
-<ul class="sectlevel2">
-<li><a href="#Konsesjonskontrakt-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Konsesjonskontrakt</em></a>
-<ul class="sectlevel3">
-<li><a href="#Konsesjonskontrakt-beskrivelse">Konsesjonskontrakt – beskrivelse (dct:description)</a></li>
-<li><a href="#Konsesjonskontrakt-identifikator">Konsesjonskontrakt – identifikator (dct:identifier)</a></li>
-<li><a href="#Konsesjonskontrakt-harLeverandør">Konsesjonskontrakt – har leverandør (cv:hasEconomicOperator)</a></li>
-<li><a href="#Konsesjonskontrakt-harOppdragsgiver">Konsesjonskontrakt – har oppdragsgiver (cv:hasContractingAuthority)</a></li>
-<li><a href="#Konsesjonskontrakt-navn">Konsesjonskontrakt – navn (dct:title)</a></li>
-</ul>
-</li>
-<li><a href="#Konsesjonskontrakt-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Konsesjonskontrakt</em></a>
-<ul class="sectlevel3">
-<li><a href="#Konsesjonskontrakt-erEtablertIHT">Konsesjonskontrakt – etablert i henhold til (cv:establishedUnder)</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li><a href="#Kontaktpunkt">Klassen Kontaktpunkt (cv:ContactPoint)</a>
 <ul class="sectlevel2">
 <li><a href="#Kontaktpunkt-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Kontaktpunkt</em></a>
@@ -1201,6 +1183,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#Tjenestekonsesjonskontrakt">Klassen Konsesjonskontrakt (cv:ServiceConcessionContract)</a>
+<ul class="sectlevel2">
+<li><a href="#Konsesjonskontrakt-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Konsesjonskontrakt</em></a>
+<ul class="sectlevel3">
+<li><a href="#Konsesjonskontrakt-beskrivelse">Konsesjonskontrakt – beskrivelse (dct:description)</a></li>
+<li><a href="#Konsesjonskontrakt-identifikator">Konsesjonskontrakt – identifikator (dct:identifier)</a></li>
+<li><a href="#Konsesjonskontrakt-harLeverandør">Konsesjonskontrakt – har leverandør (cv:hasEconomicOperator)</a></li>
+<li><a href="#Konsesjonskontrakt-harOppdragsgiver">Konsesjonskontrakt – har oppdragsgiver (cv:hasContractingAuthority)</a></li>
+<li><a href="#Konsesjonskontrakt-navn">Konsesjonskontrakt – navn (dct:title)</a></li>
+</ul>
+</li>
+<li><a href="#Konsesjonskontrakt-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Konsesjonskontrakt</em></a>
+<ul class="sectlevel3">
+<li><a href="#Konsesjonskontrakt-erEtablertIHT">Konsesjonskontrakt – etablert i henhold til (cv:establishedUnder)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#Tjenesteresultat">Klassen Tjenesteresultat (cv:Output)</a>
 <ul class="sectlevel2">
 <li><a href="#Tjenesteresultat-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Tjenesteresultat</em></a>
@@ -1457,11 +1457,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://eur-lex.europa.eu/eli-register/about.html">European Legislation Identifier</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>epo</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://data.europa.eu/a4g/ontology#</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/OP-TED/ePO">eProcurement Ontology (ePO)</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>foaf</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://xmlns.com/foaf/0.1/</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/0.1/">FOAF Vocabulary</a></p></td>
@@ -1531,7 +1526,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 @prefix dcatno: &lt;https://data.norge.no/vocabulary/dcatno#&gt; .
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
 @prefix eli: &lt;http://data.europa.eu/eli/ontology#&gt; .
-@prefix epo: &lt;http://data.europa.eu/a4g/ontology#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
 @prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .
 @prefix org: &lt;http://www.w3.org/ns/org#&gt; .
@@ -2050,9 +2044,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><a href="#Katalog"><em>Klassen Katalog (dcat:Catalog)</em></a></p>
 </li>
 <li>
-<p><a href="#Konsesjonskontrakt"><em>Klassen Konsesjonskontrakt (epo:ConcessionContract)</em></a></p>
-</li>
-<li>
 <p><a href="#Krav"><em>Klassen Krav (cv:Requirement)</em></a></p>
 </li>
 <li>
@@ -2078,6 +2069,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </li>
 <li>
 <p><a href="#Tjenestekanal"><em>Klassen Tjenestekanal (cv:Channel)</em></a></p>
+</li>
+<li>
+<p><a href="#Tjenestekonsesjonskontrakt"><em>Klassen Konsesjonskontrakt (cv:ServiceConcessionContract)</em></a></p>
 </li>
 <li>
 <p><a href="#UnderstøttendeOpplysning"><em>Klassen Understøttende opplysning (cv:SupportedValue)</em></a></p>
@@ -8550,349 +8544,13 @@ points.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Konsesjonskontrakt"><a class="anchor" href="#Konsesjonskontrakt"></a>Klassen Konsesjonskontrakt (epo:ConcessionContract)</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><mark>NB NB NB må sjekke hvordan klassen er definert i ePO, <a href="https://github.com/OP-TED/ePO" class="bare">https://github.com/OP-TED/ePO</a></mark></p>
-</div>
-<div id="img-KlassenKonsesjonskontrakt" class="imageblock">
-<div class="content">
-<a class="image" href="images/KlassenKonsesjonskontrakt.png"><img src="images/KlassenKonsesjonskontrakt.png" alt="UML-diagram med klassen Konsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
-</div>
-<div class="title">Figur 26. Klassen Konsesjonskontrakt (epo:ConcessionContract)</div>
-</div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Concession contract</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en konsesjonskontrakt.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This class represents a concession contact.</p>
-<p class="tableblock">Concessions are contracts for pecuniary interest by means of which one or more contracting authorities or contracting entities entrusts the execution of works, or the provision and the management of services, to one or more economic operators.</p>
-<p class="tableblock">The object of such contracts is the procurement of works or services by means of a concession, the consideration of which consists in the right to exploit the works or services or in that right together with payment. Such contracts may, but do not necessarily, involve a transfer of ownership to contracting authorities or contracting entities, but contracting authorities or contracting entities always obtain the benefits of the works or services in question. The definition comes from the Directive <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0023&amp;from=EN">2014/23/EU</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">epo:ConcessionContract</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / Subclass of</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-</tbody>
-</table>
-<div class="sect2">
-<h3 id="Konsesjonskontrakt-obligatoriske-egenskaper"><a class="anchor" href="#Konsesjonskontrakt-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Konsesjonskontrakt</em></h3>
-<div class="sect3">
-<h4 id="Konsesjonskontrakt-beskrivelse"><a class="anchor" href="#Konsesjonskontrakt-beskrivelse"></a>Konsesjonskontrakt – beskrivelse (dct:description)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en fritekst beskrivelse av konsesjonskontrakten. Egenskap bør gjentas når beskrivelsen er på flere språk.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a free text description of the Concession Contract, repeated when the description is in parallel languages.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="Konsesjonskontrakt-identifikator"><a class="anchor" href="#Konsesjonskontrakt-identifikator"></a>Konsesjonskontrakt – identifikator (dct:identifier)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi identifikatoren til konsesjonskontrakten.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents an Identifier for the Concession Contract.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="Konsesjonskontrakt-harLeverandør"><a class="anchor" href="#Konsesjonskontrakt-harLeverandør"></a>Konsesjonskontrakt – har leverandør (cv:hasEconomicOperator)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">has economic operator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasEconomicOperator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til leverandøren som er ansvarlig for levering og forvaltning av tjenestene.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the Economic Operator in charge for the provision and the management of the services.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="Konsesjonskontrakt-harOppdragsgiver"><a class="anchor" href="#Konsesjonskontrakt-harOppdragsgiver"></a>Konsesjonskontrakt – har oppdragsgiver (cv:hasContractingAuthority)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">has contracting authority</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasContractingAuthority</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganisation</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til oppdragsgiveren som til syvende og sist er ansvarlig for en tjeneste.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the Contracting Authority which is ultimately responsible for a service.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="Konsesjonskontrakt-navn"><a class="anchor" href="#Konsesjonskontrakt-navn"></a>Konsesjonskontrakt – navn (dct:title)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">name</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet til kontrakten. Egenskapen bør gjentas når navnet er på flere språk.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the name of the contract, repeated when the name is in parallel languages.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="Konsesjonskontrakt-valgfrie-egenskaper"><a class="anchor" href="#Konsesjonskontrakt-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Konsesjonskontrakt</em></h3>
-<div class="sect3">
-<h4 id="Konsesjonskontrakt-erEtablertIHT"><a class="anchor" href="#Konsesjonskontrakt-erEtablertIHT"></a>Konsesjonskontrakt – etablert i henhold til (cv:establishedUnder)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">established under</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:establishedUnder</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til relevant lovgivning eller policydokumenter (regulativ ressurs) som kontrakten er etablert under.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to relevant legislation or policy documents i.e. the Legal Resource under which the Concession Contracts are being defined.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP v.3.1, men i v.3.0.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP v.3.1, but in v.3.0.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="Kontaktpunkt"><a class="anchor" href="#Kontaktpunkt"></a>Klassen Kontaktpunkt (cv:ContactPoint)</h2>
 <div class="sectionbody">
 <div id="img-KlassenKontaktpunkt" class="imageblock">
 <div class="content">
 <a class="image" href="images/KlassenKontaktpunkt.png"><img src="images/KlassenKontaktpunkt.png" alt="UML-diagram med klassen Kontaktpunkt, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 27. Klassen Kontaktpunkt (cv:ContactPoint)</div>
+<div class="title">Figur 26. Klassen Kontaktpunkt (cv:ContactPoint)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -9246,7 +8904,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenKrav.png"><img src="images/KlassenKrav.png" alt="UML-diagram med klassen Krav, dens egenskaper og dens relasjoner til seks andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 28. Klassen Krav (cv:Requirement)</div>
+<div class="title">Figur 27. Klassen Krav (cv:Requirement)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -9889,7 +9547,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenKriterium.png"><img src="images/KlassenKriterium.png" alt="UML-diagram med klassen Kriterium, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 29. Klassen Kriterium (cv:Criterion)</div>
+<div class="title">Figur 28. Klassen Kriterium (cv:Criterion)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -10730,7 +10388,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenLivshendelse.png"><img src="images/KlassenLivshendelse.png" alt="UML-diagram med klassen Livshendelse, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 30. Klassen Livshendelse (cv:LifeEvent)</div>
+<div class="title">Figur 29. Klassen Livshendelse (cv:LifeEvent)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -11189,7 +10847,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenOffentligOrganisasjon.png"><img src="images/KlassenOffentligOrganisasjon.png" alt="UML-diagram med klassen Offentlig organisasjon, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 31. Klassen Offentlig organisasjon (cv:PublicOrganisation)</div>
+<div class="title">Figur 30. Klassen Offentlig organisasjon (cv:PublicOrganisation)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -11744,7 +11402,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenOffentligTjeneste.png"><img src="images/KlassenOffentligTjeneste.png" alt="UML-diagram med klassen Offentlig tjeneste, dens egenskaper og dens relasjoner til 14 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 32. Klassen Offentlig tjeneste (cpsv:PublicService)</div>
+<div class="title">Figur 31. Klassen Offentlig tjeneste (cpsv:PublicService)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -13529,7 +13187,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenOrganisasjon.png"><img src="images/KlassenOrganisasjon.png" alt="UML-diagram med klassen Organisasjon, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 33. Klassen Organisasjon (org:Organization)</div>
+<div class="title">Figur 32. Klassen Organisasjon (org:Organization)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14068,7 +13726,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenReferanserammeverk.png"><img src="images/KlassenReferanserammeverk.png" alt="UML-diagram med klassen Referanserammeverk og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 34. Klassen Referanserammeverk (cv:ReferenceFramework)</div>
+<div class="title">Figur 33. Klassen Referanserammeverk (cv:ReferenceFramework)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14172,7 +13830,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenRegel.png"><img src="images/KlassenRegel.png" alt="UML-diagram med klassen Regel, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 35. Klassen Regel (cv:Rule)</div>
+<div class="title">Figur 34. Klassen Regel (cv:Rule)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14502,7 +14160,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenRegulativRessurs.png"><img src="images/KlassenRegulativRessurs.png" alt="UML-diagram med klassen Regulativ ressurs og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 36. Klassen Regulativ ressurs (eli:LegealResource)</div>
+<div class="title">Figur 35. Klassen Regulativ ressurs (eli:LegealResource)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14925,7 +14583,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTidsrom.png"><img src="images/KlassenTidsrom.png" alt="UML-diagram med klassen Tidsrom og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 37. Klassen Tidsrom (time:ProperInterval)</div>
+<div class="title">Figur 36. Klassen Tidsrom (time:ProperInterval)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -15116,7 +14774,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjeneste.png"><img src="images/KlassenTjeneste.png" alt="UML-diagram med klassen Tjeneste, dens egenskaper og dens relasjoner til 13 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 38. Klassen Tjeneste (cpsvno:Service)</div>
+<div class="title">Figur 37. Klassen Tjeneste (cpsvno:Service)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -16719,7 +16377,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjenestekanal.png"><img src="images/KlassenTjenestekanal.png" alt="UML-diagram med klassen Tjenestekanal, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 39. Klassen Tjenestekanal (cv:Channel)</div>
+<div class="title">Figur 38. Klassen Tjenestekanal (cv:Channel)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17438,6 +17096,287 @@ points.</p></td>
 <div class="paragraph">
 <p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Tjenestekonsesjonskontrakt"><a class="anchor" href="#Tjenestekonsesjonskontrakt"></a>Klassen Konsesjonskontrakt (cv:ServiceConcessionContract)</h2>
+<div class="sectionbody">
+<div id="img-KlassenKonsesjonskontrakt" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenTjenestekonsesjonskontrakt.png"><img src="images/KlassenTjenestekonsesjonskontrakt.png" alt="UML-diagram med klassen Konsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
+</div>
+<div class="title">Figur 39. Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContrac)</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Concession contract</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en tjenstekonsesjonskontrakt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This class represents a service concession contact.</p>
+<p class="tableblock">Concessions are contracts for pecuniary interest by means of which one or more contracting authorities or contracting entities entrusts the execution of works, or the provision and the management of services, to one or more economic operators.</p>
+<p class="tableblock">The object of such contracts is the procurement of works or services by means of a concession, the consideration of which consists in the right to exploit the works or services or in that right together with payment. Such contracts may, but do not necessarily, involve a transfer of ownership to contracting authorities or contracting entities, but contracting authorities or contracting entities always obtain the benefits of the works or services in question. The definition comes from the Directive <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0023&amp;from=EN">2014/23/EU</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ServiceConcessionContract</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="Konsesjonskontrakt-obligatoriske-egenskaper"><a class="anchor" href="#Konsesjonskontrakt-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Konsesjonskontrakt</em></h3>
+<div class="sect3">
+<h4 id="Konsesjonskontrakt-beskrivelse"><a class="anchor" href="#Konsesjonskontrakt-beskrivelse"></a>Konsesjonskontrakt – beskrivelse (dct:description)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en fritekst beskrivelse av konsesjonskontrakten. Egenskap bør gjentas når beskrivelsen er på flere språk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents a free text description of the Concession Contract, repeated when the description is in parallel languages.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Konsesjonskontrakt-identifikator"><a class="anchor" href="#Konsesjonskontrakt-identifikator"></a>Konsesjonskontrakt – identifikator (dct:identifier)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi identifikatoren til konsesjonskontrakten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents an Identifier for the Concession Contract.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Konsesjonskontrakt-harLeverandør"><a class="anchor" href="#Konsesjonskontrakt-harLeverandør"></a>Konsesjonskontrakt – har leverandør (cv:hasEconomicOperator)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has economic operator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasEconomicOperator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til leverandøren som er ansvarlig for levering og forvaltning av tjenestene.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the Economic Operator in charge for the provision and the management of the services.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Konsesjonskontrakt-harOppdragsgiver"><a class="anchor" href="#Konsesjonskontrakt-harOppdragsgiver"></a>Konsesjonskontrakt – har oppdragsgiver (cv:hasContractingAuthority)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has contracting authority</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasContractingAuthority</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganisation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til oppdragsgiveren som til syvende og sist er ansvarlig for en tjeneste.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to the Contracting Authority which is ultimately responsible for a service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Konsesjonskontrakt-navn"><a class="anchor" href="#Konsesjonskontrakt-navn"></a>Konsesjonskontrakt – navn (dct:title)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet til kontrakten. Egenskapen bør gjentas når navnet er på flere språk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the name of the contract, repeated when the name is in parallel languages.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Konsesjonskontrakt-valgfrie-egenskaper"><a class="anchor" href="#Konsesjonskontrakt-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Konsesjonskontrakt</em></h3>
+<div class="sect3">
+<h4 id="Konsesjonskontrakt-erEtablertIHT"><a class="anchor" href="#Konsesjonskontrakt-erEtablertIHT"></a>Konsesjonskontrakt – etablert i henhold til (cv:establishedUnder)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">established under</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:establishedUnder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til relevant lovgivning eller policydokumenter (regulativ ressurs) som kontrakten er etablert under.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property refers to relevant legislation or policy documents i.e. the Legal Resource under which the Concession Contracts are being defined.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -18500,7 +18439,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-12 15:11:44 UTC
+Sist oppdatert 2022-12-13 08:58:12 UTC
 </div>
 </div>
 </body>
