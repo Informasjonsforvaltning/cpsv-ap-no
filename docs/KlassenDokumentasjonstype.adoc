@@ -45,6 +45,8 @@ Eksempel i RDF Turtle: Se under <<Å-beskrive-dokumentasjonskrav>>.
 |Usage note| This property represents the category to which the Evidence Type belongs.
 |Multiplisitet| 0..n
 |Kravnivå| Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+|Remark  | Norwegian extension: Requirement level changed from optional to recommended. 
 |===
 
 === Valgfrie egenskaper for klassen _Dokumentasjonstype_ [[Dokumentasjonstype-valgfrie-egenskaper]]
