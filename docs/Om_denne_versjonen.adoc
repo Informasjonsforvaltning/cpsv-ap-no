@@ -2,4 +2,4 @@
 
 Dette er et #utkast# til v.1.0 av CPSV-AP-NO. Utkastet har vært ute til uformell kommentering (frist 28. okt. 2022). Innspillene fra/etter kommenteringsrunden er (løpende) innarbeidet i denne versjonen.
 
-Spesifikasjonen CPSV-AP-NO er basert på EUs CPSV-AP. EU har plan om å ferdigstille neste release av CSPV-AP innen utgangen av november 2022. Vi avventer derfor ferdigstilling av denne spesifikasjonen til EU er ferdig med sin CPSV-AP, slik at vår CPSV-AP-NO blir mest mulig i samsvar med CPSV-AP fra EU.
+Spesifikasjonen CPSV-AP-NO er basert på EUs CPSV-AP. EUs CSPV-AP v.3.1 er i skrivende stund under Public Review (frist 12. januar 2023). EU har plan om å publisere den endelige versjon av CPSV-AP 3.1 i løpet av Q1 2023. Vi avventer derfor ferdigstilling av denne spesifikasjonen til EU er ferdig med sin CPSV-AP, slik at vår CPSV-AP-NO blir mest mulig i samsvar med CPSV-AP fra EU.
