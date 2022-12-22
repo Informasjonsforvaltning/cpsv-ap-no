@@ -230,6 +230,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>
    rdf:type cv:ContactPoint;
+   schema:contactType "Brukerstøtte"@nb , "Brukarstøtte"@nn , "User support"@en ;
    schema:hoursAvailable <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exApningstidResepsjon.ttl>;
    cv:ContactPage <https://www.bronnoy.kommune.no/>;
    cv:email "mailto:postmottak@bronnoy.kommune.no"^^xsd:anyURI;
