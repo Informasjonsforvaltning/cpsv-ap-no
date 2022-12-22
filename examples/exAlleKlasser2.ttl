@@ -333,7 +333,9 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dcat:keyword """Alminnelig bevilling, Bevilling for lukket selskap, Vandel, Skjenkeansvarlig, Nattklubb, Alkoholservering, Skjenkebevilling, Bar"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Nightclub, Alcohol serving, General license, License for closed events, Good conduct, Manager of the bar, Nightclub, Alcohol serving, Liquor license, Bar, Bar"""@en;
-   cv:hasLegalResource <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessurs.ttl>;
+   cv:hasLegalResource  <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessurs.ttl> ,
+                        <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursForvaltningslov.ttl> ,
+                        <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl> ;
    dct:relation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
