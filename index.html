@@ -1097,11 +1097,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Tidsenhet">Klassen Tidsenhet (time:TempoeralEntity)</a>
+<li><a href="#Tidsenhet">Klassen Tidsenhet (time:TemporalEntity)</a>
 <ul class="sectlevel2">
 <li><a href="#Tidsenhet-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tidsenhet</em></a>
 <ul class="sectlevel3">
+<li><a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a></li>
+<li><a href="#Tidsenhet-starttidspunkt">Tidsenhet – starttidspunkt (time:hasBeginning)</a></li>
+</ul>
+</li>
+<li><a href="#Tidsenhet-valgfri-egenskaper">Valgfri egenskaper for klassen <em>Tidsenhet</em></a>
+<ul class="sectlevel3">
 <li><a href="#Tidsenhet-beskrivelse">Tidsenhet – beskrivelse (dct:description)</a></li>
+<li><a href="#Tidsenhet-beskrivelse">Tidsenhet – frekvens (cv:frequency)</a></li>
 </ul>
 </li>
 </ul>
@@ -2072,7 +2079,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><a href="#RegulativRessurs"><em>Klassen Regulativ ressurs (eli:LegalResource)</em></a></p>
 </li>
 <li>
-<p><a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a></p>
+<p><a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TemporalEntity)</em></a></p>
 </li>
 <li>
 <p><a href="#Tidsrom"><em>Klassen Tidsrom (time:ProperInterval)</em></a></p>
@@ -8810,12 +8817,12 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TemporalEntity)</em></a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TemporalEntity)</em></a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -14618,13 +14625,13 @@ points.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Tidsenhet"><a class="anchor" href="#Tidsenhet"></a>Klassen Tidsenhet (time:TempoeralEntity)</h2>
+<h2 id="Tidsenhet"><a class="anchor" href="#Tidsenhet"></a>Klassen Tidsenhet (time:TemporalEntity)</h2>
 <div class="sectionbody">
 <div id="img-KlassenTidsenhet" class="imageblock">
 <div class="content">
 <a class="image" href="images/KlassenTidsenhet.png"><img src="images/KlassenTidsenhet.png" alt="UML-diagram med klassen Tidsenhet og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 36. Klassen Tidsenhet (time:TempoeralEntity)</div>
+<div class="title">Figur 36. Klassen Tidsenhet (time:TemporalEntity)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14665,7 +14672,7 @@ points.</p></td>
 <div class="sect2">
 <h3 id="Tidsenhet-anbefalte-egenskaper"><a class="anchor" href="#Tidsenhet-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Tidsenhet</em></h3>
 <div class="sect3">
-<h4 id="Tidsenhet-beskrivelse"><a class="anchor" href="#Tidsenhet-beskrivelse"></a>Tidsenhet – beskrivelse (dct:description)</h4>
+<h4 id="Tidsenhet-sluttidspunkt"><a class="anchor" href="#Tidsenhet-sluttidspunkt"></a>Tidsenhet – sluttidspunkt (time:hasEnd)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -14682,7 +14689,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:dateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:Instant</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -14707,6 +14714,142 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Tidsenhet-starttidspunkt"><a class="anchor" href="#Tidsenhet-starttidspunkt"></a>Tidsenhet – starttidspunkt (time:hasBeginning)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">start time</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:hasBeginning</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:Instant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi begynnelsen på en tidsenhet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property represents the beginning of a temporal entity.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Tidsenhet-valgfri-egenskaper"><a class="anchor" href="#Tidsenhet-valgfri-egenskaper"></a>Valgfri egenskaper for klassen <em>Tidsenhet</em></h3>
+<div class="sect3">
+<h4 id="Tidsenhet-beskrivelse"><a class="anchor" href="#Tidsenhet-beskrivelse"></a>Tidsenhet – beskrivelse (dct:description)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi tekstlig beskrivelse av tidsenheten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify a textual description of the temporal entity.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Tidsenhet-beskrivelse"><a class="anchor" href="#Tidsenhet-beskrivelse"></a>Tidsenhet – frekvens (cv:frequency)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">frequency</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:frequency</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi gjentagelse av tidsenheten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the recurrence of an instant or period.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra EUs kontrollerte vokabular for <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency">frekvens</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value should be chosen from EUs controlled vocabulary for <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency">frequency</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -16735,12 +16878,12 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TemporalEntity)</em></a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TemporalEntity)</em></a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -17266,12 +17409,12 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempler under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TemporalEntity)</em></a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TempoeralEntity)</em></a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TemporalEntity)</em></a>.</p>
 </div>
 </div>
 </div>
@@ -18616,7 +18759,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-01-03 17:29:16 UTC
+Sist oppdatert 2023-01-03 18:46:06 UTC
 </div>
 </div>
 </body>
