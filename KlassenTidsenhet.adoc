@@ -12,8 +12,8 @@ image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og den
 |Usage note| This class represents a temporal interval or instant.
 |URI| time:TemporalEntity
 |Kravnivå | Valgfri/Optional
-|Merknad | Klassen inneholder nå to egenskaper som kan brukes til en enkel og tekstlig beskrivelse av en tidsenhet. For mer strukturert beskrivelse av tid kan modellen i Time Ontology brukes, se https://www.w3.org/TR/owl-time/#dtd-vs-dt[et eksempel]. 
-|Remark | The class contains now two properties that may be used for a simple and free text description of a temporal entity. For more structured data use the model in Time Ontology, see https://www.w3.org/TR/owl-time/#dtd-vs-dt[an example].
+|Merknad | Klassen inneholder nå noen egenskaper som kan brukes til en enkel beskrivelse av en tidsenhet. For mer strukturert beskrivelse av tid kan modellen i Time Ontology brukes, se https://www.w3.org/TR/owl-time/#dtd-vs-dt[et eksempel]. 
+|Remark | The class contains now some properties that may be used for a simple description of a temporal entity. For more structured data use the model in Time Ontology, see https://www.w3.org/TR/owl-time/#dtd-vs-dt[an example].
 |===
 
 === Anbefalte egenskaper for klassen _Tidsenhet_ [[Tidsenhet-anbefalte-egenskaper]]
@@ -24,8 +24,8 @@ image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og den
 |English name | end time
 |URI| time:hasEnd
 |Range| time:Instant
-|Anvendelse | Egenskapen brukes til å oppgi slutten på et tidsrom eller intervall.
-|Usage note | This property represents the end of a period or interval.
+|Anvendelse | Egenskapen brukes til å oppgi slutten på en tidsenhet.
+|Usage note | This property represents the end of a temporal entity.
 |Multiplisitet| 0..1
 |Kravnivå | Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -68,19 +68,19 @@ image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og den
 |English name | description
 |URI| dct:description
 |Range| rdf:langString
-|Anvendelse | Egenskapen brukes til å oppgi tekstlig beskrivelse av tidsenheten.
-|Usage note | This property is used to specify a textual description of the temporal entity.
+|Anvendelse | Egenskapen brukes til å oppgi en tekstlig beskrivelse av tidsenheten. Egenskapen bør gjentas når beskrivelsen er på flere språk.  
+|Usage note | This property is used to specify a textual description of the temporal entity, repeated when the description is in several languages.
 |Multiplisitet| 0..n
 |Kravnivå | Anbefalt/Recommended
 |===
 
-==== Tidsenhet – frekvens (cv:frequency) [[Tidsenhet-beskrivelse]]
+==== Tidsenhet – frekvens (cv:frequency) [[Tidsenhet-frekverns]]
 [cols="30s,70d"]
 |===
 |English name | frequency
 |URI| cv:frequency
 |Range| skos:Concept
-|Anvendelse | Egenskapen brukes til å oppgi gjentagelse av tidsenheten.
+|Anvendelse | Egenskapen brukes til å oppgi frekvens av tidsenheten.
 |Usage note | This property is used to specify the recurrence of an instant or period.
 |Multiplisitet| 0..n
 |Kravnivå | Valgfri/Optional
