@@ -1,9 +1,9 @@
 == Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContract) [[Tjenestekonsesjonskontrakt]]
 
-[[img-KlassenKonsesjonskontrakt]]
+[[img-KlassenTjenestekonsesjonskontrakt]]
 .Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContrac)
 [link=images/KlassenTjenestekonsesjonskontrakt.png]
-image::images/KlassenTjenestekonsesjonskontrakt.png[alt="UML-diagram med klassen Konsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenTjenestekonsesjonskontrakt.png[alt="UML-diagram med klassen Tjenestekonsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
@@ -18,35 +18,35 @@ The object of such contracts is the procurement of works or services by means of
 |Kravnivå| Valgfri/Optional
 |===
 
-=== Obligatoriske egenskaper for klassen _Konsesjonskontrakt_ [[Konsesjonskontrakt-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Tjenestekonsesjonskontrakt_ [[Tjenestekonsesjonskontrakt-obligatoriske-egenskaper]]
 
-==== Konsesjonskontrakt – beskrivelse (dct:description) [[Konsesjonskontrakt-beskrivelse]]
+==== Tjenestekonsesjonskontrakt – beskrivelse (dct:description) [[Tjenestekonsesjonskontrakt-beskrivelse]]
 
 [cols="30s,70d"]
 |===
 |English name|description
 |URI|dct:description
 |Range|rdf:langString
-|Anvendelse|Egenskapen brukes til å oppgi en fritekst beskrivelse av konsesjonskontrakten. Egenskap bør gjentas når beskrivelsen er på flere språk.
-|Usage note|This property represents a free text description of the Concession Contract, repeated when the description is in parallel languages.
+|Anvendelse|Egenskapen brukes til å oppgi en fritekst beskrivelse av tjenestekonsesjonskontrakten. Egenskap bør gjentas når beskrivelsen er på flere språk.
+|Usage note|This property represents a free text description of the service concession contract, repeated when the description is in parallel languages.
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
 |===
 
-==== Konsesjonskontrakt – identifikator (dct:identifier) [[Konsesjonskontrakt-identifikator]]
+==== Tjenestekonsesjonskontrakt – identifikator (dct:identifier) [[Tjenestekonsesjonskontrakt-identifikator]]
 
 [cols="30s,70d"]
 |===
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Anvendelse|Egenskapen brukes til å oppgi identifikatoren til konsesjonskontrakten.
-|Usage note|This property represents an Identifier for the Concession Contract.
+|Anvendelse|Egenskapen brukes til å oppgi identifikatoren til tjenestekonsesjonskontrakten.
+|Usage note|This property represents an Identifier for the service concession contract.
 |Multiplisitet|1..1
 |Kravnivå|Obligatorisk/Mandatory
 |===
 
-==== Konsesjonskontrakt – har leverandør (cv:hasEconomicOperator) [[Konsesjonskontrakt-harLeverandør]]
+==== Tjenestekonsesjonskontrakt – har leverandør (cv:hasEconomicOperator) [[Tjenestekonsesjonskontrakt-harLeverandør]]
 
 [cols="30s,70d"]
 |===
@@ -59,7 +59,7 @@ The object of such contracts is the procurement of works or services by means of
 |Kravnivå|Obligatorisk/Mandatory
 |===
 
-==== Konsesjonskontrakt – har oppdragsgiver (cv:hasContractingAuthority) [[Konsesjonskontrakt-harOppdragsgiver]]
+==== Tjenestekonsesjonskontrakt – har oppdragsgiver (cv:hasContractingAuthority) [[Tjenestekonsesjonskontrakt-harOppdragsgiver]]
 
 [cols="30s,70d"]
 |===
@@ -72,7 +72,7 @@ The object of such contracts is the procurement of works or services by means of
 |Kravnivå|Obligatorisk/Mandatory
 |===
 
-==== Konsesjonskontrakt – navn (dct:title) [[Konsesjonskontrakt-navn]]
+==== Tjenestekonsesjonskontrakt – navn (dct:title) [[Tjenestekonsesjonskontrakt-navn]]
 
 [cols="30s,70d"]
 |===
@@ -85,9 +85,9 @@ The object of such contracts is the procurement of works or services by means of
 |Kravnivå|Obligatorisk/Mandatory
 |===
 
-=== Valgfrie egenskaper for klassen _Konsesjonskontrakt_ [[Konsesjonskontrakt-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Tjenestekonsesjonskontrakt_ [[Tjenestekonsesjonskontrakt-valgfrie-egenskaper]]
 
-==== Konsesjonskontrakt – etablert i henhold til (cv:establishedUnder) [[Konsesjonskontrakt-erEtablertIHT]]
+==== Tjenestekonsesjonskontrakt – etablert i henhold til (cv:establishedUnder) [[Tjenestekonsesjonskontrakt-erEtablertIHT]]
 
 [cols="30s,70d"]
 |===
@@ -95,7 +95,7 @@ The object of such contracts is the procurement of works or services by means of
 |URI|cv:establishedUnder
 |Range|eli:LegalResource
 |Anvendelse| Egenskapen brukes til å referere til relevant lovgivning eller policydokumenter (regulativ ressurs) som kontrakten er etablert under.
-|Usage note|This property refers to relevant legislation or policy documents i.e. the Legal Resource under which the Concession Contracts are being defined.
+|Usage note|This property refers to relevant legislation or policy documents i.e. the Legal Resource under which the service concession contracts are being defined.
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |===
