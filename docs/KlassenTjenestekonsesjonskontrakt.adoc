@@ -7,7 +7,7 @@ image::images/KlassenTjenestekonsesjonskontrakt.png[alt="UML-diagram med klassen
 
 [cols="30s,70d"]
 |===
-|English name|  Concession contract
+|English name|  Service concession contract
 |Anvendelse| Klassen brukes til å representere en tjenstekonsesjonskontrakt.
 |Usage note|This class represents a service concession contact.
 
