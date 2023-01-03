@@ -253,7 +253,7 @@ Eksempel i RDF Turtle:
 [cols="30s,70d"]
 |===
 |English name|opening hours as structured data
-|URI|schema:hoursAvailable
+|URI|cv:openingHours
 |Range| time:TemporalEntity
 |Anvendelse| Egenskapen brukes  til å oppgi detaljer om åpningstid, som strukturert data.
 |Usage note| This property specifies in detail and as structured data when the channel is available.
