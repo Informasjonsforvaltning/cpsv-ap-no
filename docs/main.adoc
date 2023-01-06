@@ -25,7 +25,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Status*: #under ferdigstilling (avventer ferdigstilling av EUs CPSV-AP som denne er basert på)# +
 *Versjon*: #utkast til v.1.0# +
 *Publisert*: 2022-11-01 +
-*Oppdatert*: 2023-01-04 +
+*Oppdatert*: 2023-01-06 +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
@@ -92,6 +92,10 @@ include::KlassenRegel.adoc[]
 include::KlassenRegulativRessurs.adoc[]
 
 include::KlassenTidsenhet.adoc[]
+
+include::KlassenTidspunkt.adoc[]
+
+include::KlassenTidspunktspesifikasjon.adoc[]
 
 include::KlassenTidsrom.adoc[]
 

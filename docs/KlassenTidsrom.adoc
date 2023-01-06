@@ -7,13 +7,14 @@ image::images/KlassenTidsrom.png[alt="UML-diagram med klassen Tidsrom og dens eg
 
 [cols="30s,70d"]
 |===
-|English name| proper interval
-|Anvendelse| Klassen brukes til å beskrive et tidsrom eller intervall.
-|Usage note| This class  represents a period of time of interval.
+|English name| Proper interval
+|Anvendelse| Klassen brukes til å beskrive et tidsrom eller intervall, der verdien til <<Tidsrom-sluttidspunkt>> er forskjellig fra verdien til <<Tidsrom-starttidspunkt>>, og/eller der <<Tidsrom-tidsrom>> har fått verdi. 
+|Usage note| This class  represents a period or time of interval, where the value of the start time and end time properties should be different, and/or a duration should be given.
 |URI| time:ProperInterval
+|Subklasse av / Subclass of | time:TemporalEntity
 |Kravnivå | Valgfri/Optional
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men brukes som range av en egenskap (fra CCCEV) som vi har føyet til.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but used as range of a property (from CCCEV) that we have added.
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.
 |===
 
 === Anbefalte egenskaper for klassen _Tidsrom_ [[Tidsrom-anbefalte-egenskaper]]
@@ -23,13 +24,15 @@ image::images/KlassenTidsrom.png[alt="UML-diagram med klassen Tidsrom og dens eg
 |===
 |English name | end time
 |URI| time:hasEnd
-|Range| xsd:dateTime
+|Range| time:Instant
 |Anvendelse | Egenskapen brukes til å oppgi slutten på et tidsrom eller intervall.
 |Usage note | This property represents the end of a period or interval.
 |Multiplisitet| 0..1
 |Kravnivå | Anbefalt/Recommended
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Merknad 1 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.
+|Remark 1 | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.
+|Merknad 2 | Norsk utvidelse: Range er endret fra xsd:dateTime til time:Instant som er i samsvar med spesifikasjonen i Time Ontology in OWL. 
+|Remark 2 | Norwegian extension: Range is changed from xsd:dateTime to time:Instant which is in accordance with the specification in Time Ontology in OWL. 
 |===
 
 ==== Tidsrom – starttidspunkt (time:hasBeginning) [[Tidsrom-starttidspunkt]]
@@ -37,13 +40,14 @@ image::images/KlassenTidsrom.png[alt="UML-diagram med klassen Tidsrom og dens eg
 |===
 |English name | start time
 |URI| time:hasBeginning
-|Range| xsd:dateTime
+|Range| time:Instant
 |Anvendelse | Egenskapen brukes til å oppgi begynnelsen på et tidsrom eller intervall.
 |Usage note | This property represents the beginning of a period or interval.
 |Multiplisitet| 0..1
 |Kravnivå | Anbefalt/Recommended
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 1 | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.
+|Merknad 2 | Norsk utvidelse: Range er endret fra xsd:dateTime til time:Instant som er i samsvar med spesifikasjonen i Time Ontology in OWL. 
+|Remark 2 | Norwegian extension: Range is changed from xsd:dateTime to time:Instant which is in accordance with the specification in Time Ontology in OWL. 
 |===
 
 ==== Tidsrom – tidsrom (time:hasXSDDuration) [[Tidsrom-tidsrom]]
@@ -56,6 +60,6 @@ image::images/KlassenTidsrom.png[alt="UML-diagram med klassen Tidsrom og dens eg
 |Usage note | This property represents a period or interval.
 |Multiplisitet| 0..1
 |Kravnivå | Anbefalt/Recommended
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.
 |===

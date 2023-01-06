@@ -14,6 +14,7 @@ Navnerom for dette vokabularet er: `\https://data.norge.no/vocabulary/cpsvno#`
 |dct | `\http://purl.org/dc/terms/` | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
 |eli | `\http://data.europa.eu/eli/ontology#` | https://eur-lex.europa.eu/eli-register/about.html[European Legislation Identifier]
 |foaf | `\http://xmlns.com/foaf/0.1/` | http://xmlns.com/foaf/0.1/[FOAF Vocabulary]
+|foaf | `http://www.w3.org/ns/time/gregorian#` | Navnerom for verdiene relatert til det gregorianske kalendersystemet.
 |locn | `\http://www.w3.org/ns/locn#` | https://www.w3.org/ns/locn[ISA Programme Location Core Vocabulary]
 |org | `\http://www.w3.org/ns/org#` | https://www.w3.org/TR/vocab-org/[The Organization Ontology]
 |rdf | `\http://www.w3.org/1999/02/22-rdf-syntax-ns#` | https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
@@ -37,6 +38,7 @@ Eksempel på prefiksene ovenfor uttrykt i RDF Turtle:
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix greg: <http://www.w3.org/ns/time/gregorian#> . 
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
