@@ -37,6 +37,8 @@ Følgende klasser er valgfrie:
 * <<Regel>>
 * <<RegulativRessurs>>
 * <<Tidsenhet>>
+* <<Tidspunkt>>
+* <<Tidspunktspesifikasjon>>
 * <<Tidsrom>>
 * <<Tjenestekanal>>
 * <<Tjenestekonsesjonskontrakt>>

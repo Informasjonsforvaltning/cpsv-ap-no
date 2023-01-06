@@ -1,0 +1,289 @@
+== Klassen Tidspunktspesifikasjon (time:DateTimeDescription) [[Tidspunktspesifikasjon]]
+
+[[img-Tidspunktspesifikasjon]]
+.Klassen Tidspunktspesifikasjon (time:DateTimeDescription)
+[link=images/KlassenTidspunktspesifikasjon.png]
+image::images/KlassenTidspunktspesifikasjon.png[alt="UML-diagram med klassen Tidspunktspesifikasjon og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+
+[cols="30s,70d"]
+|===
+|English name| Date time description
+|Anvendelse| Klassen brukes til å representere et tidspunkt, strukturert med separate verdier for de ulike elementene i det gregorianske klander-klokkesystemet.
+|Usage note| This class represents a description of date and time structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of year, month, day properties restricted to corresponding XML Schema types xsd:gYear, xsd:gMonth and xsd:gDay, respectively.
+|URI| time:DateTimeDescription
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+|===
+
+=== Obligatoriske egenskaper for klassen _Tidspunktspesifikasjon_ [[Tidspunktspesifikasjon-obligatoriske-egenskaper]]
+
+==== Tidspunktspesifikasjon – enhetstype (time:unitType) [[Tidspunktspesifikasjon-enhetstype]]
+
+[cols="30s,70d"]
+|===
+|English name | unit type
+|URI| time:unitType
+|Range| time:TemporalUnit
+|Anvendelse | Egenskapen brukes til å oppgi enhetstypen (presisjonen) for tidspunktet.
+|Usage note | This property is used to specify the temporal unit which provides the precision of a date-time value or scale of a temporal extent.
+|Multiplisitet| 1..1
+|Kravnivå | Obligatorisk/Mandatory
+|Merknad 1 | Verdien skal være en av følgende: time:unitCentury, time:unitDay, time:unitDecade, time:unitHour, time:unitMillenium, time:unitMinute, time:unitMonth, time:unitSecond, time:unitWeek, time:unitYear.
+|Remark 1 | The value shall be one of the following: time:unitCentury, time:unitDay, time:unitDecade, time:unitHour, time:unitMillenium, time:unitMinute, time:unitMonth, time:unitSecond, time:unitWeek, time:unitYear.
+|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | minutt 
+|===
+
+Eksempel i RDF Turtle, minutt:
+-----
+<exDateTimeDesc> a time:DateTimeDescription; 
+   time:unitType time:unitMinute; # enhetstype minutt
+   . 
+-----
+
+
+=== Valgfrie egenskaper for klassen _Tidspunktspesifikasjon_ [[Tidspunktspesifikasjon-valgfrie-egenskaper]]
+
+==== Tidspunktspesifikasjon – dag i en måned (time:day) [[Tidspunktspesifikasjon-dag-i-måned]]
+
+[cols="30s,70d"]
+|===
+|English name | day (of month)
+|URI| time:day
+|Range| xsd:gDay
+|Anvendelse | Egenskapen brukes til å oppgi dag, oppgitt som dagens nummer i en måned i det gregorianske kalender-klokkesystemet.
+|Usage note | This property is used to specify the day position in a month in the Gregorian calender-clock system. 
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | den femtende i en måned
+|===
+
+Eksempel i RDF Turtle, den femtende i en måned:
+-----
+<exDateTimeDesc> a time:DateTimeDescription; 
+   time:day 15; # den 15. i en måned
+   . 
+-----
+
+==== Tidspunktspesifikasjon – dag i en uke (time:dayOfWeek) [[Tidspunktspesifikasjon-dag-i-uke]]
+
+[cols="30s,70d"]
+|===
+|English name | day of week
+|URI| time:dayOfWeek
+|Range| time:DayOfWeek
+|Anvendelse | Egenskapen brukes til å oppgi dag i en uke, ved å referere til en predefinert ukedag i det gregorianske kalender-klokkesystemet. 
+|Usage note | This property is used to specify day of week in the Gregorian calender-clock system, whose value is a member of the class time:DayOfWeek.
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad 1 | Verdien skal være en av følgende: time:Monday, time:Tuesday, time:Wednesday, time:Thursday, time:Friday, time:Saturday, time:Sunday.
+|Remark 1 | The value shall be one of the following: time:Monday, time:Tuesday, time:Wednesday, time:Thursday, time:Friday, time:Saturday, time:Sunday.
+|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | mandag
+|===
+
+Eksempel i RDF Turtle, mandag:
+-----
+<exDateTimeDesc> a time:DateTimeDescription; 
+   time:dayOfWeek time:Monday; # mandag
+   . 
+-----
+
+==== Tidspunktspesifikasjon – dag i et år (time:dayOfYear) [[Tidspunktspesifikasjon-dag-i-år]]
+
+[cols="30s,70d"]
+|===
+|English name | day of year
+|URI| time:dayOfYear
+|Range| xsd:nonNegativeInteger
+|Anvendelse | Egenskapen brukes til å oppgi dag, oppgitt som nummeret av dagen i et år i det gregorianske kalender-klokkesystemet.
+|Usage note | This property is used to specify the number of the day within the year in the Gregorian calender-clock system.
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel |  den 40. dag i et år
+|===
+
+Eksempel i RDF Turtle, den 40. dag i et år:
+-----
+<exDateTimeDesc> a time:DateTimeDescription; 
+   time:dayOfYear 40; # den 40. dag i et år
+   . 
+-----
+
+==== Tidspunktspesifikasjon – minutt (time:minute) [[Tidspunktspesifikasjon-minutt]]
+
+[cols="30s,70d"]
+|===
+|English name | minute
+|URI| time:minute
+|Range| xsd:nonNegativeInteger
+|Anvendelse | Egenskapen brukes til å oppgi minutt i det gregorianske kalender-klokkesystem. 
+|Usage note | This property is used to specify the minute position in the Gregorian calendar-clock system.
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
+
+==== Tidspunktspesifikasjon – måned (time:month) [[Tidspunktspesifikasjon-måned]]
+
+[cols="30s,70d"]
+|===
+|English name | month
+|URI| time:month
+|Range| xsd:gMonth
+|Anvendelse | Egenskapen brukes til å oppgi måned, oppgitt som månedens nummer i det gregorianske kalender-klokkesystemet. 
+|Usage note | This property is used to specify the month position in the Gregorian calendar-clock system.
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | 11 (= november)
+|===
+
+Eksempel i RDF Turtle, 11 (= november):
+-----
+<exDateTimeDesc> a time:DateTimeDescription; 
+   xsd:gMonth 11; # måned nr. 11 = november
+   . 
+-----
+
+==== Tidspunktspesifikasjon – måned i et år (time:monthOfYear) [[Tidspunktspesifikasjon-måned-i-år]]
+
+[cols="30s,70d"]
+|===
+|English name | month of year
+|URI| time:monthOfYear
+|Range| time:MonthOfYear
+|Anvendelse | Egenskapen brukes til å oppgi måned i et år, ved å referere til en predefinert måned i det gregorianske kalender-klokkesystem.
+|Usage note | This property is used to specify the month of the year in the Gregorian calender-clock system, whose value is a member of the class time:MonthOfYear.
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad 1 | Verdien skal være en av følgende: greg:January, greg:February, greg:March, greg:April, greg:May, greg:June, greg:July, greg:August, greg:September, greg:October, greg:November, greg:December.
+|Remark 1 | TRe value shall be one of the following: greg:January, greg:February, greg:March, greg:April, greg:May, greg:June, greg:July, greg:August, greg:September, greg:October, greg:November, greg:December.
+|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | november
+|===
+
+Eksempel i RDF Turtle, november: 
+-----
+<exDateTimeDesc> a time:DateTimeDescription; 
+   time:MonthOfYear greg:November; # november
+   . 
+-----
+
+==== Tidspunktspesifikasjon – sekund (time:second) [[Tidspunktspesifikasjon-sekund]]
+
+[cols="30s,70d"]
+|===
+|English name | second
+|URI| time:second
+|Range| xsd:decimal
+|Anvendelse | Egenskapen brukes til å oppgi sekund i det gregorianske kalender-klokkesystem. 
+|Usage note | This property is used to specify the second position in the Gregorian calendar-clock system.
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | 60
+|===
+
+Eksempel i RDF Turtle, 60:
+-----
+<exDateTimeDesc> a time:DateTimeDescription; 
+   time:second 60; 
+   . 
+-----
+
+==== Tidspunktspesifikasjon – tidssone (time:timeZone) [[Tidspunktspesifikasjon-tidssone]]
+
+[cols="30s,70d"]
+|===
+|English name | time zone
+|URI| time:timeZone
+|Range| time:TimeZone
+|Anvendelse | Egenskapen brukes til å oppgi tidssonen til tidspunktet. 
+|Usage note | This property is used to specify the time zone for clock elements in the temporal position.
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+// |Merknad 1 | #Kurt Stian, mer norsk tekste her?# Tidssonen spesifiserer differansen mellom den lokale tiden og UTC. 
+// |Remark 1 | A Time Zone specifies the amount by which the local time is offset from UTC. A time zone is usually denoted geographically (e.g. Australian Eastern Daylight Time), with a constant value in a given region. The region where it applies and the offset from UTC are specified by a locally recognised governing authority.
+|Merknad  | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark  | Norwegian extension: Not explicitly specified in CPSP-AP.
+|===
+
+==== Tidspunktspesifikasjon – time (time:hour) [[Tidspunktspesifikasjon-time]]
+
+[cols="30s,70d"]
+|===
+|English name | hour
+|URI| time:hour
+|Range| xsd:nonNegativeInteger
+|Anvendelse | Egenskapen brukes til å oppgi time i det gregorianske kalender-klokkesystem. 
+|Usage note | This property is used to specify the hour position in the Gregorian calendar-clock system.
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark  | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
+
+==== Tidspunktspesifikasjon – uke (time:week) [[Tidspunktspesifikasjon-uke]]
+
+[cols="30s,70d"]
+|===
+|English name | week
+|URI| time:week
+|Range| xsd:nonNegativeInteger
+|Anvendelse | Egenskapen brukes til å oppgi uke, oppgitt som ukens nummer i det gregorianske kalender-klokkesystemet.
+|Usage note | This property is used to specify the week number within the year, in the Gregorian calender-clock system.
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | uke 42
+|===
+
+Eksempel i RDF Turtle, uke 42: 
+-----
+<exDateTimeDesc> a time:DateTimeDescription; 
+   time:week 42; # uke nr. 42
+   . 
+-----
+
+==== Tidspunktspesifikasjon – år (time:year) [[Tidspunktspesifikasjon-år]]
+
+[cols="30s,70d"]
+|===
+|English name | year
+|URI| time:year
+|Range| xsd:gYear
+|Anvendelse | Egenskapen brukes til å oppgi år, i det gregorianske kalender-klokkesystemet. 
+|Usage note | This property is used to specify the year position in the Gregorian calendar-clock system. 
+|Multiplisitet| 0..1
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | 2023
+|===
+
+Eksempel i RDF Turtle, år 2023: 
+-----
+<exDateTimeDesc> a time:DateTimeDescription; 
+   time:year 2023; # år 2023
+   . 
+-----
+

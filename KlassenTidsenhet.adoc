@@ -7,13 +7,11 @@ image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og den
 
 [cols="30s,70d"]
 |===
-|English name| temporal entity
-|Anvendelse| Klassen brukes til å beskrive et tidsinterval eller tidspunkt.
+|English name| Temporal entity
+|Anvendelse| Klassen brukes til å representere et tidsinterval eller tidspunkt.
 |Usage note| This class represents a temporal interval or instant.
 |URI| time:TemporalEntity
 |Kravnivå | Valgfri/Optional
-|Merknad | Klassen inneholder nå noen egenskaper som kan brukes til en enkel beskrivelse av en tidsenhet. For mer strukturert beskrivelse av tid kan modellen i Time Ontology brukes, se https://www.w3.org/TR/owl-time/#dtd-vs-dt[et eksempel]. 
-|Remark | The class contains now some properties that may be used for a simple description of a temporal entity. For more structured data use the model in Time Ontology, see https://www.w3.org/TR/owl-time/#dtd-vs-dt[an example].
 |===
 
 === Anbefalte egenskaper for klassen _Tidsenhet_ [[Tidsenhet-anbefalte-egenskaper]]
@@ -30,7 +28,152 @@ image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og den
 |Kravnivå | Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+| Eksempel | Normal åpningstid: kl. 08.00-16.00 alle ukedager. 
 |===
+
+Eksempel i RDF Turtle, åpningstider på vanlige ukedager/virkedager:
+-----
+<exServiceChannelPhone> a cv:Channel;
+   dct:type <http://data.europa.eu/snb/com-channel/c05134f579>; # type = Phone
+   cv:openingHours <exNormalMondayOpeningHours>, # normal Monday opening hours
+      <exNormalTuesdayOpeningHours>, # normal Tuesday opening hours
+      <exNormalWednesdayOpeningHours>, # normal Wednesday opening hours
+      <exNormalThursdayOpeningHours>, # normal Thursday opening hours
+      <exNormalFridayOpeningHours>; # normal Friday opening hours
+   . 
+
+<exNormalMondayOpeningHours> a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Monday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Monday;
+         ];
+      ];
+   cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+   dct:description "normal Monday opening hours"@en, "normal åpningstid på mandager"@nb;
+   .
+
+<exNormalTuesdayOpeningHours> a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Tuesday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Tuesday;
+         ];
+      ];
+   cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+   dct:description "normal Tuesday opening hours"@en, "normal åpningstid på tirsdager"@nb;
+   .
+
+<exNormalWednesdayOpeningHours> a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Wednesday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Wednesday;
+         ];
+      ];
+   cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+   dct:description "normal Wednesday opening hours"@en, "normal åpningstid på onsdager"@nb;
+   .
+
+<exNormalThursdayOpeningHours> a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Thursday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Thursday;
+         ];
+      ];
+   cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+   dct:description "normal Thursday opening hours"@en, "normal åpningstid på torsdager"@nb;
+   .
+
+<exNormalFridayOpeningHours> a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Friday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Friday;
+         ];
+      ];
+   cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+   dct:description "normal Friday opening hours"@en, "normal åpningstid på fredager"@nb;
+   .
+-----
+
+Eksempel i RDF Turtle, døgnkontinuerlig åpning: 
+-----
+<exServiceChannelWeb> a cv:Channel;
+   dct:type <http://data.europa.eu/snb/com-channel/b37115f83e>; # type = Web
+   cv:openingHours <exTwentyfourSevenOpeningHours>;
+   . 
+
+<exTwentyfourSevenOpeningHours> a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 0;
+         time:minute 0;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 24;
+         time:minute 0;
+          ];
+      ];
+   cv:frequency <http://publications.europa.eu/resource/authority/frequency/DAILY>;
+   dct:description "24/7 opening hours"@en, "døgnkontinuerlig åpning"@nb;
+   .
+-----
 
 ==== Tidsenhet – starttidspunkt (time:hasBeginning) [[Tidsenhet-starttidspunkt]]
 [cols="30s,70d"]
@@ -44,21 +187,10 @@ image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og den
 |Kravnivå | Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
 |===
 
-// ==== Tidsenhet – tidsrom (time:hasTemporalDuration) [[Tidsenhet-tidsrom]]
-// [cols="30s,70d"]
-// |===
-// |English name | duration
-// |URI| time:hasTemporalDuration
-// |Range| time:TemporalDuration
-// |Anvendelse | Egenskapen brukes til å oppgi et tidsrom eller intervall.
-// |Usage note | This property represents a period or interval.
-// |Multiplisitet| 0..1
-// |Kravnivå | Anbefalt/Recommended
-// |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-// |Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
-// |===
+Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 
 === Valgfri egenskaper for klassen _Tidsenhet_ [[Tidsenhet-valgfri-egenskaper]]
 
@@ -72,7 +204,10 @@ image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og den
 |Usage note | This property is used to specify a textual description of the temporal entity, repeated when the description is in several languages.
 |Multiplisitet| 0..n
 |Kravnivå | Anbefalt/Recommended
+|Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
 |===
+
+Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 
 ==== Tidsenhet – frekvens (cv:frequency) [[Tidsenhet-frekverns]]
 [cols="30s,70d"]
@@ -86,4 +221,7 @@ image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og den
 |Kravnivå | Valgfri/Optional
 |Merknad | Verdien bør velges fra EUs kontrollerte vokabular for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frekvens].
 |Remark | The value should be chosen from EUs controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frequency]. 
+|Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
 |===
+
+Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.

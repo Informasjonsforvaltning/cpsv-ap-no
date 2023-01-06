@@ -1113,6 +1113,39 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#Tidspunkt">Klassen Tidspunkt (time:Instant)</a>
+<ul class="sectlevel2">
+<li><a href="#Tidspunkt-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Tidspunkt</em></a>
+<ul class="sectlevel3">
+<li><a href="#Tidspunkt-tidspunktspesifikasjon">Tidspunkt – tidspunktspesifikasjon (time:inDateTime)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Tidspunktspesifikasjon">Klassen Tidspunktspesifikasjon (time:DateTimeDescription)</a>
+<ul class="sectlevel2">
+<li><a href="#Tidspunktspesifikasjon-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Tidspunktspesifikasjon</em></a>
+<ul class="sectlevel3">
+<li><a href="#Tidspunktspesifikasjon-enhetstype">Tidspunktspesifikasjon – enhetstype (time:unitType)</a></li>
+</ul>
+</li>
+<li><a href="#Tidspunktspesifikasjon-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tidspunktspesifikasjon</em></a>
+<ul class="sectlevel3">
+<li><a href="#Tidspunktspesifikasjon-dag-i-måned">Tidspunktspesifikasjon – dag i en måned (time:day)</a></li>
+<li><a href="#Tidspunktspesifikasjon-dag-i-uke">Tidspunktspesifikasjon – dag i en uke (time:dayOfWeek)</a></li>
+<li><a href="#Tidspunktspesifikasjon-dag-i-år">Tidspunktspesifikasjon – dag i et år (time:dayOfYear)</a></li>
+<li><a href="#Tidspunktspesifikasjon-minutt">Tidspunktspesifikasjon – minutt (time:minute)</a></li>
+<li><a href="#Tidspunktspesifikasjon-måned">Tidspunktspesifikasjon – måned (time:month)</a></li>
+<li><a href="#Tidspunktspesifikasjon-måned-i-år">Tidspunktspesifikasjon – måned i et år (time:monthOfYear)</a></li>
+<li><a href="#Tidspunktspesifikasjon-sekund">Tidspunktspesifikasjon – sekund (time:second)</a></li>
+<li><a href="#Tidspunktspesifikasjon-tidssone">Tidspunktspesifikasjon – tidssone (time:timeZone)</a></li>
+<li><a href="#Tidspunktspesifikasjon-time">Tidspunktspesifikasjon – time (time:hour)</a></li>
+<li><a href="#Tidspunktspesifikasjon-uke">Tidspunktspesifikasjon – uke (time:week)</a></li>
+<li><a href="#Tidspunktspesifikasjon-år">Tidspunktspesifikasjon – år (time:year)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#Tidsrom">Klassen Tidsrom (time:ProperInterval)</a>
 <ul class="sectlevel2">
 <li><a href="#Tidsrom-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tidsrom</em></a>
@@ -1319,7 +1352,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><strong>Status</strong>: <mark>under ferdigstilling (avventer ferdigstilling av EUs CPSV-AP som denne er basert på)</mark><br>
 <strong>Versjon</strong>: <mark>utkast til v.1.0</mark><br>
 <strong>Publisert</strong>: 2022-11-01<br>
-<strong>Oppdatert</strong>: 2023-01-04<br>
+<strong>Oppdatert</strong>: 2023-01-06<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
@@ -1479,6 +1512,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/0.1/">FOAF Vocabulary</a></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>foaf</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="http://www.w3.org/ns/time/gregorian#" class="bare">http://www.w3.org/ns/time/gregorian#</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navnerom for verdiene relatert til det gregorianske kalendersystemet.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>locn</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://www.w3.org/ns/locn#</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/ns/locn">ISA Programme Location Core Vocabulary</a></p></td>
@@ -1544,6 +1582,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
 @prefix eli: &lt;http://data.europa.eu/eli/ontology#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix greg: &lt;http://www.w3.org/ns/time/gregorian#&gt; .
 @prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .
 @prefix org: &lt;http://www.w3.org/ns/org#&gt; .
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
@@ -2080,6 +2119,12 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </li>
 <li>
 <p><a href="#Tidsenhet"><em>Klassen Tidsenhet (time:TemporalEntity)</em></a></p>
+</li>
+<li>
+<p><a href="#Tidspunkt"><em>Klassen Tidspunkt (time:Instant)</em></a></p>
+</li>
+<li>
+<p><a href="#Tidspunktspesifikasjon"><em>Klassen Tidspunktspesifikasjon (time:DateTimeDescription)</em></a></p>
 </li>
 <li>
 <p><a href="#Tidsrom"><em>Klassen Tidsrom (time:ProperInterval)</em></a></p>
@@ -14641,11 +14686,11 @@ points.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">temporal entity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Temporal entity</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å beskrive et tidsinterval eller tidspunkt.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et tidsinterval eller tidspunkt.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -14658,14 +14703,6 @@ points.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen inneholder nå noen egenskaper som kan brukes til en enkel beskrivelse av en tidsenhet. For mer strukturert beskrivelse av tid kan modellen i Time Ontology brukes, se <a href="https://www.w3.org/TR/owl-time/#dtd-vs-dt">et eksempel</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The class contains now some properties that may be used for a simple description of a temporal entity. For more structured data use the model in Time Ontology, see <a href="https://www.w3.org/TR/owl-time/#dtd-vs-dt">an example</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -14715,8 +14752,162 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal åpningstid: kl. 08.00-16.00 alle ukedager.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, åpningstider på vanlige ukedager/virkedager:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exServiceChannelPhone&gt; a cv:Channel;
+   dct:type &lt;http://data.europa.eu/snb/com-channel/c05134f579&gt;; # type = Phone
+   cv:openingHours &lt;exNormalMondayOpeningHours&gt;, # normal Monday opening hours
+      &lt;exNormalTuesdayOpeningHours&gt;, # normal Tuesday opening hours
+      &lt;exNormalWednesdayOpeningHours&gt;, # normal Wednesday opening hours
+      &lt;exNormalThursdayOpeningHours&gt;, # normal Thursday opening hours
+      &lt;exNormalFridayOpeningHours&gt;; # normal Friday opening hours
+   .
+
+&lt;exNormalMondayOpeningHours&gt; a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Monday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Monday;
+         ];
+      ];
+   cv:frequency &lt;http://publications.europa.eu/resource/authority/frequency/WEEKLY&gt;;
+   dct:description "normal Monday opening hours"@en, "normal åpningstid på mandager"@nb;
+   .
+
+&lt;exNormalTuesdayOpeningHours&gt; a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Tuesday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Tuesday;
+         ];
+      ];
+   cv:frequency &lt;http://publications.europa.eu/resource/authority/frequency/WEEKLY&gt;;
+   dct:description "normal Tuesday opening hours"@en, "normal åpningstid på tirsdager"@nb;
+   .
+
+&lt;exNormalWednesdayOpeningHours&gt; a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Wednesday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Wednesday;
+         ];
+      ];
+   cv:frequency &lt;http://publications.europa.eu/resource/authority/frequency/WEEKLY&gt;;
+   dct:description "normal Wednesday opening hours"@en, "normal åpningstid på onsdager"@nb;
+   .
+
+&lt;exNormalThursdayOpeningHours&gt; a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Thursday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Thursday;
+         ];
+      ];
+   cv:frequency &lt;http://publications.europa.eu/resource/authority/frequency/WEEKLY&gt;;
+   dct:description "normal Thursday opening hours"@en, "normal åpningstid på torsdager"@nb;
+   .
+
+&lt;exNormalFridayOpeningHours&gt; a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 8;
+         time:minute 0;
+         time:dayOfWeek time:Friday;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 16;
+         time:minute 0;
+         time:dayOfWeek time:Friday;
+         ];
+      ];
+   cv:frequency &lt;http://publications.europa.eu/resource/authority/frequency/WEEKLY&gt;;
+   dct:description "normal Friday opening hours"@en, "normal åpningstid på fredager"@nb;
+   .</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, døgnkontinuerlig åpning:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exServiceChannelWeb&gt; a cv:Channel;
+   dct:type &lt;http://data.europa.eu/snb/com-channel/b37115f83e&gt;; # type = Web
+   cv:openingHours &lt;exTwentyfourSevenOpeningHours&gt;;
+   .
+
+&lt;exTwentyfourSevenOpeningHours&gt; a time:TemporalEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 0;
+         time:minute 0;
+         ];
+      ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+         time:unitType time:unitMinute;
+         time:hour 24;
+         time:minute 0;
+          ];
+      ];
+   cv:frequency &lt;http://publications.europa.eu/resource/authority/frequency/DAILY&gt;;
+   dct:description "24/7 opening hours"@en, "døgnkontinuerlig åpning"@nb;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Tidsenhet-starttidspunkt"><a class="anchor" href="#Tidsenhet-starttidspunkt"></a>Tidsenhet – starttidspunkt (time:hasBeginning)</h4>
@@ -14762,8 +14953,15 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -14804,8 +15002,15 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Tidsenhet-frekverns"><a class="anchor" href="#Tidsenhet-frekverns"></a>Tidsenhet – frekvens (cv:frequency)</h4>
@@ -14851,8 +15056,911 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The value should be chosen from EUs controlled vocabulary for <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency">frequency</a>.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Tidspunkt"><a class="anchor" href="#Tidspunkt"></a>Klassen Tidspunkt (time:Instant)</h2>
+<div class="sectionbody">
+<div id="img-KlassenTidspuynkt" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenTidspunkt.png"><img src="images/KlassenTidspunkt.png" alt="UML-diagram med klassen Tidspunkt og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
+</div>
+<div class="title">Figur 37. Klassen Tidspunkt (time:Instant)</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time instant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et tidspunkt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This class represents a time instant.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:Instant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / Subclass of</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="Tidspunkt-obligatoriske-egenskaper"><a class="anchor" href="#Tidspunkt-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Tidspunkt</em></h3>
+<div class="sect3">
+<h4 id="Tidspunkt-tidspunktspesifikasjon"><a class="anchor" href="#Tidspunkt-tidspunktspesifikasjon"></a>Tidspunkt – tidspunktspesifikasjon (time:inDateTime)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in date-time description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:inDateTime</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:DateTimeDescription</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi et tidspunkt, som en strukturert beskrivelse.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the position of an instant, expressed using a structured description.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Tidspunktspesifikasjon"><a class="anchor" href="#Tidspunktspesifikasjon"></a>Klassen Tidspunktspesifikasjon (time:DateTimeDescription)</h2>
+<div class="sectionbody">
+<div id="img-Tidspunktspesifikasjon" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenTidspunktspesifikasjon.png"><img src="images/KlassenTidspunktspesifikasjon.png" alt="UML-diagram med klassen Tidspunktspesifikasjon og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
+</div>
+<div class="title">Figur 38. Klassen Tidspunktspesifikasjon (time:DateTimeDescription)</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date time description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et tidspunkt, strukturert med separate verdier for de ulike elementene i det gregorianske klander-klokkesystemet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This class represents a description of date and time structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of year, month, day properties restricted to corresponding XML Schema types xsd:gYear, xsd:gMonth and xsd:gDay, respectively.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:DateTimeDescription</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="Tidspunktspesifikasjon-obligatoriske-egenskaper"><a class="anchor" href="#Tidspunktspesifikasjon-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Tidspunktspesifikasjon</em></h3>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-enhetstype"><a class="anchor" href="#Tidspunktspesifikasjon-enhetstype"></a>Tidspunktspesifikasjon – enhetstype (time:unitType)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unit type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:unitType</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalUnit</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi enhetstypen (presisjonen) for tidspunktet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the temporal unit which provides the precision of a date-time value or scale of a temporal extent.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk/Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal være en av følgende: time:unitCentury, time:unitDay, time:unitDecade, time:unitHour, time:unitMillenium, time:unitMinute, time:unitMonth, time:unitSecond, time:unitWeek, time:unitYear.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be one of the following: time:unitCentury, time:unitDay, time:unitDecade, time:unitHour, time:unitMillenium, time:unitMinute, time:unitMonth, time:unitSecond, time:unitWeek, time:unitYear.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">minutt</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, minutt:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
+   time:unitType time:unitMinute; # enhetstype minutt
+   .</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Tidspunktspesifikasjon-valgfrie-egenskaper"><a class="anchor" href="#Tidspunktspesifikasjon-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Tidspunktspesifikasjon</em></h3>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-dag-i-måned"><a class="anchor" href="#Tidspunktspesifikasjon-dag-i-måned"></a>Tidspunktspesifikasjon – dag i en måned (time:day)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">day (of month)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:day</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:gDay</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi dag, oppgitt som dagens nummer i en måned i det gregorianske kalender-klokkesystemet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the day position in a month in the Gregorian calender-clock system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">den femtende i en måned</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, den femtende i en måned:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
+   time:day 15; # den 15. i en måned
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-dag-i-uke"><a class="anchor" href="#Tidspunktspesifikasjon-dag-i-uke"></a>Tidspunktspesifikasjon – dag i en uke (time:dayOfWeek)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">day of week</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:dayOfWeek</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:DayOfWeek</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi dag i en uke, ved å referere til en predefinert ukedag i det gregorianske kalender-klokkesystemet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify day of week in the Gregorian calender-clock system, whose value is a member of the class time:DayOfWeek.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal være en av følgende: time:Monday, time:Tuesday, time:Wednesday, time:Thursday, time:Friday, time:Saturday, time:Sunday.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be one of the following: time:Monday, time:Tuesday, time:Wednesday, time:Thursday, time:Friday, time:Saturday, time:Sunday.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandag</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, mandag:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
+   time:dayOfWeek time:Monday; # mandag
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-dag-i-år"><a class="anchor" href="#Tidspunktspesifikasjon-dag-i-år"></a>Tidspunktspesifikasjon – dag i et år (time:dayOfYear)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">day of year</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:dayOfYear</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:nonNegativeInteger</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi dag, oppgitt som nummeret av dagen i et år i det gregorianske kalender-klokkesystemet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the number of the day within the year in the Gregorian calender-clock system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">den 40. dag i et år</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, den 40. dag i et år:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
+   time:dayOfYear 40; # den 40. dag i et år
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-minutt"><a class="anchor" href="#Tidspunktspesifikasjon-minutt"></a>Tidspunktspesifikasjon – minutt (time:minute)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">minute</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:minute</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:nonNegativeInteger</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi minutt i det gregorianske kalender-klokkesystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the minute position in the Gregorian calendar-clock system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-måned"><a class="anchor" href="#Tidspunktspesifikasjon-måned"></a>Tidspunktspesifikasjon – måned (time:month)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">month</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:month</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:gMonth</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi måned, oppgitt som månedens nummer i det gregorianske kalender-klokkesystemet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the month position in the Gregorian calendar-clock system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11 (= november)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, 11 (= november):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
+   xsd:gMonth 11; # måned nr. 11 = november
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-måned-i-år"><a class="anchor" href="#Tidspunktspesifikasjon-måned-i-år"></a>Tidspunktspesifikasjon – måned i et år (time:monthOfYear)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">month of year</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:monthOfYear</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:MonthOfYear</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi måned i et år, ved å referere til en predefinert måned i det gregorianske kalender-klokkesystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the month of the year in the Gregorian calender-clock system, whose value is a member of the class time:MonthOfYear.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal være en av følgende: greg:January, greg:February, greg:March, greg:April, greg:May, greg:June, greg:July, greg:August, greg:September, greg:October, greg:November, greg:December.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TRe value shall be one of the following: greg:January, greg:February, greg:March, greg:April, greg:May, greg:June, greg:July, greg:August, greg:September, greg:October, greg:November, greg:December.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">november</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, november:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
+   time:MonthOfYear greg:November; # november
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-sekund"><a class="anchor" href="#Tidspunktspesifikasjon-sekund"></a>Tidspunktspesifikasjon – sekund (time:second)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">second</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:second</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:decimal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi sekund i det gregorianske kalender-klokkesystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the second position in the Gregorian calendar-clock system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, 60:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
+   time:second 60;
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-tidssone"><a class="anchor" href="#Tidspunktspesifikasjon-tidssone"></a>Tidspunktspesifikasjon – tidssone (time:timeZone)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time zone</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:timeZone</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:TimeZone</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi tidssonen til tidspunktet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the time zone for clock elements in the temporal position.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-time"><a class="anchor" href="#Tidspunktspesifikasjon-time"></a>Tidspunktspesifikasjon – time (time:hour)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hour</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:hour</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:nonNegativeInteger</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi time i det gregorianske kalender-klokkesystem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the hour position in the Gregorian calendar-clock system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Tidsenhet-sluttidspunkt">Tidsenhet – sluttidspunkt (time:hasEnd)</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-uke"><a class="anchor" href="#Tidspunktspesifikasjon-uke"></a>Tidspunktspesifikasjon – uke (time:week)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">week</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:week</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:nonNegativeInteger</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi uke, oppgitt som ukens nummer i det gregorianske kalender-klokkesystemet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the week number within the year, in the Gregorian calender-clock system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">uke 42</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, uke 42:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
+   time:week 42; # uke nr. 42
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tidspunktspesifikasjon-år"><a class="anchor" href="#Tidspunktspesifikasjon-år"></a>Tidspunktspesifikasjon – år (time:year)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">year</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:year</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:gYear</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi år, i det gregorianske kalender-klokkesystemet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This property is used to specify the year position in the Gregorian calendar-clock system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2023</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle, år 2023:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
+   time:year 2023; # år 2023
+   .</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -14864,7 +15972,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTidsrom.png"><img src="images/KlassenTidsrom.png" alt="UML-diagram med klassen Tidsrom og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 37. Klassen Tidsrom (time:ProperInterval)</div>
+<div class="title">Figur 39. Klassen Tidsrom (time:ProperInterval)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14874,19 +15982,23 @@ points.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">proper interval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Proper interval</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å beskrive et tidsrom eller intervall.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å beskrive et tidsrom eller intervall, der verdien til <a href="#Tidsrom-sluttidspunkt">Tidsrom – sluttidspunkt (time:hasEnd)</a> er forskjellig fra verdien til <a href="#Tidsrom-starttidspunkt">Tidsrom – starttidspunkt (time:hasBeginning)</a>, og/eller der <a href="#Tidsrom-tidsrom">Tidsrom – tidsrom (time:hasXSDDuration)</a> har fått verdi.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This class  represents a period of time of interval.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This class  represents a period or time of interval, where the value of the start time and end time properties should be different, and/or a duration should be given.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">time:ProperInterval</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / Subclass of</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå</strong></p></td>
@@ -14894,11 +16006,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men brukes som range av en egenskap (fra CCCEV) som vi har føyet til.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP, but used as range of a property (from CCCEV) that we have added.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.</p></td>
 </tr>
 </tbody>
 </table>
@@ -14922,7 +16034,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:dateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:Instant</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -14941,12 +16053,20 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range er endret fra xsd:dateTime til time:Instant som er i samsvar med spesifikasjonen i Time Ontology in OWL.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range is changed from xsd:dateTime to time:Instant which is in accordance with the specification in Time Ontology in OWL.</p></td>
 </tr>
 </tbody>
 </table>
@@ -14969,7 +16089,7 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:dateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:Instant</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -14988,12 +16108,16 @@ points.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Range er endret fra xsd:dateTime til time:Instant som er i samsvar med spesifikasjonen i Time Ontology in OWL.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Range is changed from xsd:dateTime to time:Instant which is in accordance with the specification in Time Ontology in OWL.</p></td>
 </tr>
 </tbody>
 </table>
@@ -15036,11 +16160,11 @@ points.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSP-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.</p></td>
 </tr>
 </tbody>
 </table>
@@ -15055,7 +16179,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjeneste.png"><img src="images/KlassenTjeneste.png" alt="UML-diagram med klassen Tjeneste, dens egenskaper og dens relasjoner til 13 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 38. Klassen Tjeneste (cpsvno:Service)</div>
+<div class="title">Figur 40. Klassen Tjeneste (cpsvno:Service)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -16697,7 +17821,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjenestekanal.png"><img src="images/KlassenTjenestekanal.png" alt="UML-diagram med klassen Tjenestekanal, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 39. Klassen Tjenestekanal (cv:Channel)</div>
+<div class="title">Figur 41. Klassen Tjenestekanal (cv:Channel)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17427,7 +18551,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjenestekonsesjonskontrakt.png"><img src="images/KlassenTjenestekonsesjonskontrakt.png" alt="UML-diagram med klassen Tjenestekonsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 40. Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContrac)</div>
+<div class="title">Figur 42. Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContrac)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17708,7 +18832,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenTjenesteresultat.png"><img src="images/KlassenTjenesteresultat.png" alt="UML-diagram med klassen Tjenesteresultat, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 41. Klassen Tjenesteresultat (cv:Output)</div>
+<div class="title">Figur 43. Klassen Tjenesteresultat (cv:Output)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -18113,7 +19237,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenUnderstøttendeOpplysning.png"><img src="images/KlassenUnderstøttendeOpplysning.png" alt="UML-diagram med klassen Understøttende opplysning, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 42. Klassen Understøttende opplysning (cv:SupportedValue)</div>
+<div class="title">Figur 44. Klassen Understøttende opplysning (cv:SupportedValue)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -18307,7 +19431,7 @@ points.</p></td>
 <div class="content">
 <a class="image" href="images/KlassenVirksomhetshendelse.png"><img src="images/KlassenVirksomhetshendelse.png" alt="UML-diagram med klassen Virksomhetshendelse, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 43. Klassen Virksomhetshendelse (cv:BusinessEvent)</div>
+<div class="title">Figur 45. Klassen Virksomhetshendelse (cv:BusinessEvent)</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -18759,7 +19883,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-01-06 14:47:54 UTC
+Sist oppdatert 2023-01-06 19:34:02 UTC
 </div>
 </div>
 </body>
