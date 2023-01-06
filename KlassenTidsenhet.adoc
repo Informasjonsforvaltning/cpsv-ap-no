@@ -192,6 +192,20 @@ Eksempel i RDF Turtle, døgnkontinuerlig åpning:
 
 Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 
+==== Tidsenhet – tidsrom (time:hasXSDDuration) [[Tidsenhet-tidsrom]]
+[cols="30s,70d"]
+|===
+|English name | duration
+|URI| time:hasXSDDuration
+|Range| xsd:duration
+|Anvendelse | Egenskapen brukes til å oppgi et tidsrom eller intervall.
+|Usage note | This property represents a period or interval.
+|Multiplisitet| 0..1
+|Kravnivå | Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.
+|===
+
 === Valgfri egenskaper for klassen _Tidsenhet_ [[Tidsenhet-valgfri-egenskaper]]
 
 ==== Tidsenhet – beskrivelse (dct:description) [[Tidsenhet-beskrivelse]]
