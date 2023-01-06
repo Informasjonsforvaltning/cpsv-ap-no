@@ -7,7 +7,7 @@ image::images/KlassenOrganisasjon.png[alt="UML-diagram med klassen Organisasjon,
 
 [cols="30s,70d"]
 |===
-|English name|organization
+|English name| Organization
 |Anvendelse|Klassen brukes til å representere en organisasjon.
 |Usage note|This class represents an organization. An organization is a group of people that get together in a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent.
 |URI|org:Organization

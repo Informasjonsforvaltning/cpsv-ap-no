@@ -7,7 +7,7 @@ image::images/KlassenKontaktpunkt.png[alt="UML-diagram med klassen Kontaktpunkt,
 
 [cols="30s,70d"]
 |===
-|English name|contact point
+|English name| Contact point
 |Anvendelse| Klassen brukes til å representere kontakt informasjon for en tjeneste, en tjenestekanal, en offentlig organisasjon osv.
 |Usage note|This class represents the contact information for a Service, Channel, Public Organization, etc.
 |URI|cv:ContactPoint
