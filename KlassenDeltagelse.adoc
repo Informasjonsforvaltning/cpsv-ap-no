@@ -41,7 +41,7 @@ image::images/KlassenDeltagelse.png[alt="UML-diagram med klassen Deltagelse og d
 |Range| foaf:Agent
 |Anvendelse| Egenskapen brukes til å referere til aktøren som er involvert i deltagelsen.
 |Usage note| This property refers to the Agent involved in the Participation.
-|Multiplisitet|1..n
+|Multiplisitet|1..1
 |Kravnivå|Obligatorisk/Mandatory
 |Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
