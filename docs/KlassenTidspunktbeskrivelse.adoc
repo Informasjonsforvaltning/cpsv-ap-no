@@ -1,14 +1,14 @@
-== Klassen Tidspunktspesifikasjon (time:DateTimeDescription) [[Tidspunktspesifikasjon]]
+== Klassen Tidspunktbeskrivelse (time:DateTimeDescription) [[Tidspunktbeskrivelse]]
 
-[[img-Tidspunktspesifikasjon]]
-.Klassen Tidspunktspesifikasjon (time:DateTimeDescription)
-[link=images/KlassenTidspunktspesifikasjon.png]
-image::images/KlassenTidspunktspesifikasjon.png[alt="UML-diagram med klassen Tidspunktspesifikasjon og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+[[img-Tidspunktbeskrivelse]]
+.Klassen Tidspunktbeskrivelse (time:DateTimeDescription)
+[link=images/KlassenTidspunktbeskrivelse.png]
+image::images/KlassenTidspunktbeskrivelse.png[alt="UML-diagram med klassen Tidspunktbeskrivelse og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
 |English name| Date time description
-|Anvendelse| Klassen brukes til å representere et tidspunkt, strukturert med separate verdier for de ulike elementene i det gregorianske klander-klokkesystemet.
+|Anvendelse| Klassen brukes til å spesifisere et tidspunkt ved bruk av det gregorianske kalendersystemet.
 |Usage note| This class represents a description of date and time structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of year, month, day properties restricted to corresponding XML Schema types xsd:gYear, xsd:gMonth and xsd:gDay, respectively.
 |URI| time:DateTimeDescription
 |Kravnivå | Valgfri/Optional
@@ -16,9 +16,9 @@ image::images/KlassenTidspunktspesifikasjon.png[alt="UML-diagram med klassen Tid
 |Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
-=== Obligatoriske egenskaper for klassen _Tidspunktspesifikasjon_ [[Tidspunktspesifikasjon-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Tidspunktbeskrivelse_ [[Tidspunktbeskrivelse-obligatoriske-egenskaper]]
 
-==== Tidspunktspesifikasjon – enhetstype (time:unitType) [[Tidspunktspesifikasjon-enhetstype]]
+==== Tidspunktbeskrivelse – enhetstype (time:unitType) [[Tidspunktbeskrivelse-enhetstype]]
 
 [cols="30s,70d"]
 |===
@@ -44,16 +44,16 @@ Eksempel i RDF Turtle, minutt:
 -----
 
 
-=== Valgfrie egenskaper for klassen _Tidspunktspesifikasjon_ [[Tidspunktspesifikasjon-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Tidspunktbeskrivelse_ [[Tidspunktbeskrivelse-valgfrie-egenskaper]]
 
-==== Tidspunktspesifikasjon – dag i en måned (time:day) [[Tidspunktspesifikasjon-dag-i-måned]]
+==== Tidspunktbeskrivelse – dag i måneden (time:day) [[Tidspunktbeskrivelse-dag-i-måneden]]
 
 [cols="30s,70d"]
 |===
 |English name | day (of month)
 |URI| time:day
 |Range| xsd:gDay
-|Anvendelse | Egenskapen brukes til å oppgi dag, oppgitt som dagens nummer i en måned i det gregorianske kalender-klokkesystemet.
+|Anvendelse | Egenskapen brukes til å oppgi dag, oppgitt som dagens nummer i en måned i det gregorianske kalendersystemet.
 |Usage note | This property is used to specify the day position in a month in the Gregorian calender-clock system. 
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
@@ -69,14 +69,14 @@ Eksempel i RDF Turtle, den femtende i en måned:
    . 
 -----
 
-==== Tidspunktspesifikasjon – dag i en uke (time:dayOfWeek) [[Tidspunktspesifikasjon-dag-i-uke]]
+==== Tidspunktbeskrivelse – dag i uken (time:dayOfWeek) [[Tidspunktbeskrivelse-dag-i-uken]]
 
 [cols="30s,70d"]
 |===
 |English name | day of week
 |URI| time:dayOfWeek
 |Range| time:DayOfWeek
-|Anvendelse | Egenskapen brukes til å oppgi dag i en uke, ved å referere til en predefinert ukedag i det gregorianske kalender-klokkesystemet. 
+|Anvendelse | Egenskapen brukes til å oppgi dag i uken, ved å referere til en predefinert ukedag i det gregorianske kalendersystemet. 
 |Usage note | This property is used to specify day of week in the Gregorian calender-clock system, whose value is a member of the class time:DayOfWeek.
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
@@ -94,14 +94,14 @@ Eksempel i RDF Turtle, mandag:
    . 
 -----
 
-==== Tidspunktspesifikasjon – dag i et år (time:dayOfYear) [[Tidspunktspesifikasjon-dag-i-år]]
+==== Tidspunktbeskrivelse – dag i året (time:dayOfYear) [[Tidspunktbeskrivelse-dag-i-året]]
 
 [cols="30s,70d"]
 |===
 |English name | day of year
 |URI| time:dayOfYear
 |Range| xsd:nonNegativeInteger
-|Anvendelse | Egenskapen brukes til å oppgi dag, oppgitt som nummeret av dagen i et år i det gregorianske kalender-klokkesystemet.
+|Anvendelse | Egenskapen brukes til å oppgi dag i året, oppgitt som nummeret av dagen i året i det gregorianske kalendersystemet.
 |Usage note | This property is used to specify the number of the day within the year in the Gregorian calender-clock system.
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
@@ -117,14 +117,14 @@ Eksempel i RDF Turtle, den 40. dag i et år:
    . 
 -----
 
-==== Tidspunktspesifikasjon – minutt (time:minute) [[Tidspunktspesifikasjon-minutt]]
+==== Tidspunktbeskrivelse – minutt (time:minute) [[Tidspunktbeskrivelse-minutt]]
 
 [cols="30s,70d"]
 |===
 |English name | minute
 |URI| time:minute
 |Range| xsd:nonNegativeInteger
-|Anvendelse | Egenskapen brukes til å oppgi minutt i det gregorianske kalender-klokkesystem. 
+|Anvendelse | Egenskapen brukes til å oppgi minutt i det gregorianske kalendersystem. 
 |Usage note | This property is used to specify the minute position in the Gregorian calendar-clock system.
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
@@ -135,14 +135,14 @@ Eksempel i RDF Turtle, den 40. dag i et år:
 
 Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 
-==== Tidspunktspesifikasjon – måned (time:month) [[Tidspunktspesifikasjon-måned]]
+==== Tidspunktbeskrivelse – måned (time:month) [[Tidspunktbeskrivelse-måned]]
 
 [cols="30s,70d"]
 |===
 |English name | month
 |URI| time:month
 |Range| xsd:gMonth
-|Anvendelse | Egenskapen brukes til å oppgi måned, oppgitt som månedens nummer i det gregorianske kalender-klokkesystemet. 
+|Anvendelse | Egenskapen brukes til å oppgi måned, oppgitt som månedens nummer i det gregorianske kalendersystemet. 
 |Usage note | This property is used to specify the month position in the Gregorian calendar-clock system.
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
@@ -158,14 +158,14 @@ Eksempel i RDF Turtle, 11 (= november):
    . 
 -----
 
-==== Tidspunktspesifikasjon – måned i et år (time:monthOfYear) [[Tidspunktspesifikasjon-måned-i-år]]
+==== Tidspunktbeskrivelse – måned i året (time:monthOfYear) [[Tidspunktbeskrivelse-måned-i-året]]
 
 [cols="30s,70d"]
 |===
 |English name | month of year
 |URI| time:monthOfYear
 |Range| time:MonthOfYear
-|Anvendelse | Egenskapen brukes til å oppgi måned i et år, ved å referere til en predefinert måned i det gregorianske kalender-klokkesystem.
+|Anvendelse | Egenskapen brukes til å oppgi måned i året, ved å referere til en predefinert måned i det gregorianske kalendersystem.
 |Usage note | This property is used to specify the month of the year in the Gregorian calender-clock system, whose value is a member of the class time:MonthOfYear.
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
@@ -183,14 +183,14 @@ Eksempel i RDF Turtle, november:
    . 
 -----
 
-==== Tidspunktspesifikasjon – sekund (time:second) [[Tidspunktspesifikasjon-sekund]]
+==== Tidspunktbeskrivelse – sekund (time:second) [[Tidspunktbeskrivelse-sekund]]
 
 [cols="30s,70d"]
 |===
 |English name | second
 |URI| time:second
 |Range| xsd:decimal
-|Anvendelse | Egenskapen brukes til å oppgi sekund i det gregorianske kalender-klokkesystem. 
+|Anvendelse | Egenskapen brukes til å oppgi sekund i det gregorianske kalendersystem. 
 |Usage note | This property is used to specify the second position in the Gregorian calendar-clock system.
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
@@ -206,7 +206,7 @@ Eksempel i RDF Turtle, 60:
    . 
 -----
 
-==== Tidspunktspesifikasjon – tidssone (time:timeZone) [[Tidspunktspesifikasjon-tidssone]]
+==== Tidspunktbeskrivelse – tidssone (time:timeZone) [[Tidspunktbeskrivelse-tidssone]]
 
 [cols="30s,70d"]
 |===
@@ -223,14 +223,14 @@ Eksempel i RDF Turtle, 60:
 |Remark  | Norwegian extension: Not explicitly specified in CPSP-AP.
 |===
 
-==== Tidspunktspesifikasjon – time (time:hour) [[Tidspunktspesifikasjon-time]]
+==== Tidspunktbeskrivelse – time (time:hour) [[Tidspunktbeskrivelse-time]]
 
 [cols="30s,70d"]
 |===
 |English name | hour
 |URI| time:hour
 |Range| xsd:nonNegativeInteger
-|Anvendelse | Egenskapen brukes til å oppgi time i det gregorianske kalender-klokkesystem. 
+|Anvendelse | Egenskapen brukes til å oppgi time i det gregorianske kalendersystem. 
 |Usage note | This property is used to specify the hour position in the Gregorian calendar-clock system.
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
@@ -241,14 +241,14 @@ Eksempel i RDF Turtle, 60:
 
 Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 
-==== Tidspunktspesifikasjon – uke (time:week) [[Tidspunktspesifikasjon-uke]]
+==== Tidspunktbeskrivelse – ukenummer (time:week) [[Tidspunktbeskrivelse-uke]]
 
 [cols="30s,70d"]
 |===
 |English name | week
 |URI| time:week
 |Range| xsd:nonNegativeInteger
-|Anvendelse | Egenskapen brukes til å oppgi uke, oppgitt som ukens nummer i det gregorianske kalender-klokkesystemet.
+|Anvendelse | Egenskapen brukes til å oppgi ukenummer i det gregorianske kalendersystemet.
 |Usage note | This property is used to specify the week number within the year, in the Gregorian calender-clock system.
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
@@ -264,14 +264,14 @@ Eksempel i RDF Turtle, uke 42:
    . 
 -----
 
-==== Tidspunktspesifikasjon – år (time:year) [[Tidspunktspesifikasjon-år]]
+==== Tidspunktbeskrivelse – år (time:year) [[Tidspunktbeskrivelse-år]]
 
 [cols="30s,70d"]
 |===
 |English name | year
 |URI| time:year
 |Range| xsd:gYear
-|Anvendelse | Egenskapen brukes til å oppgi år, i det gregorianske kalender-klokkesystemet. 
+|Anvendelse | Egenskapen brukes til å oppgi år, i det gregorianske kalendersystemet. 
 |Usage note | This property is used to specify the year position in the Gregorian calendar-clock system. 
 |Multiplisitet| 0..1
 |Kravnivå | Valgfri/Optional
