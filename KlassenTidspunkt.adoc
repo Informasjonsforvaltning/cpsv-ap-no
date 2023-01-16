@@ -22,7 +22,7 @@ Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 
 === Obligatoriske egenskaper for klassen _Tidspunkt_ [[Tidspunkt-obligatoriske-egenskaper]]
 
-==== Tidspunkt – tidspunktspesifikasjon (time:inDateTime) [[Tidspunkt-tidspunktspesifikasjon]]
+==== Tidspunkt – tidspunktangivelse (time:inDateTime) [[Tidspunkt-tidspunktangivelse]]
 [cols="30s,70d"]
 |===
 |English name | in date-time description
