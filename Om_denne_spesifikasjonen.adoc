@@ -37,7 +37,7 @@ Utarbeidelse av nye versjoner av spesifikasjonen initieres av Digdir. Mindre end
 
 === Om kravnivåene i spesifikasjonen [[Om-kravene]]
 
-Spesifikasjonen bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende https://data.norge.no/specification/dcat-ap-no/#Om-kravene[betydning som i DCAT-AP-NO] og gjentas derfor ikke her.
+Spesifikasjonen bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO], og forklaringene gjentas ikke her.
 
 include::Navnerom.adoc[]
 
