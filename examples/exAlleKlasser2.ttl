@@ -37,7 +37,7 @@
        """Den beste restauranten AS"""@nn;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl"^^xsd:anyURI;
    dct:type <http://purl.org/adms/publishertype/Company>;
-   cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenesteMottaker.ttl>;
+   cv:participates <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenesteMottaker.ttl>;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultatDummy.ttl>
@@ -119,7 +119,7 @@
        locn:fullAddress "Fridtjof Nansens vei 14, 0369 OSLO"@nb ; ];
    foaf:homepage <https://www.politiet.no/>;
    dct:type <http://purl.org/adms/publishertype/NationalAuthority>;
-   cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
+   cv:participates <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenesteMottaker.ttl>
@@ -259,7 +259,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
        locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ];
    foaf:homepage <https://www.bronnoy.kommune.no/>;
    dct:type <http://purl.org/adms/publishertype/LocalAuthority>;
-   cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl>;
+   cv:participates <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl>;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl>
