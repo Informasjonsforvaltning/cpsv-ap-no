@@ -129,6 +129,7 @@
        """Teksten blir vist på nynorsk."""@nn;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenesteMottaker.ttl"^^xsd:anyURI;
    cv:role <https://data.norge.no/vocabulary/role-type#service-receiver>;
+   cv:hasParticipant <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl>;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>
@@ -138,6 +139,7 @@
        """Teksten blir vist på nynorsk."""@nn;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl"^^xsd:anyURI;
    cv:role <https://data.norge.no/vocabulary/role-type#data-provider>;
+   cv:hasParticipant <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonPoliti.ttl>;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl>
@@ -147,6 +149,7 @@
        """Teksten blir vist på nynorsk."""@nn;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl"^^xsd:anyURI;
    cv:role <https://data.norge.no/vocabulary/role-type#service-provider>;
+   cv:hasParticipant <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl> ;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>
