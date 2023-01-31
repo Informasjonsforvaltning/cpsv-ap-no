@@ -1,7 +1,8 @@
 include::locale/attributes.adoc[]
 = Spesifikasjon for tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO)
+Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency
 :doctype: book
-:docinfo:
+:docinfo: shared
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
@@ -10,9 +11,10 @@ ifdef::backend-pdf[:toc: macro]
 // :sectlinks:
 :sectanchors:
 :table-stripes: even
-:title-logo-image: image:images/Digdir.png[pdfwidth=30vw]
+:xrefstyle: short
+:title-logo-image: image:images/Digdir.png[alt="Digdir-logo", pdfwidth=30vw]
 
-image::images/Digdir.png[width=30%, pdfwidth=30vw, link=https://digdir.no/]
+image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
 
 include::shared/download.adoc[]
 
@@ -20,15 +22,17 @@ NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
-*Status*: #til utprøving# +
-*Versjon*: v.0.9 +
-*Publisert*: 2022-02-08 (Se <<Endringslogg>>) +
-*Oppdatert*: 2022-02-23 +
+*Status*: #under ferdigstilling (avventer ferdigstilling av EUs CPSV-AP som denne er basert på)# +
+*Versjon*: #utkast til v.1.0# +
+*Publisert*: 2022-11-01 +
+*Oppdatert*: 2023-01-17 +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
 *Veileder*: <ingen> +
-*Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v09xx.ttl[shacl-fil] som "Regelsett lenke", #shacl-filen er under utvikling#)
+// *Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v09xx.ttl[shacl-fil] som "Regelsett lenke", [yellow-background]#shacl-filen er under utvikling#)
+
+include::Om_denne_versjonen.adoc[]
 
 toc::[]
 
@@ -37,26 +41,41 @@ include::Om_denne_spesifikasjonen.adoc[]
 include::Innledning.adoc[]
 
 include::Forenklet_modell.adoc[]
+// inkl. alle temabaserte underkapitler
 
 include::KlasseOversikt.adoc[]
 
+include::KlassenAdresse.adoc[]
+
 include::KlassenAktør.adoc[]
 
-include::KlassenBeskrivendeDatasett.adoc[]
+include::KlassenBegrensning.adoc[]
+
+include::KlassenDatasett.adoc[]
 
 include::KlassenDeltagelse.adoc[]
 
 include::KlassenDokumentasjon.adoc[]
 
-include::KlassenDokumentreferanse.adoc[]
+include::KlassenDokumentasjonstype.adoc[]
+
+include::KlassenDokumentasjonstypeliste.adoc[]
 
 include::KlassenGebyr.adoc[]
 
 include::KlassenHendelse.adoc[]
 
+include::KlassenInformasjonsbegrep.adoc[]
+
+include::KlassenInformasjonskrav.adoc[]
+
 include::KlassenKatalog.adoc[]
 
 include::KlassenKontaktpunkt.adoc[]
+
+include::KlassenKrav.adoc[]
+
+include::KlassenKriterium.adoc[]
 
 include::KlassenLivshendelse.adoc[]
 
@@ -64,9 +83,19 @@ include::KlassenOffentligOrganisasjon.adoc[]
 
 include::KlassenOffentligTjeneste.adoc[]
 
+include::KlassenOrganisasjon.adoc[]
+
+include::KlassenReferanserammeverk.adoc[]
+
 include::KlassenRegel.adoc[]
 
 include::KlassenRegulativRessurs.adoc[]
+
+include::KlassenTidsenhet.adoc[]
+
+include::KlassenTidspunkt.adoc[]
+
+include::KlassenTidspunktbeskrivelse.adoc[]
 
 include::KlassenTidsrom.adoc[]
 
@@ -74,13 +103,13 @@ include::KlassenTjeneste.adoc[]
 
 include::KlassenTjenestekanal.adoc[]
 
+include::KlassenTjenestekonsesjonskontrakt.adoc[]
+
 include::KlassenTjenesteresultat.adoc[]
 
-include::KlassenVilkår.adoc[]
+include::KlassenUnderstøttendeOpplysning.adoc[]
 
 include::KlassenVirksomhetshendelse.adoc[]
-
-include::KlassenÅpningstid.adoc[]
 
 include::Endringslogg.adoc[]
 

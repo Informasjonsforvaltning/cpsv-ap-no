@@ -1,0 +1,266 @@
+== Klassen Adresse (locn:Address) [[Adresse]]
+
+[[img-KlassenAdresse]]
+.Klassen Adresse (locn:Address)
+[link=images/KlassenAdresse.png]
+image::images/KlassenAdresse.png[alt="UML-diagram med klassen Adresse, dens egenskaper og dens relasjon til en annen klasse. Innholdet i diagrammet er forklart i teksten."]
+
+[cols="30s,70d"]
+|===
+|English name|Address
+|Anvendelse|Klassen brukes til å representere en adresse.
+|Usage note|This class is used to represent an address (a spatial object that in a human-readable way identifies a fixed location).
+|URI|locn:Address
+|Kravnivå|Valgfri/Optional
+|===
+
+=== Valgfrie egenskaper for klassen _Adresse_ [[Adresse-valgfrie-egenskaper]]
+
+====  Adresse – administrativ enhet nivå 1 (locn:adminUnitL1) [[Adresse-admin-enhet-nivå1]]
+
+[cols="30s,70d"]
+|===
+|English name|administrative unit level 1
+|URI|locn:adminUnitL1
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navnet på det øverste nivået i
+adressen, og dette vil som regel være navnet på et land.
+|Usage note| This property represents the name of the uppermost level of the
+address, almost always a country.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad| Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – administrativ enhet nivå 2 (locn:adminUnitL2) [[Adresse-admin-enhet-nivå2]]
+
+[cols="30s,70d"]
+|===
+|English name|administrative unit level 2
+|URI|locn:adminUnitL2
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navnet på et sekundært nivå/region i
+adressen, vanligvis et fylke, stat eller annet slikt område som
+vanligvis omfatter flere lokaliteter.
+|Usage note| This property represents the name of a secondary level/region of the
+address, usually a county, state or other such area that typically
+encompasses several localities.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – adresseId (locn:addressId) [[Adresse-adresseId]]
+
+[cols="30s,70d"]
+|===
+|English name|address ID
+|URI|locn:addressId
+|Range|xsd:string
+|Anvendelse| Egenskapen brukes til å oppgi en globalt unik identifikator for hver
+forekomst av en adresse.
+|Usage note| This property represents a globally unique identifier for each
+instance of an Address.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
+|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
+|===
+
+====  Adresse – adresseringsområde (locn:addressArea) [[Adresse-adresseringsområde]]
+
+[cols="30s,70d"]
+|===
+|English name|address area
+|URI|locn:addressArea
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navnet til et geografisk område som
+inneholder flere enkeltadresser.
+|Usage note| This property represents the name of a geographic area that groups
+Addresses.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – adressetilleggsnavn (locn:locatorName) [[Adresse-adressetilleggsnavn]]
+
+[cols="30s,70d"]
+|===
+|English name|locator name
+|URI|locn:locatorName
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi bruksnavn, som for eksempel navn
+på gårdsbruket, navn på institusjonen eller bygningen.
+|Usage note| This property represents proper noun(s) applied to the real world
+entity identified by the locator.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|===
+
+====  Adresse – fullstendig adresse (locn:fullAddress) [[Adresse-fullstendigAdresse]]
+
+[cols="30s,70d"]
+|===
+|English name|full address
+|URI|locn:fullAddress
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi hele adressen skrevet som en streng.
+|Usage note| This property represents the complete address written as a string.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|Eksempel| Den fullstendige besøksadressen til Digdir i Oslo er: «7. etasje, Lørenfaret 1C, 0580 Oslo, Norge».
+|===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:fullAddress "7. etasje, Lørenfaret 1C, 0580 Oslo, Norge"@nb ,
+      "7th floor, Lorenfaret 1C, 0580 Oslo, Norway"@en ;
+   .
+-----
+
+====  Adresse – gate-/vei-/områdenavn (locn:throughfare) [[Adresse-gate-vei-område-navn]]
+
+[cols="30s,70d"]
+|===
+|English name|throughfare
+|URI|locn:throughfare
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navnet på en passasje eller en veistrekning fra ett sted til et annet, f.eks. en gate, en vei, eller et område.
+|Usage note| This property represents the name of a passage or way through from
+one location to another.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|Eksempel| «Lørenfaret» er gatenavn, i den fullstendige besøksadressen til Didgir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).
+|===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   .
+-----
+
+====  Adresse – husnummer m.m. (locn:locatorDesignator) [[Adresse-husnummer-med-mer]]
+
+[cols="30s,70d"]
+|===
+|English name|locator designator
+|URI|locn:locatorDesignator
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi et nummer eller en sekvens av tegn som
+unikt identifiserer lokasjonen i den aktuelle konteksten, f.eks. hus-/oppgangsnummer, ev. også etasjenummer, leilighetsnummer, romnummer eller lignende.
+|Usage note| This property represents a number or sequence of characters that uniquely identifies the locator within the relevant scope.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad 1 | Maks. én per språk.
+|Remark 1 | Max. one per language.
+|Merknad 2 | Norsk utvidelse: Range er endret fra `rdfs:Literal` til `rdf:langString`, fordi egenskapen kan inneholde språksensitive verdier (f.eks. "etasje"@nb vs. "floor"@en).
+|Remark 2 | Norwegian extension: Range changed from `rdfs:Literal` to `rdf:langString`, because this property may contain language sensitive values (e.g., "etasje"@nb vs. "floor"@en).
+|Eksempel| «7. etasje, 1C» er husnummer m.m., i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»), i konteksten «Lørenfaret» (se <<Adresse-gate-vei-område-navn>>).
+|===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   .
+-----
+
+====  Adresse – postboks (locn:poBox) [[Adresse-postboks]]
+
+[cols="30s,70d"]
+|===
+|English name|post office box
+|URI|locn:poBox
+|Range| rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi en stedsbetegnelse for et
+postleveringssted på et postkontor, vanligvis et nummer.
+|Usage note| This property represents a location designator for a postal delivery
+point at a post office, usually a number.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad 1 | Maks. én per språk.
+|Remark 1 | Max. one per language.`
+|Merknad 2 | Norsk utvidelse: Range endret fra `rdfs:Literal` til `rdf:langString`, for å kunne ha postboksanleggsnavnet i ulike språkvarianter (f.eks. å erstatte norske bokstaver æ, ø, å med a, o, a)
+|Remark 2 | Norwegian extension: Range changed from `rdfs:Literal` to `rdf:langString`, in order to specify the p.o.box facility name in different languages (e.g., to replace the Norwegian letters æ, ø, å with a, o, a)
+|Eksempel | Postboksadressen til Digdir i Oslo: «Postboks 1382 Vika, 0114 Oslo, Norge»
+|===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-postboksadresse> a locn:Address ;
+   locn:poBox "1382 Vika"@nb , "1382 Vika"@en ;
+   locn:postCode "0114" ;
+   locn:postName "Oslo"@nb , "Oslo"@en ;
+   .
+-----
+
+
+====  Adresse – postnummer (locn:postCode) [[Adresse-postnummer]]
+
+[cols="30s,70d"]
+|===
+|English name|post code
+|URI|locn:postCode
+|Range| rdfs:Literal
+|Anvendelse| Egenskapen brukes til å kunne oppgi kode som er opprettet og
+vedlikeholdt for postformål.
+|Usage note| This property represents the code created and maintained for
+postal purposes to identify a subdivision of addresses and postal
+delivery points.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad| Norsk utvidelse: multiplisitet endret fra 0..n til 0..1
+|Remark | Norwegian extension: multiplicity changed from 0..n to 0..1
+|Eksempel| «0580» er postnummer, i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).
+|===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:postCode "0580" ;
+   .
+-----
+
+====  Adresse – poststed (locn:postName) [[Adresse-poststed]]
+
+[cols="30s,70d"]
+|===
+|English name|post name
+|URI|locn:postName
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å kunne oppgi stedsnavn som er opprettet og
+vedlikehold for postformål.
+|Usage note| This property represents a name created and maintained for postal
+purposes to identify a subdivision of addresses and postal delivery
+points.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Maks. én per språk.
+|Remark | Max. one per language.
+|Eksempel| «Oslo» er poststed, i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).
+|===
+
+Eksempel i RDF Turtle:
+-----
+<digdirOslo-besøksadresse> a locn:Address ;
+   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:postCode "0580" ;
+   locn:postName "Oslo"@nb , "Oslo"@en ;
+   .
+-----

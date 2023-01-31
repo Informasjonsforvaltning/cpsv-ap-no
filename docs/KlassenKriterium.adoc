@@ -1,0 +1,292 @@
+== Klassen Kriterium (cv:Criterion) [[Kriterium]]
+
+[[img-KlassenKriterium]]
+.Klassen Kriterium (cv:Criterion)
+[link=images/KlassenKriterium.png]
+image::images/KlassenKriterium.png[alt="UML-diagram med klassen Kriterium, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+
+[cols="30s,70d"]
+|===
+|English name|  Criterion
+|Anvendelse| Klassen brukes til å representere en betingelse for evaluering eller vurdering.
+|Usage note|This class represents a Condition for evaluation or assessment.
+
+In general, Criteria are used for comparison, filtering or selection purposes. Criteria usually set minimum conditions (e.g. limits, intervals, thresholds, etc.) that need to be met in order to pass the requirements or to fulfil them to a certain degree or quality. The concept of Criteria is broader than the concept of Constraint since it covers more usages. The evaluation of the fulfilment is usually supported by the provision of Evidence. For example in the eProcurement domain, the eProcurement Ontology defines different subclasses of Criterion such as exclusion grounds, selection criteria or award criteria. A concrete example of a Criterion is 'participation in a criminal organisation' which could also be considered as an exclusion ground criterion in the procurement domain or for requiring a public service.
+|URI| cv:Criterion
+|Subklasse av / Subclass of| cv:Requirement
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+=== Obligatoriske egenskaper for klassen _Kriterium_ [[Kriterium-obligatoriske-egenskaper]]
+
+==== Kriterium – identifikator (dct:identifier) [[Kriterium-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Anvendelse| Egenskapen brukes til å oppgi identifikatoren til kriteriet.
+|Usage note|This property represents an identifier for the Criterion.
+|Multiplisitet|1..1
+|Kravnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|===
+
+==== Kriterium – navn (dct:title) [[Kriterium-navn]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|dct:title
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navn til kriteriet. Egenskapen bør gjentas når navnet er på flere språk.
+|Usage note|This property represents the official Name of the Criterion, repeated when the name is in several languages.
+|Multiplisitet|1..n
+|Kravnivå|Obligatorisk/Mandatory
+|===
+
+=== Anbefalte egenskaper for klassen _Kriterium_ [[Kriterium-anbefalte-egenskaper]]
+
+==== Kriterium – beskrivelse (dct:description) [[Kriterium-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name| description
+|URI|dct:description
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi beskrivelse av kriteriet. Egenskapen bør gjentas når beskrivelsen er på flere språk.
+|Usage note|This property represents a description of the Criterion, repeated when the description is in several languages.
+|Multiplisitet|0..n
+|Kravnivå|Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+=== Valgfrie egenskaper for klassen _Kriterium_ [[Kriterium-valgfrie-egenskaper]]
+
+==== Kriterium – bias (cv:bias) [[Kriterium-bias]]
+
+[cols="30s,70d"]
+|===
+|English name| bias
+|URI| cv:bias
+|Range| xsd:decimal
+|Anvendelse|Brukes til å oppgi parameteren som brukes til å justere evalueringen av kriteriet.
+|Usage note| This property represents the parameter used to adjust the evaluation of the Criterion.
+
+The bias parameter tries to correct a systematic error. For example in procurement, a home bias corresponds to the "presence of local preferences distorting international specialisation and resource allocation". When quantified, this systematic error can be removed.
+|Multiplisitet| 0..1
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – er subkrav av (cv:isRequirementOf) [[Kriterium-er-krav-til]]
+
+[cols="30s,70d"]
+|===
+|English name|  is requirement of
+|URI| cv:isRequirementOf
+|Range| cv:Requirement
+|Anvendelse| Egenskapen brukes til å representere en referanse mellom et subkrav og dets forelderkrav.
+
+Et subkrav/forelderkrav er en instans av klassen Krav (`cv:Requirement`) eller en av dens subklasser.
+|Usage note|This property represents a reference between a Requirement and its parent Requirement.
+|Multiplisitet|0..n
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – er utledet fra (cv:isDerivedFrom) [[Kriterium-er-utledet-fra]]
+
+[cols="30s,70d"]
+|===
+|English name| is derived from
+|URI| cv:isDerivedFrom
+|Range| cv:ReferenceFramework
+|Anvendelse| Egenskapen brukes til å referere til referanserammeverk som kriteriet er basert på, f.eks. lov, forskrift eller annen regulering.
+|Usage note|This property refers to the Reference Framework on which the Criterion is based, such as a law or regulation.
+
+Note that a Criterion can have several Reference Frameworks from which it is derived.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – er utstedt av (dct:publisher) [[Kriterium-er-utstedt-av]]
+
+[cols="30s,70d"]
+|===
+|English name| is issued by
+|URI| dct:publisher
+|Range| foaf:Agent
+|Anvendelse| Egenskapen brukes til å referere til aktøren som har utstedt kriteriet.
+|Usage note|This property refers to the Agent that has published the Criterion.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – har dokumentasjonstypeliste (cv:hasEvidenceTypeList) [[Kriterium-har-dokumentasjonstypeliste]]
+
+[cols="30s,70d"]
+|===
+|English name| has evidence type list
+|URI| cv:hasEvidenceTypeList
+|Range| cv:EvidenceTypeList
+|Anvendelse| Egenskapen brukes til å referere til dokumentasjonstypeliste som spesifiserer dokumentasjonstypene som trengs for å tilfredsstille kriteriet.
+
+Et kriterium kan ha en eller flere dokumentasjonstypelister. For at et kriterium skal være oppfylt, skal dokumentasjonen være i samsvar med minst én av listene når det er flere lister.
+|Usage note|This property refers to the Evidence Type List that specifies the Evidence Types that are needed to meet the Criterion.
+
+One or several Lists of Evidence Types can support a Criterion. At least one of them must be satisfied by the response to the Criterion.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – har informasjonsbegrep (cv:hasConcept) [[Kriterium-har-informasjonsbegrep]]
+
+[cols="30s,70d"]
+|===
+|English name| has concept
+|URI| cv:hasConcept
+|Range| cv:InformationConcept
+|Anvendelse| Egenskapen brukes til å referere til informasjonsbegrep som kriteriet forventer en verdi av.
+|Usage note|This property refers to the Information Concept for which a value is expected by the Criterion.
+
+Information Concepts defined for specific Criterions also represent the basis for specifying the Supported Value an Evidence should provide.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – har kvalifisert relasjon til andre krav (cv:hasQualifiedRelation) [[Kriterium-har-kvalifisert-relasjon-til-andre-krav]]
+
+[cols="30s,70d"]
+|===
+|English name| has qualified relation
+|URI| cv:hasQualifiedRelation
+|Range| cv:Requirement
+|Anvendelse| Egenskapen brukes til å representere en beskrevet/kategorisert relasjon til instans av klassen Krav (`cv:Requirement`) eller en av dens subklasser.
+|Usage note|This property represents a described and/or categorised relation to another Requirement.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – har mer spesifikt krav (cv:hasRequirement) [[Kriterium-har-mer-spesifikt-krav]]
+
+[cols="30s,70d"]
+|===
+|English name| has requirement
+|URI| cv:hasRequirement
+|Range| cv:Requirement
+|Anvendelse| Egenskapen brukes til å referere til instans av klassen Krav (`cv:Requirement`) eller en av dens subklasser, som er en del av kriteriet.
+|Usage note|This property refers to a more specific Requirement that is part of the Criterion.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – har understøttende dokumentasjon (cv:hasSupportingEvidence) [[Kriterium-har-understøttende-dokumentasjon]]
+
+[cols="30s,70d"]
+|===
+|English name| has supporting evidence
+|URI| cv:hasSupportingEvidence
+|Range| cv:Evidence
+|Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for kriteriet.
+|Usage note|This property refers to the Evidence that supplies information, proof or support for the Criterion.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|===
+
+==== Kriterium – tilfredsstiller regel (cv:fulfils) [[Kriterium-tilfredsstiller]]
+
+[cols="30s,70d"]
+|===
+|English name| fulfils
+|URI| cv:fulfils
+|Range| cpsv:Rule
+|Anvendelse| Egenskapen brukes til å referere til regel som kriteriet tilfredsstiller.
+|Usage note|This property refers to the rules that the Criterion fulfils.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|===
+
+==== Kriterium – type (dct:type) [[Kriterium-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Anvendelse| Egenskapen brukes til å referere til kategorien kriteriet tilhører.
+|Usage note|This property refers to the category to which the Criterion belongs.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad |Verdien bør velges fra et kontrollert vokabular.
+|Remark |The value should be chosen from a controlled vocabulary.
+|===
+
+==== Kriterium – vekting (cv:weight) [[Kriterium-vekting]]
+
+[cols="30s,70d"]
+|===
+|English name| weight
+|URI| cv:weight
+|Range| xsd:decimal
+|Anvendelse|Brukes til å oppgi relativ viktighet (vekting) av kriteriet.
+|Usage note| This property represents the relative importance of the Criterion.
+
+The weight must be between 0 and 1. Usually, all Criteria can be integrated within a weighted sum equal to 1.
+|Multiplisitet| 0..1
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – vektingstype (cv:weightingType) [[Kriterium-vektingstype]]
+
+[cols="30s,70d"]
+|===
+|English name| weighting type
+|URI| cv:weightingType
+|Range| skos:Concept
+|Anvendelse|Brukes til å oppgi hvordan vektingen bør tolkes i et komplekst evalueringsuttrykk, f.eks. som en prosent i et evalueringsuttrykk.
+|Usage note| This property represents an indication of how the weight should be interpreted in a complex evaluation expression, e.g. as a percentage in an evaluation expression
+
+An existing codelist http://publications.europa.eu/resource/authority/number-weight[Number weight] (the linked resource in RDF).
+|Multiplisitet| 0..1
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Kriterium – vektingsvurderingsbeskrivelse (cv:weightingConsiderationDescription) [[Kriterium-vektingsvurderingsbeskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name| weighting consideration description
+|URI| cv:weightingConsiderationDescription
+|Range| rdf:langString
+|Anvendelse| Brukes til å oppgi en tekstlig forklaring på hvordan vektingen av et kriterium brukes. Egenskapen bør gjentas når forklaringen finnes på flere språk.
+|Usage note| This property contains the explanation of how the weighting of a Criterion is to be used, repeated when the explanation is in parallel languages.
+|Multiplisitet| 0..n
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===

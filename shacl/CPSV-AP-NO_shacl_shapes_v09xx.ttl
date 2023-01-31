@@ -21,7 +21,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 @prefix cpsvno: <https://data.norge.no/vocabulary/cpsvno#> .
-@prefix : <https://data.norge.no/vocabulary/cpsvno#> .
+@prefix : <https://data.norge.no/vocabulary/cpsvno-shacl#> .
 
 ### About this SHACL:
 <https://github.com/Informasjonsforvaltning/cpsv-ap-no/tree/develop/shacl/>
@@ -40,11 +40,11 @@
     dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO, expressed in SHACL."@en ;
     dct:title "SHACL-rules for CPSV-AP-NO"@en ;
-    dct:modified "2022-02-24"^^xsd:date ;
-    owl:versionInfo "0.9.03" ;
-    adms:versionNotes "More rules added/adjuested. With some check on usage of controlled vocabulary."@en ,
-        "Flere regler føyet til / justert. Noen sjekk på bruk av kontrollerte vokabularer."@nb ;
-    foaf:homepage <https://data.norge.no/specification/cpsv-ap-no/> ;
+    dct:modified "2022-10-20"^^xsd:date ;
+    owl:versionInfo "0.9.05" ;
+    adms:versionNotes "As complete as it could be."@en ,
+        "Så komplett som det kan være."@nb ;
+    foaf:homepage <https://github.com/Informasjonsforvaltning/cpsv-ap-no> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
         foaf:name "Informasjonsforvaltning, Digitaliseringsdirektoratet" ;
@@ -133,7 +133,7 @@
   sh:targetClass cv:Cost .
 
 ### Felles for Klassene Hendelse (cv:Event), Livshendelse (cv:LifeEvent), Virksomhetshendelse (cv:BusinessEvent)
-:EventShape a sh:NodeShape;
+:EventAndSubclassesShape a sh:NodeShape;
   sh:name "Event, Live Event, Business Event"@en, "Hendelse, Livshendelse, Virksomhetshendelse"@nb;
   sh:property
     # mandatory properties:
@@ -188,7 +188,6 @@
       :hasMin0Max1Shape-dctIssued, # utgivelsesdato
    # optional
       :hasMin0Max1Shape-dctIsPartOfCatalog, # er del av
-      :hasMin0MaxNShape-dctHasPartCatalog, # har del
       :hasMin0MaxNShape-dcatnoContainsEvent, # inneholder hendelse
       :hasMin0Max1Shape-dctCreator, # produsent
       :hasMin0MaxNShape-dctRights # rettigheter
@@ -204,19 +203,17 @@
     ;
   sh:targetClass vcard:Kind .
 
-### Klassen Livshendelse (cv:LifeEvent) og Virksomhetshendelse (cv:BusinessEvent)
+### Klassen Livshendelse (cv:LifeEvent)
 # det som er i tillegg til / forskjellig fra klassen Hendelse (cv:Event)
-:EventShape a sh:NodeShape;
-sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
+:LifeEventShape a sh:NodeShape;
+sh:name "Life Event"@en, "Livshendelse"@nb;
   sh:property
    # recommended properties:
       :hasMin0MaxNShape-cpsvnoTriggersNeedFor, # utløser behov for
    # optional properties:
       :HasShapeCV-dctTypeLifeEventMin0MaxN # type, kontrollert vokabular
     ;
-  sh:or (
-    [sh:targetClass cv:LifeEvent]
-    [sh:targetClass cv:BusinessEvent] ).
+  sh:targetClass cv:LifeEvent .
 
 ### Klassen Offentlig organisasjon (cv:PublicOrganisation)
 :PublicOrganizationShape a sh:NodeShape;
@@ -443,9 +440,11 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:name "Business event"@en, "Virksomhetshendelse"@nb;
   sh:property
    # optional properties:
-      :HasShapeCV-dctTypeBusinessEventMin0MaxN # type, kontrollert vokabular
-   ;
- sh:targetClass cv:BusinessEvent .
+      :HasShapeCV-dctTypeBusinessEventMin0MaxN, # type kontrollert vokabular
+ # optional properties:
+    :HasShapeCV-dctTypeBusinessEventMin0MaxN # type kontrollert vokabular
+    ;
+sh:targetClass cv:BusinessEvent .
 
 ##################################
 
@@ -598,7 +597,7 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:minCount 1;
   sh:name "produces"@en, "produserer"@nb;
   sh:message "The property cpsv:produces MUST have min. 1 value which MUST be a URI referring to an instance of cv:Output or dcat:Dataset"@en,
-    "Egenskapen cpsv:produces skal ha min. 1 verdi som skal være en URI som refererer til istans av cv:Output eller dcat:Dataset"@nb;
+    "Egenskapen cpsv:produces skal ha min. 1 verdi som skal være en URI som refererer til instans av cv:Output eller dcat:Dataset"@nb;
   sh:path cpsv:produces;
   sh:severity sh:Violation .
 
@@ -616,22 +615,22 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 :hasMin0MaxNShape-cpsvnoMayInitiate a sh:PropertyShape;
   sh:or (
     [sh:class cpsvno:Service]
-    [sh:class cpsv:PublicSerivce] );
+    [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
   sh:name "may initiate"@en, "kan sette i gang"@nb;
-  sh:message "The property cpsvno:mayInitiate MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicSerivce"@en,
-    "Egenskapen cpsvno:mayInitiate skal være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
+  sh:message "The property cpsvno:mayInitiate MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicService"@en,
+    "Egenskapen cpsvno:mayInitiate skal være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:path cpsvno:mayInitiate;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cpsvnoTriggersNeedFor a sh:PropertyShape;
   sh:or (
     [sh:class cpsvno:Service]
-    [sh:class cpsv:PublicSerivce] );
+    [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
   sh:name "triggers need for"@en, "utløser behov for"@nb;
-  sh:message "The property cpsvno:triggersNeedFor MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicSerivce"@en,
-    "Egenskapen cpsvno:triggersNeedFor skal være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
+  sh:message "The property cpsvno:triggersNeedFor MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicService"@en,
+    "Egenskapen cpsvno:triggersNeedFor skal være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:path cpsvno:mayInitiate;
   sh:severity sh:Violation .
 
@@ -894,11 +893,11 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
 
 :hasMin1MaxNShape-dcatnoContainsService a sh:PropertyShape;
    sh:name "servicve"@en, "inneholder tjeneste"@nb;
-   sh:message "The property dcatno:containsService MUST have min 1. value which MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicSerivce",
-      "Egenskapen dcatno:containsService SKAL have min 1. verdi som SKAL være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicSerivce"@nb;
+   sh:message "The property dcatno:containsService MUST have min 1. value which MUST be a URI referring to an instance of cpsvno:Service or cpsv:PublicService",
+      "Egenskapen dcatno:containsService SKAL have min 1. verdi som SKAL være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
    sh:or (
       [sh:class cpsvno:Service]
-      [sh:class cpsv:PublicSerivce] );
+      [sh:class cpsv:PublicService] );
    sh:path dcatno:containsService;
    sh:minCount 1;
    sh:severity sh:Violation .
@@ -950,13 +949,6 @@ sh:name "Life Event, Business Event"@en, "Livshendelse, Virksomhetshendelse"@nb;
   sh:name "description"@en, "beskrivelse"@nb;
   sh:nodeKind sh:Literal;
   sh:path dct:description;
-  sh:severity sh:Violation .
-
-:hasMin0MaxNShape-dctHasPartCatalog a sh:PropertyShape;
-  sh:message "The property dct:hasPart MUST be a URI referring to an instance of dcat:Catalog"@en, "Egenskapen dct:hasPart skal være en URI som refererer til en instans av dcat:Catalog"@nb ;
-  sh:name "has part"@en, "har del"@nb ;
-  sh:class dcat:Catalog;
-  sh:path dct:hasPart;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctHasPartService a sh:PropertyShape;
@@ -1193,8 +1185,8 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:class foaf:Document;
 #  sh:nodeKind sh:IRI;
   sh:name "homepage"@en, "hjemmeside"@nb;
-  sh:message "The property foaf:homepag MUST be an IRI"@en,
-    "Egenskapen foaf:homepag skal være en IRI"@nb;
+  sh:message "The property foaf:homepag MUST be an IRI referring to an instance of foaf:Document"@en,
+    "Egenskapen foaf:homepag skal være en IRI som refererer til en instans av foaf:Document"@nb;
   sh:path foaf:homepage;
   sh:severity sh:Warning .
 
@@ -1387,15 +1379,15 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:severity sh:Warning .
 
 :HasShapeCV-cvCurrencyMin0Max1 a sh:PropertyShape;
-  sh:message "The property cv:currency may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/dataset/currency/"@en,
-   "Egenskapen cv:currency kan ha max. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/dataset/currency/"@nb;
+  sh:message "The property cv:currency may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/authority/currency/"@en,
+   "Egenskapen cv:currency kan ha max. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/authority/currency/"@nb;
   sh:name "currency"@en, "valuta"@nb;
   sh:nodeKind sh:IRI;
   sh:path cv:currency;
   sh:maxCount 1;
   sh:or (
-   [sh:pattern "^http://publications.europa.eu/resource/dataset/currency/"]
-   [sh:pattern "^https://publications.europa.eu/resource/dataset/currency/"] )
+   [sh:pattern "^http://publications.europa.eu/resource/authority/currency/"]
+   [sh:pattern "^https://publications.europa.eu/resource/authority/currency/"] )
    ;
   sh:severity sh:Violation .
 
@@ -1410,15 +1402,15 @@ sh:message "The property dct:rights may have max. 1 value which MUST be a URI re
   sh:severity sh:Warning .
 
 :HasShapeCV-dctAccrualPeriodicityMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/dataset/frequency/"@en,
-   "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/dataset/frequency/"@nb;
+  sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have the following pattern: http://publications.europa.eu/resource/authority/frequency/"@en,
+   "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha følgende mønster: http://publications.europa.eu/resource/authority/frequency/"@nb;
   sh:name "accrual periodicity"@en, "frekvens"@nb;
   sh:nodeKind sh:IRI;
   sh:path dct:accrualPeriodicity;
   sh:maxCount 1;
   sh:or (
-   [sh:pattern "^http://publications.europa.eu/resource/dataset/frequency/"]
-   [sh:pattern "^https://publications.europa.eu/resource/dataset/frequency/"]
+   [sh:pattern "^http://publications.europa.eu/resource/authority/frequency/"]
+   [sh:pattern "^https://publications.europa.eu/resource/authority/frequency/"]
    );
   sh:severity sh:Violation .
 

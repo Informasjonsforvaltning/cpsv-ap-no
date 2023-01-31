@@ -1,0 +1,37 @@
+== Klassen Referanserammeverk (cv:ReferenceFramework) [[Referanserammeverk]]
+
+[[img-KlassenReferanserammeverk]]
+.Klassen Referanserammeverk (cv:ReferenceFramework)
+[link=images/KlassenReferanserammeverk.png]
+image::images/KlassenReferanserammeverk.png[alt="UML-diagram med klassen Referanserammeverk og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+
+[cols="30s,70d"]
+|===
+|English name| Reference framework
+|Anvendelse| Klassen brukes til å representere lovgivning eller offisiell politikk som krav er utledet fra. Eksempler kan være prosedyrer, anskaffelsesreglement osv.
+|Usage note|This class represents legislation or official policy from which Requirements are derived. Examples include procedures, tendering legislation, etc.
+|URI| cv:ReferenceFramework
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|Eksempel| Se under <<Å-beskrive-dokumentasjonskrav>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Å-beskrive-dokumentasjonskrav>>.
+
+=== Obligatoriske egenskaper for klassen _Referanserammeverk_ [[Referanserammeverk-obligatoriske-egenskaper]]
+
+==== Referanserammeverk – identifikator (dct:identifier) [[Referanserammeverk-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name| identifier
+|URI| dct:identifier
+|Range| rdfs:Literal
+|Anvendelse| Egenskapen brukes til å oppgi en unik referanse til referanserammeverket.
+|Usage note|This property represents an unambiguous reference to a reference framework.
+|Multiplisitet| 1..1
+|Kravnivå| Obligatorisk/Mandatory
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===

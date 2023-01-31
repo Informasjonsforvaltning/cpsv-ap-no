@@ -3,17 +3,16 @@
 [[img-KlassenRegel]]
 .Klassen Regel (cv:Rule)
 [link=images/KlassenRegel.png]
-image::images/KlassenRegel.png[]
+image::images/KlassenRegel.png[alt="UML-diagram med klassen Regel, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
 |English name|Rule
-|Anvendelse|Brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en tjeneste.
-|Usage note|The Rule class represents a document that sets out the specific rules, guidelines or procedures that a Service follows. It includes the terms of service, licence, and authentication requirements of the Service.
+|Anvendelse| Klassen brukes til å representere regler/dokumenter som setter spesifikke regler, retningslinjer eller prosedyrer som skal følges av en tjeneste.
+|Usage note| The Rule class represents a document that sets out the specific rules, guidelines or procedures that a Service follows. It includes the terms of service, licence, and authentication requirements of the Service.
 |URI|cpsv:Rule
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|Se under <<KnytteTilRegelverk>> for eksempler på bruk av denne klassen.
+|Kravnivå |Valgfri/Optional
+|Eksempel|Se under <<KnytteTilRegelverk>> for eksempler på bruk av klassen.
 |===
 
 === Obligatoriske egenskaper for klassen _Regel_ [[Regel-obligatoriske-egenskaper]]
@@ -24,13 +23,11 @@ image::images/KlassenRegel.png[]
 |===
 |English name|description
 |URI|dct:description
-|Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av regelen. Denne egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
-|Usage note|This property contains descriptive textual information about the Rule. This property should be repeated in case there are various versions of the text in different languages.
+|Range| rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi en tekstlig beskrivelse av regelen. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+|Usage note| This property contains descriptive textual information about the Rule. This property should be repeated in case there are various versions of the text in different languages.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad| Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
-|Eksempel|
+|Kravnivå |Obligatorisk/Mandatory
 |===
 
 ==== Regel – identifikator (dct:identifier) [[Regel-identifikator]]
@@ -40,29 +37,26 @@ image::images/KlassenRegel.png[]
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi identifikatoren til regelen.
-|Usage note|This property contains an identifier for the rule.
+|Anvendelse| Egenskapen brukes til å oppgi identifikatoren til regelen.
+|Usage note| This property contains an identifier for the rule.
 |Multiplisitet|1..1
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+|Kravnivå |Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
-|Eksempel|
 |===
 
-==== Regel – tittel (dct:title) [[Regel-tittel]]
+==== Regel – navn (dct:title) [[Regel-navn]]
 
 [cols="30s,70d"]
 |===
-|English name|title
+|English name|name
 |URI|dct:title
-|Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi en beskrivende tittel eller navn for regelen. Gjentas når tittelen finnes i flere ulike språk.
-|Usage note|This property refers to the descriptive title or name of a Resource. This property should be repeated in case there are various versions of the text in different languages.
+|Range| rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi et beskrivende navn eller tittel for regelen. Egenskapen bør gjentas når navnet finnes på flere språk.
+|Usage note| This property refers to the descriptive title or name of a Resource. This property should be repeated in case there are various versions of the text in different languages.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad| Norsk utvidelse: Multiplisitet endret fra 1..1 til 1..n, for å støtte flerspråklighet.
-|Eksempel|
+|Kravnivå |Obligatorisk/Mandatory
 |===
 
 === Anbefalte egenskaper for klassen _Regel_ [[Regel-anbefalte-egenskaper]]
@@ -74,11 +68,12 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name|implements
 |URI|cpsv:implements
 |Range|eli:LegalResource
-|Anvendelse|Brukes til å referere til en regulativ ressurs som regelen er definert inn under.
-|Usage note|This property links a Rule to relevant legislation or policy documents, such as the Legal Resource under which the Rules are defined.
+|Anvendelse| Egenskapen brukes til å referere til en regulativ ressurs som regelen er definert inn under.
+|Usage note| This property links a Rule to relevant legislation or policy documents, such as the Legal Resource under which the Rules are defined.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|
+|Kravnivå |Anbefalt/Recommended
+|Merknad| Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+|Remark | Norwegian extension: Requirement level changed from optional to recommended.
 |Eksempel|Se under <<KnytteTilRegelverk>>.
 |===
 
@@ -91,13 +86,14 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |English name|language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Anvendelse|Brukes til å referere til språk/målform som regelen er tilgjengelig i.
+|Anvendelse| Egenskapen brukes til å oppgi hvilke språk regelen er tilgjengelig på.
 |Usage note|This property represents the language(s) in which the Rule is available. This could be one or multiple languages, for instance in countries with more than one official language.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Språk].
-|Remark |The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[Language].
-|Eksempel|
+|Kravnivå |Anbefalt/Recommended
+|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
+|Remark 1 |The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language].
+|Merknad 2 | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+|Remark 2 | Norwegian extension: Requirement level changed from optional to recommended.
 |===
 
 === Valgfrie egenskaper for klassen _Regel_ [[Regel-valgfrie-egenskaper]]
@@ -109,11 +105,10 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Anvendelse|Brukes til å spesifisere type regel. Denne egenskapen skal bruke et kontrollert vokabular.
+|Anvendelse| Egenskapen brukes til å spesifisere type regel. Egenskapen skal bruke et kontrollert vokabular.
 |Usage note|This property refers to the type of a Rule. It must use a controlled vocabulary.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/rule-type[Regeltype], når verdien finnes i vokabularet.
 |Remark | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/rule-type[Rule type], when the value is in the vocabulary.
-|Eksempel|
 |===

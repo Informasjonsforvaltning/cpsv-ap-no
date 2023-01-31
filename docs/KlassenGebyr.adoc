@@ -3,17 +3,16 @@
 [[img-KlassenGebyr]]
 .Klassen Gebyr (cv:Cost)
 [link=images/KlassenGebyr.png]
-image::images/KlassenGebyr.png[]
+image::images/KlassenGebyr.png[alt="UML-diagram med klassen Gebyr, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
 |English name|Cost
-|Anvendelse|Brukes til å representere gebyr.
+|Anvendelse| Klassen brukes til å representere gebyr.
 |Usage note|The Cost class represents any costs related to the execution of a service that the Agent consuming it needs to pay.
 |URI|cv:Cost
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|Se under <<OffentligTjeneste-gebyr>>.
+|Kravnivå|Valgfri/Optional
+|Eksempel|Se under <<OffentligTjeneste-har-gebyr>>.
 |===
 
 === Obligatoriske egenskaper for klassen _Gebyr_ [[Gebyr-obligatoriske-egenskaper]]
@@ -24,35 +23,33 @@ image::images/KlassenGebyr.png[]
 |===
 |English name|identifier
 |URI|dct:identifier
-|Range|rdfs:Literal typed as URI
-|Anvendelse|Brukes til å oppgi en identifikator til gebyret.
+|Range|rdfs:Literal
+|Anvendelse| Egenskapen brukes til å oppgi en identifikator til gebyret.
 |Usage note|This property represents an Identifier for the Cost.
 |Multiplisitet|1..1
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+|Kravnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
-|Eksempel|
 |===
 
 === Anbefalte egenskaper for klassen _Gebyr_ [[Gebyr-anbefalte-egenskaper]]
 
-==== Gebyr – beløp (cv:value) [[Gebyr-beløp]]
+==== Gebyr – beløp (cv:hasValue) [[Gebyr-beløp]]
 
 [cols="30s,70d"]
 |===
 |English name|value
-|URI|cv:value
-|Range|rdf:Litereal typed as xsd:decimal
-|Anvendelse|Brukes til å oppgi gebyrbeløpet.
+|URI|cv:hasValue
+|Range| xsd:double
+|Anvendelse| Egenskapen brukes til å oppgi gebyrbeløpet.
 |Usage note|This property represents a numeric value indicating the amount of the Cost.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|
-|Eksempel|Se under <<OffentligTjeneste-gebyr>>.
+|Kravnivå|Anbefalt/Recommended
+|Eksempel|Se under <<OffentligTjeneste-har-gebyr>>.
 |===
 
-Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
+Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 
 ==== Gebyr – beskrivelse (dct:description) [[Gebyr-beskrivelse]]
 
@@ -60,16 +57,15 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |===
 |English name|description
 |URI|dct:description
-|Range|rdfs:Literal
-|Anvendelse|Brukes til å oppgi en tekstlig beskrivelse av gebyret. Gjentas når beskrivelsen finnes i flere språk.
-|Usage note|This property represents a free text description of the Cost.
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi en tekstlig beskrivelse av gebyret. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+|Usage note|This property represents a free text description of the Cost, repeated when the description is in parallel languages.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt
-|Merknad|Norsk utvidelse: Multiplisitet endret fra 0..1 til 0..n, for å støtte flerspråklighet.
-|Eksempel|Se under <<OffentligTjeneste-gebyr>>.
+|Kravnivå|Anbefalt
+|Eksempel|Se under <<OffentligTjeneste-har-gebyr>>.
 |===
 
-Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
+Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 
 ==== Gebyr – valuta (cv:currency) [[Gebyr-valuta]]
 
@@ -77,17 +73,17 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |===
 |English name|currency
 |URI|cv:currency
-|Range|URI
-|Anvendelse|Brukes til å oppgi valutatype av gebyret.
+|Range| skos:Concept
+|Anvendelse| Egenskapen brukes til å oppgi valutatype av gebyret.
 |Usage note|This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/s/teOr[Valuta].
-|Remarks|The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/s/teOr[Currency].
-|Eksempel|Se under <<OffentligTjeneste-gebyr>>.
+|Kravnivå|Anbefalt/Recommended
+|Merknad|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency[Valuta].
+|Remark|The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency[Currency].
+|Eksempel|Se under <<OffentligTjeneste-har-gebyr>>.
 |===
 
-Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
+Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 
 === Valgfrie egenskaper for klassen _Gebyr_ [[Gebyr-valgfrie-egenskaper]]
 
@@ -97,14 +93,11 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |===
 |English name|is defined by
 |URI|cv:isDefinedBy
-|Range|foaf:Agent
-|Anvendelse|Brukes til å referere til en eller flere aktører (inkl. offentlige organisasjoner) som bestemmer gebyr for en tjeneste.
-|Usage note|This property links the Cost class with one or more instances of the Agent class (foaf:Agent). This property refers to the agent(s) defining the costs associated with the delivery of a particular Service.
+|Range| org:Organization
+|Anvendelse| Egenskapen brukes til å referere til en eller flere organisasjonen (inkl. offentlige organisasjoner) som bestemmer gebyr for en tjeneste.
+|Usage note|This property links the Cost class with one or more instances of the Agent class (foaf:Agent). This property refers to the organisation(s) defining the costs associated with the delivery of a particular Service.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad| Norsk utvidelse: Range er endret fra `cv:PublicOrganisation` til `foaf:Agent`, som en følge av at spesifikasjonen også dekker behov for beskrivelse av tjenester som tilbys av en aktør (`foaf:Agent`) som ikke er en offentlig organisasjon.
-|Remark | Norwegian extension: Range changed from 'cv:PublicOrganisation' to 'foaf:Agent'.
-|Eksempel|
+|Kravnivå|Valgfri/Optional
 |===
 
 ==== Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough) [[Gebyr-hvisTilbysGjennom]]
@@ -114,10 +107,8 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-gebyr>>.
 |English name|if accessed through
 |URI|cv:ifAccessedThrough
 |Range|cv:Channel
-|Anvendelse|Brukes til å referere til en tjenestekanal som det aktuelle gebyret er spesifikt for.
+|Anvendelse| Egenskapen brukes til å referere til en tjenestekanal som det aktuelle gebyret er spesifikt for.
 |Usage note|Where the cost varies depending on the channel used, for example, if accessed through an online service cf. accessed at a physical location, the cost can be linked to the channel using the If Accessed Through property.
 |Multiplisitet|0..1
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|
+|Kravnivå|Valgfri/Optional
 |===

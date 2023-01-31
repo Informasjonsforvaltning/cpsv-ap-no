@@ -1,0 +1,41 @@
+== Klassen Tidspunkt (time:Instant) [[Tidspunkt]]
+
+[[img-KlassenTidspuynkt]]
+.Klassen Tidspunkt (time:Instant)
+[link=images/KlassenTidspunkt.png]
+image::images/KlassenTidspunkt.png[alt="UML-diagram med klassen Tidspunkt og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+
+[cols="30s,70d"]
+|===
+|English name| Time instant
+|Anvendelse| Klassen brukes til å representere et tidspunkt.
+|Usage note| This class represents a time instant.
+|URI| time:Instant
+|Subklasse av / Subclass of | time:TemporalEntity
+|Kravnivå | Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+|Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
+
+=== Obligatoriske egenskaper for klassen _Tidspunkt_ [[Tidspunkt-obligatoriske-egenskaper]]
+
+==== Tidspunkt – tidspunktangivelse (time:inDateTime) [[Tidspunkt-tidspunktangivelse]]
+[cols="30s,70d"]
+|===
+|English name | in date-time description
+|URI| time:inDateTime
+|Range| time:DateTimeDescription
+|Anvendelse | Egenskapen brukes til å oppgi et tidspunkt, som en strukturert beskrivelse.
+|Usage note | This property is used to specify the position of an instant, expressed using a structured description.
+|Multiplisitet| 1..1
+|Kravnivå | Obligatorisk/Mandatory
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
+

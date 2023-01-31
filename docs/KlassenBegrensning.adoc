@@ -1,0 +1,233 @@
+== Klassen Begrensning (cv:Constraint) [[Begrensning]]
+
+[[img-KlassenBegrensning]]
+.Klassen Begrensning (cv:Constraint)
+[link=images/KlassenBegrensning.png]
+image::images/KlassenBegrensning.png[alt="UML-diagram med klassen Begrensning, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+
+[cols="30s,70d"]
+|===
+|English name|  Constraint
+|Anvendelse| Klassen brukes til å representere begrensning som gjelder for et informasjonsbegrep.
+
+Begrensninger er krav i seg selv siden de stiller forutsetninger som påvirker definisjonen, bruken og/eller oppfyllelsen av kravet. De representerer harde betingelser som minimums- eller maksimumsuttrykk som kan brukes til å evaluere opplysninger som for eksempel nødvendig alder, inntekt, involvering i aktiviteter osv.
+|Usage note|This class represents the limitation applied to an Information Concept.
+
+Constraints are requirements in themselves, since they impose prerequisites which influence the definition, use and/or fulfilment of the requirement. They represent hard conditions such as minimum or maximum expressions which can be used to evaluate pieces of information, the required age, income, involvement in activities, etc. An example from the eProcurement domain is a threshold as the minimum turnover required by the buying organisation to select the candidates. Note that CCCEV does not provide any specific guidance on when which kind of Requirement should be used. Users of this vocabulary should make decisions on this topic in their specific context.
+|URI| cv:Constraint
+|Subklasse av / Subclass of| cv:Requirement
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|Eksempel| Se under <<Å-beskrive-dokumentasjonskrav>>.
+|===
+
+Eksempel i RDF Turtle: Se under <<Å-beskrive-dokumentasjonskrav>>.
+
+=== Obligatoriske egenskaper for klassen _Begrensning_ [[Begrensning-obligatoriske-egenskaper]]
+
+==== Begrensning – begrenser (cv:constrains) [[Begrensning-begrenser]]
+
+[cols="30s,70d"]
+|===
+|English name| constrains
+|URI| cv:constrains
+|Range| cv:InformationConcept
+|Anvendelse| Egenskapen brukes til å referere til informasjonsbegrep som begrensningen gjelder for.
+
+Informasjonsbegrep er et verktøy for å gjøre Krav mer maskinanvendbare; de lar deg gi flere detaljer om et Krav. På denne måten kan Begrensninger gjøres veldig presise. For eksempel vil Informasjonsbegrepet være alderen til en person og Begrensningen vil være den nødvendige alderen i sammenheng med en spesifikk evaluering.
+|Usage note| This property refers to the Information Concept about which a Constraint expresses a limitation.
+
+Information Concepts are tools to make Requirements more machine processable: they allow to provide more detail about a Requirement. This way, Constraints can be made very precise, namely the limit that must be achieved, is a limit on the value for the associated Information Concept. For example, the Information Concept would be the age of a person and the Constraint would be the required age in the context of a specific evaluation.
+|Multiplisitet| 1..1
+|Kravnivå| Obligatorisk/Mandatory
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Begrensning – identifikator (dct:identifier) [[Begrensning-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Anvendelse| Egenskapen brukes til å oppgi identifikatoren til begrensningen.
+|Usage note|This property represents an identifier for the Constraint.
+|Multiplisitet|1..1
+|Kravnivå|Obligatorisk/Mandatory
+|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|===
+
+==== Begrensning – navn (dct:title) [[Begrensning-navn]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|dct:title
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navn til begrensningen. Egenskapen bør gjentas når navnet er på flere språk.
+|Usage note|This property represents the official Name of the Constraint, repeated when the name is in several languages.
+|Multiplisitet|1..n
+|Kravnivå|Obligatorisk/Mandatory
+|===
+
+=== Anbefalte egenskaper for klassen _Begrensning_ [[Begrensning-anbefalte-egenskaper]]
+
+==== Begrensning – beskrivelse (dct:description) [[Begrensning-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name| description
+|URI|dct:description
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi beskrivelse av begrensningen. Egenskapen bør gjentas når beskrivelsen er på flere språk.
+|Usage note|This property represents a description of the Constraint, repeated when the description is in several languages.
+|Multiplisitet|0..n
+|Kravnivå|Anbefalt/Recommended
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+=== Valgfrie egenskaper for klassen _Begrensning_ [[Begrensning-valgfrie-egenskaper]]
+
+==== Begrensning – er subkrav av (cv:isRequirementOf) [[Begrensning-er-krav-til]]
+
+[cols="30s,70d"]
+|===
+|English name|  is requirement of
+|URI| cv:isRequirementOf
+|Range| cv:Requirement
+|Anvendelse| Egenskapen brukes til å representere en referanse mellom et subkrav og dets forelderkrav.
+
+Et subkrav/forelderkrav er en instans av klassen Krav (`cv:Requirement`) eller en av dens subklasser.
+|Usage note|This property represents a reference between a Requirement and its parent Requirement.
+|Multiplisitet|0..n
+|Kravnivå| Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Begrensning – er utledet fra (cv:isDerivedFrom) [[Begrensning-er-utledet-fra]]
+
+[cols="30s,70d"]
+|===
+|English name| is derived from
+|URI| cv:isDerivedFrom
+|Range| cv:ReferenceFramework
+|Anvendelse| Egenskapen brukes til å referere til referanserammeverk som begrensningen er basert på, f.eks. lov, forskrift eller annen regulering.
+|Usage note|This property refers to the Reference Framework on which the Constraint is based, such as a law or regulation.
+
+Note that a Constraint can have several Reference Frameworks from which it is derived.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Begrensning – er utstedt av (dct:publisher) [[Begrensning-er-utstedt-av]]
+
+[cols="30s,70d"]
+|===
+|English name| is issued by
+|URI| dct:publisher
+|Range| foaf:Agent
+|Anvendelse| Egenskapen brukes til å referere til aktøren som har utstedt begrensningen.
+|Usage note|This property refers to the Agent that has published the Constraint.
+|Multiplisitet|0..1
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Begrensning – har dokumentasjonstypeliste (cv:hasEvidenceTypeList) [[Begrensning-har-dokumentasjonstypeliste]]
+
+[cols="30s,70d"]
+|===
+|English name| has evidence type list
+|URI| cv:hasEvidenceTypeList
+|Range| cv:EvidenceTypeList
+|Anvendelse| Egenskapen brukes til å referere til dokumentasjonstypeliste som spesifiserer dokumentasjonstypene som trengs for å tilfredsstille begrensningen.
+
+En begrensning kan ha en eller flere dokumentasjonstypelister. For at begrensningskravet skal være oppfylt, skal dokumentasjonen være i samsvar med minst én av listene når det er flere lister.
+|Usage note|This property refers to the Evidence Type List that specifies the Evidence Types that are needed to meet the Constraint.
+
+One or several Lists of Evidence Types can support a Constraint. At least one of them must be satisfied by the response to the Constraint.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Begrensning – har kvalifisert relasjon til andre krav (cv:hasQualifiedRelation) [[Begrensning-har-kvalifisert-relasjon-til-andre-krav]]
+
+[cols="30s,70d"]
+|===
+|English name| has qualified relation
+|URI| cv:hasQualifiedRelation
+|Range| cv:Requirement
+|Anvendelse| Egenskapen brukes til å representere en beskrevet/kategorisert relasjon til instans av klassen Krav (`cv:Requirement`) eller en av dens subklasser.
+|Usage note|This property represents a described and/or categorised relation to another Requirement.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Begrensning – har mer spesifikt krav (cv:hasRequirement) [[Begrensning-har-mer-spesifikt-krav]]
+
+[cols="30s,70d"]
+|===
+|English name| has requirement
+|URI| cv:hasRequirement
+|Range| cv:Requirement
+|Anvendelse| Egenskapen brukes til å referere til instans av klassen Krav (`cv:Requirement`) eller en av dens subklasser, som er del av begrensningen.
+|Usage note|This property refers to a more specific Requirement that is part of the Constraint.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses.
+|===
+
+==== Begrensning – har understøttende dokumentasjon (cv:hasSupportingEvidence) [[Begrensning-har-understøttende-dokumentasjon]]
+
+[cols="30s,70d"]
+|===
+|English name| has supporting evidence
+|URI| cv:hasSupportingEvidence
+|Range| cv:Evidence
+|Anvendelse| Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for begrensningen.
+|Usage note|This property refers to the Evidence that supplies information, proof or support for the Constraint.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|===
+
+==== Begrensning – tilfredsstiller regel (cv:fulfils) [[Begrensning-tilfredsstiller]]
+
+[cols="30s,70d"]
+|===
+|English name| fulfils
+|URI| cv:fulfils
+|Range| cpsv:Rule
+|Anvendelse| Egenskapen brukes til å referere til regel som begrensningen tilfredsstiller.
+|Usage note|This property refers to the rules that the Constraint fulfils.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|===
+
+==== Begrensning – type (dct:type) [[Begrensning-type]]
+
+[cols="30s,70d"]
+|===
+|English name|type
+|URI|dct:type
+|Range|skos:Concept
+|Anvendelse| Egenskapen brukes til å referere til kategorien begrensningen tilhører.
+|Usage note|This property refers to the category to which the Constraint belongs.
+|Multiplisitet|0..n
+|Kravnivå|Valgfri/Optional
+|Merknad |Verdien bør velges fra et kontrollert vokabular.
+|Remark |The value should be chosen from a controlled vocabulary.
+|===

@@ -3,50 +3,22 @@
 [[img-KlassenAktør]]
 .Klassen Aktør (foaf:Agent)
 [link=images/KlassenAktør.png]
-image::images/KlassenAktør.png[]
+image::images/KlassenAktør.png[alt="UML-diagram med klassen Aktør, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
 |English name|Agent
-|Anvendelse|Brukes til å representere en aktør, som inkluderer enkeltperson, virksomhet og gruppe.
-|Usage note|The Agent class is any resource that acts or has the power to act. This includes people, organisations and groups. The Public Organization class, defined in the Core Public Organisation Vocabulary, is a notable sub class of Agent.
+|Anvendelse| Klassen brukes til å representere en aktør, som inkluderer enkeltperson, virksomhet og gruppe.
+|Usage note|The Agent class is any resource that acts or has the power to act. This includes people, organisations and groups.
 |URI|foaf:Agent
-|Kravsnivå|Anbefalt/Recommended
-|Merknad 1|For aktør som er en offentlig organisasjon skal <<OffentligOrganisasjon>> brukes.
-|Merknad 2|Kravsnivå endret fra valgfri til anbefalt.
-|Merknad 3|Norsk utvidelse: URI endret fra `dct:Agent` til `foaf:Agent` (EU har sagt at dette skal endres i neste release av CPSV-AP, så dette vil etter hvert ikke være en norsk utvidelse).
-|Eksempel| Som eksempel på bruk av denne klassen, bruker vi en fiktiv exAktør ("Den beste restauranten AS") som ikke er en offentlig organisasjon.
+|Kravnivå|Anbefalt/Recommended
+|Merknad 1|For aktør som er en offentlig organisasjon skal <<OffentligOrganisasjon>> brukes, og for aktør som er en ikke-offentlig organisasjon skal <<Organisasjon>> brukes.
+|Remark 1 | For Agent which is a public organisation, <<OffentligOrganisasjon>>  shall be used. For Agent which is a non-public organisation, <<Organisasjon>> shall be used.
+|Merknad 2| Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+|Remark 2 | Norwegian extension: Requirement level changed from optional to recommended.
 |===
-
-Eksempel i RDF Turtle:
------
-<exAktør> a foaf:Agent ; .
------
 
 === Obligatoriske egenskaper for klassen _Aktør_ [[Aktør-obligatoriske-egenskaper]]
-
-==== Aktør – navn (foaf:name) [[Aktør-navn]]
-
-[cols="30s,70d"]
-|===
-|English name|name
-|URI|foaf:name
-|Range|rdfs:Literal
-|Anvendelse|Navn på aktøren. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
-|Usage note|This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages).
-|Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad|
-|Eksempel| Navnet til vår exAktør er «Den beste restauranten AS»
-|===
-
-Eksempel i RDF Turtle:
-----
-<exAktør> a foaf:Agent ;
-   foaf:name "Den beste restauranten AS"@nb ; .
-----
-
-=== Anbefalte egenskaper for klassen _Aktør_ [[Aktør-anbefalte-egenskaper]]
 
 ==== Aktør – identifikator (dct:identifier) [[Aktør-identifikator]]
 
@@ -55,22 +27,29 @@ Eksempel i RDF Turtle:
 |English name|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Anvendelse|Egenskap som angir aktørens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
-|Usage note|This property contains an identifier for the Agent.
-|Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+|Anvendelse| Egenskapen brukes til å angi aktørens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
+|Usage note| This property contains the identifier for the Agent.
+|Multiplisitet|1..1
+|Kravnivå|Obligatorisk/Mandatory
+|Merknad| Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
-For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. `\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`
-|Eksempel| Vår exAktør har organisasjonsnummer 123456789
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
 |===
 
-Eksempel I RDF Turtle:
------
-<exAktør> a foaf:Agent ;
-   foaf:name "Den beste restauranten AS"@nb ;
-   dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/123456789"^^xsd:anyURI ;  .
------
+==== Aktør – navn (dt:title) [[Aktør-navn]]
+
+[cols="30s,70d"]
+|===
+|English name|name
+|URI|dct:title
+|Range|rdf:langString
+|Anvendelse| Egenskapen brukes til å oppgi navnet på aktøren. Egenskapen bør gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
+|Usage note| This property contains the name of the agent. This property should be repeated for different versions of the name (e.g. the name in different languages).
+|Multiplisitet|1..n
+|Kravnivå|Obligatorisk/Mandatory
+|===
+
+=== Anbefalte egenskaper for klassen _Aktør_ [[Aktør-anbefalte-egenskaper]]
 
 ==== Aktør – type (dct:type) [[Aktør-type]]
 
@@ -79,21 +58,15 @@ Eksempel I RDF Turtle:
 |English name|type
 |URI|dct:type
 |Range|skos:Concept
-|Anvendelse|Refererer til type aktør.
-|Usage note|This property refers to a type of the agent.
+|Anvendelse| Egenskapen brukes til å oppgi type aktør.
+|Usage note| This property refers to a type of the agent.
 |Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (lenket ressurs i RDF)].
-|Remark | The value shall be chosen from http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (linked resource in RDF)].
-|Eksempel| Vår exAktør er av type _Company_.
+|Kravnivå|Anbefalt/Recommended
+|Merknad 1 | Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (lenket ressurs i RDF)].
+|Remark 1 | The value shall be chosen from http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (linked resource in RDF)].
+|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
-
-Eksempel i RDF Turtle:
------
-<exAktør> a foaf:Agent ;
-   foaf:name "Den beste restauranten AS"@nb ;
-   dct:type <http://purl.org/adms/publishertype/Company> ;  .
------
 
 === Valgfrie egenskaper for klassen _Aktør_ [[Aktør-valgfrie-egenskaper]]
 
@@ -104,35 +77,21 @@ Eksempel i RDF Turtle:
 |English name|address
 |URI|locn:address
 |Range|locn:Address
-|Anvendelse|Brukes til å oppgi en adresse til aktøren.
-|Usage note|This property represents an Address related to an Agent.
+|Anvendelse| Egenskapen brukes til å oppgi en adresse til aktøren.
+|Usage note| This property represents an Address related to an Agent.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: I CPSV-AP er URIen for denne egenskapen `cv:hasAddress` og range `locn:Address`. Vi har valgt å samkjøre med DCAT-AP-NO som bruker URI `locn:address` med range `locn:Address`. Core Public Organization Vocabulary (v.1.0.0) som CPSV-AP baseres på, bruker også URIen `locn:address`.
-|Eksempel| Vår exAktør har følgende adresse: Restaurantgata 1, Gourmetby, Matland
+|Kravnivå|Valgfri/Optional
 |===
 
-Eksempel i RDF Turtle:
-----
-<exAktør> a foaf:Agent ;
-   foaf:name "Den beste restauranten AS"@nb ;
-     locn:address [ a locn:Address ;
-         locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ] ; .
-----
-
-==== Aktør – har rolle i (cv:playsRole) [[Aktør-harRolle]]
+==== Aktør – deltar i (cv:participates) [[Aktør-deltar-i]]
 
 [cols="30s,70d"]
 |===
 |English name|plays role
-|URI|cv:playsRole
+|URI|cv:participates
 |Range|cv:Participation
-|Anvendelse|Brukes til å knytte en deltagelse (`cv:Participation`) til en aktør.
-|Usage note|This property links an Agent to the Participation class. The Participation class (`cv:Participation`) facilitates the detailed description of how an Agent participates in or interacts with a service and may include temporal and spatial constraints on that participation.
+|Anvendelse| Egenskapen brukes til å knytte en deltagelse (`cv:Participation`) til en aktør.
+|Usage note| This property links an Agent to the Participation class (`cv:Participation`). The Participation class facilitates the detailed description of how an Agent participates in or interacts with a service and may include temporal and spatial information.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+|Kravnivå|Valgfri/Optional
 |===
-
-Eksempel i RDF Turtle: Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.

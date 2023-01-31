@@ -3,8 +3,8 @@
 [[img-HendelseOgDistribusjon]]
 .Hendelse og Distribusjon
 [link=images/FigurHendelseOgDistribusjon.png]
-image::images/FigurHendelseOgDistribusjon.png[]
+image::images/FigurHendelseOgDistribusjon.png[alt="UML-diagrammet med fire klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
-Som illustrert i figur <<img-HendelseOgDistribusjon>> har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (`dcat:distribution`) i <<Hendelse>>, <<Livshendelse>> og <<Virksomhetshendelse>>, og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Denne egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm.
+Som illustrert i <<img-HendelseOgDistribusjon>> har spesifikasjonen utvidet CPSV-AP med egenskapen «distribusjon» (`dcat:distribution`) i <<Hendelse>>, <<Livshendelse>> og <<Virksomhetshendelse>>, og dermed også implisitt sagt at (beskrivelse av) en Hendelse er et Datasett. Egenskapen brukes til å referere til konkrete distribusjoner av f.eks. en hendelsesstrøm.
 
 Se ellers https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng[Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i Veileder for beskrivelse av datasett osv.], for hvordan et datasett (som i dette tilfellet er en hendelsesbeskrivelse) kan knyttes til distribusjon og datatjeneste (også kalt API).

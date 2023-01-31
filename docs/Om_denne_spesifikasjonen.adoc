@@ -2,42 +2,42 @@
 
 === Formål [[Formål]]
 
-Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive tjenester og hendelser og en felles måte for å utveksle beskrivelsene. Spesifikasjonen skal bidra til å sikre interoperabilitet av kataloger/beskrivelser av tjenester og hendelser, på tvers av sektorer. Spesifikasjonen muliggjør også maskinell tilgang til beskrivelser av tjenester og hendelser.
+Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive tjenester og hendelser og en felles måte å utveksle beskrivelsene. Spesifikasjonen skal bidra til å sikre interoperabilitet av kataloger/beskrivelser av tjenester og hendelser, på tvers av sektorer. Spesifikasjonen muliggjør også maskinell tilgang til beskrivelser av tjenester og hendelser.
 
-Spesifikasjonen inngår i https://www.digdir.no/informasjonsforvaltning/rammeverk-informasjonsforvaltning/2118[Rammeverk for informasjonsforvaltning].
+Spesifikasjonen inngår i https://www.digdir.no/3626[Rammeverk for informasjonsforvaltning].
 
 === Omfang og avgrensing [[Omfang-og-avgrensing]]
 
 Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser samt å utveksle/tilgjengeliggjøre beskrivelsene. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere tjenester, dvs. ikke en hvilken som helst hendelse.
 
-Spesifikasjonen er basert EUs https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en[CPSV-AP] (_Core Public Service Vocabulary Application Profile_). I tillegg til beskrivelser av offentlige tjenester som CPSV-AP dekker, dekker spesifikasjonen også behovet for å beskrive tjenester som ikke er offentlige tjenester, men som f.eks. er involvert i sammenhengende tjenester fra det offentlige.
+Spesifikasjonen er basert EUs https://semiceu.github.io/CPSV-AP/releases/3.0.0/[CPSV-AP v.3.0.0] (_Core Public Service Vocabulary Application Profile_). I tillegg til beskrivelser av offentlige tjenester som CPSV-AP dekker, dekker spesifikasjonen også behovet for å beskrive tjenester som ikke er offentlige tjenester, men som f.eks. er involvert i sammenhengende tjenester fra det offentlige.
 
 Spesifikasjonen inneholder også engelske navn (English name) og beskrivelser (Usage note). Det gjøres oppmerksom på at engelske navn eller beskrivelser ikke alle er ordrett sitat fra EUs originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
 
-Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF] (det er planlagt en «Introduksjon til RDF»), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
+Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF], vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
 
 === Målgrupper [[Målgrupper]]
 
 Spesifikasjonen har ikke sluttbrukere av tjenester som sin målgruppe, men
 
 * deg som skal beskrive
-** din virksomhets tjenester overfor innbyggere, næringsliv og sivilsamfunnet ellers,
-** hendelser som kan utløse behov for din eller andre virksomheters tjenester,
-** sammenhengende tjenester (kjeder av tjenester som eies av flere virksomheter),
-** hendelser (f.eks. livshendelser) som kan utløse behov for tjenester fra flere virksomheter,
-* deg som søker etter og ønsker å gjenbruke / sette sammen tjenester fra andre virksomheter,
-* deg som skal utvikle/tilpasse verktøystøtte for ovennevnte beskrivelser og/eller for tilgjengeliggjøring/utveksling av beskrivelsene.
+** din virksomhets tjenester overfor innbyggere, næringsliv og sivilsamfunnet ellers
+** hendelser som kan utløse behov for din eller andre virksomheters tjenester
+** sammenhengende tjenester (kjeder av tjenester som eies av flere virksomheter)
+** hendelser (f.eks. livshendelser) som kan utløse behov for tjenester fra flere virksomheter
+* deg som søker etter og ønsker å gjenbruke / sette sammen tjenester fra andre virksomheter
+* deg som skal utvikle/tilpasse verktøystøtte for ovennevnte beskrivelser og/eller for tilgjengeliggjøring/utveksling av beskrivelsene
 
 
 === Forvaltningsregime [[Forvaltningsregime]]
 
 Spesifikasjonen forvaltes av https://digdir.no[Digitaliseringsdirektoratet (Digdir)].
 
-Utarbeidelse av nye versjoner av spesifikasjonen initieres av Digdir. Mindre endringer håndteres av Digdir med ev. konsultasjon med enkelte ressurspersoner utenfor Digdir. Ved behov for større endringer vil Digdir vurdere å sette sammen arbeidsgruppe med representanter fra relevante virksomheter, for utarbeidelse av forslag til den reviderte versjonen som ev. sendes ut til bred kommentering før fastsetting.
+Utarbeidelse av nye versjoner av spesifikasjonen initieres av Digdir. Mindre endringer håndteres av Digdir. Ved behov for større endringer vil Digdir sette sammen arbeidsgruppe med representanter fra relevante virksomheter, for utarbeidelse av forslag til den reviderte versjonen som sendes ut til bred kommentering før fastsetting.
 
-=== Om kravsnivåene i spesifikasjonen [[Om-kravene]]
+=== Om kravnivåene i spesifikasjonen [[Om-kravene]]
 
-Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
+Spesifikasjonen bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO], og forklaringene gjentas ikke her.
 
 include::Navnerom.adoc[]
 
