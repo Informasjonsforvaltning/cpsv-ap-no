@@ -1,0 +1,124 @@
+@prefix adms: <http://www.w3.org/ns/adms#> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix cpsvno: <https://data.norge.no/vocabulary/cpsvno#> .
+
+### About this ontology:
+
+<https://data.norge.no/vocabulary/cpsvno#> rdf:type owl:Ontology ;
+   rdfs:label "CPSV-AP-NO"@en , "CPSV-AP-NO"@nb ;
+   rdfs:comment "Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP."@nb ,
+      "Ontology for CPSV-AP-NO - Norwegian Application Profile of CPSV-AP"@en ;
+   rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
+   dct:creator [
+      foaf:homepage <https://www.digdir.no/> ;
+      foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
+      ];
+   foaf:homepage <https://github.com/Informasjonsforvaltning/cpsv-ap-no> ;
+   foaf:maker [
+      foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
+      foaf:name "Informasjonsforvaltning, Digitaliseringsdirektoratet" ;
+      foaf:page <https://www.digdir.no>
+      ];
+   dct:license <https://creativecommons.org/licenses/by/4.0> ;
+   dct:modified "2022-11-02"^^xsd:date ;
+   owl:versionInfo "v.0.6" ;
+   adms:versionNotes "Klasser og egenskaper som er definert andre steder og som ikke har endret bruk i CPSV-AP-NO, er ikke spesifisert her."@nb ,
+      "The classes and properties which are defined elsewhere and for which CPSV-AP-NO has not modified usage, are not specified here."@en
+   .
+
+#################################################################
+#    Classes defined in CPSV-AP-NO
+#################################################################
+
+cpsvno:Service a owl:Class ;
+   skos:prefLabel "Service"@en , "Tjeneste"@nb ;
+   skos:scopeNote "This class represents a service."@en ,
+      "Klassen brukes til å beskrive en tjeneste."@nb ;
+   .
+
+#################################################################
+#    Classes defined elsewhere, with modified usage/spesification
+#################################################################
+
+cpsv:PublicService a owl:Class ;
+   rdfs:subClassOf cpsvno:Service ; # This is a Norweigan extension made in CPSV-AP-NO
+   skos:prefLabel "Public Service"@en , "Offentlig tjeneste"@nb ;
+   skos:scopeNote "Klassen brukes til å representere en offentlig tjeneste."@en ,
+      "Klassen brukes til å beskrive en tjeneste."@nb ;
+      rdfs:seeAlso <https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0> ;
+   .
+
+#################################################################
+#    Properties defined in CPSV-AP-NO
+#################################################################
+
+cpsvno:dataService a owl:ObjectProperty ;
+   skos:prefLabel "data service"@en , "datatjeneste"@nb ;
+   skos:scopeNote "This property refers to the description of a data service which the channel uses."@en ,
+      "Egenskapen brukes til å referere til en beskrivelse av en datatjeneste som kanalen benytter."@nb ;
+   rdfs:domain cv:Channel ;
+   rdfs:range dcat:DataServic ;
+   .
+
+cpsvno:mayTrigger a owl:ObjectProperty ;
+   rdfs:subPropertyOf dct:relation ;
+   skos:prefLabel "may trigger"@en , "kan sette i gang"@nb ;
+   skos:scopeNote "This property links an event directly to a service that the event may trigger."@en ,
+      "Egenskapen brukes til å referere til tjenester som kan settes i gang av den aktuelle hendelsen."@nb ;
+   rdfs:domain cv:Event ;
+   rdfs:range cpsvno:Service ;
+   .
+
+cpsvno:mayTriggerNeedFor a owl:ObjectProperty ;
+   rdfs:subPropertyOf cpsvno:mayTrigger ;
+   skos:prefLabel "may trigger need for"@en , "kan utløse behov for"@nb ;
+   skos:scopeNote "This property links an event directly to a service that the event may trigger need for."@en ,
+      "Egenskapen brukes til å referere til tjenester som den aktuelle hendelsen kan utløse behov for."@nb ;
+   rdfs:domain cv:LifeEvent , cv:BusinessEvent ;
+   rdfs:range cpsvno:Service ;
+   .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure
+cpsvno:ruleForDisclosure a owl:NamedIndividual , skos:Concept ;
+    adms:status <http://publications.europa.eu/resource/authority/concept-status/RETIRED> ;
+    dct:isReplacedBy <https://data.norge.no/vocabulary/rule-type#disclosure-rule> ;
+    rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
+         "Norwegian Digitalisation Agency"@en ;
+    skos:definition "regel som regulerer utlevering av en ressurs (f.eks. et datasett)"@nb ,
+        "rule that regulates disclosure of a resource (e.g. a dataset)"@en ;
+    skos:prefLabel "rule for disclosure"@en ,
+       "utleveringsregel"@nb .
+
+
+###  https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure
+cpsvno:ruleForNonDisclosure a owl:NamedIndividual , skos:Concept ;
+    adms:status <http://publications.europa.eu/resource/authority/concept-status/RETIRED> ;
+    dct:isReplacedBy <https://data.norge.no/vocabulary/rule-type#non-disclosure-rule> ;
+    rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
+         "Norwegian Digitalisation Agency"@en ;
+    skos:definition "regel som regulerer skjerming av en ressurs (f.eks. et datasett)"@nb ,
+        "rule that regulates non-disclosure of a resource (e.g. a dataset)"@en ;
+    skos:prefLabel "rule for non-disclosure"@en ,
+       "skjermingsregel"@nb .
+
+###  https://data.norge.no/vocabulary/cpsvno#ruleForDataProcessing
+cpsvno:ruleForDataProcessing rdf:type owl:NamedIndividual , skos:Concept ;
+    adms:status <http://publications.europa.eu/resource/authority/concept-status/RETIRED> ;
+    dct:isReplacedBy <https://data.norge.no/vocabulary/rule-type#data-processing-rule> ;
+    rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
+    skos:definition "regel som regulerer behandling av data, spesielt personopplysninger"@nb ,
+          "rule that regulates processing of data, especially personal data"@en ;
+     skos:prefLabel "rule for data processing"@en ,
+         "behandlingsgrunnlag"@nb .
