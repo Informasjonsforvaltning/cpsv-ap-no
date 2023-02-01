@@ -1,4 +1,4 @@
-name: upload files to server
+name: upload ontology files to data.norge.no/vocabulary
 
 on:
   push:
@@ -17,26 +17,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Upload rdf to static-rdf-server
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v2
-        id: upload-rdf
+      - name: Upload files to static-rdf-server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+        id: upload-files
         with:
           ontology-type: "vocabulary"
           ontology: "cpsvno"
-          file: "ontology/cpsvno.ttl"
-          file-type: "text/turtle"
-          file-language: "en"
           host: "https://data.norge.no"
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-
-      - name: Upload html nb to static-rdf-server
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v2
-        id: upload-html-nb
-        with:
-          ontology-type: "vocabulary"
-          ontology: "cpsvno"
-          file: "ontology/cpsvno.html"
-          file-type: "text/html"
-          file-language: "nb"
-          host: "https://data.norge.no"
-          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+          files: |
+            ontology/cpsvno.ttl text/turtle en
+            ontology/index.html text/html nb
