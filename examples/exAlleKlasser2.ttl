@@ -325,7 +325,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
                    <http://eurovoc.europa.eu/5017>
 		   <http://eurovoc.europa.eu/5018>, 
 		   <http://eurovoc.europa.eu/4883>,
-		   <http://eurovoc.europa.eu/4724>
+		   <http://eurovoc.europa.eu/4724>,
 		   <https://psi.norge.no/los/ord/bevilling-og-tillatelser>;
    dct:type <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
    cv:processingTime "P6D"^^xsd:duration;
