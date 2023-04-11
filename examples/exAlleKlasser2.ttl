@@ -322,7 +322,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    adms:status <http://purl.org/adms/status/Completed>;
    cv:thematicArea <http://eurovoc.europa.eu/100157>,
 		   <http://eurovoc.europa.eu/100256>,
-                   <http://eurovoc.europa.eu/5017>
+                   <http://eurovoc.europa.eu/5017>,
 		   <http://eurovoc.europa.eu/5018>, 
 		   <http://eurovoc.europa.eu/4883>,
 		   <http://eurovoc.europa.eu/4724>,
