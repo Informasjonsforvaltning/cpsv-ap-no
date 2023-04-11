@@ -308,17 +308,25 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:title """Skjenkebevilling"""@nb,
        """Skjenkjeløyve"""@nn,
        """Liquor license"""@en;
-   cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl>;
+   cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl>, 
+	         <https://example.org/example-datasett-tjenesteresultat>;
    dct:subject <http://begrepskatalogen/begrep/adcad8a7-e67e-11e8-b878-0050568204d6>,
        <http://data.brreg.no/begrep/60813>;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
        <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
-   cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
+   cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>,
+		 <https://example.org/example-datasett-dokumentasjon>;
    dct:isPartOf <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:hasPart <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    foaf:homepage <https://kommune24-7.no/1813>;
    adms:status <http://purl.org/adms/status/Completed>;
-   cv:thematicArea <http://eurovoc.europa.eu/5018>;
+   cv:thematicArea <http://eurovoc.europa.eu/100157>,
+		   <http://eurovoc.europa.eu/100256>,
+                   <http://eurovoc.europa.eu/5017>
+		   <http://eurovoc.europa.eu/5018>, 
+		   <http://eurovoc.europa.eu/4883>,
+		   <http://eurovoc.europa.eu/4724>
+		   <https://psi.norge.no/los/ord/bevilling-og-tillatelser>;
    dct:type <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
    cv:processingTime "P6D"^^xsd:duration;
    cv:isDescribedAt <https://example.org/example-dataset>;
@@ -333,9 +341,9 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:hasCost <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exGebyr.ttl>;
    dct:requires <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    cv:sector <https://www.ssb.no/klass/klassifikasjoner/6/koder/56.1>;
-   dcat:keyword """Alminnelig bevilling, Bevilling for lukket selskap, Vandel, Skjenkeansvarlig, Nattklubb, Alkoholservering, Skjenkebevilling, Bar"""@nb,
-       """Teksten blir vist på nynorsk."""@nn,
-       """Nightclub, Alcohol serving, General license, License for closed events, Good conduct, Manager of the bar, Nightclub, Alcohol serving, Liquor license, Bar, Bar"""@en;
+   dcat:keyword "Alminnelig bevilling"@nb, "Bevilling for lukket selskap"@nb, "Vandel"@nb, "Skjenkeansvarlig"@nb, "Nattklubb"@nb, "Alkoholservering"@nb, "Skjenkebevilling"@nb, "Bar"@nb,
+       "Teksten blir vist på nynorsk"@nn,
+       "Nightclub"@en, "Alcohol serving"@en, "General license"@en, "License for closed events"@en, "Good conduct"@en, "Manager of the bar"@en, "Nightclub"@en, "Alcohol serving"@en, "Liquor license"@en, "Bar"@en;
    cv:hasLegalResource  <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessurs.ttl> ,
                         <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursForvaltningslov.ttl> ,
                         <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl> ;
@@ -586,5 +594,13 @@ odrl:attributionURL <https://digdir.no/> ; ];
    rdf:type cv:OpeningHoursSpecification;
    schema:dayOfWeek <https://schema.org/PublicHolidays>;
    .
+
+<https://example.org/example-datasett-dokumentasjon> a dcat:Dataset;
+ dct:title "Dokumentasjon knyttet til søknad om skjenkebevilling"@nb;
+ dct:description "Dette er obligatorisk dokumentasjon knyttet til søknad om skjenkebevilling dokumentert som datasett."@nb .
+
+<https://example.org/example-datasett-tjenesteresultat> a dcat:Dataset;
+ dct:title "Tjenesteresulat knyttet til søknad om skjenkebevilling"@nb;
+ dct:description "Dette er tjenesteresultat knyttet til søknad om skjenkebevilling dokumentert som datasett."@nb .
 
 #### End of the file, 2022-10-11 16:36:39
