@@ -310,6 +310,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
        """Liquor license"""@en;
    cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl>, 
 	         <https://example.org/example-datasett-tjenesteresultat>,
+		 <https://example.org/example-datasett-tjenesteresultat2>,
                  <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/4c180ff0-7982-4d88-b744-be96f2a0182a>;
    dct:subject <http://begrepskatalogen/begrep/adcad8a7-e67e-11e8-b878-0050568204d6>,
        <http://data.brreg.no/begrep/60813>;
@@ -317,6 +318,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
        <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>,
 		 <https://example.org/example-datasett-dokumentasjon>,
+		 <https://example.org/example-datasett-dokumentasjon2>,
 		 <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/9ec16648-375c-4ad6-9d2c-f7eff52d33c5>;
    dct:isPartOf <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:hasPart <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
