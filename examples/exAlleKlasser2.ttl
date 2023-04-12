@@ -344,7 +344,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cpsv:follows <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegel.ttl>;
    cv:hasCost <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exGebyr.ttl>;
    dct:requires <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
-   cv:sector <https://www.ssb.no/klass/klassifikasjoner/6/koder/56.1>;
+   cv:sector <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
    dcat:keyword "Alminnelig bevilling"@nb, "Bevilling for lukket selskap"@nb, "Vandel"@nb, "Skjenkeansvarlig"@nb, "Nattklubb"@nb, "Alkoholservering"@nb, "Skjenkebevilling"@nb, "Bar"@nb,
        "Teksten blir vist på nynorsk"@nn,
        "Nightclub"@en, "Alcohol serving"@en, "General license"@en, "License for closed events"@en, "Good conduct"@en, "Manager of the bar"@en, "Nightclub"@en, "Alcohol serving"@en, "Liquor license"@en, "Bar"@en;
