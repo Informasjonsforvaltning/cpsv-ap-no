@@ -508,6 +508,14 @@ odrl:attributionURL <https://digdir.no/> ; ];
        """Directors and deputies must be over 20 years of age."""@en;
    dct:type <https://data.norge.no/vocabulary/criterion-requirement-type#age>;
    cv:fulfils <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl>;
+   cv:hasSupportingEvidence <tbd>;
+   dct:publisher <tbd>;
+   cv:isDerivedFrom <tdb>;
+   cv:hasConcept <tbd>;
+   cv:hasEvidenceTypeList <tbd>;
+   cv:isRequirementOf <tbd>;
+   cv:hasRequirement <tbd>;
+   cv:hasQualifiedRelation <tbd>;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVirksomhetshendelse.ttl>
