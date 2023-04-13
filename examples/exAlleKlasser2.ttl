@@ -333,7 +333,9 @@ odrl:attributionURL <https://digdir.no/> ; ];
 		   <https://psi.norge.no/los/ord/bevilling-og-tillatelser>;
    dct:type <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
    cv:processingTime "P6D"^^xsd:duration;
-   cv:isDescribedAt <https://example.org/example-dataset>;
+   cv:isDescribedAt <https://example.org/example-beskrivende-dataset>,
+		    <https://example.org/example-beskrivende-dataset2>,
+		    <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/c6b9e443-12a4-4d29-854a-0f6eda682858>;
    cv:hasParticipation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
    cv:isGroupedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVirksomhetshendelse.ttl>;
    cv:isClassifiedBy <https://example.org/example-concept>;
@@ -606,5 +608,9 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://example.org/example-datasett-tjenesteresultat> a dcat:Dataset;
  dct:title "Tjenesteresulat knyttet til søknad om skjenkebevilling"@nb;
  dct:description "Dette er tjenesteresultat knyttet til søknad om skjenkebevilling dokumentert som datasett."@nb .
+
+<hhttps://example.org/example-beskrivende-dataset> a dcat:Dataset;
+ dct:title "Beskrivende datasett"@nb;
+ dct:description "Ekstern URI med tittel og beskrivelse lagt inn i høstefilen."@nb .
 
 #### End of the file, 2022-10-11 16:36:39
