@@ -236,7 +236,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    schema:contactType "Brukerstøtte"@nb , "Brukarstøtte"@nn , "User support"@en ;
    schema:hoursAvailable <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exApningstidResepsjon.ttl>;
    cv:ContactPage <https://www.bronnoy.kommune.no/>;
-   cv:email "mailto:postmottak@bronnoy.kommune.no"^^xsd:anyURI;
+   cv:email "postmottak@bronnoy.kommune.no"^^xsd:anyURI;
    vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
