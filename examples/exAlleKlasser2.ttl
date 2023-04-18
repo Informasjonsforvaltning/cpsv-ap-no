@@ -108,11 +108,11 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonPoliti.ttl>
    rdf:type cv:PublicOrganisation;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
-   skos:prefLabel """Politidirektoratet"""@nb,
+   skos:prefLabel """Politidirektoratet_prefLabel"""@nb,
        """Politidirektoratet"""@nn,
        """National Police Directorate"""@en;
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/982531950"^^xsd:anyURI;
-   dct:title """Politidirektoratet"""@nb,
+   dct:title """Politidirektoratet_title"""@nb,
        """Politidirektoratet"""@nn,
        """National Police Directorate"""@en;
    locn:address [ a locn:Address ;
