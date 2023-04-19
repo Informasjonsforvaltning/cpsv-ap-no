@@ -164,7 +164,7 @@
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
        <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>;
-   foaf:page <https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#%C2%A71-7b>;
+   foaf:page <https://lovdata.no/lov/1989-06-02-27/§1-7b>;
    dct:type <https://data.norge.no/vocabulary/evidence-type#attestation>;
    .
 
