@@ -275,8 +275,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   dct:title "Dummy Regulativ ressurs"@nb,
-       "Teksten blir vist på nynorsk."@nn,
+   dct:title "Dummy Regulativ ressurs_nb"@nb,
+       "Dummy Regulativ ressurs_nn"@nn,
        "Dummy Legal resource"@en;
    .
 
@@ -291,8 +291,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   dct:title "Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)"@nb,
-       "Teksten blir vist på nynorsk."@nn,
+   dct:title "Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)_nb"@nb,
+       "Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)_nn"@nn,
        "Act relating to procedure in cases concerning the public administration (Public Administration Act)"@en;
    dct:relation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl>;
    .
@@ -366,8 +366,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
        """Teksten blir vist på nynorsk."""@nn,
        """Contains, among other things, provisions on case processing and case processing time, on the administration's duty to provide guidance, on meetings, on the administration's duty to write down information and on the use of a representative or lawyer."""@en;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegel.ttl"^^xsd:anyURI;
-   dct:title """Regler for saksbehandling"""@nb,
-       """Teksten blir vist på nynorsk."""@nn,
+   dct:title """Regler for saksbehandling_nb"""@nb,
+       """Regler for saksbehandling_nn"""@nn,
        """Rules for case processing"""@en;
    cpsv:implements <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursForvaltningslov.ttl>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
@@ -387,8 +387,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   dct:title "Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)"@nb,
-       "Teksten blir vist på nynorsk."@nn,
+   dct:title "Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)_nb"@nb,
+       "Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)_nn"@nn,
        "Act on the sale of alcoholic beverages (Alcohol Act])"@en;
    dct:relation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl>;
    .
@@ -522,7 +522,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    rdf:type cv:BusinessEvent;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVirksomhetshendelse.ttl"^^xsd:anyURI;
    dct:title """Å søke om skjenkebevilling"""@nb,
-       """Teksten blir vist på nynorsk."""@nn,
+       """Å søkje om skjenkeløyve"""@nn,
        """To apply for a liquor license"""@en;
    dct:description """Elektronisk prosess for å søke om skjenkebevilling. (I eksempelet har vi kun tatt med at det søkes i en kommune)"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
