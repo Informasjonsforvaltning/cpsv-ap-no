@@ -751,7 +751,7 @@ sh:targetClass org:Organization .
       [sh:property [sh:path schema:closes; sh:minCount 1]]
       [sh:property [sh:path schema:opens; sh:minCount 1]]
    );
-   sh:message "At least one of the properties should have value, although none of them are mandatory."en,
+   sh:message "At least one of the properties should have value, although none of them are mandatory."@en,
       "Minst én av egenskapene bør ha verdi, selv om ingen av dem er obligatoriske."@nb;
    sh:severity sh:Warning;
    sh:targetClass cv:OpeningHoursSpecification .
