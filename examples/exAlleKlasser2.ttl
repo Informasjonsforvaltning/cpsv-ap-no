@@ -43,8 +43,8 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultatDummy.ttl>
    rdf:type cv:Output;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultatDummy.ttl"^^xsd:anyURI;
-   dct:title """Dummy tjenesteresultat"""@nb,
-       """Dummy tjenesteresultat"""@nn,
+   dct:title """Dummy tjenesteresultat_nb"""@nb,
+       """Dummy tjenesteresultat_nn"""@nn,
        """Dummy service result"""@en;
    dct:description """Dette er et dummy tjenesteresultat som kan brukes i forbindelse med testing av CPSV-AP-NO når det er behov for en relasjon til et tjenesteresultat."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
@@ -67,8 +67,8 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjonDummy.ttl>
    rdf:type cv:Evidence;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjonDummy.ttl"^^xsd:anyURI;
-   dct:title """Dummydokumentasjon"""@nb,
-       """Dummydokumentasjon"""@nn,
+   dct:title """Dummydokumentasjon_nb"""@nb,
+       """Dummydokumentasjon_nn"""@nn,
        """Dummy documentation"""@en;
    dct:description """Dette er dummydokumentasjon som kan brukes når det er behov for en relasjon til dokumentasjon i forbindelse med testing av CPSV-AP-NO."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
@@ -92,12 +92,12 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonHOD.ttl>
    rdf:type cv:PublicOrganisation;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
-   skos:prefLabel """Helse- og omsorgsdepartementet"""@nb,
-       """Helse- og omsorgsdepartementet"""@nn,
+   skos:prefLabel """Helse- og omsorgsdepartementet_nb"""@nb,
+       """Helse- og omsorgsdepartementet_nn"""@nn,
        """Ministry of Health and Care Services"""@en;
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983887406"^^xsd:anyURI;
-   dct:title """Helse- og omsorgsdepartementet"""@nb,
-       """Helse- og omsorgsdepartementet"""@nn,
+   dct:title """Helse- og omsorgsdepartementet_nb"""@nb,
+       """Helse- og omsorgsdepartementet_nn"""@nn,
        """Ministry of Health and Care Services"""@en;
    locn:address [ a locn:Address ;
        locn:fullAddress "Teatergata 9, 0180 OSLO"@nb ; ];
@@ -108,13 +108,13 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjonPoliti.ttl>
    rdf:type cv:PublicOrganisation;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
-   skos:prefLabel """Politidirektoratet_prefLabel"""@nb,
-       """Politidirektoratet"""@nn,
-       """National Police Directorate"""@en;
+   skos:prefLabel """Politidirektoratet_prefLabel_nb"""@nb,
+       """Politidirektoratet_prefLabel_nn"""@nn,
+       """National Police Directorate_prefLabel"""@en;
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/982531950"^^xsd:anyURI;
-   dct:title """Politidirektoratet_title"""@nb,
-       """Politidirektoratet"""@nn,
-       """National Police Directorate"""@en;
+   dct:title """Politidirektoratet_title_nb"""@nb,
+       """Politidirektoratet_title_nn"""@nn,
+       """National Police Directorate_title"""@en;
    locn:address [ a locn:Address ;
        locn:fullAddress "Fridtjof Nansens vei 14, 0369 OSLO"@nb ; ];
    foaf:homepage <https://www.politiet.no/>;
@@ -156,8 +156,8 @@
    rdf:type cv:Evidence;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl"^^xsd:anyURI;
    dct:title """Requirements for good conduct"""@en,
-       """Krav om vandel"""@nb,
-       """Krav om vandel"""@nn;
+       """Krav om vandel_nb"""@nb,
+       """Krav om vandel_nn"""@nn;
    dct:description """The licensee, general manager and persons who have a significant influence on the business must have shown impeccable conduct in relation to the accounting legislation, tax and duty legislation. Persons mentioned in the first sentence must also not have committed offenses in relation to other legislation in a way that will be incompatible with the operation of the bar."""@en,
        """Bevillingshaver, daglig leder og personer som har vesentlig innflytelse på virksomheten, må ha utvist uklanderlig vandel i forhold til regnskapslovgivningen, skatte- og avgiftslovgivningen. Personer som nevnt i første punktum må heller ikke ha begått lovbrudd i forhold til annen lovgiving på en måte som vil være uforenlig med drift av skjenkestedet."""@nb,
        """Bevillingshaver, dagleg leiar og personar som har vesentleg innverknad på verksemda, må ha utvist uklanderleg vandel i forhold til rekneskapslovgjevinga, skatte- og avgiftslovgjevinga. Personar som nemnt i første punktum må heller ikkje ha begått lovbrot i forhold til annan lovgjeving på ein måte som vil vera uforenlig med drift av skjenkestedet."""@nn;
@@ -212,7 +212,7 @@
    foaf:homepage <https://data.norge.no/public-services-and-events>;
    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>;
    dct:provenance [ a dct:ProvenanceStatement ;
-	rdfs:label "Katalogen ble opprettet og utgitt første gang av Difi som nå heter Digitaliseringsdirektoratet/Digdir"@nb ;
+	rdfs:label "Katalogen ble opprettet og utgitt første gang av Difi som nå heter Digitaliseringsdirektoratet/Digdir"@nb, "Teksten blir vist på nynorsk."@nn, "Teksten blir vist på engelsk."@en ;
 	];
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
@@ -227,7 +227,7 @@
        <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exLivshendelse.ttl>;
    dct:creator <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;;
    dct:rights [ rdf:type dct:RightsStatement ;
-odrl:attributionText "Digitaliseringsdirektoratet"@nb, "Norwegian Digitalisation Agency"@en;
+odrl:attributionText "Digitaliseringsdirektoratet_nb"@nb, "Digitaliseringsdirektoratet_nn"@nn, "Norwegian Digitalisation Agency"@en;
 odrl:attributionURL <https://digdir.no/> ; ];
    .
 
@@ -251,13 +251,13 @@ odrl:attributionURL <https://digdir.no/> ; ];
    rdf:type cv:PublicOrganisation;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
        <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
-   skos:prefLabel """Brønnøy kommune"""@nb,
-       """Brønnøy kommune"""@nn,
-       """Brønnøy Municipality"""@en;
+   skos:prefLabel """Brønnøy kommune_prefLabel_nb"""@nb,
+       """Brønnøy kommune_prefLabel_nn"""@nn,
+       """Brønnøy Municipality_prefLabel"""@en;
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291"^^xsd:anyURI;
-   dct:title """Brønnøy kommune"""@nb,
-       """Brønnøy kommune"""@nn,
-       """Brønnøy Municipality"""@en;
+   dct:title """Brønnøy kommune_title_nb"""@nb,
+       """Brønnøy kommune_title_nn"""@nn,
+       """Brønnøy Municipality_title"""@en;
    locn:address [ a locn:Address ;
        locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ];
    foaf:homepage <https://www.bronnoy.kommune.no/>;
@@ -407,8 +407,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl"^^xsd:anyURI;
    cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktpunktDummy.ttl>;
-   dct:title """Dummytjeneste"""@nb,
-       """Dummytjeneste"""@nn,
+   dct:title """Dummytjeneste_nb"""@nb,
+       """Dummytjeneste_nn"""@nn,
        """Dummy service"""@en;
    cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultatDummy.ttl>;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
@@ -485,7 +485,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    rdf:type cv:Output;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl"^^xsd:anyURI;
    dct:title """Skjenkebevilling gruppe 1"""@nb,
-       """Skjenkebevilling gruppe 1"""@nn,
+       """Skjenkjeløyve gruppe 1"""@nn,
        """Liquor license group 1"""@en;
    dct:description """Skjenkebevilling for servering av alkoholholdig drikk i gruppe 1."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
@@ -500,8 +500,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>
    rdf:type cv:Requirement;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl"^^xsd:anyURI;
-   dct:title """Over 20 år"""@nb,
-       """Over 20 år"""@nn,
+   dct:title """Over 20 år_nb"""@nb,
+       """Over 20 år_nn"""@nn,
        """Over 20 years"""@en;
    dct:description """Styrer og stedfortreder må være over 20 år."""@nb,
        """Styrar og avløysar må vera over 20 år."""@nn,
@@ -536,8 +536,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exLivshendelse.ttl>
    rdf:type cv:LifeEvent;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exLivshendelse.ttl"^^xsd:anyURI;
-   dct:title """Å få barn"""@nb,
-       """Å få barn"""@nn,
+   dct:title """Å få barn_nb"""@nb,
+       """Å få barn_nn"""@nn,
        """Have children"""@en;
    dct:description """Å få barn omfatter både en rekke generelle behov som treffer de fleste som skal ha barn, og spesielle behov som kan oppstå i valgt periode. Mange deler av offentlig sektor er involvert."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
@@ -553,7 +553,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
    rdf:type cv:Event;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHendelse.ttl"^^xsd:anyURI;
    dct:title """Vedtak om skjenkebevilling"""@nb,
-       """Vedtak om skjenkebevilling"""@nn,
+       """Vedtak om skjenkjeløyve"""@nn,
        """Decision on liquor license"""@en;
    dct:description """Det er fattet vedtak om å gi skjenkebevilling til for servering av alkoholholdig drikk i gruppe 1, jf. Alkoholloven § 4-2"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
@@ -610,15 +610,27 @@ odrl:attributionURL <https://digdir.no/> ; ];
    .
 
 <https://example.org/example-datasett-dokumentasjon> a dcat:Dataset;
- dct:title "Dokumentasjon knyttet til søknad om skjenkebevilling"@nb;
- dct:description "Dette er obligatorisk dokumentasjon knyttet til søknad om skjenkebevilling dokumentert som datasett."@nb .
+ dct:title "Dokumentasjon knyttet til søknad om skjenkebevilling_nb"@nb, 
+	   "Dokumentasjon knyttet til søknad om skjenkebevilling_nn"@nn, 
+	   "Documentation related to the application for a liquor licence"@en ;
+ dct:description "Dette er obligatorisk dokumentasjon knyttet til søknad om skjenkebevilling dokumentert som datasett._nb"@nb, 
+	    	 "Dette er obligatorisk dokumentasjon knyttet til søknad om skjenkebevilling dokumentert som datasett._nn"@nn, 
+		 "This is mandatory documentation linked to an application for a liquor license documented as a data set"@en .
 
 <https://example.org/example-datasett-tjenesteresultat> a dcat:Dataset;
- dct:title "Tjenesteresulat knyttet til søknad om skjenkebevilling"@nb;
- dct:description "Dette er tjenesteresultat knyttet til søknad om skjenkebevilling dokumentert som datasett."@nb .
+ dct:title "Tjenesteresulat knyttet til søknad om skjenkebevilling_nb"@nb,
+	   "Tjenesteresulat knyttet til søknad om skjenkebevilling_nn"@nn,
+	   "Service report related to the application for a liquor licence"@en ;
+ dct:description "Dette er tjenesteresultat knyttet til søknad om skjenkebevilling dokumentert som datasett._nb"@nb,
+		 "Dette er tjenesteresultat knyttet til søknad om skjenkebevilling dokumentert som datasett._nn"@nn,
+		 "This is a service result linked to an application for a liquor license documented as a data set."@en .
 
 <hhttps://example.org/example-beskrivende-dataset> a dcat:Dataset;
- dct:title "Beskrivende datasett"@nb;
- dct:description "Ekstern URI med tittel og beskrivelse lagt inn i høstefilen."@nb .
+ dct:title "Beskrivende datasett_nb"@nb,
+	   "Beskrivende datasett_nn"@nn,
+	   "Descriptive dataset"@en ;
+ dct:description "Ekstern URI med tittel og beskrivelse lagt inn i høstefilen._nb"@nb,
+		 "Ekstern URI med tittel og beskrivelse lagt inn i høstefilen._nn"@nn,
+		 "External URI with title and description entered in the harvest file."@en .
 
 #### End of the file, 2022-10-11 16:36:39
