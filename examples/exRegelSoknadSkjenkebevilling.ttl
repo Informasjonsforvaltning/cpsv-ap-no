@@ -1,0 +1,19 @@
+@prefix cpsv: <http://purl.org/vocab/cpsv#> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegelSoknadSkjenkebevilling.ttl>
+   rdf:type cpsv:Rule;
+   dct:description """Inneholder bestemmelser og rutiner knyttet til saksbehandling av søknader om skjenkebevilling."""@nb,
+       """Teksten blir vist på nynorsk."""@nn,
+       """Contains provisions and routines relating to the processing of applications for liquor licences."""@en;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegelSoknadSkjenkebevilling.ttl"^^xsd:anyURI;
+   dct:title """Regler for behandling av søknad om skjenkebevilling_nb"""@nb,
+       """Regler for behandling av søknad om skjenkebevilling_nn"""@nn,
+       """Rules for processing applications for liquor licences"""@en;
+   cpsv:implements <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessurs.ttl>;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
+       <http://publications.europa.eu/resource/authority/language/NNO>,
+       <http://publications.europa.eu/resource/authority/language/ENG>;
+   dct:type <https://data.norge.no/vocabulary/rule-type#case-management-rules> .
