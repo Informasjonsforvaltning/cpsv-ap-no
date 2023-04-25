@@ -134,8 +134,8 @@
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>
    rdf:type cv:Participation;
-   dct:description """Participation with the role 'data provider'"""@en,
-       """Deltagelse med rollen 'datatilbyder'"""@nb,
+   dct:description """Provides police certificate for documentation of good conduct."""@en,
+       """Leverer politiattest for dokumentasjon av god vandel."""@nb,
        """Teksten blir vist på nynorsk."""@nn;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl"^^xsd:anyURI;
    cv:role <https://data.norge.no/vocabulary/role-type#data-provider>;
