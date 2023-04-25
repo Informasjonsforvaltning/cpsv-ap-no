@@ -507,7 +507,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
        """Styrar og avløysar må vera over 20 år."""@nn,
        """Directors and deputies must be over 20 years of age."""@en;
    dct:type <https://data.norge.no/vocabulary/criterion-requirement-type#age>;
-   cv:fulfils <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl>;
+   cv:fulfils <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegelSoknadSkjenkebevilling.ttl>;
    cv:hasSupportingEvidence <tbd>;
    dct:publisher <tbd>;
    cv:isDerivedFrom <tdb>;
@@ -632,5 +632,20 @@ odrl:attributionURL <https://digdir.no/> ; ];
  dct:description "Ekstern URI med tittel og beskrivelse lagt inn i høstefilen._nb"@nb,
 		 "Ekstern URI med tittel og beskrivelse lagt inn i høstefilen._nn"@nn,
 		 "External URI with title and description entered in the harvest file."@en .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegelSoknadSkjenkebevilling.ttl>
+   rdf:type cpsv:Rule;
+   dct:description """Inneholder bestemmelser og rutiner knyttet til saksbehandling av søknader om skjenkebevilling."""@nb,
+       		   """Teksten blir vist på nynorsk."""@nn,
+       		   """Contains provisions and routines relating to the processing of applications for liquor licences."""@en ;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegelSoknadSkjenkebevilling.ttl"^^xsd:anyURI ;
+   dct:title """Regler for behandling av søknad om skjenkebevilling_nb"""@nb,
+       	     """Regler for behandling av søknad om skjenkebevilling_nn"""@nn,
+             """Rules for processing applications for liquor licences"""@en ;
+   cpsv:implements <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessurs.ttl> ;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
+       		<http://publications.europa.eu/resource/authority/language/NNO>,
+       		<http://publications.europa.eu/resource/authority/language/ENG> ;
+   dct:type <https://data.norge.no/vocabulary/rule-type#case-management-rules> .
 
 #### End of the file, 2022-10-11 16:36:39
