@@ -318,6 +318,8 @@ odrl:attributionURL <https://digdir.no/> ; ];
 	       <http://publications.europa.eu/resource/authority/continent/EUROPE>,
 	       <http://publications.europa.eu/resource/authority/place/NOR_TOS>,
 	       <https://www.geonames.org/countries/NO/norway.html>,
+	       <https://www.geonames.org/postal-codes/NO/18/nordland.html>,
+	       <https://www.geonames.org/postal-codes/NO/18/1813/bronnoy.html>,
        	       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>,
 		 <https://example.org/example-datasett-dokumentasjon>,
