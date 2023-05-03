@@ -315,7 +315,10 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:subject <http://begrepskatalogen/begrep/adcad8a7-e67e-11e8-b878-0050568204d6>,
        <http://data.brreg.no/begrep/60813>;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
-       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
+	       <http://publications.europa.eu/resource/authority/continent/EUROPE>,
+	       <http://publications.europa.eu/resource/authority/place/NOR_TOS>,
+	       <https://www.geonames.org/countries/NO/norway.html>,
+       	       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>,
 		 <https://example.org/example-datasett-dokumentasjon>,
 		 <https://example.org/example-datasett-dokumentasjon2>,
