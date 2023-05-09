@@ -314,13 +314,13 @@ odrl:attributionURL <https://digdir.no/> ; ];
                  <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/4c180ff0-7982-4d88-b744-be96f2a0182a>;
    dct:subject <http://begrepskatalogen/begrep/adcad8a7-e67e-11e8-b878-0050568204d6>,
        <http://data.brreg.no/begrep/60813>;
-   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
+   dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>,
+	       <http://publications.europa.eu/resource/authority/country/NOR>,
 	       <http://publications.europa.eu/resource/authority/continent/EUROPE>,
 	       <http://publications.europa.eu/resource/authority/place/NOR_TOS>,
 	       <https://www.geonames.org/countries/NO/norway.html>,
 	       <https://www.geonames.org/postal-codes/NO/18/nordland.html>,
-	       <https://www.geonames.org/postal-codes/NO/18/1813/bronnoy.html>,
-       	       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
+	       <https://www.geonames.org/postal-codes/NO/18/1813/bronnoy.html>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>,
 		 <https://example.org/example-datasett-dokumentasjon>,
 		 <https://example.org/example-datasett-dokumentasjon2>,
