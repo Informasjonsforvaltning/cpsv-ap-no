@@ -1,18 +1,19 @@
 == Klassen Datasett (dcat:Dataset) [[Datasett]]
 
 [[img-KlassenDatasett]]
-.Klassen Datasett (dcat:Dataset)
+.Klassen Datasett (dcat:Dataset) og klassene den refererer til. 
 [link=images/KlassenDatasett.png]
 image::images/KlassenDatasett.png[alt="UML-diagram med klassen Datasett, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 
 [cols="30s,70d"]
 |===
-|English name|Dataset
-|Anvendelse| Klassen representerer en samling metadata om en tjeneste, dokumentasjonskrav til en tjeneste eller tjenesteresultat fra en tjeneste og hvor de kan finnes, for eksempel på en regional offentlig tjenesteportal og/eller en nasjonal eGovernment-portal.
-|Usage note|This class represents a collection of metadata and where they can be found, for instance on a regional public service portal and/or a national eGovernment portal.
-|URI|dcat:Dataset
-|Kravnivå|Valgfri/Optional
+| _English name_ | _Dataset_
+| Anvendelse / _Usage note_ | Klassen representerer en samling metadata om en tjeneste, dokumentasjonskrav til en tjeneste eller tjenesteresultat fra en tjeneste og hvor de kan finnes, for eksempel på en regional offentlig tjenesteportal og/eller en nasjonal eGovernment-portal.
+
+_This class represents a collection of metadata and where they can be found, for instance on a regional public service portal and/or a national eGovernment portal._
+| URI | dcat:Dataset
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
 Se ellers https://data.norge.no/specification/dcat-ap-no/#Datasett[klassen Datasett i DCAT-AP-NO] for egenskapene som kan brukes til å beskrive et datasett, i tillegg til egenskapene spesifisert her.
@@ -24,13 +25,14 @@ Se ellers https://data.norge.no/specification/dcat-ap-no/#Datasett[klassen Datas
 
 [cols="30s,70d"]
 |===
-|English name|description
-|URI|dct:description
-|Range|rdf:langString
-|Anvendelse|Egenskapen brukes til å angi fritekstbeskrivelse av datasettet. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
-|Usage note|This property contains a free-text description of the Dataset. This property should be repeated for parallel language versions of the description.
-|Multiplisitet|1..n
-|Kravnivå|Obligatorisk/Mandatory
+| _English name_ | _description_
+| URI | dct:description
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ |Egenskapen brukes til å angi fritekstbeskrivelse av datasettet. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+
+_This property contains a free-text description of the Dataset. This property should be repeated for parallel language versions of the description._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
 Eksempel I RDF Turtle:
@@ -44,13 +46,14 @@ Eksempel I RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|title
-|URI|dct:title
-|Range|rdf:langString
-|Anvendelse|Egenskapen brukes til å angi navnet på datasettet. Egenskapen bør gjentas når navnet finnes på flere språk.
-|Usage note|This property contains the name of the Dataset. This property should be repeated for parallel language versions of the name.
-|Multiplisitet|1..n
-|Kravnivå|Obligatorisk/Mandatory
+| _English name_ | _title_
+| URI | dct:title
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ |Egenskapen brukes til å angi navnet på datasettet. Egenskapen bør gjentas når navnet finnes på flere språk.
+
+_This property contains the name of the Dataset. This property should be repeated for parallel language versions of the name._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
 Eksempel I RDF Turtle:
@@ -63,13 +66,14 @@ Eksempel I RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|publisher
-|URI|dct:publisher
-|Range|foaf:Agent
-|Anvendelse|Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Verdien bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
-|Usage note|This property refers to the publisher of the dataset, i.e. an entity (organisation) responsible for making the Dataset available.
-|Multiplisitet|1..1
-|Kravnivå|Obligatorisk/Mandatory
+| _English name_ | _publisher_
+| URI | dct:publisher
+| Verdiområde / _Range_ | foaf:Agent
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Verdien bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
+
+_This property refers to the publisher of the dataset, i.e. an entity (organisation) responsible for making the Dataset available._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
 Eksempel I RDF Turtle:
@@ -84,15 +88,24 @@ Eksempel I RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|identifier
-|URI|dct:identifier
-|Range|rdfs:Literal
-|Anvendelse| Egenskapen brukes til å oppgi identifikatoren for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik.
-|Usage note|This property contains the identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.
-|Multiplisitet|0..n
-|Kravnivå|Anbefalt/Recommended
-|Merknad| Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
-|Remark | Norwegian extension: Requirement level changed from optional to recommended.
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikatoren for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik.
+
+_This property contains the identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+
+_Identifier is usually generated by the application, such that you as an end-user of the application usually do not need to manually fill out the value of this property._ 
+
+_If you are developing applications, see https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.] (in Norwegian only)._
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+
+_Norwegian extension: Requirement level changed from optional to recommended._
 |===
 
 Eksempel I RDF Turtle:
@@ -107,16 +120,19 @@ Eksempel I RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|has part
-|URI|dct:hasPart
-|Range|cpsvno:Service
-|Anvendelse| Når datasettet brukes til å beskrive en tjeneste, brukes egenskapen til å referere til tjenester som inngår i tjenesten beskrevet av datasettet.
-|Usage note| When the dataset is used to describe a service, this property refers to a service which is a part of the service described by the dataset.
-|Multiplisitet|0..n
-|Kravnivå|Valgfri/Optional
+| _English name_ | _has part_
+| URI | dct:hasPart
+| Verdiområde / _Range_ | cpsvno:Service
+| Anvendelse / _Usage note_ | Når datasettet brukes til å beskrive en tjeneste, brukes egenskapen til å referere til tjenester som inngår i tjenesten beskrevet av datasettet.
+
+_When the dataset is used to describe a service, this property refers to a service which is a part of the service described by the dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |Merknad| Norsk utvidelse: Range endret fra Offentlig tjeneste (`cpsv:PublicService`) til Tjeneste (`cpsvno:Service), for å åpne for ikke-offentlige tjenester.
-|Remark | Norwegian extension: Range change from Public Service (`cpsv:PublicService`) to Service (`cpsvno:Service), in order to allow non-public services.
+
+_Norwegian extension: Range change from Public Service (`cpsv:PublicService`) to Service (`cpsvno:Service), in order to allow non-public services._
 |===
+
 
 Eksempel I RDF Turtle:
 -----
@@ -128,13 +144,14 @@ Eksempel I RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name| landing page
-|URI|dcat:landingPage
-|Range|foaf:Document
-|Anvendelse| Egenskapen brukes til å referere til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
-|Usage note| This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.
-|Multiplisitet|0..n
-|Kravnivå|Valgfri/Optional
+| _English name_ |  _landing page_
+| URI | dcat:landingPage
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
+
+_This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
 Eksempel I RDF Turtle:
