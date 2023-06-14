@@ -1,21 +1,23 @@
 == Klassen Offentlig tjeneste (cpsv:PublicService) [[OffentligTjeneste]]
 
 [[img-KlassenOffentligTjeneste]]
-.Klassen Offentlig tjeneste (cpsv:PublicService)
+.Klassen Offentlig tjeneste (cpsv:PublicService) og klassene den refererer til.
 [link=images/KlassenOffentligTjeneste.png]
 image::images/KlassenOffentligTjeneste.png[alt="UML-diagram med klassen Offentlig tjeneste, dens egenskaper og dens relasjoner til 14 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
-|English name|Public Service
-|Anvendelse| Klassen brukes til å representere en https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0[offentlig tjeneste].
-|Usage note| This class represents a Public Service.
-|URI|cpsv:PublicService
-|Subklasse av / Subclass of|cpsvno:Service
-|Kravnivå | Anbefalt/Recommended
-|Merknad |Norsk utvidelse: Kravnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til å beskrive tjenester som ikke er offentlige tjenester.
-|Remark | Norwegian extension: The requirement level changed from mandatory to recommended, such that the specification may also be used to describe services that are not public services.
-|Eksempel|Skjenkebevilling
+| _English name_ | _Public Service_
+| Anvendelse / _Usage note_ |  Klassen brukes til å representere en https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0[offentlig tjeneste].
+
+_This class represents a Public Service._
+| URI | cpsv:PublicService
+| Subklasse av / _Subclass of_ | cpsvno:Service
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Kravnivået er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til å beskrive tjenester som ikke er offentlige tjenester.
+
+_Norwegian extension: The requirement level changed from mandatory to recommended, such that the specification may also be used to describe services that are not public services._
+| Eksempel | Skjenkebevilling
 |===
 
 Eksempel i RDF Turtle:
@@ -29,14 +31,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|description
-|URI|dct:description
-|Range| rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi en tekstlig beskrivelse av tjenesten. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
-|Usage note| This property represents a free text Description of the Public Service, repeated when the text is in parallel languages.
-|Multiplisitet|1..n
-|Kravnivå  |Obligatorisk/Mandatory
-|Eksempel|Bevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.
+| _English name_ | _description_
+| URI | dct:description
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi en tekstlig beskrivelse av tjenesten. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+
+_This property represents a free text Description of the Public Service, repeated when the text is in parallel languages._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Eksempel | Bevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.
 |===
 
 Eksempel i RDF Turtle:
@@ -49,16 +52,18 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|has competent authority
-|URI|cv:hasCompetentAuthority
-|Range|cv:PublicOrganisation
-|Anvendelse| Egenskapen brukes til å referere til den offentlige organisasjonen som har ansvaret for tjenesten, uansett om tjenesten tilbys direkte av den aktuelle offentlige organisasjonen eller er satt bort til andre.
-|Usage note| This property links a Public Service to a Public Organization, which is the responsible Agent for the delivery of the Public Service. Whether the particular Public Organization provides the public service directly or outsources it is not relevant. The Public Organization that is the Competent Authority of the service is the one that is ultimately responsible for managing and providing the public service.
-|Multiplisitet|1..n
-|Kravnivå  |Obligatorisk/Mandatory
-|Merknad|Begrepet ‘competent authority’ er definert i Services Directive (2006/123/EC) som: “any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof”.
-|Remark | The term ‘Competent Authority’ is defined in the Services Directive (2006/123/EC) in the following way: "Any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof".
-|Eksempel|Brønnøy kommune er det kompetente organet for tjenesten «Skjenkebevilling i Brønnøy kommune»
+| _English name_ | _has competent authority_
+| URI | cv:hasCompetentAuthority
+| Verdiområde / _Range_ | cv:PublicOrganisation
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til den offentlige organisasjonen som har ansvaret for tjenesten, uansett om tjenesten tilbys direkte av den aktuelle offentlige organisasjonen eller er satt bort til andre.
+
+_This property links a Public Service to a Public Organization, which is the responsible Agent for the delivery of the Public Service. Whether the particular Public Organization provides the public service directly or outsources it is not relevant. The Public Organization that is the Competent Authority of the service is the one that is ultimately responsible for managing and providing the public service._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Begrepet ‘competent authority’ er definert i Services Directive (2006/123/EC) som: “any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof”.
+
+_The term ‘Competent Authority’ is defined in the Services Directive (2006/123/EC) in the following way: "Any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof"._
+| Eksempel | Brønnøy kommune er det kompetente organet for tjenesten «Skjenkebevilling i Brønnøy kommune»
 |===
 
 Eksempel i RDF Turtle:
@@ -71,22 +76,24 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|contact point
-|URI| cv:hasContactPoint
-|Range| cv:ContactPoint
-|Anvendelse| Egenskapen brukes til å oppgi kontaktpunkt(er) for tjenesten.
-|Usage note| This property represents contact points for the service.
-|Multiplisitet|1..n
-|Kravnivå | Obligatorisk/Mandatory
-|Merknad a|Norsk utvidelse:
+| _English name_ | _contact point_
+| URI |  cv:hasContactPoint
+| Verdiområde / _Range_ | cv:ContactPoint
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi kontaktpunkt(er) for tjenesten.
+
+_This property represents contact points for the service._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
+|Merknad / _Note_ a| Norsk utvidelse:
 
 * Kravnivå et endret fra valgfri til obligatorisk – enhver offentlig tjeneste skal ha minst ett kontaktpunkt oppgitt.
 * Multiplisitet endret fra 0..n til 1..n
-|Remark a| Norwegian extension:
 
-* Requirement level changed from optional to mandatory.
-* Multiplicity changed from 0..1 to 1..n
-|Eksempel|Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt for «Skjenkebevilling (i Brønnøy kommune)»
+_Norwegian extension:_
+
+* _Requirement level changed from optional to mandatory._
+* _Multiplicity changed from 0..1 to 1..n_
+| Eksempel | Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt for «Skjenkebevilling (i Brønnøy kommune)»
 |===
 
 Eksempel i RDF Turtle:
@@ -101,30 +108,36 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|identifier
-|URI|dct:identifier
-|Range|rdfs:Literal
-|Anvendelse| Egenskapen brukes til å oppgi en formell identifikasjon til tjenesten.
-|Usage note| This property represents a formally-issued Identifier for the Public Service.
-|Multiplisitet|1..1
-|Kravnivå  |Obligatorisk/Mandatory
-|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi en formell identifikasjon til tjenesten.
+
+_This property represents a formally-issued Identifier for the Public Service._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+
+_Identifier is usually generated by the application, such that you as an end-user of the application usually do not need to manually fill out the value of this property._ 
+
+_If you are developing applications, see https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.] (in Norwegian only)._
 |===
 
 ==== Offentlig tjeneste – navn (dct:title) [[OffentligTjeneste-navn]]
 
 [cols="30s,70d"]
 |===
-|English name|name
-|URI|dct:title
-|Range| rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi det offisielle navnet på tjenesten. Egenskapen bør gjentas når navnet finnes på flere språk.
-|Usage note| This property represents the official Name of the Public Service, repeated when the name is in parallel languages.
-|Multiplisitet|1..n
-|Kravnivå | Obligatorisk/Mandatory
-|Eksempel|«Skjenkebevilling»
+| _English name_ | _name_
+| URI | dct:title
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi det offisielle navnet på tjenesten. Egenskapen bør gjentas når navnet finnes på flere språk.
+
+_This property represents the official Name of the Public Service, repeated when the name is in parallel languages._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
+| Eksempel | «Skjenkebevilling»
 |===
 
 Eksempel i RDF Turtle:
@@ -137,16 +150,18 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|produces
-|URI|cpsv:produces
-|Range|cv:Output
-|Anvendelse| Egenskapen brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.
-|Usage note| This property links a Public Service to one or more instances of the Output class describing the actual result of executing a given Public Service.
-|Multiplisitet|1..n
-|Kravnivå  |Obligatorisk/Mandatory
-|Merknad | Norsk utvidelse: kravnivå et endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe.
-|Remark | Norwegian extension: Requirement level changed from optional to mandatory, and multiplicity from 0..n to 1..n.
-|Eksempel|Selve «bevillingen» er et tjenesteresultat av tjenesten «Skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.
+| _English name_ | _produces_
+| URI | cpsv:produces
+| Verdiområde / _Range_ | cv:Output
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.
+
+_This property links a Public Service to one or more instances of the Output class describing the actual result of executing a given Public Service._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ |  Norsk utvidelse: kravnivå et endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe.
+
+_Norwegian extension: Requirement level changed from optional to mandatory, and multiplicity from 0..n to 1..n._
+| Eksempel | Selve «bevillingen» er et tjenesteresultat av tjenesten «Skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.
 |===
 
 Eksempel i RDF Turtle:
@@ -160,41 +175,46 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|subject
-|URI|dct:subject
-|Range|skos:Concept
-|Anvendelse| Egenskapen brukes til å referere til begrep som er viktig for å forstå tjenesten.
-|Usage note| This property refers to concept that is important for the understanding of the service.
-|Multiplisitet|0..n
-|Kravnivå |  Anbefalt/Recommended
-|Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå tjenesten.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _subject_
+| URI | dct:subject
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til begrep som er viktig for å forstå tjenesten.
+
+_This property refers to concept that is important for the understanding of the service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå tjenesten.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Offentlig tjeneste – dekningsområde (dct:spatial) [[OffentligTjeneste-dekningsområde]]
 
 [cols="30s,70d"]
 |===
-|English name|spatial coverage
-|URI|dct:spatial
-|Range|dct:Location
-|Anvendelse| Egenskapen brukes til å referere til et geografisk område som dekkes av tjenesten.
-|Usage note| This property represents that area(s) a Public Service is likely to be available only within, typically the area(s) covered by a particular public authority.
-|Multiplisitet|0..n
-|Kravnivå | Anbefalt/Recommended
-|Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+| _English name_ | _spatial coverage_
+| URI | dct:spatial
+| Verdiområde / _Range_ | dct:Location
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til et geografisk område som dekkes av tjenesten.
+
+_This property represents that area(s) a Public Service is likely to be available only within, typically the area(s) covered by a particular public authority._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+|Merknad 1 / _Note 1_ a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
 * Minst en verdi skal være fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted]; http://sws.geonames.org/[GeoNavn].
 
 * For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
-|Remark 1 a|Regarding usage of controlled vocabularies, the following requirements apply:
 
-* At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place]; http://sws.geonames.org/[GeoNames].
+_Regarding usage of controlled vocabularies, the following requirements apply:_
 
-* To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
-|Merknad 2 | Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt.
-|Remark 2| Norwegian extension: Requirement level changed from optinoal to recommended.
-|Eksempel|«Skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.
+* _At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place]; http://sws.geonames.org/[GeoNames]._
+
+* _To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt.
+
+_Norwegian extension: Requirement level changed from optinoal to recommended._
+| Eksempel | «Skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.
 |===
 
 Eksempel i RDF Turtle:
@@ -209,51 +229,61 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|is part of
-|URI|dct:isPartOf
-|Range|cpsvno:Service
-|Anvendelse| Egenskapen brukes til å referere til en annen tjeneste som tjenesten er en del av.
-|Usage note| This property indicates a related service in which the described resource is included. This property is the inverse of `dct:hasPart`.
-|Multiplisitet|0..n
-|Kravnivå | Anbefalt/Recommended
-|Merknad 1|Denne er den inverse av egenskapen <<OffentligTjeneste-harDel>>.
-|Remark 1 | This is the inverse of the property <<OffentligTjeneste-harDel>>.
-|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men tatt med i DCAT-AP-NO som er basert på EUs BRegDCAT-AP.
-|Remark 2 | Norwegian extension: Not explicitly speficied in CPSV-AP, but in DCAT-AP-NO which is based on EU's BRegDCAT-AP.
+| _English name_ | _is part of_
+| URI | dct:isPartOf
+| Verdiområde / _Range_ | cpsvno:Service
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en annen tjeneste som tjenesten er en del av.
+
+_This property indicates a related service in which the described resource is included. This property is the inverse of `dct:hasPart`._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Denne er den inverse av egenskapen <<OffentligTjeneste-harDel>>.
+
+_This is the inverse of the property <<OffentligTjeneste-harDel>>._
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men tatt med i DCAT-AP-NO som er basert på EUs BRegDCAT-AP.
+
+_Norwegian extension: Not explicitly speficied in CPSV-AP, but in DCAT-AP-NO which is based on EU's BRegDCAT-AP._
 |===
 
 ==== Offentlig tjeneste – har del (dct:hasPart) [[OffentligTjeneste-harDel]]
 
 [cols="30s,70d"]
 |===
-|English name|has part
-|URI|dct:hasPart
-|Range|cpsvno:Service
-|Anvendelse| Egenskapen brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives.
-|Usage note| This property indicates a related service that is included either physically or logically in the described resource.
-|Multiplisitet|0..n
-|Kravnivå | Anbefalt/Recommended
-|Merknad 1|Dette er den inverse av egenskapen <<OffentligTjeneste-erDelAv>>.
-|Remark 1 | This is the inverse of the property <<OffentligTjeneste-erDelAv>>.
-|Merknad 2|Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men tatt med i DCAT-AP-NO som er basert på EUs BRegDCAT-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _has part_
+| URI | dct:hasPart
+| Verdiområde / _Range_ | cpsvno:Service
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives.
+
+_This property indicates a related service that is included either physically or logically in the described resource._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Dette er den inverse av egenskapen <<OffentligTjeneste-erDelAv>>.
+
+_This is the inverse of the property <<OffentligTjeneste-erDelAv>>._
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men tatt med i DCAT-AP-NO som er basert på EUs BRegDCAT-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Offentlig tjeneste – har dokumentasjonskrav (cpsv:hasInput) [[OffentligTjeneste-har-dokumentasjonskrav]]
 
 [cols="30s,70d"]
 |===
-|English name|has input
-|URI|cpsv:hasInput
-|Range|cv:Evidence
-|Anvendelse| Egenskapen brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.
-|Usage note| This property links a Public Service to one or more instances of the Evidence class.
-|Multiplisitet|0..n
-|Kravnivå |  Anbefalt/Recommended
-|Merknad 1 | Norsk utvidelse: kravnivå  endret fra valgfri til anbefalt.
-|Remark 1 | Norwegian extension: Requirement level changed from optional to recommended.  
-|Remark 2 | A specific Public Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.
-|Eksempel|Et av dokumentasjonskravene til å søke om skjenkebevilling er bestått «Kunnskapsprøve».
+| _English name_ | _has input_
+| URI | cpsv:hasInput
+| Verdiområde / _Range_ | cv:Evidence
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.
+
+_This property links a Public Service to one or more instances of the Evidence class._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves varierer avhengig av kanal tjenesten tilbys gjennom, kan tilsvarende egenskap i klassen Tjenestekanal benyttes. 
+
+_A specific Public Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: kravnivå  endret fra valgfri til anbefalt.
+
+ _Norwegian extension: Requirement level changed from optional to recommended._  
+| Eksempel | Et av dokumentasjonskravene til å søke om skjenkebevilling er bestått «Kunnskapsprøve».
 |===
 
 Eksempel i RDF Turtle:
@@ -268,16 +298,18 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|homepage
-|URI|foaf:homepage
-|Range|foaf:Document
-|Anvendelse| Egenskapen brukes til å referere til en hjemmeside til tjenesten.
-|Usage note| This property refers to a homepage of the Service.
-|Multiplisitet|0..n
-|Kravnivå | Anbefalt/Recommended
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark| Norwegian extension: Not explicitly specified in CSPV-AP.
-|Eksempel|https://kommune24-7.no/1813[https://kommune24-7.no/1813]
+| _English name_ | _homepage_
+| URI | foaf:homepage
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en hjemmeside til tjenesten.
+
+_This property refers to a homepage of the Service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CSPV-AP._
+| Eksempel | https://kommune24-7.no/1813[https://kommune24-7.no/1813]
 |===
 
 Eksempel i RDF Turtle:
@@ -290,17 +322,20 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|type
-|URI|dct:type
-|Range|skos:Concept
-|Anvendelse| Egenskapen brukes til å indikere type tjeneste i henhold til et kontrollert vokabular.
-|Usage note| This property represents the Type of a Public Service as described in a controlled vocabulary.
-|Multiplisitet|0..n
-|Kravnivå | Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/main-activity[Main activity], når verdien finnes i standarden.
-|Remark 1 | The possible values for this property are described in EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/main-activity[Main activity].
-|Merknad 2 | Norsk utvidelse: Kravnivå er endret fra valgfri til anbefalt.
-|Remark 2 | Norwegian extension: Requirement level changed from optional to recommended.
+| _English name_ | _type_
+| URI | dct:type
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å indikere type tjeneste i henhold til et kontrollert vokabular.
+
+_This property represents the Type of a Public Service as described in a controlled vocabulary._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/main-activity[Main activity], når verdien finnes i standarden.
+
+_The possible values for this property are described in EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/main-activity[Main activity]._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Kravnivå er endret fra valgfri til anbefalt.
+
+_Norwegian extension: Requirement level changed from optional to recommended._
 |===
 
 
@@ -308,18 +343,21 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|status
-|URI|adms:status
-|Range|skos:Concept
-|Anvendelse| Egenskapen brukes til å referere til status til tjenesten (f.eks. aktiv, inaktiv, under utvikling osv.) i henhold til et predefinert kontrollert vokabular.
-|Usage note| This property indicates whether a Public Service is active, inactive, under development etc. according to a controlled vocabulary.
-|Multiplisitet|0..1
-|Kravnivå | Anbefalt/Recommended
-|Merknad 1|Norsk utvidelse: Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (lenket ressurs i RDF)] (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).
-|Remark 1| Norwegian extension: The value shall be chosen from http://purl.org/adms/status/[ADMS Status Vocabulary (linked resource in RDF)].
-|Merknad 2 | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
-|Remark 2 | Norwegian extension: Requirement level changed from optional to recommended.
-|Eksempel|Ferdig utviklet
+| _English name_ | _status_
+| URI | adms:status
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til status til tjenesten (f.eks. aktiv, inaktiv, under utvikling osv.) i henhold til et predefinert kontrollert vokabular.
+
+_This property indicates whether a Public Service is active, inactive, under development etc. according to a controlled vocabulary._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Verdien skal velges fra http://purl.org/adms/status/[ADMS Status Vocabulary (lenket ressurs i RDF)] (samme krav som i DCAT-AP-NO som er basert på EUs BRegDCAT-AP).
+
+_Norwegian extension: The value shall be chosen from http://purl.org/adms/status/[ADMS Status Vocabulary (linked resource in RDF)]._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+
+_Norwegian extension: Requirement level changed from optional to recommended._
+| Eksempel | Ferdig utviklet
 |===
 
 Eksempel i RDF Turtle:
@@ -333,17 +371,20 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|thematic area
-|URI|cv:thematicArea
-|Range|skos:Concept
-|Anvendelse| Egenskapen brukes til å referere til primært temaområde som dekkes av tjenesten.
-|Usage note| This property represents the Thematic Area of a Public Service as described in a controlled vocabulary.
-|Multiplisitet|0..n
-|Kravnivå | Anbefalt/Recommended
-|Merknad 1|Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
-|Remark 1| At least one value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los] may be used in addition.
-|Merknad 2 | Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt.
-|Remark 2 | Norwegian extension: Requirement level changed from optional to recommended.
+| _English name_ | _thematic area_
+| URI | cv:thematicArea
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til primært temaområde som dekkes av tjenesten.
+
+_This property represents the Thematic Area of a Public Service as described in a controlled vocabulary._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
+
+_At least one value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los] may be used in addition._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt.
+
+_Norwegian extension: Requirement level changed from optional to recommended._
 |===
 
 === Valgfrie egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-valgfrie-egenskaper]]
@@ -352,16 +393,18 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|processing time
-|URI|cv:processingTime
-|Range|xsd:duration
-|Anvendelse| Egenskapen brukes til å oppgi den estimerte behandlingstiden.
-|Usage note| The value of this property is the (estimated) time needed for executing a Public Service.
-|Multiplisitet|0..1
-|Kravnivå | Valgfri/Optional
-|Merknad| Opplysningen skal oppgis ved hjelp av ISO 8601-syntaksen for varighet. Forklaring er gitt på https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia-siden] som refererer til den offisielle ISO-standarden.
-|Remark |The actual information is provided using the ISO 8601 syntax for durations. Explanation is provided in the https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia page] that references the official ISO standard.
-|Eksempel|Det tar 1 dag for å behandle en søknad om skjenkebevilling (i Brønnøy kommune).
+| _English name_ | _processing time_
+| URI | cv:processingTime
+| Verdiområde / _Range_ | xsd:duration
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi den estimerte behandlingstiden.
+
+_The value of this property is the (estimated) time needed for executing a Public Service._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ |  Opplysningen skal oppgis ved hjelp av ISO 8601-syntaksen for varighet. Forklaring er gitt på https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia-siden] som refererer til den offisielle ISO-standarden.
+
+_The actual information is provided using the ISO 8601 syntax for durations. Explanation is provided in the https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia page] that references the official ISO standard._
+| Eksempel | Det tar 1 dag for å behandle en søknad om skjenkebevilling (i Brønnøy kommune).
 |===
 
 Eksempel i RDF Turtle:
@@ -374,31 +417,34 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|is described at
-|URI|cv:isDescribedAt
-|Range|dcat:Dataset
-|Anvendelse| Egenskapen brukes til å referere til datasett som beskriver tjenesten.
-|Usage note| This property links a Public Service to the Dataset(s) in which it is being described.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad|Bruk egenskapen <<OffentligTjeneste-har-dokumentasjonskrav>> for å knytte til datasett som tjenesten bruker, eller egenskapen <<OffentligTjeneste-produserer>> for datasett som tjenesten produserer.
-|Remark | Use the property <<OffentligTjeneste-har-dokumentasjonskrav>> to refer to the dataset that the service uses, or the property <<OffentligTjeneste-produserer>> for the dataset that the service produces.
+| _English name_ | _is described at_
+| URI | cv:isDescribedAt
+| Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til datasett som beskriver tjenesten.
+
+_This property links a Public Service to the Dataset(s) in which it is being described._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Bruk egenskapen <<OffentligTjeneste-har-dokumentasjonskrav>> for å knytte til datasett som tjenesten bruker, eller egenskapen <<OffentligTjeneste-produserer>> for datasett som tjenesten produserer.
+
+_Use the property <<OffentligTjeneste-har-dokumentasjonskrav>> to refer to the dataset that the service uses, or the property <<OffentligTjeneste-produserer>> for the dataset that the service produces._
 |===
 
 ==== Offentlig tjeneste – er gruppert ved (cv:isGroupedBy) [[OffentligTjeneste-erGruppertVed]]
 
 [cols="30s,70d"]
 |===
-|English name|is grouped by
-|URI|cv:isGroupedBy
-|Range|cv:Event
-|Anvendelse| Egenskapen brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
+| _English name_ | is grouped by
+| URI | cv:isGroupedBy
+| Verdiområde / _Range_ | cv:Event
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
 |Usage note| This property links the Public Service to the triggering Event class.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad|Flere offentlige tjenester kan være knyttet til en bestemt hendelse, og likedan kan den samme offentlige tjenesten være knyttet til flere forskjellige hendelser.
-|Remark|Several Public Services may be associated with a particular Event and, likewise, the same Public Service may be associated with several different Events.
-|Eksempel|Tjenesten «Skjenkebevilling» grupperes under hendelsen «Starte og drive en restaurant»
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Flere offentlige tjenester kan være knyttet til en bestemt hendelse, og likedan kan den samme offentlige tjenesten være knyttet til flere forskjellige hendelser.
+
+_Several Public Services may be associated with a particular Event and, likewise, the same Public Service may be associated with several different Events._
+| Eksempel | Tjenesten «Skjenkebevilling» grupperes under hendelsen «Starte og drive en restaurant»
 |===
 
 Eksempel i RDF Turtle:
@@ -413,29 +459,32 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|is classified by
-|URI|cv:isClassifiedBy
-|Range|skos:Concept
-|Anvendelse| Egenskapen brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<OffentligTjeneste-temaområde>>, <<OffentligTjeneste-sektor>> osv.
-|Usage note| This property allows to classify the Public Service with any Concept, other than those already foreseen and defined explicitly in CPSV-AP (<<OffentligTjeneste-temaområde>>, <<OffentligTjeneste-sektor>> etc.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad| Dette er en generisk egenskap som kan spesialiseres til å lage spesifikke klassifiseringer, f.eks. å klassifisere offentlige tjenester etter digitaliseringsnivå, målgruppe osv.
-|Remark| It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according to level of digitisation, type of audience etc.
+| _English name_ | _is classified by_
+| URI | cv:isClassifiedBy
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<OffentligTjeneste-temaområde>>, <<OffentligTjeneste-sektor>> osv.
+
+_This property allows to classify the Public Service with any Concept, other than those already foreseen and defined explicitly in CPSV-AP (<<OffentligTjeneste-temaområde>>, <<OffentligTjeneste-sektor>> etc._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ |  Dette er en generisk egenskap som kan spesialiseres til å lage spesifikke klassifiseringer, f.eks. å klassifisere offentlige tjenester etter digitaliseringsnivå, målgruppe osv.
+
+_It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according to level of digitisation, type of audience etc._
 |===
 
 ==== Offentlig tjeneste – er tilgjengelig via (cv:hasChannel) [[OffentligTeneste-erTilgjengeligVia]]
 
 [cols="30s,70d"]
 |===
-|English name|has channel
-|URI|cv:hasChannel
-|Range|cv:Channel
-|Anvendelse| Egenskapen brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte.
-|Usage note| This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service, such as an online service, phone number or office.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Eksempel|Tjenesten «Skjenkebevilling (i Brønnøy kommune)» tilbys online på kommunens https://kommune24-7.no/1813/[skjemaportal]
+| _English name_ | _has channel_
+| URI | cv:hasChannel
+| Verdiområde / _Range_ | cv:Channel
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte.
+
+_This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service, such as an online service, phone number or office._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Eksempel | Tjenesten «Skjenkebevilling (i Brønnøy kommune)» tilbys online på kommunens https://kommune24-7.no/1813/[skjemaportal]
 |===
 
 Eksempel i RDF Turtle:
@@ -448,31 +497,33 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|follows
-|URI|cpsv:follows
-|Range|cpsv:Rule
-|Anvendelse| Egenskapen brukes til å referere til regelen som gjelder for tjenesten.
-|Usage note| This property links a Service to the Rule(s) under which it operates.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Eksempel|Se også <<KnytteTilRegelverk>>.
+| _English name_ | _follows_
+| URI | cpsv:follows
+| Verdiområde / _Range_ | cpsv:Rule
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til regelen som gjelder for tjenesten.
+
+_This property links a Service to the Rule(s) under which it operates._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Eksempel | Se også <<KnytteTilRegelverk>>.
 |===
 
 ==== Offentlig tjeneste – har deltagelse (cv:hasParticipation) [[OffentligTjeneste-har-deltagelse]]
 
 [cols="30s,70d"]
 |===
-|English name|has participation
-|URI|cv:hasParticipation
-|Range|cv:Participation
-|Anvendelse| Egenskapen brukes til å knytte til andre aktører som deltar i eller samhandler med tjenesten.
-|Usage note| It links a Public Service to the Participation class.
+| _English name_ | _has participation_
+| URI | cv:hasParticipation
+| Verdiområde / _Range_ | cv:Participation
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å knytte til andre aktører som deltar i eller samhandler med tjenesten.
 
-The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad|Andre aktører vil si andre enn det kompetente organ (`cv:hasCompetentAuthority`) og tjenesteeieren (`cv:ownedBy`).
-|Eksempel|Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+_It links a Public Service to the Participation class._
+
+_The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Andre aktører vil si andre enn det kompetente organ (`cv:hasCompetentAuthority`) og tjenesteeieren (`cv:ownedBy`).
+| Eksempel | Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
@@ -481,29 +532,32 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerT
 
 [cols="30s,70d"]
 |===
-|English name|has input type
-|URI|cv:hasInputType
-|Range|cv:EvidenceType
-|Anvendelse| Egenskapen brukes til å knytte til tjenesten en eller flere dokumentasjonstyper.
-|Usage note| It links a Public Service to one or more instances of the EvidenceType class.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
+| _English name_ | _has input type_
+| URI | cv:hasInputType
+| Verdiområde / _Range_ | cv:EvidenceType
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å knytte til tjenesten en eller flere dokumentasjonstyper.
+
+_It links a Public Service to one or more instances of the EvidenceType class._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
 ==== Offentlig tjeneste – har gebyr (cv:hasCost) [[OffentligTjeneste-har-gebyr]]
 
 [cols="30s,70d"]
 |===
-|English name|has cost
-|URI|cv:hasCost
-|Range|cv:Cost
-|Anvendelse| Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (`cv:Cost`), for å oppgi ev. gebyr for tjenesten.
-|Usage note| This property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Public Service for the citizen or business related to the execution of the particular Public Service.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad|Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, skal egenskapen <<Gebyr-hvisTilbysGjennom>> brukes.
-|Remark|Where the cost varies depending on the channel through which the service is accessed, it shall be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship.
-|Eksempel|Ifm. «Skjenkebevilling (i Brønnøy kommune)» er gebyret «Pr. vareliter for alkoholdhold drikke i gruppe 1: 0.49 NOK».
+| _English name_ | _has cost_
+| URI | cv:hasCost
+| Verdiområde / _Range_ | cv:Cost
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (`cv:Cost`), for å oppgi ev. gebyr for tjenesten.
+
+_This property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Public Service for the citizen or business related to the execution of the particular Public Service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, skal egenskapen <<Gebyr-hvisTilbysGjennom>> brukes.
+
+_Where the cost varies depending on the channel through which the service is accessed, it shall be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship._
+| Eksempel | Ifm. «Skjenkebevilling (i Brønnøy kommune)» er gebyret «Pr. vareliter for alkoholdhold drikke i gruppe 1: 0.49 NOK».
 |===
 
 Eksempel i RDF Turtle:
@@ -520,14 +574,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name| holds requirement
-|URI| cv:holdsRequirement
-|Range| cv:Requirement
-|Anvendelse| Egenskapen brukes til å referere til krav knyttet til behov for eller bruk av tjenesten.
-|Usage note| This property links a Public Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Eksempel|Et av kravene for å søke om skjenkebevilling er at søkeren skal være over 20 år.
+| _English name_ |  _holds requirement_
+| URI |  cv:holdsRequirement
+| Verdiområde / _Range_ | cv:Requirement
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til krav knyttet til behov for eller bruk av tjenesten.
+
+_This property links a Public Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Eksempel | Et av kravene for å søke om skjenkebevilling er at søkeren skal være over 20 år.
 |===
 
 Eksempel i RDF Turtle:
@@ -542,29 +597,32 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|has legal resource
-|URI|cv:hasLegalResource
-|Range|eli:LegalResource
-|Anvendelse| Egenskapen brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til.
-|Usage note| This property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
+| _English name_ | _has legal resource_
+| URI | cv:hasLegalResource
+| Verdiområde / _Range_ | eli:LegalResource
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til.
+
+_This property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
 ==== Offentlig tjeneste – krever (dct:requires) [[OffentligTjeneste-krever]]
 
 [cols="30s,70d"]
 |===
-|English name|requires
-|URI|dct:requires
-|Range|cpsvno:Service
-|Anvendelse| Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra.
-|Usage note| One Public Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Public Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad|Norsk utvidelse: Range endret fra `cpsv:PublicService` til `cpsvno:Service`, som en følge av den norsk utvidelse av å tilføye <<Tjeneste>>.
-| Remark | Norwegian extension: Range changed from `cpsv:PublicService` to `cpsvno:Service`, as a consequence of the Norwegian extension of adding <<Tjeneste, the class Service (cpsvno:Service)>>.
-|Eksempel|For å kunne søke om skjenkebevilling kreves det at «Kunnskapsprøve» er tatt.
+| _English name_ | _requires_
+| URI | dct:requires
+| Verdiområde / _Range_ | cpsvno:Service
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra.
+
+_One Public Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Public Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Norsk utvidelse: Range endret fra `cpsv:PublicService` til `cpsvno:Service`, som en følge av den norsk utvidelse av å tilføye <<Tjeneste>>.
+
+_Norwegian extension: Range changed from `cpsv:PublicService` to `cpsvno:Service`, as a consequence of the Norwegian extension of adding <<Tjeneste, the class Service (cpsvno:Service)>>._
+| Eksempel | For å kunne søke om skjenkebevilling kreves det at «Kunnskapsprøve» er tatt.
 |===
 
 Eksempel i RDF Turtle:
@@ -580,15 +638,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|keyword
-|URI|dcat:keyword
-|Range| rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi nøkkelord som beskriver den aktuelle offentlige tjenesten.
-|Usage note|This property represents a keyword, term or phrase to describe the Public Service.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Eksempel|Eksempler i forbindelse med tjenesten «Skjenkebevilling»: alkoholservering, skjenkebevilling, bar, nattklubb.
-|Example|Examples in connection with the service «Liquor license»: Alcohol serving, Liquor license, Bar, Nightclub.
+| _English name_ | _keyword_
+| URI | dcat:keyword
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi nøkkelord som beskriver den aktuelle offentlige tjenesten.
+
+_This property represents a keyword, term or phrase to describe the Public Service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Eksempel / _Example_ | Eksempler i forbindelse med tjenesten «Skjenkebevilling»: alkoholservering, skjenkebevilling, bar, nattklubb.
+
+_Examples in connection with the service «Liquor license»: Alcohol serving, Liquor license, Bar, Nightclub._
 |===
 
 Eksempel i RDF Turtle:
@@ -601,49 +661,57 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|related service
-|URI|dct:relation
-|Range|cpsvno:Service
-|Anvendelse| Egenskapen brukes til å referere til en eller flere andre relaterte tjenester.
-|Usage note| This property represents a Service related to the particular instance of the Public Service class.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad 1| Vurder å bruke egenskapen <<OffentligTjeneste-krever>> der det er avhengighet mellom tjenestene.
-|Remark 1 | Consider using the property <<OffentligTjeneste-krever>> where there are dependencies between the services.
-|Merknad 2| Norsk utvidelse: Range endret fra `cpsv:PublicService` til `cpsvno:Service`, som en følge av den norsk utvidelse av å tilføye <<Tjeneste>>.
-|Remark 2 | Norwegian extension: Range changed from `cpsv:PublicService` to `cpsvno:Service`, as a consequence of the Norwegian extension of adding <<Tjeneste, the class Service (cpsvno:Service)>>.
+| _English name_ | _related service_
+| URI | dct:relation
+| Verdiområde / _Range_ | cpsvno:Service
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere andre relaterte tjenester.
+
+_This property represents a Service related to the particular instance of the Public Service class._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad 1 / _Note 1_ |  Vurder å bruke egenskapen <<OffentligTjeneste-krever>> der det er avhengighet mellom tjenestene.
+
+_Consider using the property <<OffentligTjeneste-krever>> where there are dependencies between the services._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Range endret fra `cpsv:PublicService` til `cpsvno:Service`, som en følge av den norsk utvidelse av å tilføye <<Tjeneste>>.
+
+_Norwegian extension: Range changed from `cpsv:PublicService` to `cpsvno:Service`, as a consequence of the Norwegian extension of adding <<Tjeneste, the class Service (cpsvno:Service)>>._
 |===
 
 ==== Offentlig tjeneste – sektor (cv:sector) [[OffentligTjeneste-sektor]]
 
 [cols="30s,70d"]
 |===
-|English name|sector
-|URI|cv:sector
-|Range|skos:Concept
-|Anvendelse| Egenskapen brukes til å referere til industri/sektor som den aktuelle offentlige tjenesten er relatert til, eller er ment for. En tjeneste kan relateres til flere industrier/sektorer.
-|Usage note| This property represents the industry or sector a Public Service relates to, or is intended for. Note that a single Public Service may relate to multiple sectors.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad|De mulige verdiene for egenskapen er beskrevet i EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme].
-|Remark| The possible values for this property are described in the controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme Authority Table] of the Publications Office.
+| _English name_ | _sector_
+| URI | cv:sector
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til industri/sektor som den aktuelle offentlige tjenesten er relatert til, eller er ment for. En tjeneste kan relateres til flere industrier/sektorer.
+
+_This property represents the industry or sector a Public Service relates to, or is intended for. Note that a single Public Service may relate to multiple sectors._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | De mulige verdiene for egenskapen er beskrevet i EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme].
+
+_The possible values for this property are described in the controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme Authority Table] of the Publications Office._
 |===
 
 ==== Offentlig tjeneste – språk (dct:language) [[OffentligTjeneste-språk]]
 
 [cols="30s,70d"]
 |===
-|English name|language
-|URI|dct:language
-|Range|dct:LinguisticSystem
-|Anvendelse| Egenskapen brukes til å oppgi hvilke språk tjenesten er tilgjengelig på. Dette kan være ett språk eller flere språk, for eksempel i land med mer enn ett offisielt språk.
-|Usage note| This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
-|Remark |The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language].
-|Eksempel|For eksempel: Norsk, Norsk Bokmål, Norsk Nynorsk, Nordsamisk, Engelsk.
-|Example|For example: Norwegian, Norwegian Bokmål, Norwegian Nynorsk, Northern Sami, English.
+| _English name_ | _language_
+| URI | dct:language
+| Verdiområde / _Range_ | dct:LinguisticSystem
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi hvilke språk tjenesten er tilgjengelig på. Dette kan være ett språk eller flere språk, for eksempel i land med mer enn ett offisielt språk.
+
+_This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
+
+_The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language]._
+| Eksempel / _Example_ | For eksempel: Norsk, Norsk Bokmål, Norsk Nynorsk, Nordsamisk, Engelsk.
+
+_For example: Norwegian, Norwegian Bokmål, Norwegian Nynorsk, Northern Sami, English._
 |===
 
 Eksempel i RDF Turtle:
