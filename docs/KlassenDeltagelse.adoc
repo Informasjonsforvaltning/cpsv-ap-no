@@ -1,18 +1,19 @@
 == Klassen Deltagelse (cv:Participation) [[Deltagelse]]
 
 [[img-KlassenDeltagelse]]
-.Klassen Deltagelse (cv:Participation)
+.Klassen Deltagelse (cv:Participation) og klassen den refererer til.
 [link=images/KlassenDeltagelse.png]
 image::images/KlassenDeltagelse.png[alt="UML-diagram med klassen Deltagelse og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
-|English name|Participation
-|Anvendelse| Klassen brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <<OffentligTjeneste-harKompetentOrgan>>) eller tjenesteeieren (jf. <<Tjeneste-eiesAv>>), som er involvert i en tjeneste.
-|Usage note|The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider.
-|URI|cv:Participation
-|Kravnivå|Valgfri/Optional
-|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+| _English name_ | _Participation_
+| Anvendelse / _Usage note_ |  Klassen brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <<OffentligTjeneste-harKompetentOrgan>>) eller tjenesteeieren (jf. <<Tjeneste-eiesAv>>), som er involvert i en tjeneste.
+
+_The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider._
+| URI | cv:Participation
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Eksempel | Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
 === Obligatoriske egenskaper for klassen _Deltagelse_ [[Deltagelse-obligatoriske-egenskaper]]
@@ -21,14 +22,14 @@ image::images/KlassenDeltagelse.png[alt="UML-diagram med klassen Deltagelse og d
 
 [cols="30s,70d"]
 |===
-|English name|description
-|URI|dct:description
-|Range|rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi en tekstlig beskrivelse av deltagelsen. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
-|Usage note| This property represents a free text description of the Participation, repeated when the description is in parallel languages.
-|Multiplisitet|1..n
-|Kravnivå|Obligatorisk/Mandatory
-|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+| _English name_ | _description_
+| URI | dct:description
+| Verdiområde / _Range_ | rdf:langString
+
+_This property represents a free text description of the Participation, repeated when the description is in parallel languages._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Eksempel | Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
 
@@ -36,44 +37,52 @@ image::images/KlassenDeltagelse.png[alt="UML-diagram med klassen Deltagelse og d
 
 [cols="30s,70d"]
 |===
-|English name| has participant
-|URI| cv:hasParticipant
-|Range| foaf:Agent
-|Anvendelse| Egenskapen brukes til å referere til aktøren som er involvert i deltagelsen.
-|Usage note| This property refers to the Agent involved in the Participation.
-|Multiplisitet|1..1
-|Kravnivå|Obligatorisk/Mandatory
-|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+| _English name_ |  _has participant_
+| URI |  cv:hasParticipant
+| Verdiområde / _Range_ |  foaf:Agent
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til aktøren som er involvert i deltagelsen.
+
+_This property refers to the Agent involved in the Participation._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Eksempel | Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
 ==== Deltagelse – identifikator (dct:identifier) [[Deltagelse-identifikator]]
 
 [cols="30s,70d"]
 |===
-|English name|identifier
-|URI|dct:identifier
-|Range|rdfs:Literal
-|Anvendelse| Egenskapen brukes til å oppgi identifikatoren til deltagelsen.
-|Usage note|This property represents an Identifier for the Participation.
-|Multiplisitet|1..1
-|Kravnivå|Obligatorisk/Mandatory
-|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi identifikatoren til deltagelsen.
+
+_This property represents an Identifier for the Participation._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+
+_Identifier is usually generated by the application, such that you as an end-user of the application usually do not need to manually fill out the value of this property._ 
+
+_If you are developing applications, see https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.] (in Norwegian only)._
 |===
 
 ==== Deltagelse – rolle (cv:role) [[Deltagelse-rolle]]
 
 [cols="30s,70d"]
 |===
-|English name|role
-|URI|cv:role
-|Range|skos:Concept
-|Anvendelse| Egenskapen brukes til å referere til et begrep som beskriver en rolle i deltagelsen.
-|Usage note| This property provides the role played.
-|Multiplisitet|1..n
-|Kravnivå|Obligatorisk/Mandatory
-|Merknad|Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/role-type[Rolletype], når verdien finnes i vokabularet.
-|Remark|The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/role-type[Role type], when the value is in the vocabulary.
-|Eksempel|Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+| _English name_ | _role_
+| URI | cv:role
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til et begrep som beskriver en rolle i deltagelsen.
+
+_This property provides the role played._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/role-type[Rolletype], når verdien finnes i vokabularet.
+
+_The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/role-type[Role type], when the value is in the vocabulary._
+| Eksempel | Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
