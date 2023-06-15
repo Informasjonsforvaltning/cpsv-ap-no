@@ -7,7 +7,7 @@ Spesifikasjonen gjør det mulig å beskrive et dokumentasjonskrav strukturert og
 [link=images/FigurEksempelDokumentasjonskrav.png]
 image::images/FigurEksempelDokumentasjonskrav.png[alt="RDF-graf med ni RDF-noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."]
 
-<<img-FigurEksempelDokumentasjonskrav>> Viser et eksempel på å beskrive et av kravene som skal oppfylles for å kunne utføre tjenesten https://www.skatteetaten.no/skjema/provingsattest/[«prøvingsattest»] som Skatteetaten tilbyr.
+<<img-FigurEksempelDokumentasjonskrav>> Viser et eksempel på å beskrive et av kravene som skal oppfylles for å kunne utføre tjenesten https://www.skatteetaten.no/skjema/provingsattest/[«prøvingsattest» &#x29C9;, window="_blank", role="ext-link"] som Skatteetaten tilbyr.
 
 <<img-FigurEksempelDokumentasjonskrav>> forklares som følger (numrene refererer til de samme numrene i figuren):
 
