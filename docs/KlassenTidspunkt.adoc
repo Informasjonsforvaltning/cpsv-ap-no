@@ -22,7 +22,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 
 Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 
-=== Obligatoriske egenskaper for klassen _Tidspunkt_ [[Tidspunkt-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Tidspunkt_ [[Tidspunkt-obligatoriske-egenskaper]]
 
 ==== Tidspunkt – tidspunktangivelse (time:inDateTime) [[Tidspunkt-tidspunktangivelse]]
 [cols="30s,70d"]

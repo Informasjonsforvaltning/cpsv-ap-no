@@ -36,7 +36,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|«Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser»
 |===
 
@@ -83,7 +83,7 @@ Eksempel i RDF Turtle:
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
 |Merknad 2| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – inneholder tjeneste (dcatno:containsService) [[Katalog-inneholderTjeneste]]
@@ -99,7 +99,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – tittel (dct:title) [[Katalog-tittel]]
@@ -114,7 +114,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Tjeneste- og hendelseskatalog
 |===
 
@@ -136,7 +136,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..1
 |Kravnivå|Obligatorisk/Mandatory
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel|Digdir er utgiver av «Tjeneste- og hendelseskatalog» i Felles datakatalog.
 |===
 
@@ -170,7 +170,7 @@ Eksempel i RDF Turtle:
 
 * To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
 |Merknad 2| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog har Norge som sitt dekningsområde.
 |===
 
@@ -192,7 +192,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravnivå|Anbefalt/Recommended
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – frekvens (dct:accrualPeriodicity) [[Katalog-frekvens]]
@@ -209,7 +209,7 @@ Eksempel i RDF Turtle:
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frekvens].
 |Remark 1|The value shall be chosen from EU’s controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frequency].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – hjemmeside (foaf:homepage) [[Katalog-hjemmeside]]
@@ -224,7 +224,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravnivå|Anbefalt/Recommended
 |Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – inneholder hendelse (dcatno:containsEvent) [[Katalog-inneholderHendelse]]
@@ -240,7 +240,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravnivå|Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – lisens (dct:license) [[Katalog-lisens]]
@@ -257,7 +257,7 @@ Eksempel i RDF Turtle:
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Lisens], når lisensen som brukes i vokabularet.
 |Remkark 1| The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], when the licence used is in the vocabulary.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.
 |===
 
@@ -279,7 +279,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravnivå|Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – språk (dct:language) [[Katalog-språk]]
@@ -296,17 +296,17 @@ Eksempel i RDF Turtle:
 |Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
 |Remark 1 | The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language].
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
 |Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.
 |===
 
 Eksempel i RDF Turtle:
 -----
 <https://data.norge.no/public-services-and-events> a dcat:Catalog ;
-   dct:language 
-      <https://publications.europa.eu/resource/authority/language/NOB>, # bokmål  
-      <https://publications.europa.eu/resource/authority/language/NNN>, # nynorsk
-      <https://publications.europa.eu/resource/authority/language/ENG>; # engelsk 
+   dct:language 
+      <https://publications.europa.eu/resource/authority/language/NOB>, # bokmål  
+      <https://publications.europa.eu/resource/authority/language/NNN>, # nynorsk
+      <https://publications.europa.eu/resource/authority/language/ENG>; # engelsk 
   .
 -----
 
@@ -324,7 +324,7 @@ Eksempel i RDF Turtle:
 |Merknad 1 |Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
 |Remark 1 | At least one value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los] may be used in addition.
 |Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – utgivelsesdato (dct:issued) [[Katalog-utgivelsesdato]]
@@ -339,7 +339,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravnivå|Anbefalt/Recommended
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 === Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
@@ -356,7 +356,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – har del (dct:hasPart) [[Katalog-harDel]]
@@ -371,7 +371,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..n
 |Kravnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – produsent (dct:creator) [[Katalog-produsent]]
@@ -386,7 +386,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===
 
 ==== Katalog – rettigheter (brukervilkår) (dct:rights) [[Katalog-rettigheter]]
@@ -401,5 +401,5 @@ Eksempel i RDF Turtle:
 |Multiplisitet|0..1
 |Kravnivå|Valgfri/Optional
 |Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
 |===

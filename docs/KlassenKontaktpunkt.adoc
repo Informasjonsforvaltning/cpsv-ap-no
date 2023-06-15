@@ -101,7 +101,7 @@ Eksempel i RDF Turtle: Se under <<Tidsenhet>>.
 
 [cols="30s,70d"]
 |===
-| _English name_ | _telehpone_
+| _English name_ | _telephone_
 | URI |  cv:telephone
 | Verdiområde / _Range_ |  rdfs:Literal
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi telefonnummer til kontaktpunktet.

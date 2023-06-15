@@ -1,7 +1,7 @@
 == Klassen Regulativ ressurs (eli:LegalResource) [[RegulativRessurs]]
 
 [[img-KlassenRegulativRessurs]]
-.Klassen Regulativ ressurs (eli:LegealResource).
+.Klassen Regulativ ressurs (eli:LegalResource).
 [link=images/KlassenRegulativRessurs.png]
 image::images/KlassenRegulativRessurs.png[alt="UML-diagram med klassen Regulativ ressurs og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
@@ -93,10 +93,10 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 _This property is used to specify the language in which the legal resource is available._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
+| Merknad 1 / _Note 1_ | Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
 
 _The value shall be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language]._
-| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 | Eksempel | Se under <<KnytteTilRegelverk>>.
@@ -136,10 +136,10 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 _This property refers to the type of a legal resource (e.g. "Directive", "Règlement grand ducal", "law", "Règlement ministériel", "draft proposition", "Parliamentary act", etc.). Member states are encouraged to make their own list of values in the corresponding concept scheme._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ |  Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/legal-resource-type[Regulativ ressurs type], når verdien finnes i vokabularet.
+| Merknad 1 / _Note 1_ |  Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/legal-resource-type[Regulativ ressurs type], når verdien finnes i vokabularet.
 
 _The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/legal-resource-type[Legal resource type], when the value is in the vocabulary._
-| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men i DCAT-AP-NO.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt tatt med i CPSV-AP, men i DCAT-AP-NO.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===

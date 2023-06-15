@@ -50,7 +50,7 @@ _Regarding usage of controlled vocabularies, the following requirements apply:_
 * _At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place]; http://sws.geonames.org/[GeoNames]._
 
 * _To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used._
-| Merknad 2 / _Note 2_ | Norsk utvidelse: CPSP-AP v.3.00 refererer til et kontrollert vokabular som range, noe vi mener ikke er korrekt. Vi har valgt å bruke `dct:Location` som range. Inntil EU oppdaterer sin versjon blir dette en norsk utvidelse.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: CPSV-AP v.3.00 refererer til et kontrollert vokabular som range, noe vi mener ikke er korrekt. Vi har valgt å bruke `dct:Location` som range. Inntil EU oppdaterer sin versjon blir dette en norsk utvidelse.
 
 _Norwegian extension: CPSV-AP refers to a controlled vocabulary as the range, instead of a class._
 | Eksempel | Offentlig organisasjon «Brønnøy kommune» har Brønnøy kommune i Norge som sitt dekningsområde.

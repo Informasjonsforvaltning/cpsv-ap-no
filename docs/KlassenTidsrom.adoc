@@ -19,7 +19,7 @@ _This class  represents a period or time of interval, where the value of the sta
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use._
 |===
 
-=== Anbefalte egenskaper for klassen _Tidsrom_ [[Tidsrom-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Tidsrom_ [[Tidsrom-anbefalte-egenskaper]]
 
 ==== Tidsrom – sluttidspunkt (time:hasEnd) [[Tidsrom-sluttidspunkt]]
 [cols="30s,70d"]

@@ -146,7 +146,7 @@ __This property represents the name of a passage or way through from one locatio
 | Merknad / _Note_ |  Maks. én per språk.
 
 _Max. one per language._
-| Eksempel | «Lørenfaret» er gatenavn, i den fullstendige besøksadressen til Didgir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).
+| Eksempel | «Lørenfaret» er gatenavn, i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»).
 |===
 
 Eksempel i RDF Turtle:

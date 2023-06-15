@@ -213,7 +213,7 @@ _Regarding usage of controlled vocabularies, the following requirements apply:_
 * _To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used._
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt.
 
-_Norwegian extension: Requirement level changed from optinoal to recommended._
+_Norwegian extension: Requirement level changed from optional to recommended._
 | Eksempel | «Skjenkebevilling (i Brønnøy kommune)» har Brønnøy kommune i Norge som dekningsområde.
 |===
 
@@ -308,7 +308,7 @@ _This property refers to a homepage of the Service._
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CSPV-AP._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 | Eksempel | https://kommune24-7.no/1813[https://kommune24-7.no/1813]
 |===
 
@@ -434,7 +434,7 @@ _Use the property <<OffentligTjeneste-har-dokumentasjonskrav>> to refer to the d
 
 [cols="30s,70d"]
 |===
-| _English name_ | is grouped by
+| _English name_ | _is grouped by_
 | URI | cv:isGroupedBy
 | Verdiområde / _Range_ | cv:Event
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.

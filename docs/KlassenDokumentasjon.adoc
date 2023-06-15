@@ -118,9 +118,9 @@ Eksempel i RDF Turtle:
 -----
 <kravOmVandel> a cv:Evidence ;
    dct:language
-      <https://publications.europa.eu/resource/authority/language/NOB>, # bokmål  
-      <https://publications.europa.eu/resource/authority/language/NNN>, # nynorsk
-      <https://publications.europa.eu/resource/authority/language/ENG>; # engelsk 
+      <https://publications.europa.eu/resource/authority/language/NOB>, # bokmål  
+      <https://publications.europa.eu/resource/authority/language/NNN>, # nynorsk
+      <https://publications.europa.eu/resource/authority/language/ENG>; # engelsk 
    .
 -----
 
@@ -301,7 +301,7 @@ Eksempel i RDF Turtle:
 | _English name_ |  _supports concept_
 | URI |  cv:supportsConcept
 |Verdiområde / _Range_ |  cv:InformationConcept
-| Anvendelse / _Usage note_ | Egenskapen brukes til å refere til informasjonsbegrep som gir fakta funnet eller utledet fra dokumentasjonen.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til informasjonsbegrep som gir fakta funnet eller utledet fra dokumentasjonen.
 
 _This property represents Information Concept providing facts found/inferred from the Evidence._
 | Multiplisitet / _Multiplicity_ | 0..n

@@ -18,7 +18,7 @@ _This class represents a description of date and time structured with separate v
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-=== Obligatoriske egenskaper for klassen _Tidspunktbeskrivelse_ [[Tidspunktbeskrivelse-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Tidspunktbeskrivelse_ [[Tidspunktbeskrivelse-obligatoriske-egenskaper]]
 
 ==== Tidspunktbeskrivelse – enhetstype (time:unitType) [[Tidspunktbeskrivelse-enhetstype]]
 
@@ -49,7 +49,7 @@ Eksempel i RDF Turtle, minutt:
 -----
 
 
-=== Valgfrie egenskaper for klassen _Tidspunktbeskrivelse_ [[Tidspunktbeskrivelse-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Tidspunktbeskrivelse_ [[Tidspunktbeskrivelse-valgfrie-egenskaper]]
 
 ==== Tidspunktbeskrivelse – dag i måneden (time:day) [[Tidspunktbeskrivelse-dag-i-måneden]]
 

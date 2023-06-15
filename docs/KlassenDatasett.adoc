@@ -128,7 +128,7 @@ Eksempel I RDF Turtle:
 _When the dataset is used to describe a service, this property refers to a service which is a part of the service described by the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-|Merknad| Norsk utvidelse: Range endret fra Offentlig tjeneste (`cpsv:PublicService`) til Tjeneste (`cpsvno:Service), for å åpne for ikke-offentlige tjenester.
+|Merknad| Norsk utvidelse: Range endret fra Offentlig tjeneste (`cpsv:PublicService`) til Tjeneste (`cpsvno:Service`), for å åpne for ikke-offentlige tjenester.
 
 _Norwegian extension: Range change from Public Service (`cpsv:PublicService`) to Service (`cpsvno:Service), in order to allow non-public services._
 |===
