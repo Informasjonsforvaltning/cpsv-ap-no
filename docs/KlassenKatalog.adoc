@@ -1,20 +1,22 @@
 == Klassen Katalog (dcat:Catalog) [[Katalog]]
 
 [[img-KlassenKatalog]]
-.Klassen Katalog (dcat:Catalog)
+.Klassen Katalog (dcat:Catalog) og klassene den refererer til.
 [link=images/KlassenKatalog.png]
 image::images/KlassenKatalog.png[alt="UML-diagram med klassen Katalog, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
-|English name|Catalog
-|Anvendelse| Klassen brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over tjenester og hendelser.
-|Usage note|This class represents a catalog, in context of this specification a catalog of events and services.
-|URI|dcat:Catalog
-|Kravnivå|Valgfri/Optional
-|Merknad|Norsk utvidelse: CPSV-AP dekker ikke katalogbeskrivelse. Klassen fra DCAT-AP-NO tas med her for å kunne dekke norsk behov for å beskrive «tjeneste-/hendelseskataloger».
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel| https://data.norge.no/public-services-and-events[Tjeneste- og hendelsesdelen av Felles datakatalog] er en katalog over tjenester og hendelser.
+| _English name_ | _Catalog_
+| Anvendelse / _Usage note_ |  Klassen brukes til å representere en katalog, i konteksten av spesifikasjonen en katalog over tjenester og hendelser.
+
+_This class represents a catalog, in context of this specification a catalog of events and services._
+| URI | dcat:Catalog
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Norsk utvidelse: CPSV-AP dekker ikke katalogbeskrivelse. Klassen fra DCAT-AP-NO tas med her for å kunne dekke norsk behov for å beskrive «tjeneste-/hendelseskataloger».
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel |  https://data.norge.no/public-services-and-events[Tjeneste- og hendelsesdelen av Felles datakatalog] er en katalog over tjenester og hendelser.
 |===
 
 Eksempel i RDF Turtle:
@@ -28,16 +30,18 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|description
-|URI|dct:description
-|Range|rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi fritekst-beskrivelse av innholdet i katalogen. Gjentas når beskrivelsen finnes på flere språk.
-|Usage note| This property represents a textual description of the content in the catalog.
-|Multiplisitet|1..n
-|Kravnivå|Obligatorisk/Mandatory
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|«Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser»
+| _English name_ | _description_
+| URI | dct:description
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi fritekst-beskrivelse av innholdet i katalogen. Gjentas når beskrivelsen finnes på flere språk.
+
+_This property represents a textual description of the content in the catalog._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel | «Den delen av Felles datakatalog (data.norge.no) som inneholder oversikt over tjenester og hendelser»
 |===
 
 Eksempel i RDF Turtle:
@@ -50,14 +54,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|contact point
-|URI| cv:hasContactPoint
-|Range| cv:ContactPoint
-|Anvendelse| Egenskapen brukes til å oppgi kontaktpunkt(er) for katalogen.
-|Usage note| This property represents contact points for the catalog.
-|Multiplisitet|1..n
-|Kravnivå | Obligatorisk/Mandatory
-|Eksempel|Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt.
+| _English name_ | _contact point_
+| URI |  cv:hasContactPoint
+| Verdiområde / _Range_ |  cv:ContactPoint
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi kontaktpunkt(er) for katalogen.
+
+_This property represents contact points for the catalog._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
+| Eksempel | Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt.
 |===
 
 Eksempel i RDF Turtle:
@@ -72,50 +77,60 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|identifier
-|URI|dct:identifier
-|Range|rdfs:Literal
-|Anvendelse| Egenskapen brukes til å oppgi identifikatoren til katalogen.
-|Usage note| This property represents the identifier of the catalog.
-|Multiplisitet|1..1
-|Kravnivå|Obligatorisk/Mandatory
-|Merknad 1|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi identifikatoren til katalogen.
+
+_This property represents the identifier of the catalog._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad 1 / _Note 1_ | Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
-|Merknad 2| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+
+_Identifier is usually generated by the application, such that you as an end-user of the application usually do not need to manually fill out the value of this property._ 
+
+_If you are developing applications, see https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.] (in Norwegian only)._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – inneholder tjeneste (dcatno:containsService) [[Katalog-inneholderTjeneste]]
 
 [cols="30s,70d"]
 |===
-|English name|service
-|URI|dcatno:containsService
-|Subegenskap av / Subproperty of |dct:hasPart
-|Range|cpsvno:Service
-|Anvendelse| Egenskapen brukes til å referere til en tjeneste som er i katalogen.
-|Usage note| This property refers to a service that is in the catalog.
-|Multiplisitet|1..n
-|Kravnivå|Obligatorisk/Mandatory
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _service_
+| URI | dcatno:containsService
+| Subegenskap av / _Subproperty of_ | dct:hasPart
+| Verdiområde / _Range_ | cpsvno:Service
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en tjeneste som er i katalogen.
+
+_This property refers to a service that is in the catalog._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – tittel (dct:title) [[Katalog-tittel]]
 
 [cols="30s,70d"]
 |===
-|English name|title
-|URI|dct:title
-|Range|rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi navnet på katalogen. Egenskapen bør gjentas når navnet finnes på flere språk.
-|Usage note| This property represents the title of the catalog.
-|Multiplisitet|1..n
-|Kravnivå|Obligatorisk/Mandatory
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|Tjeneste- og hendelseskatalog
+| _English name_ | _title_
+| URI | dct:title
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi navnet på katalogen. Egenskapen bør gjentas når navnet finnes på flere språk.
+
+_This property represents the title of the catalog._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel | Tjeneste- og hendelseskatalog
 |===
 
 Eksempel i RDF Turtle:
@@ -128,16 +143,18 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|publisher
-|URI|dct:publisher
-|Range|foaf:Agent
-|Anvendelse| Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
-|Usage note| This property refers to the Agent responsible for making the catalog available.
-|Multiplisitet|1..1
-|Kravnivå|Obligatorisk/Mandatory
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|Digdir er utgiver av «Tjeneste- og hendelseskatalog» i Felles datakatalog.
+| _English name_ | _publisher_
+| URI | dct:publisher
+| Verdiområde / _Range_ | foaf:Agent
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
+
+_This property refers to the Agent responsible for making the catalog available._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel | Digdir er utgiver av «Tjeneste- og hendelseskatalog» i Felles datakatalog.
 |===
 
 Eksempel i RDF Turtle:
@@ -152,26 +169,29 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|spatial coverage
-|URI|dct:spatial
-|Range|dct:Location
-|Anvendelse| Egenskapen brukes til å oppgi geografisk område som er dekket av katalogen.
-|Usage note| This property represents the spatial coverage of the catalog.
-|Multiplisitet|0..n
-|Kravnivå|Anbefalt/Recommended
-|Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+| _English name_ | _spatial coverage_
+| URI | dct:spatial
+| Verdiområde / _Range_ | dct:Location
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi geografisk område som er dekket av katalogen.
+
+_This property represents the spatial coverage of the catalog._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
 * Minst en verdi skal velges fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted]; http://sws.geonames.org/[GeoNavn].
 
 * For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
-|Remark 1 a|Regarding usage of controlled vocabularies, the following requirements apply:
 
-* At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place]; http://sws.geonames.org/[GeoNames].
+_Regarding usage of controlled vocabularies, the following requirements apply:_
 
-* To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
-|Merknad 2| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog har Norge som sitt dekningsområde.
+* _At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place]; http://sws.geonames.org/[GeoNames]._
+
+* _To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel |  «Tjeneste- og hendelseskatalog» i Felles datakatalog har Norge som sitt dekningsområde.
 |===
 
 Eksempel i RDF Turtle:
@@ -184,81 +204,93 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|modified (last update)
-|URI|dct:modified
-|Range| xsd:date or xsd:dateTime
-|Anvendelse| Egenskapen brukes til å oppgi dato for siste oppdatering/endring av katalogen.
-|Usage note| This property represents the date of the last update of the catalog.
-|Multiplisitet|0..1
-|Kravnivå|Anbefalt/Recommended
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _modified (last update)_
+| URI | dct:modified
+| Verdiområde / _Range_ |  xsd:date or xsd:dateTime
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi dato for siste oppdatering/endring av katalogen.
+
+_This property represents the date of the last update of the catalog._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – frekvens (dct:accrualPeriodicity) [[Katalog-frekvens]]
 
 [cols="30s,70d"]
 |===
-|English name|accrual periodicity
-|URI|dct:accrualPeriodicity
-|Range|dct:Frequency
-|Anvendelse| Egenskapen brukes til å oppgi oppdateringsfrekvensen for katalogen.
-|Usage note| This property represents the accrual periodicity of the catalog.
-|Multiplisitet|0..1
-|Kravnivå|Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frekvens].
-|Remark 1|The value shall be chosen from EU’s controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frequency].
-|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _accrual periodicity_
+| URI | dct:accrualPeriodicity
+| Verdiområde / _Range_ | dct:Frequency
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi oppdateringsfrekvensen for katalogen.
+
+_This property represents the accrual periodicity of the catalog._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frekvens].
+
+_The value shall be chosen from EU’s controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frequency]._
+|Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – hjemmeside (foaf:homepage) [[Katalog-hjemmeside]]
 
 [cols="30s,70d"]
 |===
-|English name|homepage
-|URI|foaf:homepage
-|Range|foaf:Document
-|Anvendelse| Egenskapen brukes til å referere til nettside som fungerer som hovedside for katalogen.
-|Usage note| This property refers to the homepage of the catalog.
-|Multiplisitet|0..1
-|Kravnivå|Anbefalt/Recommended
-|Merknad| Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _homepage_
+| URI | foaf:homepage
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til nettside som fungerer som hovedside for katalogen.
+
+_This property refers to the homepage of the catalog._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – inneholder hendelse (dcatno:containsEvent) [[Katalog-inneholderHendelse]]
 
 [cols="30s,70d"]
 |===
-|English name|event
-|URI|dcatno:containsEvent
-|Subegenskap av / Subproperty of |dct:hasPart
-|Range|cv:Event
-|Anvendelse| Egenskapen brukes til å referere til en hendelse som er i katalogen.
-|Usage note| This property refers to an event that is in the catalog.
-|Multiplisitet|0..n
-|Kravnivå|Anbefalt/Recommended
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _event_
+| URI | dcatno:containsEvent
+| Subegenskap av / _Subproperty of_ | dct:hasPart
+| Verdiområde / _Range_ | cv:Event
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en hendelse som er i katalogen.
+
+_This property refers to an event that is in the catalog._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – lisens (dct:license) [[Katalog-lisens]]
 
 [cols="30s,70d"]
 |===
-|English name|licence
-|URI|dct:license
-|Range|dct:LicenseDocument
-|Anvendelse| Egenskapen brukes til å vise til lisens for katalogen som beskriver hvordan den kan viderebrukes.
-|Usage note| This property refers to the licence of the catalog.
-|Multiplisitet|0..1
-|Kravnivå|Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Lisens], når lisensen som brukes i vokabularet.
-|Remkark 1| The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], when the licence used is in the vocabulary.
-|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.
+| _English name_ | _licence_
+| URI | dct:license
+| Verdiområde / _Range_ | dct:LicenseDocument
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å vise til lisens for katalogen som beskriver hvordan den kan viderebrukes.
+
+_This property refers to the licence of the catalog._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Lisens], når lisensen som brukes i vokabularet.
+
+_The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence], when the licence used is in the vocabulary._
+|Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel |  «Tjeneste- og hendelseskatalog» i Felles datakatalog er utgitt under lisens CC BY 4.0.
 |===
 
 Eksempel i RDF Turtle:
@@ -271,33 +303,38 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|provenance (authenticity)
-|URI|dct:provenance
-|Range|dct:ProvenanceStatement
-|Anvendelse| Egenskapen brukes til å referere til beskrivelse av autentisitet og integritet til innholdet i katalogen.
-|Usage note| This property indicates a statement of the authenticity and the integrity of the the content in a catalog.
-|Multiplisitet|0..n
-|Kravnivå|Anbefalt/Recommended
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _provenance (authenticity)_
+| URI | dct:provenance
+| Verdiområde / _Range_ | dct:ProvenanceStatement
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til beskrivelse av autentisitet og integritet til innholdet i katalogen.
+
+_This property indicates a statement of the authenticity and the integrity of the the content in a catalog._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – språk (dct:language) [[Katalog-språk]]
 
 [cols="30s,70d"]
 |===
-|English name|language
-|URI|dct:language
-|Range|dct:LinguisticSystem
-|Anvendelse| Egenskapen brukes til å oppgi språk som brukes i tekstlige metadata som beskriver innholdet i katalogen. Gjentas hvis metadata er gitt på flere språk.
-|Usage note|This property represents the languages used in a catalog.
-|Multiplisitet|0..n
-|Kravnivå|Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
-|Remark 1 | The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language].
-|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel| «Tjeneste- og hendelseskatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.
+| _English name_ | _language_
+| URI | dct:language
+| Verdiområde / _Range_ | dct:LinguisticSystem
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi språk som brukes i tekstlige metadata som beskriver innholdet i katalogen. Gjentas hvis metadata er gitt på flere språk.
+
+_This property represents the languages used in a catalog._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ |Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Språk].
+
+_The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language]._
+|Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel |  «Tjeneste- og hendelseskatalog» i Felles datakatalog er i bokmål, nynorsk og engelsk.
 |===
 
 Eksempel i RDF Turtle:
@@ -314,32 +351,37 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|theme taxonomy
-|URI|dcat:themeTaxonomy
-|Range|skos:ConceptScheme
-|Anvendelse| Egenskapen brukes til å referere til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere de katalogiserte ressursene i katalogen.
-|Usage note|This property refers to a knowledge organisation system (i.e., thesaurus, taxonomy) used to classify the resources in a catalog.
-|Multiplisitet|0..n
-|Kravnivå|Anbefalt/Recommended
-|Merknad 1 |Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
-|Remark 1 | At least one value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los] may be used in addition.
-|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _theme taxonomy_
+| URI | dcat:themeTaxonomy
+| Verdiområde / _Range_ | skos:ConceptScheme
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere de katalogiserte ressursene i katalogen.
+
+_This property refers to a knowledge organisation system (i.e., thesaurus, taxonomy) used to classify the resources in a catalog._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ |Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser] kan brukes i tillegg.
+
+_At least one value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc]. https://psi.norge.no/los/[Los] may be used in addition._
+|Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – utgivelsesdato (dct:issued) [[Katalog-utgivelsesdato]]
 
 [cols="30s,70d"]
 |===
-|English name|issued (release date)
-|URI|dct:issued
-|Range|xsd:date or xsd:dateTime
-|Anvendelse| Egenskapen brukes til å oppgi dato for formell utgivelse (publisering) av katalogen.
-|Usage note|This property represents the date of first publication of a Catalogue.
-|Multiplisitet|0..1
-|Kravnivå|Anbefalt/Recommended
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _issued (release date)_
+| URI | dct:issued
+| Verdiområde / _Range_ | xsd:date or xsd:dateTime
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi dato for formell utgivelse (publisering) av katalogen.
+
+_This property represents the date of first publication of a Catalogue._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 === Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
@@ -348,58 +390,66 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|is part of
-|URI|dct:isPartOf
-|Range|dcat:Catalog
-|Anvendelse| Egenskapen brukes til å referere til en beslektet katalog som katalogen fysisk eller logisk er inkludert i.
-|Usage note|This property refers to a related Catalogue in which the described Catalogue is physically or logically included.
-|Multiplisitet|0..1
-|Kravnivå|Valgfri/Optional
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _is part of_
+| URI | dct:isPartOf
+| Verdiområde / _Range_ | dcat:Catalog
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en beslektet katalog som katalogen fysisk eller logisk er inkludert i.
+
+_This property refers to a related Catalogue in which the described Catalogue is physically or logically included._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – har del (dct:hasPart) [[Katalog-harDel]]
 
 [cols="30s,70d"]
 |===
-|English name|has part
-|URI|dct:hasPart
-|Range|dcat:Catalog
-|Anvendelse| Egenskapen brukes til å referere til en beslektet katalog som er en del av den beskrevne katalogen.
-|Usage note|This property refers to a related Catalogue that is part of the described Catalogue.
-|Multiplisitet|0..n
-|Kravnivå|Valgfri/Optional
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _has part_
+| URI | dct:hasPart
+| Verdiområde / _Range_ | dcat:Catalog
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en beslektet katalog som er en del av den beskrevne katalogen.
+
+_This property refers to a related Catalogue that is part of the described Catalogue._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – produsent (dct:creator) [[Katalog-produsent]]
 
 [cols="30s,70d"]
 |===
-|English name|creator
-|URI|dct:creator
-|Range|foaf:Agent
-|Anvendelse| Egenskapen brukes til å referere til aktøren som er hovedansvarlig for å produsere katalogen.
-|Usage note| This property represents the entity responsible for producing the catalogue.
-|Multiplisitet|0..1
-|Kravnivå|Valgfri/Optional
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _creator_
+| URI | dct:creator
+| Verdiområde / _Range_ | foaf:Agent
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til aktøren som er hovedansvarlig for å produsere katalogen.
+
+_This property represents the entity responsible for producing the catalogue._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Katalog – rettigheter (brukervilkår) (dct:rights) [[Katalog-rettigheter]]
 
 [cols="30s,70d"]
 |===
-|English name|rights (use terms)
-|URI|dct:rights
-|Range|dct:RightsStatement
-|Anvendelse| Egenskapen brukes til å referere til uttalelse som spesifiserer brukervilkår knyttet til katalogen.
-|Usage note| This property includes a statement that specifies usage rights of the Catalogue.
-|Multiplisitet|0..1
-|Kravnivå|Valgfri/Optional
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| _English name_ | _rights (use terms)_
+| URI | dct:rights
+| Verdiområde / _Range_ | dct:RightsStatement
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til uttalelse som spesifiserer brukervilkår knyttet til katalogen.
+
+_This property includes a statement that specifies usage rights of the Catalogue._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
