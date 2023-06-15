@@ -14,7 +14,7 @@ _This class represents a service concession contact._
 
 _Concessions are contracts for pecuniary interest by means of which one or more contracting authorities or contracting entities entrusts the execution of works, or the provision and the management of services, to one or more economic operators._
 
-_The object of such contracts is the procurement of works or services by means of a concession, the consideration of which consists in the right to exploit the works or services or in that right together with payment. Such contracts may, but do not necessarily, involve a transfer of ownership to contracting authorities or contracting entities, but contracting authorities or contracting entities always obtain the benefits of the works or services in question. The definition comes from the Directive https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0023&from=EN[2014/23/EU]._
+__The object of such contracts is the procurement of works or services by means of a concession, the consideration of which consists in the right to exploit the works or services or in that right together with payment. Such contracts may, but do not necessarily, involve a transfer of ownership to contracting authorities or contracting entities, but contracting authorities or contracting entities always obtain the benefits of the works or services in question. The definition comes from the Directive https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0023&from=EN[2014/23/EU &#x29C9;, window="_blank", role="ext-link"].__
 | URI |  cv:ServiceConcessionContract
 | Kravnivå / _Requirement level_ |  Valgfri / _Optional_
 |===

@@ -242,9 +242,9 @@ Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 _This property is used to specify the recurrence of an instant or period._
 | Multiplisitet / _Multiplicity_ |  0..n
 | Kravnivå / _Requirement level_ |  Valgfri / _Optional_
-| Merknad / _Note_ |  Verdien bør velges fra EUs kontrollerte vokabular for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frekvens].
+| Merknad / _Note_ |  Verdien bør velges fra EUs kontrollerte vokabular for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frekvens &#x29C9;, window="_blank", role="ext-link"].
 
-_The value should be chosen from EUs controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frequency]._
+__The value should be chosen from EUs controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frequency &#x29C9;, window="_blank", role="ext-link"].__
 |Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
 |===
 

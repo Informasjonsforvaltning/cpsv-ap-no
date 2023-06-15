@@ -1,3 +1,3 @@
 == Endringslogg [[Endringslogg]]
 
-Det er dels betydelige endringer fra utprøvingsversjonen (v.0.9) til denne versjonen, hovedsakelig pga. at EU sin CPSV-AP som denne spesifikasjonen er basert på, har vært betydelig endret. Endringene beskrives ikke her ettersom forrige versjon kun er en utprøvingsversjon. Ta kontakt med mailto:informasjonsforvaltning@digdir.no?subject=CPSV-AP-NO[Digdir] om du vil vite hva som er endret fra utprøvingsversjonen.
+Det er dels betydelige endringer fra utprøvingsversjonen (v.0.9) til denne versjonen, hovedsakelig pga. at EU sin CPSV-AP som denne spesifikasjonen er basert på, har vært betydelig endret. Endringene beskrives ikke her ettersom forrige versjon kun er en utprøvingsversjon. Ta kontakt med mailto:informasjonsforvaltning@digdir.no?subject=CPSV-AP-NO[Digdir &#x29C9;, window="_blank", role="ext-link"] om du vil vite hva som er endret fra utprøvingsversjonen.
