@@ -1,5 +1,5 @@
 === Å knytte en tjeneste eller hendelse til begrep [[KnytteTilBegrep]]
 
-Spesifikasjonen utvider CPSV-AP med egenskapen «begrep» (`dct:subject`) i <<Hendelse>>, <<Livshendelse>>, <<Virksomhetshendelse>>, <<Tjeneste>> og <<OffentligTjeneste>>. Egenskapen brukes til å referere til et eller flere begreper som er relatert til hendelsen/tjenesten og som er viktig for å forstå hendelsen/tjenesten. Det anbefales å referere til begreper som er publisert i f.eks. https://data.norge.no/concepts[begrepsdelen av Felles datakatalog]. Eksempel: begrepet ‘daglig leder’ er viktig for tjenesten «Skjenkebevilling».
+Spesifikasjonen utvider CPSV-AP med egenskapen «begrep» (`dct:subject`) i <<Hendelse>>, <<Livshendelse>>, <<Virksomhetshendelse>>, <<Tjeneste>> og <<OffentligTjeneste>>. Egenskapen brukes til å referere til et eller flere begreper som er relatert til hendelsen/tjenesten og som er viktig for å forstå hendelsen/tjenesten. Det anbefales å referere til begreper som er publisert i f.eks. https://data.norge.no/concepts[begrepsdelen av Felles datakatalog &#x29C9;, window="_blank", role="ext-link"]. Eksempel: begrepet ‘daglig leder’ er viktig for tjenesten «Skjenkebevilling».
 
-Se også https://data.norge.no/specification/skos-ap-no-begrep/[SKOS-AP-NO-begrep] for hvordan begrepsbeskrivelser tilgjengeliggjøres i RDF.
+Se også https://data.norge.no/specification/skos-ap-no-begrep/[SKOS-AP-NO-begrep &#x29C9;, window="_blank", role="ext-link"] for hvordan begrepsbeskrivelser tilgjengeliggjøres i RDF.

@@ -6,7 +6,7 @@ På helt tilsvarende måte og som illustrert i <<img-TjenesteOgRegelverk>>, kan 
 
 
 [[img-TjenesteOgRegelverk]]
-.Tjeneste og regelverk
+.Tjeneste og regelverk.
 [link=images/FigurTjenesteOgRegelverk.png]
 image::images/FigurTjenesteOgRegelverk.png[alt="UML-diagram med fire klasser og en instans, og relasjoner imellom disse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 

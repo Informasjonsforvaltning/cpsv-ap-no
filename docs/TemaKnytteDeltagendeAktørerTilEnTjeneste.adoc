@@ -1,7 +1,7 @@
 === Å knytte deltagende aktører til en tjeneste [[KnytteDeltagendeAktørerTilEnTjeneste]]
 
 [[img-FigurTjenesteOgDeltagelse]]
-.Tjeneste og Deltagelse
+.Tjeneste og Deltagelse.
 [link=images/FigurTjenesteOgDeltagelse.png]
 image::images/FigurTjenesteOgDeltagelse.png[alt="UML-diagram med åtte klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
