@@ -5,14 +5,14 @@ Spesifikasjonen har lagt til grunn at en hendelse er en ikke-delbar enhet, baser
 Det er på den annen side mulig å beskrive en https://data.norge.no/concepts/99d36cbe-9368-4ded-b400-efc34eb8917e[tjenestekjede &#x29C9;, window="_blank", role="ext-link"] som dekker en rekke av enkelthendelser, som vist i <<img-Tjenestekjede>>.
 
 [[img-Tjenestekjede]]
-.Klasser og egenskaper for beskrivelse av en tjenestekjede
+.Klasser og egenskaper for beskrivelse av en tjenestekjede.
 [link=images/FigurTjenestekjede.png]
 image::images/FigurTjenestekjede.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i UML-diagrammet er forklart i teksten."]
 
 <<img-FigurSyktBarnBeskrevetMedCPSVNO>> illustrerer hvordan deler av livshendelsen Alvorlig sykt barn illustrert i <<img-SyktBarn>>, beskrives med CPSV-AP-NO.
 
 [[img-FigurSyktBarnBeskrevetMedCPSVNO]]
-.Eksempel på bruk av CPSV-AP-NO til å beskrive deler av livshendelsen "Alvorlig sykt barn"
+.Eksempel på bruk av CPSV-AP-NO til å beskrive deler av livshendelsen "Alvorlig sykt barn".
 [link=images/FigurSyktBarnBeskrevetMedCPSVNO.png]
 image::images/FigurSyktBarnBeskrevetMedCPSVNO.png[alt="RDF-graf med fem noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."]
 

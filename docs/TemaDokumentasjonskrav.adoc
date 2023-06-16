@@ -3,7 +3,7 @@
 Spesifikasjonen gjør det mulig å beskrive et dokumentasjonskrav strukturert og dermed også maskinprosesserbart.
 
 [[img-FigurEksempelDokumentasjonskrav]]
-.Eksempel - beskrivelse av «alderskrav» til tjenesten «prøvingsattest»
+.Eksempel - beskrivelse av «alderskrav» til tjenesten «prøvingsattest».
 [link=images/FigurEksempelDokumentasjonskrav.png]
 image::images/FigurEksempelDokumentasjonskrav.png[alt="RDF-graf med ni RDF-noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."]
 
@@ -28,7 +28,7 @@ image::images/FigurEksempelDokumentasjonskrav.png[alt="RDF-graf med ni RDF-noder
 Som illustrert i <<img-FigurEksempelDokumentasjonskrav2>>, er det også mulig å knytte kravene illustrert i eksemplet ovenfor, til aktuell lovgivning: «vilkår for å inngå ekteskap» er utledet fra kapittel 1 i ekteskapsloven, og «alderskrav» og begrensningen «ikke under 18 år» er utledet fra §1a i ekteskapsloven.
 
 [[img-FigurEksempelDokumentasjonskrav2]]
-.Eksempel på å knytte dokumentasjonskrav til lovgivning
+.Eksempel på å knytte dokumentasjonskrav til lovgivning.
 [link=images/FigurEksempelDokumentasjonskrav2.png]
 image::images/FigurEksempelDokumentasjonskrav2.png[alt="RDF-graf med seks noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."]
 

@@ -1,7 +1,7 @@
 === Å knytte en tjeneste til et datasett og derfra til API, begrep og informasjonsmodell [[KnytteTilDatasett]]
 
 [[img-TjenesteOgData]]
-.Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat
+.Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat.
 [link=images/FigurTjenesteMedDataInnOgUt.png]
 image::images/FigurTjenesteMedDataInnOgUt.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 

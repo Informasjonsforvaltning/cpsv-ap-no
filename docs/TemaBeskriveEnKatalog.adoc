@@ -1,7 +1,7 @@
 === Å beskrive en tjeneste-/hendelseskatalog [[BeskriveEnKatalog]]
 
 [[img-Katalogbeskrivelse]]
-.Katalogbeskrivelse
+.Katalogbeskrivelse.
 [link=images/FigurKatalog.png]
 image::images/FigurKatalog.png[alt="UML-diagram med sju klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 

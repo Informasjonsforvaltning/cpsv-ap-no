@@ -1,14 +1,14 @@
 == Innledning – hendelser, tjenester og data [[Innledning]]
 
 [[img-HendelseTjenesteData]]
-.Sammenheng mellom hendelse, tjeneste og data
+.Sammenheng mellom hendelse, tjeneste og data.
 [link=images/FigurHendelseTjenesteData.png]
 image::images/FigurHendelseTjenesteData.png[alt="Metamodell for sammenhengende tjenester. Forklaring til modellen står i teksten."]
 
 Sammenheng mellom hendelse, tjeneste og data illustrert i <<img-HendelseTjenesteData>> som er hentet fra  Digitaliseringsbloggen https://www.digdir.no/sammenhengende-tjenester/vi-ma-snakke-det-samme-spraket-i-sammenhengende-tjenester/2614[_Vi må snakke det samme språket i sammenhengende tjenester!_  &#x29C9;, window="_blank", role="ext-link"], kan forklares slik: En hendelse kan utløse behov for en eller flere tjenester. En tjeneste bruker data og kan også  resultere i endringer i data. Endring i data kan føre til en eller flere nye hendelser som igjen kan utløse behov for en eller flere tjenester.
 
 [[img-SyktBarn]]
-.Eksempel på sammenheng mellom hendelse, tjeneste og data
+.Eksempel på sammenheng mellom hendelse, tjeneste og data.
 [link=images/FigurSyktBarn.png]
 image::images/FigurSyktBarn.png[alt="Fremstilling av brukerreisen rundt eResept. Brukerreisen er beskrevet i teksten."]
 

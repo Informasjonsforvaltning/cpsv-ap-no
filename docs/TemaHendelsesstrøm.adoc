@@ -1,7 +1,7 @@
 === Å publisere hendelsesstrøm [[Hendelsesstrøm]]
 
 [[img-HendelseOgDistribusjon]]
-.Hendelse og Distribusjon
+.Hendelse og Distribusjon.
 [link=images/FigurHendelseOgDistribusjon.png]
 image::images/FigurHendelseOgDistribusjon.png[alt="UML-diagrammet med fire klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
