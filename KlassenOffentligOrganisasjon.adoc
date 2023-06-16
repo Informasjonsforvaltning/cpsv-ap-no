@@ -1,20 +1,23 @@
 == Klassen Offentlig organisasjon (cv:PublicOrganisation) [[OffentligOrganisasjon]]
 
 [[img-KlassenOffentligOrganisasjon]]
-.Klassen Offentlig organisasjon (cv:PublicOrganisation)
+.Klassen Offentlig organisasjon (cv:PublicOrganisation) og klassene den refererer til.
 [link=images/KlassenOffentligOrganisasjon.png]
 image::images/KlassenOffentligOrganisasjon.png[alt="UML-diagram med klassen Offentlig organisasjon, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
-|English name|Public Organisation
-|Anvendelse| Klassen brukes til å representere en offentlig organisasjon.
-|Usage note| This class is used to represent a Public Organisation.
-|URI|cv:PublicOrganisation
-|Subklasse av / Subclass of| org:Organization
-|Kravnivå | Anbefalt/Recommended
-|Merknad|Norsk utvidelse: Kravnivå er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til beskrivelse av f.eks. tjenester levert av aktører som ikke er offentlige organisasjoner.
-|Eksempel|Brønnøy kommune er en offentlig organisasjon.
+| _English name_ | _Public Organisation_
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en offentlig organisasjon.
+
+_This class is used to represent a Public Organisation._
+| URI | cv:PublicOrganisation
+| Subklasse av / _Subclass of_ | org:Organization
+| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Kravnivå er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til beskrivelse av f.eks. tjenester levert av aktører som ikke er offentlige organisasjoner.
+
+_Norwegian extension: The requirement level is changed from mandatory to recommended, because this Norwegian application profile also may be used to describe services delivered by agents who are not public organizations._
+| Eksempel | Brønnøy kommune er en offentlig organisasjon.
 |===
 
 Eksempel i RDF Turtle:
@@ -28,26 +31,29 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|spatial coverage
-|URI|dct:spatial
-|Range|dct:Location
-|Anvendelse| Egenskapen brukes til å referere til et geografisk område dekket av organisasjonen.
-|Usage note| This property contains the geographic or administrative region covered by a Public Organisation.
-|Multiplisitet|1..n
-|Kravnivå | Obligatorisk/Mandatory
-|Merknad 1 a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
+| _English name_ | _spatial coverage_
+| URI | dct:spatial
+| Verdiområde / _Range_ | dct:Location
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et geografisk område dekket av organisasjonen.
 
-* Minst en verdi skal være fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted]; http://sws.geonames.org/[GeoNavn].
+_This property contains the geographic or administrative region covered by a Public Organisation._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
+| Merknad 1 / _Note 1_ a| Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
-* For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] brukes.
-|Remark 1 a|Regarding usage of controlled vocabularies, the following requirements apply:
+* Minst en verdi skal være fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted &#x29C9;, window="_blank", role="ext-link"]; http://sws.geonames.org/[GeoNavn &#x29C9;, window="_blank", role="ext-link"].
 
-* At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place]; http://sws.geonames.org/[GeoNames].
+* For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes.
 
-* To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units] should be used.
-|Merknad 2 | Norsk utvidelse: CPSP-AP v.3.00 refererer til et kontrollert vokabular som range, noe vi mener ikke er korrekt. Vi har valgt å bruke `dct:Location` som range. Inntil EU oppdaterer sin versjon blir dette en norsk utvidelse.
-|Remark 2 | Norwegian extension: CPSV-AP refers to a controlled vocabulary as the range, instead of a class.
-|Eksempel|Offentlig organisasjon «Brønnøy kommune» har Brønnøy kommune i Norge som sitt dekningsområde.
+_Regarding usage of controlled vocabularies, the following requirements apply:_
+
+* __At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place &#x29C9;, window="_blank", role="ext-link"]; http://sws.geonames.org/[GeoNames &#x29C9;, window="_blank", role="ext-link"].__
+
+* __To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units &#x29C9;, window="_blank", role="ext-link"] should be used.__
+| Merknad 2 / _Note 2_ | Norsk utvidelse: CPSV-AP v.3.00 refererer til et kontrollert vokabular som range, noe vi mener ikke er korrekt. Vi har valgt å bruke `dct:Location` som range. Inntil EU oppdaterer sin versjon blir dette en norsk utvidelse.
+
+_Norwegian extension: CPSV-AP refers to a controlled vocabulary as the range, instead of a class._
+| Eksempel | Offentlig organisasjon «Brønnøy kommune» har Brønnøy kommune i Norge som sitt dekningsområde.
 |===
 
 Eksempel i RDF Turtle:
@@ -62,14 +68,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|preferred name
-|URI|skos:prefLabel
-|Range|rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
-|Usage note| This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology. The property should be repeated when the name is in several languages.
-|Multiplisitet| 1..n
-|Kravnivå | Obligatorisk/Mandatory
-|Eksempel|Brønnøy kommune
+| _English name_ | _preferred name_
+| URI | skos:prefLabel
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
+
+_This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology. The property should be repeated when the name is in several languages._
+| Multiplisitet / _Multiplicity_ |  1..n
+| Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
+| Eksempel | Brønnøy kommune
 |===
 
 Eksempel i RDF Turtle:
@@ -82,16 +89,21 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|identifier
-|URI|dct:identifier
-|Range|rdfs:Literal
-|Anvendelse| Egenskapen brukes til å oppgi organisasjonens identifikator, f.eks. i henhold til Enhetsregisterets organisasjonsnummer.
-|Usage note|This property represents an Identifier for an Agent.
-|Multiplisitet|1..1
-|Kravnivå | Obligatorisk/Mandatory
-|Merknad|Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi organisasjonens identifikator, f.eks. i henhold til Enhetsregisterets organisasjonsnummer.
 
-For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`
+_This property represents an Identifier for an Agent._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til egenskapen manuelt.
+
+For deg som skal utvikle/tilpasse verktøystøtte: Når aktøren har et organisasjonsnummer bør identifikatoren oppgis som en URI med følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: f.eks. `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`.
+
+_Identifier is usually generated by the application, such that you as an end-user of the application usually do not need to manually fill out the value of this property._ 
+
+_If you are developing applications: When the organization has an organization number registered in the Central Coordinating Register for Legal Entities (CCR), the identifier should be given as a URI with e.g. the following pattern where "nnnnnnnnn" is the organization number: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`._
 |===
 
 Eksempel i RDF Turtle:
@@ -104,16 +116,18 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|name
-|URI|dct:title
-|Range|rdf:langString
-|Anvendelse| Egenskapen brukes til å oppgi navn på organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
-|Usage note|This property represents the name of the public organisation, repeated when the name is in parallel languages.
-|Multiplisitet|1..n
-|Kravnivå | Obligatorisk/Mandatory
-|Merknad |Både navn (denne egenskapen) og <<OffentligOrganisasjon-foretrukketNavn>> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Det anbefales at egenskapen <<OffentligOrganisasjon-foretrukketNavn>> primært brukes. Når det ikke finnes flere navn enn det foretrukne navnet, skal disse to egenskapene ha samme verdi.
-|Remark | Both name (this property) and the property <<OffentligOrganisasjon-foretrukketNavn>> are mandatory. The property <<OffentligOrganisasjon-foretrukketNavn>> should be used primarily. When there are no more names than the preferred name, these two properties shall have the same value.
-|Eksempel|Brønnøy kommune
+| _English name_ | _name_
+| URI | dct:title
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn på organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
+
+_This property represents the name of the public organisation, repeated when the name is in parallel languages._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Både navn (denne egenskapen) og <<OffentligOrganisasjon-foretrukketNavn>> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Det anbefales at egenskapen <<OffentligOrganisasjon-foretrukketNavn>> primært brukes. Når det ikke finnes flere navn enn det foretrukne navnet, skal disse to egenskapene ha samme verdi.
+
+_Both name (this property) and the property <<OffentligOrganisasjon-foretrukketNavn>> are mandatory. The property <<OffentligOrganisasjon-foretrukketNavn>> should be used primarily. When there are no more names than the preferred name, these two properties shall have the same value._
+| Eksempel | Brønnøy kommune
 |===
 
 Eksempel i RDF Turtle:
@@ -129,18 +143,21 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|type
-|URI|dct:type
-|Range|skos:Concept
-|Anvendelse| Egenskapen brukes til å oppgi type offentlig organisasjon.
-|Usage note|This property refers to a type of the public organization.
-|Multiplisitet|0..1
-|Kravnivå|Anbefalt/Recommended
-|Merknad 1 |Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (lenket ressurs i RDF)].
-|Remark 1 | The value shall be chosen from http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (linked resource in RDF)].
-|Merknad 2 | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark 2 | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel| Brønnøy kommune er av type _Local Authority_.
+| _English name_ | _type_
+| URI | dct:type
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi type offentlig organisasjon.
+
+_This property refers to a type of the public organization._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ |Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (lenket ressurs i RDF) &#x29C9;, window="_blank", role="ext-link"].
+
+__The value shall be chosen from http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (linked resource in RDF) &#x29C9;, window="_blank", role="ext-link"].__
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel |  Brønnøy kommune er av type _Local Authority_.
 |===
 
 Eksempel i RDF Turtle:
@@ -156,13 +173,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|address
-|URI|locn:address
-|Range|locn:Address
-|Anvendelse| Egenskapen brukes til å oppgi adresse til en offentlig organisasjon.
-|Usage note|This property represents the address.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
+| _English name_ | _address_
+| URI | locn:address
+| Verdiområde / _Range_ | locn:Address
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi adresse til en offentlig organisasjon.
+
+_This property represents the address._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle:
@@ -177,16 +195,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|plays role
-|URI|cv:participates
-|Range|cv:Participation
-|Anvendelse| Egenskapen brukes til å knytte en offentlig organisasjon til en deltagelse (cv:Participation).
-|Usage note|This property links an Agent / Public Organisation to the Participation class.
+| _English name_ | _participates_
+| URI | cv:participates
+| Verdiområde / _Range_ | cv:Participation
+| Anvendelse / _Usage note_ | Egenskapen brukes til å knytte en offentlig organisasjon til en deltagelse (cv:Participation).
 
-The Participation class (`cv:Participation`) facilitates the detailed description of how an Agent / Public Organisation participates in or interacts with a Service and may include temporal and spatial constraints on that participation.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Eksempel|Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
+_This property links an Agent / Public Organisation to the Participation class._
+
+_The Participation class (`cv:Participation`) facilitates the detailed description of how an Agent / Organisation / Public Organisation participates in or interacts with a Service and may include temporal and spatial constraints on that participation._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
+| Eksempel | Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
@@ -195,16 +214,18 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerT
 
 [cols="30s,70d"]
 |===
-|English name|homepage
-|URI|foaf:homepage
-|Range|foaf:Document
-|Anvendelse| Egenskapen brukes til å referere til hjemmesiden til organisasjonen.
-|Usage note|This property refers to the homepage of a Public Organisation.
-|Multiplisitet|0..n
-|Kravnivå | Valgfri/Optional
-|Merknad|Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
-|Eksempel|https://www.bronnoy.kommune.no/[https://www.bronnoy.kommune.no/]
+| _English name_ | _homepage_
+| URI | foaf:homepage
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til hjemmesiden til organisasjonen.
+
+_This property refers to the homepage of a Public Organisation._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel | https://www.bronnoy.kommune.no/[https://www.bronnoy.kommune.no/ &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:

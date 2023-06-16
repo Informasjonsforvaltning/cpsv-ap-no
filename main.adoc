@@ -19,13 +19,13 @@ image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https
 include::shared/download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* +
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
-*Status*: #under ferdigstilling (avventer ferdigstilling av EUs CPSV-AP som denne er basert på)# +
+*Status*: #under ferdigstilling# +
 *Versjon*: #utkast til v.1.0# +
 *Publisert*: 2022-11-01 +
-*Oppdatert*: 2023-01-17 +
+*Oppdatert*: 2023-06-16 +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +

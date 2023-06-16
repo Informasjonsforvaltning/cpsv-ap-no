@@ -1,33 +1,36 @@
 == Klassen Tidsenhet (time:TemporalEntity) [[Tidsenhet]]
 
 [[img-KlassenTidsenhet]]
-.Klassen Tidsenhet (time:TemporalEntity)
+.Klassen Tidsenhet (time:TemporalEntity) og klassen den refererer til.
 [link=images/KlassenTidsenhet.png]
 image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
-|English name| Temporal entity
-|Anvendelse| Klassen brukes til å representere et tidsinterval eller tidspunkt.
-|Usage note| This class represents a temporal interval or instant.
-|URI| time:TemporalEntity
-|Kravnivå | Valgfri/Optional
+| _English name_ | _Temporal Entity_
+| Anvendelse / _Usage note_ |  Klassen brukes til å representere et tidsintervall eller tidspunkt.
+
+_This class represents a temporal interval or instant._
+| URI |  time:TemporalEntity
+| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
 |===
 
-=== Anbefalte egenskaper for klassen _Tidsenhet_ [[Tidsenhet-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Tidsenhet_ [[Tidsenhet-anbefalte-egenskaper]]
 
 ==== Tidsenhet – sluttidspunkt (time:hasEnd) [[Tidsenhet-sluttidspunkt]]
 [cols="30s,70d"]
 |===
-|English name | end time
-|URI| time:hasEnd
-|Range| time:Instant
-|Anvendelse | Egenskapen brukes til å oppgi slutten på en tidsenhet.
-|Usage note | This property represents the end of a temporal entity.
-|Multiplisitet| 0..1
-|Kravnivå | Anbefalt/Recommended
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+| _English name_ | _end time_
+| URI |  time:hasEnd
+| Verdiområde / _Range_ |  time:Instant
+| Anvendelse / _Usage noe_ |  Egenskapen brukes til å oppgi slutten på en tidsenhet.
+
+_This property represents the end of a temporal entity._
+| Multiplisitet / _Multiplicity_ |  0..1
+| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 | Eksempel | Normal åpningstid: kl. 08.00-16.00 alle ukedager. 
 |===
 
@@ -178,15 +181,17 @@ Eksempel i RDF Turtle, døgnkontinuerlig åpning:
 ==== Tidsenhet – starttidspunkt (time:hasBeginning) [[Tidsenhet-starttidspunkt]]
 [cols="30s,70d"]
 |===
-|English name | start time
-|URI| time:hasBeginning
-|Range| time:Instant
-|Anvendelse | Egenskapen brukes til å oppgi begynnelsen på en tidsenhet.
-|Usage note | This property represents the beginning of a temporal entity.
-|Multiplisitet| 0..1
-|Kravnivå | Anbefalt/Recommended
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-|Remark | Norwegian extension: Not explicitly specified in CPSP-AP.
+| _English name_ | _start time_
+| URI |  time:hasBeginning
+| Verdiområde / _Range_ |  time:Instant
+| Anvendelse / _Usage noe_ |  Egenskapen brukes til å oppgi begynnelsen på en tidsenhet.
+
+_This property represents the beginning of a temporal entity._
+| Multiplisitet / _Multiplicity_ |  0..1
+| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
 |===
 
@@ -195,29 +200,32 @@ Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 ==== Tidsenhet – tidsrom (time:hasXSDDuration) [[Tidsenhet-tidsrom]]
 [cols="30s,70d"]
 |===
-|English name | duration
-|URI| time:hasXSDDuration
-|Range| xsd:duration
-|Anvendelse | Egenskapen brukes til å oppgi et tidsrom eller intervall.
-|Usage note | This property represents a period or interval.
-|Multiplisitet| 0..1
-|Kravnivå | Anbefalt/Recommended
-|Merknad | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use.
+| _English name_ | _duration_
+| URI |  time:hasXSDDuration
+| Verdiområde / _Range_ |  xsd:duration
+| Anvendelse / _Usage noe_ |  Egenskapen brukes til å oppgi et tidsrom eller intervall.
+
+_This property represents a period or interval._
+| Multiplisitet / _Multiplicity_ |  0..1
+| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use._
 |===
 
-=== Valgfri egenskaper for klassen _Tidsenhet_ [[Tidsenhet-valgfri-egenskaper]]
+=== Valgfri egenskaper for klassen _Tidsenhet_ [[Tidsenhet-valgfri-egenskaper]]
 
 ==== Tidsenhet – beskrivelse (dct:description) [[Tidsenhet-beskrivelse]]
 [cols="30s,70d"]
 |===
-|English name | description
-|URI| dct:description
-|Range| rdf:langString
-|Anvendelse | Egenskapen brukes til å oppgi en tekstlig beskrivelse av tidsenheten. Egenskapen bør gjentas når beskrivelsen er på flere språk.  
-|Usage note | This property is used to specify a textual description of the temporal entity, repeated when the description is in several languages.
-|Multiplisitet| 0..n
-|Kravnivå | Anbefalt/Recommended
+| _English name_ | _description_
+| URI |  dct:description
+| Verdiområde / _Range_ |  rdf:langString
+| Anvendelse / _Usage noe_ |  Egenskapen brukes til å oppgi en tekstlig beskrivelse av tidsenheten. Egenskapen bør gjentas når beskrivelsen er på flere språk.  
+
+_This property is used to specify a textual description of the temporal entity, repeated when the description is in several languages._
+| Multiplisitet / _Multiplicity_ |  0..n
+| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
 |Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
 |===
 
@@ -226,15 +234,17 @@ Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 ==== Tidsenhet – frekvens (cv:frequency) [[Tidsenhet-frekverns]]
 [cols="30s,70d"]
 |===
-|English name | frequency
-|URI| cv:frequency
-|Range| skos:Concept
-|Anvendelse | Egenskapen brukes til å oppgi frekvens av tidsenheten.
-|Usage note | This property is used to specify the recurrence of an instant or period.
-|Multiplisitet| 0..n
-|Kravnivå | Valgfri/Optional
-|Merknad | Verdien bør velges fra EUs kontrollerte vokabular for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frekvens].
-|Remark | The value should be chosen from EUs controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frequency]. 
+| _English name_ | _frequency_
+| URI |  cv:frequency
+| Verdiområde / _Range_ |  skos:Concept
+| Anvendelse / _Usage noe_ |  Egenskapen brukes til å oppgi frekvens av tidsenheten.
+
+_This property is used to specify the recurrence of an instant or period._
+| Multiplisitet / _Multiplicity_ |  0..n
+| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
+| Merknad / _Note_ |  Verdien bør velges fra EUs kontrollerte vokabular for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frekvens &#x29C9;, window="_blank", role="ext-link"].
+
+__The value should be chosen from EUs controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[frequency &#x29C9;, window="_blank", role="ext-link"].__
 |Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
 |===
 
