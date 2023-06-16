@@ -108,7 +108,7 @@ _The actual information is provided using the ISO 8601 syntax for durations. Exp
 
 [cols="30s,70d"]
 |===
-| _English name_ |  _descriptoion_
+| _English name_ |  _description_
 | URI |  dct:description 
 | Verdiområde / _Range_ |  rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes  til å oppgi beskrivelsen av kanalen. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.  
@@ -275,7 +275,7 @@ Eksempel i RDF Turtle:
    vcard:hasURL "https://kommune24-7.no/1813" ; .
 -----
 
-==== Tjenestekanal – ordinær åpningstid strukturert (cv:openingHours) [[Tjenestekanal-ordninær-åpningstid-strukturert]]
+==== Tjenestekanal – ordinær åpningstid strukturert (cv:openingHours) [[Tjenestekanal-ordinær-åpningstid-strukturert]]
 
 [cols="30s,70d"]
 |===

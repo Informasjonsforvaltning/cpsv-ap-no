@@ -8,7 +8,7 @@ image::images/KlassenInformasjonsbegrep.png[alt="UML-diagram med klassen Informa
 [cols="30s,70d"]
 |===
 | _English name_ |  _Information Concept_
-| Anvendelse / _Usage note_ |  Klassen brukes til å representere en del av informasjonen som dokumentasjonen gir eller som kravet trenger. Informasjonsbegrepklassen tilbyr muligheten til å beskrive kravene konseptuelt og oppgitte fakta i dokumentasjon. I kombinasjon med Understøttende opplysning-klassen er dette et (første) skritt mot å tilrettelegge for vurderingen av kravene på en automatisert måte basert på dokumentasjonen som er gitt.
+| Anvendelse / _Usage note_ |  Klassen brukes til å representere en del av informasjonen som dokumentasjonen gir eller som kravet trenger. Klassen tilbyr muligheten til å beskrive kravene konseptuelt og oppgitte fakta i dokumentasjon. I kombinasjon med <<UnderstøttendeOpplysning>> er dette et (første) skritt mot å tilrettelegge for vurderingen av kravene på en automatisert måte basert på dokumentasjonen som er gitt.
 
 _This class represents a piece of information that the Evidence provides or the Requirement needs. The Information Concept class offers the ability to describe conceptually the Requirements and provided facts in Evidences. In complementarity with the Supported Value class, this is a (first) step towards facilitating the assessment of the requirements in an automated way based on the Evidence provided._
 | URI |  cv:InformationConcept

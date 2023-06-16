@@ -157,7 +157,7 @@ Eksempel i RDF Turtle:
    dct:type <http://purl.org/adms/publishertype/Company> ;  .
 -----
 
-=== Valgfrie egenskaper for klassen _Organisasjon_ [[Organisasjon-valgfrige-egenskaper]]
+=== Valgfrie egenskaper for klassen _Organisasjon_ [[Organisasjon-valgfrie-egenskaper]]
 
 ==== Organisasjon – adresse (locn:address) [[Organisasjon-adresse]]
 
@@ -185,7 +185,7 @@ Eksempel i RDF Turtle: Se under <<Adresse>>
 | Verdiområdet / _Range_ | cv:Participation
 | Anvendelse / _Usage note_ | Egenskapen brukes til å knytte en deltagelse (cv:Participation) til en organisasjon.
 
-_This property links an Oranization to the Participation class (cv:Participation). The Participation class facilitates the detailed description of how an Organization participates in or interacts with a Public Service and may include temporal and spatial information._
+_This property links an Organization to the Participation class (cv:Participation). The Participation class facilitates the detailed description of how an Organization participates in or interacts with a Public Service and may include temporal and spatial information._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Eksempel | Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.

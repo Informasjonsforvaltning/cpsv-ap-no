@@ -1,14 +1,14 @@
 == Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContract) [[Tjenestekonsesjonskontrakt]]
 
 [[img-KlassenTjenestekonsesjonskontrakt]]
-.Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContrac) og klassene den refererer til.
+.Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContract) og klassene den refererer til.
 [link=images/KlassenTjenestekonsesjonskontrakt.png]
 image::images/KlassenTjenestekonsesjonskontrakt.png[alt="UML-diagram med klassen Tjenestekonsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
 | _English name_ | _Service Concession Contract_
-| Anvendelse / _Usage note_ |  Klassen brukes til å representere en tjenstekonsesjonskontrakt.
+| Anvendelse / _Usage note_ |  Klassen brukes til å representere en tjenestekonsesjonskontrakt.
 
 _This class represents a service concession contact._
 

@@ -65,7 +65,7 @@ _This property represents the Name (or title) of the Event, repeated when the na
 
 === Anbefalte egenskaper for klassen _Hendelse_ [[Hendelse-anbefalte-egenskaper]]
 
-==== Hendelse – beskrivelse (dct:description) [[Hendels-beskrivelse]]
+==== Hendelse – beskrivelse (dct:description) [[Hendelse-beskrivelse]]
 
 [cols="30s,70d"]
 |===

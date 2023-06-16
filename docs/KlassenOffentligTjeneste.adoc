@@ -289,9 +289,9 @@ _A specific Public Service may require the presence of certain pieces of Evidenc
 Eksempel i RDF Turtle:
 ----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cpsv:hasInput <beståttKunnskapsrøve> ; .
+   cpsv:hasInput <beståttKunnskapsprøve> ; .
 
-<beståttKunnskapsrøve> a cv:Evidence .
+<beståttKunnskapsprøve> a cv:Evidence .
 ----
 
 ==== Offentlig tjeneste – hjemmeside (foaf:homepage) [[OffentligTjeneste-hjemmeside]]

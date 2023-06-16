@@ -27,7 +27,7 @@ Eksempel i RDF Turtle: Se under <<Å-beskrive-dokumentasjonskrav>>.
 
 === Obligatoriske egenskaper for klassen _Dokumentasjonstypeliste_ [[Dokumentasjonstypeliste-obligatoriske-egenskaper]]
 
-==== Dokumentasjonstypeliste – spesifiserer dokumentasjonstype (cv:specifiesEvidenceType) [[Dokumentasjonstypeliste-SpesifisererDokumentasjonstype]]
+==== Dokumentasjonstypeliste – spesifiserer dokumentasjonstype (cv:specifiesEvidenceType) [[Dokumentasjonstypeliste-spesifiserer-dokumentasjonstype]]
 
 [cols="30s,70d"]
 |===

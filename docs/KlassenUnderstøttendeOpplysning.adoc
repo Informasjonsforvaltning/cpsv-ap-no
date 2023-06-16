@@ -20,7 +20,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 
 === Obligatoriske egenskaper for klassen _Understøttende opplysning_ [[UnderstøttendeOpplysning-obligatoriske-egenskaper]]
 
-==== Understøttende opplysning – gir verdi for (cv:providesValueFor) [[UnderstøttendeOpplysning-girVerdiFor]]
+==== Understøttende opplysning – gir verdi for (cv:providesValueFor) [[UnderstøttendeOpplysning-gir-verdi-for]]
 
 [cols="30s,70d"]
 |===
