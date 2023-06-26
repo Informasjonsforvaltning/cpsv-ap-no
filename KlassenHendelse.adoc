@@ -58,7 +58,7 @@ _If you are developing applications, see https://data.norge.no/guide/veileder-be
 | Verdiområde / _Range_ |  rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn til en hendelse. Egenskapen bør gjentas når navnet finnes på flere språk.
 
-_This property represents the Name (or title) of the Event, repeated when the name is in parallel languages._
+_This property represents the Name (or title) of the Event. This property should be repeated when the name is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
