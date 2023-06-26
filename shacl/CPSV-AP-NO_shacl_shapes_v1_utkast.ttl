@@ -46,34 +46,22 @@
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
     dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
-    dct:title "SHACL-rules for CPSV-AP-NO v.2.x"@en ;
-    dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.2.x, expressed in SHACL."@en ;
-    dct:modified "2022-11-04"^^xsd:date ;
+    dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
+    dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
+    dct:modified "2023-06-19"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "0.003" ;
-    adms:versionNotes "For CPSV-AP-NO v.2.x."@en ;
+    owl:versionInfo "0.004" ;
+    adms:versionNotes "For CPSV-AP-NO v.1.x."@en ;
     .
 
 ### --- Class shapes:
 
-### Klassen AdministrativEnhet
-### @@@ Sjekk om EU kommer til å endre denne
-:AdminUnitShape a sh:NodeShape;
-   sh:name "Administrative Unit"@en, "Administrativ enhet"@nb ;
-   sh:property
-      # mandatory properties:
-         :hasMin1Max1Shape-cvCode, # kode, cv:code
-         :hasMin1Max1Shape-cvLevel # nivå, cv:level
-      ;
-   sh:targetClass cv:AdminUnit .
-
 ### Klassen Adresse:
-### @@@ Sjekk om EU kommer til å endre på denne klassen.
 :AddressShape a sh:NodeShape;
-   sh:name "Address"@en, "Adresse"@nb;
+   rdfs:label "Address"@en, "Adresse"@nb;
    sh:property
       # optional properties:
-         :hasMin0Max1Shape-cvAdminUnit, # administrativ enhet, cv:adminUnit
+#         :hasMin0Max1Shape-cvAdminUnit, # administrativ enhet, cv:adminUnit
          :hasMin0MaxNShape-locnAdminUnitL1, # admin enhet nivå 1, cv:adminUnitL1
          :hasMin0MaxNShape-locnAdminUnitL2, # admin enhet nivå 2, cv:adminUnitL2
          :hasMin0Max1Shape-locnAddressId, # adresseId, locn:adressID
@@ -88,12 +76,11 @@
       ;
    sh:targetClass locn:Address .
 
-### @@@ Sjekk om EU kommer til å endre på denne klassen.
 # sjekker om minst en egenskap har verdi, siden alle er valgfrie
 :AddressShape2 a sh:NodeShape;
-   sh:name "Address"@en, "Adresse"@nb;
+   rdfs:label "Address"@en, "Adresse"@nb;
    sh:or (
-      [sh:property [ sh:path cv:adminUnit; sh:minCount 1]]
+#      [sh:property [ sh:path cv:adminUnit; sh:minCount 1]]
       [sh:property [ sh:path locn:adminUnitL1; sh:minCount 1]]
       [sh:property [ sh:path locn:adminUnitL2; sh:minCount 1]]
       [sh:property [ sh:path locn:addressId; sh:minCount 1]]
@@ -113,7 +100,7 @@
 
 ### Klassen Aktør (foaf:Agent)
 :AgentShape a sh:NodeShape;
-  sh:name "Agent"@en, "Aktør"@nb;
+  rdfs:label "Agent"@en, "Aktør"@nb;
   sh:property
     # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier , # identifikator (dct:identifier)
@@ -122,14 +109,14 @@
       :hasShapeCV-dctTypeAgentMin0Max1, # type (dct:type), kontrollert vokabular
     # optional properties:
       :hasMin0MaxNShape-locnAddress, # adresse (locn:address)
-      :hasMin0MaxNShape-cvPlaysRole # har rolle i (cv:playsRole)
+      :hasMin0MaxNShape-cvParticipates # deltar (cv:participates)
     ;
  sh:targetClass foaf:Agent ;
    .
 
 ### Klassen Begrensning (cv:Constraint)
 :ConstraintShape a sh:NodeShape;
-   sh:name "Constraint"@en, "Begrensning"@nb;
+   rdfs:label "Constraint"@en, "Begrensning"@nb;
    sh:property
       # mandatory:
          :hasMin1Max1Shape-cvConstrains, # begrenser, cv:constrains
@@ -152,7 +139,7 @@
 
 ### Klassen Datasett (dcat:Dataset)
 :DatasetShape a sh:NodeShape;
-   sh:name "Dataset"@en, "Datasett"@nb;
+   rdfs:label "Dataset"@en, "Datasett"@nb;
    sh:property
       # mandatory:
          :hasMin1MaxNShape-dctDescription, # beskrivelse, dct:description
@@ -168,7 +155,7 @@
 
 ### Klassen Deltagelse (cv:Participation)
 :ParticipationShape a sh:NodeShape;
-  sh:name "Participation"@en, "Deltagelse"@nb;
+  rdfs:label "Participation"@en, "Deltagelse"@nb;
   sh:property
     # mandatory properties:
       :hasMin1MaxNShape-dctDescription, # beskrivelse, dct:description
@@ -180,7 +167,7 @@
 
 ### Klassen Dokumentasjon (cv:Evidence)
 :EvidenceShape a sh:NodeShape;
-  sh:name "Evidence"@en, "Dokumentasjon"@nb;
+  rdfs:label "Evidence"@en, "Dokumentasjon"@nb;
   sh:property
     # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier, # identifikator, dct:identifer
@@ -194,7 +181,7 @@
       :hasMin0MaxNShape-cvSupportsValue, # gir understøttende opplysning cv:supportsValue
       :hasMin0Max1Shape-dctSubjectEvidence, # gjelder dct:subject in Evidence
       :hasMin0Max1Shape-cvValidityPeriod, # gyldighetsperiode cv:validityPeriod
-      :hasMin0Max1Shape-dctConformsToEvidence, # i samsvar med dct:conformsTo in Evidence
+      :hasMin0MaxNShape-dctConformsToEvidence, # i samsvar med dct:conformsTo in Evidence
       :hasMin0Max1Shape-cvConfidentialityLevelType, # konfidensialitetsnivå cv:confidentialityLevelType
       :hasMin0Max1Shape-dctCreator, # produsent dct:creator
       :hasMin0MaxNShape-foafPage,# relatert informasjon foaf:page
@@ -208,12 +195,12 @@
 
 ### Klassen dokumentasjonstype
 :EvidenceTypeShape a sh:NodeShape;
-   sh:name "Evidence type"@en, "Dokumentasjonstype"@nb;
+   rdfs:label "Evidence type"@en, "Dokumentasjonstype"@nb;
    sh:property
       # mandatory:
-         :hasMin1Max1Shape-cvEvidenceTypeClassification, # dokumentasjonstypekategori cv:evidenceTypeClassification
+         :hasMin1Max1Shape-dctIdentifier, # identifikator dct:identifier
       # recommended:
-         :hasMin0Max1Shape-dctIdentifier, # identifikator dct:identifier
+         :hasMin0Max1Shape-cvEvidenceTypeClassification, # dokumentasjonstypekategori cv:evidenceTypeClassification
       # optional:
          :hasMin0MaxNShape-cvIsSpecifiedIn, # er spesifisert i cv:isSpecifiedIn
          :hasMin0MaxNShape-cvValidityPeriodConstraint, # gyldighetsperiode, begrensning cv:validityPeriodConstraint
@@ -223,7 +210,7 @@
 
 ### Klassen Dokumentasjonstypeliste
 :EvidenceTypeListShape a sh:NodeShape;
-   sh:name "Evidence type list"@en, "Dokumentasjonstypeliste"@nb;
+   rdfs:label "Evidence type list"@en, "Dokumentasjonstypeliste"@nb;
    sh:propertye
       # mandatory:
          :hasMin1MaxNShape-cvSpecifiesEvidenceType, # spesifiserer dokumentasjonstype cv:specifiesEvidenceType
@@ -236,7 +223,7 @@
 
 ### Klassen Gebyr (cv:Cost)
 :CostShape a sh:NodeShape;
-  sh:name "Cost"@en, "Gebyr"@nb;
+  rdfs:label "Cost"@en, "Gebyr"@nb;
   sh:property
     # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier, # identifikator, dct:identifer
@@ -253,7 +240,7 @@
 
 ### Felles for Klassene Hendelse (cv:Event), Livshendelse (cv:LifeEvent), Virksomhetshendelse (cv:BusinessEvent)
 :EventAndSubclassesShape a sh:NodeShape;
-  sh:name "Event, Live Event, Business Event"@en, "Hendelse, Livshendelse, Virksomhetshendelse"@nb;
+  rdfs:label "Event, Live Event, Business Event"@en, "Hendelse, Livshendelse, Virksomhetshendelse"@nb;
   sh:property
     # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier, # identifikator, dct:identifier
@@ -270,7 +257,7 @@
 ### Klassen Hendelse (cv:Event)
 # det som er spesifikt for Hendelse (cv:Event)
 :EventShape a sh:NodeShape;
-  sh:name "Event"@en, "Hendelse"@nb;
+  rdfs:label "Event"@en, "Hendelse"@nb;
   sh:property
    # recommended properties:
       :hasMin0MaxNShape-cpsvnoMayTrigger, # kan sette i gang
@@ -281,7 +268,7 @@
 
 ### Klassen Informasjonsbegrep cv:InformationConcept
 :InformationConceptShape a sh:NodeShape;
-   sh:name "Catalog"@en, "Katalog"@nb;
+   rdfs:label "Catalog"@en, "Katalog"@nb;
    sh:property
       # mandatory:
          :hasMin1Max1Shape-cvExpressionOfExpectedValue, # uttrykk av forventet verdi, cv:expressionOfExpectedValue
@@ -296,7 +283,7 @@
 
 ### Klassen Informasjonskrav cv:InformationRequirement
 :InformationRequirementShape a sh:NodeShape;
-   sh:name "Information Requirement"@en, "Informasjonskrav"@nb;
+   rdfs:label "Information Requirement"@en, "Informasjonskrav"@nb;
    sh:property
       # mandatory:
          :hasMin1Max1Shape-dctIdentifier, # identifikator, dct:identifier
@@ -319,7 +306,7 @@
 
 ### Klassen Katalog (dcat:Catalog)
 :CatalogShape a sh:NodeShape;
-  sh:name "Catalog"@en, "Katalog"@nb;
+  rdfs:label "Catalog"@en, "Katalog"@nb;
   sh:property
    # mandatory
       :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
@@ -330,7 +317,7 @@
       :hasMin1Max1Shape-dctPublisher, # utgiver (dct:publisher)
    # recommended
       :hasMin0MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
-      :hasMin0MaxNShape-dctModified, # endringsdato (dct:modified)
+      :hasMin0Max1Shape-dctModified, # endringsdato (dct:modified)
 #      :hasMin0Max1Shape-dctAccrualPeriodicity, # frekvens (dct:accrualPeriodicity)
       :hasShapeCV-dctAccrualPeriodicityMin0Max1, # frekvens (dct:accrualPeriodicity) kontrollert vokabular
       :hasMin0Max1Shape-foafHomepage, # hjemmeside (foaf:homepage)
@@ -344,29 +331,15 @@
       :hasMin0Max1Shape-dctIssued, # utgivelsesdato (dct:issued)
    # optional
       :hasMin0Max1Shape-dctIsPartOfCatalog, # er del av (dct:isPartOf)
+      :hasMin0MaxNShape-dctHasPartCatalog, # har del (dct:hasPart)
       :hasMin0Max1Shape-dctCreator, # produsent (dct:creator)
-      :hasMin0MaxNShape-dctRights # rettigheter (brukervilkår) (dct:rights)
+      :hasMin0Max1Shape-dctRights # rettigheter (brukervilkår) (dct:rights)
       ;
    sh:targetClass dcat:Catalog .
 
-### Klassen Konsesjonskontrakt (cv:ConcessionContract)
-:ConcessionContractShape a sh:NodeShape;
-  sh:name "Concession contract"@en, "Konsesjonskontrakt"@nb;
-  sh:property
-      # mandatory:
-         :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
-         :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
-         :hasMin1MaxNShape-cvHasEconomicOperator, # har leverandør (cv:hasEconomicOperator)
-         :hasMin1MaxNShape-cvHasContractingAuthority, # har oppdragsgiver (cv:hasContractingAuthority)
-         :hasMin1MaxNShape-dctTitle, # navn (dct:title)
-      # optional:
-         :hasMin0MaxNShape-cvEstablishedUnder # etablert i henhold til (cv:establishedUnder)
-      ;
-  sh:targetClass cv:ConcessionContract .
-
 ### Klassen Kontaktpunkt (cv:ContactPoint) @@@@@ NB! Sjekk om EU endrer på denne
 :ContactPointShape a sh:NodeShape;
-   sh:name "Contact Point"@en, "Kontaktpunkt"@nb;
+   rdfs:label "Contact Point"@en, "Kontaktpunkt"@nb;
    sh:property
       # optional properties:
          :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification, # begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification)
@@ -374,8 +347,7 @@
 #         :hasMin0MaxNShape-schemaAvailableLanguage, # har språk (schema:availableLanguage)
          :hasShapeCV-schemaAvailableLanguagMin0MaxN, # har språk (schema:availableLanguage) kontrollert vokabular
          :hasMin0MaxNShape-cvContactPage, # kontaktside (cv:contactPage)
-         :hasMin0MaxNShape-cvOpeningHours, # ordinær åpningstid fritekst (cv:openingHours)
-         :hasMin0MaxNShape-schemaHoursAvailable, # ordinær åpningstid strukturert (schema:hoursAvailable)
+         :hasMin0MaxNShape-cvOpeningHours, # ordinær åpningstid strukturert (cv:openingHours)
          :hasMin0MaxNShape-cvTelephone, # telefon (cv:telephone)
          :hasMin0MaxNShape-schemaContactType # type kontaktpunkt (schema:contactType)
       ;
@@ -383,7 +355,7 @@
 
 # sjekker om minst en egenskap har verdi, selv om alle er valgfrie
 :ContactPointShape a sh:NodeShape;
-   sh:name "Contact Point"@en, "Kontaktpunkt"@nb;
+   rdfs:label "Contact Point"@en, "Kontaktpunkt"@nb;
    sh:or (
       [sh:property [sh:path cv:email; sh:minCount 1]]
       [sh:property [sh:path cv:contactPage; sh:minCount 1]]
@@ -396,7 +368,7 @@
 
 ### Klassen Krav (cv:Requirement)
 :RequirementShape a sh:NodeShape;
-   sh:name "Constraint"@en, "Begrensning"@nb;
+   rdfs:label "Constraint"@en, "Begrensning"@nb;
    sh:property
       # mandatory:
          :hasMin1Max1Shape-dctIdentifier, # identifikator, dct:identifier
@@ -419,7 +391,7 @@
 
 ### Klassen Kriterium (cv:Criterion)
 :CriterionShape a sh:NodeShape;
-   sh:name "Criterion"@en, "Kriterium"@nb;
+   rdfs:label "Criterion"@en, "Kriterium"@nb;
    sh:property
       # mandatory:
          :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
@@ -447,10 +419,10 @@
 ### Klassen Livshendelse (cv:LifeEvent)
 # det som er i tillegg til / forskjellig fra klassen Hendelse (cv:Event)
 :LifeEventShape a sh:NodeShape;
-sh:name "Life Event"@en, "Livshendelse"@nb;
+  rdfs:label "Life Event"@en, "Livshendelse"@nb;
   sh:property
    # recommended properties:
-      :hasMin0MaxNShape-cpsvnoTriggersNeedFor, # kan utløse behov for (cpsvno:mayTriggerNeedFor)
+      :hasMin0MaxNShape-cpsvnoMayTriggersNeedFor, # kan utløse behov for (cpsvno:mayTriggerNeedFor)
    # optional properties:
       :hasShapeCV-dctTypeLifeEventMin0MaxN # type (dct:type), kontrollert vokabular
     ;
@@ -470,14 +442,14 @@ sh:name "Life Event"@en, "Livshendelse"@nb;
       :hasShapeCV-dctTypeAgentMin0Max1, # type (dct:type), kontrollert vokabular
    # optional properties:
       :hasMin0MaxNShape-locnAddress, # adresse (locn:address)
-      :hasMin0MaxNShape-cvPlaysRole, # har rolle i (cv:playsRole
+      :hasMin0MaxNShape-cvParticipates, # deltar i (cv:participates)
       :hasMin0MaxNShape-foafHomepage # hjemmeside (foaf:homepage)
   ;
 sh:targetClass cv:PublicOrganisation .
 
 ### Klassen Offentlig tjeneste  (cpsv:PublicServicve)
 :PublicServiceShape a sh:NodeShape;
-  sh:name "Public Service"@en , "Offentlig tjeneste"@nb ;
+  rdfs:label "Public Service"@en , "Offentlig tjeneste"@nb ;
   sh:property
     # mandatory properties
       :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
@@ -506,6 +478,7 @@ sh:targetClass cv:PublicOrganisation .
       :hasMin0MaxNShape-cvHasChannel, # er tilgjengelig via (cv:hasChannel)
       :hasMin0MaxNShape-cpsvFollows, # følger regel (cpsv:follows)
       :hasMin0MaxNShape-cvHasParticipation, # har deltagelse (cv:hasParticipation)
+      :hasMin0MaxNShape-cvHasInputType, # har dokumentasjonstype (cv:hasInputType)
       :hasMin0MaxNShape-cvHasCost, # har gebyr (cv:hasCost)
       :hasMin0MaxNShape-cvHoldsRequirement, # har krav (cv:holdsRequirement)
       :hasMin0MaxNShape-cvHasLegalResource, # har relatert regelverk (cv:hasLegalResource)
@@ -520,7 +493,7 @@ sh:targetClass cv:PublicOrganisation .
 
 ### Klassen Organisasjon (org:Organization)
 :OrganizationShape a sh:NodeShape;
-   sh:name "Organization"@en, "Organisasjon"@nb;
+   rdfs:label "Organization"@en, "Organisasjon"@nb;
    sh:property
    # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
@@ -532,14 +505,14 @@ sh:targetClass cv:PublicOrganisation .
       :hasShapeCV-dctTypeAgentMin0Max1, # type (dct:type), kontrollert vokabular
    # optional properties:
       :hasMin0MaxNShape-locnAddress, # adresse (locn:address)
-      :hasMin0MaxNShape-cvPlaysRole, # har rolle i (cv:playsRole
+      :hasMin0MaxNShape-cvParticipates, # deltar i (cv:participates)
       :hasMin0MaxNShape-foafHomepage # hjemmeside (foaf:homepage)
   ;
 sh:targetClass org:Organization .
 
 ### Klassen Referanserammeverk (cv:ReferenceFramework)
 :ReferenceFrameworkShape a sh:NodeShape;
-   sh:name "Reference framework"@en, "Referanserammeverk"@nb;
+   rdfs:label "Reference framework"@en, "Referanserammeverk"@nb;
    sh:property
    # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier # identifikator (dct:identifier)
@@ -548,7 +521,7 @@ sh:targetClass org:Organization .
 
 ### Klassen Regel (cpsv:Rule)
 :RuleShape a sh:NodeShape;
-  sh:name "Rule"@en, "Regel"@nb;
+  rdfs:label "Rule"@en, "Regel"@nb;
   sh:property
     # mandatory properties:
       :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
@@ -566,7 +539,7 @@ sh:targetClass org:Organization .
 
 ### Klassen Regulativ ressurs (eli:LegalResource)
 :LegalResourceShape a sh:NodeShape;
-   sh:name "Legal Resource"@en, "Regulativ ressurs"@nb;
+   rdfs:label "Legal Resource"@en, "Regulativ ressurs"@nb;
    sh:property
       # mandatory properties:
       # recommended properties:
@@ -585,7 +558,7 @@ sh:targetClass org:Organization .
 
 # sjekker om minst en egenskap har verdi, selv om ingen obligatorisk
 :LegalResourceShape2 a sh:NodeShape;
-   sh:name "Legal Resource"@en, "Regulativ ressurs"@nb;
+   rdfs:label "Legal Resource"@en, "Regulativ ressurs"@nb;
    sh:or (
       [sh:property [sh:path dct:description; sh:minCount 1]]
       [sh:property [sh:path rdfs:seeAlso; sh:minCount 1]]
@@ -596,9 +569,53 @@ sh:targetClass org:Organization .
    sh:severity sh:Warning;
    sh:targetClass eli:LegalResource .
 
+### Klassen Tidsenhet (time:TemporalEntity)
+:TemporalEntityShape a sh:NodeShape;
+  rdfs:label "Temporal Entity"@en , "Tidsenhet"@nb ;
+  sh:property
+    # recommended properties
+      :hasMin0Max1Shape-timeHasEnd, # sluttidspunkt (time:hasEnd)
+      :hasMin0Max1Shape-timeHasBeginning, # starttidspunkt (time:hasBeginning)
+      :hasMin0Max1Shape-timeHasXsdDuration, # tidsrom (time:hasXSDDuration)
+    # optional propertyes
+      :hasMin0MaxNShape-dctDescription, # beskrivelse (dct:description)
+      :hasMin0MaxNShape-cvFrequency # frekvens (cv:frequency)
+    ;
+  sh:targetClass time:TemporalEntity .
+
+### Klassen Tidspunkt (time:Instant)
+:TemporalEntityShape a sh:NodeShape;
+  rdfs:label "Time Instant"@en , "Tidspunkt"@nb ;
+  sh:property
+    # mandatory properties
+      :hasMin1Max1Shape-timeDateTime # tidspunktangivelse (time:inDateTime)
+    ;
+  sh:targetClass time:Instant .
+
+### Klassen Tidspunktbeskrivelse (time:DateTimeDescription)
+:TemporalEntityShape a sh:NodeShape;
+  rdfs:label "Time Instant"@en , "Tidspunkt"@nb ;
+  sh:property
+    # mandatory properties
+      :hasMin1Max1Shape-timeUnitType, # enhetstype (time:unitType)
+    # optional properties
+      :hasMin0MaxNShape-timeDayOfMonth, # dag i måneden (time:day)
+      :hasMin0MaxNShape-timeDayOfWeek, # dag i uken (time:dayOfWeek)
+      :hasMin0MaxNShape-timeDayOfYear, # dag i året (time:dayOfYear)
+      :hasMin0MaxNShape-timeMinute, # minutt (time:minute)
+      :hasMin0MaxNShape-timeMonth, # måned (time:month)
+      :hasMin0MaxNShape-timeMonthOfYear, # måned i året (time:monthOfYear)
+      :hasMin0MaxNShape-timeSecond, # sekund (time:second)
+      :hasMin0MaxNShape-timeTimeZone, # tidssone (time:timeZone)
+      :hasMin0MaxNShape-timeHour, # time (time:hour)
+      :hasMin0MaxNShape-timeWeek, # ukenummer (time:week)
+      :hasMin0MaxNShape-timeYear # år (time:year)
+    ;
+  sh:targetClass time:DateTimeDescription .
+
 ### Klassen Tidsrom (time:ProperInterval)
 :PeriodOfTimeShape a sh:NodeShape;
-  sh:name "Proper interval"@en , "Tidsrom"@nb ;
+  rdfs:label "Proper interval"@en , "Tidsrom"@nb ;
   sh:property
     # recommended properties
       :hasMin0Max1Shape-timeHasEnd, # sluttidspunkt (time:hasEnd)
@@ -609,7 +626,7 @@ sh:targetClass org:Organization .
 
 # sjekker om minst en av egenskapene har verdi, selv om ingen er obligatoriske
 :PeriodOfTimeShape2 a sh:NodeShape;
-   sh:name "Proper interval"@en , "Tidsrom"@nb ;
+   rdfs:label "Proper interval"@en , "Tidsrom"@nb ;
    sh:or (
       [sh:property [sh:path time:hasEnd; sh:minCount 1]]
       [sh:property [sh:path time:hasBeginning; sh:minCount 1]]
@@ -622,7 +639,7 @@ sh:targetClass org:Organization .
 
 ### Klassen Tjeneste (cpsvno:Servicve)
 :ServiceShape a sh:NodeShape;
-   sh:name "Service"@en , "Tjeneste"@nb ;
+   rdfs:label "Service"@en , "Tjeneste"@nb ;
    sh:property
       # mandatory properties
          :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
@@ -649,10 +666,12 @@ sh:targetClass org:Organization .
          :hasMin0MaxNShape-cvHasChannel, # er tilgjengelig via (cv:hasChannel)
          :hasMin0MaxNShape-cpsvFollows, #  følger regel (cpsv:follows)
          :hasMin0MaxNShape-cvHasParticipation, # har deltagelse (cv:hasParticipation)
+         :hasMin0MaxNShape-cpsvHasInputType, # har dokumentasjonstype (cv:hasInputType)
          :hasMin0MaxNShape-cvHasCost, # har gebyr (cv:hasCost)
          :hasMin0MaxNShape-cvHoldsRequirement, # har krav (cv:holdsRequirement)
          :hasMin0MaxNShape-cvHasLegalResource, # har relatert regelverk (cv:hasLegalResource)
          :hasMin0MaxNShape-dctRequires, # krever (dct:requires)
+         :hasMin0MaxNShape-dctAudience, # målgruppe (dct:audience)
          :hasMin0MaxNShape-dcatKeyword, # nøkkelord (dcat:keyword)
          :hasMin0MaxNShape-dctRelationService, # relatert tjeneste (dct:relation)
          :hasMin0MaxNShape-cvSector, # sektor (cv:sector)
@@ -665,7 +684,7 @@ sh:targetClass org:Organization .
 
 ### Klassen Tjenestekanal (cv:Channel)
 :ChannelShape a sh:NodeShape;
-   sh:name "Channel"@en, "Tjenestekanal"@nb;
+   rdfs:label "Channel"@en, "Tjenestekanal"@nb;
    sh:property
       # mandatory properties:
          :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
@@ -683,14 +702,28 @@ sh:targetClass org:Organization .
          :hasMin0MaxNShape-vcardHasEmail, # har e-post (vcard:hasEmail)
          :hasMin0MaxNShape-vcardHasTelephone, # har telefon (vcard:hasTelephone)
          :hasMin0MaxNShape-vcardHasURL, # har URL (vcard:hasURL)
-         :hasMin0MaxNShape-cvOpeningHours, # ordinær åpningstid fritekst (cv:openingHours)
-         :hasMin0MaxNShape-schemaHoursAvailable # ordinær åpningstid strukturert (schema:hoursAvailable)
+         :hasMin0MaxNShape-cvOpeningHours # ordinær åpningstid strukturert (cv:openingHours)
       ;
    sh:targetClass cv:Channel .
 
+### Klassen Tjenestekonsesjonskontrakt (cv:ConcessionContract)
+:ConcessionContractShape a sh:NodeShape;
+  rdfs:label "Concession contract"@en, "Konsesjonskontrakt"@nb;
+  sh:property
+      # mandatory:
+         :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
+         :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
+         :hasMin1MaxNShape-cvHasEconomicOperator, # har leverandør (cv:hasEconomicOperator)
+         :hasMin1MaxNShape-cvHasContractingAuthority, # har oppdragsgiver (cv:hasContractingAuthority)
+         :hasMin1MaxNShape-dctTitle, # navn (dct:title)
+      # optional:
+         :hasMin0MaxNShape-cvEstablishedUnder # etablert i henhold til (cv:establishedUnder)
+      ;
+  sh:targetClass cv:ConcessionContract .
+
 ### Klassen Tjenesteresultat (cv:Output)
 :OutputShape a sh:NodeShape;
-  sh:name "Output"@en, "Tjenesteresultat"@nb;
+  rdfs:label "Output"@en, "Tjenesteresultat"@nb;
   sh:property
     # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
@@ -708,7 +741,7 @@ sh:targetClass org:Organization .
 
 ### Klassen Understøttende opplysning (cv:SupportedValue)
 :SupportedValueShape a sh:NodeShape;
-   sh:name "Supported value"@en, "Understøttende opplysning"@nb;
+   rdfs:label "Supported value"@en, "Understøttende opplysning"@nb;
    sh:property
       # mandatory:
          :hasMin1Max1Shape-cvProvidesValueFor, # gir verdi for (cv:providesValueFor)
@@ -721,41 +754,15 @@ sh:targetClass org:Organization .
 ### Klassen Virksomhetshendelse (cv:BusinessEvent)
 # det som er spesielt for klassen virksomhetshendelse (i tillegg til klassen Hendelse)
 :BusinessEventShape a sh:NodeShape;
-   sh:name "Business event"@en, "Virksomhetshendelse"@nb;
+   rdfs:label "Business event"@en, "Virksomhetshendelse"@nb;
    sh:property
       # optional properties:
          :hasShapeCV-dctTypeBusinessEventMin0MaxN # type kontrollert vokabular
    ;
    sh:targetClass cv:BusinessEvent .
 
-### Klassen Åpningstid (cv:OpeningHoursSpecification)
-:OpeningHoursSpecificationShape a sh:NodeShape;
-   sh:name "Opening Hours Specification"@en, "Åpningstid"@nb;
-   sh:property
-      # optional properties:
-         :hasMin0MaxNShape-schemaDayOfWeek, # dager i uka (schema:dayOfWeek
-         :hasMin0Max1Shape-schemaValidFrom, # gyldig fra og med (schema:validFrom)
-         :hasMin0Max1Shape-schemaValidThrough, # gyldig til og med (schema:validThrough)
-         :hasMin0Max1Shape-schemaCloses, # stenger (schema:closes)
-         :hasMin0Max1Shape-schemaOpens # åpner (schema:opens)
-   ;
-   sh:targetClass cv:OpeningHoursSpecification .
 
-# sjekker om minst en egenskap har verdi, selv ingen er obligatoriske
-:OpeningHoursSpecificationShape2 a sh:NodeShape;
-   sh:name "Opening Hours Specification"@en, "Åpningstid"@nb;
-   sh:or(
-      [sh:property [sh:path schema:dayOfWeek; sh:minCount 1]]
-      [sh:property [sh:path schema:validFrom; sh:minCount 1]]
-      [sh:property [sh:path schema:validThrough; sh:minCount 1]]
-      [sh:property [sh:path schema:closes; sh:minCount 1]]
-      [sh:property [sh:path schema:opens; sh:minCount 1]]
-   );
-   sh:message "At least one of the properties should have value, although none of them are mandatory."@en,
-      "Minst én av egenskapene bør ha verdi, selv om ingen av dem er obligatoriske."@nb;
-   sh:severity sh:Warning;
-   sh:targetClass cv:OpeningHoursSpecification .
-
+##################################
 ##################################
 
 ### Property shapes:
@@ -763,100 +770,100 @@ sh:targetClass org:Organization .
 ## -- adms-properties:
 
 :hasMin0Max1Shape-admsStatus a sh:PropertyShape;
+  sh:name "status"@en, "status"@nb;
+  sh:path adms:status;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:message "The property adms:status SHOULD appear only once and MUST be instance of skos:Concept"@en ,
     "Egenskapen adms:status kan ha maks 1 verdi som skal være instans av skos:Concept"@nb ;
-  sh:name "status"@en, "status"@nb;
-  sh:path adms:status;
   sh:severity sh:Warning .
 
 ## -- cpsv-properties:
 
 :hasMin0MaxNShape-cpsvFollows a sh:PropertyShape;
+  sh:name "follows"@en, "følger regel"@nb;
+  sh:path cpsv:follows;
   sh:class cpsv:Rule;
 #  sh:nodeKind sh:IRI;
-  sh:name "follows"@en, "følger regel"@nb;
   sh:message "The property cpsv:follows MUST refer to an instance of cpsv:Rule"@en,
     "Egenskapen cpsv:follows skal referere til en instans av cpsv:Rule"@nb;
-  sh:path cpsv:follows;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cpsvHasInput a sh:PropertyShape;
+  sh:name "has input"@en, "dokumentasjonskrav"@nb;
+  sh:path cpsv:hasInput;
   sh:class cv:Evidence;
 #  sh:nodeKind sh:IRI;
-  sh:name "has input"@en, "dokumentasjonskrav"@nb;
   sh:message "The property cpsv:hasInput MUST refer to an instance of cv:Evidence"@en,
     "Egenskapen cpsv:hasInput skal referere til en instans av cv:Evidence"@nb;
-  sh:path cpsv:hasInput;
+  sh:severity sh:Violation .
+
+:hasMin0MaxNShape-cpsvHasInputType a sh:PropertyShape;
+  sh:name "has input"@en, "dokumentasjonskrav"@nb;
+  sh:path cv:hasInputType;
+  sh:class cv:EvidenceType;
+#  sh:nodeKind sh:IRI;
+  sh:message "The property cv:hasInputType MUST refer to an instance of cv:EvidenceType"@en,
+    "Egenskapen cv:hasInputType skal referere til en instans av cv:EvidenceType"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cpsvImplements a sh:PropertyShape;
+  sh:name "implements"@en, "implementerer"@nb;
+  sh:path cpsv:implements;
   sh:class eli:LegalResource;
 #  sh:nodeKind sh:IRI;
-  sh:name "implements"@en, "implementerer"@nb;
   sh:message "The property cpsv:implements MUST refer to an instance of eli:LegalResource"@en,
     "Egenskapen cpsv:implements skal referere til en instans av eli:LegalResource"@nb;
-  sh:path cpsv:implements;
   sh:severity sh:Violation .
 
 :hasMin1MaxNShape-cpsvProduces a sh:PropertyShape;
+  sh:name "produces"@en, "produserer"@nb;
+  sh:path cpsv:produces;
   sh:or (
     [sh:class cv:Output]
     [sh:class dcat:Dataset]) ;
 #  sh:nodeKind sh:IRI;
   sh:minCount 1;
-  sh:name "produces"@en, "produserer"@nb;
   sh:message "The property cpsv:produces MUST have min. 1 value which MUST refer to an instance of cv:Output or dcat:Dataset"@en,
     "Egenskapen cpsv:produces skal ha min. 1 verdi som skal referere til instans av cv:Output eller dcat:Dataset"@nb;
-  sh:path cpsv:produces;
   sh:severity sh:Violation .
 
 ## -- cpsvno-properties:
 
 :hasMin0MaxNShape-cpsvnoDataService a sh:PropertyShape;
+  sh:name "data service"@en, "datatjeneste"@nb;
+  sh:path cpsvno:dataService;
   sh:class dcat:DataService;
 #  sh:nodeKind sh:IRI;
-  sh:name "data service"@en, "datatjeneste"@nb;
   sh:message "The property cpsvno:dataService MUST refer to an instance of dcat:DataService"@en,
     "Egenskapen cpsvno:dataService skal referere til en instans av dcat:DataService"@nb;
-  sh:path cpsvno:dataService;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cpsvnoMayTrigger a sh:PropertyShape;
+  sh:name "may trigger"@en, "kan sette i gang"@nb;
+  sh:path cpsvno:mayTrigger;
   sh:or (
     [sh:class cpsvno:Service]
     [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
-  sh:name "may trigger"@en, "kan sette i gang"@nb;
   sh:message "The property cpsvno:mayTrigger MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
     "Egenskapen cpsvno:mayTrigger skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
-  sh:path cpsvno:mayTrigger;
   sh:severity sh:Violation .
 
-:hasMin0MaxNShape-cpsvnoTriggersNeedFor a sh:PropertyShape;
+:hasMin0MaxNShape-cpsvnoMayTriggersNeedFor a sh:PropertyShape;
+  sh:name "triggers need for"@en, "utløser behov for"@nb;
+  sh:path cpsvno:cpsvno:mayTriggerNeedFor;
   sh:or (
     [sh:class cpsvno:Service]
     [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
-  sh:name "triggers need for"@en, "utløser behov for"@nb;
-  sh:message "The property cpsvno:triggersNeedFor MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
-    "Egenskapen cpsvno:triggersNeedFor skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
-  sh:path cpsvno:mayInitiate;
+  sh:message "The property cpsvno:mayTriggerNeedFor MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
+    "Egenskapen cpsvno:mayTriggerNeedFor skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:severity sh:Violation .
 
 
 ## -- cv-properties:
-
-:hasMin0Max1Shape-cvAdminUnit a sh:PropertyShape;
-   sh:name "administrative unit"@en, "administrativ enhet"@nb;
-   sh:path cv:adminUnit;
-   sh:class cv:AdminUnit;
-   sh:maxCount 1;
-   sh:message "The property cv:adminUnit may have max. 1 value which MUST refer to an instance of cv:AdminUnit"@en,
-     "Egenskapen cv:adminUnit kan ha maks. 1 verdi som skal referere til en instans av cv:AdminUnit"@nb;
-   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-cvBias a sh:PropertyShape;
    sh:name "bias"@en, "bias"@nb;
@@ -866,15 +873,6 @@ sh:targetClass org:Organization .
    sh:message "The property cv:bias may have max. 1 value which MUST be of type xsd:decimal"@en,
      "Egenskapen cv:bias kan ha maks. 1 verdi som skal være av type xsd:decimal"@nb;
    sh:severity sh:Violation .
-
-:hasMin1Max1Shape-cvCode a sh:PropertyShape;
-   sh:path cv:code;
-   sh:class skos:Concept;
-   sh:minCount 1;
-   sh:maxCount 1;
-   sh:message "The property cv:code MUST have min. 1 and max. 1 value which MUST refer to an instance of skos:Concept"@en,
-     "Egenskapen cv:code skal ha min. 1 og maks. 1 verdi som skal referere til en instans av skos:Concept"@nb;
-   sh:severity sh:Warning .
 
 :hasMin0Max1Shape-cvConfidentialityLevelType a sh:PropertyShape;
    sh:name "confidentiality level type"@en, "konfidensialitetsnivå"@nb;
@@ -907,12 +905,12 @@ sh:targetClass org:Organization .
    sh:severity sh:Warning .
 
 :hasMin0Max1Shape-cvCurrency a sh:PropertyShape;
+  sh:name "currency"@en, "valuta"@nb;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:message "The property cv:currency may have max. 1 value which SHOULD refer to a defined concept representing the currency"@en,
     "Egenskapen cv:currency kan ha maks. 1 verdi som skal referere til begrep for valutaen"@nb;
-  sh:name "currency"@en, "valuta"@nb;
   sh:path cv:currency;
   sh:severity sh:Warning .
 
@@ -932,14 +930,13 @@ sh:targetClass org:Organization .
       "Egenskapen cv:establishedUnder skal referere til en instans av eli:LegalResource"@nb;
    sh:severity sh:Voilation .
 
-:hasMin1Max1Shape-cvEvidenceTypeClassification a sh:PropertyShape;
+:hasMin0Max1Shape-cvEvidenceTypeClassification a sh:PropertyShape;
    sh:name "evidence type classification"@en, "dokumentasjonstypekategori"@nb;
    sh:path cv:evidenceTypeClassification;
    sh:class skos:Concept;
-   sh:minCount 1;
    sh:maxCount 1;
-   sh:message "The property cv:evidenceTypeClassification MUST have min. 1 and max. 1 value which MUST refer to an instance of skos:Concept"@en,
-      "Egenskapen cv:evidenceTypeClassification skal ha min. 1 og maks. 1 verdi som skal referere til en instans av skos:Concept"@nb;
+   sh:message "The property cv:evidenceTypeClassification may have max. 1 value which MUST refer to an instance of skos:Concept"@en,
+      "Egenskapen cv:evidenceTypeClassification kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb;
    sh:severity sh:Warning .
 
 :hasMin1Max1Shape-cvExpressionOfExpectedValue a sh:PropertyShape;
@@ -952,6 +949,14 @@ sh:targetClass org:Organization .
       "Egenskapen cv:expressionOfExpectedValue skal ha min. 1 og maks. 1 verdi"@nb;
    sh:severity sh:Violation .
 
+:hasMin0MaxNShape-cvFrequency a sh:PropertyShape;
+   sh:name "frequency"@en, "frekvens"@nb;
+   sh:path cv:frequency;
+   sh:class skos:Concept;
+   sh:message "The property cv:frequency MUST refer to an instance of kos:Concept"@en,
+      "Egenskapen cv:frequency skal referere til en instans av kos:Concept"@nb;
+   sh:severity sh:Violation .
+
 :hasMin0MaxNShape-cvFulfils a sh:PropertyShape;
    sh:name "fulfils"@en, "tilfredsstiller regel"@nb;
    sh:path cv:fulfils;
@@ -961,22 +966,23 @@ sh:targetClass org:Organization .
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvHasChannel a sh:PropertyShape;
+  sh:name "has channel"@en, "er tilgjengelig via"@nb;
+  sh:path cv:hasChannel;
   sh:class cv:Channel;
 #  sh:nodeKind sh:IRI;
-  sh:name "has channel"@en, "er tilgjengelig via"@nb;
   sh:message "The property cv:hasChannel MUST refer to an instance of cv:Channel"@en,
     "Egenskapen cv:hasChannel skal referere til en instans av cv:Channel"@nb;
-  sh:path cv:hasChannel;
   sh:severity sh:Violation .
 
 :hasMin1MaxNShape-cvHasCompetentAuthority a sh:PropertyShape;
 #  sh:class cv:PublicOrganisation; # Enhetsreg bruker ikke denne klasse/type
-  sh:nodeKind sh:IRI;
+  sh:name "has competent authority"@en, "har kompetent organ"@nb;
+  sh:path cv:hasCompetentAuthority;
+  sh:class cv:PublicOrganisation;
+#  sh:nodeKind sh:IRI;
   sh:minCount 1;
   sh:message "The property cv:hasCompetentAuthority MUST have min. 1 which MUST refer to an instance of cv:PublicOrganisation"@en,
     "Egenskapen cv:hasCompetentAuthority skal ha min. 1 verdi som skal referere til en instans av cv:PublicOrganisation"@nb;
-  sh:name "has competent authority"@en, "har kompetent organ"@nb;
-  sh:path cv:hasCompetentAuthority;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvHasConcept a sh:PropertyShape;
@@ -1006,21 +1012,12 @@ sh:targetClass org:Organization .
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvHasCost a sh:PropertyShape;
+  sh:name "has cost"@en, "gebyr"@nb;
+  sh:path cv:hasCost;
   sh:class cv:Cost;
 #  sh:nodeKind sh:IRI;
-  sh:name "has cost"@en, "gebyr"@nb;
   sh:message "The property cv:hasCost MUST refer to an instance of cv:Cost"@en,
     "Egenskapen cv:hasCost skal referere til en instans av cv:Cost"@nb;
-  sh:path cv:hasCost;
-  sh:severity sh:Violation .
-
-:hasMin0MaxNShape-cvHasCriterion a sh:PropertyShape;
-  sh:class cv:CriterionRequirement;
-#  sh:nodeKind sh:IRI;
-  sh:name "has criterion"@en, "vilkår"@nb;
-  sh:message "The property cv:hasCriterion MUST refer to an instance of cv:CriterionRequirement"@en,
-    "Egenskapen cv:hasCriterion skal referere til en instans av cv:CriterionRequirement"@nb;
-  sh:path cv:hasCriterion;
   sh:severity sh:Violation .
 
 :hasMin1MaxNShape-cvHasEconomicOperator a sh:PropertyShape;
@@ -1040,22 +1037,30 @@ sh:targetClass org:Organization .
       "Egenskapen cv:hasEvidenceTypeList skal referere til en instans av cv:EvidenceTypeList"@nb;
    sh:severity sh:Violation .
 
+:hasMin0MaxNShape-cvHasInputType a sh:PropertyShape;
+   sh:name "has input type"@en, "har dokumentasjonstype"@nb;
+   sh:path cv:hasInputType;
+   sh:class cv:EvidenceType;
+   sh:message "The property cv:hasInputType MUST refer to an instance of cv:EvidenceType"@en,
+      "Egenskapen cv:hasInputType skal referere til en instans av cv:EvidenceType"@nb;
+   sh:severity sh:Violation . 
+
 :hasMin0MaxNShape-cvHasLegalResource a sh:PropertyShape;
+  sh:name "has legal resource"@en, "relatert regelverk"@nb;
+  sh:path cv:hasLegalResource;
   sh:class eli:LegalResource;
 #  sh:nodeKind sh:IRI;
-  sh:name "has legal resource"@en, "relatert regelverk"@nb;
   sh:message "The property cv:hasLegalResource MUST refer to an instance of eli:LegalResource"@en,
     "Egenskapen cv:hasLegalResource skal referere til en instans av cv:hasLegalResource"@nb;
-  sh:path cv:hasLegalResource;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvHasParticipation a sh:PropertyShape;
+  sh:name "has participation"@en, "har deltagelse"@nb;
+  sh:path cv:hasParticipation;
   sh:class cv:Participation;
 #  sh:nodeKind sh:IRI;
-  sh:name "has participation"@en, "deltagende"@nb;
   sh:message "The property cv:hasParticipation MUST refer to an instance of cv:Participation"@en,
     "Egenskapen cv:hasParticipation skal referere til en instans av cv:Participation"@nb;
-  sh:path cv:hasParticipation;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvHasQualifiedRelation a sh:PropertyShape;
@@ -1100,24 +1105,24 @@ sh:targetClass org:Organization .
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-cvIfAccessedThrough a sh:PropertyShape;
+  sh:name "if accessed through"@en, "hvis tilbys gjennom"@nb;
+  sh:path cv:ifAccessedThrough;
   sh:class cv:Channel;
 #  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:message "The property cv:ifAccessedThrough may have max. 1 value referring to an instance of cv:Channel"@en,
     "Egenskapen cv:ifAccessedThrough kan ha maks. 1 verdi som skal referere til en instans av cv:Channel";
-  sh:name "if accessed through"@en, "hvis tilbys gjennom"@nb;
-  sh:path cv:ifAccessedThrough;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvIsDefinedBy a sh:PropertyShape;
+  sh:name "isDefinedBy"@en, "er bestemt av"@nb;
+  sh:path cv:isDefinedBy;
   sh:or (
     [sh:class cv:PublicOrganisation]
     [sh:class foaf:Agent] );
 #  sh:nodeKind sh:IRI;
-  sh:name "isDefinedBy"@en, "er bestemt av"@nb;
   sh:message "The property cv:isDefinedBy MUST refer to an instance of cv:PublicOrganisation or foaf:Agent"@en,
     "Egenskapen cv:isDefinedBy skal referere til en instans av cv:PublicOrganisation eller foaf:Agent"@nb;
-  sh:path cv:isDefinedBy;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvIsDerivedFrom a sh:PropertyShape;
@@ -1129,41 +1134,41 @@ sh:targetClass org:Organization .
   sh:severity sh:Voilation .
 
 :hasMin0MaxNShape-cvIsClassifiedBy a sh:PropertyShape;
+  sh:name "is classified by"@en, "er klassifisert ved"@nb;
+  sh:path cv:isClassifiedBy;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
-  sh:name "is classified by"@en, "er klassifisert ved"@nb;
   sh:message "The property cv:isClassifiedBy MUST refer to an instance of skos:Concept"@en,
     "Egenskapen cv:isClassifiedBy skal referere til en instans av skos:Concept"@nb;
-  sh:path cv:isClassifiedBy;
   sh:severity sh:Warning .
 
 :hasMin0MaxNShape-cvIsDescribedAt a sh:PropertyShape;
+  sh:name "is described at"@en, "beskrivende datasett"@nb;
+  sh:path cv:isDescribedAt;
   sh:class dcat:Dataset;
 #  sh:nodeKind sh:IRI;
-  sh:name "is described at"@en, "beskrivende datasett"@nb;
   sh:message "The propety cv:isDescribedAt MUST refer to an instace of dcat:Dataset"@en,
     "Egenskapen cv:isDescribedAt skal referere til en instans av dcat:Dataset"@nb;
-  sh:path cv:isDescribedAt;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvIsGroupedBy a sh:PropertyShape;
+  sh:name "is grouped by"@en, "er gruppert ved"@nb;
+  sh:path cv:IsGroupedBy;
   sh:or (
    [sh:class cv:Event]
    [sh:class cv:LifeEvent]
    [sh:class cv:BusinessEvent]
    );
 #  sh:nodeKind sh:IRI;
-  sh:name "is grouped by"@en, "er gruppert ved"@nb;
   sh:message "The property cv:IsGroupedBy MUST be a URI which MUST refer to an instance of cv:Event, cv:LifeEvent or cv:BusinessEvent"@en,
     "Egenskapen cv:IsGroupedBy skal være en URI som refererer til en instans av cv:Event, cv:LifeEvent eller cv:BusinessEvent"@nb;
-  sh:path cv:IsGroupedBy;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-cvIsProvidedBy a sh:PropertyShape;
    sh:name "is provided by"@en, "distributør"@nb;
-   sh:maxCount 1;
    sh:path cv:isProvidedBy;
    sh:class foaf:Agent;
+   sh:maxCount 1;
    sh:message "The property cv:isProvidedBy may have 1 value which MUST refer to an instance of foaf:Agent"@en,
      "Egenskapen cv:isProvidedBy kan ha maks. 1 verdi som skal referere til en instans av foaf:Agent"@nb;
    sh:severity sh:Violation .
@@ -1193,33 +1198,24 @@ sh:targetClass org:Organization .
       "Egenskapen cv:issuingPlace kan ha maks. 1 verdi som skal referere til en instanse av dct:Location"@nb;
    sh:severity sh:Voilation .
 
-:hasMin1Max1Shape-cvLevel a sh:PropertyShape;
-   sh:name "level"@en, "nivå"@nb;
-   sh:path cv:level;
-   sh:class skos:Concept;
-   sh:minCount 1;
-   sh:maxCount 1;
-   sh:message "The property cv:level MUST have min. 1 and max. 1 value which MUST refer to an instance of skos:Concept"@en,
-     "Egenskapen cv:level skal ha min. 1 og maks. 1 verdi som skal referere til en instans av skos:Concept"@nb;
-   sh:severity sh:Warning .
-
 :hasMin0MaxNShape-cvOpeningHours a sh:PropertyShape;
    sh:name "opening hours (text)"@en, "ordinær åpningstid fritekst"@nb;
    sh:path cv:openingHours;
-   sh:datatype rdf:langString;
-   sh:message "The property cv:openingHours MUST be of type rdf:langString"@en,
-     "Egenskapen cv:openingHours skal være av type rdf:langString"@nb;
+   sh:class time:TemporalEntity;
+   sh:message "The property cv:openingHours MUST refer to an instance of time:TemporalEntity"@en,
+     "Egenskapen cv:openingHours skal referere til en instans av time:TemporalEntity"@nb;
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvOwnedBy a sh:PropertyShape;
+  sh:name "owned by"@en, "eies av"@nb;
+  sh:path cv:ownedBy;
   sh:or (
     [sh:class cv:PublicOrganisation]
+    [sh:class org:Organisation]
     [sh:class foaf:Agent] );
 #  sh:nodeKind sh:IRI;
-  sh:name "owned by"@en, "eies av"@nb;
-  sh:message "The property cv:ownedBy MUST refer to an instance of foaf:Agent or cv:PublicOrganisation"@en,
-    "Egenskapen cv:ownedBy skal referere til en instans av foaf:Agent eller cv:PublicOrganisation"@nb;
-  sh:path cv:ownedBy;
+  sh:message "The property cv:ownedBy MUST refer to an instance of foaf:Agent, org:Organizatoin or cv:PublicOrganisation"@en,
+    "Egenskapen cv:ownedBy skal referere til en instans av foaf:Agent, org:Organizatoin eller cv:PublicOrganisation"@nb;
   sh:severity sh:Violation .
 
 :hasMin1MaxNShape-cvOwnedBy a sh:PropertyShape;
@@ -1234,13 +1230,13 @@ sh:targetClass org:Organization .
     "Egenskapen cv:ownedBy skal ha min. 1 verdi som skal referere til en instans av org:Organization eller cv:PublicOrganisation"@nb;
   sh:severity sh:Violation .
 
-:hasMin0MaxNShape-cvPlaysRole a sh:PropertyShape;
+:hasMin0MaxNShape-cvParticipates a sh:PropertyShape;
+  sh:name "participates"@en, "deltar i"@nb;
+  sh:path cv:participates;
   sh:class cv:Participation;
 #  sh:nodeKind sh:IRI;
-  sh:name "plays role"@en, "har rolle i"@nb;
-  sh:message "The property cv:playsRole MUST refer to an instance of cv:Participation"@en,
-    "Egenskapen cv:playsRole skal referere til en instans av cv:Participation"@nb;
-  sh:path cv:playsRole;
+  sh:message "The property cv:participates MUST refer to an instance of cv:Participation"@en,
+    "Egenskapen cv:participates skal referere til en instans av cv:Participation"@nb;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-cvProcessingTime a sh:PropertyShape;
@@ -1272,30 +1268,30 @@ sh:targetClass org:Organization .
   sh:severity sh:Violation .
 
 :hasMin1MaxNShape-cvRole a sh:PropertyShape;
+  sh:name "role"@en, "rolle"@nb;
+  sh:path cv:role;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:message "The property cv:role MUST have min. 1 value which MUST refer to an instance of skos:Concept"@en,
     "Egenskapen cv:role skal ha min. 1 verdi som skal referere til en instans av skos:Concept"@nb;
   sh:minCount 1;
-  sh:name "role"@en;
-  sh:path cv:role;
   sh:severity sh:Warning .
 
 :hasMin0MaxNShape-cvSector a sh:PropertyShape;
+  sh:name "sector"@en, "næringsgruppering"@nb;
+  sh:path cv:sector;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
-  sh:name "sector"@en, "næringsgruppering"@nb;
   sh:message "The property cv:sector MUST refer to an instance of skos:Concept"@en,
     "Egenskapen cv:sector skal referere til en instans av skos:Concept"@nb;
-  sh:path cv:sector;
   sh:severity sh:Warning .
 
 :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification a sh:PropertyShape;
    sh:name "availability rescrition"@en, "begrenset åpningstid strukturert"@nb;
    sh:path cv:specialOpeningHoursSpecification;
-   sh:class cv:OpeningHoursSpecification;
-   sh:message "The property cv:specialOpeningHoursSpecification MUST refer to an instance of cv:OpeningHoursSpecification"@en,
-       "Egenskapen cv:specialOpeningHoursSpecification skal referere til en instans av cv:OpeningHoursSpecification"@nb;
+   sh:class time:TemporalEntity;
+   sh:message "The property cv:specialOpeningHoursSpecification MUST refer to an instance of time:TemporalEntity"@en,
+       "Egenskapen cv:specialOpeningHoursSpecification skal referere til en instans av time:TemporalEntity"@nb;
    sh:severity sh:Warning .
 
 :hasMin1MaxNShape-cvSpecifiesEvidenceType a sh:PropertyShape;
@@ -1340,10 +1336,10 @@ sh:targetClass org:Organization .
    sh:severity sh:Warning .
 
 :hasMin0MaxNShape-cvThematicArea a sh:PropertyShape;
-  sh:class skos:Concept;
-#  sh:nodeKind sh:IRI;
   sh:name "thematic area"@en, "temaområde"@nb;
   sh:path cv:thematicArea;
+  sh:class skos:Concept;
+#  sh:nodeKind sh:IRI;
   sh:message "The property cv:thematicArea MUST refer to an instance of skos:Concept"@en,
       "Egenskapen cv:thematicArea skal referere til en instans av skos:Concept"@nb;
   sh:severity sh:Warning .
@@ -1404,37 +1400,27 @@ sh:targetClass org:Organization .
 
 :hasMin1MaxNShape-dcatContactPoint a sh:PropertyShape;
   sh:name "contact point"@en, "kontaktpunkt"@nb;
-  sh:minCount 1;
-  sh:message "The property dcat:contactPoint MUST have min. 1 value which should refer to an instance of vcard:Organization"@en,
-    "Egenskapen dcat:contactPoint skal ha minst 1 verdi som bør referere til en instans av vcard:Organization"@nb;
+  sh:path dcat:contactPoint;
   sh:or (
     [ sh:class vcard:Kind ]
     [ sh:class vcard:Organization ] ) ;
-  sh:path dcat:contactPoint;
+  sh:minCount 1;
+  sh:message "The property dcat:contactPoint MUST have min. 1 value which should refer to an instance of vcard:Organization"@en,
+    "Egenskapen dcat:contactPoint skal ha minst 1 verdi som bør referere til en instans av vcard:Organization"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dcatDistribution a sh:PropertyShape;
   sh:name "distribution"@en, "distribusjon"@nb;
+  sh:path dcat:distribution;
+  sh:class dcat:Distribution;
   sh:message "The property dcat:distribution MUST refer to an instance of dcat:Distribution"@en,
     "Egenskapen dcat:distribution skal referere til en instans av dcat:Distribution"@nb;
-  sh:class dcat:Distribution;
-  sh:path dcat:distribution;
-  sh:severity sh:Violation .
-
-:hasMin0Max1Shape-dcatEndDate a sh:PropertyShape;
-  sh:name "end date"@en, "sluttdato/-tid"@nb;
-  sh:message "The property dcat:endDate may have max. 1 value which MUST be either xsd:date or xsd:dateTime"@en,
-    "Egenskapen dcat:endDate kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb;
-  sh:path dcat:endDate;
-  sh:or ([sh:datatype xsd:date]
-      [sh:datatype xsd:dateTime]
-      ) ;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dcatKeyword a sh:PropertyShape;
   sh:name "keyword"@en, "nøkkelord"@nb;
-  sh:datatype rdf:langString;
   sh:path dcat:keyword;
+  sh:datatype rdf:langString;
   sh:message "The property dcat:keyword shuld be of the rdf:langString"@en,
       "Egenskapen dcat:keyword bør være av type rdf:langString"@nb;
   sh:severity sh:Warning .
@@ -1447,279 +1433,291 @@ sh:targetClass org:Organization .
      "Egenskapen dcat:landingPage skal referere til instans av foaf:Document"@nb;
   sh:severity sh:Voilation .
 
-:hasMin0Max1Shape-dcatStartDate a sh:PropertyShape;
-  sh:name "start date"@en, "startdato/-tid"@nb;
-  sh:message "The property dcat:startDate may have max. 1 value which MUST be either xsd:date or xsd:dateTime"@en,
-    "Egenskapen dcat:startDate kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb;
-  sh:path dcat:startDate;
-  sh:or ([sh:datatype xsd:date]
-      [sh:datatype xsd:dateTime]
-      ) ;
-  sh:severity sh:Violation .
-
 :hasMin0MaxNShape-dcatThemeTaxonomy a sh:PropertyShape;
   sh:name "theme taxonomy"@en, "temaer"@nb;
+  sh:path dcat:themeTaxonomy;
   sh:class skos:ConceptScheme;
 #  sh:nodeKind sh:IRI;
   sh:message "The property dcat:themeTaxonomy MUST refer toan instance of skos:ConceptScheme"@en,
     "Egenskapen dcat:themeTaxonomy skal referere til en instans av skos:ConceptScheme"@nb;
-  sh:path dcat:themeTaxonomy;
   sh:severity sh:Warning .
 
 ## -- dcatno-properties
 
 :hasMin1MaxNShape-dcatnoContainsService a sh:PropertyShape;
    sh:name "servicve"@en, "inneholder tjeneste"@nb;
-   sh:message "The property dcatno:containsService MUST have min 1. value which MUST refer to an instance of cpsvno:Service or cpsv:PublicService",
-      "Egenskapen dcatno:containsService SKAL have min 1. verdi som SKAL være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
+   sh:path dcatno:containsService;
    sh:or (
       [sh:class cpsvno:Service]
       [sh:class cpsv:PublicService] );
-   sh:path dcatno:containsService;
    sh:minCount 1;
+   sh:message "The property dcatno:containsService MUST have min 1. value which MUST refer to an instance of cpsvno:Service or cpsv:PublicService",
+      "Egenskapen dcatno:containsService SKAL have min 1. verdi som SKAL være en URI som refererer til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dcatnoContainsEvent a sh:PropertyShape;
    sh:name "servicve"@en, "inneholder tjeneste"@nb;
-   sh:message "The property dcatno:containsEvent MUST refer to an instance of cv:Event, cv:LifeEvent or cv:BusinessEvent",
-      "Egenskapen dcatno:containsEvent skal referere til en instans av cv:Event, cv:LifeEvent eller cv:BusinessEvent"@nb;
+   sh:path dcatno:containsEvent;
    sh:or (
       [sh:class cv:Event]
       [sh:class cv:LifeEvent]
       [sh:class cv:BusinessEvent] );
-   sh:path dcatno:containsEvent;
+   sh:message "The property dcatno:containsEvent MUST refer to an instance of cv:Event, cv:LifeEvent or cv:BusinessEvent",
+      "Egenskapen dcatno:containsEvent skal referere til en instans av cv:Event, cv:LifeEvent eller cv:BusinessEvent"@nb;
    sh:severity sh:Violation .
 
 ## -- dct-properties:
 
 :hasMin0Max1Shape-dctAccrualPeriodicity a sh:PropertyShape;
    sh:name "accrual periodicity"@en, "frekvens"@nb;
-   sh:maxCount 1;
    sh:path dct:accrualPeriodicity;
    sh:class dct:Frequency;
+   sh:maxCount 1;
    sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST refer to an instance of dct:Frequency"@en ,
      "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal referere til en instans av dct:Frequency"@nb ;
   sh:severity sh:Violation .
 
-:hasMin0Max1Shape-dctConformsToEvidence a sh:PropertyShape;
+:hasMin0MaxNShape-dctAudience a sh:PropertyShape;
+   sh:name "addressee"@en, "målgruppe"@nb;
+   sh:path dct:audience;
+   sh:class skos:Concept;
+   sh:message "The property dct:audience MUST refer to an instance of skos:Concept"@en ,
+     "Egenskapen dct:audience skal referere til en instans av skos:Concept"@nb ;
+  sh:severity sh:Violation .
+
+:hasMin0MaxNShape-dctConformsToEvidence a sh:PropertyShape;
    sh:name "is conformant to"@en, "i samsvar med"@nb;
    sh:path dct:conformsTo;
    sh:class cv:EvidenceType;
-   sh:maxCount 1;
-   sh:message "The property dct:conformsTo may have max. 1 value which MUST refer to an instance of cv:EvidenceType"@en,
-      "Egenskapen dct:conformsTo kan ha maks. 1 verdi som skal referere til en instans av cv:EvidenceType";
+  sh:message "The property dct:conformsTo MUST refer to an instance of cv:EvidenceType"@en,
+      "Egenskapen dct:conformsTo skal referere til en instans av cv:EvidenceType";
    sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dctCreator a sh:PropertyShape;
+  sh:name "creator"@en, "produsent"@nb ;
+  sh:path dct:creator;
   sh:class foaf:Agent;
 #  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:message "The property dct:creator may have max. 1 value which MUST refer to an instance of foaf:Agent"@en ,
     "Egenskapen dct:publisher kan ha maks. 1 verdi som skal referere til en instans av foaf:Agent"@nb ;
-  sh:name "creator"@en, "produsent"@nb ;
-  sh:path dct:creator;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctDescription a sh:PropertyShape;
+  sh:name "description"@en, "beskrivelse"@nb ;
+  sh:path dct:description;
+  sh:datatype rdf:langString;
   sh:message "The property dct:desription MUST be of type rdf:langString"@en ,
     "Verdien til dct:description skal være av type rdf:langString"@nb ;
-  sh:name "description"@en, "beskrivelse"@nb ;
-  sh:datatype rdf:langString;
-  sh:path dct:description;
   sh:severity sh:Violation .
 
 :hasMin1MaxNShape-dctDescription a sh:PropertyShape;
+  sh:name "description"@en, "beskrivelse"@nb;
+  sh:path dct:description;
+  sh:datatype rdf:langString;
   sh:minCount 1;
   sh:message "The property dct:description MUST have min. 1 value which MUST be of type rdf:langString"@en ,
     "Egenskapen dct:description skal ha minst 1 verdi som skal være av type rdf:langString"@nb ;
-  sh:name "description"@en, "beskrivelse"@nb;
-  sh:datatype rdf:langString;
-  sh:path dct:description;
+  sh:severity sh:Violation .
+
+:hasMin0MaxNShape-dctHasPartCatalog a sh:PropertyShape;
+  sh:name "has part"@en, "har del"@nb ;
+  sh:path dct:hasPart;
+  sh:class dcat:Catalog;
+  sh:message "The property dct:hasPart MUST refer to an instance of dcat:Catalog"@en, 
+    "Egenskapen dct:hasPart skal referere til en instans av dcat:Catalog"@nb ;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctHasPartService a sh:PropertyShape;
-  sh:message "The property dct:hasPart MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en, "Egenskapen dct:hasPart skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb ;
   sh:name "has part"@en, "har del"@nb ;
+  sh:path dct:hasPart;
   sh:or (
     [sh:class cpsvno:Service]
     [sh:class cpsv:PublicService] );
-  sh:path dct:hasPart;
+  sh:message "The property dct:hasPart MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en, 
+    "Egenskapen dct:hasPart skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb ;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dctIdentifier a sh:PropertyShape;
+  sh:name "identifier"@en, "identifikator"@nb ;
+  sh:path dct:identifier;
+  sh:nodeKind sh:IRIOrLiteral;
   sh:maxCount 1;
   sh:message "The property dct:identifier may have max. 1 value"@en, "Egenskapen dct:identifier kan ha maks. 1 verdi"@nb ;
-  sh:name "identifier"@en, "identifikator"@nb ;
-  sh:nodeKind sh:IRIOrLiteral;
-  sh:path dct:identifier;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctIdentifier a sh:PropertyShape;
-  sh:message "The property dct:identifier MUST be a URI or Literal"@en, "Egenskapen dct:identifier skal være en URI eller Literal"@nb ;
   sh:name "identifier"@en, "identifikator"@nb ;
-  sh:nodeKind sh:IRIOrLiteral;
   sh:path dct:identifier;
+  sh:nodeKind sh:IRIOrLiteral;
+  sh:message "The property dct:identifier MUST be a URI or Literal"@en, "Egenskapen dct:identifier skal være en URI eller Literal"@nb ;
   sh:severity sh:Violation .
 
 :hasMin1Max1Shape-dctIdentifier a sh:PropertyShape;
+  sh:name "identifier"@en, "identifikator"@nb ;
+  sh:path dct:identifier;
+  sh:nodeKind sh:IRIOrLiteral;
   sh:minCount 1;
   sh:maxCount 1;
   sh:message "The property dct:identifier MUST have min. 1 and max. 1 value"@en, "Egenskapen dct:identifier skal ha minst 1 og maks 1 verdi"@nb ;
-  sh:name "identifier"@en, "identifikator"@nb ;
-  sh:nodeKind sh:IRIOrLiteral;
-  sh:path dct:identifier;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dctIsPartOfCatalog a sh:PropertyShape;
-  sh:message "The property dct:isPartOf may have max. 1 value which MUST refer to an instance of dcat:Catalog"@en, "Egenskapen dct:isPartOf kan ha maks. 1 verdi som skal referere til en instans av dcat:Catalog"@nb ;
   sh:name "is part of"@en, "er del av"@nb ;
-  sh:class dcat:Catalog;
   sh:path dct:isPartOf;
+  sh:class dcat:Catalog;
+  sh:message "The property dct:isPartOf may have max. 1 value which MUST refer to an instance of dcat:Catalog"@en, 
+    "Egenskapen dct:isPartOf kan ha maks. 1 verdi som skal referere til en instans av dcat:Catalog"@nb ;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctIsPartOfService a sh:PropertyShape;
-  sh:message "The property dct:isPartOf MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en, "Egenskapen dct:isPartOf skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb ;
   sh:name "is part of"@en, "er del av"@nb ;
+  sh:path dct:isPartOf;
   sh:or (
     [sh:class cpsvno:Service]
     [sh:class cpsv:PublicService] );
-  sh:path dct:isPartOf;
+  sh:message "The property dct:isPartOf MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en, 
+    "Egenskapen dct:isPartOf skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb ;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dctIssued a sh:PropertyShape;
-  sh:message "The property dct:issued may have max. 1 value which MUST be of datatype xsd:date or xsd:dateTime"@en, "Egenskapen dct:issued kan ha maks. 1 verdi som skal av datatype xsd:date eller xsd:dateTime"@nb ;
   sh:name "issued (release date)"@en, "utgivelsesdato"@nb ;
+  sh:path dct:issued;
   sh:or (
     [sh:datatype xsd:date]
     [sh:datatype xsd:dateTime] );
-  sh:path dct:issued;
   sh:maxCount 1;
+  sh:message "The property dct:issued may have max. 1 value which MUST be of datatype xsd:date or xsd:dateTime"@en, 
+    "Egenskapen dct:issued kan ha maks. 1 verdi som skal av datatype xsd:date eller xsd:dateTime"@nb ;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dctLicense a sh:PropertyShape;
-  sh:class dct:LicenseDocument;
-#  sh:nodeKind sh:IRI;
   sh:name "licence"@en, "lisens"@nb ;
   sh:path dct:license;
+  sh:class dct:LicenseDocument;
+#  sh:nodeKind sh:IRI;
   sh:maxCount 1;
-  sh:message "The property dct:license may have max. 1 value which MUST refer to an instance of dct:LicenseDocument"@en, "Egenskapen dct:license kan ha maks. 1 verdi som skal referere til en instans av dct:LicenseDocument"@nb ;
+  sh:message "The property dct:license may have max. 1 value which MUST refer to an instance of dct:LicenseDocument"@en, 
+    "Egenskapen dct:license kan ha maks. 1 verdi som skal referere til en instans av dct:LicenseDocument"@nb ;
   sh:severity sh:Warning .
 
 :hasMin0MaxNShape-dctLanguage a sh:PropertyShape;
-  sh:class dct:LinguisticSystem;
-#  sh:nodeKind sh:IRI;
   sh:name "language"@en, "språk"@nb ;
   sh:path dct:language;
+  sh:class dct:LinguisticSystem;
+#  sh:nodeKind sh:IRI;
   sh:message "The property dct:language MUST refer to an instance of dct:LinguisticSystem"@en,
       "Egenskapen dct:language skal referere til en instans av dct:LinguisticSystem"@nb ;
   sh:severity sh:Warning .
 
-:hasMin0MaxNShape-dctModified a sh:PropertyShape;
+:hasMin0Max1Shape-dctModified a sh:PropertyShape;
    sh:name "modified (last update)"@en, "endringsdato"@nb;
    sh:path dct:modified;
    sh:or (
       [sh:datatype xsd:date]
       [sh:datatype xsd:dateTime]
       );
-  sh:message "The property dct:modified MUST be a value of datatype xsd:date or xsd:dateTime"@en, "Egenskapen dct:modified skal være av datatype xsd:date eller xsd:dateTime"@nb ;
+   sh:maxCount 1;
+  sh:message "The property dct:modified MUST be a value of datatype xsd:date or xsd:dateTime"@en, 
+    "Egenskapen dct:modified skal være av datatype xsd:date eller xsd:dateTime"@nb ;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctProvenance a sh:PropertyShape;
+  sh:name "provenance (authenticity)"@en, "opphav"@nb ;
+  sh:path dct:provenance;
   sh:class dct:ProvenanceStatement;
 #  sh:nodeKind sh:IRI;
   sh:message "The property dct:provenance MUST refer to an instance of dct:ProvenanceStatement"@en ,
     "Egenskapen dct:provenance skal referere til en instans av dct:ProvenanceStatement"@nb ;
-  sh:name "provenance (authenticity)"@en, "opphav"@nb ;
-  sh:path dct:provenance;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dctPublisher a sh:PropertyShape;
+  sh:name "publisher"@en, "utgiver"@nb ;
+  sh:path dct:publisher;
   sh:or ([sh:class foaf:Agent] [sh:class org:Organization] [sh:class cv:PublicOrganisation] );
 #  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:message "The property dct:publisher may have max. 1 value which MUST refer to an instance of foaf:Agent"@en ,
     "Egenskapen dct:publisher kan ha maks. 1 verdi som skal referere til en instans av foaf:Agent"@nb ;
-  sh:name "publisher"@en, "utgiver"@nb ;
-  sh:path dct:publisher;
   sh:severity sh:Violation .
 
 :hasMin1Max1Shape-dctPublisher a sh:PropertyShape;
+  sh:name "publisher"@en, "utgiver"@nb ;
+  sh:path dct:publisher;
   sh:or ([sh:class foaf:Agent] [sh:class org:Organization] [sh:class cv:PublicOrganisation] );
 #  sh:nodeKind sh:IRI;
   sh:minCount 1;
   sh:maxCount 1;
   sh:message "The property dct:publisher MUST have min. 1 and max. 1 value which MUST refer to an instance of foaf:Agent"@en ,
     "Egenskapen dct:publisher skal ha min. 1 og maks. 1 verdi som skal referere til en instans av foaf:Agent"@nb ;
-  sh:name "publisher"@en, "utgiver"@nb ;
-  sh:path dct:publisher;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctRelationEliLegalResource a sh:PropertyShape;
+  sh:name "related legal resource"@en, "relatert regukatuv ressurs"@nb;
+  sh:path dct:relation;
   sh:class eli:LegalResource;
 #  sh:nodeKind sh:IRI;
   sh:message "The property dct:relation must refer to an instance of eli:LegalResource"@en,
     "Egenskapen dct:relation skal referere til en instans av eli:LegalResource"@nb ;
-  sh:name "related legal resource"@en, "relatert regukatuv ressurs"@nb;
-  sh:path dct:relation;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctRelationService a sh:PropertyShape;
+  sh:name "related service"@en , "relatert tjeneste"@nb;
+  sh:path dct:relation;
   sh:or (
     [sh:class cpsvno:Service]
     [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
   sh:message "The property dct:relation MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
     "Egenskapen dct:relation skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
-  sh:name "related service"@en , "relatert tjeneste"@nb;
-  sh:path dct:relation;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctRequires a sh:PropertyShape;
-sh:or (
-  [sh:class cpsvno:Service]
-  [sh:class cpsv:PublicService] );
-#  sh:nodeKind sh:IRI;
-sh:message "The property dct:relation MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
-  "Egenskapen dct:relation skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:name "requires"@en, "krever"@nb;
   sh:path dct:requires;
+  sh:or (
+    [sh:class cpsvno:Service]
+    [sh:class cpsv:PublicService] );
+  #  sh:nodeKind sh:IRI;
+  sh:message "The property dct:relation MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
+    "Egenskapen dct:relation skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:severity sh:Violation .
 
-:hasMin0MaxNShape-dctRights a sh:PropertyShape;
-   sh:class dct:RightsStatement;
-#  sh:nodeKind sh:IRI;
-sh:message "The property dct:rights may have max. 1 value which MUST refer to an instance of dct:RightsStatement"@en,
-  "Egenskapen dct:rights kan ha maks. 1 verdi som skal referere til en instans av dct:RightsStatement"@nb;
+:hasMin0Max1Shape-dctRights a sh:PropertyShape;
   sh:name "rights (use terms)"@en, "rettigheter"@nb;
   sh:path dct:rights;
+  sh:class dct:RightsStatement;
+#  sh:nodeKind sh:IRI;
   sh:maxCount 1;
+  sh:message "The property dct:rights may have max. 1 value which MUST refer to an instance of dct:RightsStatement"@en,
+    "Egenskapen dct:rights kan ha maks. 1 verdi som skal referere til en instans av dct:RightsStatement"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctSpatial a sh:PropertyShape;
+  sh:name "spatial"@en;
+  sh:path dct:spatial;
   sh:class dct:Location;
 #  sh:nodeKind sh:IRI;
   sh:message "The property dct:spatial should refer to an instance of dct:Location"@en ,
     "Egenskapen dct:spatial bør referere til en instans av dct:Location"@nb;
-  sh:name "spatial"@en;
-  sh:path dct:spatial;
   sh:severity sh:Warning .
 
 :hasMin1MaxNShape-dctSpatial a sh:PropertyShape;
+  sh:name "spatial"@en;
+  sh:path dct:spatial;
   sh:class dct:Location;
 #  sh:nodeKind sh:IRI;
   sh:minCount 1;
   sh:message "The property dct:spatial MUST have min. 1 value which MUST refer to an instance of dct:Location"@en,
     "Egenskapen dct:spatial skal ha minst 1 verdi som skal referere til en instans av dct:Location"@nb;
-  sh:name "spatial"@en;
-  sh:path dct:spatial;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctSubject a sh:PropertyShape;
+  sh:name "concept"@en, "begrep"@nb;
+  sh:path dct:subject;
+  sh:class skos:Concept;
   sh:message "The property dct:subject MUST refer to an instance of skos:Concept"@en,
     "Egenskapen dct:subject skal referere til en instans av skos:Concept"@nb;
-  sh:name "concept"@en, "begrep"@nb;
-  sh:class skos:Concept;
-  sh:path dct:subject;
   sh:severity sh:Warning .
 
 :hasMin0Max1Shape-dctSubjectEvidence a sh:PropertyShape;
@@ -1749,87 +1747,79 @@ sh:message "The property dct:rights may have max. 1 value which MUST refer to an
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dctType a sh:PropertyShape;
+  sh:name "type"@en, "type"@nb;
+  sh:path dct:type;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:message "The property dct:type may have max. 1 value which MUST refer to an instance of skos:Concept"@en,
     "Egenskapen dct:type kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb;
-  sh:name "type"@en, "type"@nb;
-  sh:path dct:type;
   sh:severity sh:Warning .
 
 :hasMin0MaxNShape-dctType a sh:PropertyShape;
+  sh:name "type"@en, "type"@nb;
+  sh:path dct:type;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:message "The property dct:type MUST refer to an instance of skos:Concept"@en,
     "Egenskapen dct:type skal referere til en instans av skos:Concept"@nb;
-  sh:name "type"@en, "type"@nb;
-  sh:path dct:type;
   sh:severity sh:Warning .
 
 :hasMin1MaxNShape-dctType a sh:PropertyShape;
+  sh:name "type"@en, "type"@nb;
+  sh:path dct:type;
   sh:class skos:Concept;
 #  sh:nodeKind sh:IRI;
   sh:minCount 1;
   sh:message "The property dct:type MUST have min. 1 value which MUST refer to an instance of skos:Concept"@en,
     "Egenskapen dct:type skal ha min. 1 verdi som skal referere til en instans av skos:Concept"@nb;
-  sh:name "type"@en, "type"@nb;
-  sh:path dct:type;
   sh:severity sh:Warning .
 
 #### foaf-properties:
 
 :hasMin0Max1Shape-foafHomepage a sh:PropertyShape;
-### de aller fleste websider ville gitt valideringsfeil, derfor "slås av" denne type-sjekken
-#  sh:class foaf:Document;
-##
+  sh:name "homepage"@en, "hjemmeside"@nb;
+  sh:path foaf:homepage;
+  ### de aller fleste websider ville gitt valideringsfeil, derfor "slås av" denne type-sjekken
+  #  sh:class foaf:Document;
+  ##
   sh:nodeKind sh:IRI;
   sh:maxCount 1;
-  sh:name "homepage"@en, "hjemmeside"@nb;
   sh:message "The property foaf:homepag may have max 1 value which MUST refer to an instance of foaf:Document"@en,
     "Egenskapen foaf:homepag kan ha maks. 1 verdi som skal referere til en instans av foaf:Document"@nb;
-  sh:path foaf:homepage;
   sh:severity sh:Warning .
 
 :hasMin0MaxNShape-foafHomepage a sh:PropertyShape;
-### De aller fleste sidene ville ha gitt valideringsfeil, derfor "slås av" denne type-sjekk
-#  sh:class foaf:Document;
-###
-  sh:nodeKind sh:IRI;
   sh:name "homepage"@en, "hjemmeside"@nb;
+  sh:path foaf:homepage;
+  ### De aller fleste sidene ville ha gitt valideringsfeil, derfor "slås av" denne type-sjekk
+  #  sh:class foaf:Document;
+  ###
+  sh:nodeKind sh:IRI;
   sh:message "The property foaf:homepag MUST be an IRI referring to an instance of foaf:Document"@en,
     "Egenskapen foaf:homepag skal være en IRI som refererer til en instans av foaf:Document"@nb;
-  sh:path foaf:homepage;
   sh:severity sh:Warning .
 
-:hasMin1MaxNShape-foafName a sh:PropertyShape;
-  sh:name "name"@en, "navn"@nb;
-  sh:message "The property foaf:name MUST have min. 1 value whish MUST be Literal"@en,
-    "Egenskapen foaf:name skal ha min. 1 verdi som skal være en Literal"@nb;
-  sh:nodeKind sh:Literal;
-  sh:path foaf:name;
-  sh:severity sh:Violation .
-
 :hasMin0MaxNShape-foafPage a sh:PropertyShape;
-### De aller fleste sidene ville ha gitt valideringsfeil, derfor "slås av" denne type-sjekk
-#  sh:class foaf:Document;
-###
-  sh:nodeKind sh:IRI;
   sh:name "page"@en, "relatert informasjon"@nb;
+  sh:path foaf:page;
+  ### De aller fleste sidene ville ha gitt valideringsfeil, derfor "slås av" denne type-sjekk
+  #  sh:class foaf:Document;
+  ###
+  sh:nodeKind sh:IRI;
   sh:message "The property foaf:page MUST refer to an instance of foaf:Document"@en,
     "Egenskapen foaf:page skal referere til en instans av foaf:Document"@nb;
-  sh:path foaf:page;
   sh:severity sh:Warning .
 
 #### locn-properties
 
 :hasMin0MaxNShape-locnAddress a sh:PropertyShape;
   sh:name "address"@en, "adresse"@nb;
+  sh:path locn:address;
   sh:class locn:Address;
 #  sh:nodeKind sh:IRI;
   sh:message "The property locn:address MUST refer to an instance of locn:Address"@en,
     "Egenskapen locn:address skal referere til en instans av locn:Address"@nb;
-  sh:path locn:address;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-locnAddressArea a sh:PropertyShape;
@@ -1890,7 +1880,7 @@ sh:message "The property dct:rights may have max. 1 value which MUST refer to an
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-locnThroughfare a sh:PropertyShape;
-   sh:name "throughfare"@en , "gate-/vei-/områdenavn"@nb ; ### @@@ sjekk navnet
+   sh:name "throughfare"@en , "gate-/vei-/områdenavn"@nb ; 
    sh:path locn:throughfare;
    sh:datatype rdf:langString;
    sh:message "The property locn:throughfare MUST be of datatype rdf:langString"@en,
@@ -1898,12 +1888,12 @@ sh:message "The property dct:rights may have max. 1 value which MUST refer to an
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-locnPoBox a sh:PropertyShape;
-sh:name "post box"@en , "postboks"@nb ;
-   sh:path locn:poBox;
-   sh:datatype rdf:langString;
-   sh:message "The property locn:poBox should be of datatype rdf:langString"@en,
-     "Egenskapen locn:poBox bør være av datatype rdf:langString"@nb;
-   sh:severity sh:Warning .
+  sh:name "post box"@en , "postboks"@nb ;
+  sh:path locn:poBox;
+  sh:datatype rdf:langString;
+  sh:message "The property locn:poBox should be of datatype rdf:langString"@en,
+    "Egenskapen locn:poBox bør være av datatype rdf:langString"@nb;
+  sh:severity sh:Warning .
 
 :hasMin0Max1Shape-locnPostCode a sh:PropertyShape;
    sh:name "post code"@en , "postnummer"@nb ;
@@ -1923,26 +1913,14 @@ sh:name "post box"@en , "postboks"@nb ;
    sh:severity sh:Violation .
 
 
-#### org-properties:
-
-:hasMin0MaxNShape-orgClassification a sh:PropertyShape;
-  sh:name "classification"@en, "klassifisering"@nb;
-  sh:class skos:Concept;
-#  sh:nodeKind sh:IRI;
-  sh:message "The property org:classification MUST refer to an instance of skos:Concept"@en,
-    "Egenskapen org:classification skal referere til en instans av skos:Concept"@nb;
-  sh:path org:classification;
-  sh:severity sh:Warning .
-
-
 #### rdfs-properties:
 
 :hasMin0MaxNShape-rdfsSeeAlso a sh:PropertyShape;
   sh:name "referanse"@en, "referanse"@nb;
+  sh:path rdfs:seeAlso;
+  sh:nodeKind sh:IRI;
   sh:message "The property rdfs:seeAlso MUST be an IRI"@en,
     "Egenskapen rdfs:seeAlso skal være en IRI"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path rdfs:seeAlso;
   sh:severity sh:Violation .
 
 
@@ -1964,77 +1942,11 @@ sh:name "post box"@en , "postboks"@nb ;
       "Egenskapen schema:contactType skal være av datatype rdf:langString"@nb;
    sh:severity sh:Violation .
 
-:hasMin0MaxNShape-schemaDayOfWeek a sh:PropertyShape;
-   sh:name "day of week"@en, "dager i uka"@nb;
-   sh:path schema:dayOfWeek;
-### vet ikke hvorfor det blir typefeil med f.eks. schema.org/Friday
-#   sh:class schema:DayOfWeek;
-   sh:or (
-      [sh:hasValue <https://schema.org/Monday>]
-      [sh:hasValue <https://schema.org/Tuesday>]
-      [sh:hasValue <https://schema.org/Wednesday>]
-      [sh:hasValue <https://schema.org/Thursday>]
-      [sh:hasValue <https://schema.org/Friday>]
-      [sh:hasValue <https://schema.org/Saturday>]
-      [sh:hasValue <https://schema.org/Sunday>]
-      [sh:hasValue <https://schema.org/PublicHolidays>]
-      );
-   sh:message "The property schema:dayOfWeek MUST refer to an instance of schema:DayOfWeek"@en,
-      "Egenskapen schema:dayOfWeek skal referere til en instans av schema:DayOfWeek"@nb;
-   sh:severity sh:Warning .
-
-:hasMin0Max1Shape-schemaValidFrom a sh:PropertyShape;
-   sh:name "valid from inclusive"@en, "gyldig fra og med"@nb;
-   sh:path schema:validFrom;
-   sh:or (
-      [sh:datatype xsd:date]
-      [sh:datatype xsd:dateTime] ) ;
-   sh:maxCount 1;
-   sh:message "The property schema:validFrom may have max. 1 value which MUST be of datatype xsd:date or xsd:dateTime"@en,
-      "Egenskapen schema:validFrom kan ha maks. 1 verdi som skal være av datatype xsd:date eller xsd:dateTime"@nb;
-   sh:severity sh:Violation .
-
-:hasMin0Max1Shape-schemaValidThrough a sh:PropertyShape;
-   sh:name "valid through inclusive"@en, "gyldig til og med"@nb;
-   sh:path schema:validThrough;
-   sh:or (
-      [sh:datatype xsd:date]
-      [sh:datatype xsd:dateTime] ) ;
-   sh:maxCount 1;
-   sh:message "The property schema:validThrough may have max. 1 value which MUST be of type xsd:date or xsd:dateTime"@en,
-      "Egenskapen schema:validThrough kan ha maks. 1 verdi som skal være av type xsd:date eller xsd:dateTime"@nb;
-   sh:severity sh:Violation .
-
-:hasMin0Max1Shape-schemaCloses a sh:PropertyShape;
-   sh:name "closes"@en, "stenger"@nb;
-   sh:path schema:closes;
-   sh:datatype xsd:time;
-   sh:maxCount 1;
-   sh:message "The property schema:closes may have max. 1 value which MUST be of type xsd:time"@en,
-      "Egenskapen schema:closes kan ha maks. 1 verdi som skal være av type xsd:time"@nb;
-   sh:severity sh:Violation .
-
-:hasMin0MaxNShape-schemaHoursAvailable a sh:PropertyShape;
-     sh:name "hours available (structured)"@en, "ordinær åpningstid strukturert"@en;
-     sh:path schema:hoursAvailable;
-     sh:class cv:OpeningHoursSpecification;
-     sh:message "The property schema:hoursAvailable MUST refer to an instance of cv:OpeningHoursSpecification"@en,
-       "Egenskapen schema:hoursAvailable skal referere til en instans av cv:OpeningHoursSpecification"@nb;
-     sh:severity sh:Violation .
-
-:hasMin0Max1Shape-schemaOpens a sh:PropertyShape;
-   sh:name "opens"@en, "åpner"@nb;
-   sh:path schema:opens;
-   sh:datatype xsd:time;
-   sh:maxCount 1;
-   sh:message "The property schema:opens may have max. 1 value which MUST be of type xsd:time"@en,
-      "Egenskapen schema:opens kan ha maks. 1 verdi som skal være av type xsd:time"@nb;
-   sh:severity sh:Violation .
 
 #### skos-properties:
 
 :hasMin0MaxNShape-skosPrefLabel a sh:PropertyShape;
-  sh:name "name"@en, "navn"@nb;
+  sh:name "preferred name / name"@en, "foretrukket navn / navn"@nb;
   sh:path skos:prefLabel;
   sh:datatype xsd:langString;
   sh:message "The property skos:prefLabel MUST have value of type xsd:langString"@en,
@@ -2042,7 +1954,7 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Violation .
 
 :hasMin1MaxNShape-skosPrefLabel a sh:PropertyShape;
-  sh:name "preferred label"@en, "foretrukket navn"@nb;
+  sh:name "preferred name / name"@en, "foretrukket navn / navn"@nb;
   sh:path skos:prefLabel;
   sh:datatype rdf:langString;
   sh:minCount 1;
@@ -2051,6 +1963,43 @@ sh:name "post box"@en , "postboks"@nb ;
   sh:severity sh:Violation .
 
 ### time-properties:
+
+:hasMin1Max1Shape-timeDateTime a sh:PropertyShape;
+   sh:name "in date-time description"@en, "tidspunktangivelse"@nb;
+   sh:path time:inDateTime;
+   sh:class time:DateTimeDescription;
+   sh:minCount 1;
+   sh:maxCount 1;
+   sh:message "The property time:inDateTime MUST have min. 1 and  max. 1 value which MUST refer to an instance of time:DateTimeDescription"@en,
+      "Egenskapen time:inDateTime skal ha min. 1 og  maks. 1 verdi som skal referere til en instans av time:DateTimeDescription"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeDayOfMonth a sh:PropertyShape;
+   sh:name "day (of month)"@en, "dag i måneden"@nb;
+   sh:path time:day;
+   sh:datatype xsd:gDay;
+   sh:maxCount 1;
+   sh:message "The property time:day may have max. 1 value which MUST be of type xsd:gDay"@en,
+      "Egenskapen time:day kan ha maks. 1 verdi som skal være av type xsd:gDay"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeDayOfWeek a sh:PropertyShape;
+   sh:name "day of week"@en, "dag i uken"@nb;
+   sh:path time:dayOfWeek;
+   sh:class time:DayOfWeek;
+   sh:maxCount 1;
+   sh:message "The property time:dayOfWeek may have max. 1 value which MUST refer to an instance of time:DayOfWeek"@en,
+      "Egenskapen time:dayOfWeek kan ha maks. 1 verdi som skal referere til en instans av time:DayOfWeek"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeDayOfYear a sh:PropertyShape;
+   sh:name "day of year"@en, "dag i året"@nb;
+   sh:path time:dayOfYear;
+   sh:datatype xsd:nonNegativeInteger;
+   sh:maxCount 1;
+   sh:message "The property time:dayOfYear may have max. 1 value which MUST be of type xsd:nonNegativeInteger"@en,
+      "Egenskapen time:dayOfYear kan ha maks. 1 verdi som skal være av type xsd:nonNegativeInteger"@nb;
+   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-timeHasBeginning a sh:PropertyShape;
    sh:name "start time"@en, "starttidspunkt"@nb;
@@ -2079,38 +2028,119 @@ sh:name "post box"@en , "postboks"@nb ;
       "Egenskapen time:hasXSDDuration kan ha maks. 1 verdi som skal være av type xsd:duration"@nb;
    sh:severity sh:Violation .
 
+:hasMin0MaxNShape-timeHour a sh:PropertyShape;
+   sh:name "hour"@en, "time"@nb;
+   sh:path time:hour;
+   sh:datatype xsd:nonNegativeInteger;
+   sh:maxCount 1;
+   sh:message "The property time:hour may have max. 1 value which MUST be of type xsd:nonNegativeInteger"@en,
+      "Egenskapen time:hour kan ha maks. 1 verdi som skal være av type xsd:nonNegativeInteger"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeMinute a sh:PropertyShape;
+   sh:name "minute"@en, "minutt"@nb;
+   sh:path time:minute;
+   sh:datatype xsd:nonNegativeInteger;
+   sh:maxCount 1;
+   sh:message "The property time:minute may have max. 1 value which MUST be of type xsd:nonNegativeInteger"@en,
+      "Egenskapen time:minute kan ha maks. 1 verdi som skal være av type xsd:nonNegativeInteger"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeMonth a sh:PropertyShape;
+   sh:name "month"@en, "måned"@nb;
+   sh:path time:month;
+   sh:datatype xsd:gMonth;
+   sh:maxCount 1;
+   sh:message "The property time:month may have max. 1 value which MUST be of type xsd:gMonth"@en,
+      "Egenskapen time:month kan ha maks. 1 verdi som skal være av type xsd:gMonth"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeMonthOfYear a sh:PropertyShape;
+   sh:name "month of year"@en, "måned i året"@nb;
+   sh:path time:monthOfYear;
+   sh:class time:MonthOfYear;
+   sh:maxCount 1;
+   sh:message "The property time:monthOfYear may have max. 1 value which MUST refer to an instance of time:MonthOfYear"@en,
+      "Egenskapen time:monthOfYear kan ha maks. 1 verdi som skal referere til en instans av time:MonthOfYear"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeSecond a sh:PropertyShape;
+  sh:name "second"@en, "sekund"@nb;
+  sh:path time:second;
+  sh:datatype xsd:decimal;
+  sh:maxCount 1;
+  sh:message "The property time:second may have max. 1 value which MUST be of type xsd:decimal"@en,
+    "Egenskapen time:second kan ha maks. 1 verdi som skal være av type xsd:decimal"@nb;
+  sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeTimeZone a sh:PropertyShape;
+   sh:name "time zone"@en, "tidssone"@nb;
+   sh:path time:timeZone;
+   sh:class time:TimeZone;
+   sh:maxCount 1;
+   sh:message "The property time:timeZone may have max. 1 value which MUST refer to an instance of time:TimeZone"@en,
+      "Egenskapen time:timeZone kan ha maks. 1 verdi som skal referere til en instans av time:TimeZone"@nb;
+   sh:severity sh:Violation .
+   
+:hasMin1Max1Shape-timeUnitType a sh:PropertyShape;
+   sh:name "unit type"@en, "enhetstype"@nb;
+   sh:path time:unitType;
+   sh:class time:TemporalUnit;
+   sh:maxCount 1;
+   sh:message "The property time:unitType may have max. 1 value which MUST refer to an instance of time:TemporalUnit"@en,
+      "Egenskapen time:unitType kan ha maks. 1 verdi som skal referere til en instans av time:TemporalUnit"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeWeek a sh:PropertyShape;
+   sh:name "week"@en, "ukenummer"@nb;
+   sh:path time:week;
+   sh:datatype xsd:nonNegativeInteger;
+   sh:maxCount 1;
+   sh:message "The property time:week may have max. 1 value which MUST be of type xsd:nonNegativeInteger"@en,
+      "Egenskapen time:week kan ha maks. 1 verdi som skal være av type xsd:nonNegativeInteger"@nb;
+   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-timeYear a sh:PropertyShape;
+   sh:name "year"@en, "year"@nb;
+   sh:path time:year;
+   sh:datatype xsd:gYear;
+   sh:maxCount 1;
+   sh:message "The property time:year may have max. 1 value which MUST be of type xsd:gYear"@en,
+      "Egenskapen time:year kan ha maks. 1 verdi som skal være av type xsd:gYear"@nb;
+   sh:severity sh:Violation .
+
 #### vcard-properties:
 
 :hasMin0MaxNShape-vcardHasAddress a sh:PropertyShape;
+  sh:name "has address"@en, "har adresse"@nb;
   sh:path vcard:hasAddress;
   sh:class vcard:Address;
 #  sh:nodeKind sh:IRI;
-  sh:name "has address"@en, "har adresse"@nb;
   sh:message "The property vcard:hasAddress MUST refer to an instance of vcard:hasAddress"@en,
     "Egenskapen vcard:hasAddress skal referere til en instans av vcard:hasAddress"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-vcardHasEmail a sh:PropertyShape;
+  sh:name "has email"@en, "har e-post"@nb;
   sh:path vcard:hasEmail;
 #  sh:class vcard:Email;
   sh:nodeKind sh:IRIOrLiteral;
-  sh:name "has email"@en, "har e-post"@nb;
   sh:message "The property vcard:hasEmail MUST refer to an instance of vcard:hasEmail"@en,
     "Egenskapen vcard:hasEmail skal referere til en instans av vcard:hasEmail"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-vcardHasTelephone a sh:PropertyShape;
+  sh:name "has telephone"@en, "har telefon"@nb;
   sh:path vcard:hasTelephone;
   sh:nodeKind sh:Literal;
-  sh:name "has telephone"@en, "har telefon"@nb;
   sh:message "The property vcard:hasTelephone MUST be Literal"@en,
     "Egenskapen vcard:hasTelephone skal være Literal"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-vcardHasURL a sh:PropertyShape;
+  sh:name "has URL"@en, "har URL"@nb;
   sh:path vcard:hasURL;
   sh:nodeKind sh:IRI;
-  sh:name "has URL"@en, "har URL"@nb;
   sh:message "The property vcard:hasURL MUST be an IRI"@en,
     "Egenskapen vcard:hasURL skal være IRI"@nb;
   sh:severity sh:Violation .
@@ -2118,11 +2148,11 @@ sh:name "post box"@en , "postboks"@nb ;
 #### xkos-properties:
 
 :hasMin0MaxNShape-xkosCauses a sh:PropertyShape;
+  sh:name "may cause"@en, "kan skape"@nb;
   sh:path xkos:causes;
   sh:or ( [sh:class cv:Event]
       [sh:class cv:LifeEvent]
       [sh:class cv:BusinessEvent] )  ;
-  sh:name "may cause"@en, "kan skape"@nb;
   sh:message "The property xkos:causes MUST refer to an instance of cv:Event"@en,
     "Egenskapen xkos:causes skal referere til en instans av cv:Event"@nb;
   sh:severity sh:Violation .
@@ -2131,228 +2161,197 @@ sh:name "post box"@en , "postboks"@nb ;
 ### shapes for checks on usage of controlled voabularies:
 
 :hasShapeCV-admsStatusMin0Max1 a sh:PropertyShape;
-  sh:message "The property adms:status may have max. 1 value which MUST have value chosen from http://purl.org/adms/status/"@en,
-   "Egenskapen adms:status kan ha max. 1 verdi som skal ha verdi hentet fra http://purl.org/adms/status/"@nb;
   sh:name "status"@en, "status"@nb;
-  sh:nodeKind sh:IRI;
   sh:path adms:status;
+  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:or (
    [sh:pattern "^http://purl.org/adms/status/"]
    [sh:pattern "^https://purl.org/adms/status/"] )
    ;
+  sh:message "The property adms:status may have max. 1 value which MUST have value chosen from http://purl.org/adms/status/"@en,
+   "Egenskapen adms:status kan ha max. 1 verdi som skal ha verdi hentet fra http://purl.org/adms/status/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-cvCurrencyMin0Max1 a sh:PropertyShape;
-  sh:message "The property cv:currency may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/currency/"@en,
-   "Egenskapen cv:currency kan ha max. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/currency/"@nb;
   sh:name "currency"@en, "valuta"@nb;
-  sh:nodeKind sh:IRI;
   sh:path cv:currency;
-  sh:maxCount 1;
+  sh:nodeKind sh:IRI;
   sh:or (
    [sh:pattern "^http://publications.europa.eu/resource/authority/currency/"]
    [sh:pattern "^https://publications.europa.eu/resource/authority/currency/"] )
    ;
+  sh:maxCount 1;
+  sh:message "The property cv:currency may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/currency/"@en,
+   "Egenskapen cv:currency kan ha max. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/currency/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-cvRoleMin1MaxN a sh:PropertyShape;
-  sh:message "The property cv:role MUST have min. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/role-type#"@en,
-   "Egenskapen cv:role skal ha min. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/role-type#"@nb;
   sh:name "role"@en, "rolle"@nb;
-  sh:nodeKind sh:IRI;
   sh:path cv:role;
+  sh:nodeKind sh:IRI;
   sh:minCount 1;
   sh:pattern "^https://data.norge.no/vocabulary/role-type#";
+  sh:message "The property cv:role MUST have min. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/role-type#"@en,
+   "Egenskapen cv:role skal ha min. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/role-type#"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctAccrualPeriodicityMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/frequency/"@en,
-   "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/frequency/"@nb;
   sh:name "accrual periodicity"@en, "frekvens"@nb;
-  sh:nodeKind sh:IRI;
   sh:path dct:accrualPeriodicity;
+  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:or (
    [sh:pattern "^http://publications.europa.eu/resource/authority/frequency/"]
    [sh:pattern "^https://publications.europa.eu/resource/authority/frequency/"]
    );
+  sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/frequency/"@en,
+   "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/frequency/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctLanguageMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:language MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
-   "Egenskapen dct:language skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
   sh:name "language"@en, "språk"@nb;
-  sh:nodeKind sh:IRI;
   sh:path dct:language;
+  sh:nodeKind sh:IRI;
   sh:or (
    [sh:pattern "^http://publications.europa.eu/resource/authority/language/"]
    [sh:pattern "^https://publications.europa.eu/resource/authority/language/"]
    );
+  sh:message "The property dct:language MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
+   "Egenskapen dct:language skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctLicenseMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:license may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/licence/"@en,
-   "Egenskapen dct:license kan ha max. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/licence/"@nb;
   sh:name "license"@en, "lisens"@nb;
-  sh:nodeKind sh:IRI;
   sh:path dct:license;
+  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:or (
    [sh:pattern "^http://publications.europa.eu/resource/authority/licence/"]
    [sh:pattern "^https://publications.europa.eu/resource/authority/licence/"]
    );
+  sh:message "The property dct:license may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/licence/"@en,
+   "Egenskapen dct:license kan ha max. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/licence/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctTypeAgentMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:type may have max. 1 value which MUST have value chosen from http://purl.org/adms/publishertype/"@en,
-   "Egenskapen dct:type kan ha maks. 1 verdi som skal ha verdi hentet fra http://purl.org/adms/publishertype/"@nb;
   sh:name "type"@en, "type"@nb;
-  sh:nodeKind sh:IRI;
   sh:path dct:type;
+  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:or (
    [sh:pattern "^http://purl.org/adms/publishertype/"]
    [sh:pattern "^https://purl.org/adms/publishertype/"]
    );
+  sh:message "The property dct:type may have max. 1 value which MUST have value chosen from http://purl.org/adms/publishertype/"@en,
+   "Egenskapen dct:type kan ha maks. 1 verdi som skal ha verdi hentet fra http://purl.org/adms/publishertype/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctTypeBusinessEventMin0MaxN a sh:PropertyShape;
+  sh:name "business event - type"@en, "virksomhetshendelse - type"@nb;
+  sh:path dct:type;
+  sh:nodeKind sh:IRI;
+  sh:pattern "^https://data.norge.no/vocabulary/business-event-type#";
   sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/business-event-type#"@en,
    "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/business-event-type#"@nb;
-  sh:name "business event - type"@en, "virksomhetshendelse - type"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path dct:type;
-  sh:pattern "^https://data.norge.no/vocabulary/business-event-type#";
-  sh:severity sh:Warning .
-
-:hasShapeCV-dctTypeCriterionRequirementMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/criterion-requirement-type#"@en,
-   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/criterion-requirement-type#"@nb;
-  sh:name "criterion requirement - type"@en, "vilkår - type"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path dct:type;
-  sh:pattern "^https://data.norge.no/vocabulary/criterion-requirement-type#";
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeEventMin0MaxN a sh:PropertyShape;
+  sh:name "Event - type"@en, "Hendelse - type"@nb;
+  sh:path dct:type;
+  sh:nodeKind sh:IRI;
+  sh:pattern "^https://data.norge.no/vocabulary/event-type#";
   sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/event-type#"@en,
    "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/event-type#"@nb;
-  sh:name "Event - type"@en, "Hendelse - type"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path dct:type;
-  sh:pattern "^https://data.norge.no/vocabulary/event-type#";
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeEvidenceMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:type may have max. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/evidence-type#"@en,
-   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/evidence-type#"@nb;
   sh:name "evidence - type"@en, "dokumentasjon - type"@nb;
-  sh:nodeKind sh:IRI;
   sh:path dct:type;
+  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:pattern "^https://data.norge.no/vocabulary/evidence-type#";
-  sh:severity sh:Warning .
-
-:hasShapeCV-dctTypeDocumentReferenceMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:type may have max. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/document-reference-type#"@en,
-   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/document-reference-type#"@nb;
-  sh:name "document reference - type"@en, "dokumentreferanse - type"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path dct:type;
-  sh:maxCount 1;
-  sh:pattern "^https://data.norge.no/vocabulary/document-reference-type#";
+  sh:message "The property dct:type may have max. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/evidence-type#"@en,
+   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/evidence-type#"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeLegalResourceMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/legal-resource-type#"@en,
-   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/legal-resource-type#"@nb;
+  sh:path dct:type;
   sh:name "legal resource - type"@en, "regulativ ressurs - type"@nb;
   sh:nodeKind sh:IRI;
-  sh:path dct:type;
   sh:pattern "^https://data.norge.no/vocabulary/legal-resource-type#";
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/legal-resource-type#"@en,
+   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/legal-resource-type#"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeLifeEventMin0MaxN a sh:PropertyShape;
+  sh:name "life event - type"@en, "livshendelse - type"@nb;
+  sh:path dct:type;
+  sh:nodeKind sh:IRI;
+  sh:pattern "^https://data.norge.no/vocabulary/life-event-type#";
   sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/life-event-type#"@en,
    "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/life-event-type#"@nb;
-  sh:name "life event - type"@en, "livshendelse - type"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path dct:type;
-  sh:pattern "^https://data.norge.no/vocabulary/life-event-type#";
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypePublicServiceMin0MaxN a sh:PropertyShape;
   sh:name "public service - type"@en, "Offentlig tjeneste - hovedformål"@nb;
-  sh:nodeKind sh:IRI;
   sh:path dct:type;
+  sh:nodeKind sh:IRI;
   sh:pattern "^http://publications.europa.eu/resource/dataset/main-activity";
   sh:message "The property dct:type SHOULD have value chosen from http://publications.europa.eu/resource/dataset/main-activity"@en,
    "Egenskapen dct:type bør ha verdi hentet fra http://publications.europa.eu/resource/dataset/main-activity"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeRoleMin0MaxN a sh:PropertyShape;
-  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/role-type#"@en,
-   "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/role-type#"@nb;
   sh:name "role - type"@en, "rolle - type"@nb;
-  sh:nodeKind sh:IRI;
   sh:path dct:type;
+  sh:nodeKind sh:IRI;
   sh:pattern "^https://data.norge.no/vocabulary/role-type#";
+  sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/role-type#"@en,
+    "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/role-type#"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeRuleMin0MaxN a sh:PropertyShape;
+  sh:name "rule - type"@en, "regel - type"@nb;
+  sh:path dct:type;
+  sh:nodeKind sh:IRI;
+  sh:pattern "^https://data.norge.no/vocabulary/rule-type#";
   sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/rule-type#"@en,
    "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/rule-type#"@nb;
-  sh:name "rule - type"@en, "regel - type"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path dct:type;
-  sh:pattern "^https://data.norge.no/vocabulary/rule-type#";
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeServiceMin0MaxN a sh:PropertyShape;
+  sh:name "service - type"@en, "tjeneste - type"@nb;
+  sh:path dct:type;
+  sh:nodeKind sh:IRI;
+  sh:pattern "^https://data.norge.no/vocabulary/service-type#";
   sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/service-type#"@en,
    "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/service-type#"@nb;
-  sh:name "service - type"@en, "tjeneste - type"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path dct:type;
-  sh:pattern "^https://data.norge.no/vocabulary/service-type#";
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeServiceChannelMin0Max1 a sh:PropertyShape;
-  sh:message "The property dct:type may have max. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/service-channel-type#"@en,
-   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/service-channel-type#"@nb;
   sh:name "service channel - type"@en, "tjenestekanal - type"@nb;
-  sh:nodeKind sh:IRI;
   sh:path dct:type;
+  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:pattern "^https://data.norge.no/vocabulary/service-channel-type#";
+  sh:message "The property dct:type may have max. 1 value which SHOULD have value chosen from https://data.norge.no/vocabulary/service-channel-type#"@en,
+   "Egenskapen dct:type kan ha maks. 1 verdi som bør ha verdi hentet fra https://data.norge.no/vocabulary/service-channel-type#"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeServiceOutputMin0MaxN a sh:PropertyShape;
+  sh:name "service outout - type"@en, "tjenesteresultat - type"@nb;
+  sh:path dct:type;
+  sh:nodeKind sh:IRI;
+  sh:pattern "^https://data.norge.no/vocabulary/service-output-type#";
   sh:message "The property dct:type SHOULD have value chosen from https://data.norge.no/vocabulary/service-output-type#"@en,
    "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/service-output-type#"@nb;
-  sh:name "service outout - type"@en, "tjenesteresultat - type"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path dct:type;
-  sh:pattern "^https://data.norge.no/vocabulary/service-output-type#";
   sh:severity sh:Warning .
-
-:hasShapeCV-orgClassificationMin0MaxN a sh:PropertyShape;
-  sh:message "The property org:classification MUST have value chosen from http://purl.org/adms/publishertype/"@en,
-   "Egenskapen org:classification skal ha verdi hentet fra http://purl.org/adms/publishertype/"@nb;
-  sh:name "organization - classification"@en, "organisasjon - klassifisering"@nb;
-  sh:nodeKind sh:IRI;
-  sh:path org:classification;
-  sh:or (
-   [sh:pattern "^http://purl.org/adms/publishertype/"]
-   [sh:pattern "^https://purl.org/adms/publishertype/"]
-   );
-  sh:severity sh:Violation .
 
 :hasShapeCV-schemaAvailableLanguagMin0MaxN a sh:PropertyShape;
    sh:name "has language"@en, "har språk"@nb;
-   sh:nodeKind sh:IRI;
    sh:path schema:availableLanguage;
+   sh:nodeKind sh:IRI;
    sh:or (
       [sh:pattern "^http://publications.europa.eu/resource/authority/language/"]
       [sh:pattern "^https://publications.europa.eu/resource/authority/language/"]

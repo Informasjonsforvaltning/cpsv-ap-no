@@ -120,7 +120,7 @@ _This property represents a telephone number through which the Contact Point can
 | Verdiområde / _Range_ |  rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å beskrive kontaktpunktet. Egenskapen bør gjentas når beskrivelsen er på flere språk.
 
-_This property represents a description of the Contact Point, repeated when the description is in different languages._
+_This property represents a description of the Contact Point. This property should be repeated when the description is in different languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.

@@ -113,7 +113,7 @@ _The actual information is provided using the ISO 8601 syntax for durations. Exp
 | Verdiområde / _Range_ |  rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes  til å oppgi beskrivelsen av kanalen. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.  
 
-_This property represents the description of the canal, repeated when the description is in parallel languages._
+_This property represents the description of the canal. This property should be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå  / _Requirement level_ | Valgfri / _Optional_  
 |===

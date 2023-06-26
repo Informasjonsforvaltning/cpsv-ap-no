@@ -73,7 +73,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
 
-_This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology. The property should be repeated when the name is in several languages._
+_This property represents a preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology. This property should be repeated when the name is in several languages._
 | Multiplisitet / _Multiplicity_ |  1..n
 | Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
 | Eksempel | Brønnøy kommune
@@ -121,7 +121,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn på organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
 
-_This property represents the name of the public organisation, repeated when the name is in parallel languages._
+_This property represents the name of the public organisation. This property should be repeated when the name is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
 | Merknad / _Note_ | Både navn (denne egenskapen) og <<OffentligOrganisasjon-foretrukketNavn>> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Det anbefales at egenskapen <<OffentligOrganisasjon-foretrukketNavn>> primært brukes. Når det ikke finnes flere navn enn det foretrukne navnet, skal disse to egenskapene ha samme verdi.

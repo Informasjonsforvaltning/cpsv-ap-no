@@ -24,9 +24,10 @@ _The CPSV-AP recognises a common role connected with public services, i.e. the C
 |===
 | _English name_ | _description_
 | URI | dct:description
-| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å angi fritekstbeskrivelse av deltagelsen. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
 
-_This property represents a free text description of the Participation, repeated when the description is in parallel languages._
+_This property represents a free text description of the Participation. This property should be repeated when the description is in parallel languages._
+| Verdiområde / _Range_ | rdf:langString
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Eksempel | Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
