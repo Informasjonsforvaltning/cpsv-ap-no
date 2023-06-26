@@ -36,7 +36,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi en tekstlig beskrivelse av tjenesten. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
 
-_This property represents a free text Description of the Public Service, repeated when the text is in parallel languages._
+_This property represents a free text Description of the Public Service. This property should be repeated when the text is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Eksempel | Bevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.
@@ -134,7 +134,7 @@ _If you are developing applications, see https://data.norge.no/guide/veileder-be
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi det offisielle navnet på tjenesten. Egenskapen bør gjentas når navnet finnes på flere språk.
 
-_This property represents the official Name of the Public Service, repeated when the name is in parallel languages._
+_This property represents the official Name of the Public Service. This property should be repeated when the name is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
 | Eksempel | «Skjenkebevilling»

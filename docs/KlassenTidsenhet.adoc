@@ -223,7 +223,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we 
 | Verdiområde / _Range_ |  rdf:langString
 | Anvendelse / _Usage noe_ |  Egenskapen brukes til å oppgi en tekstlig beskrivelse av tidsenheten. Egenskapen bør gjentas når beskrivelsen er på flere språk.  
 
-_This property is used to specify a textual description of the temporal entity, repeated when the description is in several languages._
+_This property is used to specify a textual description of the temporal entity. This property should be repeated when the description is in several languages._
 | Multiplisitet / _Multiplicity_ |  0..n
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
 |Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.

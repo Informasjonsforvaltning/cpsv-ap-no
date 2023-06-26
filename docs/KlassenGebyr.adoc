@@ -67,7 +67,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en tekstlig beskrivelse av gebyret. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
 
-_This property represents a free text description of the Cost, repeated when the description is in parallel languages._
+_This property represents a free text description of the Cost. This property should be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Eksempel | Se under <<OffentligTjeneste-har-gebyr>>.
