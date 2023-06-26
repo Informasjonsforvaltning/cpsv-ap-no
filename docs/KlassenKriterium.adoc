@@ -305,7 +305,7 @@ _This property represents an indication of how the weight should be interpreted 
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 | Merknad 1 / _Note 1_ | EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[Number weight &#x29C9;, window="_blank", role="ext-link"] kan brukes som mulige verdier for denne egenskapen.
 
-_EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[Number weight &#x29C9;, window="_blank", role="ext-link"] may be used as possible values for this property._
+__EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[Number weight &#x29C9;, window="_blank", role="ext-link"] may be used as possible values for this property.__
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
