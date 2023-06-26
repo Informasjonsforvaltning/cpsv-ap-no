@@ -634,6 +634,20 @@ Eksempel i RDF Turtle:
    dct:title "Kunnskapsprøve for styrere og stedfortredere – Alkoholloven og serveringsloven"@nb .
 -----
 
+==== Offentlig tjeneste – målgruppe (dct:audience) [[OffentligTjeneste-målgruppe]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _addressee_ 
+| URI | dct:audience 
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å spesifisere målgruppe av tjenesten.   
+
+_This property is used to specify the target recipient of the service._ 
+| Multiplisitet / _Multiplicity_ | 0..n 
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+|===
+
 ==== Offentlig tjeneste – nøkkelord (dcat:keyword) [[OffentligTjeneste-nøkkelord]]
 
 [cols="30s,70d"]
