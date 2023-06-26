@@ -75,6 +75,7 @@ _This property refers to a type of the agent._
 | Merknad 1 / _Note 1_ | Verdien skal velges fra http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (lenket ressurs i RDF) &#x29C9;, window="_blank", role="ext-link"].
 
 __The value shall be chosen from http://purl.org/adms/publishertype/[ADMS Publisher Type Vocabulary (linked resource in RDF) &#x29C9;, window="_blank", role="ext-link"].__
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. 
 
 __Norwegian extension: Not explicitly specified in CPSV-AP.__
 |===
