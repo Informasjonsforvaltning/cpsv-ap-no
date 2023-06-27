@@ -104,7 +104,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 | _English name_ | _is defined by_
 | URI | cv:isDefinedBy
 | Verdiområde / _Range_ |  org:Organization
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere organisasjonen (inkl. offentlige organisasjoner) som bestemmer gebyr for en tjeneste.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere organisasjonen (inkl. offentlige organisasjoner) som bestemmer gebyret for en tjeneste.
 
 _This property links the Cost class with one or more instances of the Agent class (foaf:Agent). This property refers to the organisation(s) defining the costs associated with the delivery of a particular Service._
 | Multiplisitet / _Multiplicity_ | 0..n
