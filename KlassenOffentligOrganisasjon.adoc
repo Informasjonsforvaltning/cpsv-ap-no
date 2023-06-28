@@ -50,9 +50,9 @@ _Regarding usage of controlled vocabularies, the following requirements apply:_
 * __At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place &#x29C9;, window="_blank", role="ext-link"]; http://sws.geonames.org/[GeoNames &#x29C9;, window="_blank", role="ext-link"].__
 
 * __To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units &#x29C9;, window="_blank", role="ext-link"] should be used.__
-| Merknad 2 / _Note 2_ | Norsk utvidelse: CPSV-AP v.3.00 refererer til et kontrollert vokabular som range, noe vi mener ikke er korrekt. Vi har valgt å bruke `dct:Location` som range. Inntil EU oppdaterer sin versjon blir dette en norsk utvidelse.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Som range bruker CPSV-AP v.3.1.1 et konkret kontrollert vokabular. Den engelske usage note i CPSV-AP v.3.1.1 sier på den annen side ikke at det oppgitte vokabularet må brukes. For å kunne dekke tilfeller der man ønsker å oppgi administrative enheter som ikke er på den oppgitte EU-listen, har vi valgt å bruke `dct:Location` som range. 
 
-_Norwegian extension: CPSV-AP refers to a controlled vocabulary as the range, instead of a class._
+__Norwegian extension: CPSV-AP v3.1.1 uses a specific controlled vocabulary as the range. The usage note says though not that the given controlled vocabulary shall be used. In order to be able to specify administrative units that are not in that given controlled vocabulary from EU, we have chosen to use `dct:Location` as the range.__
 | Eksempel | Offentlig organisasjon «Brønnøy kommune» har Brønnøy kommune i Norge som sitt dekningsområde.
 |===
 
