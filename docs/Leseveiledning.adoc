@@ -15,7 +15,7 @@ Eksempel: `foaf:Agent` er identifikatoren til klassen `Agent`, slik klassen er s
 | Subegenskap av / _Subproperty of_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere hvilken egenskap den aktuelle egenskap eventuelt er en subegenskap av.
 | Verdiområde / _Range_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlige verdier. Disse angis ved henvisning til en klasse eller datatype.
 
-Eksempel: `Range skos:Concept` betyr at verdien til egenskapen skal være en instans av klassen `skos:Concept`.
+Eksempel: Verdiområde / _Range_ `skos:Concept` betyr at verdien til egenskapen skal være en instans av klassen `skos:Concept`.
 | Anvendelse / _Usage note_ | Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne spesifikasjonen. 
 
 Forklaringen er også skrevet på engelsk (_Usage note_, _kursivert tekst_), primært ment for engelsktalende utviklere av verktøystøtte. Se under <<Omfang-og-avgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
