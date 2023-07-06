@@ -14,13 +14,10 @@ __This class represents an event that can be of any type that triggers, makes us
 | URI | cv:Event
 | Subklasse av / _Subclass of_ | dcat:Dataset
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | Bruk den semantisk sett mer presise <<Livshendelse>> eller <<Virksomhetshendelse>>, istedenfor denne generiske klassen.
-
-_Use the semantically more precise <<Livshendelse>> or <<Virksomhetshendelse>>, instead of this generic class._
-| Merknad 2 / _Note 2_ | Norsk utvidelse: I CPSV-AP er ikke Hendelse (`cv:Event`) en subklasse av Datasett (`dcat:Dataset`). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte beskrivelse av Hendelse som Datasett.
+| Merknad 1 / _Note 1_ | Norsk utvidelse: I CPSV-AP er ikke Hendelse (`cv:Event`) en subklasse av Datasett (`dcat:Dataset`). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte beskrivelse av Hendelse som Datasett.
 
 _Norwegian extension: In CPSV-AP the class Event (`cv:Event`) is not a subclass of Dataset (`dcat:Dataset`)._
-| Merknad 3 / _Note 3_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
 
 _Norwegian extension: Requirement level changed from optional to recommended._
 | Eksempel |Se tilsvarende eksempler i <<Livshendelse>> eller <<Virksomhetshendelse>>.
