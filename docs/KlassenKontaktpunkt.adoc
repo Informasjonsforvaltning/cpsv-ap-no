@@ -86,7 +86,7 @@ _This property refers to a contact page that could be used to reach out the cont
 
 [cols="30s,70d"]
 |===
-| _English name_ | _hours available (structured)_
+| _English name_ | _opening hours (structured)_
 | URI | cv:openingHours
 | Verdiområde / _Range_ | time:TemporalEntity
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en strukturert beskrivelse av åpningstid.

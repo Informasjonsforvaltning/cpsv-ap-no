@@ -27,7 +27,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | _English name_ | _expression of expected value_
 | URI | cv:expressionOfExpectedValue
 | Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å representere en formulering på et formelt språk av forventet verdi(er) for informasjonsbegrepet som samsvarer med begrepene fra kravene som er definert og må respekteres av de medfølgende understøttende opplysninger.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi forventet verdi(er) for informasjonsbegrepet formulert i et formelt språk, som understøttende opplysninger må samsvare.
 
 _This property represents a formulation in a formal language of the expected value(s) for the Information Concept which is aligned with the concepts from the Requirements defined and must be respected by the supplied Supported Values._
 | Multiplisitet / _Multiplicity_ | 1..1
