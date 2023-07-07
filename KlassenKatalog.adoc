@@ -33,7 +33,7 @@ Eksempel i RDF Turtle:
 | _English name_ | _description_
 | URI | dct:description
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi fritekst-beskrivelse av innholdet i katalogen. Gjentas når beskrivelsen finnes på flere språk.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi fritekstbeskrivelse av innholdet i katalogen. Gjentas når beskrivelsen finnes på flere språk.
 
 _This property represents a textual description of the content in the catalog._
 | Multiplisitet / _Multiplicity_ | 1..n
@@ -62,14 +62,17 @@ Eksempel i RDF Turtle:
 _This property represents contact points for the catalog._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
-| Eksempel | Brønnøy kommune med telefonnr. 75 01 20 00 er et kontaktpunkt.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel | Brønnøy kommune med e-post som et kontaktpunkt.
 |===
 
 Eksempel i RDF Turtle:
 -----
 <tjenestekatalog> a dcat:Catalog ;
    cv:hasContactPoint [ a  cv:ContactPoint ; # kontaktpunkt
-     cv:telephone "tel:+4775012000" ;
+     cv:email "mailto:postmottak@bronnoy.kommune.no"^^xsd:anyURI ;
     ] ; .
 -----
 
@@ -101,7 +104,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 
 [cols="30s,70d"]
 |===
-| _English name_ | _service_
+| _English name_ | _contains service_
 | URI | dcatno:containsService
 | Subegenskap av / _Subproperty of_ | dct:hasPart
 | Verdiområde / _Range_ | cpsvno:Service
@@ -179,13 +182,13 @@ _This property represents the spatial coverage of the catalog._
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ a|Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
-* Minst en verdi skal velges fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted &#x29C9;, window="_blank", role="ext-link"]; http://sws.geonames.org/[GeoNavn &#x29C9;, window="_blank", role="ext-link"].
+* Minst en verdi skal velges fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted &#x29C9;, window="_blank", role="ext-link"].
 
 * For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes.
 
 _Regarding usage of controlled vocabularies, the following requirements apply:_
 
-* __At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place &#x29C9;, window="_blank", role="ext-link"]; http://sws.geonames.org/[GeoNames &#x29C9;, window="_blank", role="ext-link"].__
+* __At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place &#x29C9;, window="_blank", role="ext-link"].__
 
 * __To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units &#x29C9;, window="_blank", role="ext-link"] should be used.__
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -258,7 +261,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 
 [cols="30s,70d"]
 |===
-| _English name_ | _event_
+| _English name_ | _contains event_
 | URI | dcatno:containsEvent
 | Subegenskap av / _Subproperty of_ | dct:hasPart
 | Verdiområde / _Range_ | cv:Event
@@ -359,9 +362,9 @@ Eksempel i RDF Turtle:
 _This property refers to a knowledge organisation system (i.e., thesaurus, taxonomy) used to classify the resources in a catalog._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ |Minst en verdi skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc &#x29C9;, window="_blank", role="ext-link"]. https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser &#x29C9;, window="_blank", role="ext-link"] kan brukes i tillegg.
+| Merknad 1 / _Note 1_ | Verdien bør velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc &#x29C9;, window="_blank", role="ext-link"] eller https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser &#x29C9;, window="_blank", role="ext-link"].
 
-__At least one value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc &#x29C9;, window="_blank", role="ext-link"]. https://psi.norge.no/los/[Los &#x29C9;, window="_blank", role="ext-link"] may be used in addition.__
+__The value should be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc &#x29C9;, window="_blank", role="ext-link"] or https://psi.norge.no/los/[Los &#x29C9;, window="_blank", role="ext-link"].__
 |Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
