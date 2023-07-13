@@ -22,7 +22,7 @@
    locn:address [ a locn:Address ;
        locn:fullAddress "Teatergata 9, 0180 OSLO"@nb ; ];
    foaf:homepage <https://www.regjeringen.no/no/dep/hod/id421/>;
-   org:classification <http://purl.org/adms/publishertype/NationalAuthority>;
+   dct:type <http://purl.org/adms/publishertype/NationalAuthority>;
    .
  
 #### End of the file, 2022-03-24 13:24:45
