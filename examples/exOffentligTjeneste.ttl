@@ -16,7 +16,7 @@
        """The text is displayed in English."""@en;
    cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligTjeneste.ttl"^^xsd:anyURI;
-   dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>;
+   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>;
    dct:title """Skjenkebevilling"""@nb,
        """Skjenkjeløyve"""@nn,
        """Liquor license"""@en;
@@ -30,8 +30,9 @@
    dct:hasPart <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    foaf:homepage <https://kommune24-7.no/1813>;
    adms:status <http://purl.org/adms/status/Completed>;
-   cv:thematicArea <http://eurovoc.europa.eu/5018>;
-   dct:type <https://data.norge.no/vocabulary/public-service-type#exercise-of-public-authority>;
+   cv:thematicArea <http://eurovoc.europa.eu/5018>,
+                   <https://psi.norge.no/los/ord/bevilling-og-tillatelser.html>;
+   dct:type <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
    cv:processingTime "P6D"^^xsd:duration;
    cv:isDescribedAt <https://example.org/example-dataset>;
    cv:hasParticipation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
@@ -44,16 +45,18 @@
    cpsv:follows <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegel.ttl>;
    cv:hasCost <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exGebyr.ttl>;
    dct:requires <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
-   cv:sector <https://www.ssb.no/klass/klassifikasjoner/6/koder/56.1>;
+   cv:sector <http://publications.europa.eu/resource/authority/data-theme/AGRI>;
    dcat:keyword """Alminnelig bevilling, Bevilling for lukket selskap, Vandel, Skjenkeansvarlig, Nattklubb, Alkoholservering, Skjenkebevilling, Bar"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Nightclub, Alcohol serving, General license, License for closed events, Good conduct, Manager of the bar, Nightclub, Alcohol serving, Liquor license, Bar, Bar"""@en;
    cv:hasLegalResource <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessurs.ttl>;
-   dct:relation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
+   cv:relatedService <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:hasCriterion <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>;
+   cv:holdsRequirement <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>
+   dct:audience <https://example.org/målgruppe/virksomhet>,
+   cv:hasInputType <>;
    .
  
 #### End of the file, 2022-03-24 13:24:45
