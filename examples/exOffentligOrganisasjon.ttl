@@ -23,8 +23,8 @@
    locn:address [ a locn:Address ;
        locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ];
    foaf:homepage <https://www.bronnoy.kommune.no/>;
-   org:classification <http://purl.org/adms/publishertype/LocalAuthority>;
-   cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl>;
+   dct:type <http://purl.org/adms/publishertype/LocalAuthority>;
+   cv:participates <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl>;
    .
  
 #### End of the file, 2022-03-24 13:24:45
