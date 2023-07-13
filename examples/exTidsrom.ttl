@@ -6,9 +6,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTidsrom.ttl>
-   rdf:type dct:PeriodOfTime;
-   dcat:endDate "2024-12-31"^^xsd:date;
-   dcat:startDate "2020-01-01"^^xsd:date;
+   rdf:type time:ProperInterval;
+   time:hasEnd "2024-12-31"^^xsd:date;
+   time:hasBeginning "2020-01-01"^^xsd:date;
+   time:hasXSDDuration "P1D"^^xsd:duration
    .
  
 #### End of the file, 2022-03-24 13:24:45
