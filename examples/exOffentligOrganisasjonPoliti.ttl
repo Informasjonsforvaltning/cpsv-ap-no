@@ -22,8 +22,8 @@
    locn:address [ a locn:Address ;
        locn:fullAddress "Fridtjof Nansens vei 14, 0369 OSLO"@nb ; ];
    foaf:homepage <https://www.politiet.no/>;
-   org:classification <http://purl.org/adms/publishertype/NationalAuthority>;
-   cv:playsRole <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
+   dct:type <http://purl.org/adms/publishertype/NationalAuthority>;
+   cv:participates <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
    .
  
 #### End of the file, 2022-03-24 13:24:45
