@@ -12,6 +12,6 @@
        """Teksten blir vist på nynorsk."""@nn;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl"^^xsd:anyURI;
    cv:role <https://data.norge.no/vocabulary/role-type#service-provider>;
-   .
+   cv:hasParticipation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl> .
  
 #### End of the file, 2022-03-24 13:24:45
