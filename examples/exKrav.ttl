@@ -13,15 +13,16 @@
        """Over 20 år"""@nn,
        """Over 20 years"""@en;
    dct:type <https://data.norge.no/vocabulary/criterion-requirement-type#age>;
-   cv:fulfils <>,
-   cv:hasSupportingEvidence <>
-   dct:description """Beskrivelse av krav"""@nb,
-   cv:hasConcept <>,
-   cv:hasEvidenceTypeList <>,
-   cv:hasQualifiedRelation <>,
-   cv:hasRequirement <>,
-   cv:isDerivedFrom <>
-   dct:publisher <>,
-   cv:isRequirementOf <> .
+   cv:fulfils <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegelSoknadSkjenkebevilling.ttl>;
+   cv:hasSupportingEvidence <tbd>; # Har understøttende dokumentasjon
+   dct:description """Beskrivelse av krav"""@nb;
+   cv:hasConcept <tbd>; # Har informasjonsbegrep
+   cv:hasEvidenceTypeList <tbd>; # Har dokumentasjonstypeliste
+   cv:hasQualifiedRelation <tbd>; # Har kvalifisert relasjon til andre krav
+   cv:hasRequirement <tbd>; # Har mer spesifikt krav
+   cv:isDerivedFrom <tdb>; # Er utledet fra
+   dct:publisher <tbd>; # Er utstedt av
+   cv:isRequirementOf <tbd>; # Er subkrav av
+.
  
 #### End of the file, 2022-03-24 13:24:45
