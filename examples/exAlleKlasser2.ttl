@@ -28,6 +28,8 @@
        """Dummy aktør"""@nn,
        """Dummy agent"""@en;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl"^^xsd:anyURI;
+   locn:address [ a locn:Address ;
+locn:fullAddress "Dummygata 1, Dummyby, Dummyland"@nb ; ];
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl>
@@ -37,6 +39,8 @@
        """Den beste restauranten AS"""@nn;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl"^^xsd:anyURI;
    dct:type <http://purl.org/adms/publishertype/Company>;
+   locn:address [ a locn:Address ;
+	locn:fullAddress "Restaurantgata 1, Gourmetby, Matland"@nb ; ];
    cv:participates <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenesteMottaker.ttl>;
    .
 
@@ -118,9 +122,7 @@
    locn:address [ a locn:Address ;
        locn:fullAddress "Fridtjof Nansens vei 14, 0369 OSLO"@nb ; ];
    foaf:homepage <https://www.politiet.no/>;
-   dct:type <http://purl.org/adms/publishertype/NationalAuthority>;
-   cv:participates <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
-   .
+   dct:type <http://purl.org/adms/publishertype/NationalAuthority> .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenesteMottaker.ttl>
    rdf:type cv:Participation;
@@ -128,9 +130,7 @@
        """Deltagelse med rollen 'tjenestemottaker'"""@nb,
        """Teksten blir vist på nynorsk."""@nn;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenesteMottaker.ttl"^^xsd:anyURI;
-   cv:role <https://data.norge.no/vocabulary/role-type#service-receiver>;
-   cv:hasParticipant <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl>;
-   .
+   cv:role <https://data.norge.no/vocabulary/role-type#service-receiver> .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>
    rdf:type cv:Participation;
@@ -166,7 +166,16 @@
        <http://publications.europa.eu/resource/authority/language/NNO>;
    foaf:page <https://lovdata.no/lov/1989-06-02-27/§1-7b>;
    dct:type <https://data.norge.no/vocabulary/evidence-type#attestation>;
-   .
+   cv:supportsRequirement <>; # Understøtter krav
+   cv:confidentialityLevelType <>; # Konfidensialitetsnivå
+   dct:subject <>; # Gjelder
+   dct:conformsTo <>; # I samsvar med
+   dct:creator <>; # Produsent
+   dct:publisher <>; # Utsteder
+   cv:isProvidedBy <>; # Distributør
+   cv:supportsConcept <>; # Understøtter informasjonsbegrep
+   cv:supportsValue <>; # Gir understøttende opplysning
+   cv:validityPeriod <>; # Gyldighetsperiode .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKatalogDummy.ttl>
    rdf:type dcat:Catalog;
@@ -200,6 +209,7 @@
        """Teksten blir vist på nynorsk."""@nn,
        """Catalog containing sample services and events."""@en;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKatalog.ttl"^^xsd:anyURI;
+   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>;
    dct:title """Tjeneste- og hendelseskatalog"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Service and event catalog"""@en;
@@ -234,17 +244,14 @@ odrl:attributionURL <https://digdir.no/> ; ];
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>
    rdf:type cv:ContactPoint;
    schema:contactType "Brukerstøtte"@nb , "Brukarstøtte"@nn , "User support"@en ;
-   schema:hoursAvailable <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exApningstidResepsjon.ttl>;
    cv:ContactPage <https://www.bronnoy.kommune.no/>;
    cv:email "postmottak@bronnoy.kommune.no"^^xsd:anyURI;
    vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
    cv:telephone """tel:+4775012000""";
-   cv:openingHours """Resepsjonen er åpent for henvendelser mandag - fredag: kl  10:00 - 14:00."""@no,
-       """Teksten blir vist på nynorsk."""@nn,
-       """The reception is open for inquiries Monday - Friday: 10:00 - 14:00."""@en;
-   cv:specialOpeningHoursSpecification <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHelligdagerStengt.ttl>;
+   cv:openingHours <>; # Ordinær åpningstid strukturert
+   cv:specialOpeningHoursSpecification <>; # Begrenset åpningstid strukturert
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligOrganisasjon.ttl>
@@ -304,7 +311,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
        """The text is displayed in English."""@en;
    cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exOffentligTjeneste.ttl"^^xsd:anyURI;
-   cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>;
+   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKontaktPunkt.ttl>;
    dct:title """Skjenkebevilling"""@nb,
        """Skjenkjeløyve"""@nn,
        """Liquor license"""@en;
@@ -313,7 +320,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
 		 <https://example.org/example-datasett-tjenesteresultat2>,
                  <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/4c180ff0-7982-4d88-b744-be96f2a0182a>;
    dct:subject <http://begrepskatalogen/begrep/adcad8a7-e67e-11e8-b878-0050568204d6>,
-       <http://data.brreg.no/begrep/60813>;
+       	       <http://data.brreg.no/begrep/60813>;
    dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>,
 	       <http://publications.europa.eu/resource/authority/country/NOR>,
 	       <http://publications.europa.eu/resource/authority/continent/EUROPE>,
@@ -338,7 +345,9 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cv:isDescribedAt <https://example.org/example-beskrivende-dataset>,
 		    <https://example.org/example-beskrivende-dataset2>,
 		    <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/c6b9e443-12a4-4d29-854a-0f6eda682858>;
-   cv:hasParticipation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
+   cv:hasParticipation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>,
+		       <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl>,
+		       <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl>;
    cv:isGroupedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVirksomhetshendelse.ttl>;
    cv:isClassifiedBy <https://example.org/example-concept>;
    cv:hasChannel <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl>,
@@ -348,18 +357,20 @@ odrl:attributionURL <https://digdir.no/> ; ];
    cpsv:follows <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegel.ttl>;
    cv:hasCost <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exGebyr.ttl>;
    dct:requires <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
-   cv:sector <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
+   cv:sector <http://publications.europa.eu/resource/authority/data-theme/AGRI>;
    dcat:keyword "Alminnelig bevilling"@nb, "Bevilling for lukket selskap"@nb, "Vandel"@nb, "Skjenkeansvarlig"@nb, "Nattklubb"@nb, "Alkoholservering"@nb, "Skjenkebevilling"@nb, "Bar"@nb,
        "Teksten blir vist på nynorsk"@nn,
        "Nightclub"@en, "Alcohol serving"@en, "General license"@en, "License for closed events"@en, "Good conduct"@en, "Manager of the bar"@en, "Nightclub"@en, "Alcohol serving"@en, "Liquor license"@en, "Bar"@en;
    cv:hasLegalResource  <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessurs.ttl> ,
                         <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursForvaltningslov.ttl> ,
                         <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl> ;
-   dct:relation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
+   cv:relatedService <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:holdsRequirement <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>;
+   cv:holdsRequirement <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKrav.ttl>;
+   dct:audience <https://example.org/målgruppe/virksomhet>,
+   cv:hasInputType <>; # Har dokumentasjonstype
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegel.ttl>
@@ -499,9 +510,9 @@ odrl:attributionURL <https://digdir.no/> ; ];
    dct:type <https://data.norge.no/vocabulary/service-output-type#permit>;
    .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKrav.ttl>
    rdf:type cv:Requirement;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl"^^xsd:anyURI;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKrav.ttl"^^xsd:anyURI;
    dct:title """Over 20 år_nb"""@nb,
        """Over 20 år_nn"""@nn,
        """Over 20 years"""@en;
@@ -510,14 +521,15 @@ odrl:attributionURL <https://digdir.no/> ; ];
        """Directors and deputies must be over 20 years of age."""@en;
    dct:type <https://data.norge.no/vocabulary/criterion-requirement-type#age>;
    cv:fulfils <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegelSoknadSkjenkebevilling.ttl>;
-   cv:hasSupportingEvidence <tbd>;
-   dct:publisher <tbd>;
-   cv:isDerivedFrom <tdb>;
-   cv:hasConcept <tbd>;
-   cv:hasEvidenceTypeList <tbd>;
-   cv:isRequirementOf <tbd>;
-   cv:hasRequirement <tbd>;
-   cv:hasQualifiedRelation <tbd>;
+   cv:hasSupportingEvidence <tbd>; # Har understøttende dokumentasjon
+   dct:description """Beskrivelse av krav"""@nb;
+   dct:publisher <tbd>; # Er utstedt av
+   cv:isDerivedFrom <tdb>; # Er utledet fra
+   cv:hasConcept <tbd>; # Har informasjonsbegrep
+   cv:hasEvidenceTypeList <tbd>; # Har dokumentasjonstypeliste
+   cv:isRequirementOf <tbd>; # Er subkrav av
+   cv:hasRequirement <tbd>; # Har mer spesifikt krav
+   cv:hasQualifiedRelation <tbd>; # Har kvalifisert relasjon til andre krav
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVirksomhetshendelse.ttl>
