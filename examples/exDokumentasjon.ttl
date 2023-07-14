@@ -21,7 +21,16 @@
        <http://publications.europa.eu/resource/authority/language/NNO>;
    foaf:page <https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#%C2%A71-7b>;
    dct:type <https://data.norge.no/vocabulary/evidence-type#attestation>;
-   cccev:isSupportedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentreferanse.ttl>;
+   cv:supportsRequirement <>; # Understøtter krav
+   cv:confidentialityLevelType <>; # Konfidensialitetsnivå
+   dct:subject <>; # Gjelder
+   dct:conformsTo <>; # I samsvar med
+   dct:creator <>; # Produsent
+   dct:publisher <>; # Utsteder
+   cv:isProvidedBy <>; # Distributør
+   cv:supportsConcept <>; # Understøtter informasjonsbegrep
+   cv:supportsValue <>; # Gir understøttende opplysning
+   cv:validityPeriod <>; # Gyldighetsperiode
    .
  
 #### End of the file, 2022-03-24 13:24:45
