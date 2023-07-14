@@ -20,22 +20,39 @@
    dct:title """Skjenkebevilling"""@nb,
        """Skjenkjeløyve"""@nn,
        """Liquor license"""@en;
-   cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl>;
-   dct:subject <https://data.norge.no/concepts/ac03f19d-8e73-4723-a509-933598ed8252>,
-       <https://data.norge.no/concepts/c2b2848e-5aa8-4ebb-8983-f0972b49611d>;
-   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
-       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
-   cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>;
+   cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteresultat.ttl>,
+	              <https://example.org/example-datasett-tjenesteresultat>,
+		           <https://example.org/example-datasett-tjenesteresultat2>,
+                 <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/4c180ff0-7982-4d88-b744-be96f2a0182a>;
+   dct:subject <http://begrepskatalogen/begrep/adcad8a7-e67e-11e8-b878-0050568204d6>,
+               <http://data.brreg.no/begrep/60813>;
+   dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>,
+	            <http://publications.europa.eu/resource/authority/country/NOR>,
+	            <http://publications.europa.eu/resource/authority/continent/EUROPE>,
+	            <http://publications.europa.eu/resource/authority/place/NOR_TOS>;
+   cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDokumentasjon.ttl>,
+                 <https://example.org/example-datasett-dokumentasjon>,
+		           <https://example.org/example-datasett-dokumentasjon2>,
+		           <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/9ec16648-375c-4ad6-9d2c-f7eff52d33c5>;
    dct:isPartOf <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:hasPart <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    foaf:homepage <https://kommune24-7.no/1813>;
    adms:status <http://purl.org/adms/status/Completed>;
-   cv:thematicArea <http://eurovoc.europa.eu/5018>,
-                   <https://psi.norge.no/los/ord/bevilling-og-tillatelser.html>;
+   cv:thematicArea <http://eurovoc.europa.eu/100157>,
+		             <http://eurovoc.europa.eu/100256>,
+                   <http://eurovoc.europa.eu/5017>,
+		             <http://eurovoc.europa.eu/5018>, 
+		             <http://eurovoc.europa.eu/4883>,
+		             <http://eurovoc.europa.eu/4724>,
+		             <https://psi.norge.no/los/ord/bevilling-og-tillatelser>;
    dct:type <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
    cv:processingTime "P6D"^^xsd:duration;
-   cv:isDescribedAt <https://example.org/example-dataset>;
-   cv:hasParticipation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>;
+   cv:isDescribedAt <https://example.org/example-beskrivende-dataset>,
+		              <https://example.org/example-beskrivende-dataset2>,
+		              <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/c6b9e443-12a4-4d29-854a-0f6eda682858>;
+   cv:hasParticipation <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseDatatilbyder.ttl>,
+		                 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktor.ttl>,
+		                 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exDeltagelseTjenestetilbyder.ttl>;
    cv:isGroupedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVirksomhetshendelse.ttl>;
    cv:isClassifiedBy <https://example.org/example-concept>;
    cv:hasChannel <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenestekanalOnline.ttl>,
@@ -49,12 +66,14 @@
    dcat:keyword """Alminnelig bevilling, Bevilling for lukket selskap, Vandel, Skjenkeansvarlig, Nattklubb, Alkoholservering, Skjenkebevilling, Bar"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Nightclub, Alcohol serving, General license, License for closed events, Good conduct, Manager of the bar, Nightclub, Alcohol serving, Liquor license, Bar, Bar"""@en;
-   cv:hasLegalResource <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessurs.ttl>;
+   cv:hasLegalResource <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessurs.ttl> ,
+                       <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursForvaltningslov.ttl> ,
+                       <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exRegulativRessursDummy.ttl> ;
    cv:relatedService <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:holdsRequirement <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVilkaar.ttl>
+   cv:holdsRequirement <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKrav.ttl>
    dct:audience <https://example.org/målgruppe/virksomhet>,
    cv:hasInputType <>;
    .
