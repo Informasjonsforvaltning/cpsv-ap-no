@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
-	<title>Ontologi for CPSV-AP-NO - Norsk applikasjonsprofil av CPSV-AP</title>
-	<meta name="generator" content="LibreOffice 7.3.0.3 (Windows)"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Ontologi for CPSV-AP-NO</title>
+	<meta name="generator" content="LibreOffice 7.5.3.2 (Windows)"/>
 	<meta name="created" content="00:00:00"/>
 	<meta name="changed" content="00:00:00"/>
 	<style type="text/css">
@@ -61,7 +61,7 @@
 cpsvno:Service a owl:Class ;
    skos:prefLabel &quot;Service&quot;@en , &quot;Tjeneste&quot;@nb ;
    skos:scopeNote &quot;This class represents a service.&quot;@en ,
-      &quot;Klassen brukes til &aring; beskrive en tjeneste.&quot;@nb ;
+      &quot;Klassen brukes til å beskrive en tjeneste.&quot;@nb ;
    .
 
 #################################################################
@@ -71,8 +71,8 @@ cpsvno:Service a owl:Class ;
 cpsv:PublicService a owl:Class ;
    rdfs:subClassOf cpsvno:Service ; # This is a Norweigan extension made in CPSV-AP-NO
    skos:prefLabel &quot;Public Service&quot;@en , &quot;Offentlig tjeneste&quot;@nb ;
-   skos:scopeNote &quot;Klassen brukes til &aring; representere en offentlig tjeneste.&quot;@en ,
-      &quot;Klassen brukes til &aring; beskrive en tjeneste.&quot;@nb ;
+   skos:scopeNote &quot;Klassen brukes til å representere en offentlig tjeneste.&quot;@en ,
+      &quot;Klassen brukes til å beskrive en tjeneste.&quot;@nb ;
       rdfs:seeAlso &lt;https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0&gt; ;
    .
 
@@ -83,32 +83,32 @@ cpsv:PublicService a owl:Class ;
 cpsvno:dataService a owl:ObjectProperty ;
    skos:prefLabel &quot;data service&quot;@en , &quot;datatjeneste&quot;@nb ;
    skos:scopeNote &quot;This property refers to the description of a data service which the channel uses.&quot;@en ,
-      &quot;Egenskapen brukes til &aring; referere til en beskrivelse av en datatjeneste som kanalen benytter.&quot;@nb ;
+      &quot;Egenskapen brukes til å referere til en beskrivelse av en datatjeneste som kanalen benytter.&quot;@nb ;
    rdfs:domain cv:Channel ;
    rdfs:range dcat:DataServic ;
    .
 
 cpsvno:mayTrigger a owl:ObjectProperty ;
-   rdfs:subPropertyOf dct:relation ;
+   rdfs:subPropertyOf cv:hasRelatedService ;
    skos:prefLabel &quot;may trigger&quot;@en , &quot;kan sette i gang&quot;@nb ;
    skos:scopeNote &quot;This property links an event directly to a service that the event may trigger.&quot;@en ,
-      &quot;Egenskapen brukes til &aring; referere til tjenester som kan settes i gang av den aktuelle hendelsen.&quot;@nb ;
+      &quot;Egenskapen brukes til å referere til tjenester som kan settes i gang av den aktuelle hendelsen.&quot;@nb ;
    rdfs:domain cv:Event ;
    rdfs:range cpsvno:Service ;
    .
 
 cpsvno:mayTriggerNeedFor a owl:ObjectProperty ;
    rdfs:subPropertyOf cpsvno:mayTrigger ;
-   skos:prefLabel &quot;may trigger need for&quot;@en , &quot;kan utl&oslash;se behov for&quot;@nb ;
+   skos:prefLabel &quot;may trigger need for&quot;@en , &quot;kan utløse behov for&quot;@nb ;
    skos:scopeNote &quot;This property links an event directly to a service that the event may trigger need for.&quot;@en ,
-      &quot;Egenskapen brukes til &aring; referere til tjenester som den aktuelle hendelsen kan utl&oslash;se behov for.&quot;@nb ;
+      &quot;Egenskapen brukes til å referere til tjenester som den aktuelle hendelsen kan utløse behov for.&quot;@nb ;
    rdfs:domain cv:LifeEvent , cv:BusinessEvent ;
    rdfs:range cpsvno:Service ;
    .
 
 
 #################################################################
-#    Individuals
+#   Deprecated individuals
 #################################################################
 
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure

@@ -72,7 +72,7 @@ cpsvno:dataService a owl:ObjectProperty ;
    .
 
 cpsvno:mayTrigger a owl:ObjectProperty ;
-   rdfs:subPropertyOf dct:relation ;
+   rdfs:subPropertyOf cv:hasRelatedService ;
    skos:prefLabel "may trigger"@en , "kan sette i gang"@nb ;
    skos:scopeNote "This property links an event directly to a service that the event may trigger."@en ,
       "Egenskapen brukes til å referere til tjenester som kan settes i gang av den aktuelle hendelsen."@nb ;
@@ -91,7 +91,7 @@ cpsvno:mayTriggerNeedFor a owl:ObjectProperty ;
 
 
 #################################################################
-#    Individuals
+#   Deprecated individuals
 #################################################################
 
 ###  https://data.norge.no/vocabulary/cpsvno#ruleForDisclosure
