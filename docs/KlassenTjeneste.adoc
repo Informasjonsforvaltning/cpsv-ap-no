@@ -574,12 +574,12 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 [[Tjeneste-relatertTjeneste]]
-==== Tjeneste – relatert tjeneste (dct:relation)
+==== Tjeneste – relatert tjeneste (cv:relatedService)
 
 [cols="30s,70d"]
 |===
 | _English name_ | _related service_
-| URI | dct:relation 
+| URI | cv:relatedService 
 | Verdiområde / _Range_ |cpsvno:Service 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere andre relaterte tjenester.  
 

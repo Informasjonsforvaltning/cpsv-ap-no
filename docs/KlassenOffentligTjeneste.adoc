@@ -671,12 +671,12 @@ Eksempel i RDF Turtle:
    dcat:keyword "alkoholservering"@nb , "skjenkebevilling"@nb , "bar"@nb , "nattklubb"@nb ; .
 -----
 
-==== Offentlig tjeneste – relatert tjeneste (dct:relation) [[OffentligTjeneste-relatertTjeneste]]
+==== Offentlig tjeneste – relatert tjeneste (cv:relatedService) [[OffentligTjeneste-relatertTjeneste]]
 
 [cols="30s,70d"]
 |===
 | _English name_ | _related service_
-| URI | dct:relation
+| URI | cv:relatedService
 | Verdiområde / _Range_ | cpsvno:Service
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere andre relaterte tjenester.
 
