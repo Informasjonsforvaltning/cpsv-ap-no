@@ -16,7 +16,7 @@ _This class represents a Service._
 | Merknad 1 / _Note 1_ | Bruk <<OffentligTjeneste>> når det er en offentlig tjeneste som skal beskrives.
 
 _Use <<OffentligTjeneste>>  when the services to be described is a public service._
-| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men trengs for å kunne dekke behov for å beskrive tjenester som ikke er en offentlig tjeneste. <<OffentligTjeneste>> som CPSV-AP har, blir en subklasse av denne.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Det er behov for å beskrive tjenester som ikke er en offentlig tjeneste. <<OffentligTjeneste>> som CPSV-AP har, blir en subklasse av denne.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP. It is needed in order to describe a service which is not a public service. The Public Service Class (`cpsv:PublicService`) that CPSV-AP has, is a subclass of this one._
 | Eksempel | Se under <<OffentligTjeneste>> for eksempler på bruk av de tilsvarende egenskapene.
