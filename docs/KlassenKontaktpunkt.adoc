@@ -20,7 +20,7 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 
 === Valgfrie egenskaper for klassen _Kontaktpunkt_ [[Kontaktpunkt-valgfrie-egenskaper]]
 
-==== Kontaktpunkt – begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification) [[Kontaktpunkt-begrenset-åpningstid-strukturert]]
+==== Kontaktpunkt – begrenset åpningstid (cv:specialOpeningHoursSpecification) [[Kontaktpunkt-begrenset-åpningstid]]
 
 [cols="30s,70d"]
 |===
@@ -82,7 +82,7 @@ _This property refers to a contact page that could be used to reach out the cont
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-==== Kontaktpunkt – ordinær åpningstid strukturert (cv:openingHours) [[Kontaktpunkt-ordinær-åpningstid-strukturert]]
+==== Kontaktpunkt – ordinær åpningstid (cv:openingHours) [[Kontaktpunkt-ordinær-åpningstid]]
 
 [cols="30s,70d"]
 |===
