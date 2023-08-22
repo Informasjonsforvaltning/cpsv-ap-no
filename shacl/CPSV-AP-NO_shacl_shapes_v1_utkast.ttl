@@ -48,9 +48,9 @@
     dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
-    dct:modified "2023-06-19"^^xsd:date ;
+    dct:modified "2023-08-18"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "0.004" ;
+    owl:versionInfo "0.005" ;
     adms:versionNotes "For CPSV-AP-NO v.1.x."@en ;
     .
 
@@ -310,7 +310,7 @@
   sh:property
    # mandatory
       :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
-      :hasMin1MaxNShape-cvHasContactPoint, # har kontaktpunkt (cv:hasContactPoint)
+      :hasMin1MaxNShape-cvContactPoint, # har kontaktpunkt (cv:contactPoint)
       :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
       :hasMin1MaxNShape-dcatnoContainsService, # inneholder tjeneste
       :hasMin1MaxNShape-dctTitle, # tittel (dct:title)
@@ -342,19 +342,19 @@
    rdfs:label "Contact Point"@en, "Kontaktpunkt"@nb;
    sh:property
       # optional properties:
-         :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification, # begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification)
+         :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification, # begrenset åpningstid (cv:specialOpeningHoursSpecification)
          :hasMin0MaxNShape-cvEmail, # e-post (cv:email)
 #         :hasMin0MaxNShape-schemaAvailableLanguage, # har språk (schema:availableLanguage)
          :hasShapeCV-schemaAvailableLanguagMin0MaxN, # har språk (schema:availableLanguage) kontrollert vokabular
          :hasMin0MaxNShape-cvContactPage, # kontaktside (cv:contactPage)
-         :hasMin0MaxNShape-cvOpeningHours, # ordinær åpningstid strukturert (cv:openingHours)
+         :hasMin0MaxNShape-cvOpeningHours, # ordinær åpningstid (cv:openingHours)
          :hasMin0MaxNShape-cvTelephone, # telefon (cv:telephone)
          :hasMin0MaxNShape-schemaContactType # type kontaktpunkt (schema:contactType)
       ;
    sh:targetClass cv:ContactPoint .
 
 # sjekker om minst en egenskap har verdi, selv om alle er valgfrie
-:ContactPointShape a sh:NodeShape;
+:ContactPointShape2 a sh:NodeShape;
    rdfs:label "Contact Point"@en, "Kontaktpunkt"@nb;
    sh:or (
       [sh:property [sh:path cv:email; sh:minCount 1]]
@@ -422,7 +422,7 @@
   rdfs:label "Life Event"@en, "Livshendelse"@nb;
   sh:property
    # recommended properties:
-      :hasMin0MaxNShape-cpsvnoMayTriggersNeedFor, # kan utløse behov for (cpsvno:mayTriggerNeedFor)
+      :hasMin0MaxNShape-cpsvnoMayTriggerNeedFor, # kan utløse behov for (cpsvno:mayTriggerNeedFor)
    # optional properties:
       :hasShapeCV-dctTypeLifeEventMin0MaxN # type (dct:type), kontrollert vokabular
     ;
@@ -454,7 +454,7 @@ sh:targetClass cv:PublicOrganisation .
     # mandatory properties
       :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
       :hasMin1MaxNShape-cvHasCompetentAuthority, # har kompetent organ (cv:hasCompetentAuthority)
-      :hasMin1MaxNShape-cvHasContactPoint, # har kontaktpunkt (cv:hasContactPoint)
+      :hasMin1MaxNShape-cvContactPoint, # har kontaktpunkt (cv:contactPoint)
       :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
       :hasMin1MaxNShape-dctTitle, # navn (dct:title)
       :hasMin1MaxNShape-cpsvProduces, # produserer (cpsv:produces)
@@ -484,7 +484,7 @@ sh:targetClass cv:PublicOrganisation .
       :hasMin0MaxNShape-cvHasLegalResource, # har relatert regelverk (cv:hasLegalResource)
       :hasMin0MaxNShape-dctRequires, # krever (dct:requires)
       :hasMin0MaxNShape-dcatKeyword, # nøkkelord (dcat:keyword)
-      :hasMin0MaxNShape-dctRelationService, # relatert tjeneste (dct:relation)
+      :hasMin0MaxNShape-dctRelatedService, # relatert tjeneste (cv:relatedService)
       :hasMin0MaxNShape-cvSector, # sektor (cv:sector)
 #      :hasMin0MaxNShape-dctLanguage, # språk (dct:language)
       :hasShapeCV-dctLanguageMin0MaxN # språk (dct:language), kontrollert vokabular
@@ -644,7 +644,7 @@ sh:targetClass org:Organization .
       # mandatory properties
          :hasMin1MaxNShape-dctDescription, # beskrivelse (dct:description)
          :hasMin1MaxNShape-cvOwnedBy , # eies av (cv:ownedBy)
-         :hasMin1MaxNShape-cvHasContactPoint, # har kontaktpunkt (cv:hasContactPoint)
+         :hasMin1MaxNShape-cvContactPoint, # har kontaktpunkt (cv:contactPoint)
          :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
          :hasMin1MaxNShape-dctTitle, # navn (dct:title)
          :hasMin1MaxNShape-cpsvProduces, # produserer (cpsv:produces)
@@ -673,7 +673,7 @@ sh:targetClass org:Organization .
          :hasMin0MaxNShape-dctRequires, # krever (dct:requires)
          :hasMin0MaxNShape-dctAudience, # målgruppe (dct:audience)
          :hasMin0MaxNShape-dcatKeyword, # nøkkelord (dcat:keyword)
-         :hasMin0MaxNShape-dctRelationService, # relatert tjeneste (dct:relation)
+         :hasMin0MaxNShape-dctRelatedService, # relatert tjeneste (cv:relatedService)
          :hasMin0MaxNShape-cvSector, # sektor (cv:sector)
 #         :hasMin0MaxNShape-dctLanguage, # språk (dct:language)
          :hasShapeCV-dctLanguageMin0MaxN, # språk (dct:language), kontrollert vokabular
@@ -692,7 +692,7 @@ sh:targetClass org:Organization .
 #         :hasMin0Max1Shape-dctType, # type (dct:type)
          :hasShapeCV-dctTypeServiceChannelMin0Max1, # type (dct:type), kontrollert vokabular
       # optinal properties:
-         :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification, # begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification)
+         :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification, # begrenset åpningstid (cv:specialOpeningHoursSpecification)
          :hasMin0Max1Shape-cvProcessingTime, # behandlingstid (cv:processingTime)
          :hasMin0MaxNShape-dctDescription, # beskrivelse (dct:description)
          :hasMin0MaxNShape-cpsvnoDataService, # datatjeneste (cpsvno:dataService)
@@ -702,7 +702,7 @@ sh:targetClass org:Organization .
          :hasMin0MaxNShape-vcardHasEmail, # har e-post (vcard:hasEmail)
          :hasMin0MaxNShape-vcardHasTelephone, # har telefon (vcard:hasTelephone)
          :hasMin0MaxNShape-vcardHasURL, # har URL (vcard:hasURL)
-         :hasMin0MaxNShape-cvOpeningHours # ordinær åpningstid strukturert (cv:openingHours)
+         :hasMin0MaxNShape-cvOpeningHours # ordinær åpningstid (cv:openingHours)
       ;
    sh:targetClass cv:Channel .
 
@@ -756,8 +756,10 @@ sh:targetClass org:Organization .
 :BusinessEventShape a sh:NodeShape;
    rdfs:label "Business event"@en, "Virksomhetshendelse"@nb;
    sh:property
-      # optional properties:
-         :hasShapeCV-dctTypeBusinessEventMin0MaxN # type kontrollert vokabular
+   # recommended properties:
+      :hasMin0MaxNShape-cpsvnoMayTriggerNeedFor, # kan utløse behov for (cpsvno:mayTriggerNeedFor)
+  # optional properties:
+      :hasShapeCV-dctTypeBusinessEventMin0MaxN # type kontrollert vokabular
    ;
    sh:targetClass cv:BusinessEvent .
 
@@ -851,7 +853,7 @@ sh:targetClass org:Organization .
     "Egenskapen cpsvno:mayTrigger skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:severity sh:Violation .
 
-:hasMin0MaxNShape-cpsvnoMayTriggersNeedFor a sh:PropertyShape;
+:hasMin0MaxNShape-cpsvnoMayTriggerNeedFor a sh:PropertyShape;
   sh:name "triggers need for"@en, "utløser behov for"@nb;
   sh:path cpsvno:cpsvno:mayTriggerNeedFor;
   sh:or (
@@ -993,13 +995,13 @@ sh:targetClass org:Organization .
       "Egenskapen cv:hasConcept skal referere til en instans av cv:InformationConcept"@nb;
    sh:severity sh:Violation .
 
-:hasMin1MaxNShape-cvHasContactPoint a sh:PropertyShape;
-   sh:name "contact point"@en, "har kontaktpunkt"@nb;
-   sh:path cv:hasContactPoint;
+:hasMin1MaxNShape-cvContactPoint a sh:PropertyShape;
+   sh:name "contact point"@en, "kontaktpunkt"@nb;
+   sh:path cv:contactPoint;
    sh:class cv:ContactPoint;
    sh:minCount 1;
-   sh:message "The property cv:hasContactPoint MUST have min. 1 value which MUST refer to an instance of cv:ContactPoint"@en,
-      "Egenskapen cv:hasContactPoint skal ha min. 1 verdi som skal referere til en instans av cv:ContactPoint"@nb;
+   sh:message "The property cv:contactPoint MUST have min. 1 value which MUST refer to an instance of cv:ContactPoint"@en,
+      "Egenskapen cv:contactPoint skal ha min. 1 verdi som skal referere til en instans av cv:ContactPoint"@nb;
    sh:severity sh:Violation .
 
 :hasMin1MaxNShape-cvHasContractingAuthority a sh:PropertyShape;
@@ -1287,7 +1289,7 @@ sh:targetClass org:Organization .
   sh:severity sh:Warning .
 
 :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification a sh:PropertyShape;
-   sh:name "availability rescrition"@en, "begrenset åpningstid strukturert"@nb;
+   sh:name "availability rescrition"@en, "begrenset åpningstid"@nb;
    sh:path cv:specialOpeningHoursSpecification;
    sh:class time:TemporalEntity;
    sh:message "The property cv:specialOpeningHoursSpecification MUST refer to an instance of time:TemporalEntity"@en,
@@ -1661,15 +1663,15 @@ sh:targetClass org:Organization .
     "Egenskapen dct:relation skal referere til en instans av eli:LegalResource"@nb ;
   sh:severity sh:Violation .
 
-:hasMin0MaxNShape-dctRelationService a sh:PropertyShape;
+:hasMin0MaxNShape-dctRelatedService a sh:PropertyShape;
   sh:name "related service"@en , "relatert tjeneste"@nb;
-  sh:path dct:relation;
+  sh:path cv:relatedService;
   sh:or (
     [sh:class cpsvno:Service]
     [sh:class cpsv:PublicService] );
 #  sh:nodeKind sh:IRI;
-  sh:message "The property dct:relation MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
-    "Egenskapen dct:relation skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
+  sh:message "The property cv:relatedService MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
+    "Egenskapen cv:relatedService skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctRequires a sh:PropertyShape;
@@ -1679,8 +1681,8 @@ sh:targetClass org:Organization .
     [sh:class cpsvno:Service]
     [sh:class cpsv:PublicService] );
   #  sh:nodeKind sh:IRI;
-  sh:message "The property dct:relation MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
-    "Egenskapen dct:relation skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
+  sh:message "The property dct:requires MUST refer to an instance of cpsvno:Service or cpsv:PublicService"@en,
+    "Egenskapen dct:requires skal referere til en instans av cpsvno:Service eller cpsv:PublicService"@nb;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dctRights a sh:PropertyShape;

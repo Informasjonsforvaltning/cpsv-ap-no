@@ -22,7 +22,7 @@ image::images/FigurEksempelDokumentasjonskrav.png[alt="RDF-graf med ni RDF-noder
 . «Pass» er i samsvar med det som er spesifisert som lovlig dokumentasjonstype
 . «Pass» understøtter informasjonsbegrep «alder» (fordi pass inneholder fødselsdato)
 . «Pass» understøtter informasjonskrav «alderskrav» (fordi pass inneholder fødselsdato)
-. Fødselsdatoen i dette konkrete eksemplet er `2002-01-30` og gir understøttende opplysning `20` (som alder)
+. Fødselsdatoen i dette konkrete eksemplet er `2002-01-30` og gir understøttende opplysning `20` (som alder) når tjenesten brukes mellom 2022-01-30 og 2023-01-29
 . `20` er verdien for informasjonsbegrepet «alder», som altså er over 18, og «alderskrav» er dermed oppfylt.
 
 Som illustrert i <<img-FigurEksempelDokumentasjonskrav2>>, er det også mulig å knytte kravene illustrert i eksemplet ovenfor, til aktuell lovgivning: «vilkår for å inngå ekteskap» er utledet fra kapittel 1 i ekteskapsloven, og «alderskrav» og begrensningen «ikke under 18 år» er utledet fra §1a i ekteskapsloven.

@@ -8,6 +8,6 @@ image::images/FigurTjenesteMedDataInnOgUt.png[alt="UML-diagram med seks klasser 
 
 Som illustrert i <<img-TjenesteOgData>>, kan et Tjenesteresultat (`cv:Output`) produsert av en Tjeneste (`cpsvno:Service` inkl. subklassen Offentlig tjeneste (`cpsv:PublicService`)) være et Datasett (`dcat:Dataset`), f.eks. selve  «bevilling» som et resultat fra tjenesten «Skjenkebevilling» kan deles som et datasett.
 
-Som også illustrert i figuren, kan et dokumentasjonskrav (`cv:Evidence`) være et datasett (`dcat:Dataset`), f.eks. «Vandelsattest».
+Figuren illustrerer også at et dokumentasjonskrav (`cv:Evidence`) er et datasett (`dcat:Dataset`), f.eks. «Vandelsattest».
 
 Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng["Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i Veileder for beskrivelse av datasett osv. &#x29C9;", window="_blank", role="ext-link"], for hvordan datasett (som f.eks. «Skjenkebevillingen» og «Vandelsattest») kan videre knyttes til distribusjon, datatjeneste (også kalt API), begrep og informasjonsmodell.
