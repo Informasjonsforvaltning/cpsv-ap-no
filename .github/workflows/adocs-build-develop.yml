@@ -26,7 +26,7 @@ jobs:
       id: adocbuild_pdf
       uses: tonynv/asciidoctor-action@master
       with:
-          program: "asciidoctor-pdf -D docs -o cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
+          program: "asciidoctor-pdf -D docs -o files/cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
       continue-on-error: true
 
     - name: Deploy
