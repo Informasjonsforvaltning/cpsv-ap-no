@@ -57,7 +57,7 @@ _Max. one per language._
 |===
 | _English name_ | _address ID_
 | URI | locn:addressId
-| Verdiområde / _Range_ | xsd:string
+| Verdiområde / _Range_ | rdfs:Literal
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi en globalt unik identifikator for hver
 forekomst av en adresse.
 

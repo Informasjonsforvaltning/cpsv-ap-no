@@ -225,7 +225,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we 
 
 _This property is used to specify a textual description of the temporal entity. This property should be repeated when the description is in several languages._
 | Multiplisitet / _Multiplicity_ |  0..n
-| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
+| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
 |Eksempel | Se under <<Tidsenhet-sluttidspunkt>>.
 |===
 

@@ -67,7 +67,7 @@ Eksempel i RDF Turtle:
 
 === Valgfrie egenskaper for klassen _Tjenestekanal_ [[Tjenestekanal-valgfrie-egenskaper]]
 
-==== Tjenestekanal – begrenset åpningstid strukturert (cv:specialOpeningHoursSpecification) [[Tjenestekanal-begrenset-åpningstid-strukturert]]
+==== Tjenestekanal – begrenset åpningstid (cv:specialOpeningHoursSpecification) [[Tjenestekanal-begrenset-åpningstid]]
 
 [cols="30s,70d"]
 |===
@@ -275,7 +275,7 @@ Eksempel i RDF Turtle:
    vcard:hasURL "https://kommune24-7.no/1813" ; .
 -----
 
-==== Tjenestekanal – ordinær åpningstid strukturert (cv:openingHours) [[Tjenestekanal-ordinær-åpningstid-strukturert]]
+==== Tjenestekanal – ordinær åpningstid (cv:openingHours) [[Tjenestekanal-ordinær-åpningstid]]
 
 [cols="30s,70d"]
 |===
