@@ -580,6 +580,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _related service_
 | URI | cv:relatedService 
+| Subegenskap av / _Subproperty of_ | dct:relation
 | Verdiområde / _Range_ |cpsvno:Service 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere andre relaterte tjenester.  
 
