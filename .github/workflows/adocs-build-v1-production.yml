@@ -1,0 +1,93 @@
+name: Build adocs and publish v1 to production
+
+on:
+  push:
+    branches:
+      - v1
+    paths:
+      - docs/**
+  workflow_dispatch:
+
+jobs:
+  adoc_build:
+    runs-on: ubuntu-latest
+    name: asciidoctor build
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: v1
+
+      - name: Build html
+        id: adocbuild_html
+        uses: tonynv/asciidoctor-action@master
+        with:
+          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
+
+      - name: Build pdf
+        id: adocbuild_pdf
+        uses: tonynv/asciidoctor-action@master
+        with:
+          program: "asciidoctor-pdf -D docs -o files/cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
+        continue-on-error: true
+
+      - name: Upload files to static-rdf-server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+        id: upload-files
+        with:
+          ontology-type: "specification"
+          ontology: "cpsv-ap-no"
+          host: "https://data.norge.no"
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+          files: |
+            docs/index.html text/html nb
+            docs/files/cpsv-ap-no.pdf application/pdf nb files/cpsv-ap-no.pdf
+            docs/images/Digdir.png image/png nb images/Digdir.png
+            docs/images/FigurEksempelDokumentasjonskrav.png image/png nb images/FigurEksempelDokumentasjonskrav.png
+            docs/images/FigurEksempelDokumentasjonskrav2.png image/png nb images/FigurEksempelDokumentasjonskrav2.png
+            docs/images/FigurHendelseOgDistribusjon.png image/png nb images/FigurHendelseOgDistribusjon.png
+            docs/images/FigurHendelseTjenesteData.png image/png nb images/FigurHendelseTjenesteData.png
+            docs/images/FigurKatalog.png image/png nb images/FigurKatalog.png
+            docs/images/FigurSyktBarn.png image/png nb images/FigurSyktBarn.png
+            docs/images/FigurSyktBarnBeskrevetMedCPSVNO.png image/png nb images/FigurSyktBarnBeskrevetMedCPSVNO.png
+            docs/images/FigurTjenestekjede.png image/png nb images/FigurTjenestekjede.png
+            docs/images/FigurTjenesteMedDataInnOgUt.png image/png nb images/FigurTjenesteMedDataInnOgUt.png
+            docs/images/FigurTjenesteOgDeltagelse.png image/png nb images/FigurTjenesteOgDeltagelse.png
+            docs/images/FigurTjenesteOgRegelverk.png image/png nb images/FigurTjenesteOgRegelverk.png
+            docs/images/ForenkletModell-CPSV-AP-NO.png image/png nb images/ForenkletModell-CPSV-AP-NO.png
+            docs/images/KlassenAdresse.png image/png nb images/KlassenAdresse.png
+            docs/images/KlassenAktør.png image/png nb images/KlassenAktør.png
+            docs/images/KlassenBegrensning.png image/png nb images/KlassenBegrensning.png
+            docs/images/KlassenDatasett.png image/png nb images/KlassenDatasett.png
+            docs/images/KlassenDeltagelse.png image/png nb images/KlassenDeltagelse.png
+            docs/images/KlassenDokumentasjon.png image/png nb images/KlassenDokumentasjon.png
+            docs/images/KlassenDokumentasjonstype.png image/png nb images/KlassenDokumentasjonstype.png
+            docs/images/KlassenDokumentasjonstypeliste.png image/png nb images/KlassenDokumentasjonstypeliste.png
+            docs/images/KlassenGebyr.png image/png nb images/KlassenGebyr.png
+            docs/images/KlassenHendelse.png image/png nb images/KlassenHendelse.png
+            docs/images/KlassenInformasjonsbegrep.png image/png nb images/KlassenInformasjonsbegrep.png
+            docs/images/KlassenInformasjonskrav.png image/png nb images/KlassenInformasjonskrav.png
+            docs/images/KlassenKatalog.png image/png nb images/KlassenKatalog.png
+            docs/images/KlassenKontaktpunkt.png image/png nb images/KlassenKontaktpunkt.png
+            docs/images/KlassenKrav.png image/png nb images/KlassenKrav.png
+            docs/images/KlassenKriterium.png image/png nb images/KlassenKriterium.png
+            docs/images/KlassenLivshendelse.png image/png nb images/KlassenLivshendelse.png
+            docs/images/KlassenOffentligOrganisasjon.png image/png nb images/KlassenOffentligOrganisasjon.png
+            docs/images/KlassenOffentligTjeneste.png image/png nb images/KlassenOffentligTjeneste.png
+            docs/images/KlassenOrganisasjon.png image/png nb images/KlassenOrganisasjon.png
+            docs/images/KlassenReferanserammeverk.png image/png nb images/KlassenReferanserammeverk.png
+            docs/images/KlassenRegel.png image/png nb images/KlassenRegel.png
+            docs/images/KlassenRegulativRessurs.png image/png nb images/KlassenRegulativRessurs.png
+            docs/images/KlassenTidsenhet.png image/png nb images/KlassenTidsenhet.png
+            docs/images/KlassenTidspunkt.png image/png nb images/KlassenTidspunkt.png
+            docs/images/KlassenTidspunktbeskrivelse.png image/png nb images/KlassenTidspunktbeskrivelse.png
+            docs/images/KlassenTidsrom.png image/png nb images/KlassenTidsrom.png
+            docs/images/KlassenTjeneste.png image/png nb images/KlassenTjeneste.png
+            docs/images/KlassenTjenestekanal.png image/png nb images/KlassenTjenestekanal.png
+            docs/images/KlassenTjenestekonsesjonskontrakt.png image/png nb images/KlassenTjenestekonsesjonskontrakt.png
+            docs/images/KlassenTjenesteresultat.png image/png nb images/KlassenTjenesteresultat.png
+            docs/images/KlassenUnderstøttendeOpplysning.png image/png nb images/KlassenUnderstøttendeOpplysning.png
+            docs/images/KlassenVirksomhetshendelse.png image/png nb images/KlassenVirksomhetshendelse.png
+            docs/images/KlassenÅpningstid.png image/png nb images/KlassenÅpningstid.png
+            
