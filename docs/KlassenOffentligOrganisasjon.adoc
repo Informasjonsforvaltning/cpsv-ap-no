@@ -112,31 +112,6 @@ Eksempel i RDF Turtle:
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" ; .
 -----
 
-==== Offentlig organisasjon – navn (dct:title) [[OffentligOrganisasjon-navn]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _name_
-| URI | dct:title
-| Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn på organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
-
-_This property represents the name of the public organisation. This property should be repeated when the name is in parallel languages._
-| Multiplisitet / _Multiplicity_ | 1..n
-| Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Både navn (denne egenskapen) og <<OffentligOrganisasjon-foretrukketNavn>> er obligatorisk (dette for å ha samsvar mellom våre nasjonale spesifikasjoner og EU-standarder på området). Det anbefales at egenskapen <<OffentligOrganisasjon-foretrukketNavn>> primært brukes. Når det ikke finnes flere navn enn det foretrukne navnet, skal disse to egenskapene ha samme verdi.
-
-_Both name (this property) and the property <<OffentligOrganisasjon-foretrukketNavn>> are mandatory. The property <<OffentligOrganisasjon-foretrukketNavn>> should be used primarily. When there are no more names than the preferred name, these two properties shall have the same value._
-| Eksempel | Brønnøy kommune
-|===
-
-Eksempel i RDF Turtle:
------
-<BrønnøyKommune> a cv:PublicOrganisation ;
-   skos:prefLabel "Brønnøy kommune"@nb ; # foretrukket navn
-   dct:title "Brønnøy kommune"@nb . # navn
------
-
 === Anbefalte egenskaper for klassen _Offentlig organisasjon_ [[OffentligOrganisasjon-anbefalte-egenskaper]]
 
 ==== Offentlig organisasjon – type (dct:type) [[OffentligOrganisasjon-type]]

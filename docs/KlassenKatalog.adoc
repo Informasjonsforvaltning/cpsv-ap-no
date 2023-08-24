@@ -74,7 +74,7 @@ __If you are developing applications, see https://data.norge.no/guide/veileder-b
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Katalog – inneholder tjeneste (dcatno:containsService) [[Katalog-inneholderTjeneste]]
+==== Katalog – inneholder tjeneste (dcatno:containsService) [[Katalog-inneholder-tjeneste]]
 
 [cols="30s,70d"]
 |===
@@ -257,7 +257,7 @@ _This property refers to the homepage of the catalog._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Katalog – inneholder hendelse (dcatno:containsEvent) [[Katalog-inneholderHendelse]]
+==== Katalog – inneholder hendelse (dcatno:containsEvent) [[Katalog-inneholder-hendelse]]
 
 [cols="30s,70d"]
 |===

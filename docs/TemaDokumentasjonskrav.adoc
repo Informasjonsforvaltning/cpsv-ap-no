@@ -11,21 +11,21 @@ image::images/FigurEksempelDokumentasjonskrav.png[alt="RDF-graf med ni RDF-noder
 
 <<img-FigurEksempelDokumentasjonskrav>> forklares som følger (numrene refererer til de samme numrene i figuren):
 
-.  Tjenesten «prøvingsattest» har «vilkår for å inngå ekteskap» som krav
-. «Vilkår for å inngå ekteskap» har et mer spesifikt informasjonskrav «alderskrav»
-. «Alderskrav» refererer til informasjonsbegrepet «alder»
-. «Alderskrav» har også en mer spesifikk begrensning «ikke under 18 år»
-. Begrensningen «ikke under 18 år» begrenser informasjonsbegrepet «alder»
+.  Tjenesten «Prøvingsattest» har «Vilkår for å inngå ekteskap» som krav
+. «Vilkår for å inngå ekteskap» har et mer spesifikt informasjonskrav «Alderskrav»
+. «Alderskrav» refererer til informasjonsbegrepet «Alder»
+. «Alderskrav» har også en mer spesifikk begrensning «Ikke under 18 år»
+. Begrensningen «Ikke under 18 år» begrenser informasjonsbegrepet «Alder»
 . «Alderskrav» bruker en liste over lovlige dokumentasjonstyper
-. På dokumentasjonstypelisten finner man «pass»
-. Tjenesten «prøvingsattest» bruker i dette konkrete eksemplet brukerens «pass» som dokumentasjon
+. På dokumentasjonstypelisten finner man «Pass»
+. Tjenesten «Prøvingsattest» bruker i dette konkrete eksemplet brukerens «Pass» som dokumentasjon
 . «Pass» er i samsvar med det som er spesifisert som lovlig dokumentasjonstype
-. «Pass» understøtter informasjonsbegrep «alder» (fordi pass inneholder fødselsdato)
-. «Pass» understøtter informasjonskrav «alderskrav» (fordi pass inneholder fødselsdato)
+. «Pass» understøtter informasjonsbegrep «Alder» (fordi pass inneholder fødselsdato)
+. «Pass» understøtter informasjonskrav «Alderskrav» (fordi pass inneholder fødselsdato)
 . Fødselsdatoen i dette konkrete eksemplet er `2002-01-30` og gir understøttende opplysning `20` (som alder) når tjenesten brukes mellom 2022-01-30 og 2023-01-29
-. `20` er verdien for informasjonsbegrepet «alder», som altså er over 18, og «alderskrav» er dermed oppfylt.
+. `20` er verdien for informasjonsbegrepet «Alder», som altså er over 18, og «Alderskrav» er dermed oppfylt.
 
-Som illustrert i <<img-FigurEksempelDokumentasjonskrav2>>, er det også mulig å knytte kravene illustrert i eksemplet ovenfor, til aktuell lovgivning: «vilkår for å inngå ekteskap» er utledet fra kapittel 1 i ekteskapsloven, og «alderskrav» og begrensningen «ikke under 18 år» er utledet fra §1a i ekteskapsloven.
+Som illustrert i <<img-FigurEksempelDokumentasjonskrav2>>, er det også mulig å knytte kravene illustrert i eksemplet ovenfor, til aktuell lovgivning: «Vilkår for å inngå ekteskap» er utledet fra kapittel 1 i ekteskapsloven, og «Alderskrav» og begrensningen «Ikke under 18 år» er utledet fra §1a i ekteskapsloven.
 
 [[img-FigurEksempelDokumentasjonskrav2]]
 .Eksempel på å knytte dokumentasjonskrav til lovgivning.
@@ -67,7 +67,7 @@ Eksemplet i RDF Turtle:
    .
 
 <typeListePass> a cv:EvidenceTypeList ;
-   skos:prefLabel "pass"@nb ;
+   skos:prefLabel "Pass"@nb ;
    cv:specifiesEvidenceType <typePass> ; #spesifiserer
    .
 
@@ -80,7 +80,7 @@ Eksemplet i RDF Turtle:
    .
 
 <eksempelPass> a cv:Evidence ;
-   dct:title "pass fra brukeren som dokumentasjon"@nb ; # navn
+   dct:title "Pass fra brukeren som dokumentasjon"@nb ; # navn
    dct:conformsTo <pass> ; # i samsvar med
    cv:supportsConcept <alder> ; # understøtter informasjonsbegrep
    cv:supportsRequirement <alderskrav> ; # understøtter krav

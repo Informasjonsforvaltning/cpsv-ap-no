@@ -162,26 +162,23 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _locator designator_
 | URI | locn:locatorDesignator
-| Verdiområde / _Range_ | rdf:langString
+| Verdiområde / _Range_ | rdfs:Literal
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi et nummer eller en sekvens av tegn som
 unikt identifiserer lokasjonen i den aktuelle konteksten, f.eks. hus-/oppgangsnummer, ev. også etasjenummer, leilighetsnummer, romnummer eller lignende.
 
 _This property represents a number or sequence of characters that uniquely identifies the locator within the relevant scope._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad 1 / _Note 1_ | Maks. én per språk.
+| Merknad 1 / _Note 1_ | Norsk utvidelse: multiplisitet endret fra 0..n til 0..1.
 
-_Max. one per language._
-| Merknad 2 / _Note 2_ | Norsk utvidelse: Range er endret fra `rdfs:Literal` til `rdf:langString`, fordi egenskapen kan inneholde språksensitive verdier (f.eks. "etasje"@nb vs. "floor"@en).
-
-_Norwegian extension: Range changed from `rdfs:Literal` to `rdf:langString`, because this property may contain language sensitive values (e.g., "etasje"@nb vs. "floor"@en)._
-| Eksempel | «7. etasje, 1C» er husnummer m.m., i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»), i konteksten «Lørenfaret» (se <<Adresse-gate-vei-område-navn>>).
+_Norwegian extension: multiplicity changed from 0..n to 0..1._
+| Eksempel | «1C» er husnummer m.m., i den fullstendige besøksadressen til Digdir i Oslo («7. etasje, Lørenfaret 1C, 0580 Oslo, Norge»), i konteksten «Lørenfaret» (se <<Adresse-gate-vei-område-navn>>).
 |===
 
 Eksempel i RDF Turtle:
 -----
 <digdirOslo-besøksadresse> a locn:Address ;
-   locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
+   locn:locatorDesignator "1C" ;
    locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
    .
 -----
@@ -192,26 +189,23 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _post office box_
 | URI | locn:poBox
-| Verdiområde / _Range_ |  rdf:langString
+| Verdiområde / _Range_ | rdfs:Literal
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi en stedsbetegnelse for et
 postleveringssted på et postkontor, vanligvis et nummer.
 
 _This property represents a location designator for a postal delivery point at a post office, usually a number._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad 1 / _Note 1_ | Maks. én per språk.
+| Merknad 1 / _Note 1_ | Norsk utvidelse: multiplisitet endret fra 0..n til 0..1.
 
-_Max. one per language._
-| Merknad 2 / _Note 2_ | Norsk utvidelse: Range endret fra `rdfs:Literal` til `rdf:langString`, for å kunne ha postboksanleggsnavnet i ulike språkvarianter (f.eks. å erstatte norske bokstaver æ, ø, å med a, o, a).
-
-_Norwegian extension: Range changed from `rdfs:Literal` to `rdf:langString`, in order to specify the p.o.box facility name in different languages (e.g., to replace the Norwegian letters æ, ø, å with a, o, a)._
+_Norwegian extension: multiplicity changed from 0..n to 0..1._
 | Eksempel | Postboksadressen til Digdir i Oslo: «Postboks 1382 Vika, 0114 Oslo, Norge»
 |===
 
 Eksempel i RDF Turtle:
 -----
 <digdirOslo-postboksadresse> a locn:Address ;
-   locn:poBox "1382 Vika"@nb , "1382 Vika"@en ;
+   locn:poBox "1382 Vika" ;
    locn:postCode "0114" ;
    locn:postName "Oslo"@nb , "Oslo"@en ;
    .
@@ -225,7 +219,7 @@ Eksempel i RDF Turtle:
 | _English name_ | _post code_
 | URI | locn:postCode
 | Verdiområde / _Range_ |  rdfs:Literal
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å kunne oppgi kode som er opprettet og vedlikeholdt for postformål.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å kunne oppgi kode som er opprettet og vedlikeholdt for postformål, til å identifisere et poststed.
 
 _This property represents the code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points._
 | Multiplisitet / _Multiplicity_ | 0..1
