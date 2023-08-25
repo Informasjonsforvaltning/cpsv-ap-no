@@ -131,12 +131,12 @@ Eksempel i RDF Turtle:
    .
 -----
 
-====  Adresse – gate-/vei-/områdenavn (locn:throughfare) [[Adresse-gate-vei-område-navn]]
+====  Adresse – gate-/vei-/områdenavn (locn:thoroughfare) [[Adresse-gate-vei-område-navn]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _throughfare_
-| URI | locn:throughfare
+| _English name_ | _thoroughfare_
+| URI | locn:thoroughfare
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi navnet på en passasje eller en veistrekning fra ett sted til et annet, f.eks. en gate, en vei, eller et område.
 
@@ -152,7 +152,7 @@ _Max. one per language._
 Eksempel i RDF Turtle:
 -----
 <digdirOslo-besøksadresse> a locn:Address ;
-   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:thoroughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
    .
 -----
 
@@ -179,7 +179,7 @@ Eksempel i RDF Turtle:
 -----
 <digdirOslo-besøksadresse> a locn:Address ;
    locn:locatorDesignator "1C" ;
-   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:thoroughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
    .
 -----
 
@@ -234,7 +234,7 @@ Eksempel i RDF Turtle:
 -----
 <digdirOslo-besøksadresse> a locn:Address ;
    locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
-   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:thoroughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
    locn:postCode "0580" ;
    .
 -----
@@ -261,7 +261,7 @@ Eksempel i RDF Turtle:
 -----
 <digdirOslo-besøksadresse> a locn:Address ;
    locn:locatorDesignator "7. etasje, 1C"@nb, "7th floor, 1C"@en ;
-   locn:throughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
+   locn:thoroughfare "Lørenfaret"@nb , "Lorenfaret"@en ;
    locn:postCode "0580" ;
    locn:postName "Oslo"@nb , "Oslo"@en ;
    .
