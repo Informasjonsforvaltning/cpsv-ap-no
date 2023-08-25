@@ -66,7 +66,7 @@
          :hasMin0MaxNShape-locnAddressArea, # adresseringsområde, locn:addressArea
          :hasMin0MaxNShape-locnLocatorName, # adressetilleggsnavn, locn:locatorName
          :hasMin0MaxNShape-locnFullAddress, # fullstendig adresse, locn:fullAddress
-         :hasMin0MaxNShape-locnThroughfare, # gate-/vei-/områdenavn, locn:throughfare
+         :hasMin0MaxNShape-locnThoroughfare, # gate-/vei-/områdenavn, locn:thoroughfare
          :hasMin0MaxNShape-locnLocatorDesignator, # husnummer m.m., locn:locatorDesignator
          :hasMin0MaxNShape-locnPoBox, # postboks, locn:poBox
          :hasMin0Max1Shape-locnPostCode, # postnummer, locn:postCode
@@ -84,7 +84,7 @@
       [sh:property [ sh:path locn:addressArea; sh:minCount 1]]
       [sh:property [ sh:path locn:locatorName; sh:minCount 1]]
       [sh:property [ sh:path locn:fullAddress; sh:minCount 1]]
-      [sh:property [ sh:path locn:throughfare; sh:minCount 1]]
+      [sh:property [ sh:path locn:thoroughfare; sh:minCount 1]]
       [sh:property [ sh:path locn:locatorDesignator; sh:minCount 1]]
       [sh:property [ sh:path locn:poBox; sh:minCount 1]]
       [sh:property [ sh:path locn:postCode; sh:minCount 1]]
@@ -1876,12 +1876,12 @@ sh:targetClass org:Organization .
      "Egenskapen locn:fullAddress skal være av type rdf:langString"@nb;
    sh:severity sh:Violation .
 
-:hasMin0MaxNShape-locnThroughfare a sh:PropertyShape;
-   sh:name "throughfare"@en , "gate-/vei-/områdenavn"@nb ; 
-   sh:path locn:throughfare;
+:hasMin0MaxNShape-locnThoroughfare a sh:PropertyShape;
+   sh:name "thoroughfare"@en , "gate-/vei-/områdenavn"@nb ; 
+   sh:path locn:thoroughfare;
    sh:datatype rdf:langString;
-   sh:message "The property locn:throughfare MUST be of datatype rdf:langString"@en,
-     "Egenskapen locn:throughfare skal være av type rdf:langString"@nb;
+   sh:message "The property locn:thoroughfare MUST be of datatype rdf:langString"@en,
+     "Egenskapen locn:thoroughfare skal være av type rdf:langString"@nb;
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-locnPoBox a sh:PropertyShape;
