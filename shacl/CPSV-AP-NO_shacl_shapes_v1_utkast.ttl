@@ -14,7 +14,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
@@ -28,7 +27,7 @@
 ### About this SHACL:
 <https://github.com/Informasjonsforvaltning/cpsv-ap-no/tree/develop/shacl/>
     dcat:accessURL <https://github.com/Informasjonsforvaltning/vpsv-ap-no/tree/develop/shacl>;
-    dcat:downloadURL <https://github.com/Informasjonsforvaltning/cpsv-ap-no/tree/develop/shacl/CPSV-AP-NO-shacl_shapes_v1_utkast.ttl> ;
+    dcat:downloadURL <https://github.com/Informasjonsforvaltning/cpsv-ap-no/tree/develop/shacl> ;
     dcatap:availability <http://data.europa.eu/r5r/draft> ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dct:conformsTo <https://www.w3.org/TR/shacl> ;
@@ -44,13 +43,13 @@
         foaf:page <https://www.digdir.no>
         ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
-    cc:attributionURL <http://ec.europa.eu/> ;
-    dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
+    cc:attributionURL <https://github.com/SEMICeu/CPSV-AP> ;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
-    dct:modified "2023-08-18"^^xsd:date ;
+    dct:modified "2023-08-25"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "0.005" ;
+    owl:versionInfo "0.006" ;
     adms:versionNotes "For CPSV-AP-NO v.1.x."@en ;
     .
 
@@ -61,7 +60,6 @@
    rdfs:label "Address"@en, "Adresse"@nb;
    sh:property
       # optional properties:
-#         :hasMin0Max1Shape-cvAdminUnit, # administrativ enhet, cv:adminUnit
          :hasMin0MaxNShape-locnAdminUnitL1, # admin enhet nivå 1, cv:adminUnitL1
          :hasMin0MaxNShape-locnAdminUnitL2, # admin enhet nivå 2, cv:adminUnitL2
          :hasMin0Max1Shape-locnAddressId, # adresseId, locn:adressID
@@ -80,7 +78,6 @@
 :AddressShape2 a sh:NodeShape;
    rdfs:label "Address"@en, "Adresse"@nb;
    sh:or (
-#      [sh:property [ sh:path cv:adminUnit; sh:minCount 1]]
       [sh:property [ sh:path locn:adminUnitL1; sh:minCount 1]]
       [sh:property [ sh:path locn:adminUnitL2; sh:minCount 1]]
       [sh:property [ sh:path locn:addressId; sh:minCount 1]]
@@ -106,7 +103,6 @@
       :hasMin1Max1Shape-dctIdentifier , # identifikator (dct:identifier)
       :hasMin1MaxNShape-dctTitle, # navn (dt:title)
     # recommended properties:
-      :hasShapeCV-dctTypeAgentMin0Max1, # type (dct:type), kontrollert vokabular
     # optional properties:
       :hasMin0MaxNShape-locnAddress, # adresse (locn:address)
       :hasMin0MaxNShape-cvParticipates # deltar (cv:participates)
@@ -193,7 +189,7 @@
     ;
   sh:targetClass cv:Evidence .
 
-### Klassen dokumentasjonstype
+### Klassen Dokumentasjonstype
 :EvidenceTypeShape a sh:NodeShape;
    rdfs:label "Evidence type"@en, "Dokumentasjonstype"@nb;
    sh:property
@@ -344,12 +340,12 @@
       # optional properties:
          :hasMin0MaxNShape-cvSpecialOpeningHoursSpecification, # begrenset åpningstid (cv:specialOpeningHoursSpecification)
          :hasMin0MaxNShape-cvEmail, # e-post (cv:email)
-#         :hasMin0MaxNShape-schemaAvailableLanguage, # har språk (schema:availableLanguage)
-         :hasShapeCV-schemaAvailableLanguagMin0MaxN, # har språk (schema:availableLanguage) kontrollert vokabular
+#         :hasMin0MaxNShape-vcardLanguage, # har språk (vcard:language)
+         :hasShapeCV-vcardLanguagMin0MaxN, # har språk (vcard:language) kontrollert vokabular
          :hasMin0MaxNShape-cvContactPage, # kontaktside (cv:contactPage)
          :hasMin0MaxNShape-cvOpeningHours, # ordinær åpningstid (cv:openingHours)
          :hasMin0MaxNShape-cvTelephone, # telefon (cv:telephone)
-         :hasMin0MaxNShape-schemaContactType # type kontaktpunkt (schema:contactType)
+         :hasMin0MaxNShape-vcardCategory # type kontaktpunkt (vcard:category)
       ;
    sh:targetClass cv:ContactPoint .
 
@@ -436,7 +432,7 @@
       :hasMin1MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
       :hasMin1MaxNShape-skosPrefLabel, # foretrukket navn (skos:prefLabel)
       :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
-      :hasMin1MaxNShape-dctTitle, # navn (dct:title)
+#      :hasMin1MaxNShape-dctTitle, # navn (dct:title), finnes ikke lenger fom. CPSV-AP 3.1.1
    # recommended properties:
 #      :hasMin0MaxNShape-dctType, # type (dct:type)
       :hasShapeCV-dctTypeAgentMin0Max1, # type (dct:type), kontrollert vokabular
@@ -576,7 +572,6 @@ sh:targetClass org:Organization .
     # recommended properties
       :hasMin0Max1Shape-timeHasEnd, # sluttidspunkt (time:hasEnd)
       :hasMin0Max1Shape-timeHasBeginning, # starttidspunkt (time:hasBeginning)
-      :hasMin0Max1Shape-timeHasXsdDuration, # tidsrom (time:hasXSDDuration)
     # optional propertyes
       :hasMin0MaxNShape-dctDescription, # beskrivelse (dct:description)
       :hasMin0MaxNShape-cvFrequency # frekvens (cv:frequency)
@@ -1868,9 +1863,9 @@ sh:targetClass org:Organization .
 :hasMin0MaxNShape-locnLocatorDesignator a sh:PropertyShape;
    sh:name "locator designator"@en , "bruksenhetsnummer"@nb ;
    sh:path locn:locatorDesignator;
-   sh:datatype rdf:langString;
-   sh:message "The property locn:locatorName should be of datatype rdf:langString"@en,
-     "Egenskapen locn:locatorName bør være av datatype rdf:langString"@nb;
+   sh:datatype sh:Literal;
+   sh:message "The property locn:locatorName should be of datatype sh:Literal"@en,
+     "Egenskapen locn:locatorName bør være av datatype sh:Literal"@nb;
    sh:severity sh:Warning .
 
 :hasMin0MaxNShape-locnFullAddress a sh:PropertyShape;
@@ -1892,9 +1887,9 @@ sh:targetClass org:Organization .
 :hasMin0MaxNShape-locnPoBox a sh:PropertyShape;
   sh:name "post box"@en , "postboks"@nb ;
   sh:path locn:poBox;
-  sh:datatype rdf:langString;
-  sh:message "The property locn:poBox should be of datatype rdf:langString"@en,
-    "Egenskapen locn:poBox bør være av datatype rdf:langString"@nb;
+  sh:datatype sh:Literal;
+  sh:message "The property locn:poBox should be of datatype sh:Literal"@en,
+    "Egenskapen locn:poBox bør være av datatype sh:Literal"@nb;
   sh:severity sh:Warning .
 
 :hasMin0Max1Shape-locnPostCode a sh:PropertyShape;
@@ -1924,25 +1919,6 @@ sh:targetClass org:Organization .
   sh:message "The property rdfs:seeAlso MUST be an IRI"@en,
     "Egenskapen rdfs:seeAlso skal være en IRI"@nb;
   sh:severity sh:Violation .
-
-
-#### schema-properties:
-
-:hasMin0MaxNShape-schemaAvailableLanguage a sh:PropertyShape;
-   sh:name "available language"@en, "har språk"@nb;
-   sh:path schema:availableLanguage;
-   sh:class dct:LinguisticSystem;
-   sh:message "The property schema:availableLanguage MUST refer to an instance of dct:LinguisticSystem"@en,
-      "Egenskapen schema:availableLanguage skal referere til en instans av dct:LinguisticSystem"@nb;
-   sh:severity sh:Violation .
-
-:hasMin0MaxNShape-schemaContactType a sh:PropertyShape;
-   sh:name "contact type"@en, "type kontaktpunkt"@nb;
-   sh:path schema:contactType;
-   sh:datatype rdf:langString;
-   sh:message "The property schema:contactType MUST be of datatype rdf:langString"@en,
-      "Egenskapen schema:contactType skal være av datatype rdf:langString"@nb;
-   sh:severity sh:Violation .
 
 
 #### skos-properties:
@@ -2113,6 +2089,14 @@ sh:targetClass org:Organization .
 
 #### vcard-properties:
 
+:hasMin0MaxNShape-vcardCategory a sh:PropertyShape;
+   sh:name "contact type"@en, "type kontaktpunkt"@nb;
+   sh:path vcard:category;
+   sh:datatype rdf:langString;
+   sh:message "The property vcard:category MUST be of datatype rdf:langString"@en,
+      "Egenskapen vcard:category skal være av datatype rdf:langString"@nb;
+   sh:severity sh:Violation .
+
 :hasMin0MaxNShape-vcardHasAddress a sh:PropertyShape;
   sh:name "has address"@en, "har adresse"@nb;
   sh:path vcard:hasAddress;
@@ -2146,6 +2130,14 @@ sh:targetClass org:Organization .
   sh:message "The property vcard:hasURL MUST be an IRI"@en,
     "Egenskapen vcard:hasURL skal være IRI"@nb;
   sh:severity sh:Violation .
+
+:hasMin0MaxNShape-vcardLanguage a sh:PropertyShape;
+   sh:name "language"@en, "språk"@nb;
+   sh:path vcard:language;
+   sh:class dct:LinguisticSystem;
+   sh:message "The property vcard:language MUST refer to an instance of dct:LinguisticSystem"@en,
+      "Egenskapen vcard:language skal referere til en instans av dct:LinguisticSystem"@nb;
+   sh:severity sh:Violation .
 
 #### xkos-properties:
 
@@ -2350,16 +2342,16 @@ sh:targetClass org:Organization .
    "Egenskapen dct:type bør ha verdi hentet fra https://data.norge.no/vocabulary/service-output-type#"@nb;
   sh:severity sh:Warning .
 
-:hasShapeCV-schemaAvailableLanguagMin0MaxN a sh:PropertyShape;
-   sh:name "has language"@en, "har språk"@nb;
-   sh:path schema:availableLanguage;
+:hasShapeCV-vcardLanguagMin0MaxN a sh:PropertyShape;
+   sh:name "language"@en, "språk"@nb;
+   sh:path vcard:language;
    sh:nodeKind sh:IRI;
    sh:or (
       [sh:pattern "^http://publications.europa.eu/resource/authority/language/"]
       [sh:pattern "^https://publications.europa.eu/resource/authority/language/"]
       );
-   sh:message "The property schema:availableLanguage MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
-      "Egenskapen schema:availableLanguage skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
+   sh:message "The property vcard:language MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
+      "Egenskapen vcard:language skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
    sh:severity sh:Warning .
 
 ############################################
