@@ -258,15 +258,8 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents documentation that contains information related to the Evidence, for instance a particular template for an administrative document, an application or a guide on formatting the Input._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Eksempel | Krav om vandel er forklart i https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#§1-7b[alkoholloven §1-7b  &#x29C9;, window="_blank", role="ext-link"].
 |===
 
-Eksempel i RDF Turtle:
------
-<kravOmVandel> a cv:Evidence ;
-   dct:title "Krav om vandel"@nb ;
-   foaf:page <https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#§1-7b> ; .
------
 
 ==== Dokumentasjon – type (dct:type) [[Dokumentasjon-type]]
 

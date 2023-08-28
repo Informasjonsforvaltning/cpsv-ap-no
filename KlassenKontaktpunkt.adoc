@@ -48,12 +48,12 @@ _This property represents an electronic address through which the Contact Point 
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-==== Kontaktpunkt – har språk (schema:availableLanguage) [[Kontaktpunkt-har-språk]]
+==== Kontaktpunkt – har språk (vcard:language) [[Kontaktpunkt-har-språk]]
 
 [cols="30s,70d"]
 |===
 | _English name_ | _has language_
-| URI |  schema:availableLanguage
+| URI |  vcard:language
 | Verdiområde / _Range_ |  dct:LinguisticSystem
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi språk som kontaktpunktet bruker.
 
@@ -114,12 +114,12 @@ _This property represents a telephone number through which the Contact Point can
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-==== Kontaktpunkt – type kontaktpunkt (schema:contactType) [[Kontaktpunkt-type-kontaktpunkt]]
+==== Kontaktpunkt – type kontaktpunkt (vcard:category) [[Kontaktpunkt-type-kontaktpunkt]]
 
 [cols="30s,70d"]
 |===
 | _English name_ | _contact type_
-| URI |  schema:contactType
+| URI |  vcard:category
 | Verdiområde / _Range_ |  rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å beskrive kontaktpunktet. Egenskapen bør gjentas når beskrivelsen er på flere språk.
 
