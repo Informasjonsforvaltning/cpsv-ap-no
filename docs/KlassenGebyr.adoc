@@ -53,6 +53,9 @@ __If you are developing applications, see https://data.norge.no/guide/veileder-b
 _This property represents a numeric value indicating the amount of the Cost._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+
+_Norwegian extension: Requirement level changed from optional to recommended._
 | Eksempel | Se under <<OffentligTjeneste-har-gebyr>>.
 |===
 
@@ -70,6 +73,9 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 _This property represents a free text description of the Cost. This property should be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+
+_Norwegian extension: Requirement level changed from optional to recommended._
 | Eksempel | Se under <<OffentligTjeneste-har-gebyr>>.
 |===
 
@@ -87,9 +93,12 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 _This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency[Valuta &#x29C9;, window="_blank", role="ext-link"].
+| Merknad 1 / _Note 1_ | Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency[Valuta &#x29C9;, window="_blank", role="ext-link"].
 
 __The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency[Currency &#x29C9;, window="_blank", role="ext-link"].__
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+
+_Norwegian extension: Requirement level changed from optional to recommended._
 | Eksempel | Se under <<OffentligTjeneste-har-gebyr>>.
 |===
 

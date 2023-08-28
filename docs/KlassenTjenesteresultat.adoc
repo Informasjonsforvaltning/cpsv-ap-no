@@ -57,13 +57,13 @@ __If you are developing applications, see https://data.norge.no/guide/veileder-b
 _This property represents the official Name of the Output. This property should be repeated when the name is in several parallel languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Eksempel | «Skjenkebevilling til «Den beste restauranten AS»»
+| Eksempel | «Skjenkebevilling»
 |===
 
 Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , dcat:Dataset ;
-   dct:title "Skjenkebevilling for servering av alkoholholdig drikk i gruppe 3"@nb ; .
+   dct:title "Skjenkebevilling"@nb ; .
 -----
 
 === Anbefalte egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-anbefalte-egenskaper]]
@@ -88,7 +88,7 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 Eksempel i RDF Turtle:
 -----
 <bevilling1001> a cv:Output , dcat:Dataset ;
-   dct:description "Skjenkebevilling til «Den beste restauranten AS», for servering av alkoholholdig drikk i gruppe 3"@nb ; .
+   dct:description "Skjenkebevilling for servering av drikke som inneholder fra med 22 og maks 60 volumprosent alkohol"@nb ; .
 -----
 
 ==== Tjenesteresultat – språk (dct:language) [[Tjenesteresultat-språk]]
