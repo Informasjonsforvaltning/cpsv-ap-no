@@ -9,7 +9,7 @@ Som illustrert i <<img-FigurTjenesteOgDeltagelse>> brukes egenskapen <<Tjeneste-
 
 For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <<Deltagelse>>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <<Tjeneste-har-deltagelse>> (eller egenskapen <<OffentligTjeneste-har-deltagelse>>). En Aktør (inkl. Organisasjon og Offentlig organisasjon) kan delta i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <<Aktør-deltar-i>> (eller <<Organisasjon-deltar-i>>, <<OffentligOrganisasjon-deltar-i>>).
 
-Den obligatoriske egenskapen <<Deltagelse-rolle>> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonsbevis er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). 
+Den obligatoriske egenskapen <<Deltagelse-rolle>> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonskrav er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). 
 
 Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Skjenkebevilling».
 
