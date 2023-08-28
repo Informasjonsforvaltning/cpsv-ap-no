@@ -37,7 +37,7 @@ _This property contains the identifier for the Agent._
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
-==== Aktør – navn (dt:title) [[Aktør-navn]]
+==== Aktør – navn (dct:title) [[Aktør-navn]]
 
 [cols="30s,70d"]
 |===
