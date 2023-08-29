@@ -27,6 +27,30 @@ Eksempel i RDF Turtle:
 
 === Obligatoriske egenskaper for klassen _Organisasjon_ [[Organisasjon-obligatoriske-egenskaper]]
 
+==== Organisasjon – foretrukket navn (skos:prefLabel) [[Organisasjon-foretrukketNavn]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _preferred name_
+| URI | skos:prefLabel
+| Verdiområdet / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
+
+_This property represents a preferred label is used to provide the primary, legally recognised name of the Organization, as defined in the ORG Ontology. This property should be repeated when the name is in several languages._
+| Multiplisitet / _Multiplicity_ |  0..n
+| Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
+| Merknad / _Note_ |  Norsk utvidelse: ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: not explicitly specified in CPSV-AP._
+| Eksempel | Det foretrukne navnet til vår exOrg er «Den beste restauranten AS» (bokmål)
+|===
+
+Eksempel i RDF Turtle:
+-----
+<exOrg> a org:Organization ;
+   skos:prefLabel "Den beste restauranten AS"@nb ; .
+-----
+
 ==== Organisasjon – identifikator (dct:identifier) [[Organisasjon-identifikator]]
 
 [cols="30s,70d"]
@@ -54,27 +78,6 @@ Eksempel I RDF Turtle:
 <exOrg> a org:Organization ;
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/1656923949276"^^xsd:anyURI ;  .
 -----
-
-==== Organisasjon – navn (dct:title) [[Organisasjon-navn]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _name_
-| URI | dct:title
-| Verdiområdet / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet på organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
-
-_This property contains the name of the organization. This property should be repeated for different versions of the name (e.g. the name in different languages)._
-| Multiplisitet / _Multiplicity_ | 1..n
-| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Eksempel | Navnet til vår exOrg er «Den beste restauranten AS» (bokmål)
-|===
-
-Eksempel i RDF Turtle:
-----
-<exOrg> a org:Organization ;
-   dct:title "Den beste restauranten AS"@nb ; .
-----
 
 === Anbefalte egenskaper for klassen _Organisasjon_ [[Organisasjon-anbefalte-egenskaper]]
 
@@ -108,30 +111,6 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 Eksempel i RDF Turtle: se under <<OffentligOrganisasjon-dekningsområde>>.
-
-==== Organisasjon – foretrukket navn (skos:prefLabel) [[Organisasjon-foretrukketNavn]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _preferred name_
-| URI | skos:prefLabel
-| Verdiområdet / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.
-
-_This property represents a preferred label is used to provide the primary, legally recognised name of the Organization, as defined in the ORG Ontology. This property should be repeated when the name is in several languages._
-| Multiplisitet / _Multiplicity_ |  0..n
-| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
-| Merknad / _Note_ |  Norsk utvidelse: ikke eksplisitt spesifisert i CPSV-AP.
-
-_Norwegian extension: not explicitly specified in CPSV-AP._
-| Eksempel | Det foretrukne navnet til vår exOrg er «Den beste restauranten AS» (bokmål)
-|===
-
-Eksempel i RDF Turtle:
------
-<exOrg> a org:Organization ;
-   skos:prefLabel "Den beste restauranten AS"@nb ; .
------
 
 ==== Organisasjon – type (dct:type) [[Organisasjon-type]]
 
