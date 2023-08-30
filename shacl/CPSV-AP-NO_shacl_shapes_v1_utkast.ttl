@@ -492,11 +492,10 @@ sh:targetClass cv:PublicOrganisation .
    rdfs:label "Organization"@en, "Organisasjon"@nb;
    sh:property
    # mandatory properties:
+      :hasMin1MaxNShape-skosPrefLabel, # foretrukket navn (skos:prefLabel)
       :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
-      :hasMin1MaxNShape-dctTitle, # navn (dct:title)
    # recommended properties:
       :hasMin0MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
-      :hasMin0MaxNShape-skosPrefLabel, # foretrukket navn (skos:prefLabel)
 #      :hasMin0MaxNShape-dctType, # type (dct:type)
       :hasShapeCV-dctTypeAgentMin0Max1, # type (dct:type), kontrollert vokabular
    # optional properties:
