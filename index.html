@@ -1019,14 +1019,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#Organisasjon-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Organisasjon</em></a>
 <ul class="sectlevel3">
+<li><a href="#Organisasjon-foretrukketNavn">Organisasjon – foretrukket navn (skos:prefLabel)</a></li>
 <li><a href="#Organisasjon-identifikator">Organisasjon – identifikator (dct:identifier)</a></li>
-<li><a href="#Organisasjon-navn">Organisasjon – navn (dct:title)</a></li>
 </ul>
 </li>
 <li><a href="#Organisasjon-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Organisasjon</em></a>
 <ul class="sectlevel3">
 <li><a href="#Organisasjon-dekningsområde">Organisasjon – dekningsområde (dct:spatial)</a></li>
-<li><a href="#Organisasjon-foretrukketNavn">Organisasjon – foretrukket navn (skos:prefLabel)</a></li>
 <li><a href="#Organisasjon-type">Organisasjon – type (dct:type)</a></li>
 </ul>
 </li>
@@ -1345,7 +1344,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><strong>Status</strong>: <mark>under ferdigstilling</mark><br>
 <strong>Versjon</strong>: <mark>utkast til v.1.0</mark><br>
 <strong>Publisert</strong>: 2022-11-01<br>
-<strong>Oppdatert</strong>: 2023-08-28<br>
+<strong>Oppdatert</strong>: 2023-08-29<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/cpsv-ap-no" class="bare">https://data.norge.no/specification/cpsv-ap-no</a><br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
@@ -12194,6 +12193,60 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="sect2">
 <h3 id="Organisasjon-obligatoriske-egenskaper"><a class="anchor" href="#Organisasjon-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Organisasjon</em></h3>
 <div class="sect3">
+<h4 id="Organisasjon-foretrukketNavn"><a class="anchor" href="#Organisasjon-foretrukketNavn"></a>Organisasjon – foretrukket navn (skos:prefLabel)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>preferred name</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:prefLabel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområdet / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.</p>
+<p class="tableblock"><em>This property represents a preferred label is used to provide the primary, legally recognised name of the Organization, as defined in the ORG Ontology. This property should be repeated when the name is in several languages.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det foretrukne navnet til vår exOrg er «Den beste restauranten AS» (bokmål)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;exOrg&gt; a org:Organization ;
+   skos:prefLabel "Den beste restauranten AS"@nb ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="Organisasjon-identifikator"><a class="anchor" href="#Organisasjon-identifikator"></a>Organisasjon – identifikator (dct:identifier)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -12246,55 +12299,6 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <pre>&lt;exOrg&gt; a org:Organization ;
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/1656923949276"^^xsd:anyURI ;  .</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Organisasjon-navn"><a class="anchor" href="#Organisasjon-navn"></a>Organisasjon – navn (dct:title)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>name</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområdet / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet på organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.</p>
-<p class="tableblock"><em>This property contains the name of the organization. This property should be repeated for different versions of the name (e.g. the name in different languages).</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Navnet til vår exOrg er «Den beste restauranten AS» (bokmål)</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;exOrg&gt; a org:Organization ;
-   dct:title "Den beste restauranten AS"@nb ; .</pre>
 </div>
 </div>
 </div>
@@ -12376,60 +12380,6 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </table>
 <div class="paragraph">
 <p>Eksempel i RDF Turtle: se under <a href="#OffentligOrganisasjon-dekningsområde">Offentlig organisasjon – dekningsområde (dct:spatial)</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Organisasjon-foretrukketNavn"><a class="anchor" href="#Organisasjon-foretrukketNavn"></a>Organisasjon – foretrukket navn (skos:prefLabel)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>preferred name</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:prefLabel</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområdet / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi det foretrukne navnet til organisasjonen. Egenskapen bør gjentas når navnet finnes på flere språk.</p>
-<p class="tableblock"><em>This property represents a preferred label is used to provide the primary, legally recognised name of the Organization, as defined in the ORG Ontology. This property should be repeated when the name is in several languages.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: ikke eksplisitt spesifisert i CPSV-AP.</p>
-<p class="tableblock"><em>Norwegian extension: not explicitly specified in CPSV-AP.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Det foretrukne navnet til vår exOrg er «Den beste restauranten AS» (bokmål)</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;exOrg&gt; a org:Organization ;
-   skos:prefLabel "Den beste restauranten AS"@nb ; .</pre>
-</div>
 </div>
 </div>
 <div class="sect3">
@@ -18113,7 +18063,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-08-28 09:14:19 UTC
+Sist oppdatert 2023-08-30 06:55:10 UTC
 </div>
 </div>
 </body>
