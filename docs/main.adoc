@@ -25,7 +25,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Status*: #under ferdigstilling# +
 *Versjon*: #utkast til v.1.0# +
 *Publisert*: 2022-11-01 +
-*Oppdatert*: 2023-09-06 +
+*Oppdatert*: 2023-09-07 +
 *Gjeldende versjon*: https://data.norge.no/specification/cpsv-ap-no +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
