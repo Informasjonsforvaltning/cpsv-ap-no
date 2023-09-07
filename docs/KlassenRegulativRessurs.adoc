@@ -27,7 +27,7 @@ Eksempel i RDF Turtle: Se under <<KnytteTilRegelverk>>.
 | _English name_ | _description_
 | URI | dct:description
 | Verdiområde / _Range_ |  rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tekstlig beskrivelse av ressursen. Egenskapen bør gjentas når den finnes på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en tekstlig beskrivelse av ressursen. Egenskapen bør gjentas når den finnes på flere språk.
 
 _This property contains descriptive textual information about the Legal Resource. This property should be repeated in case there are various versions of the text in different languages._
 | Multiplisitet / _Multiplicity_ | 0..n
