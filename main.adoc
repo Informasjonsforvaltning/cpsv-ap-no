@@ -22,17 +22,17 @@ NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
-*Status*: #under ferdigstilling# +
-*Versjon*: #utkast til v.1.0# +
-*Publisert*: 2022-11-01 +
-*Oppdatert*: 2023-09-07 +
+*Status*: Gjeldende +
+*Versjon*: 1.0 +
+*Publisert*: 2023-09-08 +
+*Oppdatert*: 2023-09-08 +
 *Gjeldende versjon*: https://data.norge.no/specification/cpsv-ap-no +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
 *Veileder*: <ingen> +
-// *Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v09xx.ttl[shacl-fil] som "Regelsett lenke", [yellow-background]#shacl-filen er under utvikling#)
+*Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v1.ttl[shacl-fil] som "Regelsett lenke")
 
-include::Om_denne_versjonen.adoc[]
+// include::Om_denne_versjonen.adoc[]
 
 toc::[]
 
@@ -111,7 +111,7 @@ include::KlassenUnderstøttendeOpplysning.adoc[]
 
 include::KlassenVirksomhetshendelse.adoc[]
 
-include::Endringslogg.adoc[]
+// include::Endringslogg.adoc[]
 
 
 include::shared/stats.adoc[]
