@@ -48,10 +48,10 @@
       foaf:page &lt;https://www.digdir.no&gt;
       ];
    dct:license &lt;https://creativecommons.org/licenses/by/4.0&gt; ;
-   dct:modified &quot;2022-11-02&quot;^^xsd:date ;
-   owl:versionInfo &quot;v.0.6&quot; ;
+   dct:modified &quot;2023-09-08&quot;^^xsd:date ;
+   owl:versionInfo &quot;v.1.0&quot; ;
    adms:versionNotes &quot;Klasser og egenskaper som er definert andre steder og som ikke har endret bruk i CPSV-AP-NO, er ikke spesifisert her.&quot;@nb ,
-      &quot;The classes and properties which are defined elsewhere and for which CPSV-AP-NO has not modified usage, are not specified here.&quot;@en
+      &quot;The classes and properties which are defined elsewhere and of which CPSV-AP-NO has not modified the usage, are not specified here.&quot;@en
    .
 
 #################################################################
@@ -71,7 +71,7 @@ cpsvno:Service a owl:Class ;
 cpsv:PublicService a owl:Class ;
    rdfs:subClassOf cpsvno:Service ; # This is a Norweigan extension made in CPSV-AP-NO
    skos:prefLabel &quot;Public Service&quot;@en , &quot;Offentlig tjeneste&quot;@nb ;
-   skos:scopeNote &quot;Klassen brukes til å representere en offentlig tjeneste.&quot;@en ,
+   skos:scopeNote &quot;The class represents a Public Service.&quot;@en ,
       &quot;Klassen brukes til å beskrive en tjeneste.&quot;@nb ;
       rdfs:seeAlso &lt;https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0&gt; ;
    .
@@ -85,14 +85,14 @@ cpsvno:dataService a owl:ObjectProperty ;
    skos:scopeNote &quot;This property refers to the description of a data service which the channel uses.&quot;@en ,
       &quot;Egenskapen brukes til å referere til en beskrivelse av en datatjeneste som kanalen benytter.&quot;@nb ;
    rdfs:domain cv:Channel ;
-   rdfs:range dcat:DataServic ;
+   rdfs:range dcat:DataService ;
    .
 
 cpsvno:mayTrigger a owl:ObjectProperty ;
    rdfs:subPropertyOf cv:hasRelatedService ;
    skos:prefLabel &quot;may trigger&quot;@en , &quot;kan sette i gang&quot;@nb ;
    skos:scopeNote &quot;This property links an event directly to a service that the event may trigger.&quot;@en ,
-      &quot;Egenskapen brukes til å referere til tjenester som kan settes i gang av den aktuelle hendelsen.&quot;@nb ;
+      &quot;Egenskapen brukes til å referere til en tjeneste som kan settes i gang av den aktuelle hendelsen.&quot;@nb ;
    rdfs:domain cv:Event ;
    rdfs:range cpsvno:Service ;
    .
@@ -101,7 +101,7 @@ cpsvno:mayTriggerNeedFor a owl:ObjectProperty ;
    rdfs:subPropertyOf cpsvno:mayTrigger ;
    skos:prefLabel &quot;may trigger need for&quot;@en , &quot;kan utløse behov for&quot;@nb ;
    skos:scopeNote &quot;This property links an event directly to a service that the event may trigger need for.&quot;@en ,
-      &quot;Egenskapen brukes til å referere til tjenester som den aktuelle hendelsen kan utløse behov for.&quot;@nb ;
+      &quot;Egenskapen brukes til å referere til en tjeneste som den aktuelle hendelsen kan utløse behov for.&quot;@nb ;
    rdfs:domain cv:LifeEvent , cv:BusinessEvent ;
    rdfs:range cpsvno:Service ;
    .
