@@ -3,7 +3,7 @@ name: upload ontology files to data.norge.no/vocabulary
 on:
   push:
     branches:
-      - main
+      - v1
     paths:
       - ontology/**
 
