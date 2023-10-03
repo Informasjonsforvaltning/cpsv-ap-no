@@ -324,7 +324,7 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| _English name_ | _type_
+| _English name_ | _functions of government_
 | URI | dct:type
 | Verdiområde / _Range_ | skos:Concept
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å indikere type tjeneste i henhold til et kontrollert vokabular.
