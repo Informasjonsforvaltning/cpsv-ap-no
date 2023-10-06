@@ -121,7 +121,7 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere type regel. Egenskapen skal bruke et kontrollert vokabular.
 
 _This property refers to the type of a Rule. It must use a controlled vocabulary._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/rule-type[Regeltype &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
 
