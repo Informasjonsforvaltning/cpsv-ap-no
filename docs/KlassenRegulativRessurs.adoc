@@ -134,7 +134,7 @@ Eksempel i RDF: Se under <<KnytteTilRegelverk>>.
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til typen av en regulativ ressurs (f.eks. direktiv, forordning).
 
 _This property refers to the type of a legal resource (e.g. "Directive", "Règlement grand ducal", "law", "Règlement ministériel", "draft proposition", "Parliamentary act", etc.). Member states are encouraged to make their own list of values in the corresponding concept scheme._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ |  Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/legal-resource-type[Regulativ ressurs type &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
 
