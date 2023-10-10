@@ -14,6 +14,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> . 
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
@@ -47,10 +48,10 @@
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
-    dct:modified "2023-09-08"^^xsd:date ;
+    dct:modified "2023-10-10"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "1.000" ;
-    adms:versionNotes "For CPSV-AP-NO v.1.x."@en ;
+    owl:versionInfo "1.001" ;
+    adms:versionNotes "Updated hasMin0MaxNShape-timeDayOfWeek"@en ;
     .
 
 ### --- Class shapes:
@@ -1966,7 +1967,17 @@ sh:targetClass org:Organization .
 :hasMin0MaxNShape-timeDayOfWeek a sh:PropertyShape;
    sh:name "day of week"@en, "dag i uken"@nb;
    sh:path time:dayOfWeek;
-   sh:class time:DayOfWeek;
+#   sh:class time:DayOfWeek;
+   sh:or [
+    [sh:hasValue time:Monday]
+    [sh:hasValue time:Tuesday]
+    [sh:hasValue time:Wednesday]
+    [sh:hasValue time:Thursday]
+    [sh:hasValue time:Friday]
+    [sh:hasValue time:Saturday]
+    [sh:hasValue time:Sunday]
+    [sh:hasValue schema:PublicHolidays]
+   ] ;
    sh:maxCount 1;
    sh:message "The property time:dayOfWeek may have max. 1 value which MUST refer to an instance of time:DayOfWeek"@en,
       "Egenskapen time:dayOfWeek kan ha maks. 1 verdi som skal referere til en instans av time:DayOfWeek"@nb;
