@@ -88,12 +88,15 @@ Eksempel i RDF Turtle, den femtende i en måned:
 _This property is used to specify day of week in the Gregorian calender-clock system, whose value is a member of the class time:DayOfWeek._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad 1 / _Note 1_ | Verdien skal være en av følgende: `time:Monday`, `time:Tuesday`, `time:Wednesday`, `time:Thursday`, `time:Friday`, `time:Saturday`, `time:Sunday`.
+| Merknad 1 / _Note 1_ | Verdien skal være en av følgende: `time:Monday`, `time:Tuesday`, `time:Wednesday`, `time:Thursday`, `time:Friday`, `time:Saturday`, `time:Sunday`, `schema:PublicHolidays`.
 
-_The value shall be one of the following: `time:Monday`, `time:Tuesday`, `time:Wednesday`, `time:Thursday`, `time:Friday`, `time:Saturday`, `time:Sunday`._
+_The value shall be one of the following: `time:Monday`, `time:Tuesday`, `time:Wednesday`, `time:Thursday`, `time:Friday`, `time:Saturday`, `time:Sunday`, `schema:PublicHolidays`._
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
+| Merknad 3 / _Note 3_ | Norsk utvidelse: Klassen time:DayOfWeek er utvidet med schema:PublicHolidays, for å gjøre det lettere å spesifisere (begrenset) åpningstid for offentlige helligdager. 
+
+_Norwegian extension: The class time:DayOfWeek is extended with schema:PublicHolidays, in order to make it easier to specify availability (restrictions) for public holidays._
 | Eksempel | mandag
 |===
 

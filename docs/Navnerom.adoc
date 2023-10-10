@@ -20,6 +20,7 @@ Navnerom for dette vokabularet er: `\https://data.norge.no/vocabulary/cpsvno#`
 |org | `\http://www.w3.org/ns/org#` | https://www.w3.org/TR/vocab-org/[The Organization Ontology &#x29C9;, window="_blank", role="ext-link"]
 |rdf | `\http://www.w3.org/1999/02/22-rdf-syntax-ns#` | https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax &#x29C9;, window="_blank", role="ext-link"]
 |rdfs | `\http://www.w3.org/2000/01/rdf-schema#` | https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1 &#x29C9;, window="_blank", role="ext-link"]
+| schema | `\https://schema.org/` | https://schema.org/[schema.org]
 |skos | `\http://www.w3.org/2004/02/skos/core#` | https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System &#x29C9;, window="_blank", role="ext-link"]
 |time | `\http://www.w3.org/2006/time#` | https://www.w3.org/TR/owl-time/[Time Ontology in OWL &#x29C9;, window="_blank", role="ext-link"]
 |vcard | `\http://www.w3.org/2006/vcard/ns#` | https://www.w3.org/TR/vcard-rdf/[vCard Ontology – for describing People and Organizations &#x29C9;, window="_blank", role="ext-link"]
@@ -44,6 +45,7 @@ Eksempel på prefiksene ovenfor uttrykt i RDF Turtle:
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> . 
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
