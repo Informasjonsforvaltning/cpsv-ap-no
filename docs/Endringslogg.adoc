@@ -1,5 +1,9 @@
 == Endringslogg [[Endringslogg]]
 
+=== Fra v.1.0.3 til v.1.0.x
+
+Kun redaksjonelle oppdateringer, for å rette opp skrivefeil, uoverensstemmelser mellom tekst og tegning, upresise formuleringer og lignende. 
+
 === Fra v.1.0.2 til v.1.0.3
 
 Klassen time:DayOfWeek er utvidet med schema:PublicHolidays, slik at det blir lettere å bruke egenskapen time:dayOfWeek til å spesifisere (begrenset) åpningstid for offentlige helligdager. 
