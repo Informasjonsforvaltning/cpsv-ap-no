@@ -187,8 +187,8 @@ locn:fullAddress "Dummygata 1, Dummyby, Dummyland"@nb ; ];
        """Teksten blir vist på nynorsk."""@nn,
        """Dummy service and event catalog"""@en;
    dcatno:containsService <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exTjenesteDummy.ttl>;
-   dct:publisher <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;;
-   dct:creator <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;;
+   dct:publisher <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;
+   dct:creator <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;
    .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exGebyr.ttl>
@@ -235,7 +235,7 @@ locn:fullAddress "Dummygata 1, Dummyby, Dummyland"@nb ; ];
    dcatno:containsEvent <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exHendelse.ttl>,
        <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exVirksomhetshendelse.ttl>,
        <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exLivshendelse.ttl>;
-   dct:creator <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;;
+   dct:creator <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exAktorDummy.ttl>;
    dct:rights [ rdf:type dct:RightsStatement ;
 odrl:attributionText "Digitaliseringsdirektoratet_nb"@nb, "Digitaliseringsdirektoratet_nn"@nn, "Norwegian Digitalisation Agency"@en;
 odrl:attributionURL <https://digdir.no/> ; ];
@@ -369,7 +369,7 @@ odrl:attributionURL <https://digdir.no/> ; ];
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
    cv:holdsRequirement <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKrav.ttl>;
-   dct:audience <https://example.org/målgruppe/virksomhet>,
+   dct:audience <https://example.org/målgruppe/virksomhet>;
    cv:hasInputType <>; # Har dokumentasjonstype
    .
 
