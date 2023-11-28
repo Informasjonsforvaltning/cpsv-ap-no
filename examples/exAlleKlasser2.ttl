@@ -175,7 +175,8 @@ locn:fullAddress "Dummygata 1, Dummyby, Dummyland"@nb ; ];
    cv:isProvidedBy <>; # Distributør
    cv:supportsConcept <>; # Understøtter informasjonsbegrep
    cv:supportsValue <>; # Gir understøttende opplysning
-   cv:validityPeriod <>; # Gyldighetsperiode .
+   cv:validityPeriod <>; # Gyldighetsperiode
+.
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKatalogDummy.ttl>
    rdf:type dcat:Catalog;
