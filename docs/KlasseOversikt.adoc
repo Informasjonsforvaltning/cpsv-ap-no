@@ -1,6 +1,14 @@
 == Oversikt over klasser i spesifikasjonen [[OversiktOverKlassene]]
 
-Før ev. uoverensstemmelse mellom oversikten her og klassebeskrivelsene som følger er rettet opp, gjelder kravnivåene som er satt i klassebeskrivelsene.
+#@@@@@@ NB! Kapittelet inkl. tegningen er under oppdatering#
+
+[[img-KlasseOversikt]]
+.Klassene i CPSV-AP-NO.
+[link=images/CPSV-AP-NO-klasser.png]
+image::images/CPSV-AP-NO-klasser.png[alt="UML-diagram med klassene som er i CPSV-AP-NO og noen av relasjoner mellom dem. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+
+<<img-KlasseOversikt>> viser en visuell oversikt over klassene i CPSV-AP-NO og relasjoner mellom dem. Tegningen er ikke ment som en formell representasjon av spesifikasjonen. Før eventuell uoverensstemmelse mellom figuren og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige beskrivelser og diagrammer i resten av spesifikasjonen.
+
 
 Følgende klasser er obligatoriske:
 
@@ -45,7 +53,7 @@ Følgende klasser er valgfrie:
 * <<UnderstøttendeOpplysning>>
 * <<Virksomhetshendelse>>
 
-Følgende klasser som også er vist i den forenklede modellen ovenfor eller i diagrammene som følger, er ikke spesifisert i spesifikasjonen:
+Følgende klasser som også er vist i tegningen ovenfor eller i diagrammene som følger, er ikke spesifisert i spesifikasjonen:
 
 * Datatjeneste (`dcat:DataService`) og Distribusjon (`dcat:Distribution`): Se https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] for spesifikasjon av disse klassene.
 * Begrep (`skos:Concept`): Se https://data.norge.no/specification/skos-ap-no-begrep/[SKOS-AP-NO-begrep &#x29C9;, window="_blank", role="ext-link"] for krav til beskrivelser av begrep.
