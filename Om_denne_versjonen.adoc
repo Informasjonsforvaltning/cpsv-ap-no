@@ -1,5 +1,5 @@
 == Om denne versjonen [[Om_denne_versjonen]]
 
-Dette er et #utkast# til v.1.0 av CPSV-AP-NO. Utkastet har vært ute til uformell kommentering (frist 28. okt. 2022). Innspillene fra/etter kommenteringsrunden er (løpende) innarbeidet i denne versjonen.
+WARNING: Dette er et #utkast# til v.1.1 av CPSV-AP-NO, hovedsakelig for å tilpasse CPSV-AP-NO til https://semiceu.github.io/CPSV-AP/releases/3.2.0/[EUs v.3.2 av CPSV-AP &#x29C9;, window="_blank", role="ext-link"]. 
 
-Spesifikasjonen CPSV-AP-NO er basert på EUs CPSV-AP. EUs CPSV-AP v.3.1.1 er nylig ferdigstilt. Vi holder på å ferdigstille versjon 1.0 av vår CPSV-AP-NO, tilpasset v.3.1.1 av EUs CPSV-AP.
+

@@ -520,6 +520,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
+<li><a href="#Om_denne_versjonen">Om denne versjonen</a></li>
 <li><a href="#OmSpesifikasjonen">Om spesifikasjonen</a>
 <ul class="sectlevel2">
 <li><a href="#Formål">Formål</a></li>
@@ -660,6 +661,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Dokumentasjon-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Dokumentasjon</em></a>
 <ul class="sectlevel3">
+<li><a href="#Dokumentasjon-er-del-av">Dokumentasjon – er del av (dct:isPartOf)</a></li>
 <li><a href="#Dokumentasjon-distributør">Dokumentasjon –  distributør (cv:isProvidedBy)</a></li>
 <li><a href="#Dokumentasjon-gir-understøttende-opplysning">Dokumentasjon – gir understøttende opplysning (cv:supportsValue)</a></li>
 <li><a href="#Dokumentasjon-gjelder">Dokumentasjon – gjelder (dct:subject)</a></li>
@@ -1265,6 +1267,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Tjenesteresultat-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tjenesteresultat</em></a>
 <ul class="sectlevel3">
+<li><a href="#Tjenesteresultat-er-del-av">Tjenesteresultat – er del av (dct:isPartOf)</a></li>
 <li><a href="#Tjenesteresultat-kanSkape">Tjenesteresultat – kan skape (xkos:causes)</a></li>
 <li><a href="#Tjenesteresultat-type">Tjenesteresultat – type (dct:type)</a></li>
 </ul>
@@ -1311,6 +1314,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Endringslogg">Endringslogg</a>
 <ul class="sectlevel2">
+<li><a href="#_fra_v_1_0_x_til_v_1_1">Fra v.1.0.x til v.1.1</a></li>
 <li><a href="#_fra_v_1_0_3_til_v_1_0_x">Fra v.1.0.3 til v.1.0.x</a></li>
 <li><a href="#_fra_v_1_0_2_til_v_1_0_3">Fra v.1.0.2 til v.1.0.3</a></li>
 <li><a href="#_fra_v_1_0_til_v_1_0_2">Fra v.1.0 til v.1.0.2</a></li>
@@ -1353,15 +1357,33 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 1.0.5 (se <a href="#Endringslogg"><em>Endringslogg</em></a>)<br>
-<strong>Publisert</strong>: 2023-09-08 (v.1.0)<br>
-<strong>Oppdatert</strong>: 2024-08-16<br>
+<p><strong>Lisens</strong>: <a href="https://creativecommons.org/licenses/by/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY 4.0 &#x29C9;</a><br>
+<strong>Status</strong>: <mark>under utarbeidelse</mark><br>
+<strong>Versjon</strong>: <mark>utkast til v.1.1</mark> (se <a href="#Endringslogg"><em>Endringslogg</em></a>)<br>
+<strong>Publisert</strong>: <mark>v.1.1 ikke ennå</mark>; 2023-09-08 (v.1.0)<br>
+<strong>Oppdatert</strong>: <mark>løpende oppdatert</mark><br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/cpsv-ap-no" class="bare">https://data.norge.no/specification/cpsv-ap-no</a><br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
 <strong>Veileder</strong>: &lt;ingen&gt;<br>
 <strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (ved å oppgi URLen til denne <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v1.ttl">shacl-fil</a> som "Regelsett lenke")</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Om_denne_versjonen"><a class="link" href="#Om_denne_versjonen">Om denne versjonen</a></h2>
+<div class="sectionbody">
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Advarsel"></i>
+</td>
+<td class="content">
+Dette er et <mark>utkast</mark> til v.1.1 av CPSV-AP-NO, hovedsakelig for å tilpasse CPSV-AP-NO til <a href="https://semiceu.github.io/CPSV-AP/releases/3.2.0/" class="ext-link" target="_blank" rel="noopener">EUs v.3.2 av CPSV-AP &#x29C9;</a>.
+</td>
+</tr>
+</table>
 </div>
 <!-- toc disabled -->
 </div>
@@ -1384,7 +1406,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Spesifikasjonen er anbefalt brukt til å beskrive tjenester og hendelser samt å utveksle/tilgjengeliggjøre beskrivelsene. I konteksten av denne spesifikasjonen, er en hendelse en endring hos en aktør som kan utløse behov for en eller flere tjenester, dvs. ikke en hvilken som helst hendelse.</p>
 </div>
 <div class="paragraph">
-<p>Spesifikasjonen er basert EUs <a href="https://semiceu.github.io/CPSV-AP/releases/3.1.1/" class="ext-link" target="_blank" rel="noopener">CPSV-AP v.3.1.1 &#x29C9;</a> (<em>Core Public Service Vocabulary Application Profile</em>), supplert med EUs <a href="https://semiceu.github.io/CCCEV/releases/2.00/" class="ext-link" target="_blank" rel="noopener">CCCEV v.2.0.0 &#x29C9;</a> (<em>Core Criterion and Core Evidence Vocabulary</em>). I tillegg til beskrivelser av offentlige tjenester som CPSV-AP dekker, dekker spesifikasjonen også behovet for å beskrive tjenester som ikke er offentlige tjenester, men som f.eks. er involvert i sammenhengende tjenester fra det offentlige.</p>
+<p>Spesifikasjonen er basert EUs <a href="https://semiceu.github.io/CPSV-AP/releases/3.2.0/" class="ext-link" target="_blank" rel="noopener">CPSV-AP v.3.2 &#x29C9;</a> (<em>Core Public Service Vocabulary Application Profile</em>), supplert med EUs <a href="https://semiceu.github.io/CCCEV/releases/2.1.0/" class="ext-link" target="_blank" rel="noopener">CCCEV v.2.1 &#x29C9;</a> (<em>Core Criterion and Core Evidence Vocabulary</em>). I tillegg til beskrivelser av offentlige tjenester som CPSV-AP dekker, dekker spesifikasjonen også behovet for å beskrive tjenester som ikke er offentlige tjenester, men som f.eks. er involvert i sammenhengende tjenester fra det offentlige.</p>
 </div>
 <div class="paragraph">
 <p>Spesifikasjonen inneholder også engelske navn (<em>English name</em>) og beskrivelser (<em>Usage note</em>). Det gjøres oppmerksom på at ikke alle engelske navn eller beskrivelser er ordrette sitater fra EUs originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).</p>
@@ -1927,13 +1949,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="title">Figur 9. Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat.</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i <a href="#img-TjenesteOgData">Figur 9</a>, kan et Tjenesteresultat (<code>cv:Output</code>) produsert av en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cpsv:PublicService</code>)) være et Datasett (<code>dcat:Dataset</code>), f.eks. selve  «bevilling» som et resultat fra tjenesten «Skjenkebevilling» kan deles som et datasett.</p>
+<p>Som illustrert i <a href="#img-TjenesteOgData">Figur 9</a>, kan et Tjenesteresultat (<code>cv:Output</code>) produsert av en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cpsv:PublicService</code>)) være en del av et Datasett (<code>dcat:Dataset</code>), f.eks. selve «bevilling» som et resultat fra tjenesten «Skjenkebevilling» kan inngå i datasettet over alle skjenkebevillinger som den aktuelle kommunen har utstedt over en gitt tidsperiode.</p>
 </div>
 <div class="paragraph">
-<p>Figuren illustrerer også at et dokumentasjonskrav (<code>cv:Evidence</code>) er et datasett (<code>dcat:Dataset</code>), f.eks. «Vandelsattest».</p>
+<p>Figuren illustrerer også at et dokumentasjonskrav (<code>cv:Evidence</code>) kan være en del av et datasett (<code>dcat:Dataset</code>), f.eks. den aktuelle «Vandelsattest» kan inngå i datasettet over alle vandelsattester som Politiet har utstedt over en gitt tidsperiode.</p>
 </div>
 <div class="paragraph">
-<p>Se <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#sammenheng" class="ext-link" target="_blank" rel="noopener">Sammenheng mellom datasett, distribusjon, datatjeneste, begrep og informasjonsmodell i Veileder for beskrivelse av datasett osv. &#x29C9;</a>, for hvordan datasett (som f.eks. «Skjenkebevillingen» og «Vandelsattest») kan videre knyttes til distribusjon, datatjeneste (også kalt API), begrep og informasjonsmodell.</p>
+<p>Se <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/#Datasett" class="ext-link" target="_blank" rel="noopener">spesifikasjon til klassen Datasett (dcat:Dataset) i DCAT-AP-NO &#x29C9;</a>, for hvordan et datasett kan knyttes videre til API, begrep og informasjonsmodell.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2016,7 +2038,16 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <h2 id="OversiktOverKlassene"><a class="link" href="#OversiktOverKlassene">Oversikt over klasser i spesifikasjonen</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Før ev. uoverensstemmelse mellom oversikten her og klassebeskrivelsene som følger er rettet opp, gjelder kravnivåene som er satt i klassebeskrivelsene.</p>
+<p><mark>@@@@@@ NB! Kapittelet inkl. tegningen er under oppdatering</mark></p>
+</div>
+<div id="img-KlasseOversikt" class="imageblock">
+<div class="content">
+<a class="image" href="images/CPSV-AP-NO-klasser.png"><img src="images/CPSV-AP-NO-klasser.png" alt="UML-diagram med klassene som er i CPSV-AP-NO og noen av relasjoner mellom dem. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
+</div>
+<div class="title">Figur 13. Klassene i CPSV-AP-NO.</div>
+</div>
+<div class="paragraph">
+<p><a href="#img-KlasseOversikt">Figur 13</a> viser en visuell oversikt over klassene i CPSV-AP-NO og relasjoner mellom dem. Tegningen er ikke ment som en formell representasjon av spesifikasjonen. Før eventuell uoverensstemmelse mellom figuren og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige beskrivelser og diagrammer i resten av spesifikasjonen.</p>
 </div>
 <div class="paragraph">
 <p>Følgende klasser er obligatoriske:</p>
@@ -2142,7 +2173,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </ul>
 </div>
 <div class="paragraph">
-<p>Følgende klasser som også er vist i den forenklede modellen ovenfor eller i diagrammene som følger, er ikke spesifisert i spesifikasjonen:</p>
+<p>Følgende klasser som også er vist i tegningen ovenfor eller i diagrammene som følger, er ikke spesifisert i spesifikasjonen:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2166,7 +2197,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="content">
 <a class="image" href="images/KlassenAdresse.png"><img src="images/KlassenAdresse.png" alt="UML-diagram med klassen Adresse, dens egenskaper og dens relasjon til en annen klasse. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 13. Klassen Adresse (locn:Address).</div>
+<div class="title">Figur 14. Klassen Adresse (locn:Address).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2754,7 +2785,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenAktør.png"><img src="images/KlassenAktør.png" alt="UML-diagram med klassen Aktør, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 14. Klassen Aktør (foaf:Agent) og klassene den refererer til.</div>
+<div class="title">Figur 15. Klassen Aktør (foaf:Agent) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2950,7 +2981,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenBegrensning.png"><img src="images/KlassenBegrensning.png" alt="UML-diagram med klassen Begrensning, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 15. Klassen Begrensning (cv:Constraint) og klassene den refererer til.</div>
+<div class="title">Figur 16. Klassen Begrensning (cv:Constraint) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3564,7 +3595,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenDatasett.png"><img src="images/KlassenDatasett.png" alt="UML-diagram med klassen Datasett, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 16. Klassen Datasett (dcat:Dataset) og klassene den refererer til.</div>
+<div class="title">Figur 17. Klassen Datasett (dcat:Dataset) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3899,7 +3930,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenDeltagelse.png"><img src="images/KlassenDeltagelse.png" alt="UML-diagram med klassen Deltagelse og dens egenskaper. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 17. Klassen Deltagelse (cv:Participation) og klassen den refererer til.</div>
+<div class="title">Figur 18. Klassen Deltagelse (cv:Participation) og klassen den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4110,7 +4141,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenDokumentasjon.png"><img src="images/KlassenDokumentasjon.png" alt="UML-diagram med klassen Dokumentasjon, dens egenskaper og dens relasjoner til seks andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 18. Klassen Dokumentasjon (cv:Evidence) og klassene den refererer til.</div>
+<div class="title">Figur 19. Klassen Dokumentasjon (cv:Evidence) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4371,6 +4402,42 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div class="sect2">
 <h3 id="Dokumentasjon-valgfrie-egenskaper"><a class="link" href="#Dokumentasjon-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Dokumentasjon</em></a></h3>
+<div class="sect3">
+<h4 id="Dokumentasjon-er-del-av"><a class="link" href="#Dokumentasjon-er-del-av">Dokumentasjon – er del av (dct:isPartOf)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>is part of</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isPartOf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et datasett som den aktuelle dokumentasjonen fysisk eller logisk er inkludert i.</p>
+<p class="tableblock"><em>This property is used to refer to a dataset in which the described evidence is physically or logically included.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="sect3">
 <h4 id="Dokumentasjon-distributør"><a class="link" href="#Dokumentasjon-distributør">Dokumentasjon –  distributør (cv:isProvidedBy)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -4875,7 +4942,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenDokumentasjonstype.png"><img src="images/KlassenDokumentasjonstype.png" alt="UML-diagram med klassen Dokumentasjonstype, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 19. Klassen Dokumentasjonstype (cv:EvidenceType) og klassen den refererer til.</div>
+<div class="title">Figur 20. Klassen Dokumentasjonstype (cv:EvidenceType) og klassen den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5134,7 +5201,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenDokumentasjonstypeliste.png"><img src="images/KlassenDokumentasjonstypeliste.png" alt="UML-diagram med klassen Dokumentasjonstypeliste, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 20. Klassen Dokumentasjonstypeliste (cv:EvidenceTypeList) og klassen den refererer til.</div>
+<div class="title">Figur 21. Klassen Dokumentasjonstypeliste (cv:EvidenceTypeList) og klassen den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5361,7 +5428,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenGebyr.png"><img src="images/KlassenGebyr.png" alt="UML-diagram med klassen Gebyr, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 21. Klassen Gebyr (cv:Cost) og klassene den refererer til.</div>
+<div class="title">Figur 22. Klassen Gebyr (cv:Cost) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5674,7 +5741,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenHendelse.png"><img src="images/KlassenHendelse.png" alt="UML-diagram med klassen Hendelse, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 22. Klassen Hendelse (cv:Event) og klassene den refererer til.</div>
+<div class="title">Figur 23. Klassen Hendelse (cv:Event) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6029,7 +6096,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenInformasjonsbegrep.png"><img src="images/KlassenInformasjonsbegrep.png" alt="UML-diagram med klassen Informasjonsbegrep og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 23. Klassen Informasjonsbegrep (cv:InformationConcept).</div>
+<div class="title">Figur 24. Klassen Informasjonsbegrep (cv:InformationConcept).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6296,7 +6363,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenInformasjonskrav.png"><img src="images/KlassenInformasjonskrav.png" alt="UML-diagram med klassen Informasjonskrav, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 24. Klassen Informasjonskrav (cv:InformationRequirement) og klassene den refererer til.</div>
+<div class="title">Figur 25. Klassen Informasjonskrav (cv:InformationRequirement) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6886,7 +6953,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenKatalog.png"><img src="images/KlassenKatalog.png" alt="UML-diagram med klassen Katalog, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 25. Klassen Katalog (dcat:Catalog) og klassene den refererer til.</div>
+<div class="title">Figur 26. Klassen Katalog (dcat:Catalog) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7929,7 +7996,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenKontaktpunkt.png"><img src="images/KlassenKontaktpunkt.png" alt="UML-diagram med klassen Kontaktpunkt, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 26. Klassen Kontaktpunkt (cv:ContactPoint) og klassen den refererer til.</div>
+<div class="title">Figur 27. Klassen Kontaktpunkt (cv:ContactPoint) og klassen den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8247,7 +8314,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenKrav.png"><img src="images/KlassenKrav.png" alt="UML-diagram med klassen Krav, dens egenskaper og dens relasjoner til seks andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 27. Klassen Krav (cv:Requirement) og klassene den refererer til.</div>
+<div class="title">Figur 28. Klassen Krav (cv:Requirement) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8819,7 +8886,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenKriterium.png"><img src="images/KlassenKriterium.png" alt="UML-diagram med klassen Kriterium, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 28. Klassen Kriterium (cv:Criterion) og klassene den refererer til.</div>
+<div class="title">Figur 29. Klassen Kriterium (cv:Criterion) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -9595,7 +9662,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenLivshendelse.png"><img src="images/KlassenLivshendelse.png" alt="UML-diagram med klassen Livshendelse, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 29. Klassen Livshendelse (cv:LifeEvent) og klassene den refererer til.</div>
+<div class="title">Figur 30. Klassen Livshendelse (cv:LifeEvent) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -10010,7 +10077,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenOffentligOrganisasjon.png"><img src="images/KlassenOffentligOrganisasjon.png" alt="UML-diagram med klassen Offentlig organisasjon, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 30. Klassen Offentlig organisasjon (cv:PublicOrganisation) og klassene den refererer til.</div>
+<div class="title">Figur 31. Klassen Offentlig organisasjon (cv:PublicOrganisation) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -10468,7 +10535,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenOffentligTjeneste.png"><img src="images/KlassenOffentligTjeneste.png" alt="UML-diagram med klassen Offentlig tjeneste, dens egenskaper og dens relasjoner til 14 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 31. Klassen Offentlig tjeneste (cpsv:PublicService) og klassene den refererer til.</div>
+<div class="title">Figur 32. Klassen Offentlig tjeneste (cpsv:PublicService) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -12150,7 +12217,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenOrganisasjon.png"><img src="images/KlassenOrganisasjon.png" alt="UML-diagram med klassen Organisasjon, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 32. Klassen Organisasjon (org:Organization) og klassene den refererer til.</div>
+<div class="title">Figur 33. Klassen Organisasjon (org:Organization) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -12602,7 +12669,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenReferanserammeverk.png"><img src="images/KlassenReferanserammeverk.png" alt="UML-diagram med klassen Referanserammeverk og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 33. Klassen Referanserammeverk (cv:ReferenceFramework).</div>
+<div class="title">Figur 34. Klassen Referanserammeverk (cv:ReferenceFramework).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -12784,7 +12851,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenRegel.png"><img src="images/KlassenRegel.png" alt="UML-diagram med klassen Regel, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 34. Klassen Regel (cv:Rule) og klassen den refererer til.</div>
+<div class="title">Figur 35. Klassen Regel (cv:Rule) og klassen den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -13083,7 +13150,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenRegulativRessurs.png"><img src="images/KlassenRegulativRessurs.png" alt="UML-diagram med klassen Regulativ ressurs og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 35. Klassen Regulativ ressurs (eli:LegalResource).</div>
+<div class="title">Figur 36. Klassen Regulativ ressurs (eli:LegalResource).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -13452,7 +13519,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenTidsenhet.png"><img src="images/KlassenTidsenhet.png" alt="UML-diagram med klassen Tidsenhet og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 36. Klassen Tidsenhet (time:TemporalEntity) og klassen den refererer til.</div>
+<div class="title">Figur 37. Klassen Tidsenhet (time:TemporalEntity) og klassen den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -13828,7 +13895,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenTidspunkt.png"><img src="images/KlassenTidspunkt.png" alt="UML-diagram med klassen Tidspunkt og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 37. Klassen Tidspunkt (time:Instant) og klassene den refererer til.</div>
+<div class="title">Figur 38. Klassen Tidspunkt (time:Instant) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -13931,7 +13998,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenTidspunktbeskrivelse.png"><img src="images/KlassenTidspunktbeskrivelse.png" alt="UML-diagram med klassen Tidspunktbeskrivelse og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 38. Klassen Tidspunktbeskrivelse (time:DateTimeDescription).</div>
+<div class="title">Figur 39. Klassen Tidspunktbeskrivelse (time:DateTimeDescription).</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14630,7 +14697,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenTidsrom.png"><img src="images/KlassenTidsrom.png" alt="UML-diagram med klassen Tidsrom og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 39. Klassen Tidsrom (time:ProperInterval) og klassene den refererer til.</div>
+<div class="title">Figur 40. Klassen Tidsrom (time:ProperInterval) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -14811,7 +14878,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenTjeneste.png"><img src="images/KlassenTjeneste.png" alt="UML-diagram med klassen Tjeneste, dens egenskaper og dens relasjoner til 13 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 40. Klassen Tjeneste (cpsvno:Service) og klassene den refererer til.</div>
+<div class="title">Figur 41. Klassen Tjeneste (cpsvno:Service) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -16281,7 +16348,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenTjenestekanal.png"><img src="images/KlassenTjenestekanal.png" alt="UML-diagram med klassen Tjenestekanal, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 41. Klassen Tjenestekanal (cv:Channel) og klassene den refererer til.</div>
+<div class="title">Figur 42. Klassen Tjenestekanal (cv:Channel) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -16953,7 +17020,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenTjenestekonsesjonskontrakt.png"><img src="images/KlassenTjenestekonsesjonskontrakt.png" alt="UML-diagram med klassen Tjenestekonsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 42. Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContract) og klassene den refererer til.</div>
+<div class="title">Figur 43. Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContract) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17217,7 +17284,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenTjenesteresultat.png"><img src="images/KlassenTjenesteresultat.png" alt="UML-diagram med klassen Tjenesteresultat, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 43. Klassen Tjenesteresultat (cv:Output) og klassen den refererer til.</div>
+<div class="title">Figur 44. Klassen Tjenesteresultat (cv:Output) og klassen den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17243,14 +17310,9 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.</p>
 <p class="tableblock"><em>Norwegian extension: Requirement level changed from optional to recommended.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Som illustrert i <a href="#img-ForenkletModell">Figur 3</a> er Datasett (<code>dcat:Dataset</code>) en subklasse av denne klassen, noe som ikke CPSV-AP eksplisitt sier. Dette fordi et tjenesteresultat ofte kan være datasett.</p>
-<p class="tableblock"><em>Norwegian extension: As illustrated in <a href="#img-ForenkletModell">Figur 3</a>, the class Dataset (<code>dcat:Dataset</code>) is a subclass of this class, which CPSV-AP does not explicitly speficy. This is because an Output may often be dataset.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -17469,6 +17531,42 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="sect2">
 <h3 id="Tjenesteresultat-valgfrie-egenskaper"><a class="link" href="#Tjenesteresultat-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Tjenesteresultat</em></a></h3>
 <div class="sect3">
+<h4 id="Tjenesteresultat-er-del-av"><a class="link" href="#Tjenesteresultat-er-del-av">Tjenesteresultat – er del av (dct:isPartOf)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>is part of</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isPartOf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et datasett som det aktuelle tjenesteresultatet fysisk eller logisk er inkludert i.</p>
+<p class="tableblock"><em>This property is used to refer to a dataset in which the described output is physically or logically included.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
 <h4 id="Tjenesteresultat-kanSkape"><a class="link" href="#Tjenesteresultat-kanSkape">Tjenesteresultat – kan skape (xkos:causes)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17585,7 +17683,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenUnderstøttendeOpplysning.png"><img src="images/KlassenUnderstøttendeOpplysning.png" alt="UML-diagram med klassen Understøttende opplysning, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 44. Klassen Understøttende opplysning (cv:SupportedValue) og klassen den refererer til.</div>
+<div class="title">Figur 45. Klassen Understøttende opplysning (cv:SupportedValue) og klassen den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -17755,7 +17853,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenVirksomhetshendelse.png"><img src="images/KlassenVirksomhetshendelse.png" alt="UML-diagram med klassen Virksomhetshendelse, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 45. Klassen Virksomhetshendelse (cv:BusinessEvent) og klassene den refererer til.</div>
+<div class="title">Figur 46. Klassen Virksomhetshendelse (cv:BusinessEvent) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -18148,6 +18246,29 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <h2 id="Endringslogg"><a class="link" href="#Endringslogg">Endringslogg</a></h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="_fra_v_1_0_x_til_v_1_1"><a class="link" href="#_fra_v_1_0_x_til_v_1_1">Fra v.1.0.x til v.1.1</a></h3>
+<div class="paragraph">
+<p><a href="#Dokumentasjon"><em>Klassen Dokumentasjon (cv:Evidence)</em></a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne knytte en gitt dokumentasjon til et datasett, er det innført en ny egenskap <a href="#Dokumentasjon-er-del-av">Dokumentasjon – er del av (dct:isPartOf)</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="#Tjenesteresultat"><em>Klassen Tjenesteresultat (cv:Output)</em></a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne knytte et gitt tjenesteresultat til et datasett, er det innført en ny egenskap <a href="#Tjenesteresultat-er-del-av">Tjenesteresultat – er del av (dct:isPartOf)</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_fra_v_1_0_3_til_v_1_0_x"><a class="link" href="#_fra_v_1_0_3_til_v_1_0_x">Fra v.1.0.3 til v.1.0.x</a></h3>
 <div class="paragraph">
 <p>Kun redaksjonelle oppdateringer, for å rette opp skrivefeil, uoverensstemmelser mellom tekst og tegning, upresise formuleringer og lignende.</p>
@@ -18181,7 +18302,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-16 09:17:16 UTC
+Sist oppdatert 2024-08-21 10:04:33 UTC
 </div>
 </div>
 </body>

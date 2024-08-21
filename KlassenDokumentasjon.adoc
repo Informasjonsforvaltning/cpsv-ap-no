@@ -126,6 +126,20 @@ Eksempel i RDF Turtle:
 
 === Valgfrie egenskaper for klassen _Dokumentasjon_ [[Dokumentasjon-valgfrie-egenskaper]]
 
+==== Dokumentasjon – er del av (dct:isPartOf) [[Dokumentasjon-er-del-av]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _is part of_
+| URI | dct:isPartOf
+|Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et datasett som den aktuelle dokumentasjonen fysisk eller logisk er inkludert i.
+
+_This property is used to refer to a dataset in which the described evidence is physically or logically included._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
 ==== Dokumentasjon –  distributør (cv:isProvidedBy) [[Dokumentasjon-distributør]]
 
 [cols="30s,70d"]
@@ -179,7 +193,7 @@ _This property represents the Agent that is the subject in the provided Evidence
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
-|=== 
+|===
 
 ==== Dokumentasjon – gyldighetsperiode (cv:validityPeriod) [[Dokumentasjon-gyldighetsperiode]]
 
