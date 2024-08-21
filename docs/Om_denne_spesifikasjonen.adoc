@@ -2,9 +2,21 @@
 
 === Formål [[Formål]]
 
+_#@@@@@@ bør oppdateres, bl.a. også å dekke "execution" (jf. EUs CPSV-AP)#_
 Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive tjenester og hendelser og en felles måte å utveksle beskrivelsene. Spesifikasjonen skal bidra til å sikre interoperabilitet av kataloger/beskrivelser av tjenester og hendelser, på tvers av sektorer. Spesifikasjonen muliggjør også maskinell tilgang til beskrivelser av tjenester og hendelser.
 
 Spesifikasjonen inngår i https://www.digdir.no/3626[Rammeverk for informasjonsforvaltning &#x29C9;, window="_blank", role="ext-link"].
+
+:xrefstyle: short
+
+Spesifikasjonen støtter også metamodell for sammenhengende tjenester illustrert i <<img-HendelseTjenesteData>> som er hentet fra Digitaliseringsbloggen https://www.digdir.no/sammenhengende-tjenester/vi-ma-snakke-det-samme-spraket-i-sammenhengende-tjenester/2614[Vi må snakke det samme språket i sammenhengende tjenester! &#x29C9;, window="_blank", role="ext-link"]. Figuren viser også sammenheng mellom hendelse, tjeneste og data: En hendelse kan utløse behov for en eller flere tjenester. En tjeneste bruker data og kan også  resultere i endringer i data. Endring i data kan føre til en eller flere nye hendelser som igjen kan utløse behov for en eller flere tjenester.
+
+[[img-HendelseTjenesteData]]
+.Sammenheng mellom hendelse, tjeneste og data.
+[link=images/FigurHendelseTjenesteData.png]
+image::images/FigurHendelseTjenesteData.png[alt="Metamodell for sammenhengende tjenester. Forklaring til modellen står i teksten."]
+
+:xrefstyle: full
 
 === Omfang og avgrensing [[Omfang-og-avgrensing]]
 
@@ -28,6 +40,7 @@ Spesifikasjonen har ikke sluttbrukere av tjenester som sin målgruppe, men
 * deg som søker etter og ønsker å gjenbruke / sette sammen tjenester fra andre virksomheter
 * deg som skal utvikle/tilpasse verktøystøtte for ovennevnte beskrivelser og/eller for tilgjengeliggjøring/utveksling av beskrivelsene
 
+<<Forenklet-fremstilling>> er primært ment for den ikke-tekniske målgruppen, <<Spesifikasjon-per-klasse>> for den tekniske målgruppen, <<Spesielle-temaer>> for begge målgrupper og fortrinnsvis sammen. 
 
 === Forvaltningsregime [[Forvaltningsregime]]
 
@@ -39,6 +52,5 @@ Utarbeidelse av nye versjoner av spesifikasjonen initieres av Digdir. Mindre end
 
 Spesifikasjonen bruker ordene «obligatorisk» ("_mandatory_"), «anbefalt» ("_recommended_") og «valgfri» ("_optional_"). Disse er https://data.norge.no/specification/dcat-ap-no/#Om-kravene[forklart i DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], og forklaringene gjentas ikke her.
 
-include::Navnerom.adoc[]
 
-include::Leseveiledning.adoc[]
+// include::Leseveiledning.adoc[]

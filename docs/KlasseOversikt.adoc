@@ -1,13 +1,6 @@
 == Oversikt over klasser i spesifikasjonen [[OversiktOverKlassene]]
 
-#@@@@@@ NB! Kapittelet inkl. tegningen er under oppdatering#
-
-[[img-KlasseOversikt]]
-.Klassene i CPSV-AP-NO.
-[link=images/CPSV-AP-NO-klasser.png]
-image::images/CPSV-AP-NO-klasser.png[alt="UML-diagram med klassene som er i CPSV-AP-NO og noen av relasjoner mellom dem. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
-
-<<img-KlasseOversikt>> viser en visuell oversikt over klassene i CPSV-AP-NO og relasjoner mellom dem. Tegningen er ikke ment som en formell representasjon av spesifikasjonen. Før eventuell uoverensstemmelse mellom figuren og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige beskrivelser og diagrammer i resten av spesifikasjonen.
+#@@@@@@ NB! Kapittelet er under oppdatering#
 
 
 Følgende klasser er obligatoriske:

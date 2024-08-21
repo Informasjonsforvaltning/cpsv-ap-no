@@ -1,6 +1,24 @@
-== Endringslogg [[Endringslogg]]
+== Vedlegg B – Endringslogg [[Endringslogg]]
 
-=== Fra v.1.0.x til v.1.1
+=== Fra v.1.0.x til v.1.1.0
+
+#@@@@@@ NB! Flere endringer er på vei!#
+
+==== Endringer av dokumentstrukturen 
+
+:xrefstyle: short
+
+Spesifikasjonen inneholder nå tre hoveddeler i tillegg til det innledende kapittelet og vedleggene:
+
+* <<Forenklet-fremstilling>>  inneholder en forenklet fremstilling av de viktigste kravene i spesifikasjonen. Denne delen er primært ment for den ikke-tekniske målgruppen. 
+
+* <<Spesifikasjon-per-klasse>>  inneholder tekniske krav til hvordan beskrivelser av tjenester, hendelse osv. skal representeres i RDF. Denne delen er primært ment for den tekniske målgruppen.  
+
+* <<Spesielle-temaer>> inneholder forklaring/veiledning til hvordan CPSV-AP-NO er tenkt brukt i noen spesifikke brukstilfeller. Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen, fortrinnsvis sammen. 
+
+:xrefstyle: full
+
+==== Endringer av klasser og egenskaper 
 
 <<Dokumentasjon>>: 
 
