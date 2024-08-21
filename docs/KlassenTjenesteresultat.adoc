@@ -13,12 +13,9 @@ image::images/KlassenTjenesteresultat.png[alt="UML-diagram med klassen Tjenester
 _Outputs can be any resource – document, artefact – anything produced by the Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something._
 | URI | cv:Output
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.
+| Merknad / _Note_ | Norsk utvidelse: Kravnivå  endret fra valgfri til anbefalt, fordi en tjeneste bør ha et resultat tilknyttet.
 
 _Norwegian extension: Requirement level changed from optional to recommended._
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Som illustrert i <<img-ForenkletModell>> er Datasett (`dcat:Dataset`) en subklasse av denne klassen, noe som ikke CPSV-AP eksplisitt sier. Dette fordi et tjenesteresultat ofte kan være datasett.
-
-_Norwegian extension: As illustrated in <<img-ForenkletModell>>, the class Dataset (`dcat:Dataset`) is a subclass of this class, which CPSV-AP does not explicitly speficy. This is because an Output may often be dataset._
 | Eksempel | Resultater fra tjenesten «Skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).
 |===
 
@@ -121,8 +118,21 @@ Eksempel i RDF Turtle:
 
 === Valgfrie egenskaper for klassen _Tjenesteresultat_ [[Tjenesteresultat-valgfrie-egenskaper]]
 
-[[Tjenesteresultat-kanSkape]]
-==== Tjenesteresultat – kan skape (xkos:causes) 
+==== Tjenesteresultat – er del av (dct:isPartOf) [[Tjenesteresultat-er-del-av]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _is part of_
+| URI | dct:isPartOf
+|Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et datasett som det aktuelle tjenesteresultatet fysisk eller logisk er inkludert i.
+
+_This property is used to refer to a dataset in which the described output is physically or logically included._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
+==== Tjenesteresultat – kan skape (xkos:causes) [[Tjenesteresultat-kanSkape]]
 
 [cols="30s,70d"]
 |===

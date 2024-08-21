@@ -48,10 +48,10 @@
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
-    dct:modified "2023-10-10"^^xsd:date ;
+    dct:modified "2024-08-20"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "1.001" ;
-    adms:versionNotes "Updated hasMin0MaxNShape-timeDayOfWeek"@en ;
+    owl:versionInfo "1.002" ;
+    adms:versionNotes "To align with EUs CPSV-AP v.3.2"@en ;
     .
 
 ### --- Class shapes:
@@ -174,6 +174,7 @@
 #      :hasMin0MaxNShape-dctLanguage, # språk
       :hasShapeCV-dctLanguageMin0MaxN, # språk, kontrollert vokabular, dct:language
     # optional properties:
+      :hasMin0MaxNShape-dctIsPartOfDataset, # er del av, dct:isPartOf       
       :hasMin0Max1Shape-cvIsProvidedBy, # distributør, cv:isProvidedBy
       :hasMin0MaxNShape-cvSupportsValue, # gir understøttende opplysning cv:supportsValue
       :hasMin0Max1Shape-dctSubjectEvidence, # gjelder dct:subject in Evidence
@@ -731,6 +732,7 @@ sh:targetClass org:Organization .
 #      :hasMin0MaxNShape-dctLanguage, # språk (dct:language)
       :hasShapeCV-dctLanguageMin0MaxN, # språk (dct:language), kontrollert vokabular
     # optional properties:
+      :hasMin0MaxNShape-dctIsPartOfDataset, # er del av, dct:isPartOf       
       :hasMin0MaxNShape-xkosCauses, # kan skape (xkos:causes)
 #      :hasMin0MaxNShape-dctType # type (dct:type)
       :hasShapeCV-dctTypeServiceOutputMin0MaxN # type (dct:type), kontrollert vokabular
@@ -1570,6 +1572,14 @@ sh:targetClass org:Organization .
     "Egenskapen dct:isPartOf kan ha maks. 1 verdi som skal referere til en instans av dcat:Catalog"@nb ;
   sh:severity sh:Violation .
 
+:hasMin0MaxNShape-dctIsPartOfDataset a sh:PropertyShape;
+  sh:name "is part of"@en, "er del av"@nb ;
+  sh:path dct:isPartOf;
+  sh:class dcat:Dataset;
+  sh:message "The property dct:isPartOf MUST refer to an instance of dcat:Dataset"@en, 
+    "Egenskapen dct:isPartOf skal referere til en instans av dcat:Dataset"@nb ;
+  sh:severity sh:Violation .
+
 :hasMin0MaxNShape-dctIsPartOfService a sh:PropertyShape;
   sh:name "is part of"@en, "er del av"@nb ;
   sh:path dct:isPartOf;
@@ -1968,7 +1978,7 @@ sh:targetClass org:Organization .
    sh:name "day of week"@en, "dag i uken"@nb;
    sh:path time:dayOfWeek;
 #   sh:class time:DayOfWeek;
-   sh:or [
+   sh:or (
     [sh:hasValue time:Monday]
     [sh:hasValue time:Tuesday]
     [sh:hasValue time:Wednesday]
@@ -1977,7 +1987,7 @@ sh:targetClass org:Organization .
     [sh:hasValue time:Saturday]
     [sh:hasValue time:Sunday]
     [sh:hasValue schema:PublicHolidays]
-   ] ;
+   ) ;
    sh:maxCount 1;
    sh:message "The property time:dayOfWeek may have max. 1 value which MUST refer to an instance of time:DayOfWeek"@en,
       "Egenskapen time:dayOfWeek kan ha maks. 1 verdi som skal referere til en instans av time:DayOfWeek"@nb;
