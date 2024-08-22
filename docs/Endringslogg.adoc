@@ -26,7 +26,7 @@ Spesifikasjonen inneholder nå tre hoveddeler i tillegg til det innledende kapit
 
 <<Tjenesteresultat>>: 
 
-* Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne knytte et gitt tjenesteresultat til et datasett, er det innført en ny egenskap <<Tjenesteresultat-er-del-av>>. 
+* Klassen har ikke lenger Datasett (dcat:Dataset) som sin subklasse. For å kunne knytte et gitt tjenesteresultat til et datasett, er det innført en ny egenskap <<Tjenesteresultat-er-del-av>>. 
 
 === Fra v.1.0.3 til v.1.0.x
 

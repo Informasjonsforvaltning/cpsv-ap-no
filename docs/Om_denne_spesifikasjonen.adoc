@@ -9,7 +9,7 @@ Spesifikasjonen inngår i https://www.digdir.no/3626[Rammeverk for informasjonsf
 
 :xrefstyle: short
 
-Spesifikasjonen støtter også metamodell for sammenhengende tjenester illustrert i <<img-HendelseTjenesteData>> som er hentet fra Digitaliseringsbloggen https://www.digdir.no/sammenhengende-tjenester/vi-ma-snakke-det-samme-spraket-i-sammenhengende-tjenester/2614[Vi må snakke det samme språket i sammenhengende tjenester! &#x29C9;, window="_blank", role="ext-link"]. Figuren viser også sammenheng mellom hendelse, tjeneste og data: En hendelse kan utløse behov for en eller flere tjenester. En tjeneste bruker data og kan også  resultere i endringer i data. Endring i data kan føre til en eller flere nye hendelser som igjen kan utløse behov for en eller flere tjenester.
+Spesifikasjonen støtter også metamodell for sammenhengende tjenester illustrert i <<img-HendelseTjenesteData>> som er hentet fra Digitaliseringsbloggen https://www.digdir.no/sammenhengende-tjenester/vi-ma-snakke-det-samme-spraket-i-sammenhengende-tjenester/2614[Vi må snakke det samme språket i sammenhengende tjenester! &#x29C9;, window="_blank", role="ext-link"]. Figuren viser sammenheng mellom hendelse, tjeneste og data: En hendelse kan utløse behov for en eller flere tjenester. En tjeneste bruker data og kan også  resultere i endringer i data. Endring i data kan føre til en eller flere nye hendelser som igjen kan utløse behov for en eller flere tjenester.
 
 [[img-HendelseTjenesteData]]
 .Sammenheng mellom hendelse, tjeneste og data.
