@@ -12,12 +12,8 @@ image::images/KlassenHendelse.png[alt="UML-diagram med klassen Hendelse, dens eg
 
 __This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a service.__
 | URI | cv:Event
-| Subklasse av / _Subclass of_ | dcat:Dataset
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | Norsk utvidelse: I CPSV-AP er ikke Hendelse (`cv:Event`) en subklasse av Datasett (`dcat:Dataset`). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte beskrivelse av Hendelse som Datasett.
-
-_Norwegian extension: In CPSV-AP the class Event (`cv:Event`) is not a subclass of Dataset (`dcat:Dataset`)._
-| Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
+| Merknad / _Note_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
 
 _Norwegian extension: Requirement level changed from optional to recommended._
 | Eksempel |Se tilsvarende eksempler i <<Livshendelse>> eller <<Virksomhetshendelse>>.
@@ -116,19 +112,19 @@ _This property refers to concept that is important for the understanding of the 
  _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Hendelse – distribusjon (dcat:distribution) [[Hendelse-distribusjon]]
+==== Hendelse – beskrivende datasett (cv:isDescribedAt) [[Hendelse-beskrivendeDatasett]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _distribution_
-| URI | dcat:distribution
-| Verdiområde / _Range_ | dcat:Distribution
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til beskrivelsen av distribusjon av hendelsen.
+| _English name_ | _is described at_
+| URI | cv:isDescribedAt
+| Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til datasett som beskriver hendelsen.
 
-_This property refers to the description of Distribution of the Event._
+_This property links an event to the dataset(s) in which it is being described._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm (som et datasett) som kan abonneres på.
 
  _Norwegian extension: Not explicitly specified in CPSV-AP._
 | Eksempel | Se https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/hendelsesliste/[Skatteetatens Hendelsesliste &#x29C9;, window="_blank", role="ext-link"].

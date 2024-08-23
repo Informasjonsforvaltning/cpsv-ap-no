@@ -149,21 +149,21 @@ _This property refers to concept that is important for the understanding of the 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Livshendelse – distribusjon (dcat:distribution) [[Livshendelse-distribusjon]]
+==== Livshendelse – beskrivende datasett (cv:isDescribedAt) [[Livshendelse-beskrivendeDatasett]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _distribution_
-| URI | dcat:distribution
-| Verdiområde / _Range_ | dcat:Distribution
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til distribusjon av hendelse som f.eks. kan abonneres på.
+| _English name_ | _is described at_
+| URI | cv:isDescribedAt
+| Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til datasett som beskriver livshendelsen.
 
-_This property refers to Distribution of the Event._
+_This property links a life event to the dataset(s) in which it is being described._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm som kan abonneres på.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm (som et datasett) som kan abonneres på.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP._
+ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Livshendelse – type (dct:type) [[Livshendelse-type]]
