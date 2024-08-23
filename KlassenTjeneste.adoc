@@ -190,48 +190,6 @@ _Regarding usage of controlled vocabularies, the following requirements apply:_
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-erDelAv]]
-==== Tjeneste – er del av (dct:isPartOf)
-
-[cols="30s,70d"]
-|===
-| _English name_ | _is part of_ 
-| URI | dct:isPartOf 
-| Verdiområde / _Range_ |cpsvno:Service 
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en annen tjeneste som tjenesten er en del av. 
-
-_This property indicates a related Service in which is included. This property is the inverse of `dct:hasPart`._ 
-| Multiplisitet / _Multiplicity_ | 0..n 
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
-| Merknad 1 / _Note 1_ | Denne er den inverse av egenskapen <<Tjeneste-harDel>>.
-
-_This is the inverse of the property <<Tjeneste-harDel>>._
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-
-_Norwegian extension: Not explicitly specified in CPSV-AP._
-|===
-
-[[Tjeneste-harDel]]
-==== Tjeneste – har del (dct:hasPart)
-
-[cols="30s,70d"]
-|===
-| _English name_ | _has part_ 
-| URI | dct:hasPart 
-| Verdiområde / _Range_ | cpsvno:Service 
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives. 
-
-_This property indicates a related Service that is included either physically or logically in the described resource._  
-| Multiplisitet / _Multiplicity_ | 0..n 
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
-| Merknad 1 / _Note 1_ | Dette er den inverse av egenskapen <<Tjeneste-harDel>>. 
-
-_This is the inverse of the property <<Tjeneste-harDel>>._
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-
-_Norwegian extension: Not explicitly specified in CPSV-AP._
-|===
-
 [[Tjeneste-har-dokumentasjonskrav]]
 ==== Tjeneste – har dokumentasjonskrav (cpsv:hasInput)
 
@@ -358,6 +316,27 @@ _Use the property <<Tjeneste-har-dokumentasjonskrav>> to refer to dataset that t
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
+[[Tjeneste-erDelAv]]
+==== Tjeneste – er del av (dct:isPartOf)
+
+[cols="30s,70d"]
+|===
+| _English name_ | _is part of_ 
+| URI | dct:isPartOf 
+| Verdiområde / _Range_ |cpsvno:Service 
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en annen tjeneste som tjenesten er en del av. 
+
+_This property indicates a related Service in which is included. This property is the inverse of `dct:hasPart`._ 
+| Multiplisitet / _Multiplicity_ | 0..n 
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+| Merknad 1 / _Note 1_ | Denne er den inverse av egenskapen <<Tjeneste-harDel>>.
+
+_This is the inverse of the property <<Tjeneste-harDel>>._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+|===
+
 [[Tjeneste-erGruppertVed]]
 ==== Tjeneste – er gruppert ved (cv:isGroupedBy)
 
@@ -429,6 +408,27 @@ _This property links a Service to the Rule(s) under which it operates._
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |Eksempel |Se også <<KnytteTilRegelverk>>. 
+|===
+
+[[Tjeneste-harDel]]
+==== Tjeneste – har del (dct:hasPart)
+
+[cols="30s,70d"]
+|===
+| _English name_ | _has part_ 
+| URI | dct:hasPart 
+| Verdiområde / _Range_ | cpsvno:Service 
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives. 
+
+_This property indicates a related Service that is included either physically or logically in the described resource._  
+| Multiplisitet / _Multiplicity_ | 0..n 
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+| Merknad 1 / _Note 1_ | Dette er den inverse av egenskapen <<Tjeneste-harDel>>. 
+
+_This is the inverse of the property <<Tjeneste-harDel>>._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 [[Tjeneste-har-deltagelse]]
