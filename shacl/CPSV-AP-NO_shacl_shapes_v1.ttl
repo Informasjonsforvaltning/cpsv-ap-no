@@ -459,8 +459,6 @@ sh:targetClass cv:PublicOrganisation .
     # recommended properties
       :hasMin0MaxNShape-dctSubject, # begrep (dct:subject)
       :hasMin0MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
-      :hasMin0MaxNShape-dctIsPartOfService, # er del av (dct:isPartOf)
-      :hasMin0MaxNShape-dctHasPartService, # har del (dct:hasPart)
       :hasMin0MaxNShape-cpsvHasInput, # har dokumentasjonskrav (cpsv:hasInput)
       :hasMin0MaxNShape-foafHomepage, # hjemmeside (foaf:homepage)
 #      :hasMin0MaxNShape-dctType, # hovedformål (dct:type)
@@ -471,10 +469,12 @@ sh:targetClass cv:PublicOrganisation .
     # optional properties:
       :hasMin0Max1Shape-cvProcessingTime, # behandlingstid (cv:processingTime)
       :hasMin0MaxNShape-cvIsDescribedAt, # beskrivende datasett (cv:isDescribedAt)
+      :hasMin0MaxNShape-dctIsPartOfService, # er del av (dct:isPartOf)
       :hasMin0MaxNShape-cvIsGroupedBy, # er gruppert ved (cv:isGroupedBy)
       :hasMin0MaxNShape-cvIsClassifiedBy, # er klassifisert under (cv:isClassifiedBy)
       :hasMin0MaxNShape-cvHasChannel, # er tilgjengelig via (cv:hasChannel)
       :hasMin0MaxNShape-cpsvFollows, # følger regel (cpsv:follows)
+      :hasMin0MaxNShape-dctHasPartService, # har del (dct:hasPart)
       :hasMin0MaxNShape-cvHasParticipation, # har deltagelse (cv:hasParticipation)
       :hasMin0MaxNShape-cvHasInputType, # har dokumentasjonstype (cv:hasInputType)
       :hasMin0MaxNShape-cvHasCost, # har gebyr (cv:hasCost)
@@ -650,8 +650,6 @@ sh:targetClass org:Organization .
       # recommended properties
          :hasMin0MaxNShape-dctSubject, # begrep (dct:subject)
          :hasMin0MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
-         :hasMin0MaxNShape-dctIsPartOfService, # er del av (dct:isPartOf)
-         :hasMin0MaxNShape-dctHasPartService, # har del (dct:hasPart)
          :hasMin0MaxNShape-cpsvHasInput, # har dokumentasjonskrav (cpsv:hasInput)
          :hasMin0MaxNShape-foafHomepage, # hjemmeside (foaf:homepage)
 #         :hasMin0Max1Shape-admsStatus, # status (adms:status)
@@ -660,10 +658,12 @@ sh:targetClass org:Organization .
       # optional properties:
          :hasMin0Max1Shape-cvProcessingTime, # behandlingstid (cv:processingTime)
          :hasMin0MaxNShape-cvIsDescribedAt, # beskrivende datasett (cv:isDescribedAt)
+         :hasMin0MaxNShape-dctIsPartOfService, # er del av (dct:isPartOf)
          :hasMin0MaxNShape-cvIsGroupedBy, # er gruppert ved (cv:isGroupedBy)
          :hasMin0MaxNShape-cvIsClassifiedBy, # er klassifisert under (cv:isClassifiedBy)
          :hasMin0MaxNShape-cvHasChannel, # er tilgjengelig via (cv:hasChannel)
          :hasMin0MaxNShape-cpsvFollows, #  følger regel (cpsv:follows)
+         :hasMin0MaxNShape-dctHasPartService, # har del (dct:hasPart)
          :hasMin0MaxNShape-cvHasParticipation, # har deltagelse (cv:hasParticipation)
          :hasMin0MaxNShape-cpsvHasInputType, # har dokumentasjonstype (cv:hasInputType)
          :hasMin0MaxNShape-cvHasCost, # har gebyr (cv:hasCost)
