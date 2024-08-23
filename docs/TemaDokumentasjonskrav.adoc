@@ -1,5 +1,7 @@
 === Å beskrive dokumentasjonskrav [[Å-beskrive-dokumentasjonskrav]]
 
+:xrefstyle: short
+
 Spesifikasjonen gjør det mulig å beskrive et dokumentasjonskrav strukturert og dermed også maskinprosesserbart.
 
 [[img-FigurEksempelDokumentasjonskrav]]
@@ -94,3 +96,5 @@ Eksemplet i RDF Turtle:
    cv:value "20"^^xsd:positiveInteger ; # verdi
    .
 -----
+
+:xrefstyle: full

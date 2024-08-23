@@ -1,5 +1,7 @@
 === Å knytte en tjeneste til et datasett og derfra til API, begrep og informasjonsmodell [[KnytteTilDatasett]]
 
+:xrefstyle: short
+
 [[img-TjenesteOgData]]
 .Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat.
 [link=images/FigurTjenesteMedDataInnOgUt.png]
@@ -12,4 +14,4 @@ Figuren illustrerer også at et dokumentasjonskrav (`cv:Evidence`) kan være en 
 
 Se https://informasjonsforvaltning.github.io/dcat-ap-no/#Datasett[spesifikasjon til klassen Datasett (dcat:Dataset) i DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], for hvordan et datasett kan knyttes videre til API, begrep og informasjonsmodell.
 
-
+:xrefstyle: full

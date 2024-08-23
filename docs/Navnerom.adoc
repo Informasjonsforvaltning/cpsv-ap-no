@@ -1,4 +1,4 @@
-=== Navnerom som er brukt i spesifikasjonen [[Navnerom]]
+== Vedlegg A – Navnerom som er brukt i spesifikasjonen [[Navnerom]]
 
 Navnerom for dette vokabularet er: `\https://data.norge.no/vocabulary/cpsvno#`
 

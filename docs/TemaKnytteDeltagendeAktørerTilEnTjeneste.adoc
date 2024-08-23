@@ -1,5 +1,7 @@
 === Å knytte deltagende aktører til en tjeneste [[KnytteDeltagendeAktørerTilEnTjeneste]]
 
+:xrefstyle: short
+
 [[img-FigurTjenesteOgDeltagelse]]
 .Tjeneste og Deltagelse.
 [link=images/FigurTjenesteOgDeltagelse.png]
@@ -27,3 +29,5 @@ Eksempel i RDF Turtle:
 <Politidirektoratet> a cv:PublicOrganisation ;
    cv:participates <deltagendeDataleverandør> ; .
 ----
+
+:xrefstyle: full
