@@ -24,6 +24,14 @@ Spesifikasjonen inneholder nå tre hoveddeler i tillegg til det innledende kapit
 
 * Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne knytte en gitt dokumentasjon til et datasett, er det innført en ny egenskap <<Dokumentasjon-er-del-av>>. 
 
+<<OffentligTjeneste>>: 
+
+* Kravnivået til egenskapene <<OffentligTjeneste-harDel>> og <<OffentligTjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
+
+<<Tjeneste>>: 
+
+* Kravnivået til egenskapene <<Tjeneste-harDel>> og <<Tjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
+
 <<Tjenesteresultat>>: 
 
 * Klassen har ikke lenger Datasett (dcat:Dataset) som sin subklasse. For å kunne knytte et gitt tjenesteresultat til et datasett, er det innført en ny egenskap <<Tjenesteresultat-er-del-av>>. 
