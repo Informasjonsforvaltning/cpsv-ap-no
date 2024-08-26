@@ -746,7 +746,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Hendelse-valgfrie-egenskaper">3.11.3. Valgfrie egenskaper for klassen <em>Hendelse</em></a>
 <ul class="sectlevel4">
 <li><a href="#Hendelse-begrep">Hendelse – begrep (dct:subject)</a></li>
-<li><a href="#Hendelse-distribusjon">Hendelse – distribusjon (dcat:distribution)</a></li>
+<li><a href="#Hendelse-beskrivendeDatasett">Hendelse – beskrivende datasett (cv:isDescribedAt)</a></li>
 <li><a href="#Hendelse-type">Hendelse – type (dct:type)</a></li>
 </ul>
 </li>
@@ -932,7 +932,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Livshendelse-valgfrie-egenskaper">3.18.3. Valgfrie egenskaper for klassen <em>Livshendelse</em></a>
 <ul class="sectlevel4">
 <li><a href="#Livshendelse-begrep">Livshendelse – begrep (dct:subject)</a></li>
-<li><a href="#Livshendelse-distribusjon">Livshendelse – distribusjon (dcat:distribution)</a></li>
+<li><a href="#Livshendelse-beskrivendeDatasett">Livshendelse – beskrivende datasett (cv:isDescribedAt)</a></li>
 <li><a href="#Livshendelse-type">Livshendelse – type (dct:type)</a></li>
 </ul>
 </li>
@@ -1298,7 +1298,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Virksomhetshendelse-valgfrie-egenskaper">3.34.3. Valgfrie egenskaper for klassen <em>Virksomhetshendelse</em></a>
 <ul class="sectlevel4">
 <li><a href="#Virksomhetshendelse-begrep">Virksomhetshendelse – begrep (dct:subject)</a></li>
-<li><a href="#Virksomhetshendelse-distribusjon">Virksomhetshendelse – distribusjon (dcat:distribution)</a></li>
+<li><a href="#Virksomhetshendelse-beskrivendeDatasett">Virksomhetshendelse – beskrivende datasett (cv:isDescribedAt)</a></li>
 <li><a href="#Virksomhetshendelse-type">Virksomhetshendelse – type (dct:type)</a></li>
 </ul>
 </li>
@@ -5363,20 +5363,11 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: I CPSV-AP er ikke Hendelse (<code>cv:Event</code>) en subklasse av Datasett (<code>dcat:Dataset</code>). For f.eks. å kunne publisere hendelsesstrøm som kan abonneres på, har vi valgt å betrakte beskrivelse av Hendelse som Datasett.</p>
-<p class="tableblock"><em>Norwegian extension: In CPSV-AP the class Event (<code>cv:Event</code>) is not a subclass of Dataset (<code>dcat:Dataset</code>).</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.</p>
 <p class="tableblock"><em>Norwegian extension: Requirement level changed from optional to recommended.</em></p></td>
 </tr>
@@ -5601,7 +5592,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Hendelse-distribusjon"><a class="link" href="#Hendelse-distribusjon">3.11.3.2. Hendelse – distribusjon (dcat:distribution)</a></h5>
+<h5 id="Hendelse-beskrivendeDatasett"><a class="link" href="#Hendelse-beskrivendeDatasett">3.11.3.2. Hendelse – beskrivende datasett (cv:isDescribedAt)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5610,20 +5601,20 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>distribution</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>is described at</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:distribution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDescribedAt</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Distribution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til beskrivelsen av distribusjon av hendelsen.</p>
-<p class="tableblock"><em>This property refers to the description of Distribution of the Event.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til datasett som beskriver hendelsen.</p>
+<p class="tableblock"><em>This property links an event to the dataset(s) in which it is being described.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -5635,7 +5626,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm (som et datasett) som kan abonneres på.</p>
 <p class="tableblock"> <em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
 </tr>
 <tr>
@@ -9559,7 +9550,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Livshendelse-distribusjon"><a class="link" href="#Livshendelse-distribusjon">3.18.3.2. Livshendelse – distribusjon (dcat:distribution)</a></h5>
+<h5 id="Livshendelse-beskrivendeDatasett"><a class="link" href="#Livshendelse-beskrivendeDatasett">3.18.3.2. Livshendelse – beskrivende datasett (cv:isDescribedAt)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9568,20 +9559,20 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>distribution</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>is described at</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:distribution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDescribedAt</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Distribution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til distribusjon av hendelse som f.eks. kan abonneres på.</p>
-<p class="tableblock"><em>This property refers to Distribution of the Event.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til datasett som beskriver livshendelsen.</p>
+<p class="tableblock"><em>This property links a life event to the dataset(s) in which it is being described.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -9593,8 +9584,8 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm som kan abonneres på.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm (som et datasett) som kan abonneres på.</p>
+<p class="tableblock"> <em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -17712,7 +17703,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Virksomhetshendelse-distribusjon"><a class="link" href="#Virksomhetshendelse-distribusjon">3.34.3.2. Virksomhetshendelse – distribusjon (dcat:distribution)</a></h5>
+<h5 id="Virksomhetshendelse-beskrivendeDatasett"><a class="link" href="#Virksomhetshendelse-beskrivendeDatasett">3.34.3.2. Virksomhetshendelse – beskrivende datasett (cv:isDescribedAt)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -17721,20 +17712,20 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>distribution</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>is described at</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:distribution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDescribedAt</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Distribution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til distribusjon av hendelse som f.eks. kan abonneres på.</p>
-<p class="tableblock"><em>This property refers to Distribution of the Event.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til datasett som beskriver virksomhetshendelsen.</p>
+<p class="tableblock"><em>This property links a business event to the dataset(s) in which it is being described.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -17746,8 +17737,8 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm som kan abonneres på.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne publisere f.eks. hendelsesstrøm (som et datasett) som kan abonneres på.</p>
+<p class="tableblock"> <em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -18381,7 +18372,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-23 13:14:46 UTC
+Sist oppdatert 2024-08-26 10:54:39 UTC
 </div>
 </div>
 </body>
