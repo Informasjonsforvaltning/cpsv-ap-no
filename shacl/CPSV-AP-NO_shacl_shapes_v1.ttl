@@ -48,7 +48,7 @@
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
-    dct:modified "2024-08-20"^^xsd:date ;
+    dct:modified "2024-08-23"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     owl:versionInfo "1.002" ;
     adms:versionNotes "To align with EUs CPSV-AP v.3.2"@en ;
@@ -247,7 +247,7 @@
       :hasMin0MaxNShape-dctDescription, # beskrivelse, dct:description
     # optional properties:
       :hasMin0MaxNShape-dctSubject, # begrep, dct:subject
-      :hasMin0MaxNShape-dcatDistribution, # distribusjon, dcat:distribution
+      :hasMin0MaxNShape-cvIsDescribedAt, # beskrivende datasett (cv:isDescribedAt)
       :hasMin0MaxNShape-dctType # type, dct:type
     ;
   sh:targetClass cv:Event, cv:LifeEvent, cv:BusinessEvent .
