@@ -1,5 +1,7 @@
 === Å publisere hendelsesstrøm [[Hendelsesstrøm]]
 
+#@@@@@@ NB! Må oppdateres ettersom hendelse ikke lenger er en subklasse av Datasett, Issue196#
+
 :xrefstyle: short
 
 [[img-HendelseOgDistribusjon]]

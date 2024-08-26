@@ -48,7 +48,7 @@
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
-    dct:modified "2024-08-23"^^xsd:date ;
+    dct:modified "2024-08-26"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     owl:versionInfo "1.002" ;
     adms:versionNotes "To align with EUs CPSV-AP v.3.2"@en ;
@@ -134,21 +134,21 @@
       ;
    sh:targetClass cv:Constraint .
 
-### Klassen Datasett (dcat:Dataset)
-:DatasetShape a sh:NodeShape;
-   rdfs:label "Dataset"@en, "Datasett"@nb;
-   sh:property
-      # mandatory:
-         :hasMin1MaxNShape-dctDescription, # beskrivelse, dct:description
-         :hasMin1MaxNShape-dctTitle, # tittel, dct:title
-         :hasMin1Max1Shape-dctPublisher, # utgiver, dct:publisher
-      # recommended:
-         :hasMin0MaxNShape-dctIdentifier, # identifikator, dct:identifier
-      # optional:
-         :hasMin0MaxNShape-dctHasPartService, # har del, dct:hasPart
-         :hasMin0MaxNShape-dcatLandingPage # landingsside, dcat:landingPage
-      ;
-   sh:targetClass dcat:Dataset .
+### ### Klassen Datasett (dcat:Dataset)
+### :DatasetShape a sh:NodeShape;
+###    rdfs:label "Dataset"@en, "Datasett"@nb;
+###    sh:property
+###       # mandatory:
+###          :hasMin1MaxNShape-dctDescription, # beskrivelse, dct:description
+###          :hasMin1MaxNShape-dctTitle, # tittel, dct:title
+###          :hasMin1Max1Shape-dctPublisher, # utgiver, dct:publisher
+###       # recommended:
+###          :hasMin0MaxNShape-dctIdentifier, # identifikator, dct:identifier
+###       # optional:
+###          :hasMin0MaxNShape-dctHasPartService, # har del, dct:hasPart
+###          :hasMin0MaxNShape-dcatLandingPage # landingsside, dcat:landingPage
+###       ;
+###    sh:targetClass dcat:Dataset .
 
 ### Klassen Deltagelse (cv:Participation)
 :ParticipationShape a sh:NodeShape;
@@ -822,13 +822,11 @@ sh:targetClass org:Organization .
 :hasMin1MaxNShape-cpsvProduces a sh:PropertyShape;
   sh:name "produces"@en, "produserer"@nb;
   sh:path cpsv:produces;
-  sh:or (
-    [sh:class cv:Output]
-    [sh:class dcat:Dataset]) ;
+  sh:class cv:Output ;
 #  sh:nodeKind sh:IRI;
   sh:minCount 1;
-  sh:message "The property cpsv:produces MUST have min. 1 value which MUST refer to an instance of cv:Output or dcat:Dataset"@en,
-    "Egenskapen cpsv:produces skal ha min. 1 verdi som skal referere til instans av cv:Output eller dcat:Dataset"@nb;
+  sh:message "The property cpsv:produces MUST have min. 1 value which MUST refer to an instance of cv:Output"@en,
+    "Egenskapen cpsv:produces skal ha min. 1 verdi som skal referere til instans av cv:Output"@nb;
   sh:severity sh:Violation .
 
 ## -- cpsvno-properties:

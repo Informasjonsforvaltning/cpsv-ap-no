@@ -59,7 +59,7 @@ _This property represents the official Name of the Output. This property should 
 
 Eksempel i RDF Turtle:
 -----
-<bevilling1001> a cv:Output , dcat:Dataset ;
+<bevilling1001> a cv:Output ;
    dct:title "Skjenkebevilling"@nb ; .
 -----
 
@@ -84,7 +84,7 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 
 Eksempel i RDF Turtle:
 -----
-<bevilling1001> a cv:Output , dcat:Dataset ;
+<bevilling1001> a cv:Output ;
    dct:description "Skjenkebevilling for servering av drikke som inneholder fra med 22 og maks 60 volumprosent alkohol"@nb ; .
 -----
 
@@ -111,7 +111,7 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 
 Eksempel i RDF Turtle:
 -----
-<bevilling1001> a cv:Output , dcat:Dataset ;
+<bevilling1001> a cv:Output ;
    dct:title "Skjenkebevilling for servering av alkoholholdig drikk i gruppe 3"@nb ;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ; .
 -----
@@ -124,7 +124,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ |  _is part of_
 | URI | dct:isPartOf
-|Verdiområde / _Range_ | dcat:Dataset
+|Verdiområde / _Range_ | https://informasjonsforvaltning.github.io/dcat-ap-no/#Datasett[dcat:Dataset &#x29C9;, window="_blank", role="ext-link"]
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et datasett som det aktuelle tjenesteresultatet fysisk eller logisk er inkludert i.
 
 _This property is used to refer to a dataset in which the described output is physically or logically included._
@@ -171,7 +171,7 @@ __The value shall be chosen from the common controlled vocabulary https://data.n
 
 Eksempel i RDF Turtle:
 -----
-<bevilling1001> a cv:Output , dcat:Dataset ;
+<bevilling1001> a cv:Output ;
    dct:title "Skjenkebevilling for servering av alkoholholdig drikk i gruppe 3"@nb ;
    dct:type <https://data.norge.no/vocabulary/service-output-type#permit> ; # tillatelse
    .

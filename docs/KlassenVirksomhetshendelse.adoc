@@ -148,7 +148,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is described at_
 | URI | cv:isDescribedAt
-| Verdiområde / _Range_ | dcat:Dataset
+| Verdiområde / _Range_ | https://informasjonsforvaltning.github.io/dcat-ap-no/#Datasett[dcat:Dataset &#x29C9;, window="_blank", role="ext-link"]
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til datasett som beskriver virksomhetshendelsen.
 
 _This property links a business event to the dataset(s) in which it is being described._

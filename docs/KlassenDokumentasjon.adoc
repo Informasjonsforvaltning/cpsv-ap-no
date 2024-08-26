@@ -12,7 +12,6 @@ image::images/KlassenDokumentasjon.png[alt="UML-diagram med klassen Dokumentasjo
 
 _Evidence can be any resource – document, artefact – anything needed for executing the service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered. It contains information that proves that a criterion requirement exists or is true, in particular evidences are used to prove that a specific criterion is met._
 | URI | cv:Evidence
-| Subklasse av / _Subclass of_ | dcat:Dataset
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Eksempel | Krav om vandel
 |===
@@ -132,7 +131,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ |  _is part of_
 | URI | dct:isPartOf
-|Verdiområde / _Range_ | dcat:Dataset
+|Verdiområde / _Range_ | https://informasjonsforvaltning.github.io/dcat-ap-no/#Datasett[dcat:Dataset &#x29C9;, window="_blank", role="ext-link"]
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et datasett som den aktuelle dokumentasjonen fysisk eller logisk er inkludert i.
 
 _This property is used to refer to a dataset in which the described evidence is physically or logically included._

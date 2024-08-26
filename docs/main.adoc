@@ -60,7 +60,7 @@ include::KlassenAktør.adoc[]
 
 include::KlassenBegrensning.adoc[]
 
-include::KlassenDatasett.adoc[]
+// include::KlassenDatasett.adoc[]
 
 include::KlassenDeltagelse.adoc[]
 
