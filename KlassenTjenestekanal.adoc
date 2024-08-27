@@ -127,7 +127,7 @@ _This property represents the description of the canal. This property should be 
 |===
 | _English name_ | _data service_
 | URI | cpsvno:dataService
-| Verdiområde / _Range_ | dcat:DataService
+| Verdiområde / _Range_ | https://informasjonsforvaltning.github.io/dcat-ap-no/#Datatjeneste[dcat:DataService &#x29C9;, window="_blank", role="ext-link"]
 | Anvendelse / _Usage note_ |  Egenskapen brukes  til å referere til en beskrivelse av en datatjeneste som kanalen benytter.
 
 _This property refers to the description of a data service which the channel uses._
