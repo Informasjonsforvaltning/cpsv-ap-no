@@ -12,7 +12,6 @@ image::images/KlassenRegulativRessurs.png[alt="UML-diagram med klassen Regulativ
 
 _This class represents the legislation, policy or policies that lie behind the Rules that govern the service._
 | URI | eli:LegalResource
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Eksempel | Se under <<KnytteTilRegelverk>> for eksempel på bruk av klassen.
 |===
 

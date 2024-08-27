@@ -52,7 +52,7 @@ include::Spesifikasjon_per_klasser.adoc[]
 
 :leveloffset: +1
 
-include::KlasseOversikt.adoc[]
+// include::KlasseOversikt.adoc[]
 
 include::KlassenAdresse.adoc[]
 

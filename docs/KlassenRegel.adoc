@@ -12,7 +12,6 @@ image::images/KlassenRegel.png[alt="UML-diagram med klassen Regel, dens egenskap
 
 _The Rule class represents a document that sets out the specific rules, guidelines or procedures that a Service follows. It includes the terms of service, licence, and authentication requirements of the Service._
 | URI | cpsv:Rule
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Eksempel | Se under <<KnytteTilRegelverk>> for eksempler på bruk av klassen.
 |===
 

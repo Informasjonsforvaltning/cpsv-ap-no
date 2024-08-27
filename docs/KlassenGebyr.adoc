@@ -12,7 +12,6 @@ image::images/KlassenGebyr.png[alt="UML-diagram med klassen Gebyr, dens egenskap
 
 _The Cost class represents any costs related to the execution of a service that the Agent consuming it needs to pay._
 | URI | cv:Cost
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Eksempel | Se under <<OffentligTjeneste-har-gebyr>>.
 |===
 

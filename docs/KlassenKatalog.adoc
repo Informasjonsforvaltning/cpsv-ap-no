@@ -12,7 +12,6 @@ image::images/KlassenKatalog.png[alt="UML-diagram med klassen Katalog, dens egen
 
 _This class represents a catalog, in context of this specification a catalog of events and services._
 | URI | dcat:Catalog
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: CPSV-AP dekker ikke katalogbeskrivelse. Klassen fra DCAT-AP-NO tas med her for å kunne dekke norsk behov for å beskrive «tjeneste-/hendelseskataloger».
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._

@@ -1,6 +1,6 @@
 == Forenklet fremstilling av kravene i CPSV-AP-NO [[Forenklet-fremstilling]]
 
-_Denne delen av standarden er primært ment for den ikke-tekniske målgruppen._ 
+_Denne delen av spesifikasjonen er primært ment for den ikke-tekniske målgruppen._ 
 
 === Opplysninger som skal og bør tas med om en tjeneste og hendelse [[Noen-krav]]
 

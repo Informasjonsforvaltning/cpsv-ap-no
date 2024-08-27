@@ -12,7 +12,6 @@ image::images/KlassenDokumentasjon.png[alt="UML-diagram med klassen Dokumentasjo
 
 _Evidence can be any resource – document, artefact – anything needed for executing the service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered. It contains information that proves that a criterion requirement exists or is true, in particular evidences are used to prove that a specific criterion is met._
 | URI | cv:Evidence
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Eksempel | Krav om vandel
 |===
 

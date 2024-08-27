@@ -17,7 +17,6 @@ _This class represents the limitation applied to an Information Concept._
 _Constraints are requirements in themselves, since they impose prerequisites which influence the definition, use and/or fulfilment of the requirement. They represent hard conditions such as minimum or maximum expressions which can be used to evaluate pieces of information, the required age, income, involvement in activities, etc. An example from the eProcurement domain is a threshold as the minimum turnover required by the buying organisation to select the candidates. Note that CCCEV does not provide any specific guidance on when which kind of Requirement should be used. Users of this vocabulary should make decisions on this topic in their specific context._
 | URI |  cv:Constraint
 | Subklasse av / _Subclass of_ | cv:Requirement
-|Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
