@@ -20,6 +20,10 @@ Spesifikasjonen inneholder nå tre hoveddeler i tillegg til det innledende kapit
 
 ==== Endringer av klasser og egenskaper 
 
+Klassen Datasett (dcat:Dataset):
+
+* Klassen er ikke eksplisitt spesifisert i denne spesifikasjonen, fordi det ikke lenger er krav til datasett som er spesifikke når det gjelder tjeneste- og hendelsesbeskrivelser. 
+
 <<Dokumentasjon>>: 
 
 * Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne knytte en gitt dokumentasjon til et datasett, er det innført en ny egenskap <<Dokumentasjon-er-del-av>>. 
