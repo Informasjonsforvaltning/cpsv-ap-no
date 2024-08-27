@@ -32,7 +32,7 @@ Klassen Datasett (dcat:Dataset):
 
 * Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne knytte en gitt dokumentasjon til et datasett, er det innført en ny egenskap <<Dokumentasjon-er-del-av>>. 
 
-<<Hendelse>> (inkl. dens subklassene <<Livshendelse>> og <<Virksomhetshendelse>>):
+<<Hendelse>> (inkl. subklassene <<Livshendelse>> og <<Virksomhetshendelse>>):
 
 * Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne bl.a. publisere hendelsesstrøm, er det innført en ny egenskap <<Hendelse-beskrivendeDatasett>> som kan benyttes til å knytte en hendelse til et eller flere datasett. Tilsvarende gjelder også subklassene <<Livshendelse>> og <<Virksomhetshendelse>>. 
 
