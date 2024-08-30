@@ -12,13 +12,9 @@ image::images/KlassenAktør.png[alt="UML-diagram med klassen Aktør, dens egensk
 
 _The Agent class is any resource that acts or has the power to act. This includes people, organisations and groups._ 
 | URI | foaf:Agent
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_|For aktør som er en offentlig organisasjon skal <<OffentligOrganisasjon>> brukes, og for aktør som er en ikke-offentlig organisasjon skal <<Organisasjon>> brukes.
+| Merknad / _Note_|For aktør som er en offentlig organisasjon skal <<OffentligOrganisasjon>> brukes, og for aktør som er en ikke-offentlig organisasjon skal <<Organisasjon>> brukes.
 
 _For Agent which is a public organisation, <<OffentligOrganisasjon>> shall be used. For Agent which is a non-public organisation, <<Organisasjon>> shall be used._
-|Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
-
-_Norwegian extension: Requirement level changed from optional to recommended._
 |===
 
 === Obligatoriske egenskaper for klassen _Aktør_ [[Aktør-obligatoriske-egenskaper]]

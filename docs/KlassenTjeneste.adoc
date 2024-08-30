@@ -12,7 +12,6 @@ image::images/KlassenTjeneste.png[alt="UML-diagram med klassen Tjeneste, dens eg
 
 _This class represents a Service._
 | URI | cpsvno:Service
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ | Bruk <<OffentligTjeneste>> når det er en offentlig tjeneste som skal beskrives.
 
 _Use <<OffentligTjeneste>>  when the services to be described is a public service._

@@ -12,7 +12,6 @@ image::images/KlassenTjenestekanal.png[alt="UML-diagram med klassen Tjenestekana
 
 _The Channel class represents the medium through which an Agent provides, uses or interacts in another way with a Service. Typical examples include online services, phone, walk-in centres etc._
 | URI | cv:Channel
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
 
 === Obligatoriske egenskaper for klassen _Tjenestekanal_ [[Tjenestekanal-obligatoriske-egenskaper]]

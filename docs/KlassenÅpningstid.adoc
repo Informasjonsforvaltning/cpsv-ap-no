@@ -11,7 +11,6 @@ image::images/KlassenÅpningstid.png[alt="UML-diagram med klassen Åpningstid og
 |Anvendelse| Klassen brukes til å beskrive detaljer om åpningstid på en strukturert måte.
 |Usage note| This class represents a structured value providing information about the opening hours.
 |URI| cv:OpeningHoursSpecification
-|Kravnivå |Valgfri/Optional
 |===
 
 === Valgfrie egenskaper for Klassen _Åpningstid_ [[Åpningstid-valgfrie-egenskaper]]

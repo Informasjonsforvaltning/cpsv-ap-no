@@ -12,7 +12,6 @@ image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og den
 
 _This class represents a temporal interval or instant._
 | URI |  time:TemporalEntity
-| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
 |===
 
 === Anbefalte egenskaper for klassen _Tidsenhet_ [[Tidsenhet-anbefalte-egenskaper]]

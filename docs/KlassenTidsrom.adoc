@@ -13,7 +13,6 @@ image::images/KlassenTidsrom.png[alt="UML-diagram med klassen Tidsrom og dens eg
 _This class  represents a period or time of interval, where the value of the start time and end time properties should be different, and/or a duration should be given._
 | URI | time:ProperInterval
 | Subklasse av / _Subclass of_ | time:TemporalEntity
-|Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som vi bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV that we use._

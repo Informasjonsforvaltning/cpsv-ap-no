@@ -12,7 +12,6 @@ image::images/KlassenDeltagelse.png[alt="UML-diagram med klassen Deltagelse og d
 
 _The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider._
 | URI | cv:Participation
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Eksempel | Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
 

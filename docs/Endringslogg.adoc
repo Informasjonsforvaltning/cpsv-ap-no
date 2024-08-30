@@ -20,6 +20,10 @@ Spesifikasjonen inneholder nå tre hoveddeler i tillegg til det innledende kapit
 
 ==== Endringer av klasser og egenskaper 
 
+Generelt: 
+
+* Det stilles ikke lenger krav til om en klasse er obligatorisk, anbefalt eller valgfri. Dette fordi hvilke klasser som trengs er avhengig av brukstilfelle.   
+
 Klassen Datasett (dcat:Dataset):
 
 * Klassen er ikke eksplisitt spesifisert i denne spesifikasjonen, fordi det ikke lenger er krav til datasett som er spesifikke når det gjelder tjeneste- og hendelsesbeskrivelser. 
@@ -27,6 +31,10 @@ Klassen Datasett (dcat:Dataset):
 <<Dokumentasjon>>: 
 
 * Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne knytte en gitt dokumentasjon til et datasett, er det innført en ny egenskap <<Dokumentasjon-er-del-av>>. 
+
+<<Hendelse>> (inkl. subklassene <<Livshendelse>> og <<Virksomhetshendelse>>):
+
+* Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne bl.a. publisere hendelsesstrøm, er det innført en ny egenskap <<Hendelse-beskrivendeDatasett>> som kan benyttes til å knytte en hendelse til et eller flere datasett. Tilsvarende gjelder også subklassene <<Livshendelse>> og <<Virksomhetshendelse>>. 
 
 <<OffentligTjeneste>>: 
 

@@ -13,7 +13,6 @@ image::images/KlassenLivshendelse.png[alt="UML-diagram med klassen Livshendelse,
 __The Life Event class represents an important event or situations in a citizen's life where services may be required.__
 | URI | cv:LifeEvent
 | Subklasse av / _Subclass of_ | cv:Event
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | I kontekst av denne spesifikasjonen, representerer klassen Livshendelse en hendelse/situasjon for hvilken en tjeneste kan være relevant. F.eks. en forlovelse er utenfor omfanget av denne spesifikasjonen, mens et giftemål er innenfor. 
 
 _An individual will encounter any number of 'events' in the general sense of the word. In the context of the CPSV-AP, the Life Event class only represents an event for which a Service is related. For example, a couple becoming engaged is not a CPSV-AP Life Event, getting married is, since only the latter has any relevance to services._

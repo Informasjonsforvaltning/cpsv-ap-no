@@ -13,7 +13,6 @@ image::images/KlassenVirksomhetshendelse.png[alt="UML-diagram med klassen Virkso
 __This class represents a Business Event, which specialises Event. A Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time.__
 | URI | cv:BusinessEvent
 | Subklasse av / _Subclass of_ | cv:Event
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | 
 _A Business Event requires a set of services to be delivered and consumed in order for the associated business need(s) or obligation(s) to be fulfilled. Business Events are defined within the context of a particular Member State._
 | Eksempel | «Å starte og drive en restaurant» er en virksomhetshendelse.
