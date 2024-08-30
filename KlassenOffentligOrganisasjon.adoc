@@ -13,10 +13,6 @@ image::images/KlassenOffentligOrganisasjon.png[alt="UML-diagram med klassen Offe
 _This class is used to represent a Public Organisation._
 | URI | cv:PublicOrganisation
 | Subklasse av / _Subclass of_ | org:Organization
-| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: Kravnivå er endret fra obligatorisk til anbefalt, for at spesifikasjonen også skal kunne brukes til beskrivelse av f.eks. tjenester levert av aktører som ikke er offentlige organisasjoner.
-
-_Norwegian extension: The requirement level is changed from mandatory to recommended, because this Norwegian application profile also may be used to describe services delivered by agents who are not public organizations._
 | Eksempel | Brønnøy kommune er en offentlig organisasjon.
 |===
 

@@ -16,7 +16,6 @@ _This class represents a group of Evidence Types for conforming to a Requirement
 
 _An Evidence Type List is satisfied, if and only if, for all included Evidence Types in this List, corresponding conformant Evidence(s) are supporting the Requirement having this List. The Evidence Type List describes thus an AND condition on the different Evidence Types within the list and an OR condition between two or more Evidence Type Lists. Combinations of alternative Lists can be provided for a respondent of a Requirement to choose amongst them._
 | URI | cv:EvidenceTypeList
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._

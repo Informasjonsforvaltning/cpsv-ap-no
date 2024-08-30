@@ -12,7 +12,6 @@ image::images/KlassenUnderstøttendeOpplysning.png[alt="UML-diagram med klassen 
 
 _This class represents the Value for an Information Concept that is provided by an Evidence._
 | URI |  cv:SupportedValue
-| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._

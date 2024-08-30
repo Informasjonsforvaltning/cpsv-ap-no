@@ -12,8 +12,7 @@ image::images/KlassenInformasjonsbegrep.png[alt="UML-diagram med klassen Informa
 
 _This class represents a piece of information that the Evidence provides or the Requirement needs. The Information Concept class offers the ability to describe conceptually the Requirements and provided facts in Evidences. In complementarity with the Supported Value class, this is a (first) step towards facilitating the assessment of the requirements in an automated way based on the Evidence provided._
 | URI |  cv:InformationConcept
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-|Merknad / _Note_ |   Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |   Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
 |===
