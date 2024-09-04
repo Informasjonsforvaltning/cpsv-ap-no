@@ -6,7 +6,7 @@ _Denne delen av spesifikasjonen er primært ment for den ikke-tekniske målgrupp
 
 :xrefstyle: short
 
-<<img-ForenkletModell>> viser en forenklet fremstilling av noen av kravene i CPSV-AP-NO. Med unntak av noen få valgfrie opplysninger (som _kan_ tas med), viser figuren bare opplysninger som _skal_ (obligatorisk) og _bør_ (anbefalt) tas med i beskrivelsen av en tjeneste eller hendelse. Krav til hvordan opplysningene skal  representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert videre i spesifikasjonen. 
+<<img-ForenkletModell>> viser en forenklet fremstilling av noen av kravene i CPSV-AP-NO. Med unntak av noen få valgfrie opplysninger (som _kan_ tas med), viser figuren bare opplysninger som _skal_ (obligatorisk) og _bør_ (anbefalt) tas med i beskrivelsen av en tjeneste eller hendelse. Krav til hvordan opplysningene skal  representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert i <<Spesifikasjon-per-klasse>>. 
 
 [[img-ForenkletModell]]
 .Forenklet fremstilling av noen av kravene i CPSV-AP-NO.

@@ -13,13 +13,13 @@ image::images/CPSV-AP-NO-klasser.png[alt="UML-diagram med klassene som er i CPSV
 
 :xrefstyle: full
 
-Tegningen er ikke ment som en formell representasjon av spesifikasjonen. Før eventuell uoverensstemmelse mellom figuren og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige beskrivelser og diagrammer i resten av spesifikasjonen. 
+Figuren er ikke ment som en formell representasjon av spesifikasjonen. Før eventuell uoverensstemmelse mellom figuren og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige beskrivelser og figurer i resten av spesifikasjonen. 
 
 Med unntak av klassene Datasett (`dcat:Dataset`) og Datatjeneste (`dcat:DataService`) som er spesifisert i https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], og klassen Begrep (`skos:Concept`) som er spesifisert i https://data.norge.no/specification/skos-ap-no-begrep/[SKOS-AP-NO-begrep &#x29C9;, window="_blank", role="ext-link"], er hver klasse med dens egenskaper spesifisert videre i dette kapitlet. Klassene er sortert alfabetisk etter norske klassenavn, og egenskapene i hver klasse gruppert først inn i obligatoriske, anbefalte og valgfrie egenskaper, og der under alfabetisk etter norske egenskapsnavn. 
 
 Kravene i denne delen av spesifikasjonen spesifiserer hvordan beskrivelsene skal representeres i RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik. 
 
-«Norsk utvidelse» i merknad betyr avvik mellom CPSV-AP-NO og EUs CPSV-AP og CCCEV. Der det ikke står noe om «norsk utvidelse» i merknad til en egenskap/klasse, er egenskapen/klassen brukt slik den er spesifisert i CPSV-AP eller CCCEV. Der det står «norsk utvidelse» i merknad til en egenskap, er kravet til egenskapen endret (f.eks. med forklaringen noe a la "Kravnivået er endret fra valgfri til anbefalt"), eller at egenskapen ikke er å finne i hverken CPSV-AP eller CCCEV (f.eks. med forklaring "Ikke eksplisitt spesifisert i CPSV-AP."). 
+«Norsk utvidelse» i merknad betyr avvik mellom CPSV-AP-NO og EUs CPSV-AP. Der det ikke står noe om «norsk utvidelse» i merknad til en egenskap/klasse, er egenskapen/klassen brukt slik den er spesifisert i CPSV-AP. Der det står «norsk utvidelse» i merknad til en egenskap, er kravet til egenskapen endret (f.eks. med forklaringen noe a la "Kravnivået er endret fra valgfri til anbefalt"), eller at egenskapen ikke er å finne i hverken CPSV-AP eller CCCEV (f.eks. med forklaring "Ikke eksplisitt spesifisert i CPSV-AP."). 
 
 [cols="30s,70"]
 |===

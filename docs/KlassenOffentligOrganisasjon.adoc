@@ -35,7 +35,7 @@ Eksempel i RDF Turtle:
 _This property contains the geographic or administrative region covered by a Public Organisation._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
-| Merknad 1 / _Note 1_ a| Følgende krav til bruk av kontrollerte vokabularer gjelder:
+| Merknad / _Note_ a| Følgende krav til bruk av kontrollerte vokabularer gjelder:
 
 * Minst en verdi skal være fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted &#x29C9;, window="_blank", role="ext-link"].
 
@@ -46,9 +46,6 @@ _Regarding usage of controlled vocabularies, the following requirements apply:_
 * __At least one value shall be chosen from the following controlled vocabularies: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Country &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place &#x29C9;, window="_blank", role="ext-link"].__
 
 * __To specify spatial coverage in Norway, the Norwegian Mapping Authority's controlled vocabulary https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative units &#x29C9;, window="_blank", role="ext-link"] should be used.__
-| Merknad 2 / _Note 2_ | Norsk utvidelse: Som range bruker CPSV-AP v.3.1.1 et konkret kontrollert vokabular. Den engelske usage note i CPSV-AP v.3.1.1 sier på den annen side ikke at det oppgitte vokabularet må brukes. For å kunne dekke tilfeller der man ønsker å oppgi administrative enheter som ikke er på den oppgitte EU-listen, har vi valgt å bruke `dct:Location` som range. 
-
-__Norwegian extension: CPSV-AP v3.1.1 uses a specific controlled vocabulary as the range. The usage note says though not that the given controlled vocabulary shall be used. In order to be able to specify administrative units that are not in that given controlled vocabulary from EU, we have chosen to use `dct:Location` as the range.__
 | Eksempel | Offentlig organisasjon «Brønnøy kommune» har Brønnøy kommune i Norge som sitt dekningsområde.
 |===
 
