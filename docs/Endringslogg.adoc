@@ -39,10 +39,12 @@ Klassen Datasett (dcat:Dataset):
 <<OffentligTjeneste>>: 
 
 * Kravnivået til egenskapene <<OffentligTjeneste-harDel>> og <<OffentligTjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
+* Til egenskapen <<OffentligTjeneste-status>> er kravet til bruk kontrollert vokabular endret til å bruke EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"] (som har samme status-verdier som tidligere ADMS Status Vocabulary). 
 
 <<Tjeneste>>: 
 
 * Kravnivået til egenskapene <<Tjeneste-harDel>> og <<Tjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
+* Til egenskapen <<Tjeneste-status>> er kravet til bruk kontrollert vokabular endret til å bruke EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"] (som har samme status-verdier som tidligere ADMS Status Vocabulary). 
 
 <<Tjenesteresultat>>: 
 

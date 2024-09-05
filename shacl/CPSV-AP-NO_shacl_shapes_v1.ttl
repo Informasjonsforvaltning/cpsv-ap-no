@@ -2180,22 +2180,16 @@ sh:targetClass org:Organization .
   sh:path adms:status;
   sh:nodeKind sh:IRI;
   sh:maxCount 1;
-  sh:or (
-   [sh:pattern "^http://purl.org/adms/status/"]
-   [sh:pattern "^https://purl.org/adms/status/"] )
-   ;
-  sh:message "The property adms:status may have max. 1 value which MUST have value chosen from http://purl.org/adms/status/"@en,
-   "Egenskapen adms:status kan ha max. 1 verdi som skal ha verdi hentet fra http://purl.org/adms/status/"@nb;
+  sh:pattern "^http://publications.europa.eu/resource/authority/distribution-status";
+  sh:message "The property adms:status may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/distribution-status"@en,
+   "Egenskapen adms:status kan ha max. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/distribution-status"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-cvCurrencyMin0Max1 a sh:PropertyShape;
   sh:name "currency"@en, "valuta"@nb;
   sh:path cv:currency;
   sh:nodeKind sh:IRI;
-  sh:or (
-   [sh:pattern "^http://publications.europa.eu/resource/authority/currency/"]
-   [sh:pattern "^https://publications.europa.eu/resource/authority/currency/"] )
-   ;
+  sh:pattern "^http://publications.europa.eu/resource/authority/currency/";
   sh:maxCount 1;
   sh:message "The property cv:currency may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/currency/"@en,
    "Egenskapen cv:currency kan ha max. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/currency/"@nb;
@@ -2216,10 +2210,7 @@ sh:targetClass org:Organization .
   sh:path dct:accrualPeriodicity;
   sh:nodeKind sh:IRI;
   sh:maxCount 1;
-  sh:or (
-   [sh:pattern "^http://publications.europa.eu/resource/authority/frequency/"]
-   [sh:pattern "^https://publications.europa.eu/resource/authority/frequency/"]
-   );
+  sh:pattern "^http://publications.europa.eu/resource/authority/frequency/";
   sh:message "The property dct:accrualPeriodicity may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/frequency/"@en,
    "Egenskapen dct:accrualPeriodicity kan ha maks. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/frequency/"@nb;
   sh:severity sh:Violation .
@@ -2228,10 +2219,7 @@ sh:targetClass org:Organization .
   sh:name "language"@en, "språk"@nb;
   sh:path dct:language;
   sh:nodeKind sh:IRI;
-  sh:or (
-   [sh:pattern "^http://publications.europa.eu/resource/authority/language/"]
-   [sh:pattern "^https://publications.europa.eu/resource/authority/language/"]
-   );
+  sh:pattern "^http://publications.europa.eu/resource/authority/language/";
   sh:message "The property dct:language MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
    "Egenskapen dct:language skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
   sh:severity sh:Violation .
@@ -2241,10 +2229,7 @@ sh:targetClass org:Organization .
   sh:path dct:license;
   sh:nodeKind sh:IRI;
   sh:maxCount 1;
-  sh:or (
-   [sh:pattern "^http://publications.europa.eu/resource/authority/licence/"]
-   [sh:pattern "^https://publications.europa.eu/resource/authority/licence/"]
-   );
+  sh:pattern "^http://publications.europa.eu/resource/authority/licence/";
   sh:message "The property dct:license may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/licence/"@en,
    "Egenskapen dct:license kan ha max. 1 verdi som skal ha verdi hentet fra http://publications.europa.eu/resource/authority/licence/"@nb;
   sh:severity sh:Violation .
@@ -2254,10 +2239,7 @@ sh:targetClass org:Organization .
   sh:path dct:type;
   sh:nodeKind sh:IRI;
   sh:maxCount 1;
-  sh:or (
-   [sh:pattern "^http://purl.org/adms/publishertype/"]
-   [sh:pattern "^https://purl.org/adms/publishertype/"]
-   );
+  sh:pattern "^http://purl.org/adms/publishertype/";
   sh:message "The property dct:type may have max. 1 value which MUST have value chosen from http://purl.org/adms/publishertype/"@en,
    "Egenskapen dct:type kan ha maks. 1 verdi som skal ha verdi hentet fra http://purl.org/adms/publishertype/"@nb;
   sh:severity sh:Violation .
@@ -2367,10 +2349,7 @@ sh:targetClass org:Organization .
    sh:name "language"@en, "språk"@nb;
    sh:path vcard:language;
    sh:nodeKind sh:IRI;
-   sh:or (
-      [sh:pattern "^http://publications.europa.eu/resource/authority/language/"]
-      [sh:pattern "^https://publications.europa.eu/resource/authority/language/"]
-      );
+   sh:pattern "^http://publications.europa.eu/resource/authority/language/";
    sh:message "The property vcard:language MUST have value chosen from http://publications.europa.eu/resource/authority/language/"@en,
       "Egenskapen vcard:language skal ha verdi hentet fra http://publications.europa.eu/resource/authority/language/"@nb;
    sh:severity sh:Warning .
