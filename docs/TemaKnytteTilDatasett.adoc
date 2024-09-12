@@ -3,7 +3,7 @@
 :xrefstyle: short
 
 [[img-TjenesteOgData]]
-.Tjeneste med Datasett (dcat:Dataset) som dokumentasjonskrav og tjenesteresultat.
+.Tjeneste med som dokumentasjonskrav og tjenesteresultat som er del av datasett.
 [link=images/FigurTjenesteMedDataInnOgUt.png]
 image::images/FigurTjenesteMedDataInnOgUt.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
