@@ -265,7 +265,7 @@ _This property represents documentation that contains information related to the
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Eksempel / _Example_ | 
-Et konkret eksempel er en energiattest som gir forklaring til en boligs energimerke. Energiattesten er «relatert informasjon» mens energimerket er «dokumentasjon».
+Et illustrativt eksempel: La oss si at dokumentasjonskravet er «Oppgi energimerket (A, B, ..., F, G)» til en bolig. I tillegg til å oppgi selve energimerket til boligen (f.eks. «B») som dokumentasjon, kan denne egenskapen brukes til å referere til energiattesten som gir forklaring til det oppgitte energimerket «B». 
 
 __A concrete example is an energy audit report which provides more context to the evidence of a home energy efficiency score. The audit report is the related documentation while the energy score is the evidence.__
 |===
