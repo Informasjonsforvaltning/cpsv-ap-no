@@ -51,9 +51,9 @@ __If you are developing applications, see https://data.norge.no/guide/veileder-b
 _This property represents the type of Channel as defined in a controlled vocabulary._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
-| Merknad / _Note_ | Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-channel-type[Tjenestekanaltype &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
+| Merknad / _Note_ | Verdien SKAL velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-channel-type[Tjenestekanaltype &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
 
-__The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-channel-type[Service channel type &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
+__The value MUST be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-channel-type[Service channel type &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
 |Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
 
 _Norwegian extension: Requirement level changed from optional to recommended._
@@ -101,7 +101,7 @@ _The value of this property is the (estimated) time needed for executing a Servi
 | Merknad 1 / _Note 1_ |  Egenskapen brukes bare hvis behandlingstiden er spesifikk for den valgte kanalen.
 
 _This property is used only if the processing time is specific for the channel chosen._ 
-| Merknad 2 / _Note 2_ |  Opplysningen skal oppgis ved hjelp av ISO 8601-syntaksen for varighet. Forklaring er gitt på https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia-siden &#x29C9;, window="_blank", role="ext-link"] som refererer til den offisielle ISO-standarden.
+| Merknad 2 / _Note 2_ |  Opplysningen SKAL oppgis ved hjelp av ISO 8601-syntaksen for varighet. Forklaring er gitt på https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia-siden &#x29C9;, window="_blank", role="ext-link"] som refererer til den offisielle ISO-standarden.
 
 __The actual information is provided using the ISO 8601 syntax for durations. Explanation is provided in the https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia page &#x29C9;, window="_blank", role="ext-link"] that references the official ISO standard.__
 |===
@@ -113,9 +113,9 @@ __The actual information is provided using the ISO 8601 syntax for durations. Ex
 | _English name_ |  _description_
 | URI |  dct:description 
 | Verdiområde / _Range_ |  rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes  til å oppgi beskrivelsen av kanalen. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.  
+| Anvendelse / _Usage note_ | Egenskapen brukes  til å oppgi beskrivelsen av kanalen. Egenskapen BØR gjentas når beskrivelsen finnes på flere språk.  
 
-_This property represents the description of the canal. This property should be repeated when the description is in parallel languages._
+_This property represents the description of the canal. This property SHOULD be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå  / _Requirement level_ | Valgfri / _Optional_  
 |===
@@ -200,9 +200,9 @@ Eksempel i RDF Turtle:
 _In the majority of cases, the evidence required to use a Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad / _Note_ | Vanligvis skal dokumentasjonskrav være uavhengig av tjenestekanal, og dokumentasjonskrav bør knyttes til tjeneste.
+| Merknad / _Note_ | Vanligvis skal dokumentasjonskrav være uavhengig av tjenestekanal, og dokumentasjonskrav BØR knyttes til tjeneste.
 
-_In the majority of cases, the evidence required to use a service will be independent of the channel through which the service is accessed. The property cpsv:hasInput should normally be used to link a service directly to one or more pieces of evidence. However, where the type of evidence required varies according to the channel used to access the service, then the cpsv:hasInput property may be used at the channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision._
+_In the majority of cases, the evidence required to use a service will be independent of the channel through which the service is accessed. The property cpsv:hasInput SHOULD normally be used to link a service directly to one or more pieces of evidence. However, where the type of evidence required varies according to the channel used to access the service, then the cpsv:hasInput property may be used at the channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision._
 |===
 
 ==== Tjenestekanal – har e-post (vcard:hasEmail) [[Tjenestekanal-harE-post]]

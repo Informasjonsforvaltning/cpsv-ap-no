@@ -28,9 +28,9 @@ __The object of such contracts is the procurement of works or services by means 
 | _English name_ | _description_
 | URI | dct:description
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekst beskrivelse av tjenestekonsesjonskontrakten. Egenskap bør gjentas når beskrivelsen er på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekst beskrivelse av tjenestekonsesjonskontrakten. Egenskap BØR gjentas når beskrivelsen er på flere språk.
 
-_This property represents a free text description of the service concession contract. This property should be repeated when the description is in parallel languages._
+_This property represents a free text description of the service concession contract. This property SHOULD be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
@@ -84,9 +84,9 @@ _This property refers to the Contracting Authority which is ultimately responsib
 | _English name_ | _name_
 | URI | dct:title
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet til kontrakten. Egenskapen bør gjentas når navnet er på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet til kontrakten. Egenskapen BØR gjentas når navnet er på flere språk.
 
-_This property represents the name of the contract. This property should be repeated when the name is in parallel languages._
+_This property represents the name of the contract. This property SHOULD be repeated when the name is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===

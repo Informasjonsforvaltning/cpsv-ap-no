@@ -12,9 +12,9 @@ image::images/KlassenAktør.png[alt="UML-diagram med klassen Aktør, dens egensk
 
 _The Agent class is any resource that acts or has the power to act. This includes people, organisations and groups._ 
 | URI | foaf:Agent
-| Merknad / _Note_|For aktør som er en offentlig organisasjon skal <<OffentligOrganisasjon>> brukes, og for aktør som er en ikke-offentlig organisasjon skal <<Organisasjon>> brukes.
+| Merknad / _Note_|For aktør som er en offentlig organisasjon SKAL <<OffentligOrganisasjon>> brukes, og for aktør som er en ikke-offentlig organisasjon SKAL <<Organisasjon>> brukes.
 
-_For Agent which is a public organisation, <<OffentligOrganisasjon>> shall be used. For Agent which is a non-public organisation, <<Organisasjon>> shall be used._
+_For Agent which is a public organisation, <<OffentligOrganisasjon>> MUST be used. For Agent which is a non-public organisation, <<Organisasjon>> MUST be used._
 |===
 
 === Obligatoriske egenskaper for klassen _Aktør_ [[Aktør-obligatoriske-egenskaper]]
@@ -40,9 +40,9 @@ _This property contains the identifier for the Agent._
 | _English name_ | _name_
 | URI | dct:title
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet på aktøren. Egenskapen bør gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet på aktøren. Egenskapen BØR gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
 
-_This property contains the name of the agent. This property should be repeated for different versions of the name (e.g. the name in different languages)._
+_This property contains the name of the agent. This property SHOULD be repeated for different versions of the name (e.g. the name in different languages)._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
