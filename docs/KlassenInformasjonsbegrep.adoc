@@ -45,9 +45,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | _English name_ | _description_
 | URI | dct:description
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en tekstlig beskrivelse av informasjonsbegrepet. F.eks. informasjon om begrepets art, egenskaper, bruk eller annen tilleggsinformasjon om begrepet. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en tekstlig beskrivelse av informasjonsbegrepet. F.eks. informasjon om begrepets art, egenskaper, bruk eller annen tilleggsinformasjon om begrepet. Egenskapen BØR gjentas når beskrivelsen finnes på flere språk.
 
-_This property represents a short explanation supporting the understanding of the Information Concept. The explanation can include information about the nature, attributes, uses or any other additional information about the Information Concept._
+_This property represents a short explanation supporting the understanding of the Information Concept. The explanation can include information about the nature, attributes, uses or any other additional information about the Information Concept. This property SHOULD be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |Merknad / _Note_ |   Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
@@ -88,9 +88,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | _English name_ | _name_
 | URI | skos:prefLabel
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet til informasjonsbegrepet. Egenskapen bør gjentas når navnet finnes på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet til informasjonsbegrepet. Egenskapen BØR gjentas når navnet finnes på flere språk.
 
-_This property represents the Name of the Information Concept. The property should be repeated when the name is in several languages._
+_This property represents the Name of the Information Concept. The property SHOULD be repeated when the name is in several languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |Merknad / _Note_ |   Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
@@ -110,9 +110,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents the category to which the Information Concept belongs._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-|Merknad 1 / _Note 1_ | I tillegg til egenskapen «uttrykk av forventet verdi» ovenfor, kan denne egenskapen brukes til å uttrykke type verdi. Det kan være primitive typer som dato eller tekststreng, men også forretningsmessige domeneterminologier som «alder» eller «antall ansatte». Det anbefales at bruken av denne egenskapen er godt dokumentert.  
+|Merknad 1 / _Note 1_ | I tillegg til <<Informasjonsbegrep-uttrykkAvForventetVerdi>>, KAN denne egenskapen brukes til å uttrykke type verdi. Det kan være primitive typer som dato eller tekststreng, men også forretningsmessige domeneterminologier som «alder» eller «antall ansatte». Det anbefales at bruken av denne egenskapen er godt dokumentert.  
 
-_In addition to the expression of the expected value, the type classification can be used to express the kind of value the information concept is processing. This can be primitive types such as a date or a string, but also more business domain terminology such as age or number of employees. It is recommended to well-document the usage of the property._
+_In addition to the expression of the expected value, the type classification MAY be used to express the kind of value the information concept is processing. This can be primitive types such as a date or a string, but also more business domain terminology such as age or number of employees. It is recommended to well-document the usage of the property._
 |Merknad 2 / _Note 2_ |   Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._

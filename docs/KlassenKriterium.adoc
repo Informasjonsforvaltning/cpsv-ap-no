@@ -53,9 +53,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | _English name_ | _name_
 | URI | dct:title
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi navn til kriteriet. Egenskapen bør gjentas når navnet er på flere språk.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi navn til kriteriet. Egenskapen BØR gjentas når navnet er på flere språk.
 
-_This property represents the official Name of the Criterion. This property should be repeated when the name is in several languages._
+_This property represents the official Name of the Criterion. This property SHOULD be repeated when the name is in several languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
@@ -72,9 +72,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | _English name_ |  _description_
 | URI | dct:description
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi beskrivelse av kriteriet. Egenskapen bør gjentas når beskrivelsen er på flere språk.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi beskrivelse av kriteriet. Egenskapen BØR gjentas når beskrivelsen er på flere språk.
 
-_This property represents a description of the Criterion. This property should be repeated when the description is in several languages._
+_This property represents a description of the Criterion. This property SHOULD be repeated when the description is in several languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
@@ -167,11 +167,11 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | Verdiområde / _Range_ |  cv:EvidenceTypeList
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til dokumentasjonstypeliste som spesifiserer dokumentasjonstypene som trengs for å tilfredsstille kriteriet.
 
-Et kriterium kan ha en eller flere dokumentasjonstypelister. For at et kriterium skal være oppfylt, skal dokumentasjonen være i samsvar med minst én av listene når det er flere lister.
+Et kriterium KAN ha en eller flere dokumentasjonstypelister. For at et kriterium skal være oppfylt, SKAL dokumentasjonen være i samsvar med minst én av listene når det er flere lister.
 
 _This property refers to the Evidence Type List that specifies the Evidence Types that are needed to meet the Criterion._
 
-_One or several Lists of Evidence Types can support a Criterion. At least one of them must be satisfied by the response to the Criterion._
+_One or several Lists of Evidence Types MAY support a Criterion. At least one of them MUST be satisfied by the response to the Criterion._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
@@ -278,9 +278,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property refers to the category to which the Criterion belongs._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad 1 / _Note 1_ | Verdien bør velges fra et kontrollert vokabular.
+| Merknad 1 / _Note 1_ | Verdien BØR velges fra et kontrollert vokabular.
 
-_The value should be chosen from a controlled vocabulary._
+_The value SHOULD be chosen from a controlled vocabulary._
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
@@ -317,9 +317,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents an indication of how the weight should be interpreted in a complex evaluation expression, e.g. as a percentage in an evaluation expression._
 | Multiplisitet / _Multiplicity_ |  0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad 1 / _Note 1_ | EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[Number weight &#x29C9;, window="_blank", role="ext-link"] kan brukes som mulige verdier for denne egenskapen.
+| Merknad 1 / _Note 1_ | EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[Number weight &#x29C9;, window="_blank", role="ext-link"] KAN brukes som mulige verdier for denne egenskapen.
 
-__EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[Number weight &#x29C9;, window="_blank", role="ext-link"] may be used as possible values for this property.__
+__EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[Number weight &#x29C9;, window="_blank", role="ext-link"] MAY be used as possible values for this property.__
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
@@ -332,9 +332,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | _English name_ | _weighting consideration description_
 | URI |  cv:weightingConsiderationDescription
 | Verdiområde / _Range_ |  rdf:langString
-| Anvendelse / _Usage note_ |  Brukes til å oppgi en tekstlig forklaring på hvordan vektingen av et kriterium brukes. Egenskapen bør gjentas når forklaringen finnes på flere språk.
+| Anvendelse / _Usage note_ |  Brukes til å oppgi en tekstlig forklaring på hvordan vektingen av et kriterium brukes. Egenskapen BØR gjentas når forklaringen finnes på flere språk.
 
-_This property contains the explanation of how the weighting of a Criterion is to be used. This property should be repeated when the explanation is in parallel languages._
+_This property contains the explanation of how the weighting of a Criterion is to be used. This property SHOULD be repeated when the explanation is in parallel languages._
 | Multiplisitet / _Multiplicity_ |  0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.

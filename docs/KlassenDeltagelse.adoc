@@ -23,9 +23,9 @@ _The CPSV-AP recognises a common role connected with public services, i.e. the C
 |===
 | _English name_ | _description_
 | URI | dct:description
-| Anvendelse / _Usage note_ | Egenskapen brukes til å angi fritekstbeskrivelse av deltagelsen. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å angi fritekstbeskrivelse av deltagelsen. Egenskapen BØR gjentas når beskrivelsen finnes på flere språk.
 
-_This property represents a free text description of the Participation. This property should be repeated when the description is in parallel languages._
+_This property represents a free text description of the Participation. This property SHOULD be repeated when the description is in parallel languages._
 | Verdiområde / _Range_ | rdf:langString
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
@@ -81,8 +81,8 @@ __If you are developing applications, see https://data.norge.no/guide/veileder-b
 _This property provides the role played._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/role-type[Rolletype  &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
+| Merknad / _Note_ | Verdien SKAL velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/role-type[Rolletype  &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
 
-__The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/role-type[Role type  &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
+__The value MUST be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/role-type[Role type  &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
 | Eksempel | Se under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 |===
