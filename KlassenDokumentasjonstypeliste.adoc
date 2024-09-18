@@ -52,9 +52,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | _English name_ | _description_
 | URI |dct:description
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ |Egenskapen brukes til å oppgi en tekstlig beskrivelse av dokumentasjonstypelisten. F.eks. informasjon knyttet til bruk av listen eller annen tilleggsinformasjon. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
+| Anvendelse / _Usage note_ |Egenskapen brukes til å oppgi en tekstlig beskrivelse av dokumentasjonstypelisten. F.eks. informasjon knyttet til bruk av listen eller annen tilleggsinformasjon. Egenskapen BØR gjentas når beskrivelsen finnes på flere språk.
 
-_This property represents a short explanation supporting the understanding of the Evidence Type List. The explanation can include information about the nature, attributes, uses or any other additional information about the Evidence Type List._
+_This property represents a short explanation supporting the understanding of the Evidence Type List. The explanation can include information about the nature, attributes, uses or any other additional information about the Evidence Type List. The property SHOULD be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ |  0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
@@ -93,9 +93,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | _English name_ | _name_
 | URI |skos:prefLabel
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ |Egenskapen brukes til å oppgi navnet til dokumentasjonstypelisten. Egenskapen bør gjentas når navnet finnes på flere språk.
+| Anvendelse / _Usage note_ |Egenskapen brukes til å oppgi navnet til dokumentasjonstypelisten. Egenskapen BØR gjentas når navnet finnes på flere språk.
 
-_This property represents the Name of the Evidence Type List._
+_This property represents the Name of the Evidence Type List. This property SHOULD be repeated when the name is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.

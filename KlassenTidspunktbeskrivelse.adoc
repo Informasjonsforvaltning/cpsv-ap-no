@@ -31,9 +31,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 _This property is used to specify the temporal unit which provides the precision of a date-time value or scale of a temporal extent._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad 1 / _Note 1_ | Verdien skal være en av følgende: `time:unitCentury`, `time:unitDay`, `time:unitDecade`, `time:unitHour`, `time:unitMillenium`, `time:unitMinute`, `time:unitMonth`, `time:unitSecond`, `time:unitWeek`, `time:unitYear`.
+| Merknad 1 / _Note 1_ | Verdien SKAL være en av følgende: `time:unitCentury`, `time:unitDay`, `time:unitDecade`, `time:unitHour`, `time:unitMillenium`, `time:unitMinute`, `time:unitMonth`, `time:unitSecond`, `time:unitWeek`, `time:unitYear`.
 
-_The value shall be one of the following: `time:unitCentury`, `time:unitDay`, `time:unitDecade`, `time:unitHour`, `time:unitMillenium`, `time:unitMinute`, `time:unitMonth`, `time:unitSecond`, `time:unitWeek`, `time:unitYear`._
+_The value MUST be one of the following: `time:unitCentury`, `time:unitDay`, `time:unitDecade`, `time:unitHour`, `time:unitMillenium`, `time:unitMinute`, `time:unitMonth`, `time:unitSecond`, `time:unitWeek`, `time:unitYear`._
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
@@ -87,9 +87,9 @@ Eksempel i RDF Turtle, den femtende i en måned:
 _This property is used to specify day of week in the Gregorian calender-clock system, whose value is a member of the class time:DayOfWeek._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad 1 / _Note 1_ | Verdien skal være en av følgende: `time:Monday`, `time:Tuesday`, `time:Wednesday`, `time:Thursday`, `time:Friday`, `time:Saturday`, `time:Sunday`, `schema:PublicHolidays`.
+| Merknad 1 / _Note 1_ | Verdien SKAL være en av følgende: `time:Monday`, `time:Tuesday`, `time:Wednesday`, `time:Thursday`, `time:Friday`, `time:Saturday`, `time:Sunday`, `schema:PublicHolidays`.
 
-_The value shall be one of the following: `time:Monday`, `time:Tuesday`, `time:Wednesday`, `time:Thursday`, `time:Friday`, `time:Saturday`, `time:Sunday`, `schema:PublicHolidays`._
+_The value MUST be one of the following: `time:Monday`, `time:Tuesday`, `time:Wednesday`, `time:Thursday`, `time:Friday`, `time:Saturday`, `time:Sunday`, `schema:PublicHolidays`._
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
@@ -188,9 +188,9 @@ Eksempel i RDF Turtle, 11 (= november):
 _This property is used to specify the month of the year in the Gregorian calender-clock system, whose value is a member of the class time:MonthOfYear._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad 1 / _Note 1_ | Verdien skal være en av følgende: `greg:January`, `greg:February`, `greg:March`, `greg:April`, `greg:May`, `greg:June`, `greg:July`, `greg:August`, `greg:September`, `greg:October`, `greg:November`, `greg:December`.
+| Merknad 1 / _Note 1_ | Verdien SKAL være en av følgende: `greg:January`, `greg:February`, `greg:March`, `greg:April`, `greg:May`, `greg:June`, `greg:July`, `greg:August`, `greg:September`, `greg:October`, `greg:November`, `greg:December`.
 
-_TRe value shall be one of the following: `greg:January`, `greg:February`, `greg:March`, `greg:April`, `greg:May`, `greg:June`, `greg:July`, `greg:August`, `greg:September`, `greg:October`, `greg:November`, `greg:December`._
+_TRe value MUST be one of the following: `greg:January`, `greg:February`, `greg:March`, `greg:April`, `greg:May`, `greg:June`, `greg:July`, `greg:August`, `greg:September`, `greg:October`, `greg:November`, `greg:December`._
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._

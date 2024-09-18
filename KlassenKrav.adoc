@@ -46,9 +46,9 @@ __If you are developing applications, see https://data.norge.no/guide/veileder-b
 | _English name_ | _name_
 | URI | dct:title
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn til kravet. Egenskapen bør gjentas når navnet er på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn til kravet. Egenskapen BØR gjentas når navnet er på flere språk.
 
-_This property represents the official Name of the Requirement. This property should be repeated when the name is in several languages._
+_This property represents the official Name of the Requirement. This property SHOULD be repeated when the name is in several languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
@@ -63,9 +63,9 @@ _This property represents the official Name of the Requirement. This property sh
 | _English name_ | _description_
 | URI | dct:description
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi beskrivelse av kravet. Egenskapen bør gjentas når beskrivelsen er på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi beskrivelse av kravet. Egenskapen BØR gjentas når beskrivelsen er på flere språk.
 
-_This property represents a description of the Requirement. This property should be repeated when the description is in several languages._
+_This property represents a description of the Requirement. This property SHOULD be repeated when the description is in several languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
@@ -139,11 +139,11 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 | Verdiområde / _Range_ |  cv:EvidenceTypeList
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til dokumentasjonstypeliste som spesifiserer dokumentasjonstypene som trengs for å tilfredsstille kravet.
 
-Et krav kan ha en eller flere dokumentasjonstypelister. For at kravet skal være oppfylt, skal dokumentasjonen være i samsvar med minst én av listene når det er flere lister.
+Et krav KAN ha en eller flere dokumentasjonstypelister. For at kravet skal være oppfylt, SKAL dokumentasjonen være i samsvar med minst én av listene når det er flere lister.
 
 _This property refers to the Evidence Type List that specifies the Evidence Types that are needed to meet the Requirement._
 
-_One or several Lists of Evidence Types can support a Requirement. At least one of them must be satisfied by the response to the Requirement._
+_One or several Lists of Evidence Types MAY support a Requirement. At least one of them MUST be satisfied by the response to the Requirement._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
@@ -247,7 +247,7 @@ _This property refers to the rules that the requirement fulfils._
 _This property refers to the category to which the Requirement belongs._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Verdien bør velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/requirement-type[Kravtype &#x29C9;, window="_blank", role="ext-link"] når verdien finnes i det vokabularet.
+| Merknad / _Note_ | Verdien BØR velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/requirement-type[Kravtype &#x29C9;, window="_blank", role="ext-link"] når verdien finnes i det vokabularet.
 
-__The value should be chosen from the controlled vocabulary https://data.norge.no/vocabulary/requirement-type[Requirement type &#x29C9;, window="_blank", role="ext-link"] when the value is in that vocabulary.__
+__The value SHOULD be chosen from the controlled vocabulary https://data.norge.no/vocabulary/requirement-type[Requirement type &#x29C9;, window="_blank", role="ext-link"] when the value is in that vocabulary.__
 |===

@@ -36,7 +36,7 @@ Eksempel: `skos:Concept` er identifikatoren til klassen Begrep (Concept), slik k
 
 Eksempel: Verdiområde `skos:Concept` betyr at verdien til egenskapen skal være en instans av klassen `skos:Concept`.
 |Anvendelse / _Usage note_ | Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne standarden. Forklaringen er også skrevet på engelsk (_Usage note_, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.
-| Multiplisitet / _Multiplicity_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/bør/kan ha.
+| Multiplisitet / _Multiplicity_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen SKAL/BØR/KAN ha.
 | Kravnivå / _Requirement level_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere om egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Om-kravene>>.
 | Merknad / _Note_ | Brukes til merknader knyttet til bruk av klassen eller egenskapen, f.eks. restriksjoner hvis noen. Merknadene er også skrevet på engelsk (_Note_, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.
 | Eksempel | Brukes til å gi eksempel på bruken av klassen/egenskapen, i prosatekst.
