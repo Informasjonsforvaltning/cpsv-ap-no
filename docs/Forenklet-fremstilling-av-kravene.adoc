@@ -17,16 +17,16 @@ image::images/CPSV-AP-NO-forenklet-fremstilling.png[]
 
 Helt overordnet illustrerer figuren bl.a. følgende:
 
-* En *https://data.norge.no/concepts/db48fa77-3f47-4d58-b4a3-41569f149c1a[hendelse &#x29C9;, window="_blank", role="ext-link"]* kan sette i gang en eller flere *https://data.norge.no/concepts/9d406b71-273f-4631-8f3d-52d61943612b[tjenester &#x29C9;, window="_blank", role="ext-link"]*. 
-** En tjeneste kan være en *https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0[offentlig tjeneste &#x29C9;, window="_blank", role="ext-link"]*.
-** En hendelse kan være en *https://data.norge.no/concepts/9b19d5ce-87b3-4584-a875-e7cff3ad6740[livshendelse &#x29C9;, window="_blank", role="ext-link"]* eller en *https://data.norge.no/concepts/71fd9d69-ca64-3f9b-a1d3-7ade4d069f8a[virksomhetshendelse &#x29C9;, window="_blank", role="ext-link"]*, som kan utløse behov for en eller flere tjenester / offentlige tjenester.
+* En *https://data.norge.no/concepts/db48fa77-3f47-4d58-b4a3-41569f149c1a[hendelse &#x29C9;, window="_blank", role="ext-link"]* KAN sette i gang en eller flere *https://data.norge.no/concepts/9d406b71-273f-4631-8f3d-52d61943612b[tjenester &#x29C9;, window="_blank", role="ext-link"]*. 
+** En tjeneste KAN være en *https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0[offentlig tjeneste &#x29C9;, window="_blank", role="ext-link"]*.
+** En hendelse KAN være en *https://data.norge.no/concepts/9b19d5ce-87b3-4584-a875-e7cff3ad6740[livshendelse &#x29C9;, window="_blank", role="ext-link"]* eller en *https://data.norge.no/concepts/71fd9d69-ca64-3f9b-a1d3-7ade4d069f8a[virksomhetshendelse &#x29C9;, window="_blank", role="ext-link"]*, som KAN utløse behov for en eller flere tjenester / offentlige tjenester.
 
 
-* En tjeneste / offentlig tjeneste skal alltid produsere et eller flere *tjenesteresultat* som kan skape en eller flere nye hendelser. 
-** Et tjenesteresultat kan være en del av et *datasett*.
+* En tjeneste / offentlig tjeneste SKAL alltid produsere et eller flere *tjenesteresultat* som KAN skape en eller flere nye hendelser. 
+** Et tjenesteresultat KAN være en del av et *datasett*.
 
-* Det kan kreves *dokumentasjon* for å utføre en tjeneste / offentlig tjeneste.
-** En dokumentasjon kan være en del av et datasett. 
+* Det KAN kreves *dokumentasjon* for å utføre en tjeneste / offentlig tjeneste.
+** En dokumentasjon KAN være en del av et datasett. 
 
 
 === Et illustrativt eksempel [[Illustrativt-eksempel]]

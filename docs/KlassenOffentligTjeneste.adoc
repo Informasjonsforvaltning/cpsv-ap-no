@@ -290,7 +290,7 @@ _This property represents the Type of a Public Service as described in a control
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/main-activity[Main activity &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
 
-__The possible values for this property are described in EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/main-activity[Main activity &#x29C9;, window="_blank", role="ext-link"].__
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/main-activity[Main activity &#x29C9;, window="_blank", role="ext-link"].__
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Kravnivå er endret fra valgfri til anbefalt.
 
 _Norwegian extension: Requirement level changed from optional to recommended._
@@ -361,7 +361,7 @@ _The value of this property is the (estimated) time needed for executing a Publi
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ |  Opplysningen SKAL oppgis ved hjelp av ISO 8601-syntaksen for varighet. Forklaring er gitt på https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia-siden &#x29C9;, window="_blank", role="ext-link"] som refererer til den offisielle ISO-standarden.
 
-__The actual information is provided using the ISO 8601 syntax for durations. Explanation is provided in the https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia page &#x29C9;, window="_blank", role="ext-link"] that references the official ISO standard.__
+__The actual information MUST be provided using the ISO 8601 syntax for durations. Explanation is provided in the https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia page &#x29C9;, window="_blank", role="ext-link"] that references the official ISO standard.__
 | Eksempel | Det tar 1 dag for å behandle en søknad om skjenkebevilling (i Brønnøy kommune).
 |===
 
@@ -702,9 +702,9 @@ _Norwegian extension: Range changed from `cpsv:PublicService` to `cpsvno:Service
 _This property represents the industry or sector a Public Service relates to, or is intended for. Note that a single Public Service MAY relate to multiple sectors._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | De mulige verdiene for egenskapen er beskrevet i EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].
+| Merknad / _Note_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].
 
-__The possible values for this property are described in the controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"] of the Publications Office.__
+__The value MUST be chosen from the controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"] of the Publications Office.__
 |===
 
 ==== Offentlig tjeneste – språk (dct:language) [[OffentligTjeneste-språk]]

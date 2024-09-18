@@ -103,7 +103,7 @@ _The value of this property is the (estimated) time needed for executing a Servi
 _This property is used only if the processing time is specific for the channel chosen._ 
 | Merknad 2 / _Note 2_ |  Opplysningen SKAL oppgis ved hjelp av ISO 8601-syntaksen for varighet. Forklaring er gitt på https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia-siden &#x29C9;, window="_blank", role="ext-link"] som refererer til den offisielle ISO-standarden.
 
-__The actual information is provided using the ISO 8601 syntax for durations. Explanation is provided in the https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia page &#x29C9;, window="_blank", role="ext-link"] that references the official ISO standard.__
+__The actual information MUST be provided using the ISO 8601 syntax for durations. Explanation is provided in the https://en.wikipedia.org/wiki/ISO_8601#Durations[Wikipedia page &#x29C9;, window="_blank", role="ext-link"] that references the official ISO standard.__
 |===
 
 ==== Tjenestekanal – beskrivelse (dct:description) [[Tjenestekanal-beskrivelse]]
