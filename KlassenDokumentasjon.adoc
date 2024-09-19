@@ -8,16 +8,16 @@ image::images/KlassenDokumentasjon.png[alt="UML-diagram med klassen Dokumentasjo
 [cols="30s,70d"]
 |===
 | _English name_ | _Evidence_
-| Anvendelse / _Usage note_ | Klassen brukes til å representere dokumentasjon som trengs for å kunne utføre en tjeneste. Dette er vanligvis administrative dokumenter eller utfylte analoge eller digitale skjemaer.
+| Anvendelse / _Usage note_ | Klassen brukes til å representere et konkret stykke dokumentasjon som trengs for å kunne utføre en tjeneste. Dette er vanligvis administrative dokumenter eller utfylte analoge eller digitale skjemaer.
 
-_Evidence can be any resource – document, artefact – anything needed for executing the service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered. It contains information that proves that a criterion requirement exists or is true, in particular evidences are used to prove that a specific criterion is met._
+_This class is used to represent a concrete piece of evidence that is needed in order to execute a service. Evidence can be any resource – document, artefact – anything needed for executing the service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered. It contains information that proves that a criterion requirement exists or is true, in particular evidences are used to prove that a specific criterion is met._
 | URI | cv:Evidence
-| Eksempel | Krav om vandel
+| Eksempel | Vandelsattest fra Politiet (som trengs for tjenesten «Skjenkebevilling (i Brønnøy kommune)»).
 |===
 
 Eksempel i RDF Turtle:
 ----
-<kravOmVandel> a cv:Evidence ; .
+<vandelsattest> a cv:Evidence ; .
 ----
 
 === Obligatoriske egenskaper for klassen _Dokumentasjon_ [[Dokumentasjon-obligatoriske-egenskaper]]

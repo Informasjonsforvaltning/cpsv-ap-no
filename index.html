@@ -1384,8 +1384,10 @@ Dette er et <mark>utkast</mark> til v.1.1 av CPSV-AP-NO, hovedsakelig for å til
 <div class="sect2">
 <h3 id="Formål"><a class="link" href="#Formål">1.1. Formål</a></h3>
 <div class="paragraph">
-<p><em><mark>@@@@@@ bør oppdateres, bl.a. også å dekke "execution" (jf. EUs CPSV-AP)</mark></em>
-Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive tjenester og hendelser og en felles måte å utveksle beskrivelsene. Spesifikasjonen skal bidra til å sikre interoperabilitet av kataloger/beskrivelser av tjenester og hendelser, på tvers av sektorer. Spesifikasjonen muliggjør også maskinell tilgang til beskrivelser av tjenester og hendelser.</p>
+<p>Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive tjenester og hendelser og en felles måte å utveksle beskrivelsene. Spesifikasjonen skal bidra til å sikre interoperabilitet av kataloger/beskrivelser av tjenester og hendelser, på tvers av sektorer. Spesifikasjonen muliggjør også maskinell tilgang til beskrivelser av tjenester og hendelser.</p>
+</div>
+<div class="paragraph">
+<p>I tillegg til beskrivelser av (metadata om) hendelser og tjenester, støtter CPSV-AP-NO også utveksling av data i forbindelse med utførelsen (<em>"execution"</em>) av en gitt tjeneste, ved at <a href="#Dokumentasjon">«dokumentasjon»</a> er ment å være et konkret stykke dokumentasjon som brukeren av en tjeneste oppgir, og <a href="#Tjenesteresultat">«tjenesteresultat»</a> er ment å være et konkret stykke resultat som en tjeneste produserer.</p>
 </div>
 <div class="paragraph">
 <p>Spesifikasjonen inngår i <a href="https://www.digdir.no/3626" class="ext-link" target="_blank" rel="noopener">Rammeverk for informasjonsforvaltning &#x29C9;</a>.</p>
@@ -3241,8 +3243,8 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere dokumentasjon som trengs for å kunne utføre en tjeneste. Dette er vanligvis administrative dokumenter eller utfylte analoge eller digitale skjemaer.</p>
-<p class="tableblock"><em>Evidence can be any resource – document, artefact – anything needed for executing the service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered. It contains information that proves that a criterion requirement exists or is true, in particular evidences are used to prove that a specific criterion is met.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et konkret stykke dokumentasjon som trengs for å kunne utføre en tjeneste. Dette er vanligvis administrative dokumenter eller utfylte analoge eller digitale skjemaer.</p>
+<p class="tableblock"><em>This class is used to represent a concrete piece of evidence that is needed in order to execute a service. Evidence can be any resource – document, artefact – anything needed for executing the service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered. It contains information that proves that a criterion requirement exists or is true, in particular evidences are used to prove that a specific criterion is met.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -3250,7 +3252,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Krav om vandel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vandelsattest fra Politiet (som trengs for tjenesten «Skjenkebevilling (i Brønnøy kommune)»).</p></td>
 </tr>
 </tbody>
 </table>
@@ -3259,7 +3261,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;kravOmVandel&gt; a cv:Evidence ; .</pre>
+<pre>&lt;vandelsattest&gt; a cv:Evidence ; .</pre>
 </div>
 </div>
 <div class="sect3">
@@ -16192,8 +16194,8 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere resultat fra en tjeneste.</p>
-<p class="tableblock"><em>The class is used to represent an output of a service. An output can be any resource - document, artefact - anything produced by the Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et konkret stykke resultat fra en tjeneste.</p>
+<p class="tableblock"><em>The class is used to represent a concrete piece of output of a service. An output can be any resource - document, artefact - anything produced by the Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -17737,7 +17739,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-09-18 06:56:26 UTC
+Sist oppdatert 2024-09-19 07:56:15 UTC
 </div>
 </div>
 </body>
