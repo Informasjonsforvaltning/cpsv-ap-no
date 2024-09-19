@@ -8,9 +8,9 @@ image::images/KlassenTjenesteresultat.png[alt="UML-diagram med klassen Tjenester
 [cols="30s,70d"]
 |===
 | _English name_ | _Output_
-| Anvendelse / _Usage note_ |  Klassen brukes til å representere resultat fra en tjeneste.
+| Anvendelse / _Usage note_ |  Klassen brukes til å representere et konkret stykke resultat fra en tjeneste.
 
-_The class is used to represent an output of a service. An output can be any resource - document, artefact - anything produced by the Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something._
+_The class is used to represent a concrete piece of output of a service. An output can be any resource - document, artefact - anything produced by the Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something._
 | URI | cv:Output
 | Eksempel | Resultater fra tjenesten «Skjenkebevilling (i Brønnøy kommune)» kan være selve bevillingen (når søknaden godkjennes) eller avslag (når søknaden ikke blir godkjent).
 |===
