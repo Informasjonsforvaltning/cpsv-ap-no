@@ -1,4 +1,4 @@
-== Krav til RDF-representasjon av klassene i DCAT-AP-NO [[Spesifikasjon-per-klasse]]
+== Krav til RDF-representasjon av klassene i CPSV-AP-NO [[Spesifikasjon-per-klasse]]
 
 _Denne delen av spesifikasjonen er primært ment for den tekniske målgruppen._ 
 
