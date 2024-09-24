@@ -70,6 +70,30 @@ Eksempel i RDF Turtle:
    cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291> ; . # Brønnøy kommune
 -----
 
+==== Offentlig tjeneste – har mulig resultat (cpsvno:hasPossibleResult) [[OffentligTjeneste-harMuligResultat]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _has possible result_
+| URI | cpsvno:hasPossibleResult
+| Verdiområde / _Range_ | cpsvno:PossibleResult
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig resultat fra tjenesten.
+
+_This property is used to specify possible result of the service._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel | Et mulig resultat fra tjenesten «Skjenkebevilling (i Brønnøy kommune)» er bevillingen som utstedes når søknaden godkjennes. Et annet mulig resultat er avslag når søknaden ikke godkjennes.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<skjenkebevillingBrønnøy> a cpsv:PublicService ;
+   cpsvno:hasPossibleResult <bevilling> , <avslag> .
+-----
+
 ==== Offentlig tjeneste – identifikator (dct:identifier) [[OffentligTjeneste-identifikator]]
 
 [cols="30s,70d"]
@@ -137,29 +161,6 @@ Eksempel i RDF Turtle:
    dct:title "Skjenkebevilling"@nb ; .
 -----
 
-==== Offentlig tjeneste – produserer (cpsv:produces) [[OffentligTjeneste-produserer]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _produces_
-| URI | cpsv:produces
-| Verdiområde / _Range_ | cv:Output
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.
-
-_This property links a Public Service to one or more instances of the Output class describing the actual result of executing a given Public Service._
-| Multiplisitet / _Multiplicity_ | 1..n
-| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ |  Norsk utvidelse: kravnivå et endret fra valgfri til obligatorisk og multiplisitet fra 0..n til 1..n. Dette fordi enhver tjeneste skal resultere i noe.
-
-_Norwegian extension: Requirement level changed from optional to mandatory, and multiplicity from 0..n to 1..n._
-| Eksempel | Selve «bevillingen» er et tjenesteresultat av tjenesten «Skjenkebevilling (i Brønnøy kommune)» og dette kan være et datasett som kan deles.
-|===
-
-Eksempel i RDF Turtle:
------
-<bevilling> a cv:Output ; .
------
-
 === Anbefalte egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-anbefalte-egenskaper]]
 
 ==== Offentlig tjeneste – begrep (dct:subject) [[OffentligTjeneste-begrep]]
@@ -216,33 +217,31 @@ Eksempel i RDF Turtle:
    .
 ----
 
-==== Offentlig tjeneste – har dokumentasjonskrav (cpsv:hasInput) [[OffentligTjeneste-har-dokumentasjonskrav]]
+==== Offentlig tjeneste – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[OffentligTjeneste-harPåkrevdDokumentasjon]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _has input_
-| URI | cpsv:hasInput
-| Verdiområde / _Range_ | cv:Evidence
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.
+| _English name_ | _has required evidence_
+| URI | cpsvno:hasRequiredEvidence
+| Verdiområde / _Range_ | cpsvno:RequiredEvidence
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten.
 
-_This property links a Public Service to one or more instances of the Evidence class._
+_This property is used to specify evidence that is required by the service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves varierer avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjenestekanal benyttes. 
 
-_A specific Public Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input SHOULD be at the level of the Channel._
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: kravnivå  endret fra valgfri til anbefalt.
+_A service may require certain evidence in order to be delivered. If the evidence required varies according to the channel through which it is accessed, then the corresponding property in the class Channel SHOULD be used._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
- _Norwegian extension: Requirement level changed from optional to recommended._  
-| Eksempel | Et av dokumentasjonskravene til å søke om skjenkebevilling er bestått «Kunnskapsprøve».
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel | En påkrevd dokumentasjon til å søke om skjenkebevilling er firmaattest.
 |===
 
 Eksempel i RDF Turtle:
 ----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cpsv:hasInput <beståttKunnskapsprøve> ; .
-
-<beståttKunnskapsprøve> a cv:Evidence .
+   cpsvno:hasRequiredEvidence <firmaattest> ; .
 ----
 
 ==== Offentlig tjeneste – hjemmeside (foaf:homepage) [[OffentligTjeneste-hjemmeside]]
@@ -376,9 +375,6 @@ Eksempel i RDF Turtle:
 _This property links a Public Service to the Dataset(s) in which it is being described._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Bruk egenskapen <<OffentligTjeneste-har-dokumentasjonskrav>> for å knytte til datasett som tjenesten bruker, eller egenskapen <<OffentligTjeneste-produserer>> for datasett som tjenesten produserer.
-
-_Use the property <<OffentligTjeneste-har-dokumentasjonskrav>> to refer to the dataset that the service uses, or the property <<OffentligTjeneste-produserer>> for the dataset that the service produces._
 |===
 
 ==== Offentlig tjeneste – er del av (dct:isPartOf) [[OffentligTjeneste-erDelAv]]

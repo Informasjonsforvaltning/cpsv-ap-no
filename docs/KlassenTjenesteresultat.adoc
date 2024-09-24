@@ -1,9 +1,9 @@
 == Klassen Tjenesteresultat (cv:Output) [[Tjenesteresultat]]
 
 [[img-KlassenTjenesteresultat]]
-.Klassen Tjenesteresultat (cv:Output) og klassen den refererer til. 
+.Klassen Tjenesteresultat (cv:Output) og klassene den refererer til. 
 [link=images/KlassenTjenesteresultat.png]
-image::images/KlassenTjenesteresultat.png[alt="UML-diagram med klassen Tjenesteresultat, dens egenskaper og dens relasjon til en annen klasse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenTjenesteresultat.png[alt="UML-diagram med klassen Tjenesteresultat, dens egenskaper og dens relasjon til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
@@ -134,7 +134,9 @@ _This property expresses the relation between an Output and one or more Events, 
 | Multiplisitet / _Multiplicity_ | 0..n 
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |Merknad |Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Det er behov for å tydeliggjøre kopling mellom et tjenesteresultat (f.eks. endring i et datasett) og hendelsen(e) som skapes av endringen.
-|Remark | Norwegian extension: Not explicitly specified in CPSV-AP.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |Eksempel | Se <<img-FigurSyktBarnBeskrevetMedCPSVNO>>
 |===
 
