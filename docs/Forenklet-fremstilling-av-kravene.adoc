@@ -22,8 +22,8 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 ** En hendelse KAN være en *https://data.norge.no/concepts/9b19d5ce-87b3-4584-a875-e7cff3ad6740[livshendelse &#x29C9;, window="_blank", role="ext-link"]* eller en *https://data.norge.no/concepts/71fd9d69-ca64-3f9b-a1d3-7ade4d069f8a[virksomhetshendelse &#x29C9;, window="_blank", role="ext-link"]*, som KAN utløse behov for en eller flere tjenester / offentlige tjenester.
 
 
-* En tjeneste / offentlig tjeneste SKAL alltid ha et eller flere *mulige resultat* som KAN skape en eller flere nye hendelser. 
-** Et mulig resultat KAN være en del av et *datasett*.
+* En tjeneste / offentlig tjeneste SKAL alltid ha et eller flere *mulige tjenesteresultat* som KAN skape en eller flere nye hendelser. 
+** Et mulig tjenesteresultat KAN være en del av et *datasett*.
 
 * Det KAN være *påkrevd dokumentasjon* til en tjeneste / offentlig tjeneste.
 ** En påkrevd dokumentasjon KAN være en del av et datasett. 
@@ -37,7 +37,7 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 
 * En av enkelthendelsene i livshendelsen https://alvorligsyktbarn.no/[Alvorlig sykt barn &#x29C9;, window="_blank", role="ext-link"] er at «barnet er blitt syk».
 * Hendelsen «barnet er blitt syk» kan utløse behov for «legetjeneste». 
-* Et mulig resultat fra «legetjeneste» er at det forskrives legemidler (datasett «e-resept») som kan skape en ny hendelse «e-resept sendt». 
+* Et mulig tjenesteresultat fra «legetjeneste» er at det forskrives legemidler (datasett «e-resept») som kan skape en ny hendelse «e-resept sendt». 
 * Denne nye hendelse kan sette i gang «apotektjeneste» som bruker datasettet «e-resept».
 
 [[img-SyktBarn]]

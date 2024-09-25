@@ -67,7 +67,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | _English name_ | _has possible output_
 | URI | cpsvno:hasPossibleOutput
 | Verdiområde / _Range_ | cpsvno:PossibleOutput
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig resultat fra tjenesten.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten.
 
 _This property is used to specify possible result of the service._
 | Multiplisitet / _Multiplicity_ | 1..n
