@@ -88,7 +88,7 @@ include::KlassenKriterium.adoc[]
 
 include::KlassenLivshendelse.adoc[]
 
-include::KlassenMuligResultat.adoc[]
+include::KlassenMuligTjenesteresultat.adoc[]
 
 include::KlassenOffentligOrganisasjon.adoc[]
 
