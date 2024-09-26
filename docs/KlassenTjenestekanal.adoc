@@ -181,23 +181,6 @@ Eksempel i RDF Turtle:
       vcard:country-name "Norge"@nb , "Norway"@en ; ] ; .
 -----
 
-==== Tjenestekanal – har dokumentasjonskrav (cpsv:hasInput) [[Tjenestekanal-har-dokumentasjonskrav]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _has input_
-| URI | cpsv:hasInput
-| Verdiområde / _Range_ | cv:Evidence
-| Anvendelse / _Usage note_ |  Egenskapen brukes  til å referere til dokumentasjonskrav som er spesifikk for den aktuelle tjenestekanalen.
-
-_In the majority of cases, the evidence required to use a Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad / _Note_ | Vanligvis skal dokumentasjonskrav være uavhengig av tjenestekanal, og dokumentasjonskrav BØR knyttes til tjeneste.
-
-_In the majority of cases, the evidence required to use a service will be independent of the channel through which the service is accessed. The property cpsv:hasInput SHOULD normally be used to link a service directly to one or more pieces of evidence. However, where the type of evidence required varies according to the channel used to access the service, then the cpsv:hasInput property may be used at the channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision._
-|===
-
 ==== Tjenestekanal – har e-post (vcard:hasEmail) [[Tjenestekanal-harE-post]]
 
 [cols="30s,70d"]
@@ -221,6 +204,26 @@ Eksempel i RDF Turtle:
 <viaEpost> a cv:Channel ;
    vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no" ; .
 -----
+
+==== Tjenestekanal – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[Tjenestekanal-harPåkrevdDokumentasjon]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _has required evidence_
+| URI | cpsvno:hasRequiredEvidence
+| Verdiområde / _Range_ | cpsvno:RequiredEvidence
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er  spesifikt påkrevd for den aktuelle tjenestekanalen.
+
+_This property is used to specify evidence that is required by the service chanel._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
+| Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves ikke er avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjeneste / Offentlig tjeneste benyttes. 
+
+_A service may require certain evidence in order to be delivered. If the evidence required does not vary according to the channel through which it is accessed, then the corresponding property in the class Service / Public Service SHOULD be used._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+|===
 
 ==== Tjenestekanal – har telefon (vcard:hasTelephone) [[Tjenestekanal-harTelefon]]
 

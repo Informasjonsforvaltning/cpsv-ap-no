@@ -3,14 +3,14 @@
 :xrefstyle: short
 
 [[img-TjenesteOgData]]
-.Tjeneste med som dokumentasjonskrav og tjenesteresultat som er del av datasett.
+.Tjeneste med påkrevd dokumentasjon og mulig tjenesteresultat som er del av datasett.
 [link=images/FigurTjenesteMedDataInnOgUt.png]
 image::images/FigurTjenesteMedDataInnOgUt.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
 
 
-Som illustrert i <<img-TjenesteOgData>>, kan et Tjenesteresultat (`cv:Output`) produsert av en Tjeneste (`cpsvno:Service` inkl. subklassen Offentlig tjeneste (`cpsv:PublicService`)) være en del av et Datasett (`dcat:Dataset`), f.eks. selve «bevilling» som et resultat fra tjenesten «Skjenkebevilling» kan inngå i datasettet over alle skjenkebevillinger som den aktuelle kommunen har utstedt over en gitt tidsperiode. 
+Som illustrert i <<img-TjenesteOgData>>, kan et mulig tjenesteresultat (`cpsvno:PossibleOutput`) fra en Tjeneste (`cpsvno:Service` inkl. subklassen Offentlig tjeneste (`cpsv:PublicService`)) være en del av et Datasett (`dcat:Dataset`), f.eks. selve «bevilling» som et mulig tjenesteresultat fra tjenesten «Skjenkebevilling» kan inngå i datasettet over alle skjenkebevillinger som den aktuelle kommunen har utstedt over en gitt tidsperiode. 
 
-Figuren illustrerer også at et dokumentasjonskrav (`cv:Evidence`) kan være en del av et datasett (`dcat:Dataset`), f.eks. den aktuelle «Vandelsattest» kan inngå i datasettet over alle vandelsattester som Politiet har utstedt over en gitt tidsperiode. 
+Figuren illustrerer også at en påkrevd dokumentasjon (`cpsvno:RequiredEvidence`) kan være en del av et datasett (`dcat:Dataset`), f.eks. «firmaattest» er en del av datasettet «Foretaksregisteret» hos Brønnøysundregistrene. 
 
 Se https://informasjonsforvaltning.github.io/dcat-ap-no/#Datasett[spesifikasjon til klassen Datasett (dcat:Dataset) i DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], for hvordan et datasett kan knyttes videre til API, begrep og informasjonsmodell.
 

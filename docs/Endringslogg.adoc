@@ -24,31 +24,38 @@ Generelt:
 
 * Det stilles ikke lenger krav til om en klasse er obligatorisk, anbefalt eller valgfri. Dette fordi hvilke klasser som trengs er avhengig av brukstilfelle.   
 
-Klassen Datasett (dcat:Dataset):
+Utgåtte klasser: 
 
-* Klassen er ikke eksplisitt spesifisert i denne spesifikasjonen, fordi det ikke lenger er krav til datasett som er spesifikke når det gjelder tjeneste- og hendelsesbeskrivelser. 
+* Klassen Datasett (dcat:Dataset): Klassen er ikke eksplisitt spesifisert i denne spesifikasjonen, fordi det ikke lenger er krav til datasett som er spesifikke når det gjelder tjeneste- og hendelsesbeskrivelser. 
 
-<<Dokumentasjon>>: 
+Nye klasser: 
 
-* Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne knytte en gitt dokumentasjon til et datasett, er det innført en ny egenskap <<Dokumentasjon-er-del-av>>. 
+* <<PåkrevdDokumentasjon>>: føyet til for å kunne dekke behov for å beskrive påkrevd dokumentasjon (ettersom klassen cv:Evidence i CPSV-AP skal representere et konkret stykke dokumentasjon som brukeren oppgir ved utførelsen av tjenesten, og ikke hva som kreves av dokumentasjon).
 
-<<Hendelse>> (inkl. subklassene <<Livshendelse>> og <<Virksomhetshendelse>>):
+* <<MuligTjenesteresultat>>: føyet til for å kunne dekke behov for å beskrive hva som er mulige tjenesteresultater fra en tjeneste (ettersom klassen cv:Output i CPSV-AP skal representere et konkret stykke tjenesteresultat fra en gitt tjeneste, og ikke hva som er mulige tjenesteresultater).
 
-* Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne bl.a. publisere hendelsesstrøm, er det innført en ny egenskap <<Hendelse-beskrivendeDatasett>> som kan benyttes til å knytte en hendelse til et eller flere datasett. Tilsvarende gjelder også subklassene <<Livshendelse>> og <<Virksomhetshendelse>>. 
+Endrede klasser: 
+* <<Dokumentasjon>>: 
+** Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne knytte en gitt dokumentasjon til et datasett, er det innført en ny egenskap <<Dokumentasjon-er-del-av>>. 
 
-<<OffentligTjeneste>>: 
+* <<Hendelse>> (inkl. subklassene <<Livshendelse>> og <<Virksomhetshendelse>>): 
+** Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne bl.a. publisere hendelsesstrøm, er det innført en ny egenskap <<Hendelse-beskrivendeDatasett>> som kan benyttes til å knytte en hendelse til et eller flere datasett. Tilsvarende gjelder også subklassene <<Livshendelse>> og <<Virksomhetshendelse>>. 
 
-* Kravnivået til egenskapene <<OffentligTjeneste-harDel>> og <<OffentligTjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
-* Til egenskapen <<OffentligTjeneste-status>> er kravet til bruk kontrollert vokabular endret til å bruke EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"] (som har samme status-verdier som tidligere ADMS Status Vocabulary). 
+* <<OffentligTjeneste>>: 
+** Kravnivået til egenskapene <<OffentligTjeneste-harDel>> og <<OffentligTjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
+** Til egenskapen <<OffentligTjeneste-status>> er kravet til bruk kontrollert vokabular endret til å bruke EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"] (som har samme status-verdier som tidligere ADMS Status Vocabulary). 
+** Egenskapene <<OffentligTjeneste-harPåkrevdDokumentasjon>> og <<OffentligTjeneste-harMuligTjenesteresultat>> føyet til, for å kunne beskrive påkrevd dokumentasjon til, og mulig tjenesteresultat fra en offentlig tjeneste.
 
-<<Tjeneste>>: 
+* <<Tjeneste>>: 
+** Kravnivået til egenskapene <<Tjeneste-harDel>> og <<Tjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
+** Til egenskapen <<Tjeneste-status>> er kravet til bruk kontrollert vokabular endret til å bruke EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"] (som har samme status-verdier som tidligere ADMS Status Vocabulary). 
+** Egenskapene <<Tjeneste-harPåkrevdDokumentasjon>> og <<Tjeneste-harMuligTjenesteresultat>> føyet til, for å kunne beskrive påkrevd dokumentasjon til, og mulig tjenesteresultat fra en tjeneste.
 
-* Kravnivået til egenskapene <<Tjeneste-harDel>> og <<Tjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
-* Til egenskapen <<Tjeneste-status>> er kravet til bruk kontrollert vokabular endret til å bruke EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"] (som har samme status-verdier som tidligere ADMS Status Vocabulary). 
+* <<Tjenestekanal>>: 
+** <<Tjenestekanal-harPåkrevdDokumentasjon>> føyet til for å kunne beskrive dokumentasjon som er påkrevd av tjenestekanalen. 
 
-<<Tjenesteresultat>>: 
-
-* Klassen har ikke lenger Datasett (dcat:Dataset) som sin subklasse. For å kunne knytte et gitt tjenesteresultat til et datasett, er det innført en ny egenskap <<Tjenesteresultat-er-del-av>>. 
+* <<Tjenesteresultat>>: 
+** Klassen har ikke lenger Datasett (dcat:Dataset) som sin subklasse. For å kunne knytte et gitt tjenesteresultat til et datasett, er det innført en ny egenskap <<Tjenesteresultat-er-del-av>>. 
 
 === Fra v.1.0.3 til v.1.0.x
 
