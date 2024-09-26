@@ -60,6 +60,23 @@ _This property refers to the Agent who owns the Service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
+==== Tjeneste – har mulig tjenesteresultat (cpsvno:hasPossibleOutput) [[Tjeneste-harMuligTjenesteresultat]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _has possible output_
+| URI | cpsvno:hasPossibleOutput
+| Verdiområde / _Range_ | cpsvno:PossibleOutput
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten.
+
+_This property is used to specify possible result of the service._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+|===
+
 [[Tjeneste-identifikator]]
 ==== Tjeneste – identifikator (dct:identifier)
 
@@ -182,25 +199,24 @@ _Regarding usage of controlled vocabularies, the following requirements apply:_
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-har-dokumentasjonskrav]]
-==== Tjeneste – har dokumentasjonskrav (cpsv:hasInput)
+==== Tjeneste – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[Tjeneste-harPåkrevdDokumentasjon]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _has input_ 
-| URI | cpsv:hasInput 
-| Verdiområde / _Range_ |cv:Evidence 
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere instanser av klassen Dokumentasjon (`cv:Evidence`), som kreves av tjenesten.  
+| _English name_ | _has required evidence_
+| URI | cpsvno:hasRequiredEvidence
+| Verdiområde / _Range_ | cpsvno:RequiredEvidence
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten.
 
-_This property links a Service to one or more instances of the Evidence class._ 
-| Multiplisitet / _Multiplicity_ | 0..n 
-| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_ 
-| Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves varierer avhengig av kanal tjenesten tilbys gjennom, kan tilsvarende egenskap i klassen Tjenestekanal benyttes.  
+_This property is used to specify evidence that is required by the service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves varierer avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjenestekanal benyttes. 
 
-_A specific Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel._
+_A service may require certain evidence in order to be delivered. If the evidence required varies according to the channel through which it is accessed, then the corresponding property in the class Channel SHOULD be used._
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP._  
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 [[Tjeneste-hjemmeside]]
@@ -300,10 +316,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 _This property links a Service to the Dataset(s) in which it is being described._ 
 | Multiplisitet / _Multiplicity_ | 0..n 
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad 1 / _Note 1_ | Bruk egenskapen <<Tjeneste-har-dokumentasjonskrav>> for å kytte til datasett som tjenesten bruker, eller egenskapen <<Tjeneste-produserer>> for datasett som tjenesten produserer.  
-
-_Use the property <<Tjeneste-har-dokumentasjonskrav>> to refer to dataset that the service uses, or the property <<Tjeneste-produserer>> to refer to dataset that the service produces._
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+| Merknad 1 / _Note 1_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===

@@ -13,7 +13,7 @@ For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasj
 
 Den obligatoriske egenskapen <<Deltagelse-rolle>> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonskrav er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten). 
 
-Eksempel: Politidirektoratet (med datasett «Vandelsattest») deltar som dataleverandør til tjenesten «Skjenkebevilling».
+Eksempel: Brønnøysundregistrene (med «Firmaattest» som er en del av datasettet «Foretaksregisteret») deltar som dataleverandør til tjenesten «Skjenkebevilling».
 
 Eksempel i RDF Turtle:
 ----
@@ -23,10 +23,10 @@ Eksempel i RDF Turtle:
 <deltagendeDataleverandør> a cv:Participation ;
    dct:description "deltagende dataleverandør til tjenesten Skjenkebevilling"@nb ;
    cv:role <https://data.norge.no/vocabulary/role-type#data-provider> ; # dataleverandør
-   cv:hasParticipant <Politidirektoratet> ;
+   cv:hasParticipant <Brønnøysundregistrene> ;
    .
 
-<Politidirektoratet> a cv:PublicOrganisation ;
+<Brønnøysundregistrene> a cv:PublicOrganisation ;
    cv:participates <deltagendeDataleverandør> ; .
 ----
 

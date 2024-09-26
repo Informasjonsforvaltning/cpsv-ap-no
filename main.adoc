@@ -88,11 +88,15 @@ include::KlassenKriterium.adoc[]
 
 include::KlassenLivshendelse.adoc[]
 
+include::KlassenMuligTjenesteresultat.adoc[]
+
 include::KlassenOffentligOrganisasjon.adoc[]
 
 include::KlassenOffentligTjeneste.adoc[]
 
 include::KlassenOrganisasjon.adoc[]
+
+include::KlassenPåkrevdDokumentasjon.adoc[]
 
 include::KlassenReferanserammeverk.adoc[]
 
