@@ -3,7 +3,7 @@
 [[img-KlassenKrav]]
 .Klassen Krav (cv:Requirement) og klassene den refererer til.
 [link=images/KlassenKrav.png]
-image::images/KlassenKrav.png[alt="UML-diagram med klassen Krav, dens egenskaper og dens relasjoner til seks andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenKrav.png[alt="UML-diagram med klassen Krav, dens egenskaper og dens relasjoner til seks andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

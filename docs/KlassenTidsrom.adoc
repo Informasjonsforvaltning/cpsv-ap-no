@@ -3,7 +3,7 @@
 [[img-KlassenTidsrom]]
 .Klassen Tidsrom (time:ProperInterval) og klassene den refererer til.
 [link=images/KlassenTidsrom.png]
-image::images/KlassenTidsrom.png[alt="UML-diagram med klassen Tidsrom og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenTidsrom.png[alt="UML-diagram med klassen Tidsrom og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

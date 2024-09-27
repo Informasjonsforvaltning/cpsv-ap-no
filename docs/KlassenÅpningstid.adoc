@@ -3,7 +3,7 @@
 [[img-KlassenÅpningstid]]
 .Klassen Åpningstid (cv:OpeningHoursSpecificatinon)
 [link=images/KlassenÅpningstid.png]
-image::images/KlassenÅpningstid.png[alt="UML-diagram med klassen Åpningstid og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenÅpningstid.png[alt="UML-diagram med klassen Åpningstid og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

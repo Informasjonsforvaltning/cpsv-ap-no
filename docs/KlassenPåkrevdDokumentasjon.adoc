@@ -3,7 +3,7 @@
 [[img-KlassenPåkrevdDokumentasjon]]
 .Klassen Påkrevd dokumentasjon (cpsvno:RequiredEvidence) og klassene den refererer til.
 [link=images/KlassenPåkrevdDokumentasjon.png]
-image::images/KlassenPåkrevdDokumentasjon.png[alt="UML-diagram med klassen Påkrevd dokumentasjon, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenPåkrevdDokumentasjon.png[alt="UML-diagram med klassen Påkrevd dokumentasjon, dens egenskaper og dens relasjoner til tre andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

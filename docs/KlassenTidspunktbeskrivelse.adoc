@@ -3,7 +3,7 @@
 [[img-Tidspunktbeskrivelse]]
 .Klassen Tidspunktbeskrivelse (time:DateTimeDescription).
 [link=images/KlassenTidspunktbeskrivelse.png]
-image::images/KlassenTidspunktbeskrivelse.png[alt="UML-diagram med klassen Tidspunktbeskrivelse og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenTidspunktbeskrivelse.png[alt="UML-diagram med klassen Tidspunktbeskrivelse og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
