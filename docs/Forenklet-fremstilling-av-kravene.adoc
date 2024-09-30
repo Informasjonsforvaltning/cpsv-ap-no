@@ -11,7 +11,7 @@ _Denne delen av spesifikasjonen er primært ment for den ikke-tekniske målgrupp
 [[img-ForenkletModell]]
 .Forenklet fremstilling av noen av kravene i CPSV-AP-NO.
 [link=images/CPSV-AP-NO-forenklet-fremstilling.png]
-image::images/CPSV-AP-NO-forenklet-fremstilling.png[alt="Forenklet UML-diagram med 9 klasser, deres egenskaper og relasjoner til hverandre. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/CPSV-AP-NO-forenklet-fremstilling.png[alt="Forenklet UML-diagram med 9 klasser, deres egenskaper og relasjoner til hverandre. Innholdet i diagrammet er forklart i teksten."]
 
 :xrefstyle: full
 

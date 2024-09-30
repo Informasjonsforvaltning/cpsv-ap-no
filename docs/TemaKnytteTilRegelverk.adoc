@@ -7,7 +7,7 @@ Som illustrert i <<img-TjenesteOgRegelverk>> kan regelverk knyttes til en tjenes
 [[img-TjenesteOgRegelverk]]
 .Tjeneste og regelverk.
 [link=images/FigurTjenesteOgRegelverk.png]
-image::images/FigurTjenesteOgRegelverk.png[alt="UML-diagram med fire klasser og en instans, og relasjoner imellom disse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/FigurTjenesteOgRegelverk.png[alt="UML-diagram med fire klasser og en instans, og relasjoner imellom disse. Innholdet i diagrammet er forklart i teksten."]
 
 Eksempel: Tjenesten «Skjenkebevilling» er hjemlet i «Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)».
 

@@ -3,7 +3,7 @@
 [[img-KlassenOrganisasjon]]
 .Klassen Organisasjon (org:Organization) og klassene den refererer til.
 [link=images/KlassenOrganisasjon.png]
-image::images/KlassenOrganisasjon.png[alt="UML-diagram med klassen Organisasjon, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenOrganisasjon.png[alt="UML-diagram med klassen Organisasjon, dens egenskaper og dens relasjoner til tre andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

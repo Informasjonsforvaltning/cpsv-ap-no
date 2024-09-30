@@ -3,7 +3,7 @@
 [[img-KlassenAktør]]
 .Klassen Aktør (foaf:Agent) og klassene den refererer til.
 [link=images/KlassenAktør.png]
-image::images/KlassenAktør.png[alt="UML-diagram med klassen Aktør, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenAktør.png[alt="UML-diagram med klassen Aktør, dens egenskaper og dens relasjoner til to andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

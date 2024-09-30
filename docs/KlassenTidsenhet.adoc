@@ -3,7 +3,7 @@
 [[img-KlassenTidsenhet]]
 .Klassen Tidsenhet (time:TemporalEntity) og klassen den refererer til.
 [link=images/KlassenTidsenhet.png]
-image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenTidsenhet.png[alt="UML-diagram med klassen Tidsenhet og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

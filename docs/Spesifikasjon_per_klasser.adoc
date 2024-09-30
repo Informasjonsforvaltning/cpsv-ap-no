@@ -9,7 +9,7 @@ _Denne delen av spesifikasjonen er primært ment for den tekniske målgruppen._
 [[img-KlasseOversikt]]
 .Klassene i CPSV-AP-NO.
 [link=images/CPSV-AP-NO-klasser.png]
-image::images/CPSV-AP-NO-klasser.png[alt="UML-diagram med klassene som er i CPSV-AP-NO og noen av relasjoner mellom dem. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/CPSV-AP-NO-klasser.png[alt="UML-diagram med klassene som er i CPSV-AP-NO og noen av relasjoner mellom dem. Innholdet i diagrammet er forklart i teksten."]
 
 :xrefstyle: full
 

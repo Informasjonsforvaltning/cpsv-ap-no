@@ -3,7 +3,7 @@
 [[img-KlassenVirksomhetshendelse]]
 .Klassen Virksomhetshendelse (cv:BusinessEvent) og klassene den refererer til.
 [link=images/KlassenVirksomhetshendelse.png]
-image::images/KlassenVirksomhetshendelse.png[alt="UML-diagram med klassen Virksomhetshendelse, dens egenskaper og dens relasjoner til fire andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenVirksomhetshendelse.png[alt="UML-diagram med klassen Virksomhetshendelse, dens egenskaper og dens relasjoner til fire andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

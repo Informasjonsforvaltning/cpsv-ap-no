@@ -5,7 +5,7 @@
 [[img-TjenesteOgData]]
 .Tjeneste med påkrevd dokumentasjon og mulig tjenesteresultat som er del av datasett.
 [link=images/FigurTjenesteMedDataInnOgUt.png]
-image::images/FigurTjenesteMedDataInnOgUt.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/FigurTjenesteMedDataInnOgUt.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Innholdet i diagrammet er forklart i teksten."]
 
 
 Som illustrert i <<img-TjenesteOgData>>, kan et mulig tjenesteresultat (`cpsvno:PossibleOutput`) fra en Tjeneste (`cpsvno:Service` inkl. subklassen Offentlig tjeneste (`cpsv:PublicService`)) være en del av et Datasett (`dcat:Dataset`), f.eks. selve «bevilling» som et mulig tjenesteresultat fra tjenesten «Skjenkebevilling» kan inngå i datasettet over alle skjenkebevillinger som den aktuelle kommunen har utstedt over en gitt tidsperiode. 

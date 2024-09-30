@@ -3,7 +3,7 @@
 [[img-KlassenKontaktpunkt]]
 .Klassen Kontaktpunkt (cv:ContactPoint) og klassen den refererer til.
 [link=images/KlassenKontaktpunkt.png]
-image::images/KlassenKontaktpunkt.png[alt="UML-diagram med klassen Kontaktpunkt, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenKontaktpunkt.png[alt="UML-diagram med klassen Kontaktpunkt, dens egenskaper og dens relasjoner til to andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
