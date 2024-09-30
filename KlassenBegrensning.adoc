@@ -3,7 +3,7 @@
 [[img-KlassenBegrensning]]
 .Klassen Begrensning (cv:Constraint) og klassene den refererer til.
 [link=images/KlassenBegrensning.png]
-image::images/KlassenBegrensning.png[alt="UML-diagram med klassen Begrensning, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenBegrensning.png[alt="UML-diagram med klassen Begrensning, dens egenskaper og dens relasjoner til sju andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

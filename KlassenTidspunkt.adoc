@@ -3,7 +3,7 @@
 [[img-KlassenTidspunkt]]
 .Klassen Tidspunkt (time:Instant) og klassene den refererer til.
 [link=images/KlassenTidspunkt.png]
-image::images/KlassenTidspunkt.png[alt="UML-diagram med klassen Tidspunkt og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenTidspunkt.png[alt="UML-diagram med klassen Tidspunkt og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

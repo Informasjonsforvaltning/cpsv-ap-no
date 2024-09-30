@@ -3,7 +3,7 @@
 [[img-KlassenInformasjonskrav]]
 .Klassen Informasjonskrav (cv:InformationRequirement) og klassene den refererer til. 
 [link=images/KlassenInformasjonskrav.png]
-image::images/KlassenInformasjonskrav.png[alt="UML-diagram med klassen Informasjonskrav, dens egenskaper og dens relasjoner til sju andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenInformasjonskrav.png[alt="UML-diagram med klassen Informasjonskrav, dens egenskaper og dens relasjoner til sju andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

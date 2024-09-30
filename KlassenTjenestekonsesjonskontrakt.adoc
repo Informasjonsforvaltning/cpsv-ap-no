@@ -3,7 +3,7 @@
 [[img-KlassenTjenestekonsesjonskontrakt]]
 .Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContract) og klassene den refererer til.
 [link=images/KlassenTjenestekonsesjonskontrakt.png]
-image::images/KlassenTjenestekonsesjonskontrakt.png[alt="UML-diagram med klassen Tjenestekonsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenTjenestekonsesjonskontrakt.png[alt="UML-diagram med klassen Tjenestekonsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

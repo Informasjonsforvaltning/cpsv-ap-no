@@ -3,7 +3,7 @@
 [[img-KlassenRegulativRessurs]]
 .Klassen Regulativ ressurs (eli:LegalResource).
 [link=images/KlassenRegulativRessurs.png]
-image::images/KlassenRegulativRessurs.png[alt="UML-diagram med klassen Regulativ ressurs og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenRegulativRessurs.png[alt="UML-diagram med klassen Regulativ ressurs og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

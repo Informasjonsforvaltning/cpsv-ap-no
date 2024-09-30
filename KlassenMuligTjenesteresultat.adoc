@@ -3,7 +3,7 @@
 [[img-KlassenMuligTjenesteresultat]]
 .Klassen Mulig tjenesteresultat (cpsvno:PossibleOutput) og klassene den refererer til. 
 [link=images/KlassenMuligTjenesteresultat.png]
-image::images/KlassenMuligTjenesteresultat.png[alt="UML-diagram med klassen Mulig tjenesteresultat, dens egenskaper og dens relasjon til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenMuligTjenesteresultat.png[alt="UML-diagram med klassen Mulig tjenesteresultat, dens egenskaper og dens relasjon til to andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===

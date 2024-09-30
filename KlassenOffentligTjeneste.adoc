@@ -3,7 +3,7 @@
 [[img-KlassenOffentligTjeneste]]
 .Klassen Offentlig tjeneste (cpsv:PublicService) og klassene den refererer til.
 [link=images/KlassenOffentligTjeneste.png]
-image::images/KlassenOffentligTjeneste.png[alt="UML-diagram med klassen Offentlig tjeneste, dens egenskaper og dens relasjoner til 14 andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenOffentligTjeneste.png[alt="UML-diagram med klassen Offentlig tjeneste, dens egenskaper og dens relasjoner til 14 andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
