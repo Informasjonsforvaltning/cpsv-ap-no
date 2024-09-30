@@ -15,9 +15,9 @@ _This class represents a Condition for evaluation or assessment._
 _In general, Criteria are used for comparison, filtering or selection purposes. Criteria usually set minimum conditions (e.g. limits, intervals, thresholds, etc.) that need to be met in order to pass the requirements or to fulfil them to a certain degree or quality. The concept of Criteria is broader than the concept of Constraint since it covers more usages. The evaluation of the fulfilment is usually supported by the provision of Evidence. For example in the eProcurement domain, the eProcurement Ontology defines different subclasses of Criterion such as exclusion grounds, selection criteria or award criteria. A concrete example of a Criterion is 'participation in a criminal organisation' which could also be considered as an exclusion ground criterion in the procurement domain or for requiring a public service._
 | URI |  cv:Criterion
 | Subklasse av / _Subclass of_ | cv:Requirement
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 === Obligatoriske egenskaper for klassen _Kriterium_ [[Kriterium-obligatoriske-egenskaper]]
@@ -34,9 +34,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents an identifier for the Criterion._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – navn (dct:title) [[Kriterium-navn]]
@@ -51,9 +51,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents the official Name of the Criterion. This property SHOULD be repeated when the name is in several languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 === Anbefalte egenskaper for klassen _Kriterium_ [[Kriterium-anbefalte-egenskaper]]
@@ -70,9 +70,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents a description of the Criterion. This property SHOULD be repeated when the description is in several languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 === Valgfrie egenskaper for klassen _Kriterium_ [[Kriterium-valgfrie-egenskaper]]
@@ -91,9 +91,9 @@ _This property represents the parameter used to adjust the evaluation of the Cri
 _The bias parameter tries to correct a systematic error. For example in procurement, a home bias corresponds to the "presence of local preferences distorting international specialisation and resource allocation". When quantified, this systematic error can be removed._
 | Multiplisitet / _Multiplicity_ |  0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – er subkrav av (cv:isRequirementOf) [[Kriterium-er-krav-til]]
@@ -110,9 +110,9 @@ Et subkrav/forelderkrav er en instans av klassen Krav (`cv:Requirement`) eller e
 _This property represents a reference between a Requirement and its parent Requirement._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – er utledet fra (cv:isDerivedFrom) [[Kriterium-er-utledet-fra]]
@@ -129,9 +129,9 @@ _This property refers to the Reference Framework on which the Criterion is based
 _Note that a Criterion can have several Reference Frameworks from which it is derived._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – er utstedt av (dct:publisher) [[Kriterium-er-utstedt-av]]
@@ -146,9 +146,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property refers to the Agent that has published the Criterion._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – har dokumentasjonstypeliste (cv:hasEvidenceTypeList) [[Kriterium-har-dokumentasjonstypeliste]]
@@ -167,9 +167,9 @@ _This property refers to the Evidence Type List that specifies the Evidence Type
 _One or several Lists of Evidence Types MAY support a Criterion. At least one of them MUST be satisfied by the response to the Criterion._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – har informasjonsbegrep (cv:hasConcept) [[Kriterium-har-informasjonsbegrep]]
@@ -186,9 +186,9 @@ _This property refers to the Information Concept for which a value is expected b
 _Information Concepts defined for specific Criterions also represent the basis for specifying the Supported Value an Evidence should provide._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – har kvalifisert relasjon til andre krav (cv:hasQualifiedRelation) [[Kriterium-har-kvalifisert-relasjon-til-andre-krav]]
@@ -203,9 +203,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents a described and/or categorised relation to another Requirement._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – har mer spesifikt krav (cv:hasRequirement) [[Kriterium-har-mer-spesifikt-krav]]
@@ -220,26 +220,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property refers to a more specific Requirement that is part of the Criterion._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
-|===
-
-==== Kriterium – har understøttende dokumentasjon (cv:hasSupportingEvidence) [[Kriterium-har-understøttende-dokumentasjon]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _has supporting evidence_
-| URI |  cv:hasSupportingEvidence
-| Verdiområde / _Range_ |  cv:Evidence
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for kriteriet.
-
-_This property refers to the Evidence that supplies information, proof or support for the Criterion._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
-
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – tilfredsstiller regel (cv:fulfils) [[Kriterium-tilfredsstiller]]
@@ -254,9 +237,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property refers to the rules that the Criterion fulfils._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – type (dct:type) [[Kriterium-type]]
@@ -274,9 +257,9 @@ _This property refers to the category to which the Criterion belongs._
 | Merknad 1 / _Note 1_ | Verdien BØR velges fra et kontrollert vokabular.
 
 _The value SHOULD be chosen from a controlled vocabulary._
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – vekting (cv:weight) [[Kriterium-vekting]]
@@ -293,9 +276,9 @@ _This property represents the relative importance of the Criterion._
 _The weight must be between 0 and 1. Usually, all Criteria can be integrated within a weighted sum equal to 1._
 | Multiplisitet / _Multiplicity_ |  0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – vektingstype (cv:weightingType) [[Kriterium-vektingstype]]
@@ -313,9 +296,9 @@ _This property represents an indication of how the weight should be interpreted 
 | Merknad 1 / _Note 1_ | EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[Number weight &#x29C9;, window="_blank", role="ext-link"] KAN brukes som mulige verdier for denne egenskapen.
 
 __EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[Number weight &#x29C9;, window="_blank", role="ext-link"] MAY be used as possible values for this property.__
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Kriterium – vektingsvurderingsbeskrivelse (cv:weightingConsiderationDescription) [[Kriterium-vektingsvurderingsbeskrivelse]]
@@ -330,7 +313,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property contains the explanation of how the weighting of a Criterion is to be used. This property SHOULD be repeated when the explanation is in parallel languages._
 | Multiplisitet / _Multiplicity_ |  0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===

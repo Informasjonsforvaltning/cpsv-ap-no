@@ -67,9 +67,9 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 _This property represents the Evidence Type List in which the Evidence Type is included._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Dokumentasjonstype – gyldighetsperiode, begrensning (cv:validityPeriodConstraint) [[Dokumentasjonstype-gyldighetsperiodeBegrensning]]
@@ -84,9 +84,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents temporal condition on the validity period of the Evidence Type. E.g. A Belgian birth evidence is valid for X months after emission. To express constraints on the validity period that must hold when assessing the evidence (e.g. the certificate of good conduct cannot be issued more than 3 months ago), we refer to the Constraint class._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Dokumentasjonstype – utstedelsessted (cv:issuingPlace) [[Dokumentasjonstype-utstedelsessted]]
@@ -101,7 +101,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents the Location where an Evidence Type is issued. E.g. Belgian ID cards are issued in Belgium._
 | Multiplisitet / _Multiplicity_ |0..1
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
