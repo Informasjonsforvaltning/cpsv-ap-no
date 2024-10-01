@@ -12,7 +12,7 @@ Spesifikasjonen inneholder nå tre hoveddeler i tillegg til det innledende kapit
 
 * <<Forenklet-fremstilling>>  inneholder en forenklet fremstilling av de viktigste kravene i spesifikasjonen. Denne delen er primært ment for den ikke-tekniske målgruppen. 
 
-* <<Spesifikasjon-per-klasse>>  inneholder tekniske krav til hvordan beskrivelser av tjenester, hendelse osv. skal representeres i RDF. Denne delen er primært ment for den tekniske målgruppen.  
+* <<Spesifikasjon-per-klasse>>  inneholder tekniske krav til hvordan beskrivelser av tjenester, hendelser osv. skal representeres i RDF. Denne delen er primært ment for den tekniske målgruppen.  
 
 * <<Spesielle-temaer>> inneholder forklaring/veiledning til hvordan CPSV-AP-NO er tenkt brukt i noen spesifikke brukstilfeller. Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen, fortrinnsvis sammen. 
 
@@ -28,9 +28,9 @@ Utgåtte klasser:
 
 * Klassen Datasett (dcat:Dataset): Klassen er ikke eksplisitt spesifisert i denne spesifikasjonen, fordi det ikke lenger er krav til datasett som er spesifikke når det gjelder tjeneste- og hendelsesbeskrivelser. 
 
-* Klassen Dokumentasjon (cv:Evidence) utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens Dokumentasjon (cv:Evidence) er ment for å representere et konkret stykke dokumentasjon oppgitt av brukeren ved utførelsen av en gitt tjeneste. Se <<PåkrevdDokumentasjon>>. 
+* Klassen Dokumentasjon (cv:Evidence) utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens Dokumentasjon (cv:Evidence) er ment for å representere et konkret stykke dokumentasjon oppgitt av brukeren ved utførelsen av en gitt tjeneste. Bruk <<PåkrevdDokumentasjon>> til å metadatabeskrive dokumentasjon som er påkrevd av en tjeneste. 
 
-* Klassen Tjenesteresultat (cv:Output) utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens Tjenesteresultat (cv:Output) er ment for å representere et konkret stykke tjenesteresultat fra en gitt tjeneste. Se <<MuligTjenesteresultat>>. 
+* Klassen Tjenesteresultat (cv:Output) utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens Tjenesteresultat (cv:Output) er ment for å representere et konkret stykke tjenesteresultat fra en gitt tjeneste. Bruk <<MuligTjenesteresultat>> til å metadatabeskrive mulige tjenesteresultater fra en tjeneste. 
 
 * Klassen Understøttende opplysning (cv:SupportedValue) utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens Understøttende opplysning (cv:SupportedValue) er ment for å representere en konkret verdi av et informasjonsbegrep som finnes i et konkret stykke dokumentasjon oppgitt av brukeren ved utførelsen av en gitt tjeneste. 
 
@@ -43,19 +43,19 @@ Nye klasser:
 Endrede klasser: 
 
 * <<Begrensning>>: 
-** Egenskapen «Begrensning – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått. 
+** Egenskapen «Begrensning – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at Klassen Dokumentasjon (cv:Evidence) utgår). 
 
 * <<Hendelse>> (inkl. subklassene <<Livshendelse>> og <<Virksomhetshendelse>>): 
 ** Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne bl.a. publisere hendelsesstrøm, er det innført en ny egenskap <<Hendelse-beskrivendeDatasett>> som kan benyttes til å knytte en hendelse til et eller flere datasett. Tilsvarende gjelder også subklassene <<Livshendelse>> og <<Virksomhetshendelse>>. 
 
 * <<Informasjonskrav>>: 
-** Egenskapen «Informasjonskrav – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått. 
+** Egenskapen «Informasjonskrav – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at Klassen Dokumentasjon (cv:Evidence) utgår). 
 
 * <<Krav>>:
-** Egenskapen «Krav – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått.
+** Egenskapen «Krav – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at Klassen Dokumentasjon (cv:Evidence) utgår).
 
 * <<Kriterium>>:
-** Egenskapen «Kriterium – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått.
+** Egenskapen «Kriterium – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at Klassen Dokumentasjon (cv:Evidence) utgår).
 
 * <<OffentligTjeneste>>: 
 ** Kravnivået til egenskapene <<OffentligTjeneste-harDel>> og <<OffentligTjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
