@@ -2,7 +2,9 @@
 
 _Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen, fortrinnsvis sammen._
 
-include::TemaDokumentasjonskrav.adoc[]
+include::TemaTjenestekjede.adoc[]
+
+include::TemaHendelsesstrøm.adoc[]
 
 include::TemaKnytteTilDatasett.adoc[]
 
@@ -14,8 +16,6 @@ include::TemaKnytteDeltagendeAktørerTilEnTjeneste.adoc[]
 
 include::TemaKnytteTilDatatjeneste.adoc[]
 
-include::TemaTjenestekjede.adoc[]
-
-include::TemaHendelsesstrøm.adoc[]
+include::TemaDokumentasjonskrav.adoc[]
 
 include::TemaBeskriveEnKatalog.adoc[]

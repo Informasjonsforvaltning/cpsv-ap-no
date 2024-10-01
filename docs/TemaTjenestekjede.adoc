@@ -32,7 +32,7 @@ Eksempel i RDF Turtle:
 <e-reseptSendt> a cv:Event ;
   cpsvno:mayTriggerNeedFor <apotektjeneste> .
 
-<apotektjeneste> a cpsvno:Service.
+<apotektjeneste> a cpsv:PublicService .
 -----
 
 :xrefstyle: full

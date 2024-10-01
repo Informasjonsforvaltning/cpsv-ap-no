@@ -7,7 +7,7 @@
 [link=images/FigurHendelseOgDistribusjon.png]
 image::images/FigurHendelseOgDistribusjon.png[alt="UML-diagrammet med fire klasser og relasjoner imellom klassene. Innholdet i diagrammet er forklart i teksten."]
 
-Som illustrert i <<img-HendelseOgDistribusjon>> kan egenskapen "beskrivende datasett (`cv:isDescrbiedBy`)" i <<Hendelse>>, <<Livshendelse>> og <<Virksomhetshendelse>> brukes til å knytte en hendelse til et datasett. På denne måten kan en hendelsesstrøm distribueres som datasett.  
+Som illustrert i <<img-HendelseOgDistribusjon>> kan egenskapen "beskrivende datasett (`cv:isDescrbiedBy`)" i <<Hendelse, Klassen Hendelse (cv:Event)>>, <<Livshendelse, Klassen Livshendelse (cv:LifeEvent)>> eller <<Virksomhetshendelse, Klassen Virksomhetshendelse (cv:BusinessEvent)>> brukes til å knytte en hendelse til et datasett. På denne måten kan en hendelsesstrøm distribueres som datasett.  
 
 Se ellers https://informasjonsforvaltning.github.io/dcat-ap-no/#_om_bruk_av_klassene_datasett_dcatdataset_datatjeneste_dcatdataservice_og_distribusjon_dcatdistribution[forklaring i DCAT-AP-NO], for hvordan et datasett (`dcat:Dataset`), som i dette tilfellet beskriver en hendelse, kan knyttes til distribusjon (`dcat:Distribution`) og datatjeneste/API (`dcat:DataService`).
 

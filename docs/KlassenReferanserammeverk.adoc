@@ -16,9 +16,9 @@ _This class represents legislation or official policy from which Requirements ar
 | Merknad 1 / _Note 1_ | Vanlige referanserammeverk er regulative og ikke-regulative spesifikasjoner. Eksempler kan være prosedyrer, anskaffelsesreglement osv.
 
 _Usual Reference Frameworks are legal and non-legal specifications. Examples include procedures, tendering legislation etc._ 
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 | Eksempel |  Se under <<Å-beskrive-dokumentasjonskrav>>.
 |===
 
@@ -38,9 +38,9 @@ Eksempel i RDF Turtle: Se under <<Å-beskrive-dokumentasjonskrav>>.
 _This property represents an unambiguous reference to a reference framework._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 === Anbefalte egenskaper for klassen _Referanserammeverk_ [[Referanserammeverk-anbefalte-egenskaper]]

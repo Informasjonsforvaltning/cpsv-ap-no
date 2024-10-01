@@ -64,7 +64,7 @@ include::KlassenBegrensning.adoc[]
 
 include::KlassenDeltagelse.adoc[]
 
-include::KlassenDokumentasjon.adoc[]
+// include::KlassenDokumentasjon.adoc[]
 
 include::KlassenDokumentasjonstype.adoc[]
 
@@ -118,9 +118,9 @@ include::KlassenTjenestekanal.adoc[]
 
 include::KlassenTjenestekonsesjonskontrakt.adoc[]
 
-include::KlassenTjenesteresultat.adoc[]
+// include::KlassenTjenesteresultat.adoc[]
 
-include::KlassenUnderstøttendeOpplysning.adoc[]
+// include::KlassenUnderstøttendeOpplysning.adoc[]
 
 include::KlassenVirksomhetshendelse.adoc[]
 
