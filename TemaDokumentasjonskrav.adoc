@@ -19,14 +19,11 @@ image::images/FigurEksempelDokumentasjonskrav.png[alt="RDF-graf med ni RDF-noder
 . «Alderskrav» har også en mer spesifikk begrensning «Ikke under 18 år».
 . Begrensningen «Ikke under 18 år» begrenser informasjonsbegrepet «Alder».
 . «Alderskrav» bruker en liste over lovlige dokumentasjonstyper.
-. På dokumentasjonstypelisten finner man «Pass».
-. Tjenesten «Prøvingsattest» har «Pass» som sin dokumentasjonstype.
-. Tjenesten «Prøvingsattest» bruker i dette konkrete eksemplet brukerens «Pass» som dokumentasjon.
-. «Pass» er i samsvar med det som er spesifisert som lovlig dokumentasjonstype.
-. «Pass» understøtter informasjonsbegrep «Alder» (fordi pass inneholder brukerens fødselsdato).
-. «Pass» understøtter informasjonskrav «Alderskrav» (fordi pass inneholder brukerens fødselsdato).
-. Fødselsdatoen i dette konkrete eksemplet er `2002-01-30` og gir understøttende opplysning `20` (som alder) når tjenesten brukes mellom 2022-01-30 og 2023-01-29
-. Informasjonsbegrepet «Alder» gis verdi `20`, og «Alderskrav» med begrensning «Ikke under 18 år» er oppfylt.
+. På dokumentasjonstypelisten finner man «Attest».
+. Tjenesten «Prøvingsattest» har «Attest» som sin dokumentasjonstype.
+. Tjenesten «Prøvingsattest» har «Fødselsattest» som en påkrevd dokumentasjon.
+. «Fødselsattest» er i samsvar med det som er spesifisert som lovlig dokumentasjonstype.
+. «Fødselsattest» understøtter informasjonskrav «Alderskrav».
 
 Som illustrert i <<img-FigurEksempelDokumentasjonskrav2>>, er det også mulig å knytte kravene illustrert i eksemplet ovenfor, til aktuell lovgivning: «Vilkår for å inngå ekteskap» er utledet fra kapittel 1 i ekteskapsloven, og «Alderskrav» og begrensningen «Ikke under 18 år» er utledet fra §1a i ekteskapsloven.
 
@@ -40,8 +37,8 @@ Eksemplet i RDF Turtle:
 <prøvingsattest> a cpsv:PublicService ;
    dct:title "Prøvingsattest"@nb ; # navn
    cv:holdsRequirement <vilkårForÅInngåEkteskap> ; # har krav
-   cv:hasInputType <pass> ; # har dokumentasjonstype
-   cv:hasInput <eksempelPass> ; # har dokumentasjonskrav
+   cv:hasInputType <attest> ; # har dokumentasjonstype
+   cpsvno:hasRequiredEvidence <fødselsattest> ; # har påkrevd dokumentasjon
    .
 
 <vilkårForÅInngåEkteskap> a cv:Criterion ;
@@ -56,7 +53,7 @@ Eksemplet i RDF Turtle:
    cv:isDerivedFrom [ a cv:ReferenceFramework ; # er utledet fra
       dct:identifier <https://lovdata.no/lov/1991-07-04-47/§1a> ; ] ;
    cv:hasRequirement <ikkeUnder18> ; # har mer spesifikt krav
-   cv:hasEvidenceTypeList <typeListePass> ; # har dokumentasjonstypeliste
+   cv:hasEvidenceTypeList <typeListeAttest> ; # har dokumentasjonstypeliste
    .
 
 <ikkeUnder18> a cv:Constraint ;
@@ -70,30 +67,24 @@ Eksemplet i RDF Turtle:
    dct:title "Alder"@nb ; # navn
    .
 
-<typeListePass> a cv:EvidenceTypeList ;
-   skos:prefLabel "Pass"@nb ;
-   cv:specifiesEvidenceType <typePass> ; #spesifiserer
+<typeListeAttest> a cv:EvidenceTypeList ;
+   skos:prefLabel "Attest"@nb ;
+   cv:specifiesEvidenceType <typeAttest> ; #spesifiserer
    .
 
-<typePass> a cv:EvidenceType ;
-   cv:evidenceTypeClassification <pass> ; # dokumentasjonstypekategori
+<typeAttest> a cv:EvidenceType ;
+   cv:evidenceTypeClassification <attest> ; # dokumentasjonstypekategori
    .
 
-<pass> a skos:Concept ;
-   skos:prefLabel "pass"@nb ; # navn
+<attest> a skos:Concept ;
+   skos:prefLabel "attest"@nb ; # navn
    .
 
-<eksempelPass> a cv:Evidence ;
-   dct:title "Pass fra brukeren som dokumentasjon"@nb ; # navn
-   dct:conformsTo <pass> ; # i samsvar med
-   cv:supportsConcept <alder> ; # understøtter informasjonsbegrep
+<fødselsattest> a cpsvno:RequiredEvidence ;
+   dct:description "Fødselsattest som dokumentasjon på alder"@nb ; # beskrivelse
+   dct:title "Fødselsattest"@nb ; # navn
+   dct:conformsTo <attest> ; # i samsvar med
    cv:supportsRequirement <alderskrav> ; # understøtter krav
-   cv:supportsValue <alderFraPass> ; # gir understøttende opplysning
-   .
-
-<alderFraPass> a cv:SupportedValue ;
-   cv:providesValueFor <alder> ; # gir verdi for
-   cv:value "20"^^xsd:positiveInteger ; # verdi
    .
 -----
 

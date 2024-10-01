@@ -17,9 +17,9 @@ _This class represents the limitation applied to an Information Concept._
 _Constraints are requirements in themselves, since they impose prerequisites which influence the definition, use and/or fulfilment of the requirement. They represent hard conditions such as minimum or maximum expressions which can be used to evaluate pieces of information, the required age, income, involvement in activities, etc. An example from the eProcurement domain is a threshold as the minimum turnover required by the buying organisation to select the candidates. Note that CCCEV does not provide any specific guidance on when which kind of Requirement should be used. Users of this vocabulary should make decisions on this topic in their specific context._
 | URI |  cv:Constraint
 | Subklasse av / _Subclass of_ | cv:Requirement
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 | Eksempel |  Se under <<Å-beskrive-dokumentasjonskrav>>.
 |===
 
@@ -43,9 +43,9 @@ _This property refers to the Information Concept about which a Constraint expres
 _Information Concepts are tools to make Requirements more machine processable: they allow to provide more detail about a Requirement. This way, Constraints can be made very precise, namely the limit that must be achieved, is a limit on the value for the associated Information Concept. For example, the Information Concept would be the age of a person and the Constraint would be the required age in the context of a specific evaluation._
 | Multiplisitet / _Multiplicity_ |  1..1
 |Kravnivå / _Requirement level_ |  Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Begrensning – identifikator (dct:identifier) [[Begrensning-identifikator]]
@@ -60,9 +60,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents an identifier for the Constraint._
 | Multiplisitet / _Multiplicity_ |  1..1
 |Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Begrensning – navn (dct:title) [[Begrensning-navn]]
@@ -77,9 +77,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents the official Name of the Constraint. This property SHOULD be repeated when the name is in several languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 |Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 === Anbefalte egenskaper for klassen _Begrensning_ [[Begrensning-anbefalte-egenskaper]]
@@ -96,9 +96,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents a description of the Constraint. This property SHOULD be repeated when the description is in several languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 |Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 === Valgfrie egenskaper for klassen _Begrensning_ [[Begrensning-valgfrie-egenskaper]]
@@ -117,9 +117,9 @@ Et subkrav/forelderkrav er en instans av klassen Krav (`cv:Requirement`) eller e
 _This property represents a reference between a Requirement and its parent Requirement._
 | Multiplisitet / _Multiplicity_ | 0..n
 |Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Begrensning – er utledet fra (cv:isDerivedFrom) [[Begrensning-er-utledet-fra]]
@@ -136,9 +136,9 @@ _This property refers to the Reference Framework on which the Constraint is base
 _Note that a Constraint can have several Reference Frameworks from which it is derived._
 | Multiplisitet / _Multiplicity_ | 0..n
 |Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Begrensning – er utstedt av (dct:publisher) [[Begrensning-er-utstedt-av]]
@@ -153,9 +153,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property refers to the Agent that has published the Constraint._
 | Multiplisitet / _Multiplicity_ | 0..1
 |Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Begrensning – har dokumentasjonstypeliste (cv:hasEvidenceTypeList) [[Begrensning-har-dokumentasjonstypeliste]]
@@ -174,9 +174,9 @@ _This property refers to the Evidence Type List that specifies the Evidence Type
 _One or several Lists of Evidence Types MAY support a Constraint. At least one of them MUST be satisfied by the response to the Constraint._
 | Multiplisitet / _Multiplicity_ | 0..n
 |Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Begrensning – har kvalifisert relasjon til andre krav (cv:hasQualifiedRelation) [[Begrensning-har-kvalifisert-relasjon-til-andre-krav]]
@@ -191,9 +191,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property represents a described and/or categorised relation to another Requirement._
 | Multiplisitet / _Multiplicity_ | 0..n
 |Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Begrensning – har mer spesifikt krav (cv:hasRequirement) [[Begrensning-har-mer-spesifikt-krav]]
@@ -208,26 +208,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property refers to a more specific Requirement that is part of the Constraint._
 | Multiplisitet / _Multiplicity_ | 0..n
 |Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
-|===
-
-==== Begrensning – har understøttende dokumentasjon (cv:hasSupportingEvidence) [[Begrensning-har-understøttende-dokumentasjon]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _has supporting evidence_
-| URI |  cv:hasSupportingEvidence
-| Verdiområde / _Range_ |  cv:Evidence
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til dokumentasjon som gir informasjon, bevis eller støtte for begrensningen.
-
-_This property refers to the Evidence that supplies information, proof or support for the Constraint._
-| Multiplisitet / _Multiplicity_ | 0..n
-|Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
-
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Begrensning – tilfredsstiller regel (cv:fulfils) [[Begrensning-tilfredsstiller]]
@@ -242,9 +225,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CP
 _This property refers to the rules that the Constraint fulfils._
 | Multiplisitet / _Multiplicity_ | 0..n
 |Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 ==== Begrensning – type (dct:type) [[Begrensning-type]]
@@ -262,7 +245,7 @@ _This property refers to the category to which the Constraint belongs._
 | Merknad 1 / _Note 1_ |Verdien BØR velges fra et kontrollert vokabular.
 
 _The value SHOULD be chosen from a controlled vocabulary._
-| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP, men i CCCEV som CPSV-AP også bruker.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
-_Norwegian extension: Not explicitly specified in CPSV-AP, but in CCCEV which CPSV-AP also uses._
+_Norwegian extension: Not explicitly specified in CPSV-AP._
 |===

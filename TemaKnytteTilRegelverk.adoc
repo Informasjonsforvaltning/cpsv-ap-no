@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-Som illustrert i <<img-TjenesteOgRegelverk>> kan regelverk knyttes til en tjeneste ved å bruke egenskapene spesifisert i <<Tjeneste-følgerRegel>>, <<OffentligTjeneste-følgerRegel>>, <<Tjeneste-har-relatert-regelverk>> eller <<OffentligTjeneste-har-relatert-regelverk>>.
+Som illustrert i <<img-TjenesteOgRegelverk>> kan regelverk knyttes til en tjeneste eller offentlig tjeneste, ved å bruke egenskapene «følger regel (cpsv:follows)» og/eller «har relatert regelverk (cv:hasLegalResource)» i klassen <<Tjeneste, Tjeneste>> eller <<OffentligTjeneste, Offentlig tjeneste>>.
 
 [[img-TjenesteOgRegelverk]]
 .Tjeneste og regelverk.
