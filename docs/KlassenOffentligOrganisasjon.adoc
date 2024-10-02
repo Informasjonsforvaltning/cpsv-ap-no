@@ -12,7 +12,7 @@ image::images/KlassenOffentligOrganisasjon.png[alt="UML-diagram med klassen Offe
 
 _This class is used to represent a Public Organisation._
 | URI | cv:PublicOrganisation
-| Subklasse av / _Subclass of_ | org:Organization
+| Subklasse av / _Subclass of_ | <<Organisasjon, org:Organization>>
 | Eksempel | Brønnøy kommune er en offentlig organisasjon.
 |===
 
@@ -139,7 +139,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _address_
 | URI | locn:address
-| Verdiområde / _Range_ | locn:Address
+| Verdiområde / _Range_ | <<Adresse, locn:Address>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi adresse til en offentlig organisasjon.
 
 _This property represents the address._
@@ -161,7 +161,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _participates_
 | URI | cv:participates
-| Verdiområde / _Range_ | cv:Participation
+| Verdiområde / _Range_ | <<Deltagelse, cv:Participation>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å knytte en offentlig organisasjon til en deltagelse (cv:Participation).
 
 _This property links an Agent / Public Organisation to the Participation class._

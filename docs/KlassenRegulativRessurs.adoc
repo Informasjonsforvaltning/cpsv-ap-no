@@ -146,7 +146,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _related legal resource_
 | URI | dct:relation
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en annen relatert regulativ ressurs.
 
 _This property represents another instance of the Legal Resource class that is related to a particular Legal Resource being described._

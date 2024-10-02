@@ -68,7 +68,7 @@ Eksempel I RDF Turtle:
 |===
 | _English name_ | _publisher_
 | URI | dct:publisher
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Verdien BØR være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
 
 _This property refers to the publisher of the dataset, i.e. an entity (organisation) responsible for making the Dataset available._
@@ -115,7 +115,7 @@ Eksempel I RDF Turtle:
 |===
 | _English name_ | _has part_
 | URI | dct:hasPart
-| Verdiområde / _Range_ | cpsvno:Service
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ | Når datasettet brukes til å beskrive en tjeneste, brukes egenskapen til å referere til tjenester som inngår i tjenesten beskrevet av datasettet.
 
 _When the dataset is used to describe a service, this property refers to a service which is a part of the service described by the dataset._

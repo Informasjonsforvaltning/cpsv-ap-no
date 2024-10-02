@@ -39,7 +39,7 @@ _This property represents a free text description of the Participation. This pro
 |===
 | _English name_ |  _has participant_
 | URI |  cv:hasParticipant
-| Verdiområde / _Range_ |  foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til aktøren som er involvert i deltagelsen.
 
 _This property refers to the Agent involved in the Participation._

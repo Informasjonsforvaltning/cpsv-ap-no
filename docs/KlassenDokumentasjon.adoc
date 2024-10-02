@@ -135,7 +135,7 @@ _This property is used to refer to a dataset in which the described evidence is 
 |===
 | _English name_ |  _is provided by_
 | URI |  cv:isProvidedBy
-|Verdiområde / _Range_ |  foaf:Agent
+|Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi aktør som sender dokumentasjonen.
 
 Aktøren som sender dokumentasjonen er vanligvis den som har utstedt dokumentasjonen, eller en tjenesteleverandør på vegne av utstederen.
@@ -156,7 +156,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _supports value_
 | URI |  cv:supportsValue
-|Verdiområde / _Range_ |  cv:SupportedValue
+|Verdiområde / _Range_ |  <<UnderstøttendeOpplysning, cv:SupportedValue>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til understøttende opplysninger i dokumentasjonen.
 
 _This property represents Supported Value that the Evidence contains._
@@ -173,7 +173,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _is about_
 | URI |  dct:subject
-|Verdiområde / _Range_ |  foaf:Agent
+|Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi aktøren som dokumentasjonen gjelder for.
 
 _This property represents the Agent that is the subject in the provided Evidence._
@@ -190,7 +190,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _validity period_
 | URI |  cv:validityPeriod
-|Verdiområde / _Range_ |  time:ProperInterval
+|Verdiområde / _Range_ | <<Tidsrom, time:ProperInterval>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å angi en tidsperiode hvor dokumentasjonen er gyldig.
 
 _This property represents Period of Time during which the Evidence holds true or has force._
@@ -207,7 +207,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _is conformant to_
 | URI |  dct:conformsTo
-|Verdiområde / _Range_ |  cv:EvidenceType
+|Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dokumentasjonstypen som dokumentasjonen er i samsvar med.
 
 _This property represents the Evidence Type that specifies characteristics of the Evidence._
@@ -238,7 +238,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _is created by_
 | URI |  dct:creator
-|Verdiområde / _Range_ |  foaf:Agent
+|Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi aktøren som er produsent av dokumentasjonen.
 
 _This property represents the Agent that produces the Evidence._
@@ -300,7 +300,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ |  _supports concept_
 | URI |  cv:supportsConcept
-|Verdiområde / _Range_ |  cv:InformationConcept
+|Verdiområde / _Range_ | <<Informasjonsbegrep, cv:InformationConcept>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til informasjonsbegrep som gir fakta funnet eller utledet fra dokumentasjonen.
 
 _This property represents Information Concept providing facts found/inferred from the Evidence._
@@ -317,7 +317,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _supports requirement_
 | URI |  cv:supportsRequirement
-|Verdiområde / _Range_ |  cv:Requirement
+|Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til krav som dokumentasjonen understøtter.
 
 _This property is used to refer to the requirement that the evidence supports._
@@ -331,7 +331,7 @@ _This property is used to refer to the requirement that the evidence supports._
 |===
 | _English name_ |  _is issued by_
 | URI |  dct:publisher
-|Verdiområde / _Range_ |  foaf:Agent
+|Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi aktøren som er juridisk ansvarlig for dokumentasjonen.
 
 _This property represents the Agent legally responsible for the Evidence, e.g. a legal authority._

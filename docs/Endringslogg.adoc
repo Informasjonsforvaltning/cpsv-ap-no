@@ -2,8 +2,6 @@
 
 === Fra v.1.0.x til v.1.1.0
 
-#@@@@@@ NB! Flere endringer er på vei!#
-
 ==== Endringer av dokumentstrukturen 
 
 :xrefstyle: short

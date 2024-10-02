@@ -49,7 +49,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _owned by_
 | URI | cv:ownedBy 
-| Verdiområde / _Range_ | org:Organization 
+| Verdiområde / _Range_ | <<Organisasjon, org:Organization>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til aktøren som eier tjenesten. 
 
 _This property refers to the Agent who owns the Service._ 
@@ -66,7 +66,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has possible output_
 | URI | cpsvno:hasPossibleOutput
-| Verdiområde / _Range_ | cpsvno:PossibleOutput
+| Verdiområde / _Range_ | <<MuligTjenesteresultat, cpsvno:PossibleOutput>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten.
 
 _This property is used to specify possible result of the service._
@@ -102,7 +102,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _contact point_ 
 | URI |   cv:contactPoint
-| Verdiområde / _Range_ | cv:ContactPoint 
+| Verdiområde / _Range_ | <<Kontaktpunkt, cv:ContactPoint>> 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktpunkt(er) for tjenesten. 
 
 _This property specifies contact points for the service._  
@@ -124,24 +124,6 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi det offisielle navnet på tjenesten. Egenskapen BØR gjentas når navnet finnes på flere språk. 
 
 _This property represents the official Name of the Service. This property SHOULD be repeated when the name is in parallel languages._
-| Multiplisitet / _Multiplicity_ | 1..n 
-| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_ 
-| Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-
-_Norwegian extension: Not explicitly specified in CPSV-AP._
-|===
-
-[[Tjeneste-produserer]]
-==== Tjeneste – produserer (cpsv:produces)
-
-[cols="30s,70d"]
-|===
-| _English name_ | _produces_ 
-| URI | cpsv:produces 
-| Verdiområde / _Range_ |cv:Output 
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere instanser av tjenesteresultat (`cv:Output`) som beskriver resultatet av tjenesten.  
-
-_This property links a Service to one or more instances of the Output class describing the actual result of executing a given Service._ 
 | Multiplisitet / _Multiplicity_ | 1..n 
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_ 
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -205,7 +187,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has required evidence_
 | URI | cpsvno:hasRequiredEvidence
-| Verdiområde / _Range_ | cpsvno:RequiredEvidence
+| Verdiområde / _Range_ | <<PåkrevdDokumentasjon, cpsvno:RequiredEvidence>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten.
 
 _This property is used to specify evidence that is required by the service._
@@ -328,7 +310,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is part of_ 
 | URI | dct:isPartOf 
-| Verdiområde / _Range_ |cpsvno:Service 
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>> 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en annen tjeneste som tjenesten er en del av. 
 
 _This property indicates a related Service in which is included. This property is the inverse of `dct:hasPart`._ 
@@ -349,7 +331,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is grouped by_
 | URI | cv:isGroupedBy
-| Verdiområde/ _Range_ | cv:Event
+| Verdiområde/ _Range_ | <<Hendelse, cv:Event>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
 
 _This property links the Service to the triggering Event class._
@@ -385,7 +367,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has channel_ 
 | URI | cv:hasChannel 
-| Verdiområde / _Range_ |cv:Channel 
+| Verdiområde / _Range_ | <<Tjenestekanal, cv:Channel>> 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte. 
 
 _This property links the Service to any Channel through which an Agent provides, uses or otherwise interacts with the Service, such as an online service, phone number or office._  
@@ -403,7 +385,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _follows_ 
 | URI | cpsv:follows 
-| Verdiområde / _Range_ |cpsv:Rule 
+| Verdiområde / _Range_ | <<Regel, cpsv:Rule>> 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til regelen som gjelder for tjenesten. 
 
 _This property links a Service to the Rule(s) under which it operates._ 
@@ -422,7 +404,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has part_ 
 | URI | dct:hasPart 
-| Verdiområde / _Range_ | cpsvno:Service 
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives. 
 
 _This property indicates a related Service that is included either physically or logically in the described resource._  
@@ -443,7 +425,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has participation_ 
 | URI | cv:hasParticipation 
-| Verdiområde / _Range_ |cv:Participation 
+| Verdiområde / _Range_ | <<Deltagelse, cv:Participation>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å knytte til andre aktører som deltar i eller samhandler med tjenesten.  
 
 _The CPSV-AP defines the two basic roles of Competent Authority and Service Provider, but this simple model can be extended if required using this property that links to the Participation class._ 
@@ -460,7 +442,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has input type_
 | URI | cv:hasInputType
-| Verdiområde/ _Range_ | cv:EvidenceType
+| Verdiområde/ _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å knytte til tjenesten en eller flere dokumentasjonstyper.
 
 _It links a Service to one or more instances of the EvidenceType class._
@@ -475,7 +457,7 @@ _It links a Service to one or more instances of the EvidenceType class._
 |===
 | _English name_ | _has cost_ 
 | URI | cv:hasCost 
-| Verdiområde / _Range_ |cv:Cost 
+| Verdiområde / _Range_ | <<Gebyr, cv:Cost>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (cv:Cost), for å oppgi ev. gebyr for tjenesten.  
 
 _This property links a Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Service for the citizen or business related to the execution of the particular Service._ 
@@ -496,7 +478,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _holds requirement_
 | URI |  cv:holdsRequirement 
-| Verdiområde / _Range_ | cv:Requirement 
+| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til krav knyttet til behov for eller bruk av tjenesten.   
 
 _This property links a Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc._
@@ -514,7 +496,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has legal resource_ 
 | URI | cv:hasLegalResource 
-| Verdiområde / _Range_ |eli:LegalResource 
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til. 
 
 _This property links a Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Service relates, operates or has its legal basis._ 
@@ -532,7 +514,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _requires_ 
 | URI | dct:requires 
-| Verdiområde / _Range_ |cpsvno:Service
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra.  
 
 _One Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input._ 
@@ -586,7 +568,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | _English name_ | _related service_
 | URI | cv:relatedService 
 | Subegenskap av / _Subproperty of_ | dct:relation
-| Verdiområde / _Range_ |cpsvno:Service 
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere andre relaterte tjenester.  
 
 _This property represents a Service related to the particular instance of the Service class._ 

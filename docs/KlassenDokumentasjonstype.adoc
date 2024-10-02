@@ -61,7 +61,7 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 |===
 | _English name_ | _is spesified in_
 | URI | cv:isSpecifiedIn
-| Verdiområde / _Range_ | cv:EvidenceTypeList
+| Verdiområde / _Range_ | <<Dokumentasjonstypeliste, cv:EvidenceTypeList>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en dokumentasjonstypeliste som inneholder dokumentasjonstypen.
 
 _This property represents the Evidence Type List in which the Evidence Type is included._
@@ -78,7 +78,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _validity period constraint_
 | URI |cv:validityPeriodConstraint
-| Verdiområde / _Range_ |time:ProperInterval
+| Verdiområde / _Range_ | <<Tidsrom, time:ProperInterval>>
 | Anvendelse / _Usage note_ |Egenskapen brukes til å referere til tidsmessige betingelser for gyldighetsperioden til dokumentasjonstypen.
 
 _This property represents temporal condition on the validity period of the Evidence Type. E.g. A Belgian birth evidence is valid for X months after emission. To express constraints on the validity period that must hold when assessing the evidence (e.g. the certificate of good conduct cannot be issued more than 3 months ago), we refer to the Constraint class._
@@ -95,7 +95,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _issuing place_
 | URI |cv:issuingPlace
-| Verdiområde / _Range_ |dct:Location
+| Verdiområde / _Range_ | <<Adresse, dct:Location>>
 | Anvendelse / _Usage note_ |Egenskapen brukes til å referer til stedet der dokumentasjonen er utstedt. F.eks. belgiske ID-kort utstedes i Belgia.
 
 _This property represents the Location where an Evidence Type is issued. E.g. Belgian ID cards are issued in Belgium._

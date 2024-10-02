@@ -15,7 +15,10 @@ _This class represents a piece of information that the Evidence provides or the 
 | Merknad / _Note_ |   Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
+| EKsempel | Se under <<Å-beskrive-dokumentasjonskrav>>.
 |===
+
+Eksempel i RDF Turtle: Se under <<Å-beskrive-dokumentasjonskrav>>.
 
 === Obligatoriske egenskaper for klassen _Informasjonsbegrep_ [[Informasjonsbegrep-obligatoriske-egenskaper]]
 

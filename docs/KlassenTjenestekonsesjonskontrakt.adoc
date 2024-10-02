@@ -55,7 +55,7 @@ _This property represents an Identifier for the service concession contract._
 |===
 | _English name_ | _has economic operator_
 | URI | cv:hasEconomicOperator
-| Verdiområde / _Range_ | org:Organization
+| Verdiområde / _Range_ | <<Organisasjon, org:Organization>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til leverandøren som er ansvarlig for levering og forvaltning av tjenestene.
 
 _This property refers to the Economic Operator in charge for the provision and the management of the services._
@@ -69,7 +69,7 @@ _This property refers to the Economic Operator in charge for the provision and t
 |===
 | _English name_ | _has contracting authority_
 | URI | cv:hasContractingAuthority
-| Verdiområde / _Range_ | cv:PublicOrganisation
+| Verdiområde / _Range_ | <<OffentligOrganisasjon, cv:PublicOrganisation>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til oppdragsgiveren som til syvende og sist er ansvarlig for en tjeneste.
 
 _This property refers to the Contracting Authority which is ultimately responsible for a service._
@@ -99,7 +99,7 @@ _This property represents the name of the contract. This property SHOULD be repe
 |===
 | _English name_ | _established under_
 | URI | cv:establishedUnder
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til relevant lovgivning eller policydokumenter (regulativ ressurs) som kontrakten er etablert under.
 
 _This property refers to relevant legislation or policy documents i.e. the Legal Resource under which the service concession contracts are being defined._

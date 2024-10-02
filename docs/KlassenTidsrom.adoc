@@ -12,7 +12,7 @@ image::images/KlassenTidsrom.png[alt="UML-diagram med klassen Tidsrom og dens eg
 
 _This class  represents a period or time of interval, where the value of the start time and end time properties should be different, and/or a duration should be given._
 | URI | time:ProperInterval
-| Subklasse av / _Subclass of_ | time:TemporalEntity
+| Subklasse av / _Subclass of_ | <<Tidsenhet, time:TemporalEntity>>
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
@@ -25,7 +25,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _end time_
 | URI | time:hasEnd
-| Verdiområde / _Range_ | time:Instant
+| Verdiområde / _Range_ | <<Tidspunkt, time:Instant>>
 |Anvendelse | Egenskapen brukes til å oppgi slutten på et tidsrom eller intervall.
 
 _This property represents the end of a period or interval._
@@ -44,7 +44,7 @@ _Norwegian extension: Range is changed from xsd:dateTime to time:Instant which i
 |===
 | _English name_ | _start time_
 | URI | time:hasBeginning
-| Verdiområde / _Range_ | time:Instant
+| Verdiområde / _Range_ | <<Tidspunkt, time:Instant>>
 |Anvendelse | Egenskapen brukes til å oppgi begynnelsen på et tidsrom eller intervall.
 
 _This property represents the beginning of a period or interval._

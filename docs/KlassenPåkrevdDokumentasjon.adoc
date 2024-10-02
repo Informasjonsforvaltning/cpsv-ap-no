@@ -11,7 +11,7 @@ image::images/KlassenPåkrevdDokumentasjon.png[alt="UML-diagram med klassen Påk
 | Anvendelse / _Usage note_ | Klassen brukes til å representere dokumentasjon som er påkrevd for å kunne utføre en tjeneste. 
 
 _This class is used to represent an evidence that is required in order to execute a service._
-| URI | cpsvno:RequiredInput
+| URI | cpsvno:RequiredEvidence
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
@@ -179,7 +179,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _is conformant to_
 | URI |  dct:conformsTo
-|Verdiområde / _Range_ |  cv:EvidenceType
+|Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dokumentasjonstypen som den påkrevde dokumentasjonen skal være i samsvar med.
 
 _This property represents the evidence type that the required evidence must conform to._
@@ -242,7 +242,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ |  _supports requirement_
 | URI |  cv:supportsRequirement
-|Verdiområde / _Range_ |  cv:Requirement
+|Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til krav som dokumentasjonen understøtter.
 
 _This property is used to refer to the requirement that the evidence supports._

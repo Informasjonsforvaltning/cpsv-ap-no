@@ -32,7 +32,7 @@ Eksempel i RDF Turtle: Se under <<Å-beskrive-dokumentasjonskrav>>.
 |===
 | _English name_ |  _specifies evidence type_
 | URI |cv:specifiesEvidenceType
-| Verdiområde / _Range_ | cv:EvidenceType
+| Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
 | Anvendelse / _Usage note_ |Egenskapen brukes til å referere til dokumentasjonstypene som inngår i dokumentasjonstypelisten.
 
 _This property represents Evidence Type included in this Evidence Type List._
