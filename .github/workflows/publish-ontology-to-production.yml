@@ -1,0 +1,45 @@
+name: Publish v1/ontology to data.norge.no/vocabulary
+
+on:
+  push:
+    branches:
+      - v1
+    paths:
+      - ontology/**
+  workflow_dispatch:
+
+jobs:
+  adoc_build_and_upload:
+    name: Adoc-build html and Upload vocabulary to server
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: v1
+
+      - name: Build html en
+        id: adocbuild_html_en
+        uses: tonynv/asciidoctor-action@master
+        with:
+          program: "asciidoctor -D ontology -o index-en.html -a lang=en ontology/main-en.adoc"
+
+      - name: Build html nb
+        id: adocbuild_html_nb
+        uses: tonynv/asciidoctor-action@master
+        with:
+          program: "asciidoctor -D ontology -o index-nb.html -a lang=nb ontology/main-nb.adoc"
+  
+      - name: Upload files to server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+        id: upload-files
+        with:
+          ontology-type: "vocabulary"
+          ontology: "cpsvno"
+          host: "https://data.norge.no"
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+          files: |
+            ontology/cpsvno.ttl text/turtle en
+            ontology/index-nb.html text/html nb
+            ontology/index-en.html text/html en
