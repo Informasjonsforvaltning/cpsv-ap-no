@@ -24,13 +24,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Lisens*: https://creativecommons.org/licenses/by/4.0/[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"] +
 *Status*: Gjeldende +
 *Versjon*: 1.1.0 (se <<Endringslogg>>) +
-*Publisert*: 2024-10-02 (v.1.1); 2023-09-08 (v.1.0) +
-*Oppdatert*: 2024-10-02 (v.1.1.x) +
+*Publisert*: 2024-10-03 (v.1.1); 2023-09-08 (v.1.0) +
+*Oppdatert*: 2024-10-03 (v.1.1.x) +
 *Gjeldende versjon*: https://data.norge.no/specification/cpsv-ap-no +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
 *Veileder*: <ingen> +
-*Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v1.ttl[shacl-fil] som "Regelsett lenke")
+*Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v1.ttl[shacl-fil &#x29C9;, window="_blank", role="ext-link"] som "Regelsett lenke")
 
 // include::Om_denne_versjonen.adoc[]
 

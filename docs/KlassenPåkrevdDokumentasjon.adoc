@@ -236,6 +236,23 @@ Eksempel i RDF Turtle:
    .
 -----
 
+==== Påkrevd dokumentasjon – understøtter informasjonsbegrep (cv:supportsConcept) [[PåkrevdDokumentasjon-understøtterInformasjonsbegrep]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _supports concept_
+| URI |  cv:supportsConcept
+|Verdiområde / _Range_ | <<Informasjonsbegrep, cv:InformationConcept>>
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til informasjonsbegrep som gir fakta funnet eller utledet fra den påkrevde dokumentasjonen.
+
+_This property represents Information Concept providing facts found/inferred from the Required Evidence._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+|===
+
 ==== Påkrevd dokumentasjon – understøtter krav (cv:supportsRequirement) [[PåkrevdDokumentasjon-understøtterKrav]]
 
 [cols="30s,70d"]
