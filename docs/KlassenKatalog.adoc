@@ -15,7 +15,7 @@ _This class represents a catalog, in context of this specification a catalog of 
 | Merknad / _Note_ | Norsk utvidelse: CPSV-AP dekker ikke katalogbeskrivelse. Klassen fra DCAT-AP-NO tas med her for å kunne dekke norsk behov for å beskrive «tjeneste-/hendelseskataloger».
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
-| Eksempel |  https://data.norge.no/public-services-and-events[Tjeneste- og hendelsesdelen av Felles datakatalog &#x29C9;, window="_blank", role="ext-link"] er en katalog over tjenester og hendelser.
+| Eksempel |  https://data.norge.no/nb/catalogs/public-services-and-events[Tjeneste- og hendelsesdelen av Felles datakatalog &#x29C9;, window="_blank", role="ext-link"] er en katalog over tjenester og hendelser.
 |===
 
 Eksempel i RDF Turtle:
@@ -73,7 +73,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | _English name_ | _contains service_
 | URI | dcatno:containsService
 | Subegenskap av / _Subproperty of_ | dct:hasPart
-| Verdiområde / _Range_ | cpsvno:Service
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en tjeneste som er i katalogen.
 
 _This property refers to a service that is in the catalog._
@@ -90,7 +90,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _contact point_
 | URI |  cv:contactPoint
-| Verdiområde / _Range_ |  cv:ContactPoint
+| Verdiområde / _Range_ | <<Kontaktpunkt, cv:ContactPoint>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi kontaktpunkt(er) for katalogen.
 
 _This property represents contact points for the catalog._
@@ -140,7 +140,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _publisher_
 | URI | dct:publisher
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
 
 _This property refers to the Agent responsible for making the catalog available._
@@ -256,7 +256,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | _English name_ | _contains event_
 | URI | dcatno:containsEvent
 | Subegenskap av / _Subproperty of_ | dct:hasPart
-| Verdiområde / _Range_ | cv:Event
+| Verdiområde / _Range_ | <<Hendelse, cv:Event>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en hendelse som er i katalogen.
 
 _This property refers to an event that is in the catalog._
@@ -387,7 +387,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is part of_
 | URI | dct:isPartOf
-| Verdiområde / _Range_ | dcat:Catalog
+| Verdiområde / _Range_ | <<Katalog, dcat:Catalog>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en beslektet katalog som katalogen fysisk eller logisk er inkludert i.
 
 _This property refers to a related Catalogue in which the described Catalogue is physically or logically included._
@@ -404,7 +404,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has part_
 | URI | dct:hasPart
-| Verdiområde / _Range_ | dcat:Catalog
+| Verdiområde / _Range_ | <<Katalog, dcat:Catalog>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en beslektet katalog som er en del av den beskrevne katalogen.
 
 _This property refers to a related Catalogue that is part of the described Catalogue._
@@ -421,7 +421,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _creator_
 | URI | dct:creator
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til aktøren som er hovedansvarlig for å produsere katalogen.
 
 _This property represents the entity responsible for producing the catalogue._

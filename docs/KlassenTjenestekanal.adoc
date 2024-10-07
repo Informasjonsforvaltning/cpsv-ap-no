@@ -68,7 +68,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ |  _availability restriction_
 | URI |  cv:specialOpeningHoursSpecification
-| Verdiområde / _Range_ |  time:TemporalEntity
+| Verdiområde / _Range_ | <<Tidsenhet, time:TemporalEntity>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes  til å oppgi begrenset åpningstid, som strukturert data.
 
 _This property links a channel to information about when the channel is not available._
@@ -137,7 +137,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _owned by_
 | URI | cv:ownedBy
-| Verdiområde / _Range_ |  org:Organization
+| Verdiområde / _Range_ | <<Organisasjon, org:Organization>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes  til å referere til organisasjonen som eier tjenestekanalen.
 
 _This property indicates the owner of a specific Channel through which a Service is being delivered._
@@ -211,7 +211,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _has required evidence_
 | URI | cpsvno:hasRequiredEvidence
-| Verdiområde / _Range_ | cpsvno:RequiredEvidence
+| Verdiområde / _Range_ | <<PåkrevdDokumentasjon, cpsvno:RequiredEvidence>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er  spesifikt påkrevd for den aktuelle tjenestekanalen.
 
 _This property is used to specify evidence that is required by the service chanel._
@@ -279,7 +279,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _opening hours as structured data_
 | URI | cv:openingHours
-| Verdiområde / _Range_ |  time:TemporalEntity
+| Verdiområde / _Range_ | <<Tidsenhet, time:TemporalEntity>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes  til å oppgi detaljer om åpningstid, som strukturert data.
 
 _This property specifies in detail and as structured data when the channel is available._

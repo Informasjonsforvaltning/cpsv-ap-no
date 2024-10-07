@@ -12,7 +12,6 @@ image::images/KlassenReferanserammeverk.png[alt="UML-diagram med klassen Referan
 
 _This class represents legislation or official policy from which Requirements are derived._
 | URI |  cv:ReferenceFramework
-| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
 | Merknad 1 / _Note 1_ | Vanlige referanserammeverk er regulative og ikke-regulative spesifikasjoner. Eksempler kan være prosedyrer, anskaffelsesreglement osv.
 
 _Usual Reference Frameworks are legal and non-legal specifications. Examples include procedures, tendering legislation etc._ 

@@ -14,11 +14,14 @@ _This class represents a Condition for evaluation or assessment._
 
 _In general, Criteria are used for comparison, filtering or selection purposes. Criteria usually set minimum conditions (e.g. limits, intervals, thresholds, etc.) that need to be met in order to pass the requirements or to fulfil them to a certain degree or quality. The concept of Criteria is broader than the concept of Constraint since it covers more usages. The evaluation of the fulfilment is usually supported by the provision of Evidence. For example in the eProcurement domain, the eProcurement Ontology defines different subclasses of Criterion such as exclusion grounds, selection criteria or award criteria. A concrete example of a Criterion is 'participation in a criminal organisation' which could also be considered as an exclusion ground criterion in the procurement domain or for requiring a public service._
 | URI |  cv:Criterion
-| Subklasse av / _Subclass of_ | cv:Requirement
+| Subklasse av / _Subclass of_ | <<Krav, cv:Requirement>>
 | Merknad / _Note_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
+| Eksempel | Se under <<Å-beskrive-dokumentasjonskrav>>.
 |===
+
+Eksempel i RDF Turtle: Se under <<Å-beskrive-dokumentasjonskrav>>.
 
 === Obligatoriske egenskaper for klassen _Kriterium_ [[Kriterium-obligatoriske-egenskaper]]
 
@@ -102,7 +105,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is requirement of_
 | URI |  cv:isRequirementOf
-| Verdiområde / _Range_ |  cv:Requirement
+| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å representere en referanse mellom et subkrav og dets forelderkrav.
 
 Et subkrav/forelderkrav er en instans av klassen Krav (`cv:Requirement`) eller en av dens subklasser.
@@ -121,7 +124,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is derived from_
 | URI |  cv:isDerivedFrom
-| Verdiområde / _Range_ |  cv:ReferenceFramework
+| Verdiområde / _Range_ | <<Referanserammeverk, cv:ReferenceFramework>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til referanserammeverk som kriteriet er basert på, f.eks. lov, forskrift eller annen regulering.
 
 _This property refers to the Reference Framework on which the Criterion is based, such as a law or regulation._
@@ -140,7 +143,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is issued by_
 | URI |  dct:publisher
-| Verdiområde / _Range_ |  foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til aktøren som har utstedt kriteriet.
 
 _This property refers to the Agent that has published the Criterion._
@@ -157,7 +160,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has evidence type list_
 | URI |  cv:hasEvidenceTypeList
-| Verdiområde / _Range_ |  cv:EvidenceTypeList
+| Verdiområde / _Range_ | <<Dokumentasjonstypeliste, cv:EvidenceTypeList>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til dokumentasjonstypeliste som spesifiserer dokumentasjonstypene som trengs for å tilfredsstille kriteriet.
 
 Et kriterium KAN ha en eller flere dokumentasjonstypelister. For at et kriterium skal være oppfylt, SKAL dokumentasjonen være i samsvar med minst én av listene når det er flere lister.
@@ -178,7 +181,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has concept_
 | URI |  cv:hasConcept
-| Verdiområde / _Range_ |  cv:InformationConcept
+| Verdiområde / _Range_ | <<Informasjonsbegrep, cv:InformationConcept>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til informasjonsbegrep som kriteriet forventer en verdi av.
 
 _This property refers to the Information Concept for which a value is expected by the Criterion._
@@ -197,7 +200,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has qualified relation_
 | URI |  cv:hasQualifiedRelation
-| Verdiområde / _Range_ |  cv:Requirement
+| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å representere en beskrevet/kategorisert relasjon til instans av klassen Krav (`cv:Requirement`) eller en av dens subklasser.
 
 _This property represents a described and/or categorised relation to another Requirement._
@@ -214,7 +217,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has requirement_
 | URI |  cv:hasRequirement
-| Verdiområde / _Range_ |  cv:Requirement
+| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til instans av klassen Krav (`cv:Requirement`) eller en av dens subklasser, som er en del av kriteriet.
 
 _This property refers to a more specific Requirement that is part of the Criterion._
@@ -231,7 +234,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _fulfils_
 | URI |  cv:fulfils
-| Verdiområde / _Range_ |  cpsv:Rule
+| Verdiområde / _Range_ | <<Regel, cpsv:Rule>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til regel som kriteriet tilfredsstiller.
 
 _This property refers to the rules that the Criterion fulfils._

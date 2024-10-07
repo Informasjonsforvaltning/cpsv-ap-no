@@ -80,7 +80,7 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| _English name_ | _possible language_
+| _English name_ | _language_
 | URI | dct:language
 | Verdiområde / _Range_ | dct:LinguisticSystem
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi hvilke språk et mulig tjenesteresultat kan være tilgjengelig på. Egenskapen BØR gjentas når flere språk er mulige.
@@ -149,7 +149,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _may cause_
 | URI |xkos:causes
-| Verdiområde / _Range_ | cv:Event
+| Verdiområde / _Range_ | <<Hendelse, cv:Event>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å uttrykke relasjon mellom et mulig tjenesteresultat og en eller flere hendelser, f.eks. endring av data (som et mulig tjenesteresultat) skaper en eller flere hendelser.
 
 _This property expresses the relation between a possible output and one or more events, for instance the cases where change of data (as a possible output) may cause one of more events._

@@ -71,7 +71,7 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 | _English name_ | _may trigger_
 | URI | cpsvno:mayTrigger
 | Subegenskap av / _Subproperty of_ | cv:hasRelatedService
-| Verdiområde / _Range_ | cpsvno:Service
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til tjenester som kan settes i gang av den aktuelle hendelsen.
 
 _This property links an event directly to a service that the event may trigger._

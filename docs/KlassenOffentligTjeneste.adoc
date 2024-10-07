@@ -12,7 +12,7 @@ image::images/KlassenOffentligTjeneste.png[alt="UML-diagram med klassen Offentli
 
 __This class represents a Public Service.__
 | URI | cpsv:PublicService
-| Subklasse av / _Subclass of_ | cpsvno:Service
+| Subklasse av / _Subclass of_ | <<Tjeneste, cpsvno:Service>>
 | Merknad / _Note_ | Norsk utvidelse: Klassen Offentlig tjeneste (`cpsv:PublicService`) er i CPSV-AP ikke en subklasse av Tjeneste (`cpsvno:Service`). Denne spesifikasjonen har utvidet CPSV-AP med å tilføye klassen Tjeneste (`cpsvno:Service`) slik at det også er mulig å beskrive tjenester som ikke er offentlige. 
 
 _Norwegian extension: The class Public Service (`cpsv:PublicService`) in CPSV-AP is not a subclass of the class Service (`cpsvno:Service`)._
@@ -52,7 +52,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _has competent authority_
 | URI | cv:hasCompetentAuthority
-| Verdiområde / _Range_ | cv:PublicOrganisation
+| Verdiområde / _Range_ | <<OffentligOrganisasjon, cv:PublicOrganisation>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til den offentlige organisasjonen som har ansvaret for tjenesten, uansett om tjenesten tilbys direkte av den aktuelle offentlige organisasjonen eller er satt bort til andre.
 
 _This property links a Public Service to a Public Organization, which is the responsible Agent for the delivery of the Public Service. Whether the particular Public Organization provides the public service directly or outsources it is not relevant. The Public Organization that is the Competent Authority of the service is the one that is ultimately responsible for managing and providing the public service._
@@ -76,7 +76,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _has possible output_
 | URI | cpsvno:hasPossibleOutput
-| Verdiområde / _Range_ | cpsvno:PossibleOutput
+| Verdiområde / _Range_ | <<MuligTjenesteresultat, cpsvno:PossibleOutput>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten.
 
 _This property is used to specify possible result of the service._
@@ -114,7 +114,7 @@ _This property represents a formally-issued Identifier for the Public Service._
 |===
 | _English name_ | _contact point_
 | URI |  cv:contactPoint
-| Verdiområde / _Range_ | cv:ContactPoint
+| Verdiområde / _Range_ | <<Kontaktpunkt, cv:ContactPoint>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å oppgi kontaktpunkt(er) for tjenesten.
 
 _This property represents contact points for the service._
@@ -223,7 +223,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _has required evidence_
 | URI | cpsvno:hasRequiredEvidence
-| Verdiområde / _Range_ | cpsvno:RequiredEvidence
+| Verdiområde / _Range_ | <<PåkrevdDokumentasjon, cpsvno:RequiredEvidence>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten.
 
 _This property is used to specify evidence that is required by the service._
@@ -383,7 +383,7 @@ _This property links a Public Service to the Dataset(s) in which it is being des
 |===
 | _English name_ | _is part of_
 | URI | dct:isPartOf
-| Verdiområde / _Range_ | cpsvno:Service
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en annen tjeneste som tjenesten er en del av.
 
 _This property indicates a related service in which the described resource is included. This property is the inverse of `dct:hasPart`._
@@ -403,7 +403,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is grouped by_
 | URI | cv:isGroupedBy
-| Verdiområde / _Range_ | cv:Event
+| Verdiområde / _Range_ | <<Hendelse, cv:Event>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
 |Usage note| This property links the Public Service to the triggering Event class.
 | Multiplisitet / _Multiplicity_ | 0..n
@@ -445,7 +445,7 @@ _It is a generic property which can be further specialised to make the classific
 |===
 | _English name_ | _has channel_
 | URI | cv:hasChannel
-| Verdiområde / _Range_ | cv:Channel
+| Verdiområde / _Range_ | <<Tjenestekanal, cv:Channel>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere kanaler som tjenesten er tilgjengelig gjennom, f.eks. gjennom online, telefonisk eller fysisk oppmøte.
 
 _This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service, such as an online service, phone number or office._
@@ -466,7 +466,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _follows_
 | URI | cpsv:follows
-| Verdiområde / _Range_ | cpsv:Rule
+| Verdiområde / _Range_ | <<Regel, cpsv:Rule>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til regelen som gjelder for tjenesten.
 
 _This property links a Service to the Rule(s) under which it operates._
@@ -481,7 +481,7 @@ _This property links a Service to the Rule(s) under which it operates._
 |===
 | _English name_ | _has part_
 | URI | dct:hasPart
-| Verdiområde / _Range_ | cpsvno:Service
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives.
 
 _This property indicates a related service that is included either physically or logically in the described resource._
@@ -501,7 +501,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has participation_
 | URI | cv:hasParticipation
-| Verdiområde / _Range_ | cv:Participation
+| Verdiområde / _Range_ | <<Deltagelse, cv:Participation>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å knytte til andre aktører som deltar i eller samhandler med tjenesten.
 
 _It links a Public Service to the Participation class._
@@ -521,7 +521,7 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerT
 |===
 | _English name_ | _has input type_
 | URI | cv:hasInputType
-| Verdiområde / _Range_ | cv:EvidenceType
+| Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å knytte til tjenesten en eller flere dokumentasjonstyper.
 
 _It links a Public Service to one or more instances of the EvidenceType class._
@@ -535,7 +535,7 @@ _It links a Public Service to one or more instances of the EvidenceType class._
 |===
 | _English name_ | _has cost_
 | URI | cv:hasCost
-| Verdiområde / _Range_ | cv:Cost
+| Verdiområde / _Range_ | <<Gebyr, cv:Cost>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (`cv:Cost`), for å oppgi ev. gebyr for tjenesten.
 
 _This property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Public Service for the citizen or business related to the execution of the particular Public Service._
@@ -563,7 +563,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ |  _holds requirement_
 | URI |  cv:holdsRequirement
-| Verdiområde / _Range_ | cv:Requirement
+| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til krav knyttet til behov for eller bruk av tjenesten.
 
 _This property links a Public Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc._
@@ -586,7 +586,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _has legal resource_
 | URI | cv:hasLegalResource
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til regelverk (instans av "regulativ ressurs") som tjenesten opereres under eller har som sin juridiske ramme, eller på andre måter er relatert til.
 
 _This property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis._
@@ -600,7 +600,7 @@ _This property links a Public Service to a Legal Resource. It indicates the Lega
 |===
 | _English name_ | _requires_
 | URI | dct:requires
-| Verdiområde / _Range_ | cpsvno:Service
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra.
 
 _One Public Service may require, or in some way make use of, the output of one or several other Services. In this case, for a Public Service to be executed, another Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Input._
@@ -665,7 +665,7 @@ Eksempel i RDF Turtle:
 | _English name_ | _related service_
 | URI | cv:relatedService
 | Subegenskap av / _Subproperty of_ | dct:relation
-| Verdiområde / _Range_ | cpsvno:Service
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere andre relaterte tjenester.
 
 _This property represents a Service related to the particular instance of the Public Service class._

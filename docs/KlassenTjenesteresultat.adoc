@@ -127,7 +127,7 @@ _This property is used to refer to a dataset in which the described output is ph
 |===
 | _English name_ | _may cause_
 | URI |xkos:causes
-| Verdiområde / _Range_ | cv:Event
+| Verdiområde / _Range_ | <<Hendelse, cv:Event>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å uttrykke relasjon mellom et tjenesteresultat og en eller flere hendelser, f.eks. endring av data (som et tjenesteresultat) skaper en eller flere hendelser.
 
 _This property expresses the relation between an Output and one or more Events, for instance the cases where change of data (as an Output) causes one of more Events._

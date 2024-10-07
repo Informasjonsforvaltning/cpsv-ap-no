@@ -22,7 +22,7 @@ _This class represents the contact information for a Service, Channel, Public Or
 |===
 | _English name_ | _availability restriction_
 | URI |  cv:specialOpeningHoursSpecification
-| Verdiområde / _Range_ |  time:TemporalEntity
+| Verdiområde / _Range_ | <<Tidsenhet, time:TemporalEntity>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi begrenset åpningstid til kontaktpunktet, som strukturert data.
 
 _This property is used to specify the time interval during which the Contact Point is not available, as structured data._ 
@@ -84,7 +84,7 @@ _This property refers to a contact page that could be used to reach out the cont
 |===
 | _English name_ | _opening hours (structured)_
 | URI | cv:openingHours
-| Verdiområde / _Range_ | time:TemporalEntity
+| Verdiområde / _Range_ | <<Tidsenhet, time:TemporalEntity>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en strukturert beskrivelse av åpningstid.
 
 _This property links a contact point to information about when the contact point is available, as structured data._
