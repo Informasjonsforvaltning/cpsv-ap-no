@@ -691,7 +691,7 @@ sh:targetClass org:Organization .
          :hasMin1MaxNShape-cpsvnoHasPossibleOutput, # har mulig tjenesteresultat (cpsvno:hasPossibleOutput)
          :hasMin1Max1Shape-dctIdentifier, # identifikator (dct:identifier)
          :hasMin1MaxNShape-dctTitle, # navn (dct:title)
-         :hasMin1MaxNShape-cpsvProduces, # produserer (cpsv:produces)
+#         :hasMin1MaxNShape-cpsvProduces, # produserer (cpsv:produces)
       # recommended properties
          :hasMin0MaxNShape-dctSubject, # begrep (dct:subject)
          :hasMin0MaxNShape-dctSpatial, # dekningsområde (dct:spatial)
