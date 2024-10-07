@@ -128,7 +128,7 @@
          :hasMin0MaxNShape-cvHasEvidenceTypeList, # har dokumentasjonslitestype, cv:hasEvidenceTypeList
          :hasMin0MaxNShape-cvHasQualifiedRelation, # har kvalifisert relasjon til andre krav, cv:hasQualifiedRelation
          :hasMin0MaxNShape-cvHasRequirement, # har mer spesifikt krav, cv:hasRequirement
-#          :hasMin0MaxNShape-cvHasSupportingEvidence, # har understøttende dokumentajson, cv:hasSupportingEvidence
+#          :hasMin0MaxNShape-cvHasSupportingEvidence, # har understøttende dokumentasjon, cv:hasSupportingEvidence
          :hasMin0MaxNShape-cvFulfils, # tilfredsstiller regel, cv:fulfils
          :hasMin0MaxNShape-dctType # type, dct:type
       ;
