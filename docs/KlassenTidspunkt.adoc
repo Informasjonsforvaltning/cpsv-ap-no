@@ -3,7 +3,7 @@
 [[img-KlassenTidspunkt]]
 .Klassen Tidspunkt (time:Instant) og klassene den refererer til.
 [link=images/KlassenTidspunkt.png]
-image::images/KlassenTidspunkt.png[alt="UML-diagram med klassen Tidspunkt og dens egenskaper. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenTidspunkt.png[alt="UML-diagram med klassen Tidspunkt og dens egenskaper. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
@@ -12,8 +12,7 @@ image::images/KlassenTidspunkt.png[alt="UML-diagram med klassen Tidspunkt og den
 
 _This class represents a time instant._
 | URI | time:Instant
-| Subklasse av / _Subclass of_ | time:TemporalEntity
-|Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Subklasse av / _Subclass of_ | <<Tidsenhet, time:TemporalEntity>>
 |Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
@@ -29,7 +28,7 @@ Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 |===
 | _English name_ | _in date-time description_
 | URI | time:inDateTime
-| Verdiområde / _Range_ | time:DateTimeDescription
+| Verdiområde / _Range_ | <<Tidspunktbeskrivelse, time:DateTimeDescription>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et tidspunkt, som en strukturert beskrivelse.
 
 _This property is used to specify the position of an instant, expressed using a structured description._

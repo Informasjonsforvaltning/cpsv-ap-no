@@ -31,8 +31,8 @@
       foaf:page <https://www.digdir.no>
       ];
    dct:license <https://creativecommons.org/licenses/by/4.0> ;
-   dct:modified "2023-09-08"^^xsd:date ;
-   owl:versionInfo "v.1.0" ;
+   dct:modified "2024-10-07"^^xsd:date ;
+   owl:versionInfo "v.1.1" ;
    adms:versionNotes "Klasser og egenskaper som er definert andre steder og som ikke har endret bruk i CPSV-AP-NO, er ikke spesifisert her."@nb ,
       "The classes and properties which are defined elsewhere and of which CPSV-AP-NO has not modified the usage, are not specified here."@en
    .
@@ -40,6 +40,18 @@
 #################################################################
 #    Classes defined in CPSV-AP-NO
 #################################################################
+
+cpsvno:PossibleOutput a owl:Class ;
+   skos:prefLabel "Possible output"@en , "Mulig tjenesteresultat"@nb ;
+   skos:scopeNote "The class is used to represent a possible output of a service."@en ,
+      "Klassen brukes til å representere et mulig tjenesteresultat fra en tjeneste."@nb ;
+   .
+   
+cpsvno:RequiredEvidence a owl:Class ;
+   skos:prefLabel "Required evidence"@en , "Påkrevd dokumentasjon"@nb ;
+   skos:scopeNote "This class is used to represent an evidence that is required in order to execute a service."@en ,
+      "Klassen brukes til å representere dokumentasjon som er påkrevd for å kunne utføre en tjeneste."@nb ;
+   .
 
 cpsvno:Service a owl:Class ;
    skos:prefLabel "Service"@en , "Tjeneste"@nb ;
@@ -55,7 +67,7 @@ cpsv:PublicService a owl:Class ;
    rdfs:subClassOf cpsvno:Service ; # This is a Norweigan extension made in CPSV-AP-NO
    skos:prefLabel "Public Service"@en , "Offentlig tjeneste"@nb ;
    skos:scopeNote "The class represents a Public Service."@en ,
-      "Klassen brukes til å beskrive en tjeneste."@nb ;
+      "Klassen brukes til å beskrive en offentlig tjeneste."@nb ;
       rdfs:seeAlso <https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0> ;
    .
 
@@ -69,6 +81,22 @@ cpsvno:dataService a owl:ObjectProperty ;
       "Egenskapen brukes til å referere til en beskrivelse av en datatjeneste som kanalen benytter."@nb ;
    rdfs:domain cv:Channel ;
    rdfs:range dcat:DataService ;
+   .
+
+cpsvno:hasPossibleOutput a owl:ObjectProperty ;
+   skos:prefLabel "has possible output"@en , "har mulig tjenesteresultat"@nb ;
+   skos:scopeNote "This property is used to specify possible result of the service."@en ,
+      "Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten."@nb ;
+   rdfs:domain cpsvno:Service , cpsv:PublicService ;
+   rdfs:range cpsvno:PossibleOutput ;
+   .
+
+cpsvno:hasRequiredEvidence  a owl:ObjectProperty ;
+   skos:prefLabel "has required evidence"@en , "har påkrevd dokumentasjon "@nb ;
+   skos:scopeNote "This property is used to specify evidence that is required by the service."@en ,
+      "Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten."@nb ;
+   rdfs:domain cpsvno:Service , cpsv:PublicService ;
+   rdfs:range cpsvno:RequiredEvidence ;
    .
 
 cpsvno:mayTrigger a owl:ObjectProperty ;
@@ -89,6 +117,14 @@ cpsvno:mayTriggerNeedFor a owl:ObjectProperty ;
    rdfs:range cpsvno:Service ;
    .
 
+cpsvno:validityDuration a owl:ObjectProperty ;
+   rdfs:subPropertyOf cpsvno:mayTrigger ;
+   skos:prefLabel "validity duration"@en , "gyldighetsperiode"@nb ;
+   skos:scopeNote "This property represents time duration within which the required evidence must be valid."@en ,
+      "Egenskapen brukes til å angi en tidsperiode som den påkrevd dokumentasjonen skal være gyldig innenfor."@nb ;
+   rdfs:domain cpsvno:RequiredEvidence ;
+   rdfs:range xsd:duration ;
+   .
 
 #################################################################
 #   Deprecated individuals

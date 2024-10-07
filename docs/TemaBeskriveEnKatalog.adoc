@@ -1,9 +1,13 @@
 === Å beskrive en tjeneste-/hendelseskatalog [[BeskriveEnKatalog]]
 
+:xrefstyle: short
+
 [[img-Katalogbeskrivelse]]
 .Katalogbeskrivelse.
 [link=images/FigurKatalog.png]
-image::images/FigurKatalog.png[alt="UML-diagram med sju klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/FigurKatalog.png[alt="UML-diagram med sju klasser og relasjoner imellom klassene. Innholdet i diagrammet er forklart i teksten."]
 
 
-EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (`dcat:Catalog`) fra https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]. Spesifikasjonen utvider også klassen Katalog med egendefinerte egenskapene <<Katalog-inneholder-tjeneste>> og <<Katalog-inneholder-hendelse>>, som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.
+EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (`dcat:Catalog`) fra https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]. Spesifikasjonen utvider også klassen Katalog med egenskapene <<Katalog-inneholder-tjeneste, Katalog – inneholder tjeneste (dcatno:containsService)>> og <<Katalog-inneholder-hendelse, Katalog – inneholder hendelse (dcatno:containsEvent)>>, som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.
+
+:xrefstyle: full

@@ -21,28 +21,40 @@ NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
+*Lisens*: https://creativecommons.org/licenses/by/4.0/[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"] +
 *Status*: Gjeldende +
-*Versjon*: 1.0.5 (se <<Endringslogg>>) +
-*Publisert*: 2023-09-08 (v.1.0) +
-*Oppdatert*: 2024-08-16 +
+*Versjon*: 1.1.0 (se <<Endringslogg>>) +
+*Publisert*: 2024-10-07 (v.1.1); 2023-09-08 (v.1.0) +
+*Oppdatert*: 2024-10-07 (v.1.1.x) +
 *Gjeldende versjon*: https://data.norge.no/specification/cpsv-ap-no +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
 *Veileder*: <ingen> +
-*Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v1.ttl[shacl-fil] som "Regelsett lenke")
+*Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v1.ttl[shacl-fil &#x29C9;, window="_blank", role="ext-link"] som "Regelsett lenke")
 
 // include::Om_denne_versjonen.adoc[]
 
+include::Abstract.adoc[]
+
 toc::[]
 
+// section number on
+:sectnums:
+:sectnumlevels: 5
 include::Om_denne_spesifikasjonen.adoc[]
 
-include::Innledning.adoc[]
+// include::Innledning.adoc[]
 
-include::Forenklet_modell.adoc[]
+include::Forenklet-fremstilling-av-kravene.adoc[]
+
+// include::Forenklet_modell.adoc[]
 // inkl. alle temabaserte underkapitler
 
-include::KlasseOversikt.adoc[]
+include::Spesifikasjon_per_klasser.adoc[]
+
+:leveloffset: +1
+
+// include::KlasseOversikt.adoc[]
 
 include::KlassenAdresse.adoc[]
 
@@ -50,11 +62,11 @@ include::KlassenAktør.adoc[]
 
 include::KlassenBegrensning.adoc[]
 
-include::KlassenDatasett.adoc[]
+// include::KlassenDatasett.adoc[]
 
 include::KlassenDeltagelse.adoc[]
 
-include::KlassenDokumentasjon.adoc[]
+// include::KlassenDokumentasjon.adoc[]
 
 include::KlassenDokumentasjonstype.adoc[]
 
@@ -78,11 +90,15 @@ include::KlassenKriterium.adoc[]
 
 include::KlassenLivshendelse.adoc[]
 
+include::KlassenMuligTjenesteresultat.adoc[]
+
 include::KlassenOffentligOrganisasjon.adoc[]
 
 include::KlassenOffentligTjeneste.adoc[]
 
 include::KlassenOrganisasjon.adoc[]
+
+include::KlassenPåkrevdDokumentasjon.adoc[]
 
 include::KlassenReferanserammeverk.adoc[]
 
@@ -104,11 +120,20 @@ include::KlassenTjenestekanal.adoc[]
 
 include::KlassenTjenestekonsesjonskontrakt.adoc[]
 
-include::KlassenTjenesteresultat.adoc[]
+// include::KlassenTjenesteresultat.adoc[]
 
-include::KlassenUnderstøttendeOpplysning.adoc[]
+// include::KlassenUnderstøttendeOpplysning.adoc[]
 
 include::KlassenVirksomhetshendelse.adoc[]
+
+:leveloffset: -1
+
+include::Spesielle-temar.adoc[]
+
+// Appendix, section number off
+:sectnums!:
+
+include::Navnerom.adoc[]
 
 include::Endringslogg.adoc[]
 

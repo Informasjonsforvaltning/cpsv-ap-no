@@ -3,7 +3,7 @@
 [[img-KlassenTjenestekonsesjonskontrakt]]
 .Klassen Tjenestekonsesjonskontrakt (cv:ServiceConcessionContract) og klassene den refererer til.
 [link=images/KlassenTjenestekonsesjonskontrakt.png]
-image::images/KlassenTjenestekonsesjonskontrakt.png[alt="UML-diagram med klassen Tjenestekonsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/KlassenTjenestekonsesjonskontrakt.png[alt="UML-diagram med klassen Tjenestekonsesjonskontrakt, dens egenskaper og dens relasjoner til tre andre klasser. Innholdet i diagrammet er forklart i teksten."]
 
 [cols="30s,70d"]
 |===
@@ -17,7 +17,6 @@ _Concessions are contracts for pecuniary interest by means of which one or more 
 __The object of such contracts is the procurement of works or services by means of a concession, the consideration of which consists in the right to exploit the works or services or in that right together with payment. Such contracts may, but do not necessarily, involve a transfer of ownership to contracting authorities or contracting entities, but contracting authorities or contracting entities always obtain the benefits of the works or services in question. The definition comes from the Directive https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0023&from=EN[2014/23/EU &#x29C9;, window="_blank", role="ext-link"].__
 | URI |  cv:ServiceConcessionContract
 |Subklasse av / Subclass of | epo:ConcessionContract
-| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
 |===
 
 === Obligatoriske egenskaper for klassen _Tjenestekonsesjonskontrakt_ [[Tjenestekonsesjonskontrakt-obligatoriske-egenskaper]]
@@ -29,9 +28,9 @@ __The object of such contracts is the procurement of works or services by means 
 | _English name_ | _description_
 | URI | dct:description
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekst beskrivelse av tjenestekonsesjonskontrakten. Egenskap bør gjentas når beskrivelsen er på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekst beskrivelse av tjenestekonsesjonskontrakten. Egenskap BØR gjentas når beskrivelsen er på flere språk.
 
-_This property represents a free text description of the service concession contract. This property should be repeated when the description is in parallel languages._
+_This property represents a free text description of the service concession contract. This property SHOULD be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
@@ -56,7 +55,7 @@ _This property represents an Identifier for the service concession contract._
 |===
 | _English name_ | _has economic operator_
 | URI | cv:hasEconomicOperator
-| Verdiområde / _Range_ | org:Organization
+| Verdiområde / _Range_ | <<Organisasjon, org:Organization>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til leverandøren som er ansvarlig for levering og forvaltning av tjenestene.
 
 _This property refers to the Economic Operator in charge for the provision and the management of the services._
@@ -70,7 +69,7 @@ _This property refers to the Economic Operator in charge for the provision and t
 |===
 | _English name_ | _has contracting authority_
 | URI | cv:hasContractingAuthority
-| Verdiområde / _Range_ | cv:PublicOrganisation
+| Verdiområde / _Range_ | <<OffentligOrganisasjon, cv:PublicOrganisation>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til oppdragsgiveren som til syvende og sist er ansvarlig for en tjeneste.
 
 _This property refers to the Contracting Authority which is ultimately responsible for a service._
@@ -85,9 +84,9 @@ _This property refers to the Contracting Authority which is ultimately responsib
 | _English name_ | _name_
 | URI | dct:title
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet til kontrakten. Egenskapen bør gjentas når navnet er på flere språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet til kontrakten. Egenskapen BØR gjentas når navnet er på flere språk.
 
-_This property represents the name of the contract. This property should be repeated when the name is in parallel languages._
+_This property represents the name of the contract. This property SHOULD be repeated when the name is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
@@ -100,7 +99,7 @@ _This property represents the name of the contract. This property should be repe
 |===
 | _English name_ | _established under_
 | URI | cv:establishedUnder
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til relevant lovgivning eller policydokumenter (regulativ ressurs) som kontrakten er etablert under.
 
 _This property refers to relevant legislation or policy documents i.e. the Legal Resource under which the service concession contracts are being defined._

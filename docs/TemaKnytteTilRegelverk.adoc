@@ -1,14 +1,13 @@
 === Å knytte en tjeneste til regelverk [[KnytteTilRegelverk]]
 
-Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#beskrivelse-av-juss[Beskrivelse av juridiske rammer i _Veileder for beskrivelse av datasett osv.  &#x29C9;, window="_blank", role="ext-link"], for hvordan regelverk knyttes til et datasett (som f.eks. dokumentasjonskrav til eller tjenesteresultat fra en tjeneste).
+:xrefstyle: short
 
-På helt tilsvarende måte og som illustrert i <<img-TjenesteOgRegelverk>>, kan regelverk knyttes til en tjeneste ved å bruke egenskapen <<Tjeneste-følgerRegel>>, <<OffentligTjeneste-følgerRegel>>, <<Tjeneste-har-relatert-regelverk>> eller <<OffentligTjeneste-har-relatert-regelverk>>.
-
+Som illustrert i <<img-TjenesteOgRegelverk>> kan regelverk knyttes til en tjeneste eller offentlig tjeneste, ved å bruke egenskapene «følger regel (cpsv:follows)» og/eller «har relatert regelverk (cv:hasLegalResource)» i klassen <<Tjeneste, Tjeneste>> eller <<OffentligTjeneste, Offentlig tjeneste>>.
 
 [[img-TjenesteOgRegelverk]]
 .Tjeneste og regelverk.
 [link=images/FigurTjenesteOgRegelverk.png]
-image::images/FigurTjenesteOgRegelverk.png[alt="UML-diagram med fire klasser og en instans, og relasjoner imellom disse. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/FigurTjenesteOgRegelverk.png[alt="UML-diagram med fire klasser og en instans, og relasjoner imellom disse. Innholdet i diagrammet er forklart i teksten."]
 
 Eksempel: Tjenesten «Skjenkebevilling» er hjemlet i «Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)».
 
@@ -22,3 +21,5 @@ Eksempel i RDF Turtle:
       rdfs:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/> ;
      ] ; .
 -----
+
+:xrefstyle: full

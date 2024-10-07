@@ -1,5 +1,7 @@
 === Å beskrive en tjenestekjede [[Tjenestekjede]]
 
+:xrefstyle: short
+
 Spesifikasjonen har lagt til grunn at en hendelse er en ikke-delbar enhet, basert på bl.a. EUs forklaring på en Virksomhetshendelse (Business event): "Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business [yellow-background]#at this specific point in time#” (vår egen utheving), dvs. at en hendelse er noe som skjer på et gitt tidspunkt. Spesifikasjonen følger derfor CPSV-AP som ikke har støtte for å uttrykke at en hendelse kan bestå av andre hendelser.
 
 Det er på den annen side mulig å beskrive en https://data.norge.no/concepts/99d36cbe-9368-4ded-b400-efc34eb8917e[tjenestekjede &#x29C9;, window="_blank", role="ext-link"] som dekker en rekke av enkelthendelser, som vist i <<img-Tjenestekjede>>.
@@ -7,7 +9,7 @@ Det er på den annen side mulig å beskrive en https://data.norge.no/concepts/99
 [[img-Tjenestekjede]]
 .Klasser og egenskaper for beskrivelse av en tjenestekjede.
 [link=images/FigurTjenestekjede.png]
-image::images/FigurTjenestekjede.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Norske utvidelser er gulet ut. Innholdet i UML-diagrammet er forklart i teksten."]
+image::images/FigurTjenestekjede.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Innholdet i UML-diagrammet er forklart i teksten."]
 
 <<img-FigurSyktBarnBeskrevetMedCPSVNO>> illustrerer hvordan deler av livshendelsen Alvorlig sykt barn illustrert i <<img-SyktBarn>>, beskrives med CPSV-AP-NO.
 
@@ -22,13 +24,15 @@ Eksempel i RDF Turtle:
   cpsvno:mayTriggerNeedFor <legetjeneste> .
 
 <legetjeneste> a cpsv:PublicService ;
-  cpsv:produces <e-resept> .
+  cpsvno:hasPossibleOutput <e-resept> .
 
-<e-resept> a dcat:Dataset ;
+<e-resept> a cpsvno:PossibleOutput ;
   xkos:causes <e-reseptSendt> .
 
 <e-reseptSendt> a cv:Event ;
   cpsvno:mayTriggerNeedFor <apotektjeneste> .
 
-<apotektjeneste> a cpsvno:Service.
+<apotektjeneste> a cpsv:PublicService .
 -----
+
+:xrefstyle: full

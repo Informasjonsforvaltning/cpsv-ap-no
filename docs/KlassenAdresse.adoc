@@ -12,7 +12,6 @@ image::images/KlassenAdresse.png[alt="UML-diagram med klassen Adresse, dens egen
 
 _This class is used to represent an address (a spatial object that in a human-readable way identifies a fixed location)._
 | URI | locn:Address
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
 === Valgfrie egenskaper for klassen _Adresse_ [[Adresse-valgfrie-egenskaper]]

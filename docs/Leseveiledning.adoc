@@ -19,7 +19,7 @@ Eksempel: Verdiområde / _Range_ `skos:Concept` betyr at verdien til egenskapen 
 | Anvendelse / _Usage note_ | Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne spesifikasjonen. 
 
 Forklaringen er også skrevet på engelsk (_Usage note_, _kursivert tekst_), primært ment for engelsktalende utviklere av verktøystøtte. Se under <<Omfang-og-avgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
-| Multiplisitet / _Multiplicity_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/bør/kan ha.
+| Multiplisitet / _Multiplicity_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen SKAL/BØR/KAN ha.
 | Kravnivå / _Requirement level_ | Brukes til å spesifisere om klassen/egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Om-kravene>>.
 | Merknad / _Note_ | Brukes til å gi merknader knyttet til bruk av klassen/egenskapen, bl.a. om eventuell norsk utvidelse sammenlignet med EU-standarden, om det er krav til bruk av kontrollerte vokabularer osv. 
 
