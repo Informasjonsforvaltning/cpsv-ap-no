@@ -1017,8 +1017,8 @@ sh:targetClass org:Organization .
    sh:name "frequency"@en, "frekvens"@nb;
    sh:path cv:frequency;
    sh:class skos:Concept;
-   sh:message "The property cv:frequency MUST refer to an instance of kos:Concept"@en,
-      "Egenskapen cv:frequency SKAL referere til en instans av kos:Concept"@nb;
+   sh:message "The property cv:frequency MUST refer to an instance of skos:Concept"@en,
+      "Egenskapen cv:frequency SKAL referere til en instans av skos:Concept"@nb;
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvFulfils a sh:PropertyShape;
@@ -1233,7 +1233,7 @@ sh:targetClass org:Organization .
    sh:path cv:isProvidedBy;
    sh:class foaf:Agent;
    sh:maxCount 1;
-   sh:message "The property cv:isProvidedBy may have 1 value which MUST refer to an instance of foaf:Agent"@en,
+   sh:message "The property cv:isProvidedBy may have max. 1 value which MUST refer to an instance of foaf:Agent"@en,
      "Egenskapen cv:isProvidedBy kan ha maks. 1 verdi som SKAL referere til en instans av foaf:Agent"@nb;
    sh:severity sh:Violation .
 
@@ -1308,7 +1308,7 @@ sh:targetClass org:Organization .
   sh:path cv:processingTime;
   sh:datatype xsd:duration;
   sh:maxCount 1;
-  sh:message "The property cv:processingTime man have max. 1 value which MUST be of datatype sd:duration"@en,
+  sh:message "The property cv:processingTime may have max. 1 value which MUST be of datatype sd:duration"@en,
     "Egenskapen cv:processingTime kan ha maks. 1 verdi som SKAL være av type datatype xsd:duration"@nb;
   sh:severity sh:Violation .
 
@@ -1413,8 +1413,8 @@ sh:targetClass org:Organization .
    sh:path cv:validityPeriod;
    sh:class time:ProperInterval;
    sh:maxCount 1;
-   sh:message "The property validityPeriod may have maks. 1 value which MUST refer to an instance of time:ProperInterval"@en,
-      "Egenskapen cv:validityPeriod kan ha maks. 1 verdi som SKAL referere til em instans av time:ProperInterval"@nb;
+   sh:message "The property validityPeriod may have max. 1 value which MUST refer to an instance of time:ProperInterval"@en,
+      "Egenskapen cv:validityPeriod kan ha maks. 1 verdi som SKAL referere til en instans av time:ProperInterval"@nb;
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvValidityPeriodConstraint a sh:PropertyShape;
@@ -1422,7 +1422,7 @@ sh:targetClass org:Organization .
    sh:path cv:validityPeriodConstraint;
    sh:class time:ProperInterval;
    sh:message "The property cv:validityPeriodConstraint MUST refer to an instance of time:ProperInterval"@en,
-      "Egenskapen cv:validityPeriodConstraint SKAL referere til em instans av time:ProperInterval"@nb;
+      "Egenskapen cv:validityPeriodConstraint SKAL referere til en instans av time:ProperInterval"@nb;
    sh:severity sh:Violation .
 
 :hasMin0Max1Shape-cvValue a sh:PropertyShape;
@@ -1430,7 +1430,7 @@ sh:targetClass org:Organization .
    sh:path cv:value;
    sh:nodeKind sh:Literal;
    sh:maxCount 1;
-   sh:message "The property cv:value may have maks. 1 value"@en,
+   sh:message "The property cv:value may have max. 1 value"@en,
       "Egenskapen cv:value kan ha maks. 1 verdi"@nb;
    sh:severity sh:Violation .
 
@@ -1439,7 +1439,7 @@ sh:targetClass org:Organization .
    sh:path cv:weight;
    sh:datatype xsd:decimal;
    sh:maxCount 1;
-   sh:message "The property cv:weight may have maks. 1 value which MUST be xsd:decimal"@en,
+   sh:message "The property cv:weight may have max. 1 value which MUST be xsd:decimal"@en,
       "Egenskapen cv:weight kan ha maks. 1 verdi som SKAL være xsd:decimal"@nb;
    sh:severity sh:Violation .
 
@@ -1448,7 +1448,7 @@ sh:targetClass org:Organization .
    sh:path cv:weightingType;
    sh:class skos:Concept;
    sh:maxCount 1;
-   sh:message "The property cv:weightingType may have maks. 1 value which MUST refer to an instance of skos:Concept"@en,
+   sh:message "The property cv:weightingType may have max. 1 value which MUST refer to an instance of skos:Concept"@en,
       "Egenskapen cv:weightingType kan ha maks. 1 verdi som SKAL referere til en instans av skos:Concept"@nb;
    sh:severity sh:Warning .
 
@@ -1485,7 +1485,7 @@ sh:targetClass org:Organization .
   sh:name "keyword"@en, "nøkkelord"@nb;
   sh:path dcat:keyword;
   sh:datatype rdf:langString;
-  sh:message "The property dcat:keyword shuld be of the rdf:langString"@en,
+  sh:message "The property dcat:keyword should be of the rdf:langString"@en,
       "Egenskapen dcat:keyword BØR være av type rdf:langString"@nb;
   sh:severity sh:Warning .
 
@@ -1797,7 +1797,7 @@ sh:targetClass org:Organization .
    sh:path dct:subject;
    sh:class foaf:Agent;
    sh:maxCount 1;
-   sh:message "The property dct:subject may have max 1 value which MUST refer to an instance of foaf:Agent"@en,
+   sh:message "The property dct:subject may have max. 1 value which MUST refer to an instance of foaf:Agent"@en,
       "Egenskapen dct:subject kan ha maks. 1 verdi som SKAL referere til instans av foaf:Agent"@nb;
    sh:severity sh:Violation .
 
@@ -1857,7 +1857,7 @@ sh:targetClass org:Organization .
   ##
   sh:nodeKind sh:IRI;
   sh:maxCount 1;
-  sh:message "The property foaf:homepag may have max 1 value which MUST refer to an instance of foaf:Document"@en,
+ sh:message "The property foaf:homepag may have max. 1 value which MUST refer to an instance of foaf:Document"@en,
     "Egenskapen foaf:homepag kan ha maks. 1 verdi som SKAL referere til en instans av foaf:Document"@nb;
   sh:severity sh:Warning .
 
@@ -1907,7 +1907,7 @@ sh:targetClass org:Organization .
    sh:path locn:addressId ;
    sh:nodeKind sh:Literal ;
    sh:maxCount 1;
-   sh:message "The property locn:addressId may have max 1 value"@en,
+   sh:message "The property locn:addressId may have max. 1 value"@en,
      "Egenskapen locn:addressId kan ha maks. 1 verdi"@nb;
    sh:severity sh:Violation .
 
@@ -1972,7 +1972,7 @@ sh:targetClass org:Organization .
    sh:path locn:postCode;
    sh:maxCount 1;
    sh:nodeKind sh:Literal;
-   sh:message "The property locn:postCode may have max 1 value"@en,
+   sh:message "The property locn:postCode may have max. 1 value"@en,
      "Egenskapen locn:postCode kan ha maks. 1 verdi"@nb;
    sh:severity sh:Violation .
 
@@ -2003,7 +2003,7 @@ sh:targetClass org:Organization .
   sh:path skos:prefLabel;
   sh:datatype xsd:langString;
   sh:message "The property skos:prefLabel MUST have value of type xsd:langString"@en,
-    "Egenskapen skos:prefLabel SKAL har verdi som SKAL være av type xsd:langString"@nb;
+    "Egenskapen skos:prefLabel SKAL ha verdi som SKAL være av type xsd:langString"@nb;
   sh:severity sh:Violation .
 
 :hasMin1MaxNShape-skosPrefLabel a sh:PropertyShape;
@@ -2246,7 +2246,7 @@ sh:targetClass org:Organization .
   sh:maxCount 1;
   sh:pattern "^http://publications.europa.eu/resource/authority/distribution-status";
   sh:message "The property adms:status may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/distribution-status"@en,
-   "Egenskapen adms:status kan ha max. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/distribution-status"@nb;
+   "Egenskapen adms:status kan ha maks. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/distribution-status"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-cvCurrencyMin0Max1 a sh:PropertyShape;
@@ -2256,7 +2256,7 @@ sh:targetClass org:Organization .
   sh:pattern "^http://publications.europa.eu/resource/authority/currency/";
   sh:maxCount 1;
   sh:message "The property cv:currency may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/currency/"@en,
-   "Egenskapen cv:currency kan ha max. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/currency/"@nb;
+   "Egenskapen cv:currency kan ha maks. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/currency/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-cvRoleMin1MaxN a sh:PropertyShape;
@@ -2295,7 +2295,7 @@ sh:targetClass org:Organization .
   sh:maxCount 1;
   sh:pattern "^http://publications.europa.eu/resource/authority/licence/";
   sh:message "The property dct:license may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/licence/"@en,
-   "Egenskapen dct:license kan ha max. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/licence/"@nb;
+   "Egenskapen dct:license kan ha maks. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/licence/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctTypeAgentMin0Max1 a sh:PropertyShape;
