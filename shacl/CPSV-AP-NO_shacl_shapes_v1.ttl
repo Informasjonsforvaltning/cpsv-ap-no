@@ -128,7 +128,7 @@
          :hasMin0MaxNShape-cvHasEvidenceTypeList, # har dokumentasjonslitestype, cv:hasEvidenceTypeList
          :hasMin0MaxNShape-cvHasQualifiedRelation, # har kvalifisert relasjon til andre krav, cv:hasQualifiedRelation
          :hasMin0MaxNShape-cvHasRequirement, # har mer spesifikt krav, cv:hasRequirement
-#          :hasMin0MaxNShape-cvHasSupportingEvidence, # har understøttende dokumentasjon, cv:hasSupportingEvidence
+#          :hasMin0MaxNShape-cvHasSupportingEvidence, # har understøttende dokumentajson, cv:hasSupportingEvidence
          :hasMin0MaxNShape-cvFulfils, # tilfredsstiller regel, cv:fulfils
          :hasMin0MaxNShape-dctType # type, dct:type
       ;
@@ -825,7 +825,7 @@ sh:targetClass org:Organization .
 #  sh:nodeKind sh:IRI;
   sh:maxCount 1;
   sh:message "The property adms:status SHOULD appear only once and MUST be instance of skos:Concept"@en ,
-    "Egenskapen adms:status kan ha maks 1 verdi som SKAL være instans av skos:Concept"@nb ;
+    "Egenskapen adms:status kan ha maks. 1 verdi som SKAL være instans av skos:Concept"@nb ;
   sh:severity sh:Warning .
 
 ## -- cpsv-properties:
@@ -944,7 +944,7 @@ sh:targetClass org:Organization .
    sh:class skos:Concept;
    sh:maxCount 1;
    sh:message "The property cv:confidentialityLevelType may have max. 1 value which MUST refer to an instance of skos:Concept"@en,
-      "Egenskapen cv:confidentialityLevelType kan ha maks. 1 verdi som SKAL referere til en instans va skos:Concept"@nb;
+      "Egenskapen cv:confidentialityLevelType kan ha maks. 1 verdu som SKAL referere til en instans va skos:Concept"@nb;
   sh:severity sh:Warning .
 
 :hasMin1Max1Shape-cvConstrains a sh:PropertyShape;
@@ -954,7 +954,7 @@ sh:targetClass org:Organization .
    sh:minCount 1;
    sh:maxCount 1;
    sh:message "The property cv:constrains MUST have min. 1 and max. 1 value which MUST refer to an instance of cv:InformationConcept"@en,
-      "Egenskapen cv:constrains SKAL ha min. 1 og maks. 1 verdi som SKAL referere til en instans av cv:InformationConcept"@nb;
+      "Egenskapen cv:constrains SKAL ha min. 1 og maks. 1 verdi som SKALreferere til en instans av cv:InformationConcept"@nb;
    sh:severity sh:Warning .
 
 :hasMin0MaxNShape-cvContactPage a sh:PropertyShape;
@@ -1623,7 +1623,7 @@ sh:targetClass org:Organization .
   sh:nodeKind sh:IRIOrLiteral;
   sh:minCount 1;
   sh:maxCount 1;
-  sh:message "The property dct:identifier MUST have min. 1 and max. 1 value"@en, "Egenskapen dct:identifier SKAL ha minst 1 og maks 1 verdi"@nb ;
+  sh:message "The property dct:identifier MUST have min. 1 and max. 1 value"@en, "Egenskapen dct:identifier SKAL ha minst 1 og maks. 1 verdi"@nb ;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dctIsPartOfCatalog a sh:PropertyShape;
@@ -1857,7 +1857,7 @@ sh:targetClass org:Organization .
   ##
   sh:nodeKind sh:IRI;
   sh:maxCount 1;
-  sh:message "The property foaf:homepag may have max. 1 value which MUST refer to an instance of foaf:Document"@en,
+ sh:message "The property foaf:homepag may have max. 1 value which MUST refer to an instance of foaf:Document"@en,
     "Egenskapen foaf:homepag kan ha maks. 1 verdi som SKAL referere til en instans av foaf:Document"@nb;
   sh:severity sh:Warning .
 
