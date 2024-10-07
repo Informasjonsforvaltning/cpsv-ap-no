@@ -1309,7 +1309,7 @@ sh:targetClass org:Organization .
   sh:datatype xsd:duration;
   sh:maxCount 1;
   sh:message "The property cv:processingTime may have max. 1 value which MUST be of datatype sd:duration"@en,
-    "Egenskapen cv:processingTime kan ha maks. 1 verdi som SKAL være av type datatype xsd:duration"@nb;
+   "Egenskapen cv:processingTime kan ha maks. 1 verdi som SKAL være av type datatype xsd:duration"@nb;
   sh:severity sh:Violation .
 
 :hasMin1Max1Shape-cvProvidesValueFor a sh:PropertyShape;
