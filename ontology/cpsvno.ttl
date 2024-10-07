@@ -31,7 +31,7 @@
       foaf:page <https://www.digdir.no>
       ];
    dct:license <https://creativecommons.org/licenses/by/4.0> ;
-   dct:modified "2024-10-03"^^xsd:date ;
+   dct:modified "2024-10-07"^^xsd:date ;
    owl:versionInfo "v.1.1" ;
    adms:versionNotes "Klasser og egenskaper som er definert andre steder og som ikke har endret bruk i CPSV-AP-NO, er ikke spesifisert her."@nb ,
       "The classes and properties which are defined elsewhere and of which CPSV-AP-NO has not modified the usage, are not specified here."@en
