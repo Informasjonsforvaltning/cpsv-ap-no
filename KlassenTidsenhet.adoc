@@ -21,7 +21,7 @@ _This class represents a temporal interval or instant._
 |===
 | _English name_ | _end time_
 | URI |  time:hasEnd
-| Verdiområde / _Range_ |  time:Instant
+| Verdiområde / _Range_ | <<Tidspunkt, time:Instant>>
 | Anvendelse / _Usage noe_ |  Egenskapen brukes til å oppgi slutten på en tidsenhet.
 
 _This property represents the end of a temporal entity._
@@ -182,7 +182,7 @@ Eksempel i RDF Turtle, døgnkontinuerlig åpning:
 |===
 | _English name_ | _start time_
 | URI |  time:hasBeginning
-| Verdiområde / _Range_ |  time:Instant
+| Verdiområde / _Range_ | <<Tidspunkt, time:Instant>>
 | Anvendelse / _Usage noe_ |  Egenskapen brukes til å oppgi begynnelsen på en tidsenhet.
 
 _This property represents the beginning of a temporal entity._

@@ -55,7 +55,7 @@ _This property contains the name of the agent. This property SHOULD be repeated 
 |===
 | _English name_ | _address_
 | URI | locn:address
-| Verdiområde / _Range_ | locn:Address
+| Verdiområde / _Range_ | <<Adresse, locn:Address>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en adresse til aktøren.
 
 _This property represents an Address related to an Agent._
@@ -69,7 +69,7 @@ _This property represents an Address related to an Agent._
 |===
 | _English name_ | _participates_
 | URI | cv:participates
-| Verdiområde / _Range_ | cv:Participation
+| Verdiområde / _Range_ | <<Deltagelse, cv:Participation>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å knytte en deltagelse (`cv:Participation`) til en aktør.
 
 _This property links an Agent to the Participation class (`cv:Participation`). The Participation class facilitates the detailed description of how an Agent participates in or interacts with a service and may include temporal and spatial information._

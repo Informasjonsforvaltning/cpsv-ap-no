@@ -25,7 +25,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _provides value for_
 | URI | cv:providesValueFor
-| Verdiområde / _Range_ | cv:InformationConcept
+| Verdiområde / _Range_ | <<<Informasjonsbegrep, cv:InformationConcept>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til informasjonsbegrepet som det gis verdi for.
 
 _This property represents Information Concept for which the Supported Value provides a value._

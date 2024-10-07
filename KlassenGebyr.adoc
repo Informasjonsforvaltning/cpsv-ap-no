@@ -104,7 +104,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 |===
 | _English name_ | _is defined by_
 | URI | cv:isDefinedBy
-| Verdiområde / _Range_ |  org:Organization
+| Verdiområde / _Range_ | <<Organisasjon, org:Organization>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en eller flere organisasjoner (inkl. offentlige organisasjoner) som bestemmer gebyret for en tjeneste.
 
 _This property links the Cost class with one or more instances of the Organization class (org:Organization). This property refers to the organisation(s) defining the costs associated with the delivery of a particular Service._
@@ -118,7 +118,7 @@ _This property links the Cost class with one or more instances of the Organizati
 |===
 | _English name_ | _if accessed through_
 | URI | cv:ifAccessedThrough
-| Verdiområde / _Range_ | cv:Channel
+| Verdiområde / _Range_ | <<Tjenestekanal, cv:Channel>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tjenestekanal som det aktuelle gebyret er spesifikt for.
 
 _Where the cost varies depending on the channel used, for example, if accessed through an online service cf. accessed at a physical location, the cost can be linked to the channel using the If Accessed Through property._

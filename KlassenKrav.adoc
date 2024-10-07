@@ -77,7 +77,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _is requirement of_
 | URI |  cv:isRequirementOf
-| Verdiområde / _Range_ |  cv:Requirement
+| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å representere en referanse mellom et subkrav og dets forelderkrav.
 
 _This property represents a reference between a sub-Requirement and its parent Requirement._
@@ -96,7 +96,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is derived from_
 | URI |  cv:isDerivedFrom
-| Verdiområde / _Range_ |  cv:ReferenceFramework
+| Verdiområde / _Range_ | <<Referanserammeverk, cv:ReferenceFramework>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til referanserammeverk som kravet er basert på, f.eks. lov, forskrift eller annen regulering.
 
 _This property refers to the Reference Framework on which the Requirement is based, such as a law or regulation._
@@ -115,7 +115,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _is issued by_
 | URI |  dct:publisher
-| Verdiområde / _Range_ |  foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til aktøren som har utstedt kravet.
 
 _This property refers to the Agent that has published the Requirement._
@@ -132,7 +132,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has evidence type list_
 | URI |  cv:hasEvidenceTypeList
-| Verdiområde / _Range_ |  cv:EvidenceTypeList
+| Verdiområde / _Range_ | <<Dokumentasjonstypeliste, cv:EvidenceTypeList>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til dokumentasjonstypeliste som spesifiserer dokumentasjonstypene som trengs for å tilfredsstille kravet.
 
 Et krav KAN ha en eller flere dokumentasjonstypelister. For at kravet skal være oppfylt, SKAL dokumentasjonen være i samsvar med minst én av listene når det er flere lister.
@@ -153,7 +153,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has concept_
 | URI |  cv:hasConcept
-| Verdiområde / _Range_ |  cv:InformationConcept
+| Verdiområde / _Range_ | <<Informasjonsbegrep, cv:InformationConcept>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til informasjonsbegrep som kravet forventer en verdi av.
 
 _This property refers to the Information Concept for which a value is expected by the Requirement._
@@ -172,7 +172,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has qualified relation_
 | URI |  cv:hasQualifiedRelation
-| Verdiområde / _Range_ |  cv:Requirement
+| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å representere en beskrevet/kategorisert relasjon til instans av klassen Krav eller en av dens subklasser.
 
 _This property represents a described and/or categorised relation to another Requirement._
@@ -191,7 +191,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _has requirement_
 | URI |  cv:hasRequirement
-| Verdiområde / _Range_ |  cv:Requirement
+| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et mer spesifikt krav som er en del av kravet.
 
 _This property refers to a more specific Requirement that is part of the Requirement._
@@ -208,7 +208,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ | _fulfils_
 | URI |  cv:fulfils
-| Verdiområde / _Range_ |  cpsv:Rule
+| Verdiområde / _Range_ | <<Regel, cpsv:Rule>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til regel som kravet tilfredsstiller.
 
 _This property refers to the rules that the requirement fulfils._

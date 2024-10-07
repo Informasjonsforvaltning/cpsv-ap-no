@@ -520,7 +520,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
-<li><a href="#Om_denne_versjonen">Om denne versjonen</a></li>
 <li><a href="#OmSpesifikasjonen">1. Om spesifikasjonen</a>
 <ul class="sectlevel2">
 <li><a href="#Formål">1.1. Formål</a></li>
@@ -1016,6 +1015,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#PåkrevdDokumentasjon-iSamsvarMed">Påkrevd dokumentasjon – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#PåkrevdDokumentasjon-relatertInformasjon">Påkrevd dokumentasjon – relatert informasjon (foaf:page)</a></li>
 <li><a href="#PåkrevdDokumentasjon-type">Påkrevd dokumentasjon – type (dct:type)</a></li>
+<li><a href="#PåkrevdDokumentasjon-understøtterInformasjonsbegrep">Påkrevd dokumentasjon – understøtter informasjonsbegrep (cv:supportsConcept)</a></li>
 <li><a href="#PåkrevdDokumentasjon-understøtterKrav">Påkrevd dokumentasjon – understøtter krav (cv:supportsRequirement)</a></li>
 </ul>
 </li>
@@ -1147,7 +1147,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tjeneste-identifikator">Tjeneste – identifikator (dct:identifier)</a></li>
 <li><a href="#Tjeneste-kontaktpunkt">Tjeneste – kontaktpunkt (cv:contactPoint)</a></li>
 <li><a href="#Tjeneste-navn">Tjeneste – navn (dct:title)</a></li>
-<li><a href="#Tjeneste-produserer">Tjeneste – produserer (cpsv:produces)</a></li>
 </ul>
 </li>
 <li><a href="#Tjeneste-anbefalte-egenskaper">3.28.2. Anbefalte egenskaper for klassen <em>Tjeneste</em></a>
@@ -1323,32 +1322,15 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 <div class="paragraph">
 <p><strong>Lisens</strong>: <a href="https://creativecommons.org/licenses/by/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY 4.0 &#x29C9;</a><br>
-<strong>Status</strong>: <mark>under utarbeidelse</mark><br>
-<strong>Versjon</strong>: <mark>utkast til v.1.1.0</mark> (se <a href="#Endringslogg"><em>Vedlegg B – Endringslogg</em></a>)<br>
-<strong>Publisert</strong>: <mark>v.1.1.0 ikke ennå ferdigpublisert</mark>; 2023-09-08 (v.1.0)<br>
-<strong>Oppdatert</strong>: <mark>løpende oppdatert</mark><br>
+<strong>Status</strong>: Gjeldende<br>
+<strong>Versjon</strong>: 1.1.0 (se <a href="#Endringslogg"><em>Vedlegg B – Endringslogg</em></a>)<br>
+<strong>Publisert</strong>: 2024-10-07 (v.1.1); 2023-09-08 (v.1.0)<br>
+<strong>Oppdatert</strong>: 2024-10-07 (v.1.1.x)<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/cpsv-ap-no" class="bare">https://data.norge.no/specification/cpsv-ap-no</a><br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
 <strong>Veileder</strong>: &lt;ingen&gt;<br>
-<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (ved å oppgi URLen til denne <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v1.ttl">shacl-fil</a> som "Regelsett lenke")</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Om_denne_versjonen"><a class="link" href="#Om_denne_versjonen">Om denne versjonen</a></h2>
-<div class="sectionbody">
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-Dette er et <mark>utkast</mark> til v.1.1 av CPSV-AP-NO, hovedsakelig for å tilpasse CPSV-AP-NO til <a href="https://semiceu.github.io/CPSV-AP/releases/3.2.0/" class="ext-link" target="_blank" rel="noopener">EUs v.3.2 av CPSV-AP &#x29C9;</a>.
-</td>
-</tr>
-</table>
+<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (ved å oppgi URLen til denne <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v1.ttl" class="ext-link" target="_blank" rel="noopener">shacl-fil &#x29C9;</a> som "Regelsett lenke")</p>
 </div>
 <!-- toc disabled -->
 </div>
@@ -2329,7 +2311,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locn:Address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Adresse">locn:Address</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -2365,7 +2347,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Participation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Deltagelse">cv:Participation</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -2416,7 +2398,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -2452,7 +2434,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:InformationConcept</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Informasjonsbegrep">cv:InformationConcept</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -2624,7 +2606,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -2666,7 +2648,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ReferenceFramework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Referanserammeverk">cv:ReferenceFramework</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -2708,7 +2690,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -2749,7 +2731,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:EvidenceTypeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstypeliste">cv:EvidenceTypeList</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -2792,7 +2774,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -2833,7 +2815,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -2874,7 +2856,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Regel">cpsv:Rule</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -3038,7 +3020,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -3282,7 +3264,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:EvidenceTypeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstypeliste">cv:EvidenceTypeList</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -3323,7 +3305,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:ProperInterval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidsrom">time:ProperInterval</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -3364,7 +3346,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Location</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Adresse">dct:Location</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -3452,7 +3434,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:EvidenceType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype">cv:EvidenceType</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -3847,7 +3829,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Organisasjon">org:Organization</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -3883,7 +3865,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Channel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjenestekanal">cv:Channel</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -4076,7 +4058,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -4263,8 +4245,15 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
 <p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Å-beskrive-dokumentasjonskrav"> 4.8, &#8220;Å beskrive dokumentasjonskrav&#8221;</a>.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Å-beskrive-dokumentasjonskrav"> 4.8, &#8220;Å beskrive dokumentasjonskrav&#8221;</a>.</p>
+</div>
 <div class="sect3">
 <h4 id="Informasjonsbegrep-obligatoriske-egenskaper"><a class="link" href="#Informasjonsbegrep-obligatoriske-egenskaper">3.9.1. Obligatoriske egenskaper for klassen <em>Informasjonsbegrep</em></a></h4>
 <div class="sect4">
@@ -4515,15 +4504,22 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
 <p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Å-beskrive-dokumentasjonskrav"> 4.8, &#8220;Å beskrive dokumentasjonskrav&#8221;</a>.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Å-beskrive-dokumentasjonskrav"> 4.8, &#8220;Å beskrive dokumentasjonskrav&#8221;</a>.</p>
+</div>
 <div class="sect3">
 <h4 id="Informasjonskrav-obligatoriske-egenskaper"><a class="link" href="#Informasjonskrav-obligatoriske-egenskaper">3.10.1. Obligatoriske egenskaper for klassen <em>Informasjonskrav</em></a></h4>
 <div class="sect4">
@@ -4673,7 +4669,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -4715,7 +4711,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ReferenceFramework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Referanserammeverk">cv:ReferenceFramework</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -4757,7 +4753,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -4798,7 +4794,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:EvidenceTypeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstypeliste">cv:EvidenceTypeList</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -4841,7 +4837,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:InformationConcept</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Informasjonsbegrep">cv:InformationConcept</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -4883,7 +4879,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -4924,7 +4920,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -4965,7 +4961,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Regel">cpsv:Rule</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -5060,7 +5056,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/public-services-and-events" class="ext-link" target="_blank" rel="noopener">Tjeneste- og hendelsesdelen av Felles datakatalog &#x29C9;</a> er en katalog over tjenester og hendelser.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/nb/catalogs/public-services-and-events" class="ext-link" target="_blank" rel="noopener">Tjeneste- og hendelsesdelen av Felles datakatalog &#x29C9;</a> er en katalog over tjenester og hendelser.</p></td>
 </tr>
 </tbody>
 </table>
@@ -5191,7 +5187,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -5232,7 +5228,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ContactPoint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Kontaktpunkt">cv:ContactPoint</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -5342,7 +5338,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -5614,7 +5610,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Hendelse">cv:Event</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -5908,7 +5904,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Catalog</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Katalog">dcat:Catalog</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -5949,7 +5945,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Catalog</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Katalog">dcat:Catalog</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -5990,7 +5986,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6105,7 +6101,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidsenhet">time:TemporalEntity</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6259,7 +6255,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidsenhet">time:TemporalEntity</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6537,7 +6533,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6579,7 +6575,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ReferenceFramework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Referanserammeverk">cv:ReferenceFramework</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6621,7 +6617,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6662,7 +6658,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:EvidenceTypeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstypeliste">cv:EvidenceTypeList</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6705,7 +6701,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:InformationConcept</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Informasjonsbegrep">cv:InformationConcept</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6747,7 +6743,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6789,7 +6785,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6830,7 +6826,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Regel">cpsv:Rule</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6921,15 +6917,22 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
 <p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se under <a href="#Å-beskrive-dokumentasjonskrav"> 4.8, &#8220;Å beskrive dokumentasjonskrav&#8221;</a>.</p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se under <a href="#Å-beskrive-dokumentasjonskrav"> 4.8, &#8220;Å beskrive dokumentasjonskrav&#8221;</a>.</p>
+</div>
 <div class="sect3">
 <h4 id="Kriterium-obligatoriske-egenskaper"><a class="link" href="#Kriterium-obligatoriske-egenskaper">3.14.1. Obligatoriske egenskaper for klassen <em>Kriterium</em></a></h4>
 <div class="sect4">
@@ -7121,7 +7124,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7163,7 +7166,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ReferenceFramework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Referanserammeverk">cv:ReferenceFramework</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7205,7 +7208,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7246,7 +7249,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:EvidenceTypeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstypeliste">cv:EvidenceTypeList</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7289,7 +7292,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:InformationConcept</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Informasjonsbegrep">cv:InformationConcept</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7331,7 +7334,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7372,7 +7375,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7413,7 +7416,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Regel">cpsv:Rule</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7642,7 +7645,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Hendelse">cv:Event</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -7831,7 +7834,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -8180,7 +8183,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>possible language</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>language</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -8336,7 +8339,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Hendelse">cv:Event</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -8450,7 +8453,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Organisasjon">org:Organization</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -8731,7 +8734,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locn:Address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Adresse">locn:Address</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -8778,7 +8781,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Participation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Deltagelse">cv:Participation</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -8890,7 +8893,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -8976,7 +8979,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#OffentligOrganisasjon">cv:PublicOrganisation</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -9030,7 +9033,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:PossibleOutput</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#MuligTjenesteresultat">cpsvno:PossibleOutput</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -9120,7 +9123,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ContactPoint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Kontaktpunkt">cv:ContactPoint</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -9378,7 +9381,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:RequiredEvidence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#PåkrevdDokumentasjon">cpsvno:RequiredEvidence</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -9736,7 +9739,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -9782,7 +9785,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Hendelse">cv:Event</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -9882,7 +9885,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Channel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjenestekanal">cv:Channel</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -9931,7 +9934,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Regel">cpsv:Rule</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -9971,7 +9974,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10017,7 +10020,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Participation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Deltagelse">cv:Participation</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10065,7 +10068,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:EvidenceType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype">cv:EvidenceType</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10101,7 +10104,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Cost</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Gebyr">cv:Cost</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10159,7 +10162,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10210,7 +10213,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#RegulativRessurs">eli:LegalResource</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10246,7 +10249,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10393,7 +10396,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10548,7 +10551,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -10834,7 +10837,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområdet / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locn:Address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Adresse">locn:Address</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10877,7 +10880,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområdet / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Participation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Deltagelse">cv:Participation</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -10983,7 +10986,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:RequiredInput</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:RequiredEvidence</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -11349,7 +11352,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:EvidenceType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype">cv:EvidenceType</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -11474,7 +11477,48 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="PåkrevdDokumentasjon-understøtterKrav"><a class="link" href="#PåkrevdDokumentasjon-understøtterKrav">3.20.3.6. Påkrevd dokumentasjon – understøtter krav (cv:supportsRequirement)</a></h5>
+<h5 id="PåkrevdDokumentasjon-understøtterInformasjonsbegrep"><a class="link" href="#PåkrevdDokumentasjon-understøtterInformasjonsbegrep">3.20.3.6. Påkrevd dokumentasjon – understøtter informasjonsbegrep (cv:supportsConcept)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>supports concept</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:supportsConcept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Informasjonsbegrep">cv:InformationConcept</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til informasjonsbegrep som gir fakta funnet eller utledet fra den påkrevde dokumentasjonen.</p>
+<p class="tableblock"><em>This property represents Information Concept providing facts found/inferred from the Required Evidence.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="PåkrevdDokumentasjon-understøtterKrav"><a class="link" href="#PåkrevdDokumentasjon-understøtterKrav">3.20.3.7. Påkrevd dokumentasjon – understøtter krav (cv:supportsRequirement)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -11491,7 +11535,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -11542,10 +11586,6 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cv:ReferenceFramework</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
@@ -11856,7 +11896,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#RegulativRessurs">eli:LegalResource</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -12314,7 +12354,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#RegulativRessurs">eli:LegalResource</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -12383,7 +12423,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:Instant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidspunkt">time:Instant</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage noe</em></strong></p></td>
@@ -12578,7 +12618,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:Instant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidspunkt">time:Instant</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage noe</em></strong></p></td>
@@ -12733,7 +12773,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidsenhet">time:TemporalEntity</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -12769,7 +12809,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:DateTimeDescription</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidspunktbeskrivelse">time:DateTimeDescription</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -13523,7 +13563,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidsenhet">time:TemporalEntity</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -13552,7 +13592,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:Instant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidspunkt">time:Instant</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -13598,7 +13638,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:Instant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidspunkt">time:Instant</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
@@ -13773,7 +13813,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Organisasjon">org:Organization</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -13814,7 +13854,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:PossibleOutput</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#MuligTjenesteresultat">cpsvno:PossibleOutput</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -13896,7 +13936,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ContactPoint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Kontaktpunkt">cv:ContactPoint</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -13943,47 +13983,6 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi det offisielle navnet på tjenesten. Egenskapen BØR gjentas når navnet finnes på flere språk.</p>
 <p class="tableblock"><em>This property represents the official Name of the Service. This property SHOULD be repeated when the name is in parallel languages.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="Tjeneste-produserer"><a class="link" href="#Tjeneste-produserer">3.28.1.7. Tjeneste – produserer (cpsv:produces)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>produces</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:produces</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Output</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en eller flere instanser av tjenesteresultat (<code>cv:Output</code>) som beskriver resultatet av tjenesten.</p>
-<p class="tableblock"><em>This property links a Service to one or more instances of the Output class describing the actual result of executing a given Service.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -14133,7 +14132,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:RequiredEvidence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#PåkrevdDokumentasjon">cpsvno:RequiredEvidence</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14402,7 +14401,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14448,7 +14447,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde/ <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Hendelse">cv:Event</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14530,7 +14529,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Channel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjenestekanal">cv:Channel</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14571,7 +14570,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Regel">cpsv:Rule</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14616,7 +14615,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14662,7 +14661,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Participation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Deltagelse">cv:Participation</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14703,7 +14702,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde/ <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:EvidenceType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype">cv:EvidenceType</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14739,7 +14738,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Cost</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Gebyr">cv:Cost</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14785,7 +14784,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Requirement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Krav">cv:Requirement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14826,7 +14825,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#RegulativRessurs">eli:LegalResource</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14867,7 +14866,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -14994,7 +14993,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -15313,7 +15312,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidsenhet">time:TemporalEntity</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -15483,7 +15482,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Organisasjon">org:Organization</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -15645,7 +15644,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:RequiredEvidence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#PåkrevdDokumentasjon">cpsvno:RequiredEvidence</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -15799,7 +15798,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:TemporalEntity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tidsenhet">time:TemporalEntity</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -15953,7 +15952,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Organisasjon">org:Organization</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -15989,7 +15988,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#OffentligOrganisasjon">cv:PublicOrganisation</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -16064,7 +16063,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#RegulativRessurs">eli:LegalResource</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -16113,7 +16112,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Event</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Hendelse">cv:Event</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -16300,7 +16299,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste">cpsvno:Service</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -16932,9 +16931,6 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_fra_v_1_0_x_til_v_1_1_0"><a class="link" href="#_fra_v_1_0_x_til_v_1_1_0">Fra v.1.0.x til v.1.1.0</a></h3>
-<div class="paragraph">
-<p><mark>@@@@@@ NB! Flere endringer er på vei!</mark></p>
-</div>
 <div class="sect3">
 <h4 id="_endringer_av_dokumentstrukturen"><a class="link" href="#_endringer_av_dokumentstrukturen">Endringer av dokumentstrukturen</a></h4>
 <div class="paragraph">
@@ -16972,16 +16968,16 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Klassen Datasett (dcat:Dataset): Klassen er ikke eksplisitt spesifisert i denne spesifikasjonen, fordi det ikke lenger er krav til datasett som er spesifikke når det gjelder tjeneste- og hendelsesbeskrivelser.</p>
+<p>Klassen «Datasett (dcat:Dataset)»: Klassen er ikke eksplisitt spesifisert i denne spesifikasjonen, fordi det ikke lenger er krav til datasett som er spesifikke når det gjelder tjeneste- og hendelsesbeskrivelser.</p>
 </li>
 <li>
-<p>Klassen Dokumentasjon (cv:Evidence) utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens Dokumentasjon (cv:Evidence) er ment for å representere et konkret stykke dokumentasjon oppgitt av brukeren ved utførelsen av en gitt tjeneste. Bruk <a href="#PåkrevdDokumentasjon"> 3.20, &#8220;Klassen Påkrevd dokumentasjon (cpsvno:RequiredEvidence)&#8221;</a> til å metadatabeskrive dokumentasjon som er påkrevd av en tjeneste.</p>
+<p>Klassen «Dokumentasjon (cv:Evidence)» utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens «Dokumentasjon (cv:Evidence)» er ment for å representere et konkret stykke dokumentasjon oppgitt av brukeren ved utførelsen av en gitt tjeneste. Bruk <a href="#PåkrevdDokumentasjon"> 3.20, &#8220;Klassen Påkrevd dokumentasjon (cpsvno:RequiredEvidence)&#8221;</a> til å metadatabeskrive dokumentasjon som er påkrevd av en tjeneste.</p>
 </li>
 <li>
-<p>Klassen Tjenesteresultat (cv:Output) utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens Tjenesteresultat (cv:Output) er ment for å representere et konkret stykke tjenesteresultat fra en gitt tjeneste. Bruk <a href="#MuligTjenesteresultat"> 3.16, &#8220;Klassen Mulig tjenesteresultat (cpsvno:PossibleOutput)&#8221;</a> til å metadatabeskrive mulige tjenesteresultater fra en tjeneste.</p>
+<p>Klassen «Tjenesteresultat (cv:Output)» utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens «Tjenesteresultat (cv:Output)» er ment for å representere et konkret stykke tjenesteresultat fra en gitt tjeneste. Bruk <a href="#MuligTjenesteresultat"> 3.16, &#8220;Klassen Mulig tjenesteresultat (cpsvno:PossibleOutput)&#8221;</a> til å metadatabeskrive mulige tjenesteresultater fra en tjeneste.</p>
 </li>
 <li>
-<p>Klassen Understøttende opplysning (cv:SupportedValue) utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens Understøttende opplysning (cv:SupportedValue) er ment for å representere en konkret verdi av et informasjonsbegrep som finnes i et konkret stykke dokumentasjon oppgitt av brukeren ved utførelsen av en gitt tjeneste.</p>
+<p>Klassen «Understøttende opplysning (cv:SupportedValue)» utgått, fordi CPSV-AP-NO er nå avgrenset til å støtte metadatabeskrivelser av tjenester og hendelser, mens «Understøttende opplysning (cv:SupportedValue)» er ment for å representere en konkret verdi av et informasjonsbegrep som finnes i et konkret stykke dokumentasjon oppgitt av brukeren ved utførelsen av en gitt tjeneste.</p>
 </li>
 </ul>
 </div>
@@ -16991,10 +16987,10 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#PåkrevdDokumentasjon"> 3.20, &#8220;Klassen Påkrevd dokumentasjon (cpsvno:RequiredEvidence)&#8221;</a>: føyet til for å kunne dekke behov for å beskrive påkrevd dokumentasjon (ettersom klassen cv:Evidence i CPSV-AP skal representere et konkret stykke dokumentasjon som brukeren oppgir ved utførelsen av tjenesten, og ikke hva som kreves av dokumentasjon).</p>
+<p><a href="#PåkrevdDokumentasjon"> 3.20, &#8220;Klassen Påkrevd dokumentasjon (cpsvno:RequiredEvidence)&#8221;</a>: føyet til for å kunne dekke behov for å beskrive påkrevd dokumentasjon (ettersom klassen «Dokumentasjon (cv:Evidence)» i CPSV-AP skal representere et konkret stykke dokumentasjon som brukeren oppgir ved utførelsen av tjenesten, og ikke hva som kreves av dokumentasjon).</p>
 </li>
 <li>
-<p><a href="#MuligTjenesteresultat"> 3.16, &#8220;Klassen Mulig tjenesteresultat (cpsvno:PossibleOutput)&#8221;</a>: føyet til for å kunne dekke behov for å beskrive hva som er mulige tjenesteresultater fra en tjeneste (ettersom klassen cv:Output i CPSV-AP skal representere et konkret stykke tjenesteresultat fra en gitt tjeneste, og ikke hva som er mulige tjenesteresultater).</p>
+<p><a href="#MuligTjenesteresultat"> 3.16, &#8220;Klassen Mulig tjenesteresultat (cpsvno:PossibleOutput)&#8221;</a>: føyet til for å kunne dekke behov for å beskrive hva som er mulige tjenesteresultater fra en tjeneste (ettersom klassen «Tjenesteresultat (cv:Output)» i CPSV-AP skal representere et konkret stykke tjenesteresultat fra en gitt tjeneste, og ikke hva som er mulige tjenesteresultater).</p>
 </li>
 </ul>
 </div>
@@ -17008,7 +17004,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Egenskapen «Begrensning – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at Klassen Dokumentasjon (cv:Evidence) utgår).</p>
+<p>Egenskapen «Begrensning – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at klassen «Dokumentasjon (cv:Evidence)» utgår).</p>
 </li>
 </ul>
 </div>
@@ -17018,7 +17014,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Klassen er ikke lenger en subklasse av klassen Datasett (dcat:Dataset). For å kunne bl.a. publisere hendelsesstrøm, er det innført en ny egenskap <a href="#Hendelse-beskrivendeDatasett"> 3.8.3.2, &#8220;Hendelse – beskrivende datasett (cv:isDescribedAt)&#8221;</a> som kan benyttes til å knytte en hendelse til et eller flere datasett. Tilsvarende gjelder også subklassene <a href="#Livshendelse"> 3.15, &#8220;Klassen Livshendelse (cv:LifeEvent)&#8221;</a> og <a href="#Virksomhetshendelse"> 3.31, &#8220;Klassen Virksomhetshendelse (cv:BusinessEvent)&#8221;</a>.</p>
+<p>Klassen er ikke lenger en subklasse av klassen «Datasett (dcat:Dataset)». For å kunne bl.a. publisere hendelsesstrøm, er det innført en ny egenskap <a href="#Hendelse-beskrivendeDatasett"> 3.8.3.2, &#8220;Hendelse – beskrivende datasett (cv:isDescribedAt)&#8221;</a> som kan benyttes til å knytte en hendelse til et eller flere datasett. Tilsvarende gjelder også subklassene <a href="#Livshendelse"> 3.15, &#8220;Klassen Livshendelse (cv:LifeEvent)&#8221;</a> og <a href="#Virksomhetshendelse"> 3.31, &#8220;Klassen Virksomhetshendelse (cv:BusinessEvent)&#8221;</a>.</p>
 </li>
 </ul>
 </div>
@@ -17028,7 +17024,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Egenskapen «Informasjonskrav – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at Klassen Dokumentasjon (cv:Evidence) utgår).</p>
+<p>Egenskapen «Informasjonskrav – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at klassen «Dokumentasjon (cv:Evidence)» utgår).</p>
 </li>
 </ul>
 </div>
@@ -17038,7 +17034,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Egenskapen «Krav – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at Klassen Dokumentasjon (cv:Evidence) utgår).</p>
+<p>Egenskapen «Krav – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at klassen «Dokumentasjon (cv:Evidence)» utgår).</p>
 </li>
 </ul>
 </div>
@@ -17048,7 +17044,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Egenskapen «Kriterium – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at Klassen Dokumentasjon (cv:Evidence) utgår).</p>
+<p>Egenskapen «Kriterium – har understøttende dokumentasjon (cv:hasSupportingEvidence)» utgått (som en konsekvens av at klassen «Dokumentasjon (cv:Evidence)» utgår).</p>
 </li>
 </ul>
 </div>
@@ -17066,6 +17062,9 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <li>
 <p>Egenskapene <a href="#OffentligTjeneste-harPåkrevdDokumentasjon"> 3.18.2.3, &#8220;Offentlig tjeneste – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence)&#8221;</a> og <a href="#OffentligTjeneste-harMuligTjenesteresultat"> 3.18.1.3, &#8220;Offentlig tjeneste – har mulig tjenesteresultat (cpsvno:hasPossibleOutput)&#8221;</a> føyet til, for å kunne beskrive påkrevd dokumentasjon til, og mulig tjenesteresultat fra en offentlig tjeneste.</p>
 </li>
+<li>
+<p>Egenskapene «Offentlig tjeneste – har dokumentasjonskrav (cpsv:hasInput)» og «Offentlig tjeneste – produserer (cpsv:produces)» utgått (som en konsekvens av at klassene «Dokumentasjon (cv:Evidence)» og «Tjenesteresultat (cv:Output)» utgår).</p>
+</li>
 </ul>
 </div>
 </li>
@@ -17081,6 +17080,9 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </li>
 <li>
 <p>Egenskapene <a href="#Tjeneste-harPåkrevdDokumentasjon"> 3.28.2.3, &#8220;Tjeneste – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence)&#8221;</a> og <a href="#Tjeneste-harMuligTjenesteresultat"> 3.28.1.3, &#8220;Tjeneste – har mulig tjenesteresultat (cpsvno:hasPossibleOutput)&#8221;</a> føyet til, for å kunne beskrive påkrevd dokumentasjon til, og mulig tjenesteresultat fra en tjeneste.</p>
+</li>
+<li>
+<p>Egenskapene «Tjeneste – har dokumentasjonskrav (cpsv:hasInput)» og «Tjeneste – produserer (cpsv:produces)» utgått (som en konsekvens av at klassene «Dokumentasjon (cv:Evidence)» og «Tjenesteresultat (cv:Output)» utgår).</p>
 </li>
 </ul>
 </div>
@@ -17133,7 +17135,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-10-01 14:52:47 UTC
+Sist oppdatert 2024-10-07 06:46:47 UTC
 </div>
 </div>
 </body>

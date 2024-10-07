@@ -67,7 +67,7 @@ _This property refers to the descriptive title or name of a Resource. This prope
 |===
 | _English name_ | _implements_
 | URI | cpsv:implements
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en regulativ ressurs som regelen er definert inn under.
 
 _This property links a Rule to relevant legislation or policy documents, such as the Legal Resource under which the Rules are defined._
