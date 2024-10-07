@@ -2246,7 +2246,7 @@ sh:targetClass org:Organization .
   sh:maxCount 1;
   sh:pattern "^http://publications.europa.eu/resource/authority/distribution-status";
   sh:message "The property adms:status may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/distribution-status"@en,
-   "Egenskapen adms:status kan ha max. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/distribution-status"@nb;
+   "Egenskapen adms:status kan ha maks. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/distribution-status"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-cvCurrencyMin0Max1 a sh:PropertyShape;
@@ -2256,7 +2256,7 @@ sh:targetClass org:Organization .
   sh:pattern "^http://publications.europa.eu/resource/authority/currency/";
   sh:maxCount 1;
   sh:message "The property cv:currency may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/currency/"@en,
-   "Egenskapen cv:currency kan ha max. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/currency/"@nb;
+   "Egenskapen cv:currency kan ha maks. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/currency/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-cvRoleMin1MaxN a sh:PropertyShape;
@@ -2295,7 +2295,7 @@ sh:targetClass org:Organization .
   sh:maxCount 1;
   sh:pattern "^http://publications.europa.eu/resource/authority/licence/";
   sh:message "The property dct:license may have max. 1 value which MUST have value chosen from http://publications.europa.eu/resource/authority/licence/"@en,
-   "Egenskapen dct:license kan ha max. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/licence/"@nb;
+   "Egenskapen dct:license kan ha maks. 1 verdi som SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/licence/"@nb;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctTypeAgentMin0Max1 a sh:PropertyShape;
