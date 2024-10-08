@@ -16,7 +16,7 @@ image::../docs/images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, li
 
 NOTE: The following is an HTML-view of the ontology `cpsvno` expressed in RDF Turtle, which defines classes and properties specified in https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]. +
  +
-Please use https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues] to give us your feedback, if any.
+Please use https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"] to give us your feedback, if any.
 
 -----
 include::cpsvno.ttl[]
