@@ -44,6 +44,8 @@ jobs:
             docs/index.html text/html nb
             docs/files/cpsv-ap-no.pdf application/pdf nb files/cpsv-ap-no.pdf
             docs/images/Digdir.png image/png nb images/Digdir.png
+            docs/images/CPSV-AP-NO-forenklet-fremstilling.png image/png nb images/CPSV-AP-NO-forenklet-fremstilling.png
+            docs/images/CPSV-AP-NO-klasser.png image/png nb images/CPSV-AP-NO-klasser.png
             docs/images/FigurEksempelDokumentasjonskrav.png image/png nb images/FigurEksempelDokumentasjonskrav.png
             docs/images/FigurEksempelDokumentasjonskrav2.png image/png nb images/FigurEksempelDokumentasjonskrav2.png
             docs/images/FigurHendelseOgDistribusjon.png image/png nb images/FigurHendelseOgDistribusjon.png
@@ -55,13 +57,10 @@ jobs:
             docs/images/FigurTjenesteMedDataInnOgUt.png image/png nb images/FigurTjenesteMedDataInnOgUt.png
             docs/images/FigurTjenesteOgDeltagelse.png image/png nb images/FigurTjenesteOgDeltagelse.png
             docs/images/FigurTjenesteOgRegelverk.png image/png nb images/FigurTjenesteOgRegelverk.png
-            docs/images/ForenkletModell-CPSV-AP-NO.png image/png nb images/ForenkletModell-CPSV-AP-NO.png
             docs/images/KlassenAdresse.png image/png nb images/KlassenAdresse.png
             docs/images/KlassenAktør.png image/png nb images/KlassenAktør.png
             docs/images/KlassenBegrensning.png image/png nb images/KlassenBegrensning.png
-            docs/images/KlassenDatasett.png image/png nb images/KlassenDatasett.png
             docs/images/KlassenDeltagelse.png image/png nb images/KlassenDeltagelse.png
-            docs/images/KlassenDokumentasjon.png image/png nb images/KlassenDokumentasjon.png
             docs/images/KlassenDokumentasjonstype.png image/png nb images/KlassenDokumentasjonstype.png
             docs/images/KlassenDokumentasjonstypeliste.png image/png nb images/KlassenDokumentasjonstypeliste.png
             docs/images/KlassenGebyr.png image/png nb images/KlassenGebyr.png
@@ -73,9 +72,11 @@ jobs:
             docs/images/KlassenKrav.png image/png nb images/KlassenKrav.png
             docs/images/KlassenKriterium.png image/png nb images/KlassenKriterium.png
             docs/images/KlassenLivshendelse.png image/png nb images/KlassenLivshendelse.png
+            docs/images/KlassenMuligTjenesteresultat.png image/png nb images/KlassenMuligTjenesteresultat.png
             docs/images/KlassenOffentligOrganisasjon.png image/png nb images/KlassenOffentligOrganisasjon.png
             docs/images/KlassenOffentligTjeneste.png image/png nb images/KlassenOffentligTjeneste.png
             docs/images/KlassenOrganisasjon.png image/png nb images/KlassenOrganisasjon.png
+            docs/images/KlassenPåkrevdDokumentasjon.png image/png nb images/KlassenPåkrevdDokumentasjon.png
             docs/images/KlassenReferanserammeverk.png image/png nb images/KlassenReferanserammeverk.png
             docs/images/KlassenRegel.png image/png nb images/KlassenRegel.png
             docs/images/KlassenRegulativRessurs.png image/png nb images/KlassenRegulativRessurs.png
@@ -86,8 +87,5 @@ jobs:
             docs/images/KlassenTjeneste.png image/png nb images/KlassenTjeneste.png
             docs/images/KlassenTjenestekanal.png image/png nb images/KlassenTjenestekanal.png
             docs/images/KlassenTjenestekonsesjonskontrakt.png image/png nb images/KlassenTjenestekonsesjonskontrakt.png
-            docs/images/KlassenTjenesteresultat.png image/png nb images/KlassenTjenesteresultat.png
-            docs/images/KlassenUnderstøttendeOpplysning.png image/png nb images/KlassenUnderstøttendeOpplysning.png
             docs/images/KlassenVirksomhetshendelse.png image/png nb images/KlassenVirksomhetshendelse.png
-            docs/images/KlassenÅpningstid.png image/png nb images/KlassenÅpningstid.png
             
