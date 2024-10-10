@@ -1,0 +1,28 @@
+name: Manually delete folder/file from staging server
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_path:
+        description: 'Path to the file or folder to delete, must start with /, e.g. /path/myfile.txt WARNING: If this is empty, the entire ontology will be deleted!'
+        required: false
+        type: string
+      ontology:
+        description: 'The name of the ontology to delete the file from, e.g. cpsv-ap-no'
+        required: true
+        type: string
+      ontology-type:
+        description: 'The type of ontology to delete the file from, e.g. specification'
+        required: true
+        type: string
+jobs:
+  delete:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-delete-files.yaml@main
+    with:
+      file_path: ${{ github.event.inputs.file_path }}
+      host: https://staging.fellesdatakatalog.digdir.no
+      ontology: ${{ github.event.inputs.ontology }}
+      ontology-type: ${{ github.event.inputs.ontology-type }}
+    secrets:
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
