@@ -25,4 +25,3 @@ jobs:
       ontology-type: ${{ github.event.inputs.ontology-type }}
     secrets:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
