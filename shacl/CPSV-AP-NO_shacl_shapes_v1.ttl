@@ -2359,8 +2359,8 @@ sh:targetClass org:Organization .
   sh:path dct:type;
   sh:nodeKind sh:IRI;
   sh:pattern "^http://publications.europa.eu/resource/authority/main-activity/";
-  sh:message "The property dct:type SHOULD have value chosen from http://publications.europa.eu/resource/authority/main-activity/"@en,
-   "Egenskapen dct:type BØR ha verdi hentet fra http://publications.europa.eu/resource/authority/main-activity/"@nb;
+  sh:message "The property dct:type MUST have value chosen from http://publications.europa.eu/resource/authority/main-activity/ when the value is that vocabulary"@en,
+   "Egenskapen dct:type SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/main-activity/ når verdien finnes i det vokabularet"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeRoleMin0MaxN a sh:PropertyShape;
