@@ -48,9 +48,9 @@
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
-    dct:modified "2024-10-07"^^xsd:date ;
+    dct:modified "2024-11-26"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "1.1.001" ;
+    owl:versionInfo "1.1.002" ;
     adms:versionNotes "Tilpasset CPSV-AP-NO v.1.1.0"@nb ;
     .
 
@@ -627,7 +627,7 @@ sh:targetClass org:Organization .
   sh:targetClass time:TemporalEntity .
 
 ### Klassen Tidspunkt (time:Instant)
-:TemporalEntityShape a sh:NodeShape;
+:TimeInstantShape a sh:NodeShape;
   rdfs:label "Time Instant"@en , "Tidspunkt"@nb ;
   sh:property
     # mandatory properties
@@ -636,7 +636,7 @@ sh:targetClass org:Organization .
   sh:targetClass time:Instant .
 
 ### Klassen Tidspunktbeskrivelse (time:DateTimeDescription)
-:TemporalEntityShape a sh:NodeShape;
+:DateTimeDescriptionShape a sh:NodeShape;
   rdfs:label "Time Instant"@en , "Tidspunkt"@nb ;
   sh:property
     # mandatory properties
@@ -675,8 +675,8 @@ sh:targetClass org:Organization .
       [sh:property [sh:path time:hasBeginning; sh:minCount 1]]
       [sh:property [sh:path time:hasXSDDuration; sh:minCount 1]]
    );
-   sh:message "At least one of the properties SHOULD have value, alhough none of them are mandatory."@en,
-      "Minst én av egenskapene BØR ha verdi, selv om ingen av dem er obligatoriske."@nb;
+   sh:message "At least one of the properties time:hasEnd, time:hasBeginning and time:hasXSDDuration SHOULD have value, although none of them are mandatory."@en,
+      "Minst én av egenskapene time:hasEnd, time:hasBeginning og time:hasXSDDuration  BØR ha verdi, selv om ingen av dem er obligatoriske."@nb;
    sh:severity sh:Warning;
    sh:targetClass time:ProperInterval .
 
@@ -1211,7 +1211,7 @@ sh:targetClass org:Organization .
   sh:path cv:isDescribedAt;
   sh:class dcat:Dataset;
 #  sh:nodeKind sh:IRI;
-  sh:message "The propety cv:isDescribedAt MUST refer to an instace of dcat:Dataset"@en,
+  sh:message "The propety cv:isDescribedAt MUST refer to an instance of dcat:Dataset"@en,
     "Egenskapen cv:isDescribedAt SKAL referere til en instans av dcat:Dataset"@nb;
   sh:severity sh:Violation .
 
@@ -1308,7 +1308,7 @@ sh:targetClass org:Organization .
   sh:path cv:processingTime;
   sh:datatype xsd:duration;
   sh:maxCount 1;
-  sh:message "The property cv:processingTime may have max. 1 value which MUST be of datatype sd:duration"@en,
+  sh:message "The property cv:processingTime may have max. 1 value which MUST be of datatype xsd:duration"@en,
    "Egenskapen cv:processingTime kan ha maks. 1 verdi som SKAL være av type datatype xsd:duration"@nb;
   sh:severity sh:Violation .
 
@@ -1502,7 +1502,7 @@ sh:targetClass org:Organization .
   sh:path dcat:themeTaxonomy;
   sh:class skos:ConceptScheme;
 #  sh:nodeKind sh:IRI;
-  sh:message "The property dcat:themeTaxonomy MUST refer toan instance of skos:ConceptScheme"@en,
+  sh:message "The property dcat:themeTaxonomy MUST refer to an instance of skos:ConceptScheme"@en,
     "Egenskapen dcat:themeTaxonomy SKAL referere til en instans av skos:ConceptScheme"@nb;
   sh:severity sh:Warning .
 
@@ -1938,7 +1938,7 @@ sh:targetClass org:Organization .
 :hasMin0MaxNShape-locnLocatorDesignator a sh:PropertyShape;
    sh:name "locator designator"@en , "bruksenhetsnummer"@nb ;
    sh:path locn:locatorDesignator;
-   sh:datatype sh:Literal;
+   sh:nodeKind sh:Literal;
    sh:message "The property locn:locatorName SHOULD be of datatype sh:Literal"@en,
      "Egenskapen locn:locatorName BØR være av datatype sh:Literal"@nb;
    sh:severity sh:Warning .
@@ -1962,7 +1962,7 @@ sh:targetClass org:Organization .
 :hasMin0MaxNShape-locnPoBox a sh:PropertyShape;
   sh:name "post box"@en , "postboks"@nb ;
   sh:path locn:poBox;
-  sh:datatype sh:Literal;
+  sh:nodeKind sh:Literal;
   sh:message "The property locn:poBox SHOULD be of datatype sh:Literal"@en,
     "Egenskapen locn:poBox BØR være av datatype sh:Literal"@nb;
   sh:severity sh:Warning .
@@ -2001,9 +2001,9 @@ sh:targetClass org:Organization .
 :hasMin0MaxNShape-skosPrefLabel a sh:PropertyShape;
   sh:name "preferred name / name"@en, "foretrukket navn / navn"@nb;
   sh:path skos:prefLabel;
-  sh:datatype xsd:langString;
-  sh:message "The property skos:prefLabel MUST have value of type xsd:langString"@en,
-    "Egenskapen skos:prefLabel SKAL ha verdi som SKAL være av type xsd:langString"@nb;
+  sh:datatype rdf:langString;
+  sh:message "The property skos:prefLabel MUST have value of type rdf:langString"@en,
+    "Egenskapen skos:prefLabel SKAL ha verdi som SKAL være av type rdf:langString"@nb;
   sh:severity sh:Violation .
 
 :hasMin1MaxNShape-skosPrefLabel a sh:PropertyShape;
@@ -2011,8 +2011,8 @@ sh:targetClass org:Organization .
   sh:path skos:prefLabel;
   sh:datatype rdf:langString;
   sh:minCount 1;
-  sh:message "The property skos:prefLabel MUST have min. 1 value which MUST be of type xsd:langString"@en,
-    "Egenskapen skos:prefLabel SKAL ha min. 1 verdi som SKAL være av type xsd:langString"@nb;
+  sh:message "The property skos:prefLabel MUST have min. 1 value which MUST be of type rdf:langString"@en,
+    "Egenskapen skos:prefLabel SKAL ha min. 1 verdi som SKAL være av type rdf:langString"@nb;
   sh:severity sh:Violation .
 
 ### time-properties:
@@ -2067,19 +2067,19 @@ sh:targetClass org:Organization .
 :hasMin0Max1Shape-timeHasBeginning a sh:PropertyShape;
    sh:name "start time"@en, "starttidspunkt"@nb;
    sh:path time:hasBeginning;
-   sh:datatype xsd:dateTime;
+   sh:Class time:Instant;
    sh:maxCount 1;
-   sh:message "The property time:hasBeginning may have max. 1 value which MUST be of type xds:dateTime"@en,
-      "Egenskapen time:hasBeginning kan ha maks. 1 verdi som SKAL være av type xds:dateTime"@nb;
+   sh:message "The property time:hasBeginning may have max. 1 value which MUST be an instance of time:Instant"@en,
+      "Egenskapen time:hasBeginning kan ha maks. 1 verdi som SKAL være en instans av time:Instant"@nb;
    sh:severity sh:Violation .
 
 :hasMin0Max1Shape-timeHasEnd a sh:PropertyShape;
    sh:name "end time"@en, "sluttidspunkt"@nb;
    sh:path time:hasEnd;
-   sh:datatype xsd:dateTime;
+   sh:Class time:Instant;
    sh:maxCount 1;
-   sh:message "The property time:hasEnd may have max. 1 value which MUST be of type xds:dateTime"@en,
-      "Egenskapen time:hasEnd kan ha maks. 1 verdi som SKAL være av type xds:dateTime"@nb;
+   sh:message "The property time:hasEnd may have max. 1 value which MUST be an instance of time:Instant"@en,
+      "Egenskapen time:hasEnd kan ha maks. 1 verdi som SKAL være en instans av time:Instant"@nb;
    sh:severity sh:Violation .
 
 :hasMin0Max1Shape-timeHasXsdDuration a sh:PropertyShape;
@@ -2358,9 +2358,9 @@ sh:targetClass org:Organization .
   sh:name "public service - type"@en, "Offentlig tjeneste - hovedformål"@nb;
   sh:path dct:type;
   sh:nodeKind sh:IRI;
-  sh:pattern "^http://publications.europa.eu/resource/dataset/main-activity";
-  sh:message "The property dct:type SHOULD have value chosen from http://publications.europa.eu/resource/dataset/main-activity"@en,
-   "Egenskapen dct:type BØR ha verdi hentet fra http://publications.europa.eu/resource/dataset/main-activity"@nb;
+  sh:pattern "^http://publications.europa.eu/resource/authority/main-activity/";
+  sh:message "The property dct:type MUST have value chosen from http://publications.europa.eu/resource/authority/main-activity/ when the value is that vocabulary"@en,
+   "Egenskapen dct:type SKAL ha verdi hentet fra http://publications.europa.eu/resource/authority/main-activity/ når verdien finnes i det vokabularet"@nb;
   sh:severity sh:Warning .
 
 :hasShapeCV-dctTypeRoleMin0MaxN a sh:PropertyShape;
