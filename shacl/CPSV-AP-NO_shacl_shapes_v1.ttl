@@ -927,7 +927,7 @@ sh:targetClass org:Organization .
   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cpsvnoMayTriggerNeedFor a sh:PropertyShape;
-  sh:name "triggers need for"@en, "utløser behov for"@nb;
+  sh:name "may trigger need for"@en, "kan utløse behov for"@nb;
   sh:path cpsvno:mayTriggerNeedFor;
   sh:or (
     [sh:class cpsvno:Service]
