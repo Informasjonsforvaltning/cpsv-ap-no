@@ -1,5 +1,9 @@
 == Vedlegg B – Endringslogg [[Endringslogg]]
 
+=== Fra v.1.0.x til v.1.1.1
+
+Rettet opp feil i eksempelet i RDF Turtle for egenskapen <<Tidspunktbeskrivelse-måned>>.
+
 === Fra v.1.0.x til v.1.1.0
 
 ==== Endringer av dokumentstrukturen 

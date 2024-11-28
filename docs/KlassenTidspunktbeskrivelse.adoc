@@ -172,7 +172,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 Eksempel i RDF Turtle, 11 (= november):
 -----
 <exDateTimeDesc> a time:DateTimeDescription; 
-   xsd:gMonth 11; # måned nr. 11 = november
+   time:month "--11"^^xsd:gMonth; # måned nr. 11 = november
    . 
 -----
 
