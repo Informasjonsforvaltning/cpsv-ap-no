@@ -1261,18 +1261,18 @@ sh:targetClass org:Organization .
     "Egenskapen cv:IsGroupedBy SKAL være en URI som refererer til en instans av cv:Event, cv:LifeEvent eller cv:BusinessEvent"@nb;
   sh:severity sh:Violation .
 
-:hasMin0Max1Shape-cvIsProvidedBy a sh:PropertyShape;
-   sh:name "is provided by"@en, "distributør"@nb;
-   sh:path cv:isProvidedBy;
-   sh:or ( # tar med subklasser av foaf:Agent for å unngå feilmelding
-      [sh:class foaf:Agent]
-      [sh:class org:Organization]
-      [sh:class cv:PublicOrganisation] 
-      [sh:class rov:RegisteredOrganization] );
-   sh:maxCount 1;
-   sh:message "The property cv:isProvidedBy may have max. 1 value which MUST refer to an instance of foaf:Agent"@en,
-     "Egenskapen cv:isProvidedBy kan ha maks. 1 verdi som SKAL referere til en instans av foaf:Agent"@nb;
-   sh:severity sh:Violation .
+#:hasMin0Max1Shape-cvIsProvidedBy a sh:PropertyShape;
+#   sh:name "is provided by"@en, "distributør"@nb;
+#   sh:path cv:isProvidedBy;
+#   sh:or ( # tar med subklasser av foaf:Agent for å unngå feilmelding
+#      [sh:class foaf:Agent]
+#      [sh:class org:Organization]
+#      [sh:class cv:PublicOrganisation] 
+#      [sh:class rov:RegisteredOrganization] );
+#   sh:maxCount 1;
+#   sh:message "The property cv:isProvidedBy may have max. 1 value which MUST refer to an instance of foaf:Agent"@en,
+#     "Egenskapen cv:isProvidedBy kan ha maks. 1 verdi som SKAL referere til en instans av foaf:Agent"@nb;
+#   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvIsRequirementOf a sh:PropertyShape;
    sh:name "is requirement of"@en, "er subkrav av"@nb;
