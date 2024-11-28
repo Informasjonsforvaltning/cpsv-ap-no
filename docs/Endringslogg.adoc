@@ -2,7 +2,7 @@
 
 === Fra v.1.0.x til v.1.1.1
 
-Rettet opp feil i eksempelet i RDF Turtle for egenskapen <<Tidspunktbeskrivelse-måned>>.
+Rettet opp feil i eksempelet i RDF Turtle for egenskapene <<Tidspunktbeskrivelse-dag-i-måneden>>, <<Tidspunktbeskrivelse-måned>> og <<https://data.norge.no/specification/cpsv-ap-no#Tidspunktbeskrivelse-%C3%A5r>>.
 
 === Fra v.1.0.x til v.1.1.0
 
