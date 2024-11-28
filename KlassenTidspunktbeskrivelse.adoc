@@ -71,7 +71,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 Eksempel i RDF Turtle, den femtende i en måned:
 -----
 <exDateTimeDesc> a time:DateTimeDescription; 
-   time:day 15; # den 15. i en måned
+   time:day "---15"^^xsd:gDay; # den 15. i en måned
    . 
 -----
 
@@ -172,7 +172,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 Eksempel i RDF Turtle, 11 (= november):
 -----
 <exDateTimeDesc> a time:DateTimeDescription; 
-   xsd:gMonth 11; # måned nr. 11 = november
+   time:month "--11"^^xsd:gMonth; # måned nr. 11 = november
    . 
 -----
 
@@ -312,7 +312,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 Eksempel i RDF Turtle, år 2023: 
 -----
 <exDateTimeDesc> a time:DateTimeDescription; 
-   time:year 2023; # år 2023
+   time:year "2023"^^xsd:gYear; # år 2023
    . 
 -----
 

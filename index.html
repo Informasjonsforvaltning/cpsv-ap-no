@@ -1274,6 +1274,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Navnerom">Vedlegg A – Navnerom som er brukt i spesifikasjonen</a></li>
 <li><a href="#Endringslogg">Vedlegg B – Endringslogg</a>
 <ul class="sectlevel2">
+<li><a href="#_fra_v_1_0_x_til_v_1_1_1">Fra v.1.0.x til v.1.1.1</a></li>
 <li><a href="#_fra_v_1_0_x_til_v_1_1_0">Fra v.1.0.x til v.1.1.0</a>
 <ul class="sectlevel3">
 <li><a href="#_endringer_av_dokumentstrukturen">Endringer av dokumentstrukturen</a></li>
@@ -1324,9 +1325,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="paragraph">
 <p><strong>Lisens</strong>: <a href="https://creativecommons.org/licenses/by/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY 4.0 &#x29C9;</a><br>
 <strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 1.1.0 (se <a href="#Endringslogg"><em>Vedlegg B – Endringslogg</em></a>)<br>
+<strong>Versjon</strong>: 1.1.1 (se <a href="#Endringslogg"><em>Vedlegg B – Endringslogg</em></a>)<br>
 <strong>Publisert</strong>: 2024-10-07 (v.1.1); 2023-09-08 (v.1.0)<br>
-<strong>Oppdatert</strong>: 2024-10-07 (v.1.1.x)<br>
+<strong>Oppdatert</strong>: 2024-11-28 (v.1.1.x)<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/cpsv-ap-no" class="bare">https://data.norge.no/specification/cpsv-ap-no</a><br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
@@ -13007,7 +13008,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
-   time:day 15; # den 15. i en måned
+   time:day "---15"^^xsd:gDay; # den 15. i en måned
    .</pre>
 </div>
 </div>
@@ -13230,7 +13231,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
-   xsd:gMonth 11; # måned nr. 11 = november
+   time:month "--11"^^xsd:gMonth; # måned nr. 11 = november
    .</pre>
 </div>
 </div>
@@ -13544,7 +13545,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;exDateTimeDesc&gt; a time:DateTimeDescription;
-   time:year 2023; # år 2023
+   time:year "2023"^^xsd:gYear; # år 2023
    .</pre>
 </div>
 </div>
@@ -16947,6 +16948,12 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <h2 id="Endringslogg"><a class="link" href="#Endringslogg">Vedlegg B – Endringslogg</a></h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="_fra_v_1_0_x_til_v_1_1_1"><a class="link" href="#_fra_v_1_0_x_til_v_1_1_1">Fra v.1.0.x til v.1.1.1</a></h3>
+<div class="paragraph">
+<p>Rettet opp feil i eksempelet i RDF Turtle for egenskapene <a href="#Tidspunktbeskrivelse-dag-i-måneden"> 3.26.2.1, &#8220;Tidspunktbeskrivelse – dag i måneden (time:day)&#8221;</a>, <a href="#Tidspunktbeskrivelse-måned"> 3.26.2.5, &#8220;Tidspunktbeskrivelse – måned (time:month)&#8221;</a> og &lt;<a href="https://data.norge.no/specification/cpsv-ap-no#Tidspunktbeskrivelse-%C3%A5r" class="bare">https://data.norge.no/specification/cpsv-ap-no#Tidspunktbeskrivelse-%C3%A5r</a>&gt;.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_fra_v_1_0_x_til_v_1_1_0"><a class="link" href="#_fra_v_1_0_x_til_v_1_1_0">Fra v.1.0.x til v.1.1.0</a></h3>
 <div class="sect3">
 <h4 id="_endringer_av_dokumentstrukturen"><a class="link" href="#_endringer_av_dokumentstrukturen">Endringer av dokumentstrukturen</a></h4>
@@ -17152,7 +17159,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-10-07 14:26:38 UTC
+Sist oppdatert 2024-11-28 14:44:50 UTC
 </div>
 </div>
 </body>
