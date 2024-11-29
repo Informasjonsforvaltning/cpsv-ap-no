@@ -941,8 +941,9 @@ sh:targetClass org:Organization .
   sh:name "validity duration"@en, "gyldighetsperiode"@nb;
   sh:path cpsvno:validityDuration;
   sh:datatype xsd:duration;
-  sh:message "The property cpsvno:validityDuration MUST have value of datatype xsd:duration"@en,
-    "Egenskapen cpsvno:validityDuration SKAL ha verdi av datatype xsd:duration"@nb;
+  sh:maxCount 1;
+  sh:message "The property cpsvno:validityDuration may have max. 1 value which MUST be of datatype xsd:duration"@en,
+    "Egenskapen cpsvno:validityDuration kan ha maks. 1 verdi som SKAL være av datatype xsd:duration"@nb;
   sh:severity sh:Violation .
 
 ## -- cv-properties:
@@ -1296,8 +1297,8 @@ sh:targetClass org:Organization .
    sh:class dct:Location;
    sh:maxCount 1;
    sh:message "The property cv:issuingPlace may have max. 1 value which MUST refer to an instance of dct:Location"@en,
-      "Egenskapen cv:issuingPlace kan ha maks. 1 verdi som SKAL referere til en instanse av dct:Location"@nb;
-   sh:severity sh:Voilation .
+      "Egenskapen cv:issuingPlace kan ha maks. 1 verdi som SKAL referere til en instans av dct:Location"@nb;
+   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-cvOpeningHours a sh:PropertyShape;
    sh:name "opening hours (text)"@en, "ordinær åpningstid fritekst"@nb;
@@ -1502,9 +1503,9 @@ sh:targetClass org:Organization .
    sh:name "weighting consideration description"@en, "vektingsvurderingsbeskrivelse"@nb;
    sh:path cv:weightingConsiderationDescription;
    sh:datatype rdf:langString;
-   sh:message "The property cv:weightingConsiderationDescription SHOULD be of datatype rdf:langString"@en,
-      "Egenskapen cv:weightingConsiderationDescription BØR være av datatype rdf:langString"@nb;
-   sh:severity sh:Warning .
+   sh:message "The property cv:weightingConsiderationDescription MUST be of datatype rdf:langString"@en,
+      "Egenskapen cv:weightingConsiderationDescription SKAL være av datatype rdf:langString"@nb;
+   sh:severity sh:Violation .
 
 ## -- dcat-properties:
 
@@ -1531,9 +1532,9 @@ sh:targetClass org:Organization .
   sh:name "keyword"@en, "nøkkelord"@nb;
   sh:path dcat:keyword;
   sh:datatype rdf:langString;
-  sh:message "The property dcat:keyword should have value of the datatype rdf:langString"@en,
-      "Egenskapen dcat:keyword BØR ha verdi av datatype rdf:langString"@nb;
-  sh:severity sh:Warning .
+  sh:message "The property dcat:keyword MUST have value of the datatype rdf:langString"@en,
+      "Egenskapen dcat:keyword SKAL ha verdi av datatype rdf:langString"@nb;
+  sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dcatLandingPage a sh:PropertyShape;
    sh:name "landing page"@en, "landingsside"@nb;
@@ -1541,7 +1542,7 @@ sh:targetClass org:Organization .
    sh:class foaf:Document;
    sh:message "The property dcat:landingPage MUST refer to an instance of foaf:Document"@en,
      "Egenskapen dcat:landingPage SKAL referere til instans av foaf:Document"@nb;
-  sh:severity sh:Voilation .
+  sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dcatThemeTaxonomy a sh:PropertyShape;
   sh:name "theme taxonomy"@en, "temaer"@nb;
@@ -1858,18 +1859,18 @@ sh:targetClass org:Organization .
     "Egenskapen dct:subject SKAL referere til en instans av skos:Concept"@nb;
   sh:severity sh:Warning .
 
-:hasMin0Max1Shape-dctSubjectEvidence a sh:PropertyShape;
-   sh:name "is about"@en, "gjelder"@nb;
-   sh:path dct:subject;
-   sh:or ( # tar med subklasser av foaf:Agent for å unngå feilmelding
-      [sh:class foaf:Agent]
-      [sh:class org:Organization]
-      [sh:class cv:PublicOrganisation] 
-      [sh:class rov:RegisteredOrganization] );
-   sh:maxCount 1;
-   sh:message "The property dct:subject may have max. 1 value which MUST refer to an instance of foaf:Agent"@en,
-      "Egenskapen dct:subject kan ha maks. 1 verdi som SKAL referere til instans av foaf:Agent"@nb;
-   sh:severity sh:Violation .
+#:hasMin0Max1Shape-dctSubjectEvidence a sh:PropertyShape;
+#   sh:name "is about"@en, "gjelder"@nb;
+#   sh:path dct:subject;
+#   sh:or ( # tar med subklasser av foaf:Agent for å unngå feilmelding
+#      [sh:class foaf:Agent]
+#      [sh:class org:Organization]
+#      [sh:class cv:PublicOrganisation] 
+#      [sh:class rov:RegisteredOrganization] );
+#   sh:maxCount 1;
+#   sh:message "The property dct:subject may have max. 1 value which MUST refer to an instance of foaf:Agent"@en,
+#      "Egenskapen dct:subject kan ha maks. 1 verdi som SKAL referere til instans av foaf:Agent"@nb;
+#   sh:severity sh:Violation .
 
 :hasMin0MaxNShape-dctTitle a sh:PropertyShape;
   sh:name "title/name"@en, "tittel/navn"@nb;
