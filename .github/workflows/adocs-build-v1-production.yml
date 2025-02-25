@@ -18,6 +18,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: v1
+          submodules: true
+          fetch-depth: 0
+
+      - name: Update submodules to latest main
+        run: |
+          git submodule foreach --recursive git fetch origin
+          git submodule foreach --recursive git checkout origin/main
 
       - name: Build html
         id: adocbuild_html
@@ -88,4 +95,3 @@ jobs:
             docs/images/KlassenTjenestekanal.png image/png nb images/KlassenTjenestekanal.png
             docs/images/KlassenTjenestekonsesjonskontrakt.png image/png nb images/KlassenTjenestekonsesjonskontrakt.png
             docs/images/KlassenVirksomhetshendelse.png image/png nb images/KlassenVirksomhetshendelse.png
-            
