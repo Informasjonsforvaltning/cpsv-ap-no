@@ -23,4 +23,4 @@ include::cpsvno.ttl[]
 -----
 
 // Analytics
-include::shared/analytics.adoc[]
+include::../docs/shared/analytics.adoc[]
