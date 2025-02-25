@@ -21,3 +21,6 @@ Please use https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[Github I
 -----
 include::cpsvno.ttl[]
 -----
+
+// Analytics
+include::shared/analytics.adoc[]
