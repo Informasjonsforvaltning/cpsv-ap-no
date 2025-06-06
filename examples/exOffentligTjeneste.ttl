@@ -73,8 +73,8 @@
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:holdsRequirement <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKrav.ttl>
-   dct:audience <https://example.org/målgruppe/virksomhet>,
+   cv:holdsRequirement <https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/examples/exKrav.ttl>;
+   dct:audience <https://example.org/målgruppe/virksomhet>;
    cv:hasInputType <>;
    .
  
