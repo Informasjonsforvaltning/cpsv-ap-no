@@ -51,7 +51,7 @@ Eksempel i RDF Turtle, åpningstider på vanlige ukedager/virkedager:
    dct:description "normal Monday opening hours"@en, "normal åpningstid på mandager"@nb; # beskrivelse
    .
 <exTimeInstantMonday0800> a time:Instant; # tidspunkt
-   time:inDateTime <exMonday0800> ; # tidspunktbeskrivelse
+   time:inDateTime <exDateTimeDescriptionMonday0800> ; # tidspunktbeskrivelse
    .
 <exDateTimeDescriptionMonday0800> a time:DateTimeDescription; # tidspunktbeskrivelse
    time:unitType time:unitMinute; # enhetstype
@@ -60,9 +60,9 @@ Eksempel i RDF Turtle, åpningstider på vanlige ukedager/virkedager:
    time:dayOfWeek time:Monday; # dag i uken
    .
 <exTimeInstantMonday1600> a time:Instant; # tidspunkt
-   time:inDateTime <exMonday1600> ; # tidspunktbeskrivelse
+   time:inDateTime <exDateTimeDescriptionMonday1600> ; # tidspunktbeskrivelse
    .
-<exDateTimeDescriptionMonday0800> a time:DateTimeDescription; # tidspunktbeskrivelse
+<exDateTimeDescriptionMonday1600> a time:DateTimeDescription; # tidspunktbeskrivelse
    time:unitType time:unitMinute; # enhetstype
    time:hour 16; # time
    time:minute 0; # sekund
@@ -94,12 +94,12 @@ Eksempel i RDF Turtle, døgnkontinuerlig åpning:
    . 
 
 <exTwentyfourSevenOpeningHours> a time:TemporalEntity; # tidsenhet
-   time:hasBeginning <exTkmeInstant0000>; # starttidspunkt
+   time:hasBeginning <exTimeInstant0000>; # starttidspunkt
    time:hasEnd <exTimeInstant2400>; # slutttidspunkt
    cv:frequency <http://publications.europa.eu/resource/authority/frequency/DAILY>; # frekvens
    dct:description "24/7 opening hours"@en, "døgnkontinuerlig åpning"@nb; # beskrivelse
    .
-<exTkmeInstant0000> a time:Instant; # tidspunkt
+<exTimeInstant0000> a time:Instant; # tidspunkt
    time:inDateTime <exDateTimeDescription0000>; # tidspunktbeskrivelse
    .
 <exDateTimeDescription0000> a time:DateTimeDescription; # tidspunktbeskrivelse
@@ -110,7 +110,7 @@ Eksempel i RDF Turtle, døgnkontinuerlig åpning:
 <exTimeInstant2400> a time:Instant; # tidspunkt
    time:inDateTime <exDateTimeDescription0000>; # tidspunktbeskrivelse
    .
-<exDateTimeDescription0000> a time:DateTimeDescription; # tidspunktbeskrivelse
+<exDateTimeDescription2400> a time:DateTimeDescription; # tidspunktbeskrivelse
    time:unitType time:unitMinute; # enhetstype
    time:hour 24; # time
    time:minute 0; # minutt
