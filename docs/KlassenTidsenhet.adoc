@@ -108,7 +108,7 @@ Eksempel i RDF Turtle, døgnkontinuerlig åpning:
    time:minute 0; # minutt
    .
 <exTimeInstant2400> a time:Instant; # tidspunkt
-   time:inDateTime <exDateTimeDescription0000>; # tidspunktbeskrivelse
+   time:inDateTime <exDateTimeDescription2400>; # tidspunktbeskrivelse
    .
 <exDateTimeDescription2400> a time:DateTimeDescription; # tidspunktbeskrivelse
    time:unitType time:unitMinute; # enhetstype
