@@ -135,9 +135,7 @@ _Norwegian extension:_
 Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cv:contactPoint [ a  cv:ContactPoint ; # kontaktpunkt
-     cv:telephone "tel:+4775012000" ;
-    ] ; .
+   cv:contactPoint <eksKontaktPunkt> ; .
 -----
 
 ==== Offentlig tjeneste – navn (dct:title) [[OffentligTjeneste-navn]]
@@ -550,11 +548,7 @@ _Where the cost varies depending on the channel through which the service is acc
 Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cv:hasCost [ a cv:Cost ;
-      cv:hasValue "0.49"^^xsd:decimal ; # beløp
-      cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ; # valuta
-      dct:description "Pr. vareliter for alkoholdhold drikke i gruppe 1"@nb ;
-   ] ; .
+   cv:hasCost <eksGebyr> ; .
 -----
 
 ==== Offentlig tjeneste – har krav (cv:holdsRequirement) [[OffentligTjeneste-har-krav]]
@@ -575,9 +569,7 @@ _This property links a Public Service to a class that describes the criteria for
 Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cv:holdsRequirement [ a cv:Requirement ;
-   dct:title "Over 20 år"@nb ;
-   dct:description "Søkeren må være over 20 år"@nb ; ] ; .
+   cv:holdsRequirement <eksKrav> ; .
 -----
 
 ==== Offentlig tjeneste – har relatert regelverk (cv:hasLegalResource) [[OffentligTjeneste-har-relatert-regelverk]]

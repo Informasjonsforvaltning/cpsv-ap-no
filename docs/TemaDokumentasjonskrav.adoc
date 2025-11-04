@@ -34,53 +34,54 @@ image::images/FigurEksempelDokumentasjonskrav2.png[alt="RDF-graf med seks noder 
 
 Eksemplet i RDF Turtle:
 -----
-<prøvingsattest> a cpsv:PublicService ;
+<prøvingsattest> a cpsv:PublicService ; # offentlig tjeneste
    dct:title "Prøvingsattest"@nb ; # navn
    cv:holdsRequirement <vilkårForÅInngåEkteskap> ; # har krav
    cv:hasInputType <attest> ; # har dokumentasjonstype
    cpsvno:hasRequiredEvidence <fødselsattest> ; # har påkrevd dokumentasjon
    .
 
-<vilkårForÅInngåEkteskap> a cv:Criterion ;
+<vilkårForÅInngåEkteskap> a cv:Criterion ; # kriterium
    dct:title "Vilkår for å inngå ekteskap"@nb ; # navn
-   cv:isDerivedFrom [ a cv:ReferenceFramework ; # er utledet fra
-      dct:identifier <https://lovdata.no/dokument/NL/lov/1991-07-04-47#KAPITTEL_1> ; ] ;
+   cv:isDerivedFrom <ekteskapsloven1a> ; # er utledet fra
    cv:hasRequirement <alderskrav> ; # har mer spesifikt krav
    .
 
-<alderskrav> a cv:InformationRequirement ;
+<alderskrav> a cv:InformationRequirement ;  # informasjonskrav
    dct:title "Alderskrav"@nb ; # navn
-   cv:isDerivedFrom [ a cv:ReferenceFramework ; # er utledet fra
-      dct:identifier <https://lovdata.no/lov/1991-07-04-47/§1a> ; ] ;
+   cv:isDerivedFrom <ekteskapsloven1a> ; # er utledet fra
    cv:hasRequirement <ikkeUnder18> ; # har mer spesifikt krav
    cv:hasEvidenceTypeList <typeListeAttest> ; # har dokumentasjonstypeliste
    .
 
-<ikkeUnder18> a cv:Constraint ;
+<ikkeUnder18> a cv:Constraint ; # begrensning
    dct:title "Ikke under 18 år" ; # navn
-   cv:isDerivedFrom [ a cv:ReferenceFramework ; # er utledet fra
-      dct:identifier <https://lovdata.no/lov/1991-07-04-47/§1a> ; ] ;
+   cv:isDerivedFrom <ekteskapsloven1a> ;
    cv:constrains <alder> ; # begrenser
    .
 
-<alder> a cv:InformationConcept ;
+<ekteskapsloven1a> a cv:ReferenceFramework ; # referanserammeverk 
+   dct:identifier <https://lovdata.no/lov/1991-07-04-47/§1a> ; # identifikator
+   .
+
+<alder> a cv:InformationConcept ; # informasjonsbegrep
    dct:title "Alder"@nb ; # navn
    .
 
-<typeListeAttest> a cv:EvidenceTypeList ;
-   skos:prefLabel "Attest"@nb ;
-   cv:specifiesEvidenceType <typeAttest> ; #spesifiserer
+<typeListeAttest> a cv:EvidenceTypeList ; #dokumentasjonstypeliste
+   skos:prefLabel "Attest"@nb ; # navn
+   cv:specifiesEvidenceType <typeAttest> ; # spesifiserer
    .
 
-<typeAttest> a cv:EvidenceType ;
+<typeAttest> a cv:EvidenceType ; # dokumentasjonstype
    cv:evidenceTypeClassification <attest> ; # dokumentasjonstypekategori
    .
 
-<attest> a skos:Concept ;
+<attest> a skos:Concept ; # begrep
    skos:prefLabel "attest"@nb ; # navn
    .
 
-<fødselsattest> a cpsvno:RequiredEvidence ;
+<fødselsattest> a cpsvno:RequiredEvidence ; # påkrevd dokumentasjon
    dct:description "Fødselsattest som dokumentasjon på alder"@nb ; # beskrivelse
    dct:title "Fødselsattest"@nb ; # navn
    dct:conformsTo <attest> ; # i samsvar med

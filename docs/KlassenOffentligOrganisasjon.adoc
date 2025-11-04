@@ -151,8 +151,10 @@ Eksempel i RDF Turtle:
 -----
 <BrønnøyKommune> a cv:PublicOrganisation ;
    skos:prefLabel "Brønnøy kommune"@nb ;
-   locn:address [ a locn:Address ;
-       locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; ] ; .
+   locn:address <eksAdresse> ; .
+
+<eksAdresse> a locn:Address ; 
+   locn:fullAddress "Sivert Nielsens gt. 24, 8905 Brønnøysund"@nb ; .
 -----
 
 ==== Offentlig organisasjon – deltar i (cv:participates) [[OffentligOrganisasjon-deltar-i]]

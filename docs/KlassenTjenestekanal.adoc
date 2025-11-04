@@ -174,11 +174,13 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 Eksempel i RDF Turtle:
 -----
 <personligOppmøte> a cv:Channel ;
-   vcard:hasAddress [ a vcard:Address ;
-      vcard:street-address "Sivert Nielsens gt. 24" ;
-      vcard:locality "Brønnøysund" ;
-      vcard:postal-code "8905" ;
-      vcard:country-name "Norge"@nb , "Norway"@en ; ] ; .
+   vcard:hasAddress <eksFysiskAdresse> ; .
+
+<eksFysiskAdresse> a vcard:Address ;
+   vcard:street-address "Sivert Nielsens gt. 24" ;
+   vcard:locality "Brønnøysund" ;
+   vcard:postal-code "8905" ;
+   vcard:country-name "Norge"@nb , "Norway"@en ; .
 -----
 
 ==== Tjenestekanal – har e-post (vcard:hasEmail) [[Tjenestekanal-harE-post]]
