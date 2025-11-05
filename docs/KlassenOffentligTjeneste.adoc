@@ -563,7 +563,7 @@ Eksempel i RDF Turtle:
 _This property links a Public Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Eksempel | Et av kravene for å søke om skjenkebevilling er at søkeren skal være over 20 år.
+| Eksempel | Vilkår for å søke om skjenkebevilling.
 |===
 
 Eksempel i RDF Turtle:
