@@ -20,7 +20,7 @@ _Norwegian extension: The class Public Service (`cpsv:PublicService`) in CPSV-AP
 
 Eksempel i RDF Turtle:
 -----
-<skjenkebevilling> a cpsv:PublicService ; .
+<skjenkebevillingBrønnøy> a cpsv:PublicService ; .
 -----
 
 === Obligatoriske egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-onligatoriske-egenskaper]]
@@ -569,7 +569,10 @@ _This property links a Public Service to a class that describes the criteria for
 Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cv:holdsRequirement <eksKrav> ; .
+   cv:holdsRequirement <vilkårForSkjenkebevilling> ; .
+
+<vilkårForSkjenkebevilling> a cv:Criterion ;
+   dct:title "Vilkår for skjenkebevilling"@nb ; . 
 -----
 
 ==== Offentlig tjeneste – har relatert regelverk (cv:hasLegalResource) [[OffentligTjeneste-har-relatert-regelverk]]
