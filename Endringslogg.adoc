@@ -1,5 +1,9 @@
 == Vedlegg B – Endringslogg [[Endringslogg]]
 
+=== Fra v.1.1.1 til v.1.1.2
+
+Bruker ikke blanke noder i RDF-eksemplene.
+
 === Fra v.1.0.x til v.1.1.1
 
 Rettet opp feil i eksempelet i RDF Turtle for egenskapene <<Tidspunktbeskrivelse-dag-i-måneden>>, <<Tidspunktbeskrivelse-måned>> og <<https://data.norge.no/specification/cpsv-ap-no#Tidspunktbeskrivelse-%C3%A5r>>.

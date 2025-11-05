@@ -104,10 +104,8 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 
 Eksempel i RDF Turtle:
 -----
-<tjenestekatalog> a dcat:Catalog ;
-   cv:contactPoint [ a  cv:ContactPoint ; # kontaktpunkt
-     cv:email "mailto:postmottak@bronnoy.kommune.no"^^xsd:anyURI ;
-    ] ; .
+<eksTjenestekatalog> a dcat:Catalog ;
+   cv:contactPoint <eksKontaktPunkt> ; .
 -----
 
 ==== Katalog – tittel (dct:title) [[Katalog-tittel]]

@@ -14,6 +14,12 @@ _This class represents the contact information for a Service, Channel, Public Or
 | URI | cv:ContactPoint
 |===
 
+Eksempel i RDF Turtle:
+-----
+<eksKontaktPunkt> a cv:ContactPoint ; # kontaktpunkt
+    cv:email "mailto:informasjonsforvaltning@digdir.no"^^xsd:anyURI ; .
+-----
+
 === Valgfrie egenskaper for klassen _Kontaktpunkt_ [[Kontaktpunkt-valgfrie-egenskaper]]
 
 ==== Kontaktpunkt – begrenset åpningstid (cv:specialOpeningHoursSpecification) [[Kontaktpunkt-begrenset-åpningstid]]

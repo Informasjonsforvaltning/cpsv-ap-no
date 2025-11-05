@@ -102,7 +102,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | Eksempel | Se under <<OffentligOrganisasjon-dekningsområde>>.
 |===
 
-Eksempel i RDF Turtle: se under <<OffentligOrganisasjon-dekningsområde>>.
+Eksempel i RDF Turtle: se tilsvarende eksempel under <<OffentligOrganisasjon-dekningsområde>>.
 
 ==== Organisasjon – type (dct:type) [[Organisasjon-type]]
 

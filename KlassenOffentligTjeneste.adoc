@@ -20,7 +20,7 @@ _Norwegian extension: The class Public Service (`cpsv:PublicService`) in CPSV-AP
 
 Eksempel i RDF Turtle:
 -----
-<skjenkebevilling> a cpsv:PublicService ; .
+<skjenkebevillingBrønnøy> a cpsv:PublicService ; .
 -----
 
 === Obligatoriske egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-onligatoriske-egenskaper]]
@@ -135,9 +135,7 @@ _Norwegian extension:_
 Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cv:contactPoint [ a  cv:ContactPoint ; # kontaktpunkt
-     cv:telephone "tel:+4775012000" ;
-    ] ; .
+   cv:contactPoint <eksKontaktPunkt> ; .
 -----
 
 ==== Offentlig tjeneste – navn (dct:title) [[OffentligTjeneste-navn]]
@@ -550,11 +548,7 @@ _Where the cost varies depending on the channel through which the service is acc
 Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cv:hasCost [ a cv:Cost ;
-      cv:hasValue "0.49"^^xsd:decimal ; # beløp
-      cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ; # valuta
-      dct:description "Pr. vareliter for alkoholdhold drikke i gruppe 1"@nb ;
-   ] ; .
+   cv:hasCost <eksGebyr> ; .
 -----
 
 ==== Offentlig tjeneste – har krav (cv:holdsRequirement) [[OffentligTjeneste-har-krav]]
@@ -569,15 +563,16 @@ Eksempel i RDF Turtle:
 _This property links a Public Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Eksempel | Et av kravene for å søke om skjenkebevilling er at søkeren skal være over 20 år.
+| Eksempel | Vilkår for å søke om skjenkebevilling.
 |===
 
 Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cv:holdsRequirement [ a cv:Requirement ;
-   dct:title "Over 20 år"@nb ;
-   dct:description "Søkeren må være over 20 år"@nb ; ] ; .
+   cv:holdsRequirement <vilkårForSkjenkebevilling> ; .
+
+<vilkårForSkjenkebevilling> a cv:Criterion ;
+   dct:title "Vilkår for skjenkebevilling"@nb ; . 
 -----
 
 ==== Offentlig tjeneste – har relatert regelverk (cv:hasLegalResource) [[OffentligTjeneste-har-relatert-regelverk]]
