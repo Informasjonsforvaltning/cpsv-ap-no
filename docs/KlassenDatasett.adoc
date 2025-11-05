@@ -38,7 +38,7 @@ _This property contains a free-text description of the Dataset. This property SH
 Eksempel I RDF Turtle:
 -----
 <exDataset> a dcat:Dataset ;
-   dct:description "teksten som beskriver datasettet"@nb ;  .
+   dct:description "et eksempeldatasett"@nb ;  .
 -----
 
 
@@ -59,7 +59,7 @@ _This property contains the name of the Dataset. This property SHOULD be repeate
 Eksempel I RDF Turtle:
 -----
 <exDataset> a dcat:Dataset ;
-   dct:title "navnet på datasettet"@nb ;  .
+   dct:title "Eksempeldatasett"@nb ;  .
 -----
 
 ==== Datasett – utgiver (dct:publisher) [[Datasett-utgiver]]
