@@ -14,8 +14,7 @@ Eksempel: Tjenesten «Skjenkebevilling» er hjemlet i «Lov om omsetning av alko
 Eksempel i RDF Turtle:
 -----
 <skjenkebevilling> a cpsv:PublicService ;
-   cv:hasLegalResource [ ;
-     ] ; .
+   cv:hasLegalResource <alkoholloven> ; .
 
 <alkoholloven> a eli:LegalResource ; # regulativ ressurs
    dct:type <https://data.norge.no/vocabulary/legal-resource-type#act> ; # type = lov
