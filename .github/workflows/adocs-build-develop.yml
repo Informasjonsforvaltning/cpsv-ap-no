@@ -1,5 +1,9 @@
 name: build adocs
 
+permissions:
+  contents: read
+  pages: write
+
 on:
   push:
     branches:
@@ -14,7 +18,7 @@ jobs:
     steps:
 
     - name: Checkout code
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         submodules: true
         fetch-depth: 0

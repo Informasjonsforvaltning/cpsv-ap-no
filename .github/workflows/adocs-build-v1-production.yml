@@ -1,5 +1,8 @@
 name: Build adocs and publish v1 to production
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
@@ -15,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: v1
           submodules: true
