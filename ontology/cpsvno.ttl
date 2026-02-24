@@ -31,8 +31,8 @@
       foaf:page <https://www.digdir.no>
       ];
    dct:license <https://creativecommons.org/licenses/by/4.0> ;
-   dct:modified "2024-10-07"^^xsd:date ;
-   owl:versionInfo "v.1.1" ;
+   dct:modified "2026-02-24"^^xsd:date ;
+   owl:versionInfo "v.1.2" ;
    adms:versionNotes "Klasser og egenskaper som er definert andre steder og som ikke har endret bruk i CPSV-AP-NO, er ikke spesifisert her."@nb ,
       "The classes and properties which are defined elsewhere and of which CPSV-AP-NO has not modified the usage, are not specified here."@en
    .
@@ -79,24 +79,18 @@ cpsvno:dataService a owl:ObjectProperty ;
    skos:prefLabel "data service"@en , "datatjeneste"@nb ;
    skos:scopeNote "This property refers to the description of a data service which the channel uses."@en ,
       "Egenskapen brukes til å referere til en beskrivelse av en datatjeneste som kanalen benytter."@nb ;
-   rdfs:domain cv:Channel ;
-   rdfs:range dcat:DataService ;
    .
 
 cpsvno:hasPossibleOutput a owl:ObjectProperty ;
    skos:prefLabel "has possible output"@en , "har mulig tjenesteresultat"@nb ;
    skos:scopeNote "This property is used to specify possible result of the service."@en ,
       "Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten."@nb ;
-   rdfs:domain cpsvno:Service , cpsv:PublicService ;
-   rdfs:range cpsvno:PossibleOutput ;
    .
 
 cpsvno:hasRequiredEvidence  a owl:ObjectProperty ;
    skos:prefLabel "has required evidence"@en , "har påkrevd dokumentasjon "@nb ;
    skos:scopeNote "This property is used to specify evidence that is required by the service."@en ,
       "Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten."@nb ;
-   rdfs:domain cpsvno:Service , cpsv:PublicService ;
-   rdfs:range cpsvno:RequiredEvidence ;
    .
 
 cpsvno:mayTrigger a owl:ObjectProperty ;
@@ -104,8 +98,6 @@ cpsvno:mayTrigger a owl:ObjectProperty ;
    skos:prefLabel "may trigger"@en , "kan sette i gang"@nb ;
    skos:scopeNote "This property links an event directly to a service that the event may trigger."@en ,
       "Egenskapen brukes til å referere til en tjeneste som kan settes i gang av den aktuelle hendelsen."@nb ;
-   rdfs:domain cv:Event ;
-   rdfs:range cpsvno:Service ;
    .
 
 cpsvno:mayTriggerNeedFor a owl:ObjectProperty ;
@@ -113,8 +105,6 @@ cpsvno:mayTriggerNeedFor a owl:ObjectProperty ;
    skos:prefLabel "may trigger need for"@en , "kan utløse behov for"@nb ;
    skos:scopeNote "This property links an event directly to a service that the event may trigger need for."@en ,
       "Egenskapen brukes til å referere til en tjeneste som den aktuelle hendelsen kan utløse behov for."@nb ;
-   rdfs:domain cv:LifeEvent , cv:BusinessEvent ;
-   rdfs:range cpsvno:Service ;
    .
 
 cpsvno:validityDuration a owl:ObjectProperty ;
@@ -122,8 +112,6 @@ cpsvno:validityDuration a owl:ObjectProperty ;
    skos:prefLabel "validity duration"@en , "gyldighetsperiode"@nb ;
    skos:scopeNote "This property represents time duration within which the required evidence must be valid."@en ,
       "Egenskapen brukes til å angi en tidsperiode som den påkrevd dokumentasjonen skal være gyldig innenfor."@nb ;
-   rdfs:domain cpsvno:RequiredEvidence ;
-   rdfs:range xsd:duration ;
    .
 
 #################################################################
