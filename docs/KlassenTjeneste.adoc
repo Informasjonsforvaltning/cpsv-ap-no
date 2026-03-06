@@ -60,13 +60,13 @@ _This property refers to the Agent who owns the Service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Tjeneste – har mulig tjenesteresultat (cpsvno:hasPossibleOutput) [[Tjeneste-harMuligTjenesteresultat]]
+==== Tjeneste – har mulig tjenesteresultat (cpsvno:hasPossibleOutput) [[Tjeneste-har-mulig-tjenesteresultat]]
 
 [cols="30s,70d"]
 |===
 | _English name_ | _has possible output_
 | URI | cpsvno:hasPossibleOutput
-| Verdiområde / _Range_ | <<MuligTjenesteresultat, cpsvno:PossibleOutput>>
+| Verdiområde / _Range_ | <<Tjenesteresultattype, cpsvno:OutputType>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten.
 
 _This property is used to specify possible result of the service._
@@ -181,13 +181,13 @@ _Regarding usage of controlled vocabularies, the following requirements apply:_
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Tjeneste – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[Tjeneste-harPåkrevdDokumentasjon]]
+==== Tjeneste – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[Tjeneste-har-påkrevd-dokumentasjon]]
 
 [cols="30s,70d"]
 |===
 | _English name_ | _has required evidence_
 | URI | cpsvno:hasRequiredEvidence
-| Verdiområde / _Range_ | <<PåkrevdDokumentasjon, cpsvno:RequiredEvidence>>
+| Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten.
 
 _This property is used to specify evidence that is required by the service._
@@ -286,7 +286,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 [[Tjeneste-beskrivendeDatasett]]
-==== Tjeneste – beskrivende datasett (cv:isDescribedAt)
+==== Tjeneste – er beskrevet ved (cv:isDescribedAt) [[Tjeneste-er-beskrevet-ved]]
 
 [cols="30s,70d"]
 |===
@@ -478,7 +478,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 | _English name_ |  _holds requirement_
 | URI |  cv:holdsRequirement 
-| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
+| Verdiområde / _Range_ | https://informasjonsforvaltning.github.io/cccev-ap-no/#Krav[cv:Requirement &#x29C9;, window="_blank", role="ext-link"]
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til krav knyttet til behov for eller bruk av tjenesten.   
 
 _This property links a Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc._

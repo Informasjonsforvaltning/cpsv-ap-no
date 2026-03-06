@@ -134,7 +134,7 @@ _This property refers to a concept that is important for the understanding of th
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Virksomhetshendelse – beskrivende datasett (cv:isDescribedAt) [[Virksomhetshendelse-beskrivendeDatasett]]
+==== Virksomhetshendelse – er beskrevet ved (cv:isDescribedAt) [[Virksomhetshendelse-er-beskrevet-ved]]
 
 [cols="30s,70d"]
 |===

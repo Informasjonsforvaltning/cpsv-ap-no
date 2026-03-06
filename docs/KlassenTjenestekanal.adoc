@@ -207,13 +207,13 @@ Eksempel i RDF Turtle:
    vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no" ; .
 -----
 
-==== Tjenestekanal – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[Tjenestekanal-harPåkrevdDokumentasjon]]
+==== Tjenestekanal – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[Tjenestekanal-har-påkrevd-dokumentasjon]]
 
 [cols="30s,70d"]
 |===
 | _English name_ | _has required evidence_
 | URI | cpsvno:hasRequiredEvidence
-| Verdiområde / _Range_ | <<PåkrevdDokumentasjon, cpsvno:RequiredEvidence>>
+| Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er  spesifikt påkrevd for den aktuelle tjenestekanalen.
 
 _This property is used to specify evidence that is required by the service chanel._

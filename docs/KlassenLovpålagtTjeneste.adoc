@@ -1,0 +1,3 @@
+== Klassen Lovpålagt tjeneste (cpsvno:StatedService) [[LovpålagtTjeneste]]
+
+__#@@@@@@ Klassen brukes til "generiske tjenestebeskrivelser", mer tekst kommer#__

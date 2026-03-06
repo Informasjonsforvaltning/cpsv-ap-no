@@ -141,7 +141,7 @@ _This property refers to concept that is important for the understanding of the 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Livshendelse – beskrivende datasett (cv:isDescribedAt) [[Livshendelse-beskrivendeDatasett]]
+==== Livshendelse – er beskrevet ved (cv:isDescribedAt) [[Livshendelse-er-beskrevet-ved]]
 
 [cols="30s,70d"]
 |===
