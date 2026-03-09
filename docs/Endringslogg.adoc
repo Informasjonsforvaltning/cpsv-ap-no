@@ -6,7 +6,7 @@ Hovedsakelig:
 
 . Hvordan beskrive krav og kravoppfyllelse er skilt ut i en egen «Spesifikasjon for beskrivelse av krav og kravoppfyllelse (CCCEV-AP-NO)» som er https://informasjonsforvaltning.github.io/cccev-ap-no/[under utarbeidelse &#x29C9;, window="_blank", role="ext-link"]. Dette for å gjøre CPSV-AP-NO mer fokusert på beskrivelse av tjenester og hendelser, slik at CPSV-AP-NO blir enklere å bruke for de fleste.
 
-. Kap. <<Forenklet-fremstilling>> inneholder også krav i prosatekst som er formulert uavhengig av hvordan de implementeres. Dette for å gjøre CPSV-AP-NO mer tilgjengelig for den ikke-tekniske målgruppen, og for å gjøre det enklere å forstå hva som er kravene i denne standarden, uten å måtte forstå tekniske detaljer om RDF-representasjon.
+. <<Forenklet-fremstilling>> inneholder nå også krav i prosatekst som er formulert uavhengig av hvordan de implementeres. Dette for å gjøre CPSV-AP-NO mer tilgjengelig for den ikke-tekniske målgruppen, og for å gjøre det enklere å forstå hva som er kravene i denne standarden, uten å måtte forstå tekniske detaljer om RDF-representasjon.
 
 . Klasser som er tatt ut:
 ** #mer tekst kommer#
