@@ -215,12 +215,12 @@ Eksempel i RDF Turtle:
    .
 ----
 
-==== Offentlig tjeneste – har påkrevd dokumentasjon (cv:hasInputType) [[OffentligTjeneste-har-påkrevd-dokumentasjon]]
+==== Offentlig tjeneste – har dokumentasjonstype (cv:hasInputType) [[OffentligTjeneste-har-dokumentasjonstype]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _has required evidence_
-| URI | cpsvno:hasRequiredEvidence
+| _English name_ | _has input type_
+| URI | cv:hasInputType
 | Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten.
 
@@ -239,7 +239,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 Eksempel i RDF Turtle:
 ----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cpsvno:hasRequiredEvidence <firmaattest> ; .
+   cv:hasInputType <firmaattest> ; .
 ----
 
 ==== Offentlig tjeneste – hjemmeside (foaf:homepage) [[OffentligTjeneste-hjemmeside]]
@@ -515,20 +515,6 @@ _The Participation class facilitates the detailed description of how an Agent pa
 |===
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
-
-==== Offentlig tjeneste – har dokumentasjonstype (cv:hasInputType) [[OffentligTjeneste-har-dokumentasjonstype]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _has input type_
-| URI | cv:hasInputType
-| Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å knytte til tjenesten en eller flere dokumentasjonstyper.
-
-_It links a Public Service to one or more instances of the EvidenceType class._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-|===
 
 ==== Offentlig tjeneste – har gebyr (cv:hasCost) [[OffentligTjeneste-har-gebyr]]
 
