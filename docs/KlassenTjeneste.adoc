@@ -181,16 +181,16 @@ _Regarding usage of controlled vocabularies, the following requirements apply:_
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Tjeneste – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[Tjeneste-har-påkrevd-dokumentasjon]]
+==== Tjeneste – har dokumentasjonstype (cv:hasInputType) [[Tjeneste-har-dokumentasjonstype]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _has required evidence_
-| URI | cpsvno:hasRequiredEvidence
+| _English name_ | _has input type_
+| URI | cv:hasInputType
 | Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere type dokumentasjon som er påkrevd av tjenesten.
 
-_This property is used to specify evidence that is required by the service._
+_This property is used to specify type of evidence that is required by the service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves varierer avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjenestekanal benyttes. 
@@ -435,21 +435,6 @@ _The CPSV-AP defines the two basic roles of Competent Authority and Service Prov
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
-
-==== Tjeneste – har dokumentasjonstype (cv:hasInputType) [[Tjeneste-har-dokumentasjonstype]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _has input type_
-| URI | cv:hasInputType
-| Verdiområde/ _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
-| Anvendelse / _Usage note_ | Egenskapen brukes til å knytte til tjenesten en eller flere dokumentasjonstyper.
-
-_It links a Service to one or more instances of the EvidenceType class._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
-|===
-
 
 ==== Tjeneste – har gebyr (cv:hasCost) [[Tjeneste-har-gebyr]]
 
