@@ -1,5 +1,7 @@
 == Vedlegg A – Navnerom som er brukt i spesifikasjonen [[Navnerom]]
 
+_#@@@@@@ NB! Oversikten er ikke helt oppdatert enda - endringer kan komme#_
+
 Navnerom for dette vokabularet er: `\https://data.norge.no/vocabulary/cpsvno#`
 
 [cols="10s,45d,45d"]

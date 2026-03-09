@@ -101,7 +101,7 @@ _This property refers to concept that is important for the understanding of the 
  _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Hendelse – beskrivende datasett (cv:isDescribedAt) [[Hendelse-beskrivendeDatasett]]
+==== Hendelse – er beskrevet ved (cv:isDescribedAt) [[Hendelse-er-beskrevet-ved]]
 
 [cols="30s,70d"]
 |===

@@ -1,0 +1,3 @@
+== Klasse Tjenesteresultattype (cpsvno:OutputType) [[Tjenesteresultattype]]
+
+__#@@@@@@ Klassen brukes til "generiske tjenesteresultat    beskrivelser", mer tekst kommer#__

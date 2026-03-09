@@ -1,5 +1,7 @@
 == Noen spesielle temaer [[Spesielle-temaer]]
 
+_#@@@@@@ NB! Kapitlet er ikke helt oppdatert enda - endringer kan komme#_
+
 _Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen, fortrinnsvis sammen._
 
 include::TemaTjenestekjede.adoc[]

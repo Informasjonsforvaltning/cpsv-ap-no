@@ -70,13 +70,13 @@ Eksempel i RDF Turtle:
    cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291> ; . # Brønnøy kommune
 -----
 
-==== Offentlig tjeneste – har mulig tjenesteresultat (cpsvno:hasPossibleOutput) [[OffentligTjeneste-harMuligTjenesteresultat]]
+==== Offentlig tjeneste – har tjenesteresultattype (cpsvno:OutputType) [[OffentligTjeneste-har-tjenesteresultattype]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _has possible output_
-| URI | cpsvno:hasPossibleOutput
-| Verdiområde / _Range_ | <<MuligTjenesteresultat, cpsvno:PossibleOutput>>
+| _English name_ | _has output type_
+| URI | cpsvno:hasOutputType
+| Verdiområde / _Range_ | <<Tjenesteresultattype, cpsvno:OutputType>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten.
 
 _This property is used to specify possible result of the service._
@@ -215,31 +215,28 @@ Eksempel i RDF Turtle:
    .
 ----
 
-==== Offentlig tjeneste – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[OffentligTjeneste-harPåkrevdDokumentasjon]]
+==== Offentlig tjeneste – har dokumentasjonstype (cv:hasInputType) [[OffentligTjeneste-har-dokumentasjonstype]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _has required evidence_
-| URI | cpsvno:hasRequiredEvidence
-| Verdiområde / _Range_ | <<PåkrevdDokumentasjon, cpsvno:RequiredEvidence>>
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten.
+| _English name_ | _has input type_
+| URI | cv:hasInputType
+| Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere type dokumentasjon som er påkrevd av tjenesten.
 
 _This property is used to specify evidence that is required by the service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves varierer avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjenestekanal benyttes. 
+| Merknad / _Note_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves varierer avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjenestekanal benyttes. 
 
 _A service may require certain evidence in order to be delivered. If the evidence required varies according to the channel through which it is accessed, then the corresponding property in the class Channel SHOULD be used._
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-
-_Norwegian extension: Not explicitly specified in CPSV-AP._
-| Eksempel | En påkrevd dokumentasjon til å søke om skjenkebevilling er firmaattest.
+| Eksempel | En type dokumentasjon som er påkrevd for å søke om skjenkebevilling er firmaattest.
 |===
 
 Eksempel i RDF Turtle:
 ----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cpsvno:hasRequiredEvidence <firmaattest> ; .
+   cv:hasInputType <firmaattest> ; .
 ----
 
 ==== Offentlig tjeneste – hjemmeside (foaf:homepage) [[OffentligTjeneste-hjemmeside]]
@@ -286,6 +283,9 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: Requirement level changed from optional to recommended._
 |===
 
+==== Offentlig tjeneste – realiserer (cpsvno:realizes) [[OffentligTjeneste-realiserer]]
+
+_#@@@@@@ tekst kommer#_
 
 ==== Offentlig tjeneste – status (adms:status) [[OffentligTjeneste-status]]
 
@@ -361,7 +361,7 @@ Eksempel i RDF Turtle:
    cv:processingTime "P1D"^^xsd:duration ; .
 -----
 
-==== Offentlig tjeneste – beskrivende datasett (cv:isDescribedAt) [[OffentligTjeneste-beskrivendeDatasett]]
+==== Offentlig tjeneste – er beskrevet ved (cv:isDescribedAt) [[OffentligTjeneste-er-beskrevet-ved]]
 
 [cols="30s,70d"]
 |===
@@ -513,20 +513,6 @@ _The Participation class facilitates the detailed description of how an Agent pa
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<KnytteDeltagendeAktørerTilEnTjeneste>>.
 
-==== Offentlig tjeneste – har dokumentasjonstype (cv:hasInputType) [[OffentligTjeneste-har-dokumentasjonstype]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _has input type_
-| URI | cv:hasInputType
-| Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å knytte til tjenesten en eller flere dokumentasjonstyper.
-
-_It links a Public Service to one or more instances of the EvidenceType class._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-|===
-
 ==== Offentlig tjeneste – har gebyr (cv:hasCost) [[OffentligTjeneste-har-gebyr]]
 
 [cols="30s,70d"]
@@ -557,7 +543,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ |  _holds requirement_
 | URI |  cv:holdsRequirement
-| Verdiområde / _Range_ | <<Krav, cv:Requirement>>
+| Verdiområde / _Range_ | https://informasjonsforvaltning.github.io/cccev-ap-no/#Krav[cv:Requirement &#x29C9;, window="_blank", role="ext-link"]
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til krav knyttet til behov for eller bruk av tjenesten.
 
 _This property links a Public Service to a class that describes the criteria for needing or using the service, such as residency in a given location, being over a certain age etc._
