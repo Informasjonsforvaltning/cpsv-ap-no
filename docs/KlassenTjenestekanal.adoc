@@ -183,6 +183,26 @@ Eksempel i RDF Turtle:
    vcard:country-name "Norge"@nb , "Norway"@en ; .
 -----
 
+==== Tjenestekanal – har dokumentasjonstype (cv:hasInputType) [[Tjenestekanal-har-dokumentasjonstype]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _has input type_
+| URI | cv:hasInputType
+| Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere type dokumentasjon som er  spesifikt påkrevd for den aktuelle tjenestekanalen.
+
+_This property is used to specify type of evidence that is required by the service channel._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
+| Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves ikke er avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjeneste / Offentlig tjeneste benyttes. 
+
+_A service may require certain evidence in order to be delivered. If the evidence required does not vary according to the channel through which it is accessed, then the corresponding property in the class Service / Public Service SHOULD be used._
+| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+|===
+
 ==== Tjenestekanal – har e-post (vcard:hasEmail) [[Tjenestekanal-harE-post]]
 
 [cols="30s,70d"]
@@ -206,26 +226,6 @@ Eksempel i RDF Turtle:
 <viaEpost> a cv:Channel ;
    vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no" ; .
 -----
-
-==== Tjenestekanal – har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence) [[Tjenestekanal-harPåkrevdDokumentasjon]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _has required evidence_
-| URI | cpsvno:hasRequiredEvidence
-| Verdiområde / _Range_ | <<PåkrevdDokumentasjon, cpsvno:RequiredEvidence>>
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er  spesifikt påkrevd for den aktuelle tjenestekanalen.
-
-_This property is used to specify evidence that is required by the service chanel._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ |  Valgfri / _Optional_
-| Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves ikke er avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjeneste / Offentlig tjeneste benyttes. 
-
-_A service may require certain evidence in order to be delivered. If the evidence required does not vary according to the channel through which it is accessed, then the corresponding property in the class Service / Public Service SHOULD be used._
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-
-_Norwegian extension: Not explicitly specified in CPSV-AP._
-|===
 
 ==== Tjenestekanal – har telefon (vcard:hasTelephone) [[Tjenestekanal-harTelefon]]
 

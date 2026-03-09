@@ -1,0 +1,18 @@
+== Klassen Lovpålagt tjeneste (cpsvno:StatutoryService) [[LovpålagtTjeneste]]
+
+__#@@@@@@ Klassen brukes til "generiske tjenestebeskrivelser", mer tekst kommer#__
+
+[cols="30s,70d"]
+|===
+| _English name_ | _Statutory Service_
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en lovpålagt tjeneste. _#@@@@@@ mer forklaring på hva klassen er kommer senere#_
+
+_This class is used to represent a staturory service._
+| URI | cpsvno:StatutoryService
+|===
+
+Eksempel i RDF Turtle:
+-----
+<skjenkebevilling> a cpsvno:StatutoryService ; # en lovpålagt tjeneste
+    dct:title "Skjenkebevilling"@nb .
+-----

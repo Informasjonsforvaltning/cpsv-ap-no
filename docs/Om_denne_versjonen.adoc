@@ -1,5 +1,5 @@
 == Om denne versjonen [[Om_denne_versjonen]]
 
-WARNING: Dette er et #utkast# til v.1.1 av CPSV-AP-NO, hovedsakelig for å tilpasse CPSV-AP-NO til https://semiceu.github.io/CPSV-AP/releases/3.2.0/[EUs v.3.2 av CPSV-AP &#x29C9;, window="_blank", role="ext-link"]. 
+WARNING: Dette er et #utkast# til v.2 av CPSV-AP-NO som er #under utarbeidelse#. 
 
 
