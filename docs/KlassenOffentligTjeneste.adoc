@@ -286,6 +286,9 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: Requirement level changed from optional to recommended._
 |===
 
+==== Offentlig tjeneste – realiserer (cpsvno:realizes) [[OffentligTjeneste-realiserer]]
+
+_#@@@@@@ tekst kommer#_
 
 ==== Offentlig tjeneste – status (adms:status) [[OffentligTjeneste-status]]
 
