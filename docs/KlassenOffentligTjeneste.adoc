@@ -70,12 +70,12 @@ Eksempel i RDF Turtle:
    cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291> ; . # Brønnøy kommune
 -----
 
-==== Offentlig tjeneste – har mulig tjenesteresultat (cpsvno:hasPossibleOutput) [[OffentligTjeneste-har-mulig-tjenesteresultat]]
+==== Offentlig tjeneste – har tjenesteresultattype (cpsvno:OutputType) [[OffentligTjeneste-har-tjenesteresultattype]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _has possible output_
-| URI | cpsvno:hasPossibleOutput
+| _English name_ | _has output type_
+| URI | cpsvno:hasOutputType
 | Verdiområde / _Range_ | <<Tjenesteresultattype, cpsvno:OutputType>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten.
 

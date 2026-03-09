@@ -60,12 +60,12 @@ _This property refers to the Agent who owns the Service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Tjeneste – har mulig tjenesteresultat (cpsvno:hasPossibleOutput) [[Tjeneste-har-mulig-tjenesteresultat]]
+==== Tjeneste – har tjenesteresultattype (cpsvno:hasOutputType) [[Tjeneste-har-tjenesteresultattype]]
 
 [cols="30s,70d"]
 |===
-| _English name_ | _has possible output_
-| URI | cpsvno:hasPossibleOutput
+| _English name_ | _has output type_
+| URI | cpsvno:hasOutputType
 | Verdiområde / _Range_ | <<Tjenesteresultattype, cpsvno:OutputType>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere mulig tjenesteresultat fra tjenesten.
 
