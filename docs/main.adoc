@@ -24,8 +24,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Lisens*: https://creativecommons.org/licenses/by/4.0/[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"] + 
 *Status*: #under utarbeidelse# +
 *Versjon*: #utkast til v.2# (se <<Endringslogg>>) +
-*Publisert*: #under utarbeidelse# (v.2); 2024-10-07 (v.1.1); 2023-09-08 (v.1.0) +
-*Oppdatert*: #under utarbeidelse# (v.2); 2025-11-05 (v.1.1.x) +
+*Publisert*: #under utarbeidelse (v.2)#; 2024-10-07 (v.1.1); 2023-09-08 (v.1.0) +
+*Oppdatert*: #under utarbeidelse (v.2)#; 2025-11-05 (v.1.1.x) +
 *Gjeldende versjon*: https://data.norge.no/specification/cpsv-ap-no +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
