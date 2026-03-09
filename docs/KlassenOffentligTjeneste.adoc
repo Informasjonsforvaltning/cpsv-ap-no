@@ -222,18 +222,15 @@ Eksempel i RDF Turtle:
 | _English name_ | _has input type_
 | URI | cv:hasInputType
 | Verdiområde / _Range_ | <<Dokumentasjonstype, cv:EvidenceType>>
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere dokumentasjon som er påkrevd av tjenesten.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å spesifisere type dokumentasjon som er påkrevd av tjenesten.
 
 _This property is used to specify evidence that is required by the service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves varierer avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjenestekanal benyttes. 
+| Merknad / _Note_ | For å kunne levere en tjeneste kan det kreves  dokumentasjon. Hvis dokumentasjon som kreves varierer avhengig av kanal tjenesten tilbys gjennom, BØR tilsvarende egenskap i klassen Tjenestekanal benyttes. 
 
 _A service may require certain evidence in order to be delivered. If the evidence required varies according to the channel through which it is accessed, then the corresponding property in the class Channel SHOULD be used._
-| Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
-
-_Norwegian extension: Not explicitly specified in CPSV-AP._
-| Eksempel | En påkrevd dokumentasjon til å søke om skjenkebevilling er firmaattest.
+| Eksempel | En type dokumentasjon som er påkrevd for å søke om skjenkebevilling er firmaattest.
 |===
 
 Eksempel i RDF Turtle:
