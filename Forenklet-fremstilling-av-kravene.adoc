@@ -25,13 +25,19 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 * Det KAN være *dokumentasjonskrav* til en tjeneste / offentlig tjeneste / lovpålagt tjeneste.
 ** Dokumentasjonstype som kreves KAN være beskrevet ved et datasett. 
 
-Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (valgfrie) tas med i en beskrivelse av en hendelse / livshendlese / virksomhetshendelse og tjeneste / offentlig tjeneste / lovpålagt tjeneste er nærmere spesifisert i det følgende i dette kapittelet. Hvordan opplysningene skal representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert i kap. <<Spesifikasjon-per-klasse>>, som også innehlder flere klasser som kan brukes i tillegg til de som er vist i <<img-ForenkletModell>> og beskrevet i dette kapittelet.
+Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (valgfrie) tas med i en beskrivelse av en hendelse / livshendlese / virksomhetshendelse og tjeneste / offentlig tjeneste / lovpålagt tjeneste er nærmere spesifisert i det følgende i dette kapittelet. Hvordan opplysningene skal representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert i kap. <<Spesifikasjon-per-klasse>>, som også inneholder flere klasser som kan brukes i tillegg til de som er vist i <<img-ForenkletModell>> og beskrevet i dette kapittelet.
 
 === Opplysninger som SKAL, BØR og KAN tas med om en tjeneste, offentlig tjeneste og lovpålagt tjeneste [[Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste]]
 
 __#@@@@@@ tekst kommer#__
 
 === Opplysninger som SKAL, BØR og KAN tas med om en hendelse, livshendelse og virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
+
+=== Opplysninger som SKAL, BØR og KAN tas med om en dokumenttype [[Krav-til-dokumenttype]]
+
+__#@@@@@@ tekst kommer#__
+
+=== Opplysninger som SKAL, BØR og KAN tas med om en tjenesteresultattype [[Krav-til-tjenesteresultattype]]
 
 __#@@@@@@ tekst kommer#__
 
