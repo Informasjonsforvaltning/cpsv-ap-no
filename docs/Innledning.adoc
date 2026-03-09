@@ -12,4 +12,4 @@ Sammenheng mellom hendelse, tjeneste og data illustrert i <<img-HendelseTjeneste
 [link=images/FigurSyktBarn.png]
 image::images/FigurSyktBarn.png[alt="Fremstilling av brukerreisen rundt eResept. Brukerreisen er beskrevet i teksten."]
 
-Eksempel, illustrert i <<img-SyktBarn>>: En av enkelthendelsene i livshendelsen https://alvorligsyktbarn.no/[Alvorlig sykt barn &#x29C9;, window="_blank", role="ext-link"] er at "barnet er blitt syk" som utløser behov for "legetjeneste". Et resultat fra "legetjeneste" er at det forskrives legemidler (datasett "e-resept") som skaper en ny hendelse "e-resept sendt". Denne nye hendelse utløser behov for "apotektjeneste" som bruker datasettet "e-resept".
+Eksempel, illustrert i <<img-SyktBarn>>: En av enkelthendelsene i livshendelsen https://alvorligsyktbarn.no/[Alvorlig sykt barn &#x29C9;, window="_blank", role="ext-link"] er at "barnet er blitt syk" som utløser behov for "legetjeneste". Et resultat fra "legetjeneste" er at det forskrives legemidler (datasett "e-resept") som skaper en ny hendelse "e-resept sendt". Denne nye hendelsen utløser behov for "apotektjeneste" som bruker datasettet "e-resept".
