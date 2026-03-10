@@ -126,6 +126,8 @@ include::KlassenTjenestekonsesjonskontrakt.adoc[]
 
 include::KlassenTjenesteresultattype.adoc[]
 
+include::KlassenTjenesteresultattypeliste.adoc[]
+
 // include::KlassenUnderstøttendeOpplysning.adoc[]
 
 include::KlassenVirksomhetshendelse.adoc[]
