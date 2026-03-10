@@ -60,7 +60,7 @@ _This property refers to the Agent who owns the Service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Tjeneste – har tjenesteresultattype (cpsvno:hasOutputType) [[Tjeneste-har-tjenesteresultattype]]
+==== Tjeneste – har mulig tjenesteresultat (cpsvno:hasOutputType) [[Tjeneste-har-mulig-tjenesteresultat]]
 
 [cols="30s,70d"]
 |===
@@ -181,7 +181,7 @@ _Regarding usage of controlled vocabularies, the following requirements apply:_
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Tjeneste – har dokumentasjonstype (cv:hasInputType) [[Tjeneste-har-dokumentasjonstype]]
+==== Tjeneste – har dokumentasjonskrav (cv:hasInputType) [[Tjeneste-har-dokumentasjonskrav]]
 
 [cols="30s,70d"]
 |===
