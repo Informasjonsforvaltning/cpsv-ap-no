@@ -126,6 +126,20 @@ _This property is used to refer to a dataset at which the type of output may be 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
+==== Tjenesteresultattype – er spesifisert i (cv:isSpecifiedIn) [[Tjenesteresultattype-er-spesifisert-i]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _is spesified in_
+| URI | cv:isSpecifiedIn
+| Verdiområde / _Range_ | <<Tjenesteresultattypeliste, cpsvno:OutputTypeList>>
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tjenesteresultattypeliste som inneholder tjenesteresultattypen.
+
+_This property represents the Output Type List in which the Output Type is included._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
 ==== Tjenesteresultattype – identifikator (dct:identifier) [[Tjenesteresultattype-identifikator]]
 
 [cols="30s,70d"]
