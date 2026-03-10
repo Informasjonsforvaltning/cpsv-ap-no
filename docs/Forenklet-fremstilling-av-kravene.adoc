@@ -33,6 +33,8 @@ __#@@@@@@ tekst kommer#__
 
 === Opplysninger som SKAL, BØR og KAN tas med om en hendelse, livshendelse og virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
 
+__#@@@@@@ tekst kommer#__
+
 === Opplysninger som SKAL, BØR og KAN tas med om en dokumenttype [[Krav-til-dokumenttype]]
 
 __#@@@@@@ tekst kommer#__
