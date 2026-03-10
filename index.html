@@ -1070,7 +1070,29 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Tjenesteresultattype">3.23. Klasse Tjenesteresultattype (cpsvno:OutputType)</a></li>
+<li><a href="#Tjenesteresultattype">3.23. Klasse Tjenesteresultattype (cpsvno:OutputType)</a>
+<ul class="sectlevel3">
+<li><a href="#Tjenesteresultattype-obligatoriske-egenskaper">3.23.1. Obligatoriske egenskaper for klassen <em>Tjenesteresultattype</em></a>
+<ul class="sectlevel4">
+<li><a href="#Tjenesteresultattype-beskrivelse">Tjenesteresultattype – beskrivelse (dct:description)</a></li>
+<li><a href="#Tjenesteresultattype-navn">Tjenesteresultattype – navn (dct:title)</a></li>
+</ul>
+</li>
+<li><a href="#Tjenesteresultattype-anbefalte-egenskaper">3.23.2. Anbefalte egenskaper for klassen <em>Tjenesteresultattype</em></a>
+<ul class="sectlevel4">
+<li><a href="#Tjenesteresultattype-mulig-språk">Tjenesteresultattype – mulig språk (cpsvno:possibleLanguage)</a></li>
+</ul>
+</li>
+<li><a href="#Tjenesteresultattype-valgfrie-egenskaper">3.23.3. Valgfrie egenskaper for klassen <em>Tjenesteresultattype</em></a>
+<ul class="sectlevel4">
+<li><a href="#Tjenesteresultattype-er-beskrevet-ved">Tjenesteresultattype – er beskrevet ved (cv:isDescribedAt)</a></li>
+<li><a href="#Tjenesteresultattype-identifikator">Tjenesteresultattype – identifikator (dct:identifier)</a></li>
+<li><a href="#Tjenesteresultattype-kan-skape">Tjenesteresultattype – kan skape (xkos:causes)</a></li>
+<li><a href="#Tjenesteresultattype-tjenesteresultatkategori">Tjenesteresultattype – tjenesteresultatkategori (dct:type)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#Virksomhetshendelse">3.24. Klassen Virksomhetshendelse (cv:BusinessEvent)</a>
 <ul class="sectlevel3">
 <li><a href="#Virksomhetshendelse-obligatoriske-egenskaper">3.24.1. Obligatoriske egenskaper for klassen <em>Virksomhetshendelse</em></a>
@@ -12160,8 +12182,408 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div class="sect2">
 <h3 id="Tjenesteresultattype"><a class="link" href="#Tjenesteresultattype">3.23. Klasse Tjenesteresultattype (cpsvno:OutputType)</a></h3>
+<div id="img-KlassenTjenesteresultattype" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenTjenesteresultattype.png"><img src="images/KlassenTjenesteresultattype.png" alt="UML-diagram med klassen Tjenesteresultattype, dens egenskaper og dens relasjon til to andre klasser. Innholdet i diagrammet er forklart i teksten."></a>
+</div>
+<div class="title">Figur 26. Klassen Tjenesteresultattype (cpsvno:OutputType) og klassene den refererer til.</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Output Type</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere type tjenesteresultat fra en tjeneste.</p>
+<p class="tableblock"><em>The class is used to represent a type of output of a service.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:OutputType</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et type tjenesteresultat fra tjenesten «Skjenkebevilling (i Brønnøy kommune)» er «bevilling» (når søknaden godkjennes). En annen typetjenesteresultat er «avslag» (når søknaden ikke blir godkjent).</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p><em><mark>@@@@@@ Klassen brukes til "generiske tjenesteresultat    beskrivelser", mer tekst kommer</mark></em></p>
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling&gt; a cpsvno:OutputType .
+
+&lt;avslag&gt; a cpsvno:OutputType .</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tjenesteresultattype-obligatoriske-egenskaper"><a class="link" href="#Tjenesteresultattype-obligatoriske-egenskaper">3.23.1. Obligatoriske egenskaper for klassen <em>Tjenesteresultattype</em></a></h4>
+<div class="sect4">
+<h5 id="Tjenesteresultattype-beskrivelse"><a class="link" href="#Tjenesteresultattype-beskrivelse">3.23.1.1. Tjenesteresultattype – beskrivelse (dct:description)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>description</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en tekstlig beskrivelse av typen tjenesteresultat. Egenskapen BØR gjentas når beskrivelsen finnes på flere språk.</p>
+<p class="tableblock"><em>This property represents a free text Description of the type of output. This property SHOULD be repeated when the description is in several parallel languages.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling&gt; a cpsvno:OutputType ;
+   dct:description "Vedtak om bevilling, når en skjenketillatelse bevilges."@nb ; .
+
+&lt;avslag&gt; a cpsvno:OutputType ;
+   dct:description "Vedtak om avslag, når en skjenketillatelse ikke bevilges."@nb ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Tjenesteresultattype-navn"><a class="link" href="#Tjenesteresultattype-navn">3.23.1.2. Tjenesteresultattype – navn (dct:title)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>name</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi  navn til tjenesteresultatet. Egenskapen BØR gjentas når navnet finnes på flere språk.</p>
+<p class="tableblock"><em>This property represents the official Name of the Output. This property SHOULD be repeated when the name is in several parallel languages.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Skjenkebevilling»</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling&gt; a cpsvno:OutputType ;
+   dct:title "Skjenkebevilling"@nb ; .</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tjenesteresultattype-anbefalte-egenskaper"><a class="link" href="#Tjenesteresultattype-anbefalte-egenskaper">3.23.2. Anbefalte egenskaper for klassen <em>Tjenesteresultattype</em></a></h4>
+<div class="sect4">
+<h5 id="Tjenesteresultattype-mulig-språk"><a class="link" href="#Tjenesteresultattype-mulig-språk">3.23.2.1. Tjenesteresultattype – mulig språk (cpsvno:possibleLanguage)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>language</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:language</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:LinguisticSystem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi hvilke språk et mulig tjenesteresultat kan være tilgjengelig på. Egenskapen BØR gjentas når flere språk er mulige.</p>
+<p class="tableblock"><em>This property represents the language in which a possible output may be written. This property SHOULD be repeated when several languages are available.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language" class="ext-link" target="_blank" rel="noopener">Språk &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from Eu&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language" class="ext-link" target="_blank" rel="noopener">Language &#x29C9;</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bokmål, nynorsk eller engelsk</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling&gt; a cpsvno:OutputType ;
+   dct:language
+      &lt;https://publications.europa.eu/resource/authority/language/NOB&gt;, # bokmål
+      &lt;https://publications.europa.eu/resource/authority/language/NNO&gt;, # nynorsk
+      &lt;https://publications.europa.eu/resource/authority/language/ENG&gt;; # engelsk
+   .</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Tjenesteresultattype-valgfrie-egenskaper"><a class="link" href="#Tjenesteresultattype-valgfrie-egenskaper">3.23.3. Valgfrie egenskaper for klassen <em>Tjenesteresultattype</em></a></h4>
+<div class="sect4">
+<h5 id="Tjenesteresultattype-er-beskrevet-ved"><a class="link" href="#Tjenesteresultattype-er-beskrevet-ved">3.23.3.1. Tjenesteresultattype – er beskrevet ved (cv:isDescribedAt)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>is described at</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDescribedAt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://informasjonsforvaltning.github.io/dcat-ap-no/#Datasett" class="ext-link" target="_blank" rel="noopener">dcat:Dataset &#x29C9;</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et datasett som denne typen tjenesteresultat kan være beskrevet ved.</p>
+<p class="tableblock"><em>This property is used to refer to a dataset at which the type of output may be described.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Tjenesteresultattype-identifikator"><a class="link" href="#Tjenesteresultattype-identifikator">3.23.3.2. Tjenesteresultattype – identifikator (dct:identifier)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>identifier</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi identifikatoren til denne typen tjenesteresultat.</p>
+<p class="tableblock"><em>This property represents an identifier for a possible output.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Tjenesteresultattype-kan-skape"><a class="link" href="#Tjenesteresultattype-kan-skape">3.23.3.3. Tjenesteresultattype – kan skape (xkos:causes)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>may cause</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:causes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Hendelse">cv:Event</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å uttrykke relasjon mellom en tjenesteresultattype og en eller flere hendelser, f.eks. endring av data (som en type tjenesteresultat) skaper en eller flere hendelser.</p>
+<p class="tableblock"><em>This property expresses the relation between a type of output and one or more events, for instance the cases where change of data (as a type of output) may cause one of more events.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Tjenesteresultattype-tjenesteresultatkategori"><a class="link" href="#Tjenesteresultattype-tjenesteresultatkategori">3.23.3.4. Tjenesteresultattype – tjenesteresultatkategori (dct:type)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>type</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til begrep som representerer kategorien tjenesteresultattypen tilhører.</p>
+<p class="tableblock"><em>This property represents the category of the output type, as defined in a controlled vocabulary.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/service-output-type" class="ext-link" target="_blank" rel="noopener">Tjenesteresultattype &#x29C9;</a>, når verdien finnes i vokabularet.</p>
+<p class="tableblock"><em>The value MUST be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/service-output-type" class="ext-link" target="_blank" rel="noopener">Service output type &#x29C9;</a>, when the value is in the vocabulary.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tillatelse</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;bevilling&gt; a cpsvno:OutputType ;
+   dct:type &lt;https://data.norge.no/vocabulary/service-output-type#permit&gt; ; # tillatelse
+   .</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -12170,7 +12592,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/KlassenVirksomhetshendelse.png"><img src="images/KlassenVirksomhetshendelse.png" alt="UML-diagram med klassen Virksomhetshendelse, dens egenskaper og dens relasjoner til fire andre klasser. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 26. Klassen Virksomhetshendelse (cv:BusinessEvent) og klassene den refererer til.</div>
+<div class="title">Figur 27. Klassen Virksomhetshendelse (cv:BusinessEvent) og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -12564,22 +12986,22 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <p>Spesifikasjonen har lagt til grunn at en hendelse er en ikke-delbar enhet, basert på bl.a. EUs forklaring på en Virksomhetshendelse (Business event): "Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business <span class="yellow-background">at this specific point in time</span>” (vår egen utheving), dvs. at en hendelse er noe som skjer på et gitt tidspunkt. Spesifikasjonen følger derfor CPSV-AP som ikke har støtte for å uttrykke at en hendelse kan bestå av andre hendelser.</p>
 </div>
 <div class="paragraph">
-<p>Det er på den annen side mulig å beskrive en <a href="https://data.norge.no/concepts/99d36cbe-9368-4ded-b400-efc34eb8917e" class="ext-link" target="_blank" rel="noopener">tjenestekjede &#x29C9;</a> som dekker en rekke av enkelthendelser, som vist i <a href="#img-Tjenestekjede">Figur 27</a>.</p>
+<p>Det er på den annen side mulig å beskrive en <a href="https://data.norge.no/concepts/99d36cbe-9368-4ded-b400-efc34eb8917e" class="ext-link" target="_blank" rel="noopener">tjenestekjede &#x29C9;</a> som dekker en rekke av enkelthendelser, som vist i <a href="#img-Tjenestekjede">Figur 28</a>.</p>
 </div>
 <div id="img-Tjenestekjede" class="imageblock">
 <div class="content">
 <a class="image" href="images/FigurTjenestekjede.png"><img src="images/FigurTjenestekjede.png" alt="UML-diagram med seks klasser og relasjoner imellom klassene. Innholdet i UML-diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 27. Klasser og egenskaper for beskrivelse av en tjenestekjede.</div>
+<div class="title">Figur 28. Klasser og egenskaper for beskrivelse av en tjenestekjede.</div>
 </div>
 <div class="paragraph">
-<p><a href="#img-FigurSyktBarnBeskrevetMedCPSVNO">Figur 28</a> illustrerer hvordan deler av livshendelsen Alvorlig sykt barn illustrert i <a href="#img-SyktBarn">Figur 3</a>, beskrives med CPSV-AP-NO.</p>
+<p><a href="#img-FigurSyktBarnBeskrevetMedCPSVNO">Figur 29</a> illustrerer hvordan deler av livshendelsen Alvorlig sykt barn illustrert i <a href="#img-SyktBarn">Figur 3</a>, beskrives med CPSV-AP-NO.</p>
 </div>
 <div id="img-FigurSyktBarnBeskrevetMedCPSVNO" class="imageblock">
 <div class="content">
 <a class="image" href="images/FigurSyktBarnBeskrevetMedCPSVNO.png"><img src="images/FigurSyktBarnBeskrevetMedCPSVNO.png" alt="RDF-graf med fem noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."></a>
 </div>
-<div class="title">Figur 28. Eksempel på bruk av CPSV-AP-NO til å beskrive deler av livshendelsen "Alvorlig sykt barn".</div>
+<div class="title">Figur 29. Eksempel på bruk av CPSV-AP-NO til å beskrive deler av livshendelsen "Alvorlig sykt barn".</div>
 </div>
 <div class="paragraph">
 <p>Eksempel i RDF Turtle:</p>
@@ -12608,10 +13030,10 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/FigurHendelseOgDistribusjon.png"><img src="images/FigurHendelseOgDistribusjon.png" alt="UML-diagrammet med fire klasser og relasjoner imellom klassene. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 29. Hendelse og Distribusjon.</div>
+<div class="title">Figur 30. Hendelse og Distribusjon.</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i <a href="#img-HendelseOgDistribusjon">Figur 29</a> kan egenskapen "er beskrevet ved (<code>cv:isDescribedAt</code>)" i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a> eller <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a> brukes til å knytte en hendelse til et datasett. På denne måten kan en hendelsesstrøm distribueres som datasett.</p>
+<p>Som illustrert i <a href="#img-HendelseOgDistribusjon">Figur 30</a> kan egenskapen "er beskrevet ved (<code>cv:isDescribedAt</code>)" i <a href="#Hendelse">Klassen Hendelse (cv:Event)</a>, <a href="#Livshendelse">Klassen Livshendelse (cv:LifeEvent)</a> eller <a href="#Virksomhetshendelse">Klassen Virksomhetshendelse (cv:BusinessEvent)</a> brukes til å knytte en hendelse til et datasett. På denne måten kan en hendelsesstrøm distribueres som datasett.</p>
 </div>
 <div class="paragraph">
 <p>Se ellers <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/#_om_bruk_av_klassene_datasett_dcatdataset_datatjeneste_dcatdataservice_og_distribusjon_dcatdistribution">forklaring i DCAT-AP-NO</a>, for hvordan et datasett (<code>dcat:Dataset</code>), som i dette tilfellet beskriver en hendelse, kan knyttes til distribusjon (<code>dcat:Distribution</code>) og datatjeneste/API (<code>dcat:DataService</code>).</p>
@@ -12623,10 +13045,10 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/FigurTjenesteMedDataInnOgUt.png"><img src="images/FigurTjenesteMedDataInnOgUt.png" alt="UML-diagram med seks klasser og relasjoner imellom klassene. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 30. Tjeneste med påkrevd dokumentasjon og mulig tjenesteresultat som er del av datasett.</div>
+<div class="title">Figur 31. Tjeneste med påkrevd dokumentasjon og mulig tjenesteresultat som er del av datasett.</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i <a href="#img-TjenesteOgData">Figur 30</a>, kan et Mulig tjenesteresultat (<code>cpsvno:PossibleOutput</code>) fra en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cpsv:PublicService</code>)) være en del av et Datasett (<code>dcat:Dataset</code>), f.eks. selve «bevilling» som et mulig tjenesteresultat fra tjenesten «Skjenkebevilling» kan inngå i datasettet over alle skjenkebevillinger som den aktuelle kommunen har utstedt over en gitt tidsperiode.</p>
+<p>Som illustrert i <a href="#img-TjenesteOgData">Figur 31</a>, kan et Mulig tjenesteresultat (<code>cpsvno:PossibleOutput</code>) fra en Tjeneste (<code>cpsvno:Service</code> inkl. subklassen Offentlig tjeneste (<code>cpsv:PublicService</code>)) være en del av et Datasett (<code>dcat:Dataset</code>), f.eks. selve «bevilling» som et mulig tjenesteresultat fra tjenesten «Skjenkebevilling» kan inngå i datasettet over alle skjenkebevillinger som den aktuelle kommunen har utstedt over en gitt tidsperiode.</p>
 </div>
 <div class="paragraph">
 <p>Figuren illustrerer også at en Påkrevd dokumentasjon (<code>cpsvno:RequiredEvidence</code>) kan være en del av et Datasett (<code>dcat:Dataset</code>), f.eks. «firmaattest» er en del av datasettet «Foretaksregisteret» hos Brønnøysundregistrene.</p>
@@ -12647,13 +13069,13 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="sect2">
 <h3 id="KnytteTilRegelverk"><a class="link" href="#KnytteTilRegelverk">4.5. Å knytte en tjeneste til regelverk</a></h3>
 <div class="paragraph">
-<p>Som illustrert i <a href="#img-TjenesteOgRegelverk">Figur 31</a> kan regelverk knyttes til en tjeneste eller offentlig tjeneste, ved å bruke egenskapene «følger regel (cpsv:follows)» og/eller «har relatert regelverk (cv:hasLegalResource)» i klassen <a href="#Tjeneste">Tjeneste</a> eller <a href="#OffentligTjeneste">Offentlig tjeneste</a>.</p>
+<p>Som illustrert i <a href="#img-TjenesteOgRegelverk">Figur 32</a> kan regelverk knyttes til en tjeneste eller offentlig tjeneste, ved å bruke egenskapene «følger regel (cpsv:follows)» og/eller «har relatert regelverk (cv:hasLegalResource)» i klassen <a href="#Tjeneste">Tjeneste</a> eller <a href="#OffentligTjeneste">Offentlig tjeneste</a>.</p>
 </div>
 <div id="img-TjenesteOgRegelverk" class="imageblock">
 <div class="content">
 <a class="image" href="images/FigurTjenesteOgRegelverk.png"><img src="images/FigurTjenesteOgRegelverk.png" alt="UML-diagram med fire klasser og en instans, og relasjoner imellom disse. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 31. Tjeneste og regelverk.</div>
+<div class="title">Figur 32. Tjeneste og regelverk.</div>
 </div>
 <div class="paragraph">
 <p>Eksempel: Tjenesten «Skjenkebevilling» er hjemlet i «Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)».</p>
@@ -12681,10 +13103,10 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/FigurTjenesteOgDeltagelse.png"><img src="images/FigurTjenesteOgDeltagelse.png" alt="UML-diagram med åtte klasser og relasjoner imellom klassene. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 32. Tjeneste og Deltagelse.</div>
+<div class="title">Figur 33. Tjeneste og Deltagelse.</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i <a href="#img-FigurTjenesteOgDeltagelse">Figur 32</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste – eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste (<code>cpsvno:Service</code>) og dens eier (en Organisasjon, <code>Org:Organization</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste (<code>cpsv:PublicService</code>) og dens kompetente organ (en Offentlig organisasjon, <code>cv:PublicOrganisation</code>).</p>
+<p>Som illustrert i <a href="#img-FigurTjenesteOgDeltagelse">Figur 33</a> brukes egenskapen <a href="#Tjeneste-eiesAv">Tjeneste – eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste (<code>cpsvno:Service</code>) og dens eier (en Organisasjon, <code>Org:Organization</code>), og egenskapen <a href="#OffentligTjeneste-harKompetentOrgan">Offentlig tjeneste – har kompetent organ (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste (<code>cpsv:PublicService</code>) og dens kompetente organ (en Offentlig organisasjon, <code>cv:PublicOrganisation</code>).</p>
 </div>
 <div class="paragraph">
 <p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse">Klassen Deltagelse (cv:Participation)</a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-har-deltagelse">Tjeneste – har deltagelse (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-har-deltagelse">Offentlig tjeneste – har deltagelse (cv:hasParticipation)</a>). En Aktør (inkl. Organisasjon og Offentlig organisasjon) kan delta i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-deltar-i">Aktør – deltar i (cv:participates)</a> (eller <a href="#Organisasjon-deltar-i">Organisasjon – deltar i (cv:participates)</a>, <a href="#OffentligOrganisasjon-deltar-i">Offentlig organisasjon – deltar i (cv:participates)</a>).</p>
@@ -12729,13 +13151,13 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/FigurEksempelDokumentasjonskrav.png"><img src="images/FigurEksempelDokumentasjonskrav.png" alt="RDF-graf med ni RDF-noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."></a>
 </div>
-<div class="title">Figur 33. Eksempel - beskrivelse av «alderskrav» til tjenesten «prøvingsattest».</div>
+<div class="title">Figur 34. Eksempel - beskrivelse av «alderskrav» til tjenesten «prøvingsattest».</div>
 </div>
 <div class="paragraph">
-<p><a href="#img-FigurEksempelDokumentasjonskrav">Figur 33</a> Viser et eksempel på å beskrive et av kravene som skal oppfylles for å kunne utføre tjenesten <a href="https://www.skatteetaten.no/skjema/provingsattest/" class="ext-link" target="_blank" rel="noopener">«prøvingsattest» &#x29C9;</a> som Skatteetaten tilbyr.</p>
+<p><a href="#img-FigurEksempelDokumentasjonskrav">Figur 34</a> Viser et eksempel på å beskrive et av kravene som skal oppfylles for å kunne utføre tjenesten <a href="https://www.skatteetaten.no/skjema/provingsattest/" class="ext-link" target="_blank" rel="noopener">«prøvingsattest» &#x29C9;</a> som Skatteetaten tilbyr.</p>
 </div>
 <div class="paragraph">
-<p><a href="#img-FigurEksempelDokumentasjonskrav">Figur 33</a> forklares som følger (numrene refererer til de samme numrene i figuren):</p>
+<p><a href="#img-FigurEksempelDokumentasjonskrav">Figur 34</a> forklares som følger (numrene refererer til de samme numrene i figuren):</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -12775,13 +13197,13 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>Som illustrert i <a href="#img-FigurEksempelDokumentasjonskrav2">Figur 34</a>, er det også mulig å knytte kravene illustrert i eksemplet ovenfor, til aktuell lovgivning: «Vilkår for å inngå ekteskap» er utledet fra kapittel 1 i ekteskapsloven, og «Alderskrav» og begrensningen «Ikke under 18 år» er utledet fra §1a i ekteskapsloven.</p>
+<p>Som illustrert i <a href="#img-FigurEksempelDokumentasjonskrav2">Figur 35</a>, er det også mulig å knytte kravene illustrert i eksemplet ovenfor, til aktuell lovgivning: «Vilkår for å inngå ekteskap» er utledet fra kapittel 1 i ekteskapsloven, og «Alderskrav» og begrensningen «Ikke under 18 år» er utledet fra §1a i ekteskapsloven.</p>
 </div>
 <div id="img-FigurEksempelDokumentasjonskrav2" class="imageblock">
 <div class="content">
 <a class="image" href="images/FigurEksempelDokumentasjonskrav2.png"><img src="images/FigurEksempelDokumentasjonskrav2.png" alt="RDF-graf med seks noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."></a>
 </div>
-<div class="title">Figur 34. Eksempel på å knytte dokumentasjonskrav til lovgivning.</div>
+<div class="title">Figur 35. Eksempel på å knytte dokumentasjonskrav til lovgivning.</div>
 </div>
 <div class="paragraph">
 <p>Eksemplet i RDF Turtle:</p>
@@ -12850,7 +13272,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <a class="image" href="images/FigurKatalog.png"><img src="images/FigurKatalog.png" alt="UML-diagram med sju klasser og relasjoner imellom klassene. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 35. Katalogbeskrivelse.</div>
+<div class="title">Figur 36. Katalogbeskrivelse.</div>
 </div>
 <div class="paragraph">
 <p>EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (<code>dcat:Catalog</code>) fra <a href="https://data.norge.no/specification/dcat-ap-no/" class="ext-link" target="_blank" rel="noopener">DCAT-AP-NO &#x29C9;</a>. Spesifikasjonen utvider også klassen Katalog med egenskapene <a href="#Katalog-inneholder-tjeneste">Katalog – inneholder tjeneste (dcatno:containsService)</a> og <a href="#Katalog-inneholder-hendelse">Katalog – inneholder hendelse (dcatno:containsEvent)</a>, som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.</p>
@@ -13275,7 +13697,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2026-03-10 13:44:32 UTC
+Sist oppdatert 2026-03-10 14:14:43 UTC
 </div>
 </div>
 </body>
