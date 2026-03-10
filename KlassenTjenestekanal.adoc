@@ -183,7 +183,7 @@ Eksempel i RDF Turtle:
    vcard:country-name "Norge"@nb , "Norway"@en ; .
 -----
 
-==== Tjenestekanal – har dokumentasjonstype (cv:hasInputType) [[Tjenestekanal-har-dokumentasjonstype]]
+==== Tjenestekanal – har dokumentasjonskrav (cv:hasInputType) [[Tjenestekanal-har-dokumentasjonskrav]]
 
 [cols="30s,70d"]
 |===

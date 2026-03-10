@@ -70,7 +70,7 @@ Eksempel i RDF Turtle:
    cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291> ; . # Brønnøy kommune
 -----
 
-==== Offentlig tjeneste – har tjenesteresultattype (cpsvno:OutputType) [[OffentligTjeneste-har-tjenesteresultattype]]
+==== Offentlig tjeneste – har mulig tjenesteresultat (cpsvno:OutputType) [[OffentligTjeneste-har-mulig-tjenesteresultat]]
 
 [cols="30s,70d"]
 |===
@@ -215,7 +215,7 @@ Eksempel i RDF Turtle:
    .
 ----
 
-==== Offentlig tjeneste – har dokumentasjonstype (cv:hasInputType) [[OffentligTjeneste-har-dokumentasjonstype]]
+==== Offentlig tjeneste – har dokumentasjonskrav (cv:hasInputType) [[OffentligTjeneste-har-dokumentasjonskrav]]
 
 [cols="30s,70d"]
 |===
