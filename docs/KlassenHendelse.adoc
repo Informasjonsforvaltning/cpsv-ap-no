@@ -90,7 +90,7 @@ _This property links an event directly to a service that the event may trigger._
 |===
 | _English name_ | _subject_
 | URI | dct:subject
-| Verdiområde / _Range_ | skos:Concept
+| Verdiområde / _Range_ | https://data.norge.no/specification/skos-ap-no-begrep#Begrep[skos:Concept &#x29C9;, window="_blank", role="ext-link"]
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til begrep som er viktig for å forstå hendelsen.
 
 _This property refers to concept that is important for the understanding of the event._
