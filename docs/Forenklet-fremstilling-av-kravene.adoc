@@ -27,21 +27,118 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 
 Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (valgfrie) tas med i en beskrivelse av en hendelse / livshendlese / virksomhetshendelse og tjeneste / offentlig tjeneste / lovpålagt tjeneste er nærmere spesifisert i det følgende i dette kapittelet. Hvordan opplysningene skal representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert i <<Spesifikasjon-per-klasse>>, som også inneholder flere klasser som kan brukes i tillegg til de som er vist i <<img-ForenkletModell>> og beskrevet i dette kapittelet.
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en tjeneste, offentlig tjeneste og lovpålagt tjeneste [[Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste]]
+=== Opplysninger som SKAL, BØR og KAN tas med om en Tjeneste, Offentlig tjeneste og Lovpålagt tjeneste [[Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste]]
 
 __#@@@@@@ tekst kommer#__
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en hendelse, livshendelse og virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
+[[Tabell-obligatoriske-opplysninger-tjenesteklassene]]
+.Obligatoriske opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste og Lovpålagt tjeneste SKAL inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| .. | .. | ..
+|===
+
+[[Tabell-anbefalte-opplysninger-tjenesteklassene]]
+.Anbefalte opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste og Lovpålagt tjeneste BØR inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+|===
+
+[[Tabell-valgfrie-opplysninger-tjenesteklassene]]
+.Valgfrie opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste og Lovpålagt tjeneste KAN inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+|===
+
+=== Opplysninger som SKAL, BØR og KAN tas med om en Hendelse, Livshendelse og virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
+
+[[Tabell-obligatoriske-opplysninger-hendelsesklassene]]
+.Obligatoriske opplysningstyper som en beskrivelse av Hendelse, Livshendelse og virksomhetshendelse SKAL inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| identifikator | Unik identifikator, som regel opprettet automatisk av et system | <<Hendelse-identifikator>>, <<Livshendelse-identifikator>>, <<Virksomhetshendelse-identifikator>>
+| navn | Navn på hendelsen | <<Hendelse-navn>>, <<Livshendelse-navn>>, <<Virksomhetshendelse-navn>>
+|===
+
+[[Tabell-anbefalte-opplysninger-hendelsesklassene]]
+.Anbefalte opplysningstyper som en beskrivelse av Hendelse, Livshendelse og virksomhetshendelse BØR inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| beskrivelse | Tekstlig beskrivelse av hendelsen | <<Hendelse-beskrivelse>>, <<Livshendelse-beskrivelse>>, <<Virksomhetshendelse-beskrivelse>>
+| kan sette i gang | (Gjelder kun for Hendelse) Refererer til tjeneste som kan settes i gang av hendelsen | <<Hendelse-kan-sette-i-gang>>
+| kan utløse behov for | (Gjelder kun for Livshendelse og Virksomhetshendelse) Refererer til tjeneste som hendelsen kan utløse behov for | <<Livshendelse-kan-utløse-behov-for>>, <<Virksomhetshendelse-kan-utløse-behov-for>>
+|===
+
+[[Tabell-valgfrie-opplysninger-hendelsesklassene]]
+.Valgfrie opplysningstyper som en beskrivelse av Hendelse, Livshendelse og virksomhetshendelse KAN inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| begrep | Refererer til begrep som er viktig for å forstå hendelsen | <<Hendelse-begrep>>, <<Livshendelse-begrep>>, <<Virksomhetshendelse-begrep>>
+| er beskrevet ved | Refererer til datasett som hendelsen kan være beskrevet ved | <<Hendelse-er-beskrevet-ved>>, <<Livshendelse-er-beskrevet-ved>>, <<Virksomhetshendelse-er-beskrevet-ved>>
+| type | Oppgir type som hendelsen tilhører | <<Hendelse-type>>, <<Livshendelse-type>>, <<Virksomhetshendelse-type>>
+|===
+
+=== Opplysninger som SKAL, BØR og KAN tas med om en Dokumentasjonstype [[Krav-til-dokumentasjonstype]]
 
 __#@@@@@@ tekst kommer#__
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en dokumenttype [[Krav-til-dokumenttype]]
+[[Tabell-obligatoriske-opplysninger-dokumentasjonstype]]
+.Obligatoriske opplysningstyper som en beskrivelse av Dokumentasjonstype SKAL inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| ... | ... | ...
+|===
+
+[[Tabell-anbefalte-opplysninger-dokumentasjonstype]]
+.Anbefalte opplysningstyper som en beskrivelse av Dokumentasjonstype BØR inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| ... | ... | ...
+|===
+
+[[Tabell-valgfrie-opplysninger-dokumentasjonstype]]
+.Valgfrie opplysningstyper som en beskrivelse av Dokumentasjonstype KAN inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| ... | ... | ...
+|===
+
+=== Opplysninger som SKAL, BØR og KAN tas med om en Tjenesteresultattype [[Krav-til-tjenesteresultattype]]
 
 __#@@@@@@ tekst kommer#__
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en tjenesteresultattype [[Krav-til-tjenesteresultattype]]
+[[Tabell-obligatoriske-opplysninger-tjenesteresultattype]]
+.Obligatoriske opplysningstyper som en beskrivelse av Tjenesteresultattype SKAL inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| ... | ... | ...
+|===
 
-__#@@@@@@ tekst kommer#__
+[[Tabell-anbefalte-opplysninger-tjenesteresultattype]]
+.Anbefalte opplysningstyper som en beskrivelse av Tjenesteresultattype BØR inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| ... | ... | ...
+|===
+
+[[Tabell-valgfrie-opplysninger-tjenesteresultattype]]
+.Valgfrie opplysningstyper som en beskrivelse av Tjenesteresultattype KAN inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| ... | ... | ...
+|===
 
 === Et illustrativt eksempel [[Illustrativt-eksempel]]
 

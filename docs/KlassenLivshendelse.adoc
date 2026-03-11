@@ -90,7 +90,7 @@ Eksempel i RDF Turtle:
    dct:description "Å få barn omfatter både en rekke generelle behov som treffer de fleste som skal ha barn, og spesielle behov som kan oppstå i valgt periode. Mange deler av offentlig sektor er involvert."@nb ; .
 -----
 
-==== Livshendelse – kan utløse behov for (cpsvno:mayTriggerNeedFor) [[Livshendelse-kanUtløseBehovFor]]
+==== Livshendelse – kan utløse behov for (cpsvno:mayTriggerNeedFor) [[Livshendelse-kan-utløse-behov-for]]
 
 [cols="30s,70d"]
 |===

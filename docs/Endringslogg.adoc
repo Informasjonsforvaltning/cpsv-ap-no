@@ -81,13 +81,13 @@ Endrede klasser:
 ** Egenskapen «Kriterium – har understøttende dokumentasjon (cv:hasSupportingEvidence)» er utgått (som en konsekvens av at klassen «Dokumentasjon (cv:Evidence)» utgår).
 
 * <<OffentligTjeneste>>: 
-** Kravnivået til egenskapene <<OffentligTjeneste-harDel>> og <<OffentligTjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
+** Kravnivået til egenskapene <<OffentligTjeneste-har-del>> og <<OffentligTjeneste-er-del-av>> er endret fra anbefalt til valgfri. 
 ** Til egenskapen <<OffentligTjeneste-status>> er kravet til bruk kontrollert vokabular endret til å bruke EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"] (som har samme status-verdier som tidligere ADMS Status Vocabulary). 
 ** Egenskapene «Offentlig tjeneste - har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence)» og «Offentlig tjeneste- har mulig tjenesteresultat (cpsvno:hasPossibleOutput)» er føyet til, for å kunne beskrive påkrevd dokumentasjon til, og mulig tjenesteresultat fra en offentlig tjeneste.
 ** Egenskapene «Offentlig tjeneste – har dokumentasjonskrav (cpsv:hasInput)» og «Offentlig tjeneste – produserer (cpsv:produces)» er utgått (som en konsekvens av at klassene «Dokumentasjon (cv:Evidence)» og «Tjenesteresultat (cv:Output)» utgår). 
 
 * <<Tjeneste>>: 
-** Kravnivået til egenskapene <<Tjeneste-harDel>> og <<Tjeneste-erDelAv>> er endret fra anbefalt til valgfri. 
+** Kravnivået til egenskapene <<Tjeneste-har-del>> og <<Tjeneste-er-del-av>> er endret fra anbefalt til valgfri. 
 ** Til egenskapen <<Tjeneste-status>> er kravet til bruk kontrollert vokabular endret til å bruke EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"] (som har samme status-verdier som tidligere ADMS Status Vocabulary). 
 ** Egenskapene «Tjeneste - har påkrevd dokumentasjon (cpsvno:hasRequiredEvidence)» og «Tjeneste- har mulig tjenesteresultat (cpsvno:hasPossibleOutput) er føyet til, for å kunne beskrive påkrevd dokumentasjon til, og mulig tjenesteresultat fra en tjeneste.
 ** Egenskapene «Tjeneste – har dokumentasjonskrav (cpsv:hasInput)» og «Tjeneste – produserer (cpsv:produces)» er utgått (som en konsekvens av at klassene «Dokumentasjon (cv:Evidence)» og «Tjenesteresultat (cv:Output)» utgår). 

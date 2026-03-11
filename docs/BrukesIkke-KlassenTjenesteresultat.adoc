@@ -121,7 +121,7 @@ _This property is used to refer to a dataset in which the described output is ph
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-==== Tjenesteresultat – kan skape (xkos:causes) [[Tjenesteresultat-kanSkape]]
+==== Tjenesteresultat – kan skape (xkos:causes) [[Tjenesteresultat-kan-skape]]
 
 [cols="30s,70d"]
 |===

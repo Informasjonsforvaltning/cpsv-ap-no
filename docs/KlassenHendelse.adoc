@@ -64,7 +64,7 @@ _This property represents a free text description of the Event. The description 
 _Norwegian extension: Requirement level changed from optional to recommended._
 |===
 
-==== Hendelse – kan sette i gang (cpsvno:mayTrigger) [[Hendelse-kanSetteIGang]]
+==== Hendelse – kan sette i gang (cpsvno:mayTrigger) [[Hendelse-kan-sette-i-gang]]
 
 [cols="30s,70d"]
 |===

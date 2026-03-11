@@ -8,7 +8,7 @@ image::images/KlassenDeltagelse.png[alt="UML-diagram med klassen Deltagelse og d
 [cols="30s,70d"]
 |===
 | _English name_ | _Participation_
-| Anvendelse / _Usage note_ |  Klassen brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <<OffentligTjeneste-harKompetentOrgan>>) eller tjenesteeieren (jf. <<Tjeneste-eiesAv>>), som er involvert i en tjeneste.
+| Anvendelse / _Usage note_ |  Klassen brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <<OffentligTjeneste-ansvarlig-organisasjon>>) eller tjenesteeieren (jf. <<Tjeneste-eies-av>>), som er involvert i en tjeneste.
 
 _The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider._
 | URI | cv:Participation

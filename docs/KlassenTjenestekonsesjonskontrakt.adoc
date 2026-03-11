@@ -49,7 +49,7 @@ _This property represents an Identifier for the service concession contract._
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
-==== Tjenestekonsesjonskontrakt – har leverandør (cv:hasEconomicOperator) [[Tjenestekonsesjonskontrakt-harLeverandør]]
+==== Tjenestekonsesjonskontrakt – har leverandør (cv:hasEconomicOperator) [[Tjenestekonsesjonskontrakt-har-leverandør]]
 
 [cols="30s,70d"]
 |===
@@ -63,7 +63,7 @@ _This property refers to the Economic Operator in charge for the provision and t
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
-==== Tjenestekonsesjonskontrakt – har oppdragsgiver (cv:hasContractingAuthority) [[Tjenestekonsesjonskontrakt-harOppdragsgiver]]
+==== Tjenestekonsesjonskontrakt – har oppdragsgiver (cv:hasContractingAuthority) [[Tjenestekonsesjonskontrakt-har-oppdragsgiver]]
 
 [cols="30s,70d"]
 |===
@@ -93,7 +93,7 @@ _This property represents the name of the contract. This property SHOULD be repe
 
 === Valgfrie egenskaper for klassen _Tjenestekonsesjonskontrakt_ [[Tjenestekonsesjonskontrakt-valgfrie-egenskaper]]
 
-==== Tjenestekonsesjonskontrakt – etablert i henhold til (cv:establishedUnder) [[Tjenestekonsesjonskontrakt-erEtablertIHT]]
+==== Tjenestekonsesjonskontrakt – etablert i henhold til (cv:establishedUnder) [[Tjenestekonsesjonskontrakt-er-etablert-iht]]
 
 [cols="30s,70d"]
 |===
