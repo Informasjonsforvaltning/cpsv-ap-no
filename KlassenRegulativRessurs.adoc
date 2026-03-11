@@ -140,7 +140,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 
 === Valgfrie egenskaper for klassen _Regulativ ressurs_ [[RegulativRessurs-valgfrie-egenskaper]]
 
-==== Regulativ ressurs – relatert regulativ ressurs (dct:relation) [[RegulativRessurs-relatertRegulativRessurs]]
+==== Regulativ ressurs – relatert regulativ ressurs (dct:relation) [[RegulativRessurs-relatert-regulativ-ressurs]]
 
 [cols="30s,70d"]
 |===

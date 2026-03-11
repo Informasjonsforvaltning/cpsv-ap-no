@@ -23,7 +23,7 @@ Eksempel i RDF Turtle:
 
 === Obligatoriske egenskaper for klassen _Organisasjon_ [[Organisasjon-obligatoriske-egenskaper]]
 
-==== Organisasjon – foretrukket navn (skos:prefLabel) [[Organisasjon-foretrukketNavn]]
+==== Organisasjon – foretrukket navn (skos:prefLabel) [[Organisasjon-foretrukket-navn]]
 
 [cols="30s,70d"]
 |===

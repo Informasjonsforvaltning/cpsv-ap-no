@@ -21,11 +21,11 @@ _Norwegian extension: Not explicitly specified in CPSV-AP. It is needed in order
 | Eksempel | Se under <<OffentligTjeneste>> for eksempler på bruk av de tilsvarende egenskapene.
 |===
 
-[[Tjeneste-obligatoriske-egenskaper]]
-=== Obligatoriske egenskaper for klassen _Tjeneste_
 
-[[Tjeneste-beskrivelse]]
-==== Tjeneste – beskrivelse (dct:description)
+=== Obligatoriske egenskaper for klassen _Tjeneste_ [[Tjeneste-obligatoriske-egenskaper]]
+
+
+==== Tjeneste – beskrivelse (dct:description) [[Tjeneste-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -42,8 +42,8 @@ _This property represents a free text Description of the Service. This property 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-eiesAv]]
-==== Tjeneste – eies av (cv:ownedBy)
+
+==== Tjeneste – eies av (cv:ownedBy) [[Tjeneste-eies-av]]
 
 [cols="30s,70d"]
 |===
@@ -77,8 +77,8 @@ _This property is used to specify possible result of the service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-identifikator]]
-==== Tjeneste – identifikator (dct:identifier)
+
+==== Tjeneste – identifikator (dct:identifier) [[Tjeneste-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -95,8 +95,8 @@ _This property represents a formally-issued Identifier for the Service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-kontaktpunkt]]
-==== Tjeneste – kontaktpunkt (cv:contactPoint)
+
+==== Tjeneste – kontaktpunkt (cv:contactPoint) [[Tjeneste-kontaktpunkt]]
 
 [cols="30s,70d"]
 |===
@@ -113,8 +113,8 @@ _This property specifies contact points for the service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-navn]]
-==== Tjeneste – navn (dct:title)
+
+==== Tjeneste – navn (dct:title) [[Tjeneste-navn]]
 
 [cols="30s,70d"]
 |===
@@ -131,11 +131,11 @@ _This property represents the official Name of the Service. This property SHOULD
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-anbefalte-egenskaper]]
-=== Anbefalte egenskaper for klassen _Tjeneste_
 
-[[Tjeneste-begrep]]
-==== Tjeneste – begrep (dct:subject)
+=== Anbefalte egenskaper for klassen _Tjeneste_ [[Tjeneste-anbefalte-egenskaper]]
+
+
+==== Tjeneste – begrep (dct:subject) [[Tjeneste-begrep]]
 
 [cols="30s,70d"]
 |===
@@ -152,8 +152,8 @@ _This property refers to concept that is important for the understanding of the 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-dekningsområde]]
-==== Tjeneste – dekningsområde (dct:spatial)
+
+==== Tjeneste – dekningsområde (dct:spatial) [[Tjeneste-dekningsområde]]
 
 [cols="30s,70d"]
 |===
@@ -201,8 +201,8 @@ _A service may require certain evidence in order to be delivered. If the evidenc
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-hjemmeside]]
-==== Tjeneste – hjemmeside (foaf:homepage)
+
+==== Tjeneste – hjemmeside (foaf:homepage) [[Tjeneste-hjemmeside]]
 
 [cols="30s,70d"]
 |===
@@ -219,8 +219,8 @@ _This property refers to the homepage of a Service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-status]]
-==== Tjeneste – status (adms:status)
+
+==== Tjeneste – status (adms:status) [[Tjeneste-status]]
 
 [cols="30s,70d"]
 |===
@@ -240,8 +240,8 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-temaområde]]
-==== Tjeneste – temaområde (cv:thematicArea)
+
+==== Tjeneste – temaområde (cv:thematicArea) [[Tjeneste-temaområde]]
 
 [cols="30s,70d"]
 |===
@@ -261,11 +261,11 @@ __The value SHOULD be chosen from EU's controlled vocabulary https://op.europa.e
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-valgfrie-egenskaper]]
-=== Valgfrie egenskaper for klassen _Tjeneste_
 
-[[Tjeneste-behandlingstid]]
-==== Tjeneste – behandlingstid (cv:processingTime)
+=== Valgfrie egenskaper for klassen _Tjeneste_ [[Tjeneste-valgfrie-egenskaper]]
+
+
+==== Tjeneste – behandlingstid (cv:processingTime) [[Tjeneste-behandlingstid]]
 
 [cols="30s,70d"]
 |===
@@ -285,8 +285,8 @@ __The actual information MUST be provided using the ISO 8601 syntax for duration
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-beskrivendeDatasett]]
-==== Tjeneste – er beskrevet ved (cv:isDescribedAt) [[Tjeneste-er-beskrevet-ved]]
+
+==== Tjeneste – er beskrevet ved (cv:isDescribedAt) [[Tjeneste-er-beskrevet-ved]] 
 
 [cols="30s,70d"]
 |===
@@ -303,8 +303,8 @@ _This property links a Service to the Dataset(s) in which it is being described.
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-erDelAv]]
-==== Tjeneste – er del av (dct:isPartOf)
+
+==== Tjeneste – er del av (dct:isPartOf) [[Tjeneste-er-del-av]]
 
 [cols="30s,70d"]
 |===
@@ -316,16 +316,16 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 _This property indicates a related Service in which is included. This property is the inverse of `dct:hasPart`._ 
 | Multiplisitet / _Multiplicity_ | 0..n 
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad 1 / _Note 1_ | Denne er den inverse av egenskapen <<Tjeneste-harDel>>.
+| Merknad 1 / _Note 1_ | Denne er den inverse av egenskapen <<Tjeneste-har-del>>.
 
-_This is the inverse of the property <<Tjeneste-harDel>>._
+_This is the inverse of the property <<Tjeneste-har-del>>._
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-erGruppertVed]]
-==== Tjeneste – er gruppert ved (cv:isGroupedBy)
+
+==== Tjeneste – er gruppert ved (cv:isGroupedBy) [[Tjeneste-er-gruppert-ved]]
 
 [cols="30s,70d"]
 |===
@@ -342,8 +342,8 @@ _This property links the Service to the triggering Event class._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-erKlassifisertUnder]]
-==== Tjeneste – er klassifisert under (cv:isClassifiedBy)
+
+==== Tjeneste – er klassifisert under (cv:isClassifiedBy) [[Tjeneste-er-klassifisert-under]]
 
 [cols="30s,70d"]
 |===
@@ -360,8 +360,8 @@ _This property allows to classify the Service with any Concept, other than those
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-erTilgjengeligVia]]
-==== Tjeneste – er tilgjengelig via (cv:hasChannel)
+
+==== Tjeneste – er tilgjengelig via (cv:hasChannel) [[Tjeneste-er-tilgjengelig-via]]
 
 [cols="30s,70d"]
 |===
@@ -378,8 +378,8 @@ _This property links the Service to any Channel through which an Agent provides,
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-følgerRegel]]
-==== Tjeneste – følger regel (cpsv:follows)
+
+==== Tjeneste – følger regel (cpsv:follows) [[Tjeneste-følger-regel]]
 
 [cols="30s,70d"]
 |===
@@ -397,8 +397,8 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |Eksempel |Se også <<KnytteTilRegelverk>>. 
 |===
 
-[[Tjeneste-harDel]]
-==== Tjeneste – har del (dct:hasPart)
+
+==== Tjeneste – har del (dct:hasPart) [[Tjeneste-har-del]]
 
 [cols="30s,70d"]
 |===
@@ -410,16 +410,16 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 _This property indicates a related Service that is included either physically or logically in the described resource._  
 | Multiplisitet / _Multiplicity_ | 0..n 
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad 1 / _Note 1_ | Dette er den inverse av egenskapen <<Tjeneste-harDel>>. 
+| Merknad 1 / _Note 1_ | Dette er den inverse av egenskapen <<Tjeneste-har-del>>. 
 
-_This is the inverse of the property <<Tjeneste-harDel>>._
+_This is the inverse of the property <<Tjeneste-har-del>>._
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-har-deltagelse]]
-==== Tjeneste – har deltagelse (cv:hasParticipation)
+
+==== Tjeneste – har deltagelse (cv:hasParticipation) [[Tjeneste-har-deltagelse]]
 
 [cols="30s,70d"]
 |===
@@ -448,16 +448,16 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 _This property links a Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Service for the citizen or business related to the execution of the particular Service._ 
 | Multiplisitet / _Multiplicity_ | 0..n 
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad 1 / _Note 1_ |  Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, SKAL egenskapen <<Gebyr-hvisTilbysGjennom>> brukes.
+| Merknad 1 / _Note 1_ |  Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, SKAL egenskapen <<Gebyr-hvis-tilbys-gjennom>> brukes.
 
-_Where the cost varies depending on the channel through which the service is accessed, it MUST be linked to the channel using the <<Gebyr-hvisTilbysGjennom>> relationship._ 
+_Where the cost varies depending on the channel through which the service is accessed, it MUST be linked to the channel using the <<Gebyr-hvis-tilbys-gjennom>> relationship._ 
 | Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-har-krav]]
-==== Tjeneste – har krav (cv:holdsRequirement)
+
+==== Tjeneste – har krav (cv:holdsRequirement) [[Tjeneste-har-krav]]
 
 [cols="30s,70d"]
 |===
@@ -474,8 +474,8 @@ _This property links a Service to a class that describes the criteria for needin
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-har-relatert-regelverk]]
-==== Tjeneste – har relatert regelverk (cv:hasLegalResource)
+
+==== Tjeneste – har relatert regelverk (cv:hasLegalResource) [[Tjeneste-har-relatert-regelverk]]
 
 [cols="30s,70d"]
 |===
@@ -492,8 +492,8 @@ _This property links a Service to a Legal Resource. It indicates the Legal Resou
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-krever]]
-==== Tjeneste – krever (dct:requires)
+
+==== Tjeneste – krever (dct:requires) [[Tjeneste-krever]]
 
 [cols="30s,70d"]
 |===
@@ -527,8 +527,8 @@ _This property is used to specify the target recipient of the service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-nøkkelord]]
-==== Tjeneste – nøkkelord (dcat:keyword)
+
+==== Tjeneste – nøkkelord (dcat:keyword) [[Tjeneste-nøkkelord]]
 
 [cols="30s,70d"]
 |===
@@ -545,8 +545,8 @@ _This property represents a keyword, term or phrase to describe the Service._
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-relatertTjeneste]]
-==== Tjeneste – relatert tjeneste (cv:relatedService)
+
+==== Tjeneste – relatert tjeneste (cv:relatedService) [[Tjeneste-relatert-tjeneste]]
 
 [cols="30s,70d"]
 |===
@@ -567,8 +567,8 @@ _Use rather the property <<Tjeneste-krever>> where there is a dependency between
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-sektor]]
-==== Tjeneste – sektor (cv:sector)
+
+==== Tjeneste – sektor (cv:sector) [[Tjeneste-sektor]]
 
 [cols="30s,70d"]
 |===
@@ -588,8 +588,8 @@ __The value MUST be chosen from the controlled vocabulary https://op.europa.eu/e
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-språk]]
-==== Tjeneste – språk (dct:language)
+
+==== Tjeneste – språk (dct:language) [[Tjeneste-språk]]
 
 [cols="30s,70d"]
 |===
@@ -609,8 +609,8 @@ __The value MUST be chosen from Eu's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-[[Tjeneste-type]]
-==== Tjeneste – type (dct:type)
+
+==== Tjeneste – type (dct:type) [[Tjeneste-type]]
 
 [cols="30s,70d"]
 |===

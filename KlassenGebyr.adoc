@@ -106,7 +106,7 @@ Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 
 === Valgfrie egenskaper for klassen _Gebyr_ [[Gebyr-valgfrie-egenskaper]]
 
-==== Gebyr – er bestemt av (cv:isDefinedBy) [[Gebyr-erBestemtAv]]
+==== Gebyr – er bestemt av (cv:isDefinedBy) [[Gebyr-er-bestemt-av]]
 
 [cols="30s,70d"]
 |===
@@ -120,7 +120,7 @@ _This property links the Cost class with one or more instances of the Organizati
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-==== Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough) [[Gebyr-hvisTilbysGjennom]]
+==== Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough) [[Gebyr-hvis-tilbys-gjennom]]
 
 [cols="30s,70d"]
 |===

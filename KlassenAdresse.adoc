@@ -104,7 +104,7 @@ _This property represents proper noun(s) applied to the real world entity identi
 _Max. one per language._
 |===
 
-====  Adresse – fullstendig adresse (locn:fullAddress) [[Adresse-fullstendigAdresse]]
+====  Adresse – fullstendig adresse (locn:fullAddress) [[Adresse-fullstendig-adresse]]
 
 [cols="30s,70d"]
 |===

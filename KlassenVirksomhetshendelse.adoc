@@ -87,7 +87,7 @@ Eksempel i RDF Turtle:
    dct:description "Elektronisk prosess for å starte og drive en restaurant"@nb ; .
 ----
 
-==== Virksomhetshendelse – kan utløse behov for (cpsvno:mayTriggerNeedFor) [[Virksomhetshendelse-kanUtløseBehovFor]]
+==== Virksomhetshendelse – kan utløse behov for (cpsvno:mayTriggerNeedFor) [[Virksomhetshendelse-kan-utløse-behov-for]]
 
 [cols="30s,70d"]
 |===

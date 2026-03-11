@@ -57,7 +57,7 @@ Eksempel i RDF Turtle:
    .
 ----
 
-==== Offentlig organisasjon – foretrukket navn (skos:prefLabel) [[OffentligOrganisasjon-foretrukketNavn]]
+==== Offentlig organisasjon – foretrukket navn (skos:prefLabel) [[OffentligOrganisasjon-foretrukket-navn]]
 
 [cols="30s,70d"]
 |===

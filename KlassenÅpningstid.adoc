@@ -15,7 +15,7 @@ image::images/KlassenÅpningstid.png[alt="UML-diagram med klassen Åpningstid og
 
 === Valgfrie egenskaper for Klassen _Åpningstid_ [[Åpningstid-valgfrie-egenskaper]]
 
-==== Åpningstid – dager i uka (schema:dayOfWeek) [[Åpningstid-dagerIUka]]
+==== Åpningstid – dager i uka (schema:dayOfWeek) [[Åpningstid-dager-i-uka]]
 
 [cols="30s,70d"]
 |===
@@ -39,7 +39,7 @@ Eksempel i RDF Turtle:
    schema:closes "16:00"^^xsd:time ; .
 -----
 
-==== Åpningstid – gyldig fra og med (schema:validFrom) [[Åpningstid-gyldigFraOgMed]]
+==== Åpningstid – gyldig fra og med (schema:validFrom) [[Åpningstid-gyldig-fra-og-med]]
 
 [cols="30s,70d"]
 |===
@@ -62,7 +62,7 @@ Eksempel i RDF Turtle:
    schema:validThrough "2017-01-02T09:00Z"^^xsd:dateTime .
 -----
 
-==== Åpningstid – gyldig til og med (schema:validThrough) [[Åpningstid-gyldigTilOgMed]]
+==== Åpningstid – gyldig til og med (schema:validThrough) [[Åpningstid-gyldig-til-og-med]]
 
 [cols="30s,70d"]
 |===

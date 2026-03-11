@@ -131,7 +131,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | Eksempel |  https://altinn.github.io/docs/tul/tjenestetyper/innsending/[Altinns innsendingstjenester &#x29C9;, window="_blank", role="ext-link"]
 |===
 
-==== Tjenestekanal – eies av (cv:ownedBy) [[Tjenestekanal-eiesAv]]
+==== Tjenestekanal – eies av (cv:ownedBy) [[Tjenestekanal-eies-av]]
 
 [cols="30s,70d"]
 |===
@@ -153,7 +153,7 @@ Eksempel i RDF Turtle:
    cv:ownedBy "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" ; .
 -----
 
-==== Tjenestekanal – har adresse (vcard:hasAddress) [[Tjenestekanal-harAdresse]]
+==== Tjenestekanal – har adresse (vcard:hasAddress) [[Tjenestekanal-har-adresse]]
 
 [cols="30s,70d"]
 |===
@@ -203,7 +203,7 @@ _A service may require certain evidence in order to be delivered. If the evidenc
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Tjenestekanal – har e-post (vcard:hasEmail) [[Tjenestekanal-harE-post]]
+==== Tjenestekanal – har e-post (vcard:hasEmail) [[Tjenestekanal-har-e-post]]
 
 [cols="30s,70d"]
 |===
@@ -227,7 +227,7 @@ Eksempel i RDF Turtle:
    vcard:hasEmail "mailto:postmottak@bronnoy.kommune.no" ; .
 -----
 
-==== Tjenestekanal – har telefon (vcard:hasTelephone) [[Tjenestekanal-harTelefon]]
+==== Tjenestekanal – har telefon (vcard:hasTelephone) [[Tjenestekanal-har-telefon]]
 
 [cols="30s,70d"]
 |===
@@ -251,7 +251,7 @@ Eksempel i RDF Turtle:
    vcard:hasTelephone "tel:+4775012000" ; .
 -----
 
-==== Tjenestekanal – har URL (vcard:hasURL) [[Tjenestekanal-harURL]]
+==== Tjenestekanal – har URL (vcard:hasURL) [[Tjenestekanal-har-URL]]
 
 [cols="30s,70d"]
 |===

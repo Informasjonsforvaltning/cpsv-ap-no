@@ -379,7 +379,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 
 === Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
 
-==== Katalog – er del av (dct:isPartOf) [[Katalog-erDelAv]]
+==== Katalog – er del av (dct:isPartOf) [[Katalog-er-del-av]]
 
 [cols="30s,70d"]
 |===
@@ -396,7 +396,7 @@ _This property refers to a related Catalogue in which the described Catalogue is
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
-==== Katalog – har del (dct:hasPart) [[Katalog-harDel]]
+==== Katalog – har del (dct:hasPart) [[Katalog-har-del]]
 
 [cols="30s,70d"]
 |===
