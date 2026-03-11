@@ -102,7 +102,7 @@ include::KlassenOrganisasjon.adoc[]
 
 // include::KlassenPåkrevdDokumentasjon.adoc[] // ikke i v.2
 
-include::KlassenReferanserammeverk.adoc[] // ikke i v.2
+// include::KlassenReferanserammeverk.adoc[] // ikke i v.2
 
 include::KlassenRegel.adoc[]
 
