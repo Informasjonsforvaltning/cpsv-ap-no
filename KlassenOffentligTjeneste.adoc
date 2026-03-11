@@ -23,7 +23,7 @@ Eksempel i RDF Turtle:
 <skjenkebevillingBrønnøy> a cpsv:PublicService ; .
 -----
 
-=== Obligatoriske egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-onligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-obligatoriske-egenskaper]]
 
 ==== Offentlig tjeneste – beskrivelse (dct:description) [[OffentligTjeneste-beskrivelse]]
 

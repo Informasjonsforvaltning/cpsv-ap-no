@@ -1,4 +1,4 @@
-== Klasse Tjenesteresultattype (cpsvno:OutputType) [[Tjenesteresultattype]]
+== Klassen Tjenesteresultattype (cpsvno:OutputType) [[Tjenesteresultattype]]
 
 [[img-KlassenTjenesteresultattype]]
 .Klassen Tjenesteresultattype (cpsvno:OutputType) og klassene den refererer til. 
