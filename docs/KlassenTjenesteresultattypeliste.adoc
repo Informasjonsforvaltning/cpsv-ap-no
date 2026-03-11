@@ -10,7 +10,7 @@ image::images/KlassenTjenesteresultattypeliste.png[alt="UML-diagram med klassen 
 | _English name_ | _Output Type List_
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en gruppe av typer tjenesteresultater som en tjeneste kan resultere i.
 
-Kravet om å være i samsvar med en tjenesteresultattypeliste er oppfylt **hvis og bare hvis** det aktuelle tjenesteresultatet samsvarer med **alle** typer som listen inneholder. Det er med andre ord en *`AND`* betingelse mellom typene på en gitt   tjenesteresultattypeliste, og en *`OR`* betingelse mellom ulike tjenesteresultattypelister.
+Kravet om å være i samsvar med en tjenesteresultattypeliste er oppfylt **hvis og bare hvis** de aktuelle tjenesteresultatene samsvarer med **alle** typer som listen inneholder. Det er med andre ord en *`AND`* betingelse mellom typene på en gitt   tjenesteresultattypeliste, og en *`OR`* betingelse mellom ulike tjenesteresultattypelister.
 
 _This class represents a group of types of output that a service may produce._
 
