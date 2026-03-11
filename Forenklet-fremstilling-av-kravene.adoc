@@ -60,7 +60,7 @@ __#@@@@@@ tekst kommer#__
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
-| identifikator | Unik identifikator, som regel opprettet automatisk av et system | <<Hendelse-identifikator>>, <<Livshendelse-identifikator>>, <<Virksomhetshendelse-identifikator>>
+| identifikator | Unik identifikator for hendelsen, som regel opprettet automatisk av et system | <<Hendelse-identifikator>>, <<Livshendelse-identifikator>>, <<Virksomhetshendelse-identifikator>>
 | navn | Navn på hendelsen | <<Hendelse-navn>>, <<Livshendelse-navn>>, <<Virksomhetshendelse-navn>>
 |===
 
@@ -86,14 +86,14 @@ __#@@@@@@ tekst kommer#__
 
 === Opplysninger som SKAL, BØR og KAN tas med om en Dokumentasjonstype [[Krav-til-dokumentasjonstype]]
 
-__#@@@@@@ tekst kommer#__
-
 [[Tabell-obligatoriske-opplysninger-dokumentasjonstype]]
 .Obligatoriske opplysningstyper som en beskrivelse av Dokumentasjonstype SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
-| ... | ... | ...
+| beskrivelse | Tekstlig beskrivelse av dokumentasjonstypen | <<Dokumentasjonstype-beskrivelse>>
+| identifikator | Unik identifikator for dokumentasjonstypen, som regel opprettet automatisk av et system | <<Dokumentasjonstype-identifikator>>
+| navn | Navn på dokumentasjonstypen | <<Dokumentasjonstype-navn>>
 |===
 
 [[Tabell-anbefalte-opplysninger-dokumentasjonstype]]
@@ -101,7 +101,8 @@ __#@@@@@@ tekst kommer#__
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
-| ... | ... | ...
+| tillatt gyldighetsperiode | Angir en tidsperiode som dokumentasjoner tilhørende dokumentasjonstypen skal være gyldig innenfor | <<Dokumentasjonstype-tillatt-gyldighetsperiode>>
+| tillatt språk | Angir språk som dokumentasjoner tilhørende dokumentasjonstypen kan være på | <<Dokumentasjonstype-tillatt-språk>>
 |===
 
 [[Tabell-valgfrie-opplysninger-dokumentasjonstype]]
@@ -109,7 +110,11 @@ __#@@@@@@ tekst kommer#__
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
-| ... | ... | ...
+| dokumentasjonstypekategori | Refererer til kategori som dokumentasjonstypen tilhører | <<Dokumentasjonstype-dokumentasjonstypekategori>>
+| er beskrevet ved | Refererer til datasett som dokumentasjoner tilhørende denne dokumentasjonstypen kan være beskrevet ved | <<Dokumentasjonstype-er-beskrevet-ved>>
+| er spesifisert i | Refererer til dokumentasjonstypeliste som inneholder dokumentasjonstypen | <<Dokumentasjonstype-er-spesifisert-i>>
+| relatert informasjon | Refererer til der mer informasjon om den aktuelle type dokumentasjon kan finnes | <<Dokumentasjonstype-relatert-informasjon>>
+| tillatt utstedelsessted | Angir tillatt utstedelsessted for dokumentasjoner tilhørende dokumentasjonstypen | <<Dokumentasjonstype-tillatt-utstedelsessted>>
 |===
 
 === Opplysninger som SKAL, BØR og KAN tas med om en Tjenesteresultattype [[Krav-til-tjenesteresultattype]]

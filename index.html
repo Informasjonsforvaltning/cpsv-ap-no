@@ -1493,7 +1493,7 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifikator</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unik identifikator, som regel opprettet automatisk av et system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unik identifikator for hendelsen, som regel opprettet automatisk av et system</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Hendelse-identifikator"> 3.6.1.1</a>, <a href="#Livshendelse-identifikator"> 3.9.1.1</a>, <a href="#Virksomhetshendelse-identifikator"> 3.25.1.1</a></p></td>
 </tr>
 <tr>
@@ -1570,9 +1570,6 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </div>
 <div class="sect2">
 <h3 id="Krav-til-dokumentasjonstype"><a class="link" href="#Krav-til-dokumentasjonstype">2.3. Opplysninger som SKAL, BØR og KAN tas med om en Dokumentasjonstype</a></h3>
-<div class="paragraph">
-<p><em><mark>@@@@@@ tekst kommer</mark></em></p>
-</div>
 <table id="Tabell-obligatoriske-opplysninger-dokumentasjonstype" class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Tabell 7. Obligatoriske opplysningstyper som en beskrivelse av Dokumentasjonstype SKAL inneholde</caption>
 <colgroup>
@@ -1589,9 +1586,19 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>&#8230;&#8203;</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tekstlig beskrivelse av dokumentasjonstypen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-beskrivelse"> 3.4.1.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifikator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unik identifikator for dokumentasjonstypen, som regel opprettet automatisk av et system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-identifikator"> 3.4.1.2</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navn på dokumentasjonstypen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-navn"> 3.4.1.3</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1611,9 +1618,14 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>&#8230;&#8203;</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>tillatt gyldighetsperiode</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir en tidsperiode som dokumentasjoner tilhørende dokumentasjonstypen skal være gyldig innenfor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-tillatt-gyldighetsperiode"> 3.4.2.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>tillatt språk</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir språk som dokumentasjoner tilhørende dokumentasjonstypen kan være på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-tillatt-språk"> 3.4.2.2</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1633,9 +1645,29 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>&#8230;&#8203;</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dokumentasjonstypekategori</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til kategori som dokumentasjonstypen tilhører</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-dokumentasjonstypekategori"> 3.4.3.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er beskrevet ved</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til datasett som dokumentasjoner tilhørende denne dokumentasjonstypen kan være beskrevet ved</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-er-beskrevet-ved"> 3.4.3.2</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er spesifisert i</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til dokumentasjonstypeliste som inneholder dokumentasjonstypen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-er-spesifisert-i"> 3.4.3.3</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>relatert informasjon</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til der mer informasjon om den aktuelle type dokumentasjon kan finnes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-relatert-informasjon"> 3.4.3.4</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>tillatt utstedelsessted</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir tillatt utstedelsessted for dokumentasjoner tilhørende dokumentasjonstypen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Dokumentasjonstype-tillatt-utstedelsessted"> 3.4.3.5</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -14229,7 +14261,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2026-03-11 09:51:50 UTC
+Sist oppdatert 2026-03-11 10:24:25 UTC
 </div>
 </div>
 </body>
