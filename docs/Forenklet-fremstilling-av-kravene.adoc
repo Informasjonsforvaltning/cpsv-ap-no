@@ -29,13 +29,19 @@ Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (val
 
 === Opplysninger som SKAL, BØR og KAN tas med om en Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste [[Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste]]
 
-__#@@@@@@ tekst kommer#__
+__#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 
 [[Tabell-obligatoriske-opplysninger-tjenesteklassene]]
 .Obligatoriske opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| beskrivelse | Tekstlig beskrivelse av tjeneste | <<Tjeneste-beskrivelse>>, <<OffentligTjeneste-beskrivelse>>, <<LovpålagtTjeneste-beskrivelse>>
+| har mulig tjenesteresultat | Refererer til type tjenesteresultat som tjenesten kan resultere i | <<Tjeneste-har-mulig-tjenesteresultat>>, <<OffentligTjeneste-har-mulig-tjenesteresultat>>, <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
+| identifikator | Unik identifikator for tjenesten, som regel opprettet automatisk av et system | <<Tjeneste-identifikator>>, <<OffentligTjeneste-identifikator>>, <<LovpålagtTjeneste-identifikator>>
+| kontaktpunkt | Oppgir til kontaktpunkt for tjenesten | <<Tjeneste-kontaktpunkt>>, <<OffentligTjeneste-kontaktpunkt>>, <<LovpålagtTjeneste-kontaktpunkt>>
+| navn | Navn på tjenesten | <<Tjeneste-navn>>, <<OffentligTjeneste-navn>>, <<LovpålagtTjeneste-navn>>
+| ansvarlig organisasjon | (Gjelder kun for Offentlig tjeneste) Refererer til offentiglig organisasjon som er ansvarlig for tjenesten | <<OffentligTjeneste-ansvarlig-organisasjon>>
 | .. | .. | ..
 |===
 
@@ -133,7 +139,7 @@ __#@@@@@@ tekst kommer#__
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
-| mulig språk | Oppgir hvilke språk et mulig tjenesteresultat av tjenesteresultattypen kan være tilgjengelig på | <<tjenesteresultattype-mulige-språk>>
+| mulig språk | Oppgir hvilke språk et mulig tjenesteresultat av tjenesteresultattypen kan være tilgjengelig på | <<Tjenesteresultattype-mulig-språk>>
 |===
 
 [[Tabell-valgfrie-opplysninger-tjenesteresultattype]]

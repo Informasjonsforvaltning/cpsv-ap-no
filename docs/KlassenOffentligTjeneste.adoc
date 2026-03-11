@@ -25,7 +25,7 @@ Eksempel i RDF Turtle:
 
 === Obligatoriske egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-onligatoriske-egenskaper]]
 
-==== Offentlig tjeneste – beskrivelse (dct:description) [[OffentligTjenest-beskrivelse]]
+==== Offentlig tjeneste – beskrivelse (dct:description) [[OffentligTjeneste-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -70,7 +70,7 @@ Eksempel i RDF Turtle:
    cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291> ; . # Brønnøy kommune
 -----
 
-==== Offentlig tjeneste – har mulig tjenesteresultat (cpsvno:OutputType) [[OffentligTjeneste-har-mulig-tjenesteresultat]]
+==== Offentlig tjeneste – har mulig tjenesteresultat (cpsvno:hasOutputType) [[OffentligTjeneste-har-mulig-tjenesteresultat]]
 
 [cols="30s,70d"]
 |===
@@ -402,8 +402,9 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | _English name_ | _is grouped by_
 | URI | cv:isGroupedBy
 | Verdiområde / _Range_ | <<Hendelse, cv:Event>>
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere hendelser som utløser behov for tjenesten.
-|Usage note| This property links the Public Service to the triggering Event class.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere hendelser som tjenesten grupperes ved.
+
+_This property is used to refer to the Event by which the service is grouped._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Flere offentlige tjenester KAN være knyttet til en bestemt hendelse, og likedan KAN den samme offentlige tjenesten være knyttet til flere forskjellige hendelser.
