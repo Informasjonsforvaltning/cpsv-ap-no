@@ -27,12 +27,12 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 
 Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (valgfrie) tas med i en beskrivelse av en hendelse / livshendlese / virksomhetshendelse og tjeneste / offentlig tjeneste / lovpålagt tjeneste er nærmere spesifisert i det følgende i dette kapittelet. Hvordan opplysningene skal representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert i <<Spesifikasjon-per-klasse>>, som også inneholder flere klasser som kan brukes i tillegg til de som er vist i <<img-ForenkletModell>> og beskrevet i dette kapittelet.
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en Tjeneste, Offentlig tjeneste og Lovpålagt tjeneste [[Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste]]
+=== Opplysninger som SKAL, BØR og KAN tas med om en Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste [[Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste]]
 
 __#@@@@@@ tekst kommer#__
 
 [[Tabell-obligatoriske-opplysninger-tjenesteklassene]]
-.Obligatoriske opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste og Lovpålagt tjeneste SKAL inneholde
+.Obligatoriske opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -40,23 +40,23 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-anbefalte-opplysninger-tjenesteklassene]]
-.Anbefalte opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste og Lovpålagt tjeneste BØR inneholde
+.Anbefalte opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
 |===
 
 [[Tabell-valgfrie-opplysninger-tjenesteklassene]]
-.Valgfrie opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste og Lovpålagt tjeneste KAN inneholde
+.Valgfrie opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
 |===
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en Hendelse, Livshendelse og virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
+=== Opplysninger som SKAL, BØR og KAN tas med om en Hendelse, Livshendelse eller virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
 
 [[Tabell-obligatoriske-opplysninger-hendelsesklassene]]
-.Obligatoriske opplysningstyper som en beskrivelse av Hendelse, Livshendelse og virksomhetshendelse SKAL inneholde
+.Obligatoriske opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -65,7 +65,7 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-anbefalte-opplysninger-hendelsesklassene]]
-.Anbefalte opplysningstyper som en beskrivelse av Hendelse, Livshendelse og virksomhetshendelse BØR inneholde
+.Anbefalte opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -75,7 +75,7 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-valgfrie-opplysninger-hendelsesklassene]]
-.Valgfrie opplysningstyper som en beskrivelse av Hendelse, Livshendelse og virksomhetshendelse KAN inneholde
+.Valgfrie opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
