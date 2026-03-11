@@ -32,7 +32,7 @@ Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (val
 __#@@@@@@ tekst kommer#__
 
 [[Tabell-obligatoriske-opplysninger-tjenesteklassene]]
-.Obligatoriske opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste SKAL inneholde
+.Obligatoriske opplysningstyper som beskrivelsen av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -40,14 +40,14 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-anbefalte-opplysninger-tjenesteklassene]]
-.Anbefalte opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste BØR inneholde
+.Anbefalte opplysningstyper som beskrivelsen av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
 |===
 
 [[Tabell-valgfrie-opplysninger-tjenesteklassene]]
-.Valgfrie opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste KAN inneholde
+.Valgfrie opplysningstyper som beskrivelsen av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -56,7 +56,7 @@ __#@@@@@@ tekst kommer#__
 === Opplysninger som SKAL, BØR og KAN tas med om en Hendelse, Livshendelse eller virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
 
 [[Tabell-obligatoriske-opplysninger-hendelsesklassene]]
-.Obligatoriske opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse SKAL inneholde
+.Obligatoriske opplysningstyper som beskrivelsen av Hendelse, Livshendelse eller virksomhetshendelse SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -65,7 +65,7 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-anbefalte-opplysninger-hendelsesklassene]]
-.Anbefalte opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse BØR inneholde
+.Anbefalte opplysningstyper som beskrivelsen av Hendelse, Livshendelse eller virksomhetshendelse BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -75,7 +75,7 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-valgfrie-opplysninger-hendelsesklassene]]
-.Valgfrie opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse KAN inneholde
+.Valgfrie opplysningstyper som beskrivelsen av Hendelse, Livshendelse eller virksomhetshendelse KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -89,7 +89,7 @@ __#@@@@@@ tekst kommer#__
 __#@@@@@@ tekst kommer#__
 
 [[Tabell-obligatoriske-opplysninger-dokumentasjonstype]]
-.Obligatoriske opplysningstyper som en beskrivelse av Dokumentasjonstype SKAL inneholde
+.Obligatoriske opplysningstyper som beskrivelsen av Dokumentasjonstype SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -97,7 +97,7 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-anbefalte-opplysninger-dokumentasjonstype]]
-.Anbefalte opplysningstyper som en beskrivelse av Dokumentasjonstype BØR inneholde
+.Anbefalte opplysningstyper som beskrivelsen av Dokumentasjonstype BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -105,7 +105,7 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-valgfrie-opplysninger-dokumentasjonstype]]
-.Valgfrie opplysningstyper som en beskrivelse av Dokumentasjonstype KAN inneholde
+.Valgfrie opplysningstyper som beskrivelsen av Dokumentasjonstype KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -117,7 +117,7 @@ __#@@@@@@ tekst kommer#__
 __#@@@@@@ tekst kommer#__
 
 [[Tabell-obligatoriske-opplysninger-tjenesteresultattype]]
-.Obligatoriske opplysningstyper som en beskrivelse av Tjenesteresultattype SKAL inneholde
+.Obligatoriske opplysningstyper som beskrivelsen av Tjenesteresultattype SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -125,7 +125,7 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-anbefalte-opplysninger-tjenesteresultattype]]
-.Anbefalte opplysningstyper som en beskrivelse av Tjenesteresultattype BØR inneholde
+.Anbefalte opplysningstyper som beskrivelsen av Tjenesteresultattype BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
@@ -133,7 +133,7 @@ __#@@@@@@ tekst kommer#__
 |===
 
 [[Tabell-valgfrie-opplysninger-tjenesteresultattype]]
-.Valgfrie opplysningstyper som en beskrivelse av Tjenesteresultattype KAN inneholde
+.Valgfrie opplysningstyper som beskrivelsen av Tjenesteresultattype KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
