@@ -35,7 +35,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Obligatoriske opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | beskrivelse | Tekstlig beskrivelse av tjeneste | <<Tjeneste-beskrivelse>>, <<OffentligTjeneste-beskrivelse>>, <<LovpålagtTjeneste-beskrivelse>>
 | har mulig tjenesteresultat | Refererer til type tjenesteresultat som tjenesten kan resultere i | <<Tjeneste-har-mulig-tjenesteresultat>>, <<OffentligTjeneste-har-mulig-tjenesteresultat>>, <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
 | identifikator | Unik identifikator for tjenesten, som regel opprettet automatisk av et system | <<Tjeneste-identifikator>>, <<OffentligTjeneste-identifikator>>, <<LovpålagtTjeneste-identifikator>>
@@ -49,14 +49,14 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Anbefalte opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 |===
 
 [[Tabell-valgfrie-opplysninger-tjenesteklassene]]
 .Valgfrie opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 |===
 
 === Opplysninger som SKAL, BØR og KAN tas med om en Hendelse, Livshendelse eller virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
@@ -65,7 +65,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Obligatoriske opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | identifikator | Unik identifikator for hendelsen, som regel opprettet automatisk av et system | <<Hendelse-identifikator>>, <<Livshendelse-identifikator>>, <<Virksomhetshendelse-identifikator>>
 | navn | Navn på hendelsen | <<Hendelse-navn>>, <<Livshendelse-navn>>, <<Virksomhetshendelse-navn>>
 |===
@@ -74,7 +74,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Anbefalte opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | beskrivelse | Tekstlig beskrivelse av hendelsen | <<Hendelse-beskrivelse>>, <<Livshendelse-beskrivelse>>, <<Virksomhetshendelse-beskrivelse>>
 | kan sette i gang | (Gjelder kun for Hendelse) Refererer til tjeneste som kan settes i gang av hendelsen | <<Hendelse-kan-sette-i-gang>>
 | kan utløse behov for | (Gjelder kun for Livshendelse og Virksomhetshendelse) Refererer til tjeneste som hendelsen kan utløse behov for | <<Livshendelse-kan-utløse-behov-for>>, <<Virksomhetshendelse-kan-utløse-behov-for>>
@@ -84,7 +84,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Valgfrie opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | begrep | Refererer til begrep som er viktig for å forstå hendelsen | <<Hendelse-begrep>>, <<Livshendelse-begrep>>, <<Virksomhetshendelse-begrep>>
 | er beskrevet ved | Refererer til datasett som hendelsen kan være beskrevet ved | <<Hendelse-er-beskrevet-ved>>, <<Livshendelse-er-beskrevet-ved>>, <<Virksomhetshendelse-er-beskrevet-ved>>
 | type | Oppgir type som hendelsen tilhører | <<Hendelse-type>>, <<Livshendelse-type>>, <<Virksomhetshendelse-type>>
@@ -96,7 +96,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Obligatoriske opplysningstyper som en beskrivelse av Dokumentasjonstype SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | beskrivelse | Tekstlig beskrivelse av dokumentasjonstypen | <<Dokumentasjonstype-beskrivelse>>
 | identifikator | Unik identifikator for dokumentasjonstypen, som regel opprettet automatisk av et system | <<Dokumentasjonstype-identifikator>>
 | navn | Navn på dokumentasjonstypen | <<Dokumentasjonstype-navn>>
@@ -106,7 +106,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Anbefalte opplysningstyper som en beskrivelse av Dokumentasjonstype BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | tillatt gyldighetsperiode | Angir en tidsperiode som dokumentasjoner tilhørende dokumentasjonstypen skal være gyldig innenfor | <<Dokumentasjonstype-tillatt-gyldighetsperiode>>
 | tillatt språk | Angir språk som dokumentasjoner tilhørende dokumentasjonstypen kan være på | <<Dokumentasjonstype-tillatt-språk>>
 |===
@@ -115,7 +115,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Valgfrie opplysningstyper som en beskrivelse av Dokumentasjonstype KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | dokumentasjonstypekategori | Refererer til kategori som dokumentasjonstypen tilhører | <<Dokumentasjonstype-dokumentasjonstypekategori>>
 | er beskrevet ved | Refererer til datasett som dokumentasjoner tilhørende denne dokumentasjonstypen kan være beskrevet ved | <<Dokumentasjonstype-er-beskrevet-ved>>
 | er spesifisert i | Refererer til dokumentasjonstypeliste som inneholder dokumentasjonstypen | <<Dokumentasjonstype-er-spesifisert-i>>
@@ -129,7 +129,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Obligatoriske opplysningstyper som en beskrivelse av Tjenesteresultattype SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Obligatorisk | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | beskrivelse | Tekstlig beskrivelse av tjenesteresultattypen | <<Tjenesteresultattype-beskrivelse>>
 | navn | Navn på tjenesteresultattypen | <<Tjenesteresultattype-navn>>
 |===
@@ -138,7 +138,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Anbefalte opplysningstyper som en beskrivelse av Tjenesteresultattype BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Anbefalt | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | mulig språk | Oppgir hvilke språk et mulig tjenesteresultat av tjenesteresultattypen kan være tilgjengelig på | <<Tjenesteresultattype-mulig-språk>>
 |===
 
@@ -146,7 +146,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 .Valgfrie opplysningstyper som en beskrivelse av Tjenesteresultattype KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
-| Valgfri | Forklaring | Ref. til kap. <<Spesifikasjon-per-klasse>>
+| Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | er beskrevet ved | Refererer til datasett som et mulig tjenesteresultat av tjenesteresultattypen kan være beskrevet ved | <<Tjenesteresultattype-er-beskrevet-ved>>
 | er spesifisert i | Refererer til tjenesteresultattypeliste som inneholder tjenesteresultattypen | <<Tjenesteresultattype-er-spesifisert-i>>
 | identifikator | Unik identifikator for tjenesteresultattypen, som regel opprettet automatisk av et system | <<Tjenesteresultattype-identifikator>>
