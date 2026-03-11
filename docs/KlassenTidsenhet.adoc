@@ -136,7 +136,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 
 Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 
-=== Valgfri egenskaper for klassen _Tidsenhet_ [[Tidsenhet-valgfri-egenskaper]]
+=== Valgfrie egenskaper for klassen _Tidsenhet_ [[Tidsenhet-valgfri-egenskaper]]
 
 ==== Tidsenhet – beskrivelse (dct:description) [[Tidsenhet-beskrivelse]]
 [cols="30s,70d"]
@@ -154,7 +154,7 @@ _This property is used to specify a textual description of the temporal entity. 
 
 Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 
-==== Tidsenhet – frekvens (cv:frequency) [[Tidsenhet-frekverns]]
+==== Tidsenhet – frekvens (cv:frequency) [[Tidsenhet-frekvens]]
 [cols="30s,70d"]
 |===
 | _English name_ | _frequency_
