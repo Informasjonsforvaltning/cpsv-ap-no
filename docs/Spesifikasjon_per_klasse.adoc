@@ -1,7 +1,5 @@
 == Krav til RDF-representasjon av klassene i CPSV-AP-NO [[Spesifikasjon-per-klasse]]
 
-_#@@@@@@ NB! Kapitlet er ikke helt oppdatert enda - endringer kan komme#_
-
 _Denne delen av spesifikasjonen er primært ment for den tekniske målgruppen._ 
 
 :xrefstyle: short
