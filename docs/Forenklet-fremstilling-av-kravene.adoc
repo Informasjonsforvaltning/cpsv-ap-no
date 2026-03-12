@@ -27,39 +27,118 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 
 Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (valgfrie) tas med i en beskrivelse av en hendelse / livshendelse / virksomhetshendelse og tjeneste / offentlig tjeneste / lovpålagt tjeneste er nærmere spesifisert i det følgende i dette kapittelet. Hvordan opplysningene skal representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert i <<Spesifikasjon-per-klasse>>, som også inneholder flere klasser som kan brukes i tillegg til de som er vist i <<img-ForenkletModell>> og beskrevet i dette kapittelet.
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste [[Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste]]
+=== Krav til beskrivelse av en Lovpålagt tjeneste [[Krav-til-lovpålagt-tjeneste]]
 
-__#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
+Lovpålagt tjeneste brukes til å ha generelle beskrivelser av en tjeneste som er lovpålagt, og som ikke er knyttet til en konkret, gitt offentlig organisasjon som yter tjenesten. Eksempel på en Lovpålagt tjeneste kan være «Skjenkebevilling», og tilsvarende Offentlige tjenester er «Skjenkebevilling i Brønnøykommune», «Skjenkebevilling i Oslokommune» osv. For beskrivelse av Offenlig tjeneste, se <<Krav-til-tjeneste-offentlig-tjeneste>>.
 
-[[Tabell-obligatoriske-opplysninger-tjenesteklassene]]
-.Obligatoriske opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste SKAL inneholde
+Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) tas med i en beskrivelse av en Lovpålagt tjeneste er nærmere spesifisert i tabellene under. 
+
+[[Tabell-obligatoriske-opplysninger-lovpålagt-tjeneste]]
+.Obligatoriske opplysningstyper som en beskrivelse av Lovpålagt tjeneste SKAL inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| beskrivelse | Tekstlig beskrivelse av tjeneste | <<Tjeneste-beskrivelse>>, <<OffentligTjeneste-beskrivelse>>, <<LovpålagtTjeneste-beskrivelse>>
+| beskrivelse | Tekstlig beskrivelse av tjenesten | <<LovpålagtTjeneste-beskrivelse>>
+| har mulig tjenesteresultat | Refererer til type tjenesteresultat som lovpålagt tjeneste kan resultere i | <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
+| identifikator | Unik identifikator for tjenesten, som regel opprettet automatisk av et system | <<LovpålagtTjeneste-identifikator>>
+| kontaktpunkt | Oppgir til kontaktpunkt for tjenesten | <<LovpålagtTjeneste-kontaktpunkt>>
+| navn | Navn på tjenesten | <<LovpålagtTjeneste-navn>>
+|===
+
+[[Tabell-anbefalte-opplysninger-lovpålagt-tjeneste]]
+.Anbefalte opplysningstyper som en beskrivelse av Lovpålagt tjeneste BØR inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
+| begrep | Refererer til begrep som er viktig for å forstå tjenesten | <<LovpålagtTjeneste-begrep>>
+| dekningsområde | Angir geografisk område som dekkes av tjenesten | <<LovpålagtTjeneste-dekningsområde>>
+| har dokumentasjonskrav | Refererer til dokumentasjonskrav som gjelder for tjenesten | <<LovpålagtTjeneste-har-dokumentasjonskrav>>
+| hjemmeside | Refererer til hjemmeside for tjenesten | <<LovpålagtTjeneste-hjemmeside>>
+| hovedformål | Angir hovedformål for tjenesten | <<LovpålagtTjeneste-hovedformål>>
+| temaområde | Angir temaområde som tjenesten dekker | <<LovpålagtTjeneste-temaområde>>
+|===
+
+[[Tabell-valgfrie-opplysninger-lovpålagt-tjeneste]]
+.Valgfrie opplysningstyper som en beskrivelse av Lovpålagt tjeneste KAN inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
+| er del av | Refererer til en annen tjeneste som tjenesten kan være en del av | <<LovpålagtTjeneste-er-del-av>>
+| er gruppert ved | Refererer til hendelse som tjenesten kan være gruppert ved | <<LovpålagtTjeneste-er-gruppert-ved>>
+| er klassifisert under | Refererer til begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv. | <<LovpålagtTjeneste-er-klassifisert-under>>
+| følger regel | Refererer til regel som gjelder for tjenesten | <<LovpålagtTjeneste-følger-regel>>
+| har del | Refererer til en annen tjeneste som er en del av tjenesten | <<LovpålagtTjeneste-har-del>>
+| har gebyr | Oppgir ev. gebyr for tjenesten | <<LovpålagtTjeneste-har-gebyr>>
+| har krav | Refererer til krav som skal oppfylles for tjenesten | <<LovpålagtTjeneste-har-krav>>
+| har relatert regelverk | Refererer til regelverk som tjenesten opererer under eller har som sin juridiske ramme, eller på andre måter er relatert til | <<LovpålagtTjeneste-har-relatert-regelverk>>
+| krever | Refererer til andre tjenester som tjeneste krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra | <<LovpålagtTjeneste-krever>>
+| målgruppe | Oppgir målgruppe for tjeneste | <<LovpålagtTjeneste-målgruppe>>
+| nøkkelord | Oppgir nøkkelord som beskriver tjenesten | <<LovpålagtTjeneste-nøkkelord>>
+| sektor | Oppgir industri/sektor som tjenesten er relatert til, eller er ment for | <<LovpålagtTjeneste-sektor>>
+|===
+
+=== Krav til beskrivelse av en Tjeneste eller Offentlig tjeneste [[Krav-til-tjeneste-offentlig-tjeneste]]
+
+Med «Offentlig tjeneste» (med stor forbokstav «T») menes en tjeneste som ytes av konkret, gitt offentlig organisasjon, og «Tjeneste» (med stor forbokstav «T») en tjeneste som ytes av en konkret, gitt ikke-offentlig aktør. For generelle beskrivelser av en lovpålagt tjeneste som ikke er knyttet til en konkret, gitt offentlig organisasjon, se <<Krav-til-lovpålagt-tjeneste>>. Eksempel på en Offentlig tjeneste kan være «Skjenkebevilling i Brønnøykommune», mens den tilsvarende Lovpålagte tjeneste er «Skjenkebevilling».
+
+Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) tas med i en beskrivelse av en Lovpålagt tjeneste er nærmere spesifisert i tabellene under. I tabellene under er ordet «tjeneste» (med liten forbokstav «t») brukt som samlebetegnelse for Tjeneste og Offentlig tjeneste.
+
+[[Tabell-obligatoriske-opplysninger-tjeneste-offentlig-tjeneste]]
+.Obligatoriske opplysningstyper som en beskrivelse av Tjeneste eller Offentlig tjeneste SKAL inneholde
+[cols="20s,65d,15d", options="header"]
+|===
+| Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
+| ansvarlig organisasjon | (Gjelder kun for Offentlig tjeneste) Refererer til offentiglig organisasjon som er ansvarlig for tjenesten | <<OffentligTjeneste-ansvarlig-organisasjon>>
+| beskrivelse | Tekstlig beskrivelse av tjenesten | <<Tjeneste-beskrivelse>>, <<OffentligTjeneste-beskrivelse>>, <<LovpålagtTjeneste-beskrivelse>>
+| eies av | (Gjelder kun bare for Tjeneste) Refererer til aktøren som eier tjenesten | <<Tjeneste-eies-av>>
 | har mulig tjenesteresultat | Refererer til type tjenesteresultat som tjenesten kan resultere i | <<Tjeneste-har-mulig-tjenesteresultat>>, <<OffentligTjeneste-har-mulig-tjenesteresultat>>, <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
 | identifikator | Unik identifikator for tjenesten, som regel opprettet automatisk av et system | <<Tjeneste-identifikator>>, <<OffentligTjeneste-identifikator>>, <<LovpålagtTjeneste-identifikator>>
 | kontaktpunkt | Oppgir til kontaktpunkt for tjenesten | <<Tjeneste-kontaktpunkt>>, <<OffentligTjeneste-kontaktpunkt>>, <<LovpålagtTjeneste-kontaktpunkt>>
 | navn | Navn på tjenesten | <<Tjeneste-navn>>, <<OffentligTjeneste-navn>>, <<LovpålagtTjeneste-navn>>
-| ansvarlig organisasjon | (Gjelder kun for Offentlig tjeneste) Refererer til offentiglig organisasjon som er ansvarlig for tjenesten | <<OffentligTjeneste-ansvarlig-organisasjon>>
-| .. | .. | ..
 |===
 
-[[Tabell-anbefalte-opplysninger-tjenesteklassene]]
-.Anbefalte opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste BØR inneholde
+[[Tabell-anbefalte-opplysninger-tjeneste-offentlig-tjeneste]]
+.Anbefalte opplysningstyper som en beskrivelse av Tjeneste eller Offentlig tjeneste BØR inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
+| begrep | Refererer til begrep som er viktig for å forstå tjenesten | <<Tjeneste-begrep>>, <<OffentligTjeneste-begrep>>
+| dekningsområde | Angir geografisk område som dekkes av tjenesten | <<Tjeneste-dekningsområde>>, <<OffentligTjeneste-dekningsområde>>
+| har dokumentasjonskrav | Refererer til dokumentasjonskrav som gjelder for tjenesten | <<Tjeneste-har-dokumentasjonskrav>>, <<OffentligTjeneste-har-dokumentasjonskrav>>
+| hjemmeside | Refererer til hjemmeside for tjenesten | <<Tjeneste-hjemmeside>>, <<OffentligTjeneste-hjemmeside>>
+| hovedformål | (Gjelder kun for Offentlig tjeneste) Angir hovedformål for tjenesten | <<OffentligTjeneste-hovedformål>>
+| realiserer | (Gjelder kun for Offentlig tjeneste) Refererer til Lovpålagt tjeneste som tjenesten realiserer | <<OffentligTjeneste-realiserer>>
+| status | Angir status for tjenesten | <<Tjeneste-status>>, <<OffentligTjeneste-status>>
+| temaområde | Angir temaområde som tjenesten dekker | <<Tjeneste-temaområde>>, <<OffentligTjeneste-temaområde>>
 |===
 
-[[Tabell-valgfrie-opplysninger-tjenesteklassene]]
-.Valgfrie opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste KAN inneholde
+[[Tabell-valgfrie-opplysninger-tjeneste-offentlig-tjeneste]]
+.Valgfrie opplysningstyper som en beskrivelse av Tjeneste eller Offentlig tjeneste KAN inneholde
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
+| behandlingstid | Den estimerte behandlingstiden | <<Tjeneste-behandlingstid>>, <<OffentligTjeneste-behandlingstid>>
+| er beskrevet ved | Refererer til datasett som tjenesten kan være beskrevet ved | <<Tjeneste-er-beskrevet-ved>>, <<OffentligTjeneste-er-beskrevet-ved>>
+| er del av | Refererer til en annen tjeneste som tjenesten kan være en del av | <<Tjeneste-er-del-av>>, <<OffentligTjeneste-er-del-av>>
+| er gruppert ved | Refererer til hendelse som tjenesten kan være gruppert ved | <<Tjeneste-er-gruppert-ved>>, <<OffentligTjeneste-er-gruppert-ved>>
+| er klassifisert under | Refererer til begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv. | <<Tjeneste-er-klassifisert-under>>, <<OffentligTjeneste-er-klassifisert-under>>
+| er tilgjengelig via | Angir tjenestekanaler som tjenesten er tilgjengelig gjennom | <<Tjeneste-er-tilgjengelig-via>>, <<OffentligTjeneste-er-tilgjengelig-via>>
+| følger regel | Refererer til regel som gjelder for tjenesten | <<Tjeneste-følger-regel>>, <<OffentligTjeneste-følger-regel>>
+| har del | Refererer til en annen tjeneste som er en del av tjenesten | <<Tjeneste-har-del>>, <<OffentligTjeneste-har-del>>
+| har deltagelse | Knytter til aktører som deltar i eller samhandler med tjenesten | <<Tjeneste-har-deltagelse>>, <<OffentligTjeneste-har-deltagelse>>
+| har gebyr | Oppgir ev. gebyr for tjenesten | <<Tjeneste-har-gebyr>>, <<OffentligTjeneste-har-gebyr>>
+| har krav | Refererer til krav som skal oppfylles for tjenesten | <<Tjeneste-har-krav>>, <<OffentligTjeneste-har-krav>>
+| har relatert regelverk | Refererer til regelverk som tjenesten opererer under eller har som sin juridiske ramme, eller på andre måter er relatert til | <<Tjeneste-har-relatert-regelverk>>, <<OffentligTjeneste-har-relatert-regelverk>>
+| krever | Refererer til andre tjenester som tjeneste krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra | <<Tjeneste-krever>>, <<OffentligTjeneste-krever>>
+| målgruppe | Oppgir målgruppe for tjeneste | <<Tjeneste-målgruppe>>, <<OffentligTjeneste-målgruppe>>
+| nøkkelord | Oppgir nøkkelord som beskriver tjenesten | <<Tjeneste-nøkkelord>>, <<OffentligTjeneste-nøkkelord>>
+| relatert tjeneste | Refererer til andre tjenester som tjenesten relaterer til | <<Tjeneste-relatert-tjeneste>>, <<OffentligTjeneste-relatert-tjeneste>>
+| sektor | Oppgir industri/sektor som tjenesten er relatert til, eller er ment for | <<Tjeneste-sektor>>, <<OffentligTjeneste-sektor>>
+| språk | Oppgir språk tjenesten er tilgjengelig på | <<Tjeneste-språk>>, <<OffentligTjeneste-språk>>
+| type | (Gjelder kun for Tjeneste) Oppgir type som tjenesten tilhører | <<Tjeneste-type>>
 |===
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en Hendelse, Livshendelse eller virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
+=== Krav til beskrivelse av en Hendelse, Livshendelse eller virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
 
 [[Tabell-obligatoriske-opplysninger-hendelsesklassene]]
 .Obligatoriske opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse SKAL inneholde
@@ -90,7 +169,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 | type | Oppgir type som hendelsen tilhører | <<Hendelse-type>>, <<Livshendelse-type>>, <<Virksomhetshendelse-type>>
 |===
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en Dokumentasjonstype [[Krav-til-dokumentasjonstype]]
+=== Krav til beskrivelse av en Dokumentasjonstype [[Krav-til-dokumentasjonstype]]
 
 [[Tabell-obligatoriske-opplysninger-dokumentasjonstype]]
 .Obligatoriske opplysningstyper som en beskrivelse av Dokumentasjonstype SKAL inneholde
@@ -123,7 +202,7 @@ __#@@@@@@ mangler Lovpålagt tjeneste, kommer#__
 | tillatt utstedelsessted | Angir tillatt utstedelsessted for dokumentasjoner tilhørende dokumentasjonstypen | <<Dokumentasjonstype-tillatt-utstedelsessted>>
 |===
 
-=== Opplysninger som SKAL, BØR og KAN tas med om en Tjenesteresultattype [[Krav-til-tjenesteresultattype]]
+=== Krav til beskrivelse av en Tjenesteresultattype [[Krav-til-tjenesteresultattype]]
 
 [[Tabell-obligatoriske-opplysninger-tjenesteresultattype]]
 .Obligatoriske opplysningstyper som en beskrivelse av Tjenesteresultattype SKAL inneholde
