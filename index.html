@@ -579,11 +579,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Forenklet-fremstilling">2. Forenklet fremstilling av kravene i CPSV-AP-NO</a>
 <ul class="sectlevel2">
-<li><a href="#Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste">2.1. Opplysninger som SKAL, BØR og KAN tas med om en Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste</a></li>
-<li><a href="#Krav-til-hendelse-livshendelse-virksomhetshendelse">2.2. Opplysninger som SKAL, BØR og KAN tas med om en Hendelse, Livshendelse eller virksomhetshendelse</a></li>
-<li><a href="#Krav-til-dokumentasjonstype">2.3. Opplysninger som SKAL, BØR og KAN tas med om en Dokumentasjonstype</a></li>
-<li><a href="#Krav-til-tjenesteresultattype">2.4. Opplysninger som SKAL, BØR og KAN tas med om en Tjenesteresultattype</a></li>
-<li><a href="#Illustrativt-eksempel">2.5. Et illustrativt eksempel</a></li>
+<li><a href="#Krav-til-lovpålagt-tjeneste">2.1. Krav til beskrivelse av en Lovpålagt tjeneste</a></li>
+<li><a href="#Krav-til-tjeneste-offentlig-tjeneste">2.2. Krav til beskrivelse av en Tjeneste eller Offentlig tjeneste</a></li>
+<li><a href="#Krav-til-hendelse-livshendelse-virksomhetshendelse">2.3. Krav til beskrivelse av en Hendelse, Livshendelse eller virksomhetshendelse</a></li>
+<li><a href="#Krav-til-dokumentasjonstype">2.4. Krav til beskrivelse av en Dokumentasjonstype</a></li>
+<li><a href="#Krav-til-tjenesteresultattype">2.5. Krav til beskrivelse av en Tjenesteresultattype</a></li>
+<li><a href="#Illustrativt-eksempel">2.6. Et illustrativt eksempel</a></li>
 </ul>
 </li>
 <li><a href="#Spesifikasjon-per-klasse">3. Krav til RDF-representasjon av klassene i CPSV-AP-NO</a>
@@ -846,8 +847,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#OffentligTjeneste-obligatoriske-egenskaper">3.12.1. Obligatoriske egenskaper for klassen <em>Offentlig tjeneste</em></a>
 <ul class="sectlevel4">
-<li><a href="#OffentligTjeneste-beskrivelse">Offentlig tjeneste – beskrivelse (dct:description)</a></li>
 <li><a href="#OffentligTjeneste-ansvarlig-organisasjon">Offentlig tjeneste – ansvarlig organisasjon (cv:hasCompetentAuthority)</a></li>
+<li><a href="#OffentligTjeneste-beskrivelse">Offentlig tjeneste – beskrivelse (dct:description)</a></li>
 <li><a href="#OffentligTjeneste-har-mulig-tjenesteresultat">Offentlig tjeneste – har mulig tjenesteresultat (cpsvno:hasOutputType)</a></li>
 <li><a href="#OffentligTjeneste-identifikator">Offentlig tjeneste – identifikator (dct:identifier)</a></li>
 <li><a href="#OffentligTjeneste-kontaktpunkt">Offentlig tjeneste – kontaktpunkt (cv:contactPoint)</a></li>
@@ -1455,12 +1456,15 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 <p>Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (valgfrie) tas med i en beskrivelse av en hendelse / livshendelse / virksomhetshendelse og tjeneste / offentlig tjeneste / lovpålagt tjeneste er nærmere spesifisert i det følgende i dette kapittelet. Hvordan opplysningene skal representeres teknisk i RDF (<a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">Resource Description Framework &#x29C9;</a>) er spesifisert i <a href="#Spesifikasjon-per-klasse">Kapittel 3</a>, som også inneholder flere klasser som kan brukes i tillegg til de som er vist i <a href="#img-ForenkletModell">Figur 2</a> og beskrevet i dette kapittelet.</p>
 </div>
 <div class="sect2">
-<h3 id="Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste"><a class="link" href="#Krav-til-tjeneste-offentlig-tjeneste-lovpålagt-tjeneste">2.1. Opplysninger som SKAL, BØR og KAN tas med om en Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste</a></h3>
+<h3 id="Krav-til-lovpålagt-tjeneste"><a class="link" href="#Krav-til-lovpålagt-tjeneste">2.1. Krav til beskrivelse av en Lovpålagt tjeneste</a></h3>
 <div class="paragraph">
-<p><em><mark>@@@@@@ mangler Lovpålagt tjeneste, kommer</mark></em></p>
+<p>Lovpålagt tjeneste brukes til å ha generelle beskrivelser av en tjeneste som er lovpålagt, og som ikke er knyttet til en konkret, gitt offentlig organisasjon som yter tjenesten. Eksempel på en Lovpålagt tjeneste kan være «Skjenkebevilling», og tilsvarende Offentlige tjenester er «Skjenkebevilling i Brønnøykommune», «Skjenkebevilling i Oslokommune» osv. For beskrivelse av Offenlig tjeneste, se <a href="#Krav-til-tjeneste-offentlig-tjeneste"> 2.2</a>.</p>
 </div>
-<table id="Tabell-obligatoriske-opplysninger-tjenesteklassene" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 1. Obligatoriske opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste SKAL inneholde</caption>
+<div class="paragraph">
+<p>Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) tas med i en beskrivelse av en Lovpålagt tjeneste er nærmere spesifisert i tabellene under.</p>
+</div>
+<table id="Tabell-obligatoriske-opplysninger-lovpålagt-tjeneste" class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Tabell 1. Obligatoriske opplysningstyper som en beskrivelse av Lovpålagt tjeneste SKAL inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1476,8 +1480,193 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tekstlig beskrivelse av tjeneste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-beskrivelse"> 3.20.1.1</a>, <a href="#OffentligTjeneste-beskrivelse"> 3.12.1.1</a>, <a href="#LovpålagtTjeneste-beskrivelse"> 3.10.1.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tekstlig beskrivelse av tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-beskrivelse"> 3.10.1.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har mulig tjenesteresultat</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til type tjenesteresultat som lovpålagt tjeneste kan resultere i</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-har-mulig-tjenesteresultat"> 3.10.1.2</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifikator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unik identifikator for tjenesten, som regel opprettet automatisk av et system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-identifikator"> 3.10.1.3</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>kontaktpunkt</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir til kontaktpunkt for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-kontaktpunkt"> 3.10.1.4</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navn på tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-navn"> 3.10.1.5</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="Tabell-anbefalte-opplysninger-lovpålagt-tjeneste" class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Tabell 2. Anbefalte opplysningstyper som en beskrivelse av Lovpålagt tjeneste BØR inneholde</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 65%;">
+<col style="width: 15%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Anbefalt</th>
+<th class="tableblock halign-left valign-top">Forklaring</th>
+<th class="tableblock halign-left valign-top">Ref. til <a href="#Spesifikasjon-per-klasse">Kapittel 3</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>begrep</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til begrep som er viktig for å forstå tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-begrep"> 3.10.2.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dekningsområde</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir geografisk område som dekkes av tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-dekningsområde"> 3.10.2.2</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har dokumentasjonskrav</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til dokumentasjonskrav som gjelder for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-har-dokumentasjonskrav"> 3.10.2.3</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>hjemmeside</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til hjemmeside for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-hjemmeside"> 3.10.2.4</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>hovedformål</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir hovedformål for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-hovedformål"> 3.10.2.5</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>temaområde</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir temaområde som tjenesten dekker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-temaområde"> 3.10.2.6</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="Tabell-valgfrie-opplysninger-lovpålagt-tjeneste" class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Tabell 3. Valgfrie opplysningstyper som en beskrivelse av Lovpålagt tjeneste KAN inneholde</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 65%;">
+<col style="width: 15%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Valgfri</th>
+<th class="tableblock halign-left valign-top">Forklaring</th>
+<th class="tableblock halign-left valign-top">Ref. til <a href="#Spesifikasjon-per-klasse">Kapittel 3</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er del av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til en annen tjeneste som tjenesten kan være en del av</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-er-del-av"> 3.10.3.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er gruppert ved</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til hendelse som tjenesten kan være gruppert ved</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-er-gruppert-ved"> 3.10.3.2</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er klassifisert under</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-er-klassifisert-under"> 3.10.3.3</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>følger regel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til regel som gjelder for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-følger-regel"> 3.10.3.4</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har del</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til en annen tjeneste som er en del av tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-har-del"> 3.10.3.5</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har gebyr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir ev. gebyr for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-har-gebyr"> 3.10.3.6</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har krav</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til krav som skal oppfylles for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-har-krav"> 3.10.3.7</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har relatert regelverk</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til regelverk som tjenesten opererer under eller har som sin juridiske ramme, eller på andre måter er relatert til</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-har-relatert-regelverk"> 3.10.3.8</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>krever</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til andre tjenester som tjeneste krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-krever"> 3.10.3.9</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>målgruppe</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir målgruppe for tjeneste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-målgruppe"> 3.10.3.10</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>nøkkelord</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir nøkkelord som beskriver tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-nøkkelord"> 3.10.3.11</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sektor</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir industri/sektor som tjenesten er relatert til, eller er ment for</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-sektor"> 3.10.3.12</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="Krav-til-tjeneste-offentlig-tjeneste"><a class="link" href="#Krav-til-tjeneste-offentlig-tjeneste">2.2. Krav til beskrivelse av en Tjeneste eller Offentlig tjeneste</a></h3>
+<div class="paragraph">
+<p>Med «Offentlig tjeneste» (med stor forbokstav «T») menes en tjeneste som ytes av konkret, gitt offentlig organisasjon, og «Tjeneste» (med stor forbokstav «T») en tjeneste som ytes av en konkret, gitt ikke-offentlig aktør. For generelle beskrivelser av en lovpålagt tjeneste som ikke er knyttet til en konkret, gitt offentlig organisasjon, se <a href="#Krav-til-lovpålagt-tjeneste"> 2.1</a>. Eksempel på en Offentlig tjeneste kan være «Skjenkebevilling i Brønnøykommune», mens den tilsvarende Lovpålagte tjeneste er «Skjenkebevilling».</p>
+</div>
+<div class="paragraph">
+<p>Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) tas med i en beskrivelse av en Lovpålagt tjeneste er nærmere spesifisert i tabellene under. I tabellene under er ordet «tjeneste» (med liten forbokstav «t») brukt som samlebetegnelse for Tjeneste og Offentlig tjeneste.</p>
+</div>
+<table id="Tabell-obligatoriske-opplysninger-tjeneste-offentlig-tjeneste" class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Tabell 4. Obligatoriske opplysningstyper som en beskrivelse av Tjeneste eller Offentlig tjeneste SKAL inneholde</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 65%;">
+<col style="width: 15%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Obligatorisk</th>
+<th class="tableblock halign-left valign-top">Forklaring</th>
+<th class="tableblock halign-left valign-top">Ref. til <a href="#Spesifikasjon-per-klasse">Kapittel 3</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ansvarlig organisasjon</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Gjelder kun for Offentlig tjeneste) Refererer til offentiglig organisasjon som er ansvarlig for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#OffentligTjeneste-ansvarlig-organisasjon"> 3.12.1.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tekstlig beskrivelse av tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-beskrivelse"> 3.20.1.1</a>, <a href="#OffentligTjeneste-beskrivelse"> 3.12.1.2</a>, <a href="#LovpålagtTjeneste-beskrivelse"> 3.10.1.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eies av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Gjelder kun bare for Tjeneste) Refererer til aktøren som eier tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-eies-av"> 3.20.1.2</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har mulig tjenesteresultat</strong></p></td>
@@ -1499,20 +1688,10 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 <td class="tableblock halign-left valign-top"><p class="tableblock">Navn på tjenesten</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-navn"> 3.20.1.6</a>, <a href="#OffentligTjeneste-navn"> 3.12.1.6</a>, <a href="#LovpålagtTjeneste-navn"> 3.10.1.5</a></p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ansvarlig organisasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Gjelder kun for Offentlig tjeneste) Refererer til offentiglig organisasjon som er ansvarlig for tjenesten</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#OffentligTjeneste-ansvarlig-organisasjon"> 3.12.1.2</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>..</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">..</p></td>
-</tr>
 </tbody>
 </table>
-<table id="Tabell-anbefalte-opplysninger-tjenesteklassene" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 2. Anbefalte opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste BØR inneholde</caption>
+<table id="Tabell-anbefalte-opplysninger-tjeneste-offentlig-tjeneste" class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Tabell 5. Anbefalte opplysningstyper som en beskrivelse av Tjeneste eller Offentlig tjeneste BØR inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1525,9 +1704,51 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 <th class="tableblock halign-left valign-top">Ref. til <a href="#Spesifikasjon-per-klasse">Kapittel 3</a></th>
 </tr>
 </thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>begrep</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til begrep som er viktig for å forstå tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-begrep"> 3.20.2.1</a>, <a href="#OffentligTjeneste-begrep"> 3.12.2.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dekningsområde</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir geografisk område som dekkes av tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-dekningsområde"> 3.20.2.2</a>, <a href="#OffentligTjeneste-dekningsområde"> 3.12.2.2</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har dokumentasjonskrav</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til dokumentasjonskrav som gjelder for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-har-dokumentasjonskrav"> 3.20.2.3</a>, <a href="#OffentligTjeneste-har-dokumentasjonskrav"> 3.12.2.3</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>hjemmeside</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til hjemmeside for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-hjemmeside"> 3.20.2.4</a>, <a href="#OffentligTjeneste-hjemmeside"> 3.12.2.4</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>hovedformål</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Gjelder kun for Offentlig tjeneste) Angir hovedformål for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#OffentligTjeneste-hovedformål"> 3.12.2.5</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>realiserer</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Gjelder kun for Offentlig tjeneste) Refererer til Lovpålagt tjeneste som tjenesten realiserer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#OffentligTjeneste-realiserer"> 3.12.2.6</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir status for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-status"> 3.20.2.5</a>, <a href="#OffentligTjeneste-status"> 3.12.2.7</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>temaområde</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir temaområde som tjenesten dekker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-temaområde"> 3.20.2.6</a>, <a href="#OffentligTjeneste-temaområde"> 3.12.2.8</a></p></td>
+</tr>
+</tbody>
 </table>
-<table id="Tabell-valgfrie-opplysninger-tjenesteklassene" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 3. Valgfrie opplysningstyper som en beskrivelse av Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste KAN inneholde</caption>
+<table id="Tabell-valgfrie-opplysninger-tjeneste-offentlig-tjeneste" class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Tabell 6. Valgfrie opplysningstyper som en beskrivelse av Tjeneste eller Offentlig tjeneste KAN inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1540,12 +1761,109 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 <th class="tableblock halign-left valign-top">Ref. til <a href="#Spesifikasjon-per-klasse">Kapittel 3</a></th>
 </tr>
 </thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>behandlingstid</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Den estimerte behandlingstiden</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-behandlingstid"> 3.20.3.1</a>, <a href="#OffentligTjeneste-behandlingstid"> 3.12.3.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er beskrevet ved</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til datasett som tjenesten kan være beskrevet ved</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-er-beskrevet-ved"> 3.20.3.2</a>, <a href="#OffentligTjeneste-er-beskrevet-ved"> 3.12.3.2</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er del av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til en annen tjeneste som tjenesten kan være en del av</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-er-del-av"> 3.20.3.3</a>, <a href="#OffentligTjeneste-er-del-av"> 3.12.3.3</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er gruppert ved</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til hendelse som tjenesten kan være gruppert ved</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-er-gruppert-ved"> 3.20.3.4</a>, <a href="#OffentligTjeneste-er-gruppert-ved"> 3.12.3.4</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er klassifisert under</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-er-klassifisert-under"> 3.20.3.5</a>, <a href="#OffentligTjeneste-er-klassifisert-under"> 3.12.3.5</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er tilgjengelig via</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angir tjenestekanaler som tjenesten er tilgjengelig gjennom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-er-tilgjengelig-via"> 3.20.3.6</a>, <a href="#OffentligTjeneste-er-tilgjengelig-via"> 3.12.3.6</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>følger regel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til regel som gjelder for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-følger-regel"> 3.20.3.7</a>, <a href="#OffentligTjeneste-følger-regel"> 3.12.3.7</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har del</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til en annen tjeneste som er en del av tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-har-del"> 3.20.3.8</a>, <a href="#OffentligTjeneste-har-del"> 3.12.3.8</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har deltagelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Knytter til aktører som deltar i eller samhandler med tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-har-deltagelse"> 3.20.3.9</a>, <a href="#OffentligTjeneste-har-deltagelse"> 3.12.3.9</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har gebyr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir ev. gebyr for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-har-gebyr"> 3.20.3.10</a>, <a href="#OffentligTjeneste-har-gebyr"> 3.12.3.10</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har krav</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til krav som skal oppfylles for tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-har-krav"> 3.20.3.11</a>, <a href="#OffentligTjeneste-har-krav"> 3.12.3.11</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har relatert regelverk</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til regelverk som tjenesten opererer under eller har som sin juridiske ramme, eller på andre måter er relatert til</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-har-relatert-regelverk"> 3.20.3.12</a>, <a href="#OffentligTjeneste-har-relatert-regelverk"> 3.12.3.12</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>krever</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til andre tjenester som tjeneste krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-krever"> 3.20.3.13</a>, <a href="#OffentligTjeneste-krever"> 3.12.3.13</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>målgruppe</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir målgruppe for tjeneste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-målgruppe"> 3.20.3.14</a>, <a href="#OffentligTjeneste-målgruppe"> 3.12.3.14</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>nøkkelord</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir nøkkelord som beskriver tjenesten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-nøkkelord"> 3.20.3.15</a>, <a href="#OffentligTjeneste-nøkkelord"> 3.12.3.15</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>relatert tjeneste</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til andre tjenester som tjenesten relaterer til</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-relatert-tjeneste"> 3.20.3.16</a>, <a href="#OffentligTjeneste-relatert-tjeneste"> 3.12.3.16</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sektor</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir industri/sektor som tjenesten er relatert til, eller er ment for</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-sektor"> 3.20.3.17</a>, <a href="#OffentligTjeneste-sektor"> 3.12.3.17</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>språk</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppgir språk tjenesten er tilgjengelig på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-språk"> 3.20.3.18</a>, <a href="#OffentligTjeneste-språk"> 3.12.3.18</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Gjelder kun for Tjeneste) Oppgir type som tjenesten tilhører</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Tjeneste-type"> 3.20.3.19</a></p></td>
+</tr>
+</tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="Krav-til-hendelse-livshendelse-virksomhetshendelse"><a class="link" href="#Krav-til-hendelse-livshendelse-virksomhetshendelse">2.2. Opplysninger som SKAL, BØR og KAN tas med om en Hendelse, Livshendelse eller virksomhetshendelse</a></h3>
+<h3 id="Krav-til-hendelse-livshendelse-virksomhetshendelse"><a class="link" href="#Krav-til-hendelse-livshendelse-virksomhetshendelse">2.3. Krav til beskrivelse av en Hendelse, Livshendelse eller virksomhetshendelse</a></h3>
 <table id="Tabell-obligatoriske-opplysninger-hendelsesklassene" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 4. Obligatoriske opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse SKAL inneholde</caption>
+<caption class="title">Tabell 7. Obligatoriske opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse SKAL inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1572,7 +1890,7 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </tbody>
 </table>
 <table id="Tabell-anbefalte-opplysninger-hendelsesklassene" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 5. Anbefalte opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse BØR inneholde</caption>
+<caption class="title">Tabell 8. Anbefalte opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse BØR inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1604,7 +1922,7 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </tbody>
 </table>
 <table id="Tabell-valgfrie-opplysninger-hendelsesklassene" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 6. Valgfrie opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse KAN inneholde</caption>
+<caption class="title">Tabell 9. Valgfrie opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse KAN inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1637,9 +1955,9 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </table>
 </div>
 <div class="sect2">
-<h3 id="Krav-til-dokumentasjonstype"><a class="link" href="#Krav-til-dokumentasjonstype">2.3. Opplysninger som SKAL, BØR og KAN tas med om en Dokumentasjonstype</a></h3>
+<h3 id="Krav-til-dokumentasjonstype"><a class="link" href="#Krav-til-dokumentasjonstype">2.4. Krav til beskrivelse av en Dokumentasjonstype</a></h3>
 <table id="Tabell-obligatoriske-opplysninger-dokumentasjonstype" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 7. Obligatoriske opplysningstyper som en beskrivelse av Dokumentasjonstype SKAL inneholde</caption>
+<caption class="title">Tabell 10. Obligatoriske opplysningstyper som en beskrivelse av Dokumentasjonstype SKAL inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1671,7 +1989,7 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </tbody>
 </table>
 <table id="Tabell-anbefalte-opplysninger-dokumentasjonstype" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 8. Anbefalte opplysningstyper som en beskrivelse av Dokumentasjonstype BØR inneholde</caption>
+<caption class="title">Tabell 11. Anbefalte opplysningstyper som en beskrivelse av Dokumentasjonstype BØR inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1698,7 +2016,7 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </tbody>
 </table>
 <table id="Tabell-valgfrie-opplysninger-dokumentasjonstype" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 9. Valgfrie opplysningstyper som en beskrivelse av Dokumentasjonstype KAN inneholde</caption>
+<caption class="title">Tabell 12. Valgfrie opplysningstyper som en beskrivelse av Dokumentasjonstype KAN inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1741,9 +2059,9 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </table>
 </div>
 <div class="sect2">
-<h3 id="Krav-til-tjenesteresultattype"><a class="link" href="#Krav-til-tjenesteresultattype">2.4. Opplysninger som SKAL, BØR og KAN tas med om en Tjenesteresultattype</a></h3>
+<h3 id="Krav-til-tjenesteresultattype"><a class="link" href="#Krav-til-tjenesteresultattype">2.5. Krav til beskrivelse av en Tjenesteresultattype</a></h3>
 <table id="Tabell-obligatoriske-opplysninger-tjenesteresultattype" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 10. Obligatoriske opplysningstyper som en beskrivelse av Tjenesteresultattype SKAL inneholde</caption>
+<caption class="title">Tabell 13. Obligatoriske opplysningstyper som en beskrivelse av Tjenesteresultattype SKAL inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1770,7 +2088,7 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </tbody>
 </table>
 <table id="Tabell-anbefalte-opplysninger-tjenesteresultattype" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 11. Anbefalte opplysningstyper som en beskrivelse av Tjenesteresultattype BØR inneholde</caption>
+<caption class="title">Tabell 14. Anbefalte opplysningstyper som en beskrivelse av Tjenesteresultattype BØR inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1792,7 +2110,7 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </tbody>
 </table>
 <table id="Tabell-valgfrie-opplysninger-tjenesteresultattype" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 12. Valgfrie opplysningstyper som en beskrivelse av Tjenesteresultattype KAN inneholde</caption>
+<caption class="title">Tabell 15. Valgfrie opplysningstyper som en beskrivelse av Tjenesteresultattype KAN inneholde</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 65%;">
@@ -1830,7 +2148,7 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 </table>
 </div>
 <div class="sect2">
-<h3 id="Illustrativt-eksempel"><a class="link" href="#Illustrativt-eksempel">2.5. Et illustrativt eksempel</a></h3>
+<h3 id="Illustrativt-eksempel"><a class="link" href="#Illustrativt-eksempel">2.6. Et illustrativt eksempel</a></h3>
 <div class="paragraph">
 <p><a href="#img-SyktBarn">Figur 3</a> viser et illustrativt eksempel:</p>
 </div>
@@ -2732,7 +3050,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <a href="#OffentligTjeneste-ansvarlig-organisasjon"> 3.12.1.2, &#8220;Offentlig tjeneste – ansvarlig organisasjon (cv:hasCompetentAuthority)&#8221;</a>) eller tjenesteeieren (jf. <a href="#Tjeneste-eies-av"> 3.20.1.2, &#8220;Tjeneste – eies av (cv:ownedBy)&#8221;</a>), som er involvert i en tjeneste.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en deltagelse, som brukes til å inkludere andre aktører enn det kompetente organet (jf. <a href="#OffentligTjeneste-ansvarlig-organisasjon"> 3.12.1.1, &#8220;Offentlig tjeneste – ansvarlig organisasjon (cv:hasCompetentAuthority)&#8221;</a>) eller tjenesteeieren (jf. <a href="#Tjeneste-eies-av"> 3.20.1.2, &#8220;Tjeneste – eies av (cv:ownedBy)&#8221;</a>), som er involvert i en tjeneste.</p>
 <p class="tableblock"><em>The CPSV-AP recognises a common role connected with public services, i.e. the Competent Authority. However, this simple structure does not allow statements to be made about those participants, such as the start and end date of a contract, nor does it support the inclusion of other roles. The Participation class supports this extra complexity if required, for instance, the description of a service user or a service provider.</em></p></td>
 </tr>
 <tr>
@@ -7394,56 +7712,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="sect3">
 <h4 id="OffentligTjeneste-obligatoriske-egenskaper"><a class="link" href="#OffentligTjeneste-obligatoriske-egenskaper">3.12.1. Obligatoriske egenskaper for klassen <em>Offentlig tjeneste</em></a></h4>
 <div class="sect4">
-<h5 id="OffentligTjeneste-beskrivelse"><a class="link" href="#OffentligTjeneste-beskrivelse">3.12.1.1. Offentlig tjeneste – beskrivelse (dct:description)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>description</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en tekstlig beskrivelse av tjenesten. Egenskapen BØR gjentas når beskrivelsen finnes på flere språk.</p>
-<p class="tableblock"><em>This property represents a free text Description of the Public Service. This property SHOULD be repeated when the text is in parallel languages.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
-   dct:description "Bevilling for skjenking av alkoholholdig drikk, enten som alminnelig bevilling eller som bevilling for lukket selskap."@nb ; .</pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="OffentligTjeneste-ansvarlig-organisasjon"><a class="link" href="#OffentligTjeneste-ansvarlig-organisasjon">3.12.1.2. Offentlig tjeneste – ansvarlig organisasjon (cv:hasCompetentAuthority)</a></h5>
+<h5 id="OffentligTjeneste-ansvarlig-organisasjon"><a class="link" href="#OffentligTjeneste-ansvarlig-organisasjon">3.12.1.1. Offentlig tjeneste – ansvarlig organisasjon (cv:hasCompetentAuthority)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7493,6 +7762,55 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    cv:hasCompetentAuthority &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/964983291&gt; ; . # Brønnøy kommune</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="OffentligTjeneste-beskrivelse"><a class="link" href="#OffentligTjeneste-beskrivelse">3.12.1.2. Offentlig tjeneste – beskrivelse (dct:description)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>description</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en tekstlig beskrivelse av tjenesten. Egenskapen BØR gjentas når beskrivelsen finnes på flere språk.</p>
+<p class="tableblock"><em>This property represents a free text Description of the Public Service. This property SHOULD be repeated when the text is in parallel languages.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bevilling for skjenking av alkoholholdig drikke, enten som alminnelig bevilling eller som bevilling for lukket selskap.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
+   dct:description "Bevilling for skjenking av alkoholholdig drikk, enten som alminnelig bevilling eller som bevilling for lukket selskap."@nb ; .</pre>
 </div>
 </div>
 </div>
@@ -15416,7 +15734,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2026-03-11 14:21:18 UTC
+Sist oppdatert 2026-03-12 07:23:05 UTC
 </div>
 </div>
 </body>
