@@ -24,9 +24,9 @@ Eksempel i RDF Turtle:
   cpsvno:mayTriggerNeedFor <legetjeneste> .
 
 <legetjeneste> a cpsv:PublicService ;
-  cpsvno:hasPossibleOutput <e-resept> .
+  cpsvno:hasOutputType <e-resept> .
 
-<e-resept> a cpsvno:PossibleOutput ;
+<e-resept> a cpsvno:OutputType ;
   xkos:causes <e-reseptSendt> .
 
 <e-reseptSendt> a cv:Event ;
