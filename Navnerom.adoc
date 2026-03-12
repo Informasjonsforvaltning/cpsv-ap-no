@@ -1,13 +1,12 @@
 == Vedlegg A – Navnerom som er brukt i spesifikasjonen [[Navnerom]]
 
-_#@@@@@@ NB! Oversikten er ikke helt oppdatert enda - endringer kan komme#_
-
 Navnerom for dette vokabularet er: `\https://data.norge.no/vocabulary/cpsvno#`
 
 [cols="10s,45d,45d"]
 |===
 |Prefiks |*Navnerom* |*Forklaring/navn*
 |adms | `\http://www.w3.org/ns/adms#` | https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema &#x29C9;, window="_blank", role="ext-link"]
+| cccevno | `\https://data.norge.no/vocabulary/cccevno#` | https://informasjonsforvaltning.github.io/cccev-ap-no/[CCCEV-AP-NO &#x29C9;, window="_blank", role="ext-link"]
 |cpsv | `\http://purl.org/vocab/cpsv#` | https://joinup.ec.europa.eu/interoperable-europe/core-public-service-vocabulary-application-profile-cpsv-ap[Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"]
 |cpsvno | `\https://data.norge.no/vocabulary/cpsvno#` | Norsk applikasjonsprofil av CPSV-AP, denne spesifikasjonen
 |cv | `\http://data.europa.eu/m8g/` | https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies[e-Government Core Vocabularies &#x29C9;, window="_blank", role="ext-link"]
