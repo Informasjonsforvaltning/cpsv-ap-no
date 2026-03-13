@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-Som illustrert i <<img-TjenesteOgRegelverk>> kan regelverk knyttes til en tjeneste eller offentlig tjeneste, ved å bruke egenskapene «følger regel (cpsv:follows)» og/eller «har relatert regelverk (cv:hasLegalResource)» i klassen <<Tjeneste, Tjeneste>> eller <<OffentligTjeneste, Offentlig tjeneste>>.
+Som illustrert i <<img-TjenesteOgRegelverk>> kan regelverk knyttes til en Tjeneste, Offentlig tjeneste eller Lovpålagt tjeneste, ved å bruke egenskapene «følger regel (cpsv:follows)» og/eller «har relatert regelverk (cv:hasLegalResource)» i klassen <<Tjeneste, Tjeneste>>, <<OffentligTjeneste, Offentlig tjeneste>> eller <<LovpålagtTjeneste, Lovpålagt tjeneste>>. Egenskapene kan brukes hver for seg eller sammen, avhengig av hva som er mest hensiktsmessig i det enkelte tilfelle.
 
 [[img-TjenesteOgRegelverk]]
 .Tjeneste og regelverk.
@@ -13,7 +13,7 @@ Eksempel: Tjenesten «Skjenkebevilling» er hjemlet i «Lov om omsetning av alko
 
 Eksempel i RDF Turtle:
 -----
-<skjenkebevilling> a cpsv:PublicService ;
+<skjenkebevilling> a cpsvno:StatutoryService ; # lovpålagt tjeneste
    cv:hasLegalResource <alkoholloven> ; .
 
 <alkoholloven> a eli:LegalResource ; # regulativ ressurs
