@@ -24,6 +24,7 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 
 * Det KAN være *dokumentasjonskrav* til en tjeneste / offentlig tjeneste / lovpålagt tjeneste.
 ** Dokumentasjonstype som kreves KAN være beskrevet ved et datasett. 
+** Se https://informasjonsforvaltning.github.io/cccev-ap-no/[Spesifikasjon for beskrivelse av krav og kravoppfyllelse (CCCEV-AP-NO) &#x29C9;, window="_blank", role="ext-link"] for hvordan krav og kravoppfyllelelse beskrives på en strukturert og maskinlesbar måte. CCCEV-AP-NO kan altså brukes til å beskrive krav/vilkår som skal oppfylles, og hvordan den påkvede dokumentasjonen kan gi opplysninger som kan brukes til å evaluere kravoppfyllelse. 
 
 Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (valgfrie) tas med i en beskrivelse av en hendelse / livshendelse / virksomhetshendelse og tjeneste / offentlig tjeneste / lovpålagt tjeneste er nærmere spesifisert i det følgende i dette kapittelet. Hvordan opplysningene skal representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert i <<Spesifikasjon-per-klasse>>, som også inneholder flere klasser som kan brukes i tillegg til de som er vist i <<img-ForenkletModell>> og beskrevet i dette kapittelet.
 
