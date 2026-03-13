@@ -15174,10 +15174,10 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="title">Figur 35. Tjeneste og Deltagelse.</div>
 </div>
 <div class="paragraph">
-<p>Som illustrert i <a href="#img-FigurTjenesteOgDeltagelse">Figur 35</a> brukes egenskapen <a href="#Tjeneste-eies-av">Tjeneste – eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste (<code>cpsvno:Service</code>) og dens eier (en Organisasjon, <code>Org:Organization</code>), og egenskapen <a href="#OffentligTjeneste-ansvarlig-organisasjon">Offentlig tjeneste – ansvarlig organisasjon (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste (<code>cpsv:PublicService</code>) og dens kompetente organ (en Offentlig organisasjon, <code>cv:PublicOrganisation</code>).</p>
+<p>Som illustrert i <a href="#img-FigurTjenesteOgDeltagelse">Figur 35</a> brukes egenskapen <a href="#Tjeneste-eies-av">Tjeneste – eies av (cv:ownedBy)</a> til å uttrykke relasjonen mellom en Tjeneste (<code>cpsvno:Service</code>) og dens eier (en Organisasjon, <code>Org:Organization</code>), og egenskapen <a href="#OffentligTjeneste-ansvarlig-organisasjon">Offentlig tjeneste – ansvarlig organisasjon (cv:hasCompetentAuthority)</a> til å uttrykke relasjonen mellom en Offentlig tjeneste (<code>cpsv:PublicService</code>) og den ansvarlige organisasjonen (en Offentlig organisasjon, <code>cv:PublicOrganisation</code>) for tjenesten.</p>
 </div>
 <div class="paragraph">
-<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse">Klassen Deltagelse (cv:Participation)</a>. En Tjeneste kan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-har-deltagelse">Tjeneste – har deltagelse (cv:hasParticipation)</a> (eller egenskapen <a href="#OffentligTjeneste-har-deltagelse">Offentlig tjeneste – har deltagelse (cv:hasParticipation)</a>). En Aktør (inkl. Organisasjon og Offentlig organisasjon) kan delta i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-deltar-i">Aktør – deltar i (cv:participates)</a> (eller <a href="#Organisasjon-deltar-i">Organisasjon – deltar i (cv:participates)</a>, <a href="#OffentligOrganisasjon-deltar-i">Offentlig organisasjon – deltar i (cv:participates)</a>).</p>
+<p>For å uttrykke involvering av andre aktører (inkl. andre offentlige organisasjoner) enn ovennevnte, brukes <a href="#Deltagelse">Klassen Deltagelse (cv:Participation)</a>. En Tjeneste eller Offentlig tjenestekan ha en eller flere Deltagelser knyttet til seg, og dette uttrykkes ved bruk av egenskapen <a href="#Tjeneste-har-deltagelse">Tjeneste – har deltagelse (cv:hasParticipation)</a> eller egenskapen <a href="#OffentligTjeneste-har-deltagelse">Offentlig tjeneste – har deltagelse (cv:hasParticipation)</a>. En Aktør (inkl. Organisasjon og Offentlig organisasjon) kan delta i en eller flere Deltagelser, og dette uttrykkes ved bruk av egenskapen <a href="#Aktør-deltar-i">Aktør – deltar i (cv:participates)</a> (eller <a href="#Organisasjon-deltar-i">Organisasjon – deltar i (cv:participates)</a>, <a href="#OffentligOrganisasjon-deltar-i">Offentlig organisasjon – deltar i (cv:participates)</a>).</p>
 </div>
 <div class="paragraph">
 <p>Den obligatoriske egenskapen <a href="#Deltagelse-rolle">Deltagelse – rolle (cv:role)</a> skal brukes til å beskrive en eller flere roller i en Deltagelse, f.eks. «dataleverandør» (leverandør av f.eks. datasett som bekreftelse på at et dokumentasjonskrav er oppfylt), og «datakonsument» (konsument av datasett som produseres av tjenesten).</p>
@@ -15190,11 +15190,11 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;skjenkebevilling&gt; a cpsv:PublicService ;
+<pre>&lt;skjenkebevillingOslokommune&gt; a cpsv:PublicService ;
    cv:hasParticipation &lt;deltagendeDataleverandør&gt; ; .
 
 &lt;deltagendeDataleverandør&gt; a cv:Participation ;
-   dct:description "deltagende dataleverandør til tjenesten Skjenkebevilling"@nb ;
+   dct:description "deltagende dataleverandør til tjenesten Skjenkebevilling i Oslo kommune"@nb ;
    cv:role &lt;https://data.norge.no/vocabulary/role-type#data-provider&gt; ; # dataleverandør
    cv:hasParticipant &lt;Brønnøysundregistrene&gt; ;
    .
@@ -15643,7 +15643,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2026-03-13 08:16:09 UTC
+Sist oppdatert 2026-03-13 08:25:36 UTC
 </div>
 </div>
 </body>
