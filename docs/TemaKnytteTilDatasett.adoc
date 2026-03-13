@@ -8,7 +8,7 @@
 image::images/FigurTjenesteMedDataInnOgUt.png[alt="UML-diagram med seks klasser og relasjoner imellom klassene. Innholdet i diagrammet er forklart i teksten."]
 
 
-Som illustrert i <<img-TjenesteOgData>>, kan en Tjenesteresultattype (`cpsvno:OutputType`) fra en Tjeneste (`cpsvno:Service`), Offentlig tjeneste (`cpsv:PublicService`) eller en Lovpålagt tjeneste (cpsvno:StatutoryService) være beskrevet ved et eller flerer Datasett (`dcat:Dataset`). F.eks.  «Bevilling» som en type mulig tjenesteresultat fra Lovpålagt tjeneste «Skjenkebevilling» kan være beskrevet ved et datasett over alle skjenkebevillinger. 
+Som illustrert i <<img-TjenesteOgData>>, kan en Tjenesteresultattype (`cpsvno:OutputType`) fra en Tjeneste (`cpsvno:Service`), Offentlig tjeneste (`cpsv:PublicService`) eller en Lovpålagt tjeneste (`cpsvno:StatutoryService`) være beskrevet ved et eller flerer Datasett (`dcat:Dataset`). F.eks.  «Bevilling» som en type mulig tjenesteresultat fra en Lovpålagt tjeneste «Skjenkebevilling» kan være beskrevet ved et datasett over alle skjenkebevillinger. 
 
 Figuren illustrerer også at en Dokumentasjonstype (`cv:EvidenceType`) kan være beskrevet ved et eller flere Datasett (`dcat:Dataset`). F.eks. «firmaattest» kan være beskrevet ved datasettet «Foretaksregisteret» hos Brønnøysundregistrene. 
 
