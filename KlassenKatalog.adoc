@@ -73,7 +73,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | _English name_ | _contains service_
 | URI | dcatno:containsService
 | Subegenskap av / _Subproperty of_ | dct:hasPart
-| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>
+| Verdiområde / _Range_ | <<Tjeneste, cpsvno:Service>>, <<OffentligTjeneste, cpsv:PublicService>>, <<LovpålagtTjeneste, cpsvno:StatutoryService>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en tjeneste som er i katalogen.
 
 _This property refers to a service that is in the catalog._
@@ -254,7 +254,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | _English name_ | _contains event_
 | URI | dcatno:containsEvent
 | Subegenskap av / _Subproperty of_ | dct:hasPart
-| Verdiområde / _Range_ | <<Hendelse, cv:Event>>
+| Verdiområde / _Range_ | <<Hendelse, cv:Event>>, <<Livshendelse, cv:LifeEvent>>, <<Virksomhetshendelse, cv:BusinessEvent>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en hendelse som er i katalogen.
 
 _This property refers to an event that is in the catalog._
