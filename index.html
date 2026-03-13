@@ -1183,8 +1183,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#KnytteTilRegelverk">4.5. Å knytte en tjeneste til regelverk</a></li>
 <li><a href="#KnytteDeltagendeAktørerTilEnTjeneste">4.6. Å knytte deltagende aktører til en tjeneste</a></li>
 <li><a href="#KnytteTilDatatjeneste">4.7. Å knytte en tjenestekanal til en datatjeneste (også kalt API)</a></li>
-<li><a href="#Å-beskrive-dokumentasjonskrav">4.8. Å beskrive dokumentasjonskrav</a></li>
-<li><a href="#BeskriveEnKatalog">4.9. Å beskrive en tjeneste-/hendelseskatalog</a></li>
+<li><a href="#BeskriveEnKatalog">4.8. Å beskrive en tjeneste-/hendelseskatalog</a></li>
 </ul>
 </li>
 <li><a href="#Navnerom">Vedlegg A – Navnerom som er brukt i spesifikasjonen</a></li>
@@ -15212,136 +15211,12 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Å-beskrive-dokumentasjonskrav"><a class="link" href="#Å-beskrive-dokumentasjonskrav">4.8. Å beskrive dokumentasjonskrav</a></h3>
-<div class="paragraph">
-<p>Spesifikasjonen gjør det mulig å beskrive et dokumentasjonskrav strukturert og dermed også maskinprosesserbart.</p>
-</div>
-<div id="img-FigurEksempelDokumentasjonskrav" class="imageblock">
-<div class="content">
-<a class="image" href="images/FigurEksempelDokumentasjonskrav.png"><img src="images/FigurEksempelDokumentasjonskrav.png" alt="RDF-graf med ni RDF-noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."></a>
-</div>
-<div class="title">Figur 36. Eksempel - beskrivelse av «alderskrav» til tjenesten «prøvingsattest».</div>
-</div>
-<div class="paragraph">
-<p><a href="#img-FigurEksempelDokumentasjonskrav">Figur 36</a> Viser et eksempel på å beskrive et av kravene som skal oppfylles for å kunne utføre tjenesten <a href="https://www.skatteetaten.no/skjema/provingsattest/" class="ext-link" target="_blank" rel="noopener">«prøvingsattest» &#x29C9;</a> som Skatteetaten tilbyr.</p>
-</div>
-<div class="paragraph">
-<p><a href="#img-FigurEksempelDokumentasjonskrav">Figur 36</a> forklares som følger (numrene refererer til de samme numrene i figuren):</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Tjenesten «Prøvingsattest» har «Vilkår for å inngå ekteskap» som krav.</p>
-</li>
-<li>
-<p>«Vilkår for å inngå ekteskap» har et mer spesifikt informasjonskrav «Alderskrav».</p>
-</li>
-<li>
-<p>«Alderskrav» refererer til informasjonsbegrepet «Alder».</p>
-</li>
-<li>
-<p>«Alderskrav» har også en mer spesifikk begrensning «Ikke under 18 år».</p>
-</li>
-<li>
-<p>Begrensningen «Ikke under 18 år» begrenser informasjonsbegrepet «Alder».</p>
-</li>
-<li>
-<p>«Alderskrav» bruker en liste over lovlige dokumentasjonstyper.</p>
-</li>
-<li>
-<p>På dokumentasjonstypelisten finner man «Attest».</p>
-</li>
-<li>
-<p>Tjenesten «Prøvingsattest» har «Attest» som sin dokumentasjonstype.</p>
-</li>
-<li>
-<p>Tjenesten «Prøvingsattest» har «Fødselsattest» som en påkrevd dokumentasjon.</p>
-</li>
-<li>
-<p>«Fødselsattest» er i samsvar med det som er spesifisert som lovlig dokumentasjonstype.</p>
-</li>
-<li>
-<p>«Fødselsattest» understøtter informasjonskrav «Alderskrav».</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Som illustrert i <a href="#img-FigurEksempelDokumentasjonskrav2">Figur 37</a>, er det også mulig å knytte kravene illustrert i eksemplet ovenfor, til aktuell lovgivning: «Vilkår for å inngå ekteskap» er utledet fra kapittel 1 i ekteskapsloven, og «Alderskrav» og begrensningen «Ikke under 18 år» er utledet fra §1a i ekteskapsloven.</p>
-</div>
-<div id="img-FigurEksempelDokumentasjonskrav2" class="imageblock">
-<div class="content">
-<a class="image" href="images/FigurEksempelDokumentasjonskrav2.png"><img src="images/FigurEksempelDokumentasjonskrav2.png" alt="RDF-graf med seks noder og relasjoner imellom nodene. Innholdet i grafen er forklart i teksten."></a>
-</div>
-<div class="title">Figur 37. Eksempel på å knytte dokumentasjonskrav til lovgivning.</div>
-</div>
-<div class="paragraph">
-<p>Eksemplet i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;prøvingsattest&gt; a cpsv:PublicService ; # offentlig tjeneste
-   dct:title "Prøvingsattest"@nb ; # navn
-   cv:holdsRequirement &lt;vilkårForÅInngåEkteskap&gt; ; # har krav
-   cv:hasInputType &lt;attest&gt; ; # har dokumentasjonstype
-   cpsvno:hasRequiredEvidence &lt;fødselsattest&gt; ; # har påkrevd dokumentasjon
-   .
-
-&lt;vilkårForÅInngåEkteskap&gt; a cv:Criterion ; # kriterium
-   dct:title "Vilkår for å inngå ekteskap"@nb ; # navn
-   cv:isDerivedFrom &lt;ekteskapsloven1a&gt; ; # er utledet fra
-   cv:hasRequirement &lt;alderskrav&gt; ; # har mer spesifikt krav
-   .
-
-&lt;alderskrav&gt; a cv:InformationRequirement ;  # informasjonskrav
-   dct:title "Alderskrav"@nb ; # navn
-   cv:isDerivedFrom &lt;ekteskapsloven1a&gt; ; # er utledet fra
-   cv:hasRequirement &lt;ikkeUnder18&gt; ; # har mer spesifikt krav
-   cv:hasEvidenceTypeList &lt;typeListeAttest&gt; ; # har dokumentasjonstypeliste
-   .
-
-&lt;ikkeUnder18&gt; a cv:Constraint ; # begrensning
-   dct:title "Ikke under 18 år" ; # navn
-   cv:isDerivedFrom &lt;ekteskapsloven1a&gt; ;
-   cv:constrains &lt;alder&gt; ; # begrenser
-   .
-
-&lt;ekteskapsloven1a&gt; a cv:ReferenceFramework ; # referanserammeverk
-   dct:identifier &lt;https://lovdata.no/lov/1991-07-04-47/§1a&gt; ; # identifikator
-   .
-
-&lt;alder&gt; a cv:InformationConcept ; # informasjonsbegrep
-   dct:title "Alder"@nb ; # navn
-   .
-
-&lt;typeListeAttest&gt; a cv:EvidenceTypeList ; #dokumentasjonstypeliste
-   skos:prefLabel "Attest"@nb ; # navn
-   cv:specifiesEvidenceType &lt;typeAttest&gt; ; # spesifiserer
-   .
-
-&lt;typeAttest&gt; a cv:EvidenceType ; # dokumentasjonstype
-   cv:evidenceTypeClassification &lt;attest&gt; ; # dokumentasjonstypekategori
-   .
-
-&lt;attest&gt; a skos:Concept ; # begrep
-   skos:prefLabel "attest"@nb ; # navn
-   .
-
-&lt;fødselsattest&gt; a cpsvno:RequiredEvidence ; # påkrevd dokumentasjon
-   dct:description "Fødselsattest som dokumentasjon på alder"@nb ; # beskrivelse
-   dct:title "Fødselsattest"@nb ; # navn
-   dct:conformsTo &lt;attest&gt; ; # i samsvar med
-   cv:supportsRequirement &lt;alderskrav&gt; ; # understøtter krav
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="BeskriveEnKatalog"><a class="link" href="#BeskriveEnKatalog">4.9. Å beskrive en tjeneste-/hendelseskatalog</a></h3>
+<h3 id="BeskriveEnKatalog"><a class="link" href="#BeskriveEnKatalog">4.8. Å beskrive en tjeneste-/hendelseskatalog</a></h3>
 <div id="img-Katalogbeskrivelse" class="imageblock">
 <div class="content">
 <a class="image" href="images/FigurKatalog.png"><img src="images/FigurKatalog.png" alt="UML-diagram med sju klasser og relasjoner imellom klassene. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 38. Katalogbeskrivelse.</div>
+<div class="title">Figur 36. Katalogbeskrivelse.</div>
 </div>
 <div class="paragraph">
 <p>EUs CPSV-AP som spesifikasjonen baseres på, dekker bare behov for beskrivelse av hendelser og offentlige tjenester. For å beskrive en katalog over tjenester og hendelser, og som en norsk utvidelse til CPSV-AP, gjenbruker spesifikasjonen klassen Katalog (<code>dcat:Catalog</code>) fra <a href="https://data.norge.no/specification/dcat-ap-no/" class="ext-link" target="_blank" rel="noopener">DCAT-AP-NO &#x29C9;</a>. Spesifikasjonen utvider også klassen Katalog med egenskapene <a href="#Katalog-inneholder-tjeneste">Katalog – inneholder tjeneste (dcatno:containsService)</a> og <a href="#Katalog-inneholder-hendelse">Katalog – inneholder hendelse (dcatno:containsEvent)</a>, som brukes til å inkludere tjenestebeskrivelser og hendelsesbeskrivelser i katalogen.</p>
@@ -15768,7 +15643,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2026-03-13 07:10:47 UTC
+Sist oppdatert 2026-03-13 07:12:44 UTC
 </div>
 </div>
 </body>
