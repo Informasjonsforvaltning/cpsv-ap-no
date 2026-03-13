@@ -24,13 +24,13 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 
 * Det KAN være *dokumentasjonskrav* til en tjeneste / offentlig tjeneste / lovpålagt tjeneste.
 ** Dokumentasjonstype som kreves KAN være beskrevet ved et datasett. 
-** Se https://informasjonsforvaltning.github.io/cccev-ap-no/[Spesifikasjon for beskrivelse av krav og kravoppfyllelse (CCCEV-AP-NO) &#x29C9;, window="_blank", role="ext-link"] for hvordan krav og kravoppfyllelse beskrives på en strukturert og maskinlesbar måte. CCCEV-AP-NO kan altså brukes til å beskrive krav/vilkår som skal oppfylles, og hvordan den påkrevde dokumentasjonen kan gi opplysninger som kan brukes til å evaluere kravoppfyllelse. 
+** For å, på en strukturert og maskinlesbar måte, beskrive krav/vilkår (f.eks. «søkeren skal være over 18 år») som skal oppfylles, og hvordan den påkrevde dokumentasjonen (f.eks. søkerens ID-kort) kan gi opplysninger som kan brukes til å evaluere kravoppfyllelse, bør https://informasjonsforvaltning.github.io/cccev-ap-no/[Spesifikasjon for beskrivelse av krav og kravoppfyllelse (CCCEV-AP-NO) &#x29C9;, window="_blank", role="ext-link"] brukes. 
 
 Hvilke typer opplysninger som SKAL (obligatoriske), BØR (anbefalte) og KAN (valgfrie) tas med i en beskrivelse av en hendelse / livshendelse / virksomhetshendelse og tjeneste / offentlig tjeneste / lovpålagt tjeneste er nærmere spesifisert i det følgende i dette kapittelet. Hvordan opplysningene skal representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert i <<Spesifikasjon-per-klasse>>, som også inneholder flere klasser som kan brukes i tillegg til de som er vist i <<img-ForenkletModell>> og beskrevet i dette kapittelet.
 
 === Krav til beskrivelse av en Lovpålagt tjeneste [[Krav-til-lovpålagt-tjeneste]]
 
-Lovpålagt tjeneste brukes til å ha generelle beskrivelser av en tjeneste som er lovpålagt, og som ikke er knyttet til en konkret, gitt offentlig organisasjon som yter tjenesten. Eksempel på en Lovpålagt tjeneste kan være «Skjenkebevilling», og tilsvarende Offentlige tjenester er «Skjenkebevilling i Brønnøy kommune», «Skjenkebevilling i Oslo kommune» osv. For beskrivelse av Offentlig tjeneste, se <<Krav-til-tjeneste-offentlig-tjeneste>>.
+Lovpålagt tjeneste brukes til å ha generelle beskrivelser av en tjeneste som er lovpålagt, og som ikke er knyttet til en konkret, gitt offentlig organisasjon som yter tjenesten. Eksempel på en Lovpålagt tjeneste kan være «Skjenkebevilling», og tilsvarende Offentlige tjenester er «Skjenkebevilling i Brønnøy kommune», «Skjenkebevilling i Oslo kommune» osv. For beskrivelse av Offentlig tjeneste, se kap. <<Krav-til-tjeneste-offentlig-tjeneste>>.
 
 Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) tas med i en beskrivelse av en Lovpålagt tjeneste er nærmere spesifisert i tabellene under. 
 
@@ -80,7 +80,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 
 === Krav til beskrivelse av en Tjeneste eller Offentlig tjeneste [[Krav-til-tjeneste-offentlig-tjeneste]]
 
-Med «Offentlig tjeneste» (med stor forbokstav «T») menes en tjeneste som ytes av konkret, gitt offentlig organisasjon, og «Tjeneste» (med stor forbokstav «T») en tjeneste som ytes av en konkret, gitt ikke-offentlig aktør. For generelle beskrivelser av en lovpålagt tjeneste som ikke er knyttet til en konkret, gitt offentlig organisasjon, se <<Krav-til-lovpålagt-tjeneste>>. Eksempel på en Offentlig tjeneste kan være «Skjenkebevilling i Brønnøykommune», mens den tilsvarende Lovpålagte tjeneste er «Skjenkebevilling».
+Med «Offentlig tjeneste» (med stor forbokstav «T») menes en tjeneste som ytes av konkret, gitt offentlig organisasjon, og «Tjeneste» (med stor forbokstav «T») en tjeneste som ytes av en konkret, gitt ikke-offentlig aktør. For generelle beskrivelser av en lovpålagt tjeneste som ikke er knyttet til en konkret, gitt offentlig organisasjon, se kap. <<Krav-til-lovpålagt-tjeneste>>. Eksempel på en Offentlig tjeneste kan være «Skjenkebevilling i Brønnøykommune», mens den tilsvarende Lovpålagte tjeneste er «Skjenkebevilling».
 
 Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) tas med i en beskrivelse av en Lovpålagt tjeneste er nærmere spesifisert i tabellene under. I tabellene under er ordet «tjeneste» (med liten forbokstav «t») brukt som samlebetegnelse for Tjeneste og Offentlig tjeneste.
 
@@ -141,6 +141,8 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 
 === Krav til beskrivelse av en Hendelse, Livshendelse eller virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
 
+Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) tas med i en beskrivelse av en Hendelse, Livshendelse eller Virksomhetshendelse er nærmere spesifisert i tabellene under. I tabellene under er ordet «hendelse» (med liten forbokstav «h») brukt som samlebetegnelse for Hendelse, Livshendelse og Virksomhetshendelse.
+
 [[Tabell-obligatoriske-opplysninger-hendelsesklassene]]
 .Obligatoriske opplysningstyper som en beskrivelse av Hendelse, Livshendelse eller virksomhetshendelse SKAL inneholde
 [cols="20s,65d,15d", options="header"]
@@ -171,6 +173,8 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 |===
 
 === Krav til beskrivelse av en Dokumentasjonstype [[Krav-til-dokumentasjonstype]]
+
+Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) tas med i en beskrivelse av en Dokumentasjonstype er nærmere spesifisert i tabellene under.
 
 [[Tabell-obligatoriske-opplysninger-dokumentasjonstype]]
 .Obligatoriske opplysningstyper som en beskrivelse av Dokumentasjonstype SKAL inneholde
@@ -204,6 +208,8 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 |===
 
 === Krav til beskrivelse av en Tjenesteresultattype [[Krav-til-tjenesteresultattype]]
+
+Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) tas med i en beskrivelse av en Tjenesteresultattype er nærmere spesifisert i tabellene under.
 
 [[Tabell-obligatoriske-opplysninger-tjenesteresultattype]]
 .Obligatoriske opplysningstyper som en beskrivelse av Tjenesteresultattype SKAL inneholde
