@@ -2,7 +2,7 @@
 :appendix-caption: Vedlegg
 :appendix-refsig: {appendix-caption}
 :caution-caption: OBS
-:chapter-label: Kapittel
+:chapter-label: Kap.
 :chapter-refsig: {chapter-label}
 :!chapter-signifier:
 :section-label: 
