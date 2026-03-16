@@ -91,7 +91,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 Eksempel i RDF Turtle:
 -----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
-   cpsvno:hasPossibleOutput <bevilling> , <avslag> .
+   cpsvno:hasOutputType <bevilling> , <avslag> .
 -----
 
 ==== Offentlig tjeneste – identifikator (dct:identifier) [[OffentligTjeneste-identifikator]]

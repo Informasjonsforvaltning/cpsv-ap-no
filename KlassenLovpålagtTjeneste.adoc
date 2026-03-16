@@ -65,7 +65,7 @@ _This property is used to specify type of possible result of the service._
 Eksempel i RDF Turtle:
 -----
 <skjenkebevilling> a cpsvno:StatutoryService ;
-   cpsvno:hasPossibleOutput <bevilling> , <avslag> .
+   cpsvno:hasOutputType <bevilling> , <avslag> .
 -----
 
 ==== Lovpålagt tjeneste – identifikator (dct:identifier) [[LovpålagtTjeneste-identifikator]]
