@@ -269,7 +269,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 _This property refers to the licence of the catalog._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ |Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Lisens &#x29C9;, window="_blank", role="ext-link"], når lisensen som brukes i vokabularet.
+| Merknad 1 / _Note 1_ |Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Lisens &#x29C9;, window="_blank", role="ext-link"], når lisensen som brukes finnes i vokabularet.
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"], when the licence used is in the vocabulary.__
 |Merknad 2 / _Note 2_ |  Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.

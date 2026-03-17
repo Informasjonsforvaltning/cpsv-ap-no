@@ -59,7 +59,7 @@ Eksempel i RDF Turtle, minutt:
 | Verdiområde / _Range_ | xsd:gDay
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dag, oppgitt som dagens nummer i en måned i det gregorianske kalendersystemet.
 
-_This property is used to specify the day position in a month in the Gregorian calender-clock system._ 
+_This property is used to specify the day position in a month in the Gregorian calendar-clock system._ 
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -84,7 +84,7 @@ Eksempel i RDF Turtle, den femtende i en måned:
 | Verdiområde / _Range_ | time:DayOfWeek
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dag i uken, ved å referere til en predefinert ukedag i det gregorianske kalendersystemet. 
 
-_This property is used to specify day of week in the Gregorian calender-clock system, whose value is a member of the class time:DayOfWeek._
+_This property is used to specify day of week in the Gregorian calendar-clock system, whose value is a member of the class time:DayOfWeek._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad 1 / _Note 1_ | Verdien SKAL være en av følgende: `time:Monday`, `time:Tuesday`, `time:Wednesday`, `time:Thursday`, `time:Friday`, `time:Saturday`, `time:Sunday`, `schema:PublicHolidays`.
@@ -115,7 +115,7 @@ Eksempel i RDF Turtle, mandag:
 | Verdiområde / _Range_ | xsd:nonNegativeInteger
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dag i året, oppgitt som nummeret av dagen i året i det gregorianske kalendersystemet.
 
-_This property is used to specify the number of the day within the year in the Gregorian calender-clock system._
+_This property is used to specify the number of the day within the year in the Gregorian calendar-clock system._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
@@ -138,7 +138,7 @@ Eksempel i RDF Turtle, den 40. dag i et år:
 | _English name_ | _minute_
 | URI | time:minute
 | Verdiområde / _Range_ | xsd:nonNegativeInteger
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi minutt i det gregorianske kalendersystem. 
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi minutt i det gregorianske kalendersystemet. 
 
 _This property is used to specify the minute position in the Gregorian calendar-clock system._
 | Multiplisitet / _Multiplicity_ | 0..1
@@ -183,9 +183,9 @@ Eksempel i RDF Turtle, 11 (= november):
 | _English name_ | _month of year_
 | URI | time:monthOfYear
 | Verdiområde / _Range_ | time:MonthOfYear
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi måned i året, ved å referere til en predefinert måned i det gregorianske kalendersystem.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi måned i året, ved å referere til en predefinert måned i det gregorianske kalendersystemet.
 
-_This property is used to specify the month of the year in the Gregorian calender-clock system, whose value is a member of the class time:MonthOfYear._
+_This property is used to specify the month of the year in the Gregorian calendar-clock system, whose value is a member of the class time:MonthOfYear._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad 1 / _Note 1_ | Verdien SKAL være en av følgende: `greg:January`, `greg:February`, `greg:March`, `greg:April`, `greg:May`, `greg:June`, `greg:July`, `greg:August`, `greg:September`, `greg:October`, `greg:November`, `greg:December`.
@@ -211,7 +211,7 @@ Eksempel i RDF Turtle, november:
 | _English name_ | _second_
 | URI | time:second
 | Verdiområde / _Range_ | xsd:decimal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi sekund i det gregorianske kalendersystem. 
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi sekund i det gregorianske kalendersystemet. 
 
 _This property is used to specify the second position in the Gregorian calendar-clock system._
 | Multiplisitet / _Multiplicity_ | 0..1
@@ -253,7 +253,7 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 | _English name_ | _hour_
 | URI | time:hour
 | Verdiområde / _Range_ | xsd:nonNegativeInteger
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi time i det gregorianske kalendersystem. 
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi time i det gregorianske kalendersystemet. 
 
 _This property is used to specify the hour position in the Gregorian calendar-clock system._
 | Multiplisitet / _Multiplicity_ | 0..1
@@ -275,7 +275,7 @@ Eksempel i RDF Turtle: Se under <<Tidsenhet-sluttidspunkt>>.
 | Verdiområde / _Range_ | xsd:nonNegativeInteger
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi ukenummer i det gregorianske kalendersystemet.
 
-_This property is used to specify the week number within the year, in the Gregorian calender-clock system._
+_This property is used to specify the week number within the year, in the Gregorian calendar-clock system._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
