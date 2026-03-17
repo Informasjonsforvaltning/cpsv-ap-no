@@ -9,10 +9,15 @@ Hovedsakelig:
 . <<Forenklet-fremstilling>> inneholder nå også krav i prosatekst som er formulert uavhengig av hvordan de implementeres. Dette for å gjøre CPSV-AP-NO mer tilgjengelig for den ikke-tekniske målgruppen, og for å gjøre det enklere å forstå hva som er kravene i denne standarden, uten å måtte forstå tekniske detaljer om RDF-representasjon.
 
 . Klasser som er tatt ut:
-** #mer tekst kommer#
+** Klassene Begrensning (`cv:Constraint`), Dokumentasjonstypeliste (`cv:EvidenceTypeList`), Informasjonsbegrep (`cv:InformationConcept`), Informasjonskrav (`cv:InformationRequirement`), Krav (`cv:Requirement`), Kriterium (`cv:Criterion`) og Referanserammeverk (`cv:ReferenceFramework`) er tatt ut fra CPSV-AP-NO, og inn i https://informasjonsforvaltning.github.io/cccev-ap-no/[CCCEV-AP-NO &#x29C9;, window="_blank", role="ext-link"] fordi de er mer relevante for beskrivelse av krav og kravoppfyllelse, og dermed er mer hensiktsmessige å ha i en egen spesifikasjon for beskrivelse av krav og kravoppfyllelse (CCCEV-AP-NO).
+** Klassen Mulig tjenesteresultat (`cpsvno:PossibleOutput`) er utgått og skal ikke brukes lenger. Klassen <<Tjenesteresultattype, Tjenesteresultattype (`cpsvno:OutputType`)>> skal brukes i stedet.
+** Klassen Påkrevd dokumentasjon (`cpsvno:RequiredEvidence`) er utgått og skal ikke brukes lenger. Klassen <<Dokumentasjonstype, Dokumentasjonstype (`cv:EvidenceType`)>> skal brukes i stedet.
+
 
 . Klasser som er innført:
-** #mer tekst kommer#
+** Klassen <<LovpålagtTjeneste, Lovpålagt tjeneste (`cpsvno:StatutoryService`)>> er innført for å kunne beskrive lovpålagte tjenester som ikke er knyttet til gitte, konkrete tjenesteyende offentlige organisasjoner.
+** Klassene <<Tjenesteresultattype, Tjenesteresultattype (`cpsvno:OutputType`)>> og <<Tjenesteresultattypeliste, Tjenesteresultattypeliste (`cpsvno:OutputTypeList`)>> er innført for å kunne beskrive typer mulige tjenesteresultater.
+
 
 . Egenskaper i eksisterende klasser som er endret:
 ** #mer tekst kommer#
