@@ -20,6 +20,8 @@ Hovedsakelig:
 
 
 . Endringer av egenskaper i eksisterende klasser:
+** Klassen «<<Dokumentasjonstype, Dokumentasjonstype (`cv:EvidenceType`)>>»: 
+*** Egenskapen «Dokumentasjonstype – har dokumentasjonskrav (cpsv:hasInput)» er utgått (som en konsekvens av at klassen «Påkrevd dokumentasjon (cpsvno:RequiredEvidence)» utgår).
 ** #mer tekst kommer#
 
 === Fra v.1.1.1 til v.1.1.2

@@ -278,12 +278,12 @@ _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
 
 
-==== Tjeneste – er beskrevet ved (cv:isDescribedAt) [[Tjeneste-er-beskrevet-ved]] 
+==== Tjeneste – er beskrevet ved (cccevno:isDescribedBy) [[Tjeneste-er-beskrevet-ved]] 
 
 [cols="30s,70d"]
 |===
-| _English name_ | _is described at_ 
-| URI | cv:isDescribedAt 
+| _English name_ | _is described by_ 
+| URI | cccevno:isDescribedBy 
 | Verdiområde / _Range_ | https://informasjonsforvaltning.github.io/dcat-ap-no/#Datasett[dcat:Dataset &#x29C9;, window="_blank", role="ext-link"] 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasett som beskriver tjenesten.  
 
