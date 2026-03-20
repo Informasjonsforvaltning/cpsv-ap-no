@@ -20,29 +20,39 @@ Hovedsakelig:
 ** Klassen «<<LovpålagtTjeneste, Lovpålagt tjeneste (`cpsvno:StatutoryService`)>>» er innført for å kunne beskrive lovpålagte tjenester som ikke er knyttet til gitte, konkrete tjenesteyende offentlige organisasjoner.
 ** Klassene «<<Tjenesteresultattype, Tjenesteresultattype (`cpsvno:OutputType`)>>» og «<<Tjenesteresultattypeliste, Tjenesteresultattypeliste (`cpsvno:OutputTypeList`)>>» er innført for å kunne beskrive typer mulige tjenesteresultater.
 
-
 . Endringer av egenskaper i eksisterende klasser:
 ** Klassen «<<Dokumentasjonstype, Dokumentasjonstype (`cv:EvidenceType`)>>»: 
-*** Følgende egenskaper er føyet til: <<Dokumentasjonstype-beskrivelse>>, <<Dokumentasjonstype-navn>>, <<Dokumentasjonstype-er-beskrevet-ved>>, <<Dokumentasjonstype-tillatt-språk>> og <<Dokumentasjonstype-relatert-informasjon>>.
-*** Følgende egenskaper er utgått: «Dokumentasjonstype - gyldighetsperiode, begrepsning (cv:validityPeriodConstraint)» er utgått og erstattet av <<Dokumentasjonstype-tillatt-gyldighetsperiode>>; «Dokumentasjonstype - utstedelsessted (cv:issuingPlace)» er utgått og ertattet av <<Dokumentasjonstype-tillatt-utstedelsessted>>.
-**^* Følgende egenskaper har fått endret kravnivå og/eller mulitiplisitet: kravnivået for <<Dokumentasjonstype-dokumentasjjonstypekategori>> er endret fra anbefalt til valgfri.
+*** Følgende egenskaper er føyet til: 
+**** <<Dokumentasjonstype-beskrivelse>>
+**** <<Dokumentasjonstype-navn>>
+**** <<Dokumentasjonstype-er-beskrevet-ved>>
+**** <<Dokumentasjonstype-tillatt-språk>> 
+**** <<Dokumentasjonstype-relatert-informasjon>>
+*** Følgende egenskaper er utgått: 
+**** «Dokumentasjonstype - gyldighetsperiode, begrepsning (cv:validityPeriodConstraint)» er utgått og erstattet av <<Dokumentasjonstype-tillatt-gyldighetsperiode>>.
+**** «Dokumentasjonstype - utstedelsessted (cv:issuingPlace)» er utgått og ertattet av <<Dokumentasjonstype-tillatt-utstedelsessted>>.
+*** Følgende egenskaper har fått endret kravnivå og/eller mulitiplisitet: 
+**** Kravnivået for <<Dokumentasjonstype-dokumentasjjonstypekategori>> er endret fra anbefalt til valgfri.
 
 ** Klassen «<<Hendelse, Hendelse (`cv:Event`)>>:  
-*** Følgende egenskaper er utgått: «Hendelse - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<Hendelse-er-beskrevet-ved>>.
+*** Følgende egenskaper er utgått: 
+**** «Hendelse - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<Hendelse-er-beskrevet-ved>>.
 
 ** Klassen «<<Livshendelse, Livshendelse (`cv:LifeEvent`)>>:  
-*** Følgende egenskaper er utgått: «Livshendelse - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<Livshendelse-er-beskrevet-ved>>.
+*** Følgende egenskaper er utgått: 
+**** «Livshendelse - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<Livshendelse-er-beskrevet-ved>>.
 
 ** Klassen «<<OffentligTjeneste, Offentlig tjeneste (`cpsv:PublicService`)>>:  
-*** Følgende egenskaper er utgått: «OffentligTjeneste - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<OffentligTjeneste-er-beskrevet-ved>>.
+*** Følgende egenskaper er utgått: 
+**** «Offentlig tjeneste - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<OffentligTjeneste-er-beskrevet-ved>>.
 
 ** Klassen «<<Tjeneste, Tjeneste (`cpsvno:Service`)>>:  
-*** Følgende egenskaper er utgått: «Tjeneste - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<Tjeneste-er-beskrevet-ved>>.
+*** Følgende egenskaper er utgått: 
+**** «Tjeneste - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<Tjeneste-er-beskrevet-ved>>.
 
 ** Klassen «<<Virksomhetshendelse, Virksomhetshendelse (`cv:BusinessEvent`)>>:  
-*** Følgende egenskaper er utgått: «Virksomhetshendelse - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<Virksomhetshendelse-er-beskrevet-ved>>.
-
-** #mer tekst kommer#
+*** Følgende egenskaper er utgått: 
+**** «Virksomhetshendelse - beskrivende datasett (cv:isDescribedAt)» er utgått og erstattet av <<Virksomhetshendelse-er-beskrevet-ved>>.
 
 === Fra v.1.1.1 til v.1.1.2
 
