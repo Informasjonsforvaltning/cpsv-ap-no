@@ -170,9 +170,9 @@ _This property links a life event to the dataset(s) in which it is being describ
 _The type property links an Event to a controlled vocabulary of event types._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Verdien SKAL velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/life-event-type[Livshendelsestype &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
+| Merknad / _Note_ | Norsk utvidelse: Verdien SKAL velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/life-event-type[Livshendelsestype &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
 
-__The value MUST be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/life-event-type[Life event type &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
+__Norwegian extension: The value MUST be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/life-event-type[Life event type &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
 | Eksempel | Å få barn
 |===
 

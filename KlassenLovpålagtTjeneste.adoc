@@ -239,9 +239,9 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _This property represents the Thematic Area of a Public Service as described in a controlled vocabulary._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Verdien BØR velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc &#x29C9;, window="_blank", role="ext-link"] eller https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser &#x29C9;, window="_blank", role="ext-link"].
+| Merknad / _Note_ | Verdien BØR velges fra https://psi.norge.no/los/[Los – felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser &#x29C9;, window="_blank", role="ext-link"].
 
-__The value SHOULD  be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141[EuroVoc &#x29C9;, window="_blank", role="ext-link"] or https://psi.norge.no/los/[Los &#x29C9;, window="_blank", role="ext-link"].__
+__The value SHOULD be chosen from https://psi.norge.no/los/[Los &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
 === Valgfrie egenskaper for klassen _Lovpålagt tjeneste_ [[LovpålagtTjeneste-valgfrie-egenskaper]]

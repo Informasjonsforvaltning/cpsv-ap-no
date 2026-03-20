@@ -44,9 +44,9 @@ _This property represents an Identifier for the Channel._
 _This property represents the type of Channel as defined in a controlled vocabulary._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
-| Merknad / _Note_ | Verdien SKAL velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/service-channel-type[Tjenestekanaltype &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
+| Merknad / _Note_ | Verdien BØR velges fra EUs kontrollerte vokabular for kommunikasjopnskanaltype https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/snb/com-channel/25831c2[Tjenestekanaltype &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
 
-__The value MUST be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/service-channel-type[Service channel type &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/snb/com-channel/25831c2[Communication channel type &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
 |Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.
 
 _Norwegian extension: Requirement level changed from optional to recommended._
@@ -57,7 +57,8 @@ Eksempel i RDF Turtle:
 -----
 <viaSkjemaportalen> a cv:Channel ;
    vcard:hasURL "https://kommune24-7.no/1813" ;
-   dct:type <https://data.norge.no/vocabulary/service-channel-type#online> ; .
+   dct:type <http://data.europa.eu/snb/com-channel/b37115f83e> ; # web
+   .
 -----
 
 === Valgfrie egenskaper for klassen _Tjenestekanal_ [[Tjenestekanal-valgfrie-egenskaper]]
