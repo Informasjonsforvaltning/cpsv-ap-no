@@ -61,6 +61,8 @@ Hovedsakelig:
 **** «Tjenestekanal - har påkrevd dokumentasjon (`cpsvno:hasRequiredEvidence`)» er utgått.
 *** Følgende egenskaper er føyet til:
 **** <<Tjenestekanal-har-dokumentasjonskrav>>
+*** Følgende egenskaper har fått endret URI, range, kravnivå og/eller multiplisitet:
+**** <<Tjenestekanal-type>> har fått endret krav til bruk av kontrollerte vokabular.
 
 ** *Klassen «<<Virksomhetshendelse, Virksomhetshendelse (`cv:BusinessEvent`)>>*:  
 *** Følgende egenskaper er utgått: 
