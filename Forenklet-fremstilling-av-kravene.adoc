@@ -96,7 +96,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 | eies av | (Gjelder kun for Tjeneste) Aktøren som eier tjenesten | <<Tjeneste-eies-av>>
 | har mulig tjenesteresultat | En eller flere typer tjenesteresultat som tjenesten kan resultere i | <<Tjeneste-har-mulig-tjenesteresultat>>, <<OffentligTjeneste-har-mulig-tjenesteresultat>>, <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
 | identifikator | En unik identifikator for tjenesten, som regel opprettet automatisk av et system | <<Tjeneste-identifikator>>, <<OffentligTjeneste-identifikator>>, <<LovpålagtTjeneste-identifikator>>
-| kontaktpunkt | Et eller flere kontaktpunkter som kan brukes vedrørende tjenesten | <<Tjeneste-kontaktpunkt>>, <<OffentligTjeneste-kontaktpunkt>>, <<LovpålagtTjeneste-kontaktpunkt>>
+| kontaktpunkt | Et eller flere kontaktpunkt som kan brukes vedrørende tjenesten | <<Tjeneste-kontaktpunkt>>, <<OffentligTjeneste-kontaktpunkt>>, <<LovpålagtTjeneste-kontaktpunkt>>
 | navn | Navnet på tjenesten | <<Tjeneste-navn>>, <<OffentligTjeneste-navn>>, <<LovpålagtTjeneste-navn>>
 |===
 
@@ -151,7 +151,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 |===
 | Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | identifikator | En unik identifikator for hendelsen, som regel opprettet automatisk av et system | <<Hendelse-identifikator>>, <<Livshendelse-identifikator>>, <<Virksomhetshendelse-identifikator>>
-| kontaktpunkt | Et eller flere kontaktpunkter for _beskrivelsen_ av hendelsen | <<Hendelse-kontaktpunkt>>, <<Livshendelse-kontaktpunkt>>, <<Virksomhetshendelse-kontaktpunkt>>
+| kontaktpunkt | Et eller flere kontaktpunkt for _beskrivelsen_ av hendelsen | <<Hendelse-kontaktpunkt>>, <<Livshendelse-kontaktpunkt>>, <<Virksomhetshendelse-kontaktpunkt>>
 | navn | Navnet på hendelsen | <<Hendelse-navn>>, <<Livshendelse-navn>>, <<Virksomhetshendelse-navn>>
 |===
 
