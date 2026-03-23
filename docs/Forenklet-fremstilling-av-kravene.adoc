@@ -42,9 +42,9 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 |===
 | Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | beskrivelse | En tekstlig beskrivelse av tjenesten | <<LovpålagtTjeneste-beskrivelse>>
-| har mulig tjenesteresultat | Refererer til type(r) tjenesteresultat som tjenesten kan resultere i | <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
+| har mulig tjenesteresultat | En eller flere typer tjenesteresultat som tjenesten kan resultere i | <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
 | identifikator | En unik identifikator for tjenesten, som regel opprettet automatisk av et system | <<LovpålagtTjeneste-identifikator>>
-| kontaktpunkt | Oppgir et eller flere kontaktpunkt for _beskrivelsen_ av tjenesten | <<LovpålagtTjeneste-kontaktpunkt>>
+| kontaktpunkt | Et eller flere kontaktpunkt som kan brukes vedrørende _beskrivelsen_ av tjenesten | <<LovpålagtTjeneste-kontaktpunkt>>
 | navn | Navn på tjenesten | <<LovpålagtTjeneste-navn>>
 |===
 
@@ -53,12 +53,12 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| begrep | Refererer til et eller flere begreper som er viktige for å forstå tjenesten | <<LovpålagtTjeneste-begrep>>
-| dekningsområde | Angir et eller flere geografiske områder som dekkes av tjenesten | <<LovpålagtTjeneste-dekningsområde>>
-| har dokumentasjonskrav | Refererer til et eller flere dokumentasjonskrav som gjelder for tjenesten | <<LovpålagtTjeneste-har-dokumentasjonskrav>>
-| hjemmeside | Refererer til en eller flere hjemmesider for tjenesten | <<LovpålagtTjeneste-hjemmeside>>
-| hovedformål | Angir et eller flere hovedformål for tjenesten | <<LovpålagtTjeneste-hovedformål>>
-| temaområde | Angir et eller flere temaområder som tjenesten dekker | <<LovpålagtTjeneste-temaområde>>
+| begrep | Et eller flere begreper som er viktige for å forstå tjenesten | <<LovpålagtTjeneste-begrep>>
+| dekningsområde | Et eller flere geografiske områder som dekkes av tjenesten | <<LovpålagtTjeneste-dekningsområde>>
+| har dokumentasjonskrav | Et eller flere dokumentasjonskrav som gjelder for tjenesten | <<LovpålagtTjeneste-har-dokumentasjonskrav>>
+| hjemmeside | En eller flere hjemmesider for tjenesten | <<LovpålagtTjeneste-hjemmeside>>
+| hovedformål | Et eller flere hovedformål for tjenesten | <<LovpålagtTjeneste-hovedformål>>
+| temaområde | Et eller flere temaområder som tjenesten dekker | <<LovpålagtTjeneste-temaområde>>
 |===
 
 [[Tabell-valgfrie-opplysninger-lovpålagt-tjeneste]]
@@ -66,18 +66,18 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| er del av | Refererer til en eller flere andre tjenester som tjenesten kan være en del av | <<LovpålagtTjeneste-er-del-av>>
-| er gruppert ved | Refererer til en eller flere hendelser som tjenesten kan være gruppert ved | <<LovpålagtTjeneste-er-gruppert-ved>>
-| er klassifisert under | Refererer til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv. | <<LovpålagtTjeneste-er-klassifisert-under>>
-| følger regel | Refererer til en eller flere regler som gjelder for tjenesten | <<LovpålagtTjeneste-følger-regel>>
-| har del | Refererer til en eller flere andre tjenester som er en del av tjenesten | <<LovpålagtTjeneste-har-del>>
-| har gebyr | Oppgir ev. gebyr for tjenesten | <<LovpålagtTjeneste-har-gebyr>>
-| har krav | Refererer til et eller flere krav som skal oppfylles for tjenesten | <<LovpålagtTjeneste-har-krav>>
-| har relatert regelverk | Refererer til et eller flere regelverk som tjenesten opererer under eller har som sin juridiske ramme, eller på andre måter er relatert til | <<LovpålagtTjeneste-har-relatert-regelverk>>
-| krever | Refererer til en eller flere andre tjenester som tjeneste krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra | <<LovpålagtTjeneste-krever>>
-| målgruppe | Oppgir en eller flere målgrupper for tjenesten | <<LovpålagtTjeneste-målgruppe>>
-| nøkkelord | Oppgir et eller flere nøkkelord som beskriver tjenesten | <<LovpålagtTjeneste-nøkkelord>>
-| sektor | Oppgir industrien(e)/sektoren(e) som tjenesten er relatert til, eller er ment for | <<LovpålagtTjeneste-sektor>>
+| er del av | En eller flere andre tjenester som tjenesten kan være en del av | <<LovpålagtTjeneste-er-del-av>>
+| er gruppert ved | En eller flere hendelser som tjenesten kan være gruppert ved | <<LovpålagtTjeneste-er-gruppert-ved>>
+| er klassifisert under | Et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv. | <<LovpålagtTjeneste-er-klassifisert-under>>
+| følger regel | En eller flere regler som gjelder for tjenesten | <<LovpålagtTjeneste-følger-regel>>
+| har del | En eller flere andre tjenester som er en del av tjenesten | <<LovpålagtTjeneste-har-del>>
+| har gebyr | Gebyr for tjenesten | <<LovpålagtTjeneste-har-gebyr>>
+| har krav | Et eller flere krav som skal oppfylles for tjenesten | <<LovpålagtTjeneste-har-krav>>
+| har relatert regelverk | Et eller flere regelverk som tjenesten opererer under eller har som sin juridiske ramme, eller på andre måter er relatert til | <<LovpålagtTjeneste-har-relatert-regelverk>>
+| krever | En eller flere andre tjenester som tjeneste krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra | <<LovpålagtTjeneste-krever>>
+| målgruppe | En eller flere målgrupper for tjenesten | <<LovpålagtTjeneste-målgruppe>>
+| nøkkelord | Et eller flere nøkkelord som beskriver tjenesten | <<LovpålagtTjeneste-nøkkelord>>
+| sektor | En eller flere industrier/sektorer som tjenesten er relatert til, eller er ment for | <<LovpålagtTjeneste-sektor>>
 |===
 
 === Krav til beskrivelse av en Tjeneste eller Offentlig tjeneste [[Krav-til-tjeneste-offentlig-tjeneste]]
@@ -91,12 +91,12 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| ansvarlig organisasjon | (Gjelder kun for Offentlig tjeneste) Refererer til en eller flere offentlige organisasjoner som er ansvarlige for tjenesten | <<OffentligTjeneste-ansvarlig-organisasjon>>
+| ansvarlig organisasjon | (Gjelder kun for Offentlig tjeneste) En eller flere offentlige organisasjoner som er ansvarlige for tjenesten | <<OffentligTjeneste-ansvarlig-organisasjon>>
 | beskrivelse | En tekstlig beskrivelse av tjenesten | <<Tjeneste-beskrivelse>>, <<OffentligTjeneste-beskrivelse>>, <<LovpålagtTjeneste-beskrivelse>>
-| eies av | (Gjelder kun for Tjeneste) Refererer til aktøren som eier tjenesten | <<Tjeneste-eies-av>>
-| har mulig tjenesteresultat | Refererer til type(r) tjenesteresultat som tjenesten kan resultere i | <<Tjeneste-har-mulig-tjenesteresultat>>, <<OffentligTjeneste-har-mulig-tjenesteresultat>>, <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
+| eies av | (Gjelder kun for Tjeneste) Aktøren som eier tjenesten | <<Tjeneste-eies-av>>
+| har mulig tjenesteresultat | En eller flere typer tjenesteresultat som tjenesten kan resultere i | <<Tjeneste-har-mulig-tjenesteresultat>>, <<OffentligTjeneste-har-mulig-tjenesteresultat>>, <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
 | identifikator | En unik identifikator for tjenesten, som regel opprettet automatisk av et system | <<Tjeneste-identifikator>>, <<OffentligTjeneste-identifikator>>, <<LovpålagtTjeneste-identifikator>>
-| kontaktpunkt | Oppgir et eller flere kontaktpunkter for tjenesten | <<Tjeneste-kontaktpunkt>>, <<OffentligTjeneste-kontaktpunkt>>, <<LovpålagtTjeneste-kontaktpunkt>>
+| kontaktpunkt | Et eller flere kontaktpunkter som kan brukes vedrørende tjenesten | <<Tjeneste-kontaktpunkt>>, <<OffentligTjeneste-kontaktpunkt>>, <<LovpålagtTjeneste-kontaktpunkt>>
 | navn | Navnet på tjenesten | <<Tjeneste-navn>>, <<OffentligTjeneste-navn>>, <<LovpålagtTjeneste-navn>>
 |===
 
@@ -105,14 +105,14 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| begrep | Refererer til et eller flere begreper som er viktige for å forstå tjenesten | <<Tjeneste-begrep>>, <<OffentligTjeneste-begrep>>
-| dekningsområde | Angir et eller flere geografiske områder som dekkes av tjenesten | <<Tjeneste-dekningsområde>>, <<OffentligTjeneste-dekningsområde>>
-| har dokumentasjonskrav | Refererer til et eller flere dokumentasjonskrav som gjelder for tjenesten | <<Tjeneste-har-dokumentasjonskrav>>, <<OffentligTjeneste-har-dokumentasjonskrav>>
-| hjemmeside | Refererer til en eller flere hjemmesider for tjenesten | <<Tjeneste-hjemmeside>>, <<OffentligTjeneste-hjemmeside>>
-| hovedformål | (Gjelder kun for Offentlig tjeneste) Angir et eller flere hovedformål for tjenesten | <<OffentligTjeneste-hovedformål>>
-| realiserer | (Gjelder kun for Offentlig tjeneste) Refererer til en eller flere Lovpålagte tjenester som tjenesten realiserer | <<OffentligTjeneste-realiserer>>
-| status | Angir status for tjenesten | <<Tjeneste-status>>, <<OffentligTjeneste-status>>
-| temaområde | Angir et eller flere temaområder som tjenesten dekker | <<Tjeneste-temaområde>>, <<OffentligTjeneste-temaområde>>
+| begrep | Et eller flere begreper som er viktige for å forstå tjenesten | <<Tjeneste-begrep>>, <<OffentligTjeneste-begrep>>
+| dekningsområde | Et eller flere geografiske områder som dekkes av tjenesten | <<Tjeneste-dekningsområde>>, <<OffentligTjeneste-dekningsområde>>
+| har dokumentasjonskrav | Et eller flere dokumentasjonskrav som gjelder for tjenesten | <<Tjeneste-har-dokumentasjonskrav>>, <<OffentligTjeneste-har-dokumentasjonskrav>>
+| hjemmeside | En eller flere hjemmesider for tjenesten | <<Tjeneste-hjemmeside>>, <<OffentligTjeneste-hjemmeside>>
+| hovedformål | (Gjelder kun for Offentlig tjeneste) Et eller flere hovedformål for tjenesten | <<OffentligTjeneste-hovedformål>>
+| realiserer | (Gjelder kun for Offentlig tjeneste) En eller flere Lovpålagte tjenester som tjenesten realiserer | <<OffentligTjeneste-realiserer>>
+| status | Status for tjenesten | <<Tjeneste-status>>, <<OffentligTjeneste-status>>
+| temaområde | Et eller flere temaområder som tjenesten dekker | <<Tjeneste-temaområde>>, <<OffentligTjeneste-temaområde>>
 |===
 
 [[Tabell-valgfrie-opplysninger-tjeneste-offentlig-tjeneste]]
@@ -121,24 +121,24 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 |===
 | Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | behandlingstid | Den estimerte behandlingstiden | <<Tjeneste-behandlingstid>>, <<OffentligTjeneste-behandlingstid>>
-| er beskrevet ved | Refererer til et eller flere datasett som tjenesten kan være beskrevet ved | <<Tjeneste-er-beskrevet-ved>>, <<OffentligTjeneste-er-beskrevet-ved>>
-| er del av | Refererer til en eller flere andre tjenester som tjenesten kan være en del av | <<Tjeneste-er-del-av>>, <<OffentligTjeneste-er-del-av>>
-| er gruppert ved | Refererer til en eller flere hendelser som tjenesten kan være gruppert ved | <<Tjeneste-er-gruppert-ved>>, <<OffentligTjeneste-er-gruppert-ved>>
-| er klassifisert under | Refererer til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv. | <<Tjeneste-er-klassifisert-under>>, <<OffentligTjeneste-er-klassifisert-under>>
-| er tilgjengelig via | Angir et eller flere tjenestekanaler som tjenesten er tilgjengelig gjennom | <<Tjeneste-er-tilgjengelig-via>>, <<OffentligTjeneste-er-tilgjengelig-via>>
-| følger regel | Refererer til en eller flere regler som gjelder for tjenesten | <<Tjeneste-følger-regel>>, <<OffentligTjeneste-følger-regel>>
-| har del | Refererer til en eller flere andre tjenester som er en del av tjenesten | <<Tjeneste-har-del>>, <<OffentligTjeneste-har-del>>
-| har deltagelse | Knytter til en eller flere aktører som deltar i eller samhandler med tjenesten | <<Tjeneste-har-deltagelse>>, <<OffentligTjeneste-har-deltagelse>>
-| har gebyr | Oppgir ev. gebyr for tjenesten | <<Tjeneste-har-gebyr>>, <<OffentligTjeneste-har-gebyr>>
-| har krav | Refererer til et eller flere krav som skal oppfylles for tjenesten | <<Tjeneste-har-krav>>, <<OffentligTjeneste-har-krav>>
-| har relatert regelverk | Refererer til et eller flere regelverk som tjenesten opererer under eller har som sin juridiske ramme, eller på andre måter er relatert til | <<Tjeneste-har-relatert-regelverk>>, <<OffentligTjeneste-har-relatert-regelverk>>
-| krever | Refererer til en eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra | <<Tjeneste-krever>>, <<OffentligTjeneste-krever>>
-| målgruppe | Oppgir en eller flere målgrupper for tjenesten | <<Tjeneste-målgruppe>>, <<OffentligTjeneste-målgruppe>>
-| nøkkelord | Oppgir et eller flere nøkkelord som beskriver tjenesten | <<Tjeneste-nøkkelord>>, <<OffentligTjeneste-nøkkelord>>
-| relatert tjeneste | Refererer til en eller flere andre tjenester som tjenesten relaterer til | <<Tjeneste-relatert-tjeneste>>, <<OffentligTjeneste-relatert-tjeneste>>
-| sektor | Oppgir en eller flere industrier/sektorer som tjenesten er relatert til, eller er ment for | <<Tjeneste-sektor>>, <<OffentligTjeneste-sektor>>
-| språk | Oppgir et eller flere språk som tjenesten er tilgjengelig på | <<Tjeneste-språk>>, <<OffentligTjeneste-språk>>
-| type | (Gjelder kun for Tjeneste) Oppgir en eller flere typer som tjenesten tilhører | <<Tjeneste-type>>
+| er beskrevet ved | Et eller flere datasett som tjenesten kan være beskrevet ved | <<Tjeneste-er-beskrevet-ved>>, <<OffentligTjeneste-er-beskrevet-ved>>
+| er del av | En eller flere andre tjenester som tjenesten kan være en del av | <<Tjeneste-er-del-av>>, <<OffentligTjeneste-er-del-av>>
+| er gruppert ved | En eller flere hendelser som tjenesten kan være gruppert ved | <<Tjeneste-er-gruppert-ved>>, <<OffentligTjeneste-er-gruppert-ved>>
+| er klassifisert under | Et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv. | <<Tjeneste-er-klassifisert-under>>, <<OffentligTjeneste-er-klassifisert-under>>
+| er tilgjengelig via | Et eller flere tjenestekanaler som tjenesten er tilgjengelig gjennom | <<Tjeneste-er-tilgjengelig-via>>, <<OffentligTjeneste-er-tilgjengelig-via>>
+| følger regel | En eller flere regler som gjelder for tjenesten | <<Tjeneste-følger-regel>>, <<OffentligTjeneste-følger-regel>>
+| har del | En eller flere andre tjenester som er en del av tjenesten | <<Tjeneste-har-del>>, <<OffentligTjeneste-har-del>>
+| har deltagelse | En eller flere aktører som deltar i eller samhandler med tjenesten | <<Tjeneste-har-deltagelse>>, <<OffentligTjeneste-har-deltagelse>>
+| har gebyr | Gebyr for tjenesten | <<Tjeneste-har-gebyr>>, <<OffentligTjeneste-har-gebyr>>
+| har krav | Et eller flere krav som skal oppfylles for tjenesten | <<Tjeneste-har-krav>>, <<OffentligTjeneste-har-krav>>
+| har relatert regelverk | Et eller flere regelverk som tjenesten opererer under eller har som sin juridiske ramme, eller på andre måter er relatert til | <<Tjeneste-har-relatert-regelverk>>, <<OffentligTjeneste-har-relatert-regelverk>>
+| krever | En eller flere andre tjenester som tjenesten krever utført først, eller som tjenesten på en eller annen måte bruker resultatet fra | <<Tjeneste-krever>>, <<OffentligTjeneste-krever>>
+| målgruppe | En eller flere målgrupper for tjenesten | <<Tjeneste-målgruppe>>, <<OffentligTjeneste-målgruppe>>
+| nøkkelord | Et eller flere nøkkelord som beskriver tjenesten | <<Tjeneste-nøkkelord>>, <<OffentligTjeneste-nøkkelord>>
+| relatert tjeneste | En eller flere andre tjenester som tjenesten relaterer til | <<Tjeneste-relatert-tjeneste>>, <<OffentligTjeneste-relatert-tjeneste>>
+| sektor | En eller flere industrier/sektorer som tjenesten er relatert til, eller er ment for | <<Tjeneste-sektor>>, <<OffentligTjeneste-sektor>>
+| språk | Et eller flere språk som tjenesten er tilgjengelig på | <<Tjeneste-språk>>, <<OffentligTjeneste-språk>>
+| type | (Gjelder kun for Tjeneste) En eller flere typer som tjenesten tilhører | <<Tjeneste-type>>
 |===
 
 === Krav til beskrivelse av en Hendelse, Livshendelse eller virksomhetshendelse [[Krav-til-hendelse-livshendelse-virksomhetshendelse]]
@@ -151,7 +151,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 |===
 | Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | identifikator | En unik identifikator for hendelsen, som regel opprettet automatisk av et system | <<Hendelse-identifikator>>, <<Livshendelse-identifikator>>, <<Virksomhetshendelse-identifikator>>
-| kontaktpunkt | Oppgir et eller flere kontaktpunkt for _beskrivelsen_ av hendelsen | <<Hendelse-kontaktpunkt>>, <<Livshendelse-kontaktpunkt>>, <<Virksomhetshendelse-kontaktpunkt>>
+| kontaktpunkt | Et eller flere kontaktpunkter for _beskrivelsen_ av hendelsen | <<Hendelse-kontaktpunkt>>, <<Livshendelse-kontaktpunkt>>, <<Virksomhetshendelse-kontaktpunkt>>
 | navn | Navnet på hendelsen | <<Hendelse-navn>>, <<Livshendelse-navn>>, <<Virksomhetshendelse-navn>>
 |===
 
@@ -161,8 +161,8 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 |===
 | Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | beskrivelse | En tekstlig beskrivelse av hendelsen | <<Hendelse-beskrivelse>>, <<Livshendelse-beskrivelse>>, <<Virksomhetshendelse-beskrivelse>>
-| kan sette i gang | (Gjelder kun for Hendelse) Refererer til en eller flere tjenester som kan settes i gang av hendelsen | <<Hendelse-kan-sette-i-gang>>
-| kan utløse behov for | (Gjelder kun for Livshendelse og Virksomhetshendelse) Refererer til en eller flere tjenester som hendelsen kan utløse behov for | <<Livshendelse-kan-utløse-behov-for>>, <<Virksomhetshendelse-kan-utløse-behov-for>>
+| kan sette i gang | (Gjelder kun for Hendelse) En eller flere tjenester som kan settes i gang av hendelsen | <<Hendelse-kan-sette-i-gang>>
+| kan utløse behov for | (Gjelder kun for Livshendelse og Virksomhetshendelse) En eller flere tjenester som hendelsen kan utløse behov for | <<Livshendelse-kan-utløse-behov-for>>, <<Virksomhetshendelse-kan-utløse-behov-for>>
 |===
 
 [[Tabell-valgfrie-opplysninger-hendelsesklassene]]
@@ -170,9 +170,9 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| begrep | Refererer til et eller flere begreper som er viktige for å forstå hendelsen | <<Hendelse-begrep>>, <<Livshendelse-begrep>>, <<Virksomhetshendelse-begrep>>
-| er beskrevet ved | Refererer til et eller flere datasett som hendelsen kan være beskrevet ved | <<Hendelse-er-beskrevet-ved>>, <<Livshendelse-er-beskrevet-ved>>, <<Virksomhetshendelse-er-beskrevet-ved>>
-| type | Oppgir en eller flere typer som hendelsen tilhører | <<Hendelse-type>>, <<Livshendelse-type>>, <<Virksomhetshendelse-type>>
+| begrep | Et eller flere begreper som er viktige for å forstå hendelsen | <<Hendelse-begrep>>, <<Livshendelse-begrep>>, <<Virksomhetshendelse-begrep>>
+| er beskrevet ved | Et eller flere datasett som hendelsen kan være beskrevet ved | <<Hendelse-er-beskrevet-ved>>, <<Livshendelse-er-beskrevet-ved>>, <<Virksomhetshendelse-er-beskrevet-ved>>
+| type | En eller flere typer som hendelsen tilhører | <<Hendelse-type>>, <<Livshendelse-type>>, <<Virksomhetshendelse-type>>
 |===
 
 === Krav til beskrivelse av en Dokumentasjonstype [[Krav-til-dokumentasjonstype]]
@@ -194,8 +194,8 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| tillatt gyldighetsperiode | Angir tidsperioden som dokumentasjoner tilhørende dokumentasjonstypen skal være gyldig innenfor | <<Dokumentasjonstype-tillatt-gyldighetsperiode>>
-| tillatt språk | Angir et eller flere språk som dokumentasjoner tilhørende dokumentasjonstypen kan være på | <<Dokumentasjonstype-tillatt-språk>>
+| tillatt gyldighetsperiode | Tidsperioden som dokumentasjoner tilhørende dokumentasjonstypen skal være gyldig innenfor | <<Dokumentasjonstype-tillatt-gyldighetsperiode>>
+| tillatt språk | Et eller flere språk som dokumentasjoner tilhørende dokumentasjonstypen kan være på | <<Dokumentasjonstype-tillatt-språk>>
 |===
 
 [[Tabell-valgfrie-opplysninger-dokumentasjonstype]]
@@ -203,11 +203,11 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| dokumentasjonstypekategori | Refererer til en eller flere kategorier som dokumentasjonstypen tilhører | <<Dokumentasjonstype-dokumentasjonstypekategori>>
-| er beskrevet ved | Refererer til et eller flere datasett som dokumentasjoner tilhørende denne dokumentasjonstypen kan være beskrevet ved | <<Dokumentasjonstype-er-beskrevet-ved>>
-| er spesifisert i | Refererer til en eller flere dokumentasjonstypelister som inneholder dokumentasjonstypen | <<Dokumentasjonstype-er-spesifisert-i>>
-| relatert informasjon | Refererer til der mer informasjon om den aktuelle type dokumentasjon kan finnes | <<Dokumentasjonstype-relatert-informasjon>>
-| tillatt utstedelsessted | Angir et eller flere tillatte utstedelsessteder for dokumentasjoner tilhørende dokumentasjonstypen | <<Dokumentasjonstype-tillatt-utstedelsessted>>
+| dokumentasjonstypekategori | En eller flere kategorier som dokumentasjonstypen tilhører | <<Dokumentasjonstype-dokumentasjonstypekategori>>
+| er beskrevet ved | Et eller flere datasett som dokumentasjoner tilhørende denne dokumentasjonstypen kan være beskrevet ved | <<Dokumentasjonstype-er-beskrevet-ved>>
+| er spesifisert i | En eller flere dokumentasjonstypelister som inneholder dokumentasjonstypen | <<Dokumentasjonstype-er-spesifisert-i>>
+| relatert informasjon | Mer informasjon om den aktuelle type dokumentasjon kan finnes | <<Dokumentasjonstype-relatert-informasjon>>
+| tillatt utstedelsessted | Et eller flere tillatte utstedelsessteder for dokumentasjoner tilhørende dokumentasjonstypen | <<Dokumentasjonstype-tillatt-utstedelsessted>>
 |===
 
 === Krav til beskrivelse av en Tjenesteresultattype [[Krav-til-tjenesteresultattype]]
@@ -220,7 +220,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 |===
 | Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | beskrivelse | En tekstlig beskrivelse av tjenesteresultattypen | <<Tjenesteresultattype-beskrivelse>>
-| navn | Navn på tjenesteresultattypen | <<Tjenesteresultattype-navn>>
+| navn | Navnet på tjenesteresultattypen | <<Tjenesteresultattype-navn>>
 |===
 
 [[Tabell-anbefalte-opplysninger-tjenesteresultattype]]
@@ -228,7 +228,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| mulig språk | Oppgir et eller flere språk som et mulig tjenesteresultat av tjenesteresultattypen kan være tilgjengelig på | <<Tjenesteresultattype-mulig-språk>>
+| mulig språk | Et eller flere språk som et mulig tjenesteresultat av tjenesteresultattypen kan være tilgjengelig på | <<Tjenesteresultattype-mulig-språk>>
 |===
 
 [[Tabell-valgfrie-opplysninger-tjenesteresultattype]]
@@ -236,10 +236,10 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| er beskrevet ved | Refererer til et eller flere datasett som et mulig tjenesteresultat av tjenesteresultattypen kan være beskrevet ved | <<Tjenesteresultattype-er-beskrevet-ved>>
-| er spesifisert i | Refererer til en eller flere tjenesteresultattypelister som inneholder tjenesteresultattypen | <<Tjenesteresultattype-er-spesifisert-i>>
+| er beskrevet ved | Et eller flere datasett som et mulig tjenesteresultat av tjenesteresultattypen kan være beskrevet ved | <<Tjenesteresultattype-er-beskrevet-ved>>
+| er spesifisert i | En eller flere tjenesteresultattypelister som inneholder tjenesteresultattypen | <<Tjenesteresultattype-er-spesifisert-i>>
 | identifikator | En unik identifikator for tjenesteresultattypen, som regel opprettet automatisk av et system | <<Tjenesteresultattype-identifikator>>
-| kan skape | Refererer til en eller flere hendelser som et mulig tjenesteresultat av tjenesteresultattypen kan skape | <<Tjenesteresultattype-kan-skape>>
+| kan skape | En eller flere hendelser som et mulig tjenesteresultat av tjenesteresultattypen kan skape | <<Tjenesteresultattype-kan-skape>>
 |===
 
 === Et illustrativt eksempel [[Illustrativt-eksempel]]
