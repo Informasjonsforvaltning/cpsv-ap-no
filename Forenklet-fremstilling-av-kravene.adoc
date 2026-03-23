@@ -44,7 +44,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 | beskrivelse | En tekstlig beskrivelse av tjenesten | <<LovpålagtTjeneste-beskrivelse>>
 | har mulig tjenesteresultat | Refererer til type(r) tjenesteresultat som tjenesten kan resultere i | <<LovpålagtTjeneste-har-mulig-tjenesteresultat>>
 | identifikator | En unik identifikator for tjenesten, som regel opprettet automatisk av et system | <<LovpålagtTjeneste-identifikator>>
-| kontaktpunkt | Oppgir et eller flere kontaktpunkt for tjenesten | <<LovpålagtTjeneste-kontaktpunkt>>
+| kontaktpunkt | Oppgir et eller flere kontaktpunkt for _beskrivelsen_ av tjenesten | <<LovpålagtTjeneste-kontaktpunkt>>
 | navn | Navn på tjenesten | <<LovpålagtTjeneste-navn>>
 |===
 
@@ -151,6 +151,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 |===
 | Obligatorisk | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | identifikator | En unik identifikator for hendelsen, som regel opprettet automatisk av et system | <<Hendelse-identifikator>>, <<Livshendelse-identifikator>>, <<Virksomhetshendelse-identifikator>>
+| kontaktpunkt | Oppgir et eller flere kontaktpunkt for _beskrivelsen_ av hendelsen | <<Hendelse-kontaktpunkt>>, <<Livshendelse-kontaktpunkt>>, <<Virksomhetshendelse-kontaktpunkt>>
 | navn | Navnet på hendelsen | <<Hendelse-navn>>, <<Livshendelse-navn>>, <<Virksomhetshendelse-navn>>
 |===
 
