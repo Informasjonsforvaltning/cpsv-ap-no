@@ -173,7 +173,7 @@ Eksempel i RDF Turtle:
 _This property refers to concept that is important for the understanding of the service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå tjenesten.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begrep som er viktig for å forstå tjenesten.
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
@@ -434,7 +434,7 @@ Eksempel i RDF Turtle:
 | _English name_ | _is classified by_
 | URI | cv:isClassifiedBy
 | Verdiområde / _Range_ | https://data.norge.no/specification/skos-ap-no-begrep#Begrep[skos:Concept &#x29C9;, window="_blank", role="ext-link"]
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<OffentligTjeneste-temaområde>>, <<OffentligTjeneste-sektor>> osv.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til et eller flere begrep som er brukt til å klassifisere tjenesten, begrep som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<OffentligTjeneste-temaområde>>, <<OffentligTjeneste-sektor>> osv.
 
 _This property allows to classify the Public Service with any Concept, other than those already foreseen and defined explicitly in CPSV-AP (<<OffentligTjeneste-temaområde>>, <<OffentligTjeneste-sektor>> etc.)_
 | Multiplisitet / _Multiplicity_ | 0..n

@@ -53,7 +53,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| begrep | Et eller flere begreper som er viktige for å forstå tjenesten | <<LovpålagtTjeneste-begrep>>
+| begrep | Et eller flere begrep som er viktige for å forstå tjenesten | <<LovpålagtTjeneste-begrep>>
 | dekningsområde | Et eller flere geografiske områder som dekkes av tjenesten | <<LovpålagtTjeneste-dekningsområde>>
 | har dokumentasjonskrav | Et eller flere dokumentasjonskrav som gjelder for tjenesten | <<LovpålagtTjeneste-har-dokumentasjonskrav>>
 | hjemmeside | En eller flere hjemmesider for tjenesten | <<LovpålagtTjeneste-hjemmeside>>
@@ -68,7 +68,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 | Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
 | er del av | En eller flere andre tjenester som tjenesten kan være en del av | <<LovpålagtTjeneste-er-del-av>>
 | er gruppert ved | En eller flere hendelser som tjenesten kan være gruppert ved | <<LovpålagtTjeneste-er-gruppert-ved>>
-| er klassifisert under | Et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv. | <<LovpålagtTjeneste-er-klassifisert-under>>
+| er klassifisert under | Et eller flere begrep som er brukt til å klassifisere tjenesten, begrep som ikke er dekket av «temaområde», «sektor» osv. | <<LovpålagtTjeneste-er-klassifisert-under>>
 | følger regel | En eller flere regler som gjelder for tjenesten | <<LovpålagtTjeneste-følger-regel>>
 | har del | En eller flere andre tjenester som er en del av tjenesten | <<LovpålagtTjeneste-har-del>>
 | har gebyr | Gebyr for tjenesten | <<LovpålagtTjeneste-har-gebyr>>
@@ -105,7 +105,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Anbefalt | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| begrep | Et eller flere begreper som er viktige for å forstå tjenesten | <<Tjeneste-begrep>>, <<OffentligTjeneste-begrep>>
+| begrep | Et eller flere begrep som er viktige for å forstå tjenesten | <<Tjeneste-begrep>>, <<OffentligTjeneste-begrep>>
 | dekningsområde | Et eller flere geografiske områder som dekkes av tjenesten | <<Tjeneste-dekningsområde>>, <<OffentligTjeneste-dekningsområde>>
 | har dokumentasjonskrav | Et eller flere dokumentasjonskrav som gjelder for tjenesten | <<Tjeneste-har-dokumentasjonskrav>>, <<OffentligTjeneste-har-dokumentasjonskrav>>
 | hjemmeside | En eller flere hjemmesider for tjenesten | <<Tjeneste-hjemmeside>>, <<OffentligTjeneste-hjemmeside>>
@@ -124,7 +124,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 | er beskrevet ved | Et eller flere datasett som tjenesten kan være beskrevet ved | <<Tjeneste-er-beskrevet-ved>>, <<OffentligTjeneste-er-beskrevet-ved>>
 | er del av | En eller flere andre tjenester som tjenesten kan være en del av | <<Tjeneste-er-del-av>>, <<OffentligTjeneste-er-del-av>>
 | er gruppert ved | En eller flere hendelser som tjenesten kan være gruppert ved | <<Tjeneste-er-gruppert-ved>>, <<OffentligTjeneste-er-gruppert-ved>>
-| er klassifisert under | Et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som ikke er dekket av «temaområde», «sektor» osv. | <<Tjeneste-er-klassifisert-under>>, <<OffentligTjeneste-er-klassifisert-under>>
+| er klassifisert under | Et eller flere begrep som er brukt til å klassifisere tjenesten, begrep som ikke er dekket av «temaområde», «sektor» osv. | <<Tjeneste-er-klassifisert-under>>, <<OffentligTjeneste-er-klassifisert-under>>
 | er tilgjengelig via | Et eller flere tjenestekanaler som tjenesten er tilgjengelig gjennom | <<Tjeneste-er-tilgjengelig-via>>, <<OffentligTjeneste-er-tilgjengelig-via>>
 | følger regel | En eller flere regler som gjelder for tjenesten | <<Tjeneste-følger-regel>>, <<OffentligTjeneste-følger-regel>>
 | har del | En eller flere andre tjenester som er en del av tjenesten | <<Tjeneste-har-del>>, <<OffentligTjeneste-har-del>>
@@ -170,7 +170,7 @@ Hvilke opplysninger som SKAL (obligatorisk), BØR (anbefalt) og KAN (valgfri) ta
 [cols="20s,65d,15d", options="header"]
 |===
 | Valgfri | Forklaring | Ref. til <<Spesifikasjon-per-klasse>>
-| begrep | Et eller flere begreper som er viktige for å forstå hendelsen | <<Hendelse-begrep>>, <<Livshendelse-begrep>>, <<Virksomhetshendelse-begrep>>
+| begrep | Et eller flere begrep som er viktige for å forstå hendelsen | <<Hendelse-begrep>>, <<Livshendelse-begrep>>, <<Virksomhetshendelse-begrep>>
 | er beskrevet ved | Et eller flere datasett som hendelsen kan være beskrevet ved | <<Hendelse-er-beskrevet-ved>>, <<Livshendelse-er-beskrevet-ved>>, <<Virksomhetshendelse-er-beskrevet-ved>>
 | type | En eller flere typer som hendelsen tilhører | <<Hendelse-type>>, <<Livshendelse-type>>, <<Virksomhetshendelse-type>>
 |===

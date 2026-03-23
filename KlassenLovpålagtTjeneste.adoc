@@ -296,7 +296,7 @@ Eksempel i RDF Turtle:
 | _English name_ | _is classified by_
 | URI | cv:isClassifiedBy
 | Verdiområde / _Range_ | https://data.norge.no/specification/skos-ap-no-begrep#Begrep[skos:Concept &#x29C9;, window="_blank", role="ext-link"]
-| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til et eller flere begreper som er brukt til å klassifisere tjenesten, begreper som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<LovpålagtTjeneste-temaområde>>, <<LovpålagtTjeneste-sektor>> osv.
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til et eller flere begrep som er brukt til å klassifisere tjenesten, begrep som _ikke_ er eller _ikke_ kan være inkludert i andre egenskaper som <<LovpålagtTjeneste-temaområde>>, <<LovpålagtTjeneste-sektor>> osv.
 
 _This property allows to classify the Public Service with any Concept, other than those already foreseen and defined explicitly in CPSV-AP (<<LovpålagtTjeneste-temaområde>>, <<LovpålagtTjeneste-sektor>> etc.)_
 | Multiplisitet / _Multiplicity_ | 0..n
