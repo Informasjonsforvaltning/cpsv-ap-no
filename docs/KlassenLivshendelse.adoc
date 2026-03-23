@@ -153,7 +153,7 @@ Eksempel i RDF Turtle:
 _This property refers to concept that is important for the understanding of the event._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. Begrunnelse: det er behov for å kunne referere til begreper som er viktig for å forstå hendelsen.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP. 
 
 _Norwegian extension: Not explicitly specified in CPSV-AP._
 |===
