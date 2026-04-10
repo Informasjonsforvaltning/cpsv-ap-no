@@ -34,33 +34,38 @@ Hovedsakelig:
 *** Følgende egenskaper har fått endret URI, range, kravnivå og/eller multiplisitet: 
 **** Kravnivået for <<Dokumentasjonstype-dokumentasjonstypekategori>> er endret fra anbefalt til valgfri.
 
-** *Klassen «<<Hendelse, Hendelse (`cv:Event`)>>*:  
+** *Klassen «<<Gebyr, Gebyr (`cpsvno:Cost`)>>»*:
+*** Følgende egenskaper er føyet til:
+**** <<Gebyr-dokumentasjon>>
+
+
+** *Klassen «<<Hendelse, Hendelse (`cv:Event`)>>»*:  
 *** Følgende egenskaper er føyet til:
 **** <<Hendelse-kontaktpunkt>>
 *** Følgende egenskaper er utgått: 
 **** «Hendelse - beskrivende datasett (`cv:isDescribedAt`)» er utgått og erstattet av <<Hendelse-er-beskrevet-ved>>.
 
-** *Klassen «<<Livshendelse, Livshendelse (`cv:LifeEvent`)>>*:  
+** *Klassen «<<Livshendelse, Livshendelse (`cv:LifeEvent`)>>»*:  
 *** Følgende egenskaper er føyet til:
 **** <<Livshendelse-kontaktpunkt>>
 *** Følgende egenskaper er utgått: 
 **** «Livshendelse - beskrivende datasett (`cv:isDescribedAt`)» er utgått og erstattet av <<Livshendelse-er-beskrevet-ved>>.
 
-** *Klassen «<<OffentligTjeneste, Offentlig tjeneste (`cpsv:PublicService`)>>*:  
+** *Klassen «<<OffentligTjeneste, Offentlig tjeneste (`cpsv:PublicService`)>>»*:  
 *** Følgende egenskaper er utgått: 
 **** «Offentlig tjeneste - beskrivende datasett (`cv:isDescribedAt`)» er utgått og erstattet av <<OffentligTjeneste-er-beskrevet-ved>>.
 **** «Offentlig tjeneste - har påkrevd dokumentasjon (`cpsvno:hasRequiredEvidence`)» er utgått.
 *** Følgende egenskaper har fått endret URI, range, kravnivå og/eller multiplisitet: 
 **** «Offentlig tjeneste - har mulig tjenesteresultat (`cpsvno:hasPossibleOutput`)» har fått ny URI, `cpsvno:hasOutoutType`, og range er endre til `cpsvno:OutputType`.
 
-** *Klassen «<<Tjeneste, Tjeneste (`cpsvno:Service`)>>*:  
+** *Klassen «<<Tjeneste, Tjeneste (`cpsvno:Service`)>>»*:  
 *** Følgende egenskaper er utgått: 
 **** «Tjeneste - beskrivende datasett (`cv:isDescribedAt`)» er utgått og erstattet av <<Tjeneste-er-beskrevet-ved>>.
 **** «Tjeneste - har påkrevd dokumentasjon (`cpsvno:hasRequiredEvidence`)» er utgått.
 *** Følgende egenskaper har fått endret URI, range, kravnivå og/eller multiplisitet: 
 **** «Tjeneste - har mulig tjenesteresultat (`cpsvno:hasPossibleOutput`)» har fått ny URI, `cpsvno:hasOutoutType`, og range er endre til `cpsvno:OutputType`.
 
-** *Klassen «<<Tjenestekanal, Tjenestekanal (`cv:Channel`)>>*: 
+** *Klassen «<<Tjenestekanal, Tjenestekanal (`cv:Channel`)>>»*: 
 *** Følgende egenskaper er utgått: 
 **** «Tjenestekanal - har påkrevd dokumentasjon (`cpsvno:hasRequiredEvidence`)» er utgått.
 *** Følgende egenskaper er føyet til:
@@ -68,7 +73,7 @@ Hovedsakelig:
 *** Følgende egenskaper har fått endret URI, range, kravnivå og/eller multiplisitet:
 **** <<Tjenestekanal-type>> har fått endret krav til bruk av kontrollerte vokabular.
 
-** *Klassen «<<Virksomhetshendelse, Virksomhetshendelse (`cv:BusinessEvent`)>>*:  
+** *Klassen «<<Virksomhetshendelse, Virksomhetshendelse (`cv:BusinessEvent`)>>»*:  
 *** Følgende egenskaper er føyet til:
 **** <<Virksomhetshendelse-kontaktpunkt>>
 *** Følgende egenskaper er utgått: 

@@ -673,10 +673,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel4">
 <li><a href="#Gebyr-beløp">Gebyr – beløp (cv:hasValue)</a></li>
 <li><a href="#Gebyr-beskrivelse">Gebyr – beskrivelse (dct:description)</a></li>
+</ul>
+</li>
+<li><a href="#Gebyr-dokumentasjon">3.5.3. Gebyr – dokumentasjon (foaf:page)</a>
+<ul class="sectlevel4">
 <li><a href="#Gebyr-valuta">Gebyr – valuta (cv:currency)</a></li>
 </ul>
 </li>
-<li><a href="#Gebyr-valgfrie-egenskaper">3.5.3. Valgfrie egenskaper for klassen <em>Gebyr</em></a>
+<li><a href="#Gebyr-valgfrie-egenskaper">3.5.4. Valgfrie egenskaper for klassen <em>Gebyr</em></a>
 <ul class="sectlevel4">
 <li><a href="#Gebyr-er-bestemt-av">Gebyr – er bestemt av (cv:isDefinedBy)</a></li>
 <li><a href="#Gebyr-hvis-tilbys-gjennom">Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)</a></li>
@@ -3927,8 +3931,54 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <p>Eksempel i RDF Turtle: Se under <a href="#OffentligTjeneste-har-gebyr"> 3.12.3.10, &#8220;Offentlig tjeneste – har gebyr (cv:hasCost)&#8221;</a>.</p>
 </div>
 </div>
+</div>
+<div class="sect3">
+<h4 id="Gebyr-dokumentasjon"><a class="link" href="#Gebyr-dokumentasjon">3.5.3. Gebyr – dokumentasjon (foaf:page)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>documentation</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:page</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en side eller et dokument som beskriver prismodell/beregningsgrunnlag. I tillegg til å dokumentere beregningsgrunnlaget, kan denne egenskapen brukes i tilfeller der det ikke bare er ett beløp, men en komplisert prismodell avhengig av f.eks. mengde, hyppighet osv.</p>
+<p class="tableblock"><em>This property is used to refer to a page or document which describes the cost model.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selv om hverken denne egenskapen eller egenskapen <a href="#Gebyr-beløp"> 3.5.2.1, &#8220;Gebyr – beløp (cv:hasValue)&#8221;</a> er obligatorisk, SKAL minst én av dem brukes når denne klassen brukes.</p>
+<p class="tableblock"><em>Although neither this property nor the property <a href="#Gebyr-beløp"> 3.5.2.1, &#8220;Gebyr – beløp (cv:hasValue)&#8221;</a> is mandatory, one of them MUST be used when the class is used.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in CPSV-AP.</em></p></td>
+</tr>
+</tbody>
+</table>
 <div class="sect4">
-<h5 id="Gebyr-valuta"><a class="link" href="#Gebyr-valuta">3.5.2.3. Gebyr – valuta (cv:currency)</a></h5>
+<h5 id="Gebyr-valuta"><a class="link" href="#Gebyr-valuta">3.5.3.1. Gebyr – valuta (cv:currency)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3982,9 +4032,9 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Gebyr-valgfrie-egenskaper"><a class="link" href="#Gebyr-valgfrie-egenskaper">3.5.3. Valgfrie egenskaper for klassen <em>Gebyr</em></a></h4>
+<h4 id="Gebyr-valgfrie-egenskaper"><a class="link" href="#Gebyr-valgfrie-egenskaper">3.5.4. Valgfrie egenskaper for klassen <em>Gebyr</em></a></h4>
 <div class="sect4">
-<h5 id="Gebyr-er-bestemt-av"><a class="link" href="#Gebyr-er-bestemt-av">3.5.3.1. Gebyr – er bestemt av (cv:isDefinedBy)</a></h5>
+<h5 id="Gebyr-er-bestemt-av"><a class="link" href="#Gebyr-er-bestemt-av">3.5.4.1. Gebyr – er bestemt av (cv:isDefinedBy)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4020,7 +4070,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Gebyr-hvis-tilbys-gjennom"><a class="link" href="#Gebyr-hvis-tilbys-gjennom">3.5.3.2. Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)</a></h5>
+<h5 id="Gebyr-hvis-tilbys-gjennom"><a class="link" href="#Gebyr-hvis-tilbys-gjennom">3.5.4.2. Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7010,8 +7060,8 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, SKAL egenskapen <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.3.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> brukes.</p>
-<p class="tableblock"><em>Where the cost varies depending on the channel through which the service is accessed, it MUST be linked to the channel using the <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.3.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> relationship.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, SKAL egenskapen <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.4.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> brukes.</p>
+<p class="tableblock"><em>Where the cost varies depending on the channel through which the service is accessed, it MUST be linked to the channel using the <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.4.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> relationship.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -8939,8 +8989,8 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, SKAL egenskapen <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.3.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> brukes.</p>
-<p class="tableblock"><em>Where the cost varies depending on the channel through which the service is accessed, it MUST be linked to the channel using the <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.3.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> relationship.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, SKAL egenskapen <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.4.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> brukes.</p>
+<p class="tableblock"><em>Where the cost varies depending on the channel through which the service is accessed, it MUST be linked to the channel using the <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.4.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> relationship.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -12663,8 +12713,8 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, SKAL egenskapen <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.3.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> brukes.</p>
-<p class="tableblock"><em>Where the cost varies depending on the channel through which the service is accessed, it MUST be linked to the channel using the <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.3.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> relationship.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Der gebyret varierer avhengig av kanalen tjenesten tilbys gjennom, SKAL egenskapen <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.4.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> brukes.</p>
+<p class="tableblock"><em>Where the cost varies depending on the channel through which the service is accessed, it MUST be linked to the channel using the <a href="#Gebyr-hvis-tilbys-gjennom"> 3.5.4.2, &#8220;Gebyr – hvis tilbys gjennom (cv:ifAccessedThrough)&#8221;</a> relationship.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
@@ -15516,7 +15566,24 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </li>
 <li>
-<p><strong>Klassen «<a href="#Hendelse">Hendelse (<code>cv:Event</code>)</a></strong>:</p>
+<p><strong>Klassen «<a href="#Gebyr">Gebyr (<code>cpsvno:Cost</code>)</a>»</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Følgende egenskaper er føyet til:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Gebyr-dokumentasjon"> 3.5.3, &#8220;Gebyr – dokumentasjon (foaf:page)&#8221;</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Klassen «<a href="#Hendelse">Hendelse (<code>cv:Event</code>)</a>»</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -15543,7 +15610,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </li>
 <li>
-<p><strong>Klassen «<a href="#Livshendelse">Livshendelse (<code>cv:LifeEvent</code>)</a></strong>:</p>
+<p><strong>Klassen «<a href="#Livshendelse">Livshendelse (<code>cv:LifeEvent</code>)</a>»</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -15570,7 +15637,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </li>
 <li>
-<p><strong>Klassen «<a href="#OffentligTjeneste">Offentlig tjeneste (<code>cpsv:PublicService</code>)</a></strong>:</p>
+<p><strong>Klassen «<a href="#OffentligTjeneste">Offentlig tjeneste (<code>cpsv:PublicService</code>)</a>»</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -15600,7 +15667,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </li>
 <li>
-<p><strong>Klassen «<a href="#Tjeneste">Tjeneste (<code>cpsvno:Service</code>)</a></strong>:</p>
+<p><strong>Klassen «<a href="#Tjeneste">Tjeneste (<code>cpsvno:Service</code>)</a>»</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -15630,7 +15697,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </li>
 <li>
-<p><strong>Klassen «<a href="#Tjenestekanal">Tjenestekanal (<code>cv:Channel</code>)</a></strong>:</p>
+<p><strong>Klassen «<a href="#Tjenestekanal">Tjenestekanal (<code>cv:Channel</code>)</a>»</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -15667,7 +15734,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </li>
 <li>
-<p><strong>Klassen «<a href="#Virksomhetshendelse">Virksomhetshendelse (<code>cv:BusinessEvent</code>)</a></strong>:</p>
+<p><strong>Klassen «<a href="#Virksomhetshendelse">Virksomhetshendelse (<code>cv:BusinessEvent</code>)</a>»</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -15909,7 +15976,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2026-03-23 14:22:48 UTC
+Sist oppdatert 2026-04-10 07:04:59 UTC
 </div>
 </div>
 </body>
