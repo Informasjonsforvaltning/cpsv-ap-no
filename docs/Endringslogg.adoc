@@ -1,5 +1,12 @@
 == Vedlegg B – Endringslogg [[Endringslogg]]
 
+=== Fra v.1.1.2 til v.1.2.0
+
+** *Klassen «<<Gebyr, Gebyr (`cpsvno:Cost`)>>»*:
+*** Følgende egenskaper er føyet til:
+**** <<Gebyr-dokumentasjon>>
+
+
 === Fra v.1.1.1 til v.1.1.2
 
 Bruker ikke blanke noder i RDF-eksemplene.

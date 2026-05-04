@@ -231,6 +231,7 @@
     # recommended properties:
       :hasMin0Max1Shape-cvHasValue, # beløp, cv:hasValue
       :hasMin0MaxNShape-dctDescription, # beskrivelse, dct:description
+      :hasMin0MaxNShape-foafPage,# dokumentajson foaf:page
 #      :hasMin0Max1Shape-cvCurrency, # valuta, cv:currency
       :hasShapeCV-cvCurrencyMin0Max1, # valuta, kontrollert vokabular, cv:currency
     # optional properties:
