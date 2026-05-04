@@ -81,7 +81,7 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 
 Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 
-=== Gebyr – dokumentasjon (foaf:page) [[Gebyr-dokumentasjon]]
+==== Gebyr – dokumentasjon (foaf:page) [[Gebyr-dokumentasjon]]
 
 [cols="30s,70"]
 |===
