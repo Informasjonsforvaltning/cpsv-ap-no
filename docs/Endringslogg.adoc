@@ -6,6 +6,9 @@
 *** Følgende egenskaper er føyet til:
 **** <<Gebyr-dokumentasjon>>
 
+** *Klassene «<<Katalog, Katalog (`dcat:Catalog`)>>», «<<OffentligOrganisasjon, Offentlig organisasjon (`cv:PublicOrganisation`)>>»,  «<<OffentligTjeneste, Offentlig tjeneste (`cpsv:PublicService`)>>», «<<Organisasjon, Organisasjon (`org:Organization`)>>», «<<Tjeneste, Tjeneste (`cpsvno:Service`)>>»*:
+*** Krav til bruk av kontrollert vokabular for egenskapen «dekningsområde (`dct:spatial`)» er endret. 
+
 
 === Fra v.1.1.1 til v.1.1.2
 
