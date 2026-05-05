@@ -2420,31 +2420,29 @@ sh:class cpsvno:Service ;
   sh:name "spatial coverage"@en, "dekningsområde"@nb;
   sh:path dct:spatial;
 #   sh:nodeKind sh:IRI;
-  sh:qualifiedValueShape [
-    sh:or ( # Minst ett av følgende kontrollerte vokabularer skal brukes         
+  sh:or ( # Verdien skal hentes fra følgende kontrollerte vokabularer         
       [sh:pattern "^http://publications.europa.eu/resource/authority/country/"] 
       [sh:pattern "^http://publications.europa.eu/resource/authority/continent/"]
       [sh:pattern "^http://sws.geonames.org/"]
       [sh:pattern "^http://publications.europa.eu/resource/authority/place/"]
-      )  ] ;
-    sh:qualifiedMinCount 1 ;
-    sh:message "Minst 1 verdi til egenskapen dct:spatial SKAL hentes fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ,
-      "At least 1 value of the property dct:spatial MUST be chosen from the controlled vocabularies http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org"@en ;
+  )  ;
+  sh:message "Verdien til egenskapen dct:spatial SKAL hentes fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ,
+      "The value of the property dct:spatial MUST be chosen from the controlled vocabularies http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org"@en ;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctSpatialMin1MaxN a sh:PropertyShape;
   sh:name "spatial coverage"@en, "dekningsområde"@nb;
   sh:path dct:spatial;
 #   sh:nodeKind sh:IRI;
-    sh:or ( # Minst ett av følgende kontrollerte vokabularer skal brukes         
+    sh:or ( # Verdien skal hentes fra følgende kontrollerte vokabularer         
       [sh:pattern "^http://publications.europa.eu/resource/authority/country/"] 
       [sh:pattern "^http://publications.europa.eu/resource/authority/continent/"]
       [sh:pattern "^http://sws.geonames.org/"]
       [sh:pattern "^http://publications.europa.eu/resource/authority/place/"]
-      )  ;
+    )  ;
     sh:MinCount 1 ;
     sh:message "Egenskapen dct:spatial SKAL ha minst 1 verdi som SKAL hentes fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ,
-      "The property dct:spatial MUST have min.1 1 value which MUST be chosen from the controlled vocabularies http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org"@en ;
+      "The property dct:spatial MUST have min. 1 value which MUST be chosen from the controlled vocabularies http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org"@en ;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctTypeAgentMin0Max1 a sh:PropertyShape;
