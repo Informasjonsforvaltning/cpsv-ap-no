@@ -9,6 +9,9 @@
 ** *Klassene «<<Katalog, Katalog (`dcat:Catalog`)>>», «<<OffentligOrganisasjon, Offentlig organisasjon (`cv:PublicOrganisation`)>>»,  «<<OffentligTjeneste, Offentlig tjeneste (`cpsv:PublicService`)>>», «<<Organisasjon, Organisasjon (`org:Organization`)>>», «<<Tjeneste, Tjeneste (`cpsvno:Service`)>>»*:
 *** Krav til bruk av kontrollert vokabular for egenskapen «dekningsområde (`dct:spatial`)» er endret. 
 
+** *Klassene «<<Hendelse, Hendelse (`cv:Event`)>>», «<<Livshendelse, Livshendelse (`cv:LifeEvent`)>>», «<<Virksomhetshendelse, Virksomhetshendelse (`cv:BusinessEvent`)>>»*:
+*** Følgende egenskaper er føyet til:
+**** <<Hendelse-kontaktpunkt>>, <<Livshendelse-kontaktpunkt>>, <<Virksomhetshendelse-kontaktpunkt>>
 
 === Fra v.1.1.1 til v.1.1.2
 

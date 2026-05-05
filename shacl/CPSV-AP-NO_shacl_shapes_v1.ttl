@@ -246,6 +246,7 @@
   sh:property
     # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier, # identifikator, dct:identifier
+      :hasMin1MaxNShape-cvContactPoint, # kontaktpunkt (cv:contactPoint)
       :hasMin1MaxNShape-dctTitle, # navn, dct:title
     # recommended properties:
       :hasMin0MaxNShape-dctDescription, # beskrivelse, dct:description
