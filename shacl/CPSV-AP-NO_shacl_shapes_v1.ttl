@@ -50,10 +50,10 @@
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
-    dct:modified "2024-11-28"^^xsd:date ;
+    dct:modified "2026-05-05"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "1.1.003" ;
-    adms:versionNotes "Tilpasset CPSV-AP-NO v.1.1.0"@nb ;
+    owl:versionInfo "1.2.000" ;
+    adms:versionNotes "Tilpasset CPSV-AP-NO v.1.2.0"@nb ;
     .
 
 ### --- Class shapes:
