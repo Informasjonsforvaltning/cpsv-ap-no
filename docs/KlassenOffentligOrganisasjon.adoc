@@ -45,7 +45,7 @@ Eksempel i RDF Turtle:
 ----
 <BrønnøyKommune> a cv:PublicOrganisation ;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> , # Norge
-      <https://www.geonames.org/3159955> ; # Brønnøy kommune
+      <https://www.geonames.org/3159955/> ; # Brønnøy kommune
    .
 ----
 
