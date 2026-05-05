@@ -203,7 +203,7 @@ Eksempel i RDF Turtle:
 ----
 <skjenkebevillingBrønnøy> a cpsv:PublicService ;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> , # Norge
-      <https://www.geonames.org/3159955/> ; # Brønnøy kommune
+      <https://sws.geonames.org/3159955/> ; # Brønnøy kommune
    .
 ----
 

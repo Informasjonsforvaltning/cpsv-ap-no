@@ -2423,7 +2423,7 @@ sh:class cpsvno:Service ;
   sh:or ( # Verdien skal hentes fra følgende kontrollerte vokabularer         
       [sh:pattern "^http://publications.europa.eu/resource/authority/country/"] 
       [sh:pattern "^http://publications.europa.eu/resource/authority/continent/"]
-      [sh:pattern "^http://sws.geonames.org/"]
+      [sh:pattern "^https://sws.geonames.org/"]
       [sh:pattern "^http://publications.europa.eu/resource/authority/place/"]
   )  ;
   sh:message "Verdien til egenskapen dct:spatial SKAL hentes fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ,
@@ -2437,7 +2437,7 @@ sh:class cpsvno:Service ;
     sh:or ( # Verdien skal hentes fra følgende kontrollerte vokabularer         
       [sh:pattern "^http://publications.europa.eu/resource/authority/country/"] 
       [sh:pattern "^http://publications.europa.eu/resource/authority/continent/"]
-      [sh:pattern "^http://sws.geonames.org/"]
+      [sh:pattern "^https://sws.geonames.org/"]
       [sh:pattern "^http://publications.europa.eu/resource/authority/place/"]
     )  ;
     sh:MinCount 1 ;
