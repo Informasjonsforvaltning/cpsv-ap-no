@@ -50,10 +50,10 @@
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:title "SHACL-rules for CPSV-AP-NO v.1.x"@en ;
     dct:description "This document specifies the constraints on properties and classes in CPSV-AP-NO v.1.x, expressed in SHACL."@en ;
-    dct:modified "2024-11-28"^^xsd:date ;
+    dct:modified "2026-05-05"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    owl:versionInfo "1.1.003" ;
-    adms:versionNotes "Tilpasset CPSV-AP-NO v.1.1.0"@nb ;
+    owl:versionInfo "1.2.000" ;
+    adms:versionNotes "Tilpasset CPSV-AP-NO v.1.2.0"@nb ;
     .
 
 ### --- Class shapes:
@@ -231,6 +231,7 @@
     # recommended properties:
       :hasMin0Max1Shape-cvHasValue, # beløp, cv:hasValue
       :hasMin0MaxNShape-dctDescription, # beskrivelse, dct:description
+      :hasMin0MaxNShape-foafPage,# dokumentajson foaf:page
 #      :hasMin0Max1Shape-cvCurrency, # valuta, cv:currency
       :hasShapeCV-cvCurrencyMin0Max1, # valuta, kontrollert vokabular, cv:currency
     # optional properties:
@@ -245,6 +246,7 @@
   sh:property
     # mandatory properties:
       :hasMin1Max1Shape-dctIdentifier, # identifikator, dct:identifier
+      :hasMin1MaxNShape-cvContactPoint, # kontaktpunkt (cv:contactPoint)
       :hasMin1MaxNShape-dctTitle, # navn, dct:title
     # recommended properties:
       :hasMin0MaxNShape-dctDescription, # beskrivelse, dct:description
@@ -2418,31 +2420,29 @@ sh:class cpsvno:Service ;
   sh:name "spatial coverage"@en, "dekningsområde"@nb;
   sh:path dct:spatial;
 #   sh:nodeKind sh:IRI;
-  sh:qualifiedValueShape [
-    sh:or ( # Minst ett av følgende kontrollerte vokabularer skal brukes         
+  sh:or ( # Verdien skal hentes fra følgende kontrollerte vokabularer         
       [sh:pattern "^http://publications.europa.eu/resource/authority/country/"] 
       [sh:pattern "^http://publications.europa.eu/resource/authority/continent/"]
-      [sh:pattern "^http://sws.geonames.org/"]
+      [sh:pattern "^https://sws.geonames.org/"]
       [sh:pattern "^http://publications.europa.eu/resource/authority/place/"]
-      )  ] ;
-    sh:qualifiedMinCount 1 ;
-    sh:message "Minst 1 verdi til egenskapen dct:spatial SKAL hentes fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ,
-      "At least 1 value of the property dct:spatial MUST be chosen from the controlled vocabularies http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org"@en ;
+  )  ;
+  sh:message "Verdien til egenskapen dct:spatial SKAL hentes fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ,
+      "The value of the property dct:spatial MUST be chosen from the controlled vocabularies http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org"@en ;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctSpatialMin1MaxN a sh:PropertyShape;
   sh:name "spatial coverage"@en, "dekningsområde"@nb;
   sh:path dct:spatial;
 #   sh:nodeKind sh:IRI;
-    sh:or ( # Minst ett av følgende kontrollerte vokabularer skal brukes         
+    sh:or ( # Verdien skal hentes fra følgende kontrollerte vokabularer         
       [sh:pattern "^http://publications.europa.eu/resource/authority/country/"] 
       [sh:pattern "^http://publications.europa.eu/resource/authority/continent/"]
-      [sh:pattern "^http://sws.geonames.org/"]
+      [sh:pattern "^https://sws.geonames.org/"]
       [sh:pattern "^http://publications.europa.eu/resource/authority/place/"]
-      )  ;
+    )  ;
     sh:MinCount 1 ;
     sh:message "Egenskapen dct:spatial SKAL ha minst 1 verdi som SKAL hentes fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ,
-      "The property dct:spatial MUST have min.1 1 value which MUST be chosen from the controlled vocabularies http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org"@en ;
+      "The property dct:spatial MUST have min. 1 value which MUST be chosen from the controlled vocabularies http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org"@en ;
   sh:severity sh:Violation .
 
 :hasShapeCV-dctTypeAgentMin0Max1 a sh:PropertyShape;

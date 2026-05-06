@@ -81,6 +81,26 @@ _Norwegian extension: Requirement level changed from optional to recommended._
 
 Eksempel i RDF Turtle: Se under <<OffentligTjeneste-har-gebyr>>.
 
+==== Gebyr – dokumentasjon (foaf:page) [[Gebyr-dokumentasjon]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _documentation_
+| URI | foaf:page
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en side eller et dokument som beskriver prismodell/beregningsgrunnlag. I tillegg til å dokumentere beregningsgrunnlaget, kan denne egenskapen brukes i tilfeller der det ikke bare er ett beløp, men en komplisert prismodell avhengig av f.eks. mengde, hyppighet osv. 
+
+_This property is used to refer to a page or document which describes the cost model._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
+| Merknad 1 / _Note 1_ | Selv om hverken denne egenskapen eller egenskapen <<Gebyr-beløp>> er obligatorisk, SKAL minst én av dem brukes når denne klassen brukes. 
+
+__Although neither this property nor the property <<Gebyr-beløp>> is mandatory, one of them MUST be used when the class is used.__
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i CPSV-AP.
+
+_Norwegian extension: Not explicitly specified in CPSV-AP._
+|===
+
 ==== Gebyr – valuta (cv:currency) [[Gebyr-valuta]]
 
 [cols="30s,70d"]
