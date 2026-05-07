@@ -20,6 +20,8 @@ include::download.adoc[]
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/cpsv-ap-no/issues[GitHub Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på GitHub kan du opprette bruker gratis.
 
+include::Om_denne_versjonen.adoc[]
+
 
 *Lisens*: https://creativecommons.org/licenses/by/4.0/[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"] + 
 *Status*: #under utarbeidelse# +
@@ -31,8 +33,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/cpsv-ap-no/ +
 *Veileder*: <ingen> +
 // *Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til denne https://raw.githubusercontent.com/Informasjonsforvaltning/cpsv-ap-no/develop/shacl/CPSV-AP-NO_shacl_shapes_v1.ttl[shacl-fil &#x29C9;, window="_blank", role="ext-link"] som "Regelsett lenke")
-
-include::Om_denne_versjonen.adoc[]
 
 include::Abstract.adoc[]
 
