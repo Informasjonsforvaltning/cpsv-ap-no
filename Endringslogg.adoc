@@ -34,20 +34,11 @@ Hovedsakelig:
 *** Følgende egenskaper har fått endret URI, range, kravnivå og/eller multiplisitet: 
 **** Kravnivået for <<Dokumentasjonstype-dokumentasjonstypekategori>> er endret fra anbefalt til valgfri.
 
-** *Klassen «<<Gebyr, Gebyr (`cpsvno:Cost`)>>»*:
-*** Følgende egenskaper er føyet til:
-**** <<Gebyr-dokumentasjon>>
-
-
 ** *Klassen «<<Hendelse, Hendelse (`cv:Event`)>>»*:  
-*** Følgende egenskaper er føyet til:
-**** <<Hendelse-kontaktpunkt>>
 *** Følgende egenskaper er utgått: 
 **** «Hendelse - beskrivende datasett (`cv:isDescribedAt`)» er utgått og erstattet av <<Hendelse-er-beskrevet-ved>>.
 
 ** *Klassen «<<Livshendelse, Livshendelse (`cv:LifeEvent`)>>»*:  
-*** Følgende egenskaper er føyet til:
-**** <<Livshendelse-kontaktpunkt>>
 *** Følgende egenskaper er utgått: 
 **** «Livshendelse - beskrivende datasett (`cv:isDescribedAt`)» er utgått og erstattet av <<Livshendelse-er-beskrevet-ved>>.
 
@@ -74,10 +65,21 @@ Hovedsakelig:
 **** <<Tjenestekanal-type>> har fått endret krav til bruk av kontrollerte vokabular.
 
 ** *Klassen «<<Virksomhetshendelse, Virksomhetshendelse (`cv:BusinessEvent`)>>»*:  
-*** Følgende egenskaper er føyet til:
-**** <<Virksomhetshendelse-kontaktpunkt>>
 *** Følgende egenskaper er utgått: 
 **** «Virksomhetshendelse - beskrivende datasett (`cv:isDescribedAt`)» er utgått og erstattet av <<Virksomhetshendelse-er-beskrevet-ved>>.
+
+=== Fra v.1.1.2 til v.1.2.0
+
+** *Klassen «<<Gebyr, Gebyr (`cpsvno:Cost`)>>»*:
+*** Følgende egenskaper er føyet til:
+**** <<Gebyr-dokumentasjon>>
+
+** *Klassene «<<Katalog, Katalog (`dcat:Catalog`)>>», «<<OffentligOrganisasjon, Offentlig organisasjon (`cv:PublicOrganisation`)>>»,  «<<OffentligTjeneste, Offentlig tjeneste (`cpsv:PublicService`)>>», «<<Organisasjon, Organisasjon (`org:Organization`)>>», «<<Tjeneste, Tjeneste (`cpsvno:Service`)>>»*:
+*** Krav til bruk av kontrollert vokabular for egenskapen «dekningsområde (`dct:spatial`)» er endret. 
+
+** *Klassene «<<Hendelse, Hendelse (`cv:Event`)>>», «<<Livshendelse, Livshendelse (`cv:LifeEvent`)>>», «<<Virksomhetshendelse, Virksomhetshendelse (`cv:BusinessEvent`)>>»*:
+*** Følgende egenskaper er føyet til:
+**** <<Hendelse-kontaktpunkt>>, <<Livshendelse-kontaktpunkt>>, <<Virksomhetshendelse-kontaktpunkt>>
 
 === Fra v.1.1.1 til v.1.1.2
 

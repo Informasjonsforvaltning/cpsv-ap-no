@@ -140,6 +140,23 @@ _This property refers to concept that is important for the understanding of the 
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
 |===
 
+==== Lovpålagt tjeneste – forvaltningsnivå (cpsvno:governmentLevel) [[LovpålagtTjeneste-forvaltningsnivå]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _government level_
+| URI | cpsvno:governmentLevel
+| Verdiområde / _Range_ | https://data.norge.no/specification/skos-ap-no-begrep#Begrep[skos:Concept &#x29C9;, window="_blank", role="ext-link"]
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til begrep hentet fra et kontrollert vokabular som forklarer forvaltningsnivået av tjenesten.
+
+_This property refers to concept chosen from a controlled vocabulary which explains the government level of the service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
+| Eksempel / _Example_ | statlig, fylkeskommunal, kommunal
+
+__national, regional, local__
+|===
+
 ==== Lovpålagt tjeneste – dekningsområde (dct:spatial) [[LovpålagtTjeneste-dekningsområde]]
 
 [cols="30s,70d"]

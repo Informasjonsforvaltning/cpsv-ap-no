@@ -798,6 +798,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#LovpålagtTjeneste-anbefalte-egenskaper">3.10.2. Anbefalte egenskaper for klassen <em>Lovpålagt tjeneste</em></a>
 <ul class="sectlevel4">
 <li><a href="#LovpålagtTjeneste-begrep">Lovpålagt tjeneste – begrep (dct:subject)</a></li>
+<li><a href="#LovpålagtTjeneste-forvaltningsnivå">Lovpålagt tjeneste – forvaltningsnivå (cpsvno:governmentLevel)</a></li>
 <li><a href="#LovpålagtTjeneste-dekningsområde">Lovpålagt tjeneste – dekningsområde (dct:spatial)</a></li>
 <li><a href="#LovpålagtTjeneste-har-dokumentasjonskrav">Lovpålagt tjeneste – har dokumentasjonskrav (cv:hasInputType)</a></li>
 <li><a href="#LovpålagtTjeneste-hjemmeside">Lovpålagt tjeneste – hjemmeside (foaf:homepage)</a></li>
@@ -1194,6 +1195,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Endringslogg">Vedlegg B – Endringslogg</a>
 <ul class="sectlevel2">
 <li><a href="#_fra_v1_1_til_v_2">Fra v1.1 til v.2</a></li>
+<li><a href="#_fra_v_1_1_2_til_v_1_2_0">Fra v.1.1.2 til v.1.2.0</a></li>
 <li><a href="#_fra_v_1_1_1_til_v_1_1_2">Fra v.1.1.1 til v.1.1.2</a></li>
 <li><a href="#_fra_v_1_0_x_til_v_1_1_1">Fra v.1.0.x til v.1.1.1</a></li>
 <li><a href="#_fra_v_1_0_x_til_v_1_1_0">Fra v.1.0.x til v.1.1.0</a>
@@ -1247,8 +1249,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><strong>Lisens</strong>: <a href="https://creativecommons.org/licenses/by/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY 4.0 &#x29C9;</a><br>
 <strong>Status</strong>: <mark>under utarbeidelse</mark><br>
 <strong>Versjon</strong>: <mark>utkast til v.2</mark> (se <a href="#Endringslogg"><em>Vedlegg B – Endringslogg</em></a>)<br>
-<strong>Publisert</strong>: <mark>under utarbeidelse (v.2)</mark>; 2024-10-07 (v.1.1); 2023-09-08 (v.1.0)<br>
-<strong>Oppdatert</strong>: <mark>under utarbeidelse (v.2)</mark>; 2025-11-05 (v.1.1.x)<br>
+<strong>Publisert</strong>: <mark>under utarbeidelse (v.2)</mark>; 2026-05-05 (v.1.2); 2023-09-08 (v.1.0)<br>
+<strong>Oppdatert</strong>: <mark>under utarbeidelse (v.2)</mark>; 2026-05-05 (v.1.2); 2025-11-05 (v.1.1.x)<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/cpsv-ap-no" class="bare">https://data.norge.no/specification/cpsv-ap-no</a><br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/cpsv-ap-no/" class="bare">https://informasjonsforvaltning.github.io/cpsv-ap-no/</a><br>
@@ -1540,27 +1542,27 @@ Dette er et <mark>utkast</mark> til v.2 av CPSV-AP-NO som er <mark>under utarbei
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dekningsområde</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Et eller flere geografiske områder som dekkes av tjenesten</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-dekningsområde"> 3.10.2.2</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-dekningsområde"> 3.10.2.3</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har dokumentasjonskrav</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Et eller flere dokumentasjonskrav som gjelder for tjenesten</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-har-dokumentasjonskrav"> 3.10.2.3</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-har-dokumentasjonskrav"> 3.10.2.4</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>hjemmeside</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">En eller flere hjemmesider for tjenesten</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-hjemmeside"> 3.10.2.4</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-hjemmeside"> 3.10.2.5</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>hovedformål</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Et eller flere hovedformål for tjenesten</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-hovedformål"> 3.10.2.5</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-hovedformål"> 3.10.2.6</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>temaområde</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Et eller flere temaområder som tjenesten dekker</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-temaområde"> 3.10.2.6</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#LovpålagtTjeneste-temaområde"> 3.10.2.7</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4865,7 +4867,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <p>Norsk utvidelse: Verdien SKAL velges fra EUs kontrollerte vokabularer <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener"><em>Continent</em> &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener"><em>Countries and territories</em> &#x29C9;</a> eller <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener"><em>Place</em> &#x29C9;</a>, HVIS den finnes på listene; <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener"><em>GeoNames</em> &#x29C9;</a> SKAL i andre tilfeller brukes.</p>
 </div>
 <div class="paragraph">
-<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> URIs MUST be used.</em></p>
+<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> MUST be used.</em></p>
 </div></div></td>
 </tr>
 <tr>
@@ -6561,7 +6563,48 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="LovpålagtTjeneste-dekningsområde"><a class="link" href="#LovpålagtTjeneste-dekningsområde">3.10.2.2. Lovpålagt tjeneste – dekningsområde (dct:spatial)</a></h5>
+<h5 id="LovpålagtTjeneste-forvaltningsnivå"><a class="link" href="#LovpålagtTjeneste-forvaltningsnivå">3.10.2.2. Lovpålagt tjeneste – forvaltningsnivå (cpsvno:governmentLevel)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>government level</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:governmentLevel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep" class="ext-link" target="_blank" rel="noopener">skos:Concept &#x29C9;</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til begrep hentet fra et kontrollert vokabular som forklarer forvaltningsnivået av tjenesten.</p>
+<p class="tableblock"><em>This property refers to concept chosen from a controlled vocabulary which explains the government level of the service.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">statlig, fylkeskommunal, kommunal</p>
+<p class="tableblock"><em>national, regional, local</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="LovpålagtTjeneste-dekningsområde"><a class="link" href="#LovpålagtTjeneste-dekningsområde">3.10.2.3. Lovpålagt tjeneste – dekningsområde (dct:spatial)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6620,7 +6663,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="LovpålagtTjeneste-har-dokumentasjonskrav"><a class="link" href="#LovpålagtTjeneste-har-dokumentasjonskrav">3.10.2.3. Lovpålagt tjeneste – har dokumentasjonskrav (cv:hasInputType)</a></h5>
+<h5 id="LovpålagtTjeneste-har-dokumentasjonskrav"><a class="link" href="#LovpålagtTjeneste-har-dokumentasjonskrav">3.10.2.4. Lovpålagt tjeneste – har dokumentasjonskrav (cv:hasInputType)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6674,7 +6717,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="LovpålagtTjeneste-hjemmeside"><a class="link" href="#LovpålagtTjeneste-hjemmeside">3.10.2.4. Lovpålagt tjeneste – hjemmeside (foaf:homepage)</a></h5>
+<h5 id="LovpålagtTjeneste-hjemmeside"><a class="link" href="#LovpålagtTjeneste-hjemmeside">3.10.2.5. Lovpålagt tjeneste – hjemmeside (foaf:homepage)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6723,7 +6766,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="LovpålagtTjeneste-hovedformål"><a class="link" href="#LovpålagtTjeneste-hovedformål">3.10.2.5. Lovpålagt tjeneste – hovedformål (dct:type)</a></h5>
+<h5 id="LovpålagtTjeneste-hovedformål"><a class="link" href="#LovpålagtTjeneste-hovedformål">3.10.2.6. Lovpålagt tjeneste – hovedformål (dct:type)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6764,7 +6807,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="LovpålagtTjeneste-temaområde"><a class="link" href="#LovpålagtTjeneste-temaområde">3.10.2.6. Lovpålagt tjeneste – temaområde (cv:thematicArea)</a></h5>
+<h5 id="LovpålagtTjeneste-temaområde"><a class="link" href="#LovpålagtTjeneste-temaområde">3.10.2.7. Lovpålagt tjeneste – temaområde (cv:thematicArea)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6926,8 +6969,8 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et eller flere begrep som er brukt til å klassifisere tjenesten, begrep som <em>ikke</em> er eller <em>ikke</em> kan være inkludert i andre egenskaper som <a href="#LovpålagtTjeneste-temaområde"> 3.10.2.6, &#8220;Lovpålagt tjeneste – temaområde (cv:thematicArea)&#8221;</a>, <a href="#LovpålagtTjeneste-sektor"> 3.10.3.12, &#8220;Lovpålagt tjeneste – sektor (cv:sector)&#8221;</a> osv.</p>
-<p class="tableblock"><em>This property allows to classify the Public Service with any Concept, other than those already foreseen and defined explicitly in CPSV-AP (<a href="#LovpålagtTjeneste-temaområde"> 3.10.2.6, &#8220;Lovpålagt tjeneste – temaområde (cv:thematicArea)&#8221;</a>, <a href="#LovpålagtTjeneste-sektor"> 3.10.3.12, &#8220;Lovpålagt tjeneste – sektor (cv:sector)&#8221;</a> etc.)</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et eller flere begrep som er brukt til å klassifisere tjenesten, begrep som <em>ikke</em> er eller <em>ikke</em> kan være inkludert i andre egenskaper som <a href="#LovpålagtTjeneste-temaområde"> 3.10.2.7, &#8220;Lovpålagt tjeneste – temaområde (cv:thematicArea)&#8221;</a>, <a href="#LovpålagtTjeneste-sektor"> 3.10.3.12, &#8220;Lovpålagt tjeneste – sektor (cv:sector)&#8221;</a> osv.</p>
+<p class="tableblock"><em>This property allows to classify the Public Service with any Concept, other than those already foreseen and defined explicitly in CPSV-AP (<a href="#LovpålagtTjeneste-temaområde"> 3.10.2.7, &#8220;Lovpålagt tjeneste – temaområde (cv:thematicArea)&#8221;</a>, <a href="#LovpålagtTjeneste-sektor"> 3.10.3.12, &#8220;Lovpålagt tjeneste – sektor (cv:sector)&#8221;</a> etc.)</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -7418,7 +7461,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <p>Norsk utvidelse: Verdien SKAL velges fra EUs kontrollerte vokabularer <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener"><em>Continent</em> &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener"><em>Countries and territories</em> &#x29C9;</a> eller <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener"><em>Place</em> &#x29C9;</a>, HVIS den finnes på listene; <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener"><em>GeoNames</em> &#x29C9;</a> SKAL i andre tilfeller brukes.</p>
 </div>
 <div class="paragraph">
-<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> URIs MUST be used.</em></p>
+<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> MUST be used.</em></p>
 </div></div></td>
 </tr>
 <tr>
@@ -7434,7 +7477,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <pre>&lt;BrønnøyKommune&gt; a cv:PublicOrganisation ;
    dct:spatial &lt;http://publications.europa.eu/resource/authority/country/NOR&gt; , # Norge
-      &lt;https://data.geonorge.no/administrativeEnheter/kommune/id/172833&gt; ; # Brønnøy kommune
+      &lt;https://sws.geonames.org/3159955/&gt; ; # Brønnøy kommune
    .</pre>
 </div>
 </div>
@@ -8205,7 +8248,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <p>Norsk utvidelse: Verdien SKAL velges fra EUs kontrollerte vokabularer <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener"><em>Continent</em> &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener"><em>Countries and territories</em> &#x29C9;</a> eller <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener"><em>Place</em> &#x29C9;</a>, HVIS den finnes på listene; <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener"><em>GeoNames</em> &#x29C9;</a> SKAL i andre tilfeller brukes.</p>
 </div>
 <div class="paragraph">
-<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> URIs MUST be used.</em></p>
+<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> MUST be used.</em></p>
 </div></div></td>
 </tr>
 <tr>
@@ -8226,7 +8269,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="content">
 <pre>&lt;skjenkebevillingBrønnøy&gt; a cpsv:PublicService ;
    dct:spatial &lt;http://publications.europa.eu/resource/authority/country/NOR&gt; , # Norge
-      &lt;https://data.geonorge.no/administrativeEnheter/kommune/id/172833&gt; ; # Brønnøy kommune
+      &lt;https://sws.geonames.org/3159955/&gt; ; # Brønnøy kommune
    .</pre>
 </div>
 </div>
@@ -9581,7 +9624,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <p>Norsk utvidelse: Verdien SKAL velges fra EUs kontrollerte vokabularer <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener"><em>Continent</em> &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener"><em>Countries and territories</em> &#x29C9;</a> eller <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener"><em>Place</em> &#x29C9;</a>, HVIS den finnes på listene; <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener"><em>GeoNames</em> &#x29C9;</a> SKAL i andre tilfeller brukes.</p>
 </div>
 <div class="paragraph">
-<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> URIs MUST be used.</em></p>
+<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> MUST be used.</em></p>
 </div></div></td>
 </tr>
 <tr>
@@ -12094,7 +12137,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <p>Norsk utvidelse: Verdien SKAL velges fra EUs kontrollerte vokabularer <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener"><em>Continent</em> &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener"><em>Countries and territories</em> &#x29C9;</a> eller <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener"><em>Place</em> &#x29C9;</a>, HVIS den finnes på listene; <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener"><em>GeoNames</em> &#x29C9;</a> SKAL i andre tilfeller brukes.</p>
 </div>
 <div class="paragraph">
-<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> URIs MUST be used.</em></p>
+<p><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> MUST be used.</em></p>
 </div></div></td>
 </tr>
 <tr>
@@ -15563,36 +15606,9 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </li>
 <li>
-<p><strong>Klassen «<a href="#Gebyr">Gebyr (<code>cpsvno:Cost</code>)</a>»</strong>:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Følgende egenskaper er føyet til:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#Gebyr-dokumentasjon"> 3.5.2.3, &#8220;Gebyr – dokumentasjon (foaf:page)&#8221;</a></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
 <p><strong>Klassen «<a href="#Hendelse">Hendelse (<code>cv:Event</code>)</a>»</strong>:</p>
 <div class="ulist">
 <ul>
-<li>
-<p>Følgende egenskaper er føyet til:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#Hendelse-kontaktpunkt"> 3.6.1.2, &#8220;Hendelse – kontaktpunkt (cv:contactPoint)&#8221;</a></p>
-</li>
-</ul>
-</div>
-</li>
 <li>
 <p>Følgende egenskaper er utgått:</p>
 <div class="ulist">
@@ -15610,16 +15626,6 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <p><strong>Klassen «<a href="#Livshendelse">Livshendelse (<code>cv:LifeEvent</code>)</a>»</strong>:</p>
 <div class="ulist">
 <ul>
-<li>
-<p>Følgende egenskaper er føyet til:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#Livshendelse-kontaktpunkt"> 3.9.1.2, &#8220;Livshendelse – kontaktpunkt (cv:contactPoint)&#8221;</a></p>
-</li>
-</ul>
-</div>
-</li>
 <li>
 <p>Følgende egenskaper er utgått:</p>
 <div class="ulist">
@@ -15735,16 +15741,6 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Følgende egenskaper er føyet til:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#Virksomhetshendelse-kontaktpunkt"> 3.25.1.2, &#8220;Virksomhetshendelse – kontaktpunkt (cv:contactPoint)&#8221;</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
 <p>Følgende egenskaper er utgått:</p>
 <div class="ulist">
 <ul>
@@ -15761,6 +15757,57 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 </li>
 </ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fra_v_1_1_2_til_v_1_2_0"><a class="link" href="#_fra_v_1_1_2_til_v_1_2_0">Fra v.1.1.2 til v.1.2.0</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Klassen «<a href="#Gebyr">Gebyr (<code>cpsvno:Cost</code>)</a>»</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Følgende egenskaper er føyet til:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Gebyr-dokumentasjon"> 3.5.2.3, &#8220;Gebyr – dokumentasjon (foaf:page)&#8221;</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Klassene «<a href="#Katalog">Katalog (<code>dcat:Catalog</code>)</a>», «<a href="#OffentligOrganisasjon">Offentlig organisasjon (<code>cv:PublicOrganisation</code>)</a>»,  «<a href="#OffentligTjeneste">Offentlig tjeneste (<code>cpsv:PublicService</code>)</a>», «<a href="#Organisasjon">Organisasjon (<code>org:Organization</code>)</a>», «<a href="#Tjeneste">Tjeneste (<code>cpsvno:Service</code>)</a>»</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Krav til bruk av kontrollert vokabular for egenskapen «dekningsområde (<code>dct:spatial</code>)» er endret.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Klassene «<a href="#Hendelse">Hendelse (<code>cv:Event</code>)</a>», «<a href="#Livshendelse">Livshendelse (<code>cv:LifeEvent</code>)</a>», «<a href="#Virksomhetshendelse">Virksomhetshendelse (<code>cv:BusinessEvent</code>)</a>»</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Følgende egenskaper er føyet til:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Hendelse-kontaktpunkt"> 3.6.1.2, &#8220;Hendelse – kontaktpunkt (cv:contactPoint)&#8221;</a>, <a href="#Livshendelse-kontaktpunkt"> 3.9.1.2, &#8220;Livshendelse – kontaktpunkt (cv:contactPoint)&#8221;</a>, <a href="#Virksomhetshendelse-kontaktpunkt"> 3.25.1.2, &#8220;Virksomhetshendelse – kontaktpunkt (cv:contactPoint)&#8221;</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -15973,7 +16020,7 @@ postleveringssted på et postkontor, vanligvis et nummer.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2026-05-04 12:06:38 UTC
+Sist oppdatert 2026-05-07 14:06:03 UTC
 </div>
 </div>
 </body>
