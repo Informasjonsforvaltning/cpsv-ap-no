@@ -1,5 +1,6 @@
-== Om denne versjonen [[Om_denne_versjonen]]
+== Om denne versjonen / __About this version__ [[Om_denne_versjonen]]
 
-WARNING: Dette er et #utkast# til v.2 av CPSV-AP-NO som er #under utarbeidelse#. 
+WARNING: Dette er et #utkast# til v.2 av CPSV-AP-NO som er #under utarbeidelse#. +
+__This is a #draft# of v.2 of CPSV-AP-NO which is #under development#.__
 
 
