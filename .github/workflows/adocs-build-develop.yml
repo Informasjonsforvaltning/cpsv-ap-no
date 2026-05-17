@@ -32,6 +32,9 @@ jobs:
       id: adocbuild
       uses: Analog-inc/asciidoctor-action@master
       with:
+        shellcommand: "asciidoctor-pdf -D docs -o files/cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
+      uses: Analog-inc/asciidoctor-action@master
+      with:
           shellcommand: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
 
     - name: Build pdf
@@ -42,7 +45,6 @@ jobs:
       continue-on-error: true
 
     - name: Deploy
-#      uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e
       uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
