@@ -18,7 +18,6 @@ jobs:
     steps:
 
     - name: Checkout code
-#      uses: actions/checkout@v6
       uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
       with:
         submodules: true
@@ -31,21 +30,19 @@ jobs:
 
     - name: Build html
       id: adocbuild
-#      uses: tonynv/asciidoctor-action@master
-      uses: tonynv/asciidoctor-action@153b34f78be19907024c3dfb128874a36cec2535
+      uses: Analog-inc/asciidoctor-action@master
       with:
-          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
+          shellcommand: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
 
     - name: Build pdf
       id: adocbuild_pdf
-#      uses: tonynv/asciidoctor-action@master
-      uses: tonynv/asciidoctor-action@153b34f78be19907024c3dfb128874a36cec2535
+      uses: Analog-inc/asciidoctor-action@master
       with:
-          program: "asciidoctor-pdf -D docs -o files/cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
+          shellcommand: "asciidoctor-pdf -D docs -o files/cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
       continue-on-error: true
 
     - name: Deploy
-#      uses: peaceiris/actions-gh-pages@v4
+#      uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e
       uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
