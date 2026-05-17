@@ -32,16 +32,16 @@ jobs:
     - name: Build html
       id: adocbuild
 #      uses: tonynv/asciidoctor-action@master
-      uses: tonynv/asciidoctor-action@153b34f78be19907024c3dfb128874a36cec2535
+      uses: Analog-inc/asciidoctor-action@master
       with:
-          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
+        shellcommand: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
 
     - name: Build pdf
       id: adocbuild_pdf
 #      uses: tonynv/asciidoctor-action@master
-      uses: tonynv/asciidoctor-action@153b34f78be19907024c3dfb128874a36cec2535
+      uses: Analog-inc/asciidoctor-action@master
       with:
-          program: "asciidoctor-pdf -D docs -o files/cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
+        shellcommand: "asciidoctor-pdf -D docs -o files/cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
       continue-on-error: true
 
     - name: Deploy
