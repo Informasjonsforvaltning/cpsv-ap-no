@@ -24,7 +24,7 @@ include::Om_denne_versjonen.adoc[]
 
 
 *Lisens*: https://creativecommons.org/licenses/by/4.0/[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"] + 
-*Status*: #under utarbeidelse# + 
+*Status*: #under utarbeidelse# +
 *Versjon*: #utkast til v.2# (se <<Endringslogg>>) +
 *Publisert*: #under utarbeidelse (v.2)#; 2026-05-05 (v.1.2); 2023-09-08 (v.1.0) +
 *Oppdatert*: #under utarbeidelse (v.2)#; 2026-05-05 (v.1.2); 2025-11-05 (v.1.1.x) +
