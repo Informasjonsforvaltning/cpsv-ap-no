@@ -32,9 +32,6 @@ jobs:
       id: adocbuild
       uses: Analog-inc/asciidoctor-action@master
       with:
-        shellcommand: "asciidoctor-pdf -D docs -o files/cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
-      uses: Analog-inc/asciidoctor-action@master
-      with:
           shellcommand: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
 
     - name: Build pdf
