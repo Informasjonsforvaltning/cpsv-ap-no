@@ -31,13 +31,13 @@ jobs:
 
       - name: Build html
         id: adocbuild_html
-        uses: Analog-inc/asciidoctor-action@master
+        uses: Analog-inc/asciidoctor-action@328aa83fd20efb2e8899a34716db60c9ddf2d9a0  # master
         with:
           shellcommand: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
 
       - name: Build pdf
         id: adocbuild_pdf
-        uses: Analog-inc/asciidoctor-action@master
+        uses: Analog-inc/asciidoctor-action@328aa83fd20efb2e8899a34716db60c9ddf2d9a0  # master
         with:
           shellcommand: "asciidoctor-pdf -D docs -o files/cpsv-ap-no.pdf -a lang=nb docs/main.adoc"
         continue-on-error: true
