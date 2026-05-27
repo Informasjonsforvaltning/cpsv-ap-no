@@ -31,13 +31,13 @@ jobs:
 
       - name: Build html en
         id: adocbuild_html_en
-        uses: Analog-inc/asciidoctor-action@master
+        uses: Analog-inc/asciidoctor-action@328aa83fd20efb2e8899a34716db60c9ddf2d9a0  # master
         with:
           shellcommand: "asciidoctor -a data-uri -D ontology -o index-en.html -a lang=en ontology/main-en.adoc"
 
       - name: Build html nb
         id: adocbuild_html_nb
-        uses: Analog-inc/asciidoctor-action@master
+        uses: Analog-inc/asciidoctor-action@328aa83fd20efb2e8899a34716db60c9ddf2d9a0  # master
         with:
           shellcommand: "asciidoctor -a data-uri -D ontology -o index-nb.html -a lang=nb ontology/main-nb.adoc"
   
